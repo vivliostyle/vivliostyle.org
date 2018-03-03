@@ -10,7 +10,7 @@ permalink: "manifest.json"
   "icons": [
     {
       "src": "{{ site.logo }}",
-      "sizes": "512x512"
+      "sizes": "73x73"
     }
   ],
   "start_url": "/",
