@@ -44,7 +44,7 @@ social: # jekyll-seo-tag > social overrides
     - https://www.facebook.com/Vivliostyle
     # - https://www.linkedin.com/in/Vivliostyle
     # - https://plus.google.com/+Vivliostyle
-    - https://github.com/Vivliostyle
+    - https://github.com/vivliostyle
 
 # 4. Jekyll settings
 sass:
@@ -73,33 +73,36 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "Vivliostyle.org" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logo.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/vivliostyle-logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Vivliostyle — open source, web browser based CSS typesetting engine project" # Site description and default description, also used in jekyll-seo-tag
 url: "https://vivliostyle.org" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/Vivliostyle/vivliostyle.org"
+repo: "https://github.com/vivliostyle/vivliostyle.org"
 email: "murakami@vivliostyle.org"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
-avatarurl: "/assets/logo.png" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+avatarurl: "/assets/vivliostyle-icon.png" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
 # 8. Site navigation
 navigation_header:
   Home: /
   Samples: /samples/
+  Download: /download/
+  Docs: /docs/
+  Community: /community/
   Blog: /blog/
-  Categories: /categories/
+  # Categories: /categories/
   Search: /search/
   # Fork Alembic: https://github.com/daviddarnes/alembic
 
 navigation_footer:
-  Thanks “Alembic” theme: https://alembic.darn.es/
+  Vivliostyle on GitHub: https://github.com/vivliostyle/vivliostyle.js
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/Vivliostyle
   Facebook: https://www.facebook.com/Vivliostyle
   # LinkedIn: https://www.linkedin.com/in/Vivliostyle
   # Google+: https://plus.google.com/+Vivliostyle
-  GitHub: https://github.com/Vivliostyle
+  GitHub: https://github.com/vivliostyle
   link: https://vivliostyle.org
   RSS: /feed.xml
 

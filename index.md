@@ -1,5 +1,5 @@
 ---
-title: Vivliostyle Project
+title: The Vivliostyle Project
 # feature_text: |
 #   ## Vivliostyle
 #   CSS Typesetting
