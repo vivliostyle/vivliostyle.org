@@ -68,6 +68,11 @@ defaults:
   -
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
+  -
+    scope:
+      type: "posts"
+    values:
+      permalink: /blog/:year/:month/:day/:title/
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
@@ -117,10 +122,3 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
   # Hacker News: "#ff6600"
   # Designer News: "#2D72D9"
   # Email: ""
-
-defaults:
-        -
-                scope:
-                        type: "posts"
-                values:
-                        permalink: /blog/:year/:month/:day/:title/
