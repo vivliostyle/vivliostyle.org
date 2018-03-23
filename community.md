@@ -8,6 +8,8 @@ title: Community
 - [Vivliostyle Facebook Page](https://www.facebook.com/vivliostyle/)
 - [Vivliostyle on Twitter](https://twitter.com/Vivliostyle)
 - [Vivliostyle on GitHub](https://github.com/vivliostyle)
+- [the #vivliostyle IRC channel on FreeNode](irc://irc.freenode.net/vivliostyle)
+- [the #vivliostyle:matrix.org matrix channel](https://matrix.to/#/#vivliostyle:matrix.org)
 
 ## Contact
 
