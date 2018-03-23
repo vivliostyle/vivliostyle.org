@@ -46,7 +46,6 @@ GEM
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
-    jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.13.0)
       jekyll (~> 3.3)
     jekyll-remote-theme (0.2.3)
@@ -107,7 +106,6 @@ DEPENDENCIES
   jekyll-default-layout
   jekyll-feed
   jekyll-mentions
-  jekyll-paginate
   jekyll-redirect-from
   jekyll-remote-theme
   jekyll-seo-tag

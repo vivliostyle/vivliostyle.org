@@ -101,18 +101,6 @@ body {
 }
 
 
-// Pagination nav
-.nav--paginator {
-  @include flexbox;
-  @include justify-content(space-between);
-  color: $captionColour;
-  text-align: center;
-}
-
-.pagination {
-  min-width: 20%;
-}
-
 
 // Main content
 .main {

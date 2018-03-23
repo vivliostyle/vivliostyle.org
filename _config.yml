@@ -23,7 +23,6 @@ exclude:
 plugins:
 - jekyll-sitemap
 - jekyll-mentions
-- jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-default-layout
@@ -31,8 +30,6 @@ plugins:
 - jemoji
 
 # 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
   username: Vivliostyle # jekyll-seo-tag > Owners twitter username
@@ -68,15 +65,28 @@ defaults:
   -
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
+      lang: "en"
+  -
+    scope:
+      path: "/ja/*"
+    values:
+      lang: "ja"
   -
     scope:
       type: "posts"
     values:
       permalink: /blog/:year/:month/:day/:title/
+  -
+    scope:
+      path: "_posts/ja/*"
+      type: "posts"
+    values:
+      lang: "ja"
+      permalink: /ja/blog/:year/:month/:day/:title/
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-US # Set the site language
+lang: en # Set the site language
 title: "Vivliostyle.org" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/vivliostyle-logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Vivliostyle — open source, web browser based CSS typesetting engine project" # Site description and default description, also used in jekyll-seo-tag
@@ -89,15 +99,37 @@ avatarurl: "/assets/vivliostyle-icon.png" # Uses avatars for favicons to get mul
 
 # 8. Site navigation
 navigation_header:
-  Home: /
-  Samples: /samples/
-  Download: /download/
-  Docs: /docs/
-  Community: /community/
-  Blog: /blog/
+  -
+    en: Home
+    ja: ホーム
+    url: /
+    url_ja: /ja/
+  -
+    en: Samples
+    ja: サンプル
+    url: /samples/
+  -
+    en: Download
+    ja: ダウンロード
+    url: /download/
+  -
+    en: Docs
+    ja: ドキュメント
+    url: /docs/
+  -
+    en: Community
+    ja: コミュニティ
+    url: /community/
+  -
+    en: Blog
+    ja: ブロゴ
+    url: /blog/
+    url_ja: /ja/blog/
   # Categories: /categories/
-  Search: /search/
-  # Fork Alembic: https://github.com/daviddarnes/alembic
+  -
+    en: Search
+    ja: 検索
+    url: /search/
 
 navigation_footer:
   Vivliostyle on GitHub: https://github.com/vivliostyle/vivliostyle.js
