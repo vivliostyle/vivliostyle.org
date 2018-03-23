@@ -7,7 +7,11 @@
 
 					<h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
 					{% include post-meta.html  %}
-					{{ page.excerpt | markdownify | truncatewords: 60 }}
+					{% if page.lang == "ja" %}
+					{{ page.excerpt | markdownify | truncate: 200 }}
+					{% else %}
+					{{ page.excerpt | markdownify | truncatewords: 50 }}
+					{% endif %}
 
 				</article>
 			</li>

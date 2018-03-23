@@ -11,5 +11,30 @@
 {% endif %}
 
 <small class="small  post-meta">
-  {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
+	<div><time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time></div>
+	{% if page.author %}
+	<div class=by-line>
+	{% if page.lang == "ja" %}
+		投稿者:
+	{% else %}
+		By:
+	{% endif %}
+  	<ul>
+	{% for a in page.author -%}
+		<li><a {% if site.data.people[a].email %}href="mailto:{{ site.data.people[a].email }}"{% endif %}>
+		{% if page.lang == "ja" %}
+			{{ site.data.people[a].ja }}
+		{% else %}
+			{{ site.data.people[a].en }}
+		{% endif %}
+		</a>
+		{%- if page.lang == "ja" -%}
+			（{{ site.data.people[a].role_ja }}）
+		{%- else -%}
+			({{ site.data.people[a].role_en }})
+		{%- endif -%}
+	{%- endfor %}
+	</ul>
+	</div>
+	{% endif %}
 </small>

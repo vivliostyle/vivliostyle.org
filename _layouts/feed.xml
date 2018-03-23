@@ -20,11 +20,18 @@
 	<link href="{{ site.url }}{{ post.url }}" />
 	<id>{{ site.url }}{{ post.url }}</id>
 	<content type="html">{{ post.content | xml_escape }}</content>
-{%if post.author %}
+	{% for a in post.author %}
 	<author>
-		<name>{{ post.author }}</name>
+		{% if page.lang == "ja" %}
+		<name>{{ site.data.people[a].ja }}</name>
+		{% else %}
+		<name>{{ site.data.people[a].en }}</name>
+		{% endif %}
+		{% if site.data.people[a].email %}
+		<email>{{ site.data.people[a].email }}</email>
+		{% endif %}
 	</author>
-{% endif %}
+	{% endfor %}
 	<rights type="html" >&amp;copy; {{ post.date | date: "%Y"}} Vivliostyle.org</rights>
 </entry>
 {% endfor %}

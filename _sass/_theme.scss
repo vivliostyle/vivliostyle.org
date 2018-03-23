@@ -428,3 +428,20 @@ pre code {
     overflow-x: scroll;
   }
 }
+
+// Post-meta
+.post-meta .by-line ul {
+  padding: 0; margin: 0;
+  display: inline;
+}
+.post-meta .by-line ul li {
+  display: inline;
+  list-style: none;
+}
+.by-line:lang(ja) li + li::before {
+  content: "、";
+}
+.by-line:lang(en) li + li::before {
+  content: ", ";
+}
+.list--posts .by-line { display: none; }
