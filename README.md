@@ -182,14 +182,6 @@ Email: ""
 
 _The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
 
-### `map.html`
-A Google map. _See Google [My Maps](https://www.google.com/mymaps)_
-
-Example usage: `{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" %}`
-
-Available options:
-- `id`: The map ID for the video _required_
-
 ### `site-form.html`
 Adds a contact form to the page.
 
