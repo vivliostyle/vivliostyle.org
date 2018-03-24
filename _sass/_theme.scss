@@ -47,13 +47,9 @@ body {
   text-align: center;
   background: $featureBackgroundColour;
   background-size: cover;
-  background-position: center;
-  .container {
-    min-height: 35vh;
-    max-width: 60%;
-    @include flex-direction(column);
-    @include justify-content(center);
-  }
+  background-position: center 15%;
+  height: 35vh;
+  max-height: 300px;
 }
 
 .logo {
