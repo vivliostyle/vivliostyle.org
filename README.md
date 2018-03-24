@@ -37,7 +37,6 @@
 - Solid **typographic framework** from [Sassline](https://sassline.com/)
 - Configurable navigation via a single file
 - Modular Jekyll components
-- Post category support in the form of a single post index page grouped by category
 - Built in live search using JavaScript
 - Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
@@ -192,7 +191,6 @@ This include has no options. This include will add a block of javascript to the 
 
 As well as `page`, `post`, `blog`, there are a few alternative layouts that can be used on pages:
 
-- `categories`: Shows all posts grouped by category, with an index of categories in a left hand sidebar
 - `search`: Adds a search field to the page as well as a simplified version of the sidebar to allow more focus on the search results
 
 ## Page and Post options

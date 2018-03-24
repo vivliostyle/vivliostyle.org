@@ -122,7 +122,6 @@ navigation_header:
     ja: ブログ
     url: /blog/
     url_ja: /ja/blog/
-  # Categories: /categories/
   -
     en: Search
     ja: 検索
