@@ -1,20 +1,20 @@
 <small class="small  post-meta">
-	<div>{% include date.html date=page.date %}</div>
-	{% if page.author %}
+	{% include date.html date=page.date -%}
+	{%- if page.author %}
 	<div class="by-line">
-	{% if page.lang == "ja" %}
+	{%- if page.lang == "ja" -%}
 		投稿者:
-	{% else %}
+	{%- else -%}
 		By:
-	{% endif %}
+	{%- endif %}
   	<ul>
-	{% for a in page.author -%}
+	{%- for a in page.author %}
 		<li><a {% if site.data.people[a].email %}href="mailto:{{ site.data.people[a].email }}"{% endif %}>
-		{% if page.lang == "ja" %}
-			{{ site.data.people[a].ja }}
-		{% else %}
-			{{ site.data.people[a].en }}
-		{% endif %}
+		{%- if page.lang == "ja" -%}
+			{{- site.data.people[a].ja -}}
+		{%- else -%}
+			{{- site.data.people[a].en -}}
+		{%- endif -%}
 		</a>
 		{%- if page.lang == "ja" -%}
 			（{{ site.data.people[a].role_ja }}）
@@ -25,5 +25,5 @@
 	{%- endfor %}
 	</ul>
 	</div>
-	{% endif %}
+	{%- endif %}
 </small>
