@@ -228,32 +228,16 @@ img {
   }
 }
 
-.video,
-.map {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .map {
   padding-bottom: 70%;
 }
 
 .figure,
-.video,
 .map {
   margin-bottom: .8rem;
 }
 
-audio,
-video {
+audio {
   width: 100%;
 }
 

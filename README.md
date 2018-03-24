@@ -182,14 +182,6 @@ Email: ""
 
 _The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
 
-### `video.html`
-A YouTube video.
-
-Example usage: `{% include video.html id="zrkcGL5H3MU" %}`
-
-Available options:
-- `id`: The YouTube ID for the video _required_
-
 ### `map.html`
 A Google map. _See Google [My Maps](https://www.google.com/mymaps)_
 
