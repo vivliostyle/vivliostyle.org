@@ -93,7 +93,6 @@ description: "Vivliostyle — open source, web browser based CSS typesetting eng
 url: "https://vivliostyle.org" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/vivliostyle/vivliostyle.org"
-email: "murakami@vivliostyle.org"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 avatarurl: "/assets/vivliostyle-icon.png" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
@@ -153,4 +152,3 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
   # Reddit: "#FF4500"
   # Hacker News: "#ff6600"
   # Designer News: "#2D72D9"
-  # Email: ""

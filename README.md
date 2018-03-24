@@ -39,7 +39,6 @@
 - Modular Jekyll components
 - Post category support in the form of a single post index page grouped by category
 - Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/)
 - Designed with **[Siteleaf](http://www.siteleaf.com/)** in mind
 - Has 9 of the most popular networks as performant sharing buttons
 - Has documentation
@@ -67,7 +66,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 2. Run the command `bundle install` in the root of project to install the theme and its dependancies
 3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
 4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
+5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation and social sharing buttons
 
 ### As a GitHub Pages remote theme
 
@@ -76,7 +75,7 @@ Here are a few examples of Alembic out in the wild being used in a variety of wa
 3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
 4. Add `remote_theme: daviddarnes/alembic` to your `_config.yml` file to set the site theme
 5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
+6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation and social sharing buttons
 
 ### As a Boilerplate / Fork
 
@@ -87,7 +86,7 @@ _(deprecated, not recommended)_
 3. Delete the following unnecessary files/folders: `.github`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
 4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
 5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
+6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation and social sharing buttons
 
 ## Customising
 
@@ -107,7 +106,7 @@ There are a number of optional settings for you to configure. Use the example [`
 
 ### Site settings
 
-You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `email` needs to be changed to the email you want to receive contact form enquires with. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
+You'll need to change the `description`, `title` and `url` to match with the project. You'll also need to replace the `/assets/logo.svg` and `/assets/default-social-image.png` with the project logo and default social image. Setting the site language can be done with `lang`, the theme will default to `en-US`. The `disqus` value can be changed to your project username on [Disqus](https://disqus.com), remove this from the `/_config.yml` file if you don't want comments enabled. Look for the `Site settings` comment within the `/_config.yml` file. The `repo` setting is optional, for now, and can be removed entirely, if you wish.
 
 By default the built in Service Worker is enabled, and will work on a 'network first' method. That is, if there is no internet connection then the content the Service Worker has cached will be used until the connection comes back. It will always look for a live version of the code first. To disable the Service Worker set an option called `serviceWorker` to false in the `/_config.yml`.
 
@@ -181,13 +180,6 @@ Email: ""
 ```
 
 _The first item is the name of the network (must be one of the ones stated above) and the second is the colour of the button. To remove a button just remove the line of the same name._
-
-### `site-form.html`
-Adds a contact form to the page.
-
-Example usage: `{% include site-form.html %}`
-
-This include has no options. Use the `email` option in the `/_config.yml` to change to the desired email.
 
 ### `site-search.html`
 Adds a search form to the page.
