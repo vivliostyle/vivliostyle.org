@@ -1,5 +1,7 @@
 ---
 title: The Vivliostyle Project
+aside: true
+aside-type: blog-entries
 # feature_text: |
 #   ## Vivliostyle
 #   CSS Typesetting

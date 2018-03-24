@@ -11,9 +11,9 @@
 {% endif %}
 
 <small class="small  post-meta">
-	<div><time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time></div>
+	<div>{% include date.html date=page.date %}</div>
 	{% if page.author %}
-	<div class=by-line>
+	<div class="by-line">
 	{% if page.lang == "ja" %}
 		投稿者:
 	{% else %}
@@ -33,6 +33,7 @@
 		{%- else -%}
 			({{ site.data.people[a].role_en }})
 		{%- endif -%}
+		</li>
 	{%- endfor %}
 	</ul>
 	</div>
