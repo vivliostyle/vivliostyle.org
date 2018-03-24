@@ -122,7 +122,7 @@ navigation_header:
     url: /community/
   -
     en: Blog
-    ja: ブロゴ
+    ja: ブログ
     url: /blog/
     url_ja: /ja/blog/
   # Categories: /categories/
