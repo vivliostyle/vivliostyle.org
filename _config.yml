@@ -26,7 +26,6 @@ plugins:
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-default-layout
-- jekyll-feed
 - jemoji
 
 # 3. Gem settings
@@ -139,7 +138,7 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   # Google+: https://plus.google.com/+Vivliostyle
   GitHub: https://github.com/vivliostyle
   link: https://vivliostyle.org
-  RSS: /feed.xml
+  RSS: /blog/feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
   Twitter: "#0d94e7"
