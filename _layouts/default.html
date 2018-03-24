@@ -8,17 +8,7 @@
 			<meta name="robots" content="noindex">
 		{% endif %}
 
-		{% if page.collectionpage %}
-			{% seo title=false %}
-
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<title>{{ collectiondata.title }} - {{ site.title }}</title>
-			<meta property="og:title" content="{{ collectiondata.title }}">
-			<meta name="description" content="{{ collectiondata.description }}">
-			<meta property="og:description" content="{{ collectiondata.description }}">
-		{% else %}
-			{% seo %}
-		{% endif %}
+		{% seo %}
 
 		<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
 		<meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
