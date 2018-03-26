@@ -40,4 +40,4 @@ Vivliostyle は、営利企業のものではなくなったので [vivliostyle.
 * [FreeNodeの #vivliostyle IRCチャンネル](irc://irc.freenode.net/vivliostyle)
 * [#vivliostyle:matrix.orgのmatrixチャンネル](https://matrix.to/#/#vivliostyle:matrix.org)
 
-[乞うご期待！](/ja/blog/feed.atom)
+[乞うご期待！](/ja/blog/feed.xml)

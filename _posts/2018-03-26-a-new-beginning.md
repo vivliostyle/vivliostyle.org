@@ -37,4 +37,4 @@ Find us on:
 * [the #vivliostyle IRC channel on FreeNode](irc://irc.freenode.net/vivliostyle)
 * [the #vivliostyle:matrix.org matrix channel](https://matrix.to/#/#vivliostyle:matrix.org)
 
-[Stay tuned](/blog/feed.atom) for more!
+[Stay tuned](/blog/feed.xml) for more!
