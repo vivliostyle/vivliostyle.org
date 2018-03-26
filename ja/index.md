@@ -1,6 +1,7 @@
 ---
 title: The Vivliostyle Project
 aside: true
+lang: ja
 aside-type: blog-entries
 # feature_text: |
 #   ## Vivliostyle

@@ -1,5 +1,6 @@
 ---
 title: Vivliostyle の新しい始まり
+lang: ja
 author:
  - murakami
  - florian
