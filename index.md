@@ -9,7 +9,7 @@ feature_image: "/assets/header-image.png"
 excerpt: "open source, web browser based CSS typesetting engine project"
 ---
 
-Vivliostyle is an open source project for a new typesetting engine fitting for digital publishing = web publishing era based on web standasrd technology.
+Vivliostyle is an open source project for a new typesetting engine fitting for digital publishing = web publishing era based on web standard technology.
 
 * Enhancing typography and layout capability of web browsers, to be used as typesetting engines for both web/digital and print publishing
 * Implementing CSS typesetting features with JavaScript
