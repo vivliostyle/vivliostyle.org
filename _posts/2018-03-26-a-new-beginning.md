@@ -1,5 +1,5 @@
 ---
-title: A New Beginning
+title: A New Beginning for Vivliostyle
 author:
  - murakami
  - florian

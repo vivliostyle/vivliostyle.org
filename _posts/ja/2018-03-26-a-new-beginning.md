@@ -1,5 +1,5 @@
 ---
-title: 新しい始まり
+title: Vivliostyle の新しい始まり
 author:
  - murakami
  - florian
