@@ -1,6 +1,7 @@
 ---
 title: Vivliostyle の新しい始まり
 lang: ja
+permalink: /ja/blog/2018/03/26/a-new-beginning/
 author:
  - murakami
  - florian
