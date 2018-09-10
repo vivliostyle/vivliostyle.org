@@ -75,7 +75,7 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en # Set the site language
-title: "Vivliostyle.org" # Site name or title, also used in jekyll-seo-tag
+title: "Vivliostyle Foundation" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/vivliostyle-logo.png" # Site logo, also used in jekyll-seo-tag
 description: "Vivliostyle — open source, web browser based CSS typesetting engine project" # Site description and default description, also used in jekyll-seo-tag
 url: "https://vivliostyle.org" # Site url, also used in jekyll-seo-tag
@@ -102,6 +102,7 @@ navigation_header:
     en: Docs
     ja: ドキュメント
     url: /docs/
+    url_ja: /ja/docs/
   -
     en: Community
     ja: コミュニティ
