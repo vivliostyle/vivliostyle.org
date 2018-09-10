@@ -98,6 +98,7 @@ navigation_header:
     en: Download
     ja: ダウンロード
     url: /download/
+    url_ja: /ja/download/
   -
     en: Docs
     ja: ドキュメント
