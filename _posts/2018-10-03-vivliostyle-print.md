@@ -1,6 +1,6 @@
 ---
 title: New package - An interview with myself about Vivliostyle-print 
-author: johanneswilm
+author: johannes
 ---
 
 **[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) has been with us for a few years already. It can both show paged media in the browser as well as print HTML with extra CSS targeted paged media. What need is there for a [Vivliostyle-print](https://github.com/vivliostyle/vivliostyle-print) then?**
