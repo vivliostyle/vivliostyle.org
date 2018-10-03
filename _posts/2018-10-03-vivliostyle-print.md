@@ -1,5 +1,5 @@
 ---
-title: New package: An interview with myself about Vivliostyle-print 
+title: New package - An interview with myself about Vivliostyle-print 
 author: johanneswilm
 ---
 
