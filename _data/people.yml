@@ -2,15 +2,17 @@ murakami:
   en: Shinyu Murakami
   ja: 村上 真雄
   email: murakami@vivliostyle.org
-  role_ja: Vivliostyle.org プロジェクト・リーダー
-  role_en: Vivliostyle.org Project Leader
+  role_en: Representative Director, Vivliostyle Project Leader
+  role_ja: 代表理事、Vivliostyle プロジェクト・リーダー
 florian:
   en: Florian Rivoal
   ja: リボアル・フロリアン
   email: vivliostyle@florian.rivoal.net
-  role_ja: W3C CSS WG Invited Expert
-  role_en: W3C CSS WG Invited Expert
+  role_en: Director, W3C CSS WG Invited Expert
+  role_ja: 理事、W3C CSS WG Invited Expert
 johannes:
   en: Johannes Wilm
+  ja: ヨハネス・ウィルム
   email: johannes@fiduswriter.org
-  role_en: W3C Editing Taskforce Invited Expert
+  role_en: Director, W3C Editing Taskforce Invited Expert
+  role_ja: 理事、W3C Editing Taskforce Invited Expert

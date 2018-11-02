@@ -25,3 +25,13 @@ Vivliostyleは、電子出版＝Web出版の時代にマッチする新しい組
 * VivliostyleとCSS組版の普及啓発・教育
 * Web・出版・アクセシビリティ等の標準技術に関する諸団体と連携して標準化推進
 * Vivliostyleと連携する外部のプロジェクトとの協力
+
+<div style="margin: 2em 0 1em; text-align: right">
+<div><strong><ruby>Vivliostyle Foundation<rt style="font-size: 75%">一般社団法人ビブリオスタイル</rt></ruby></strong></div>
+<div>2018年8月&ensp;設立</div>
+<br>
+{% assign people = "murakami, florian, johannes" | split: ", " %}
+{% for a in people %}
+<div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].ja }}</a></strong>&ensp;({{ site.data.people[a].role_ja }})</div>
+{% endfor %}
+</div>
