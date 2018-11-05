@@ -33,3 +33,13 @@ For this purpose, we carry out activities such as:
 * Promotion and education of Vivliostyle and CSS typesetting
 * Promote standardization in cooperation with groups related to standard technologies such as Web, publishing, and accessibility
 * Cooperation with external projects working with Vivliostyle
+
+<div style="margin: 2em 0 1em; text-align: right">
+<div><strong>Vivliostyle Foundation</strong></div>
+<div>Established in August 2018</div>
+<br>
+{% assign people = "murakami, florian, johannes" | split: ", " %}
+{% for a in people %}
+<div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].en }}</a></strong>&ensp;({{ site.data.people[a].role_en }})</div>
+{% endfor %}
+</div>
