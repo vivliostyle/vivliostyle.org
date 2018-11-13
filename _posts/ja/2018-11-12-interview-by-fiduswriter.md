@@ -19,7 +19,7 @@ _Fidus Writer バージョン3.5で、PDF生成に [Vivliostyle](https://www.viv
 
 **そのとき私は、自分がやっていたことはかなり制限されたもので、おそらくは他の誰にも有用ではないことを知っていました。だから私は、2014年の終わりに突然、Vivliostyle プロジェクトをスタートするというあなたからのEメールを受け取ったとき、かなり驚きました。この段階で、あなたはすでにこの分野で知られた存在で、PDFページレンダリングでキャリアを積んでいました。当時のPDFレンダリングの状態がどのようなもので、なぜ私に連絡することを選択したのですか？**
 
-Vivliostyle プロジェクトを始める前、私は、別の組版エンジンの開発に携わっていました。その製品は CSS Paged Media 仕様をサポートし、高品質なPDFの生成が可能な、商用のプロプライエタリなソフトウェアです。しかし私は、これから必要とされるのはオープンソースでWeb上で動くものだと考え、新しいプロジェクト「Vivliostyle」を構想しました。[O'Reilly Media の Tools of Change for Publishing の記事](http://toc.oreilly.com/2012/10/bookjs-turns-your-browser-into-a-print-typesetting-engine.html) を読んで “BooksJS” の存在を知っていたので、ブラウザ上での本の組版が実用になるだろうという確信がありました。そこで、できたら一緒にプロジェクトを進めたいと思い、その “BooksJS” 開発者であるあなたとコンタクトを取ったのです。
+Vivliostyle プロジェクトを始める前、私は、別の組版エンジンの開発に携わっていました。その製品は CSS Paged Media 仕様をサポートし、高品質なPDFの生成が可能な、商用のプロプライエタリなソフトウェアです。しかし私は、これから必要とされるのはオープンソースでWeb上で動くものだと考え、新しいプロジェクト「Vivliostyle」を構想しました。[O'Reilly Media の Tools of Change for Publishing の記事](http://toc.oreilly.com/2012/10/bookjs-turns-your-browser-into-a-print-typesetting-engine.html) を読んで “BookJS” の存在を知っていたので、ブラウザ上での本の組版が実用になるだろうという確信がありました。そこで、できたら一緒にプロジェクトを進めたいと思い、その “BookJS” 開発者であるあなたとコンタクトを取ったのです。
 
 **あなたが Vivliostyle をセットアップしたとき、あなたと開発チームは、私が作り上げたソースコード上で開発を続行するのではなく、別のプロジェクトの上で開発を始めました。その決定の背後には何があったのですか？**
 
@@ -27,7 +27,7 @@ Vivliostyle プロジェクトを始める前、私は、別の組版エンジ�
 
 それを１から自分たちで作るか、既存のオープンソースをベースにして作るか検討しました。
 
-あなたの “BooksJS” (またの名は Pagination.js、そのあと SimplePagination.js) は、JavaScript で本の組版を可能にした画期的なものでしたが、いくつか元々の制限がありました。ページレイアウトの指定には CSS ではなく JavaScript でのカスタマイズが必要であることなどです。
+あなたの “BookJS” (またの名は Pagination.js、そのあと SimplePagination.js) は、JavaScript で本の組版を可能にした画期的なものでしたが、いくつか元々の制限がありました。ページレイアウトの指定には CSS ではなく JavaScript でのカスタマイズが必要であることなどです。
 
 そこで注目したのが、Peter Sorotokin（元 Adobe、その後 Google に所属）による、EPUB のページレイアウトのためにCSSを拡張する提案 [EPUB Adaptive Layout 仕様](http://www.idpf.org/epub/pgt/)と、その [JavaScript での実装](http://sorotokin.com/adaptive-layout/) です。ページテンプレートという新しいCSSの機能によってページレイアウトの指定ができることは魅力的でした。これをベースにして、印刷出版物の組版にも十分使えるように、CSS Paged Media と関連CSS仕様の実装を追加していくことが、私たちが目指しているものを作る近道だと考えました。
 
