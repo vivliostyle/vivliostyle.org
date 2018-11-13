@@ -1,5 +1,5 @@
 ---
-title: On Vivliostyle and webbased publishing —Interview by Fidus Writer
+title: On Vivliostyle and webbased publishing — Interview by Fidus Writer
 author: murakami
 ---
 
