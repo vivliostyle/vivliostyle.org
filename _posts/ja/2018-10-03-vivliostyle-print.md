@@ -9,9 +9,9 @@ author: johannes
 
 *新パッケージ Vivliostyle-print についてのセルフ・インタビュー*
 
-**[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) は、すでに数年間私たちとともにあります。ブラウザ内でページメディアを表示するだけでなく、ページメディアをターゲットにした追加の CSS で HTML を印刷することもできます。[Vivliostyle-print](https://github.com/vivliostyle/vivliostyle-print) にはどんな必要性がありますか?**
+**[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) は、すでに数年間私たちとともにあります。ブラウザ内でページメディアを表示するだけでなく、ページメディアをターゲットにした追加の CSS で HTML を印刷することもできます。[Vivliostyle-print](https://github.com/vivliostyle/vivliostyle-print) にはどんな必要性がありますか?**
 
-Vivliostyle.js がすでに数年間存在していて、Vivliostyle-print が、CSS の面では何も新しいものを追加していないことはその通りです。HTMLとCSSのみを認識し、JavaScriptを認識しないエンドユーザにとっては、Vivliostyle Viewer (Vivliostyle.js + Vivliostyle-ui) を使用することは引き続き有効です。
+Vivliostyle.js がすでに数年間存在していて、Vivliostyle-print が、CSS の面では何も新しいものを追加していないことはその通りです。HTMLとCSSのみを認識し、JavaScriptを認識しないエンドユーザにとっては、Vivliostyle Viewer (Vivliostyle.js + Vivliostyle-ui) を使用することは引き続き有効です。
 
 私が直面した Vivliostyle.js の問題は、それを他のソフトウェアに含めようとしたときに、本当に複雑なプログラムだということでした。そして、最近までドキュメンテーションはあまり広範でありませんでした。今でもこのパッケージを作成する過程で、私はこれを動くようにするために、チャットや試行錯誤の多くで一日以上を費やす必要がありました。
 
