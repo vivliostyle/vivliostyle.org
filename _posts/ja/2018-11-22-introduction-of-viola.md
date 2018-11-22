@@ -48,6 +48,6 @@ savepdf --preview input/index.html
 
 [**Fidus Writer**](https://www.fiduswriter.org)は、Viola と同様に、Vivliostyle を使って Web ベースの組版を実現する編集ツールの有力な選択肢です。Viola は文章の編集ツールであると同時に、HTML や CSS のテキストエディタでもあるので、より自由に原稿を編集することができます。Vivliostyle による出力結果のライブプレビュー機能も Viola の一押しの機能です。一方で、執筆時の軽快さや快適性といった面では、現状では長年開発を続けてきた Fidus Writer に軍配が上がります。両方のエディタを使ってみて、好みの使い方を探してみてください。
 
-**vivliostyle-print** は viola-savepdf と似た機能を持ちますが、用途が少し違います。vivliostyle-print は **JavaScript ライブラリ**として提供され、Vivliostyle の変換機能を使いやす形で利用できる API を提供します。一方で、viola-savepdf は**コマンドラインアプリケーション**として提供され、ローカルのディレクトリにある HTML や CSS に対して、Vivliostyle で変換した結果を保存することができます。また、Vivliostyle-ui のように手動でサーバーを立てるといった手間は必要ありません。
+**vivliostyle-print** は viola-savepdf と似た機能を持ちますが、用途が少し違います。vivliostyle-print は **JavaScript ライブラリ**として提供され、Vivliostyle の変換機能を使いやす形で利用できる API を提供します。一方で、viola-savepdf は**コマンドラインアプリケーション**として提供され、ローカルのディレクトリにある HTML や CSS に対して、Vivliostyle で変換した結果を保存することができます。
 
 Vivliostyle とともに、Viola がより多くの人に愛用されることを願っています！
