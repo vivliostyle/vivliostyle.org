@@ -22,7 +22,7 @@ In the future, I'm planning to add templates so that even people not familiar wi
 
 ## About viola-savepdf
 
-In connection with the development of Viola, I also released a tool named viola-savepdf. This is a tool for professional engineers and designers who have already established a workflow for editing HTML and CSS. Viola-savepdf is a commandline interface (CLI) that uses Vivliostyle.js in the background to generate a PDF without the need to open a browser.
+In connection with the development of Viola, I also released a tool named `viola-savepdf`. This is a tool for professional engineers and designers who have already established a workflow for editing HTML and CSS. Viola-savepdf is a commandline interface (CLI) that uses Vivliostyle.js in the background to generate a PDF without the need to open a browser.
 
 To install `viola-savepdf`, setup Node.js and execute the following command:
 
