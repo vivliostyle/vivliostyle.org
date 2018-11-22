@@ -4,9 +4,9 @@ author:
   - spring_raining
 ---
 
-XXX
+Hello! I'm <a href="https://github.com/spring-raining">spring-raining</a>, Vivliostyle project collaborator. In this entry, I'll introduce about **Viola**, which is an online editor by using Vivliostyle.
 
-<div><a href="https://viola.pub"><img src="/assets/posts/2018-11-21-introduction-of-viola/viola-top.png" alt="https://viola.pub" /></a></div>
+<div><a href="https://viola.pub"><img src="/assets/posts/2018-11-22-introduction-of-viola/viola-top.png" alt="https://viola.pub" /></a></div>
 
 ## Development history
 
