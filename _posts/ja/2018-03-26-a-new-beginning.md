@@ -36,9 +36,5 @@ Vivliostyle は、営利企業のものではなくなったので [vivliostyle.
 * [twitter](https://twitter.com/vivliostyle)
 * [facebookページ](https://www.facebook.com/vivliostyle)
 * [facebook公開グループ](https://www.facebook.com/groups/vivliostyle)
-* [メーリングリスト(Googleグループ)、日本語](https://groups.google.com/forum/#!forum/vivliostyle-ja)
-* [メーリングリスト(Googleグループ)、英語](https://groups.google.com/forum/#!forum/vivliostyle)
-* [FreeNodeの #vivliostyle IRCチャンネル](irc://irc.freenode.net/vivliostyle)
-* [#vivliostyle:matrix.orgのmatrixチャンネル](https://matrix.to/#/#vivliostyle:matrix.org)
 
 [乞うご期待！](/ja/blog/feed.xml)

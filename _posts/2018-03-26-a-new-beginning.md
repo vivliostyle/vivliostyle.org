@@ -32,9 +32,5 @@ Find us on:
 * [twitter](https://twitter.com/vivliostyle)
 * [facebook page](https://www.facebook.com/vivliostyle)
 * [facebook group](https://www.facebook.com/groups/vivliostyle)
-* [English mailling list (Google Groups)](https://groups.google.com/forum/#!forum/vivliostyle)
-* [Japanese mailling list (Google Groups)](https://groups.google.com/forum/#!forum/vivliostyle-ja)
-* [the #vivliostyle IRC channel on FreeNode](irc://irc.freenode.net/vivliostyle)
-* [the #vivliostyle:matrix.org matrix channel](https://matrix.to/#/#vivliostyle:matrix.org)
 
 [Stay tuned](/blog/feed.xml) for more!
