@@ -17,3 +17,5 @@ title: Documentation
 - [Vivliostyle.js Development](https://github.com/vivliostyle/vivliostyle.js/wiki/Development)
 
 - [Vivliostyle.js API Reference](https://github.com/vivliostyle/vivliostyle.js/blob/master/doc/api.md)
+
+- [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
