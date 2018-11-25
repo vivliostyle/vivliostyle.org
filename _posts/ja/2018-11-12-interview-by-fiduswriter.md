@@ -1,5 +1,5 @@
 ---
-title: Vivliostyle と Webベース出版について ― Fidus Writer 開発者によるインタビュー
+title: Vivliostyle と Webベース出版について——Fidus Writer 開発者によるインタビュー
 lang: ja
 permalink: /ja/blog/2018/11/12/interview-by-fiduswriter/
 author:
