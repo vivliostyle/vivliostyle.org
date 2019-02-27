@@ -401,6 +401,22 @@ pre code {
     white-space: pre;
     overflow-x: scroll;
   }
+
+  // Fix list indents
+  ul:not(.list), ol {
+    margin-left: 2rem;
+    li {
+      margin-left: 0;
+    }
+  }
+  dl {
+    dt {
+      margin-left: 0;
+    }
+    dd {
+      margin-left: 2rem;
+    }
+  }
 }
 
 // Post-meta
