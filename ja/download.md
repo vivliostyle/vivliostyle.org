@@ -3,8 +3,8 @@ title: ダウンロード
 lang: ja
 ---
 
-- **Vivliostyle Viewer** (vivliostyle.js + vivliostyle-ui)
-    - [最新リリース版のダウンロード (2018.12.103)](https://github.com/vivliostyle/vivliostyle.js/releases/download/2018.12.103/vivliostyle-js-2018.12.103.zip)
+- [**Vivliostyle Viewer**](https://vivliostyle.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html) (vivliostyle.js + vivliostyle-ui)
+    - [最新リリース版のダウンロード (2019.1.101)](https://github.com/vivliostyle/vivliostyle.js/releases/download/2019.1.101/vivliostyle-js-2019.1.101.zip)
     - [最新開発版のダウンロード](https://vivliostyle.github.io/vivliostyle.js/downloads/vivliostyle-js-latest.zip)
     - [ユーザーガイド](https://vivliostyle.github.io/vivliostyle.js/docs/ja/)
     - [Release notes](https://github.com/vivliostyle/vivliostyle.js/releases)
