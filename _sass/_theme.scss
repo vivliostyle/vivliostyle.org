@@ -419,7 +419,9 @@ pre code {
   }
   // Fix 'dlig' causes ページ → ㌻ problem
   h1, h2, h3, h4, h5, h6 {
-    font-feature-settings: /*'dlig',*/ 'liga', 'lnum', 'kern';
+    // Removed 'dlig'
+    // Added 'palt'
+    font-feature-settings: 'liga', 'lnum', 'kern', 'palt';
   }
 }
 
