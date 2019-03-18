@@ -10,7 +10,7 @@ title: Documentation
 
 - [CSS Support Documentation](https://vivliostyle.github.io/vivliostyle.js/docs/en/supported-features.html)
 
-- [Release Notes](https://github.com/vivliostyle/vivliostyle.js/releases)
+- [Release Notes](https://github.com/vivliostyle/vivliostyle.js/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)
 
 - [Vivliostyle.js README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md)
 
