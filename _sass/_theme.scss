@@ -382,6 +382,10 @@ pre code {
       color: $backgroundColour;
     }
   }
+  // Hide underline on icons
+  a:not(.button) > .icon {
+    background-color: $backgroundColour;
+  }
   hr {
     width: 100%;
   }
