@@ -37,3 +37,6 @@ Vivliostyleは、電子出版＝Web出版の時代にマッチする新しい組
 <div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].ja }}</a></strong>&ensp;({{ site.data.people[a].role_ja }})</div>
 {% endfor %}
 </div>
+<br>
+
+{% include nav-share.html %}

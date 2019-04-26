@@ -12,3 +12,5 @@ title: Download
     - [vivliostyle on npm](https://www.npmjs.com/package/vivliostyle)
 - [Vivliostyle-print on GitHub](https://github.com/vivliostyle/vivliostyle-print)
     - [vivliostyle-print on npm](https://www.npmjs.com/package/vivliostyle-print)
+
+{% include nav-share.html %}

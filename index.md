@@ -45,3 +45,6 @@ For this purpose, we carry out activities such as:
 <div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].en }}</a></strong>&ensp;({{ site.data.people[a].role_en }})</div>
 {% endfor %}
 </div>
+<br>
+
+{% include nav-share.html %}

@@ -19,3 +19,5 @@ title: Documentation
 - [Vivliostyle.js API Reference](https://github.com/vivliostyle/vivliostyle.js/blob/master/doc/api.md)
 
 - [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
+
+{% include nav-share.html %}
