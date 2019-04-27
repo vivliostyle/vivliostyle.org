@@ -109,6 +109,7 @@ navigation_header:
     en: Community
     ja: コミュニティ
     url: /community/
+    url_ja: /ja/community/
   -
     en: Blog
     ja: ブログ
@@ -118,6 +119,7 @@ navigation_header:
     en: Search
     ja: 検索
     url: /search/
+    url_ja: /ja/search/
 
 navigation_footer:
   Vivliostyle on GitHub: https://github.com/vivliostyle/vivliostyle.js

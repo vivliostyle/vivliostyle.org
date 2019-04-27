@@ -8,8 +8,9 @@ title: Vivliostyle Community
 - [Vivliostyle on Twitter {% include icon.html id="twitter" %}](https://twitter.com/Vivliostyle)
 - [Vivliostyle on GitHub {% include icon.html id="github" %}](https://github.com/vivliostyle)
 
-## Contact
+### Contact
 
-Project Leader: [Shinyu Murakami {% include icon.html id="email" title="email: murakami@vivliostyle.org" %}](mailto:murakami@vivliostyle.org)&nbsp; [{% include icon.html id="twitter" title="twitter: @MurakamiShinyu" %}](https://twitter.com/MurakamiShinyu)&nbsp; [{% include icon.html id="facebook" title="facebook: shinyu.murakami" %}](https://www.facebook.com/shinyu.murakami)
+Project Leader: [Shinyu Murakami {% include icon.html id="twitter" title="twitter: @MurakamiShinyu" %}](https://twitter.com/MurakamiShinyu)&nbsp; [{% include icon.html id="facebook" title="facebook: shinyu.murakami" %}](https://www.facebook.com/shinyu.murakami)&nbsp; [{% include icon.html id="email" title="email: murakami@vivliostyle.org" %}](mailto:murakami@vivliostyle.org)
 
+<br>
 {% include nav-share.html %}
