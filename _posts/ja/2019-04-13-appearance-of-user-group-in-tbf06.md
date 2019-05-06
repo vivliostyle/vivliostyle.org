@@ -5,7 +5,7 @@ permalink: /ja/blog/2019/04/13/appearance-of-user-group-in-tbf06
 author: spring_raining
 ---
 
-**【追記】** 『Vivliostyle で本を作ろう Vol. 1』の全篇を[公開](https://vivliostyle.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&renderAllPages=true)しました。👉[Vivliostle サンプル](/ja/samples/) 
+**【追記】** 『Vivliostyle で本を作ろう Vol. 1』の全篇を[公開](https://vivliostyle.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&renderAllPages=true)しました。👉[Vivliostyle サンプル](/ja/samples/) 
 
 こんにちは！ Vivliostyle Foundation コラボレータの spring-raining です。この記事では 4 月 14 日に開催される技術書典 6 で、サークル「Vivliostyle ユーザー会」が頒布する同人誌「Vivliostyle で本を作ろう Vol.1」を紹介します。
 
