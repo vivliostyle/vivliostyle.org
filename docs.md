@@ -20,4 +20,10 @@ title: Documentation
 
 - [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
 
+### Frequently Asked Questions
+
+- [How to embed math (MathML, TeX, or AsciiMath)?](https://github.com/vivliostyle/vivliostyle.js/issues/523)
+
+- [How to reset page counter in a book?](https://github.com/vivliostyle/vivliostyle.js/issues/522)
+
 {% include nav-share.html %}

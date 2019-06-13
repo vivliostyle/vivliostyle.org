@@ -21,4 +21,10 @@ lang: ja
 
 - [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
 
+### よくある質問
+
+- [数式（MathML、TeX、AsciiMath）を埋め込むには？](https://github.com/vivliostyle/vivliostyle.js/issues/523)
+
+- [本の途中でページ・カウンターをリセットするには？](https://github.com/vivliostyle/vivliostyle.js/issues/522)
+
 {% include nav-share.html %}
