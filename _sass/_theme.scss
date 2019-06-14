@@ -445,3 +445,8 @@ pre code {
   content: ", ";
 }
 .list--posts .by-line { display: none; }
+
+// Hide non-latest "*-released/" posts in the "Latest blog posts"
+aside li[data-post-url$="-released/"] ~ li[data-post-url$="-released/"] {
+  display: none;
+}

@@ -8,7 +8,7 @@
 	<ul class="list  list--posts">
 	{%- assign one_lang_posts = site.posts | where:"lang",page.lang -%}
 	{% for post in one_lang_posts %}
-		<li class="item  item--post">
+		<li class="item  item--post" data-post-url="{{ post.url }}">
 			<article class="article  article--post">
 				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				{% include date.html date=post.date %}
