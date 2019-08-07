@@ -21,6 +21,8 @@ lang: ja
 
 - [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
 
+- [Vivliostyle-savepdf README](https://github.com/vivliostyle/vivliostyle-savepdf/blob/master/README.md)
+
 ### よくある質問
 
 - [数式（MathML、TeX、AsciiMath）を埋め込むには？](https://github.com/vivliostyle/vivliostyle.js/issues/523)

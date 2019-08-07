@@ -20,6 +20,8 @@ title: Documentation
 
 - [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
 
+- [Vivliostyle-savepdf README](https://github.com/vivliostyle/vivliostyle-savepdf/blob/master/README.md)
+
 ### Frequently Asked Questions
 
 - [How to embed math (MathML, TeX, or AsciiMath)?](https://github.com/vivliostyle/vivliostyle.js/issues/523)

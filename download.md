@@ -12,5 +12,7 @@ title: Download
     - [vivliostyle on npm](https://www.npmjs.com/package/vivliostyle)
 - [Vivliostyle-print on GitHub](https://github.com/vivliostyle/vivliostyle-print)
     - [vivliostyle-print on npm](https://www.npmjs.com/package/vivliostyle-print)
+- [Vivliostyle-savepdf on GitHub](https://github.com/vivliostyle/vivliostyle-savepdf)
+    - [vivliostyle-savepdf on npm](https://www.npmjs.com/package/vivliostyle-savepdf)
 
 {% include nav-share.html %}
