@@ -448,5 +448,10 @@ pre code {
 
 // Hide non-latest "*-released/" posts in the "Latest blog posts"
 aside li[data-post-url$="-released/"] ~ li[data-post-url$="-released/"] {
-  display: none;
+  // Keep important releases
+  &:not([data-post-url*="2019.1.101"]
+  ):not([data-post-url*="2019.8.100"]
+  ) {
+    display: none;
+  }
 }
