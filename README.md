@@ -60,12 +60,9 @@ The markdown file begins with:
 ---
 title: Vivliostyle-print について
 lang: ja
-permalink: /ja/blog/2018/10/03/vivliostyle-print/
 author: johannes
 ---
 ```
-
-**Note:** `permalink` is (was?) necessary to generate the blog article  with this URL. (I'm not sure if this problem is already resolved in current Jekyll plugins version used in GitHub Pages)
 
 #### Images
 
