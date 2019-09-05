@@ -32,7 +32,7 @@ Vivliostyle の開発課題(issue)を [GitHub Projects - vivliostyle.js](https:/
 ### 《第2部》Vivliostyle・CSS組版ユーザーミーティング
 
 - [**Vivliostyleユーザー会の合同誌の制作｜Markdownの複雑化と締め切りのはざまで**](https://speakerdeck.com/spring_raining/vivliostyle-meetup)  
-    by 緑豆はるさめ([@raining_raining](https://twitter.com/spring_raining)) Vivliostyleユーザー会
+    by 緑豆はるさめ([@spring_raining](https://twitter.com/spring_raining)) Vivliostyleユーザー会
 - [**Vivliostyleと関連ツールの便利な使い方**](http://bit.ly/vivuser20190831)  
     by 村上真雄([@MurakamiShinyu](https://twitter.com/MurakamiShinyu)) Vivliostyle Foundation代表
 - [**「マンガでわかるRuby」のCSS組版・制作秘話**](https://docs.google.com/presentation/d/1xeYNsAQgqCOd7F6tYuCrn536-2LKB1FAeqZXHwMPn10/edit?usp=sharing)  
