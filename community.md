@@ -2,7 +2,7 @@
 title: Vivliostyle Community
 ---
 
-- [Vivliostyle on Slack&mdash;You can join now!](https://join.slack.com/t/vivliostyle/shared_invite/enQtNjA3NjU1Mjc5MjM1LWI4NTQyYzU3NWUyMDVjODY5YTE4N2JkMTVkMTM5NTg4MjRkNDBjNTk2YjQ2NDhhODg2NDgxN2JjZWVlYjEyYzY)
+- [Vivliostyle on Slack&mdash;You can join now!](https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
 - [Vivliostyle Forum&mdash;Public group on Facebook {% include icon.html id="facebook" %}](https://www.facebook.com/groups/vivliostyle/)
 - [Vivliostyle Facebook Page {% include icon.html id="facebook" %}](https://www.facebook.com/vivliostyle/)
 - [Vivliostyle on Twitter {% include icon.html id="twitter" %}](https://twitter.com/Vivliostyle)
