@@ -3,7 +3,7 @@ title: Vivliostyle コミュニティ
 lang: ja
 ---
 
-- [Vivliostyle Slack&mdash;ここから参加できます!](https://join.slack.com/t/vivliostyle/shared_invite/enQtNjA3NjU1Mjc5MjM1LTA2OTVmNjk3NzhjOTBiYTg4ZGVhOTg5Yjg2NmNjMzI0ODA0NjA3MWFlZDVkYTI1MzcxMDg1ZmE1ZGEyZGRhNTY)
+- [Vivliostyle Slack&mdash;ここから参加できます!](https://join.slack.com/t/vivliostyle/shared_invite/enQtNjA3NjU1Mjc5MjM1LWI4NTQyYzU3NWUyMDVjODY5YTE4N2JkMTVkMTM5NTg4MjRkNDBjNTk2YjQ2NDhhODg2NDgxN2JjZWVlYjEyYzY)
 - [Vivliostyle Forum&mdash;Facebook公開グループ {% include icon.html id="facebook" %}](https://www.facebook.com/groups/vivliostyle/)
 - [Vivliostyle Facebookページ {% include icon.html id="facebook" %}](https://www.facebook.com/vivliostyle/)
 - [Vivliostyle Twitter {% include icon.html id="twitter" %}](https://twitter.com/Vivliostyle)
