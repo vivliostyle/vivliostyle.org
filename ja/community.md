@@ -4,6 +4,7 @@ lang: ja
 ---
 
 - [Vivliostyle Slack&mdash;ここから参加できます!](https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
+  - [Slack ログの閲覧](https://github.com/vivliostyle/vivliostyle/wiki/Slack)
 - [Vivliostyle Forum&mdash;Facebook公開グループ {% include icon.html id="facebook" %}](https://www.facebook.com/groups/vivliostyle/)
 - [Vivliostyle Facebookページ {% include icon.html id="facebook" %}](https://www.facebook.com/vivliostyle/)
 - [Vivliostyle Twitter {% include icon.html id="twitter" %}](https://twitter.com/Vivliostyle)
