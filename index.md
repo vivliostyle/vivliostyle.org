@@ -7,6 +7,7 @@ aside-type: blog-entries
 #   CSS Typesetting
 feature_image: "/assets/header-image.png"
 excerpt: "open source, web browser based CSS typesetting engine project"
+layout: page
 ---
 
 Vivliostyle is an open source project for a new typesetting engine fitting for digital publishing = web publishing era based on web standard technology.
