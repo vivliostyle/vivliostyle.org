@@ -10,22 +10,23 @@
 
 # 1. Files excluded from Jekyll builds
 exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 # 2. Installed Gems
 plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-default-layout
-- jemoji
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-default-layout
+  - jemoji
 
 # 3. Gem settings
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
@@ -34,7 +35,7 @@ twitter:
 author: Vivliostyle # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Vivliostyle # jekyll-seo-tag > real name
-  links:  # jekyll-seo-tag > social aliases (sameAs)
+  links: # jekyll-seo-tag > social aliases (sameAs)
     - https://twitter.com/Vivliostyle
     - https://www.facebook.com/Vivliostyle
     # - https://www.linkedin.com/in/Vivliostyle
@@ -44,28 +45,24 @@ social: # jekyll-seo-tag > social overrides
 # 4. Jekyll settings
 sass:
   style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+permalink: pretty # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: Asia/Tokyo # Timezone for blog posts and alike
 
 # 6. Jekyll collections settings
 defaults:
-  -
-    values:
+  - values:
       image: "/assets/default-social-image.png" # Default image for sharing
       lang: "en"
-  -
-    scope:
+  - scope:
       path: "/ja/*"
     values:
       lang: "ja"
-  -
-    scope:
+  - scope:
       type: "posts"
     values:
       permalink: /blog/:year/:month/:day/:title/
-  -
-    scope:
+  - scope:
       path: "_posts/ja/*"
       type: "posts"
     values:
@@ -85,38 +82,31 @@ avatarurl: "/assets/vivliostyle-icon.png" # Uses avatars for favicons to get mul
 
 # 8. Site navigation
 navigation_header:
-  -
-    en: Home
+  - en: Home
     ja: ホーム
     url: /
     url_ja: /ja/
-  -
-    en: Samples
+  - en: Samples
     ja: サンプル
     url: /samples/
     url_ja: /ja/samples/
-  -
-    en: Download
+  - en: Download
     ja: ダウンロード
     url: /download/
     url_ja: /ja/download/
-  -
-    en: Docs
+  - en: Docs
     ja: ドキュメント
     url: /docs/
     url_ja: /ja/docs/
-  -
-    en: Community
+  - en: Community
     ja: コミュニティ
     url: /community/
     url_ja: /ja/community/
-  -
-    en: Blog
+  - en: Blog
     ja: ブログ
     url: /blog/
     url_ja: /ja/blog/
-  -
-    en: Search
+  - en: Search
     ja: 検索
     url: /search/
     url_ja: /ja/search/
