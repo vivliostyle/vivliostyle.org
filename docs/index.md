@@ -4,7 +4,7 @@ title: Documentation
 
 - [Vivliostyle Viewer User’s Guide](https://vivliostyle.github.io/vivliostyle.js/docs/en/)
 - [Vivliostyle Viewer README](https://github.com/vivliostyle/vivliostyle/blob/master/packages/viewer/README.md)
-- [Vivliostyle Viewer License](https://github.com/vivliostyle/vivliostyle/blob/master/packages/viewer/LICENSE.md)
+- [Vivliostyle License](https://github.com/vivliostyle/vivliostyle/blob/master/LICENSE.md)
 - [CSS Support Documentation](https://vivliostyle.org/docs/supported-features/)
 - [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/blob/master/CHANGELOG.md)
 - [Vivliostyle Development Guide](https://github.com/vivliostyle/vivliostyle/wiki/Development)
