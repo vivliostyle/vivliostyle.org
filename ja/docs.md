@@ -11,13 +11,13 @@ lang: ja
 
 - [CSS Support Documentation](https://vivliostyle.github.io/vivliostyle.js/docs/en/supported-features.html)
 
-- [Release Notes](https://github.com/vivliostyle/vivliostyle.js/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)
+- [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/blob/master/CHANGELOG.md)
 
-- [Vivliostyle.js README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md)
+- [Vivliostyle.js README](https://github.com/vivliostyle/vivliostyle/blob/master/README.md)
 
-- [Vivliostyle.js Development](https://github.com/vivliostyle/vivliostyle.js/wiki/Development)
+- [Vivliostyle.js Development](https://github.com/vivliostyle/vivliostyle/wiki/Development)
 
-- [Vivliostyle.js API Reference](https://github.com/vivliostyle/vivliostyle.js/blob/master/doc/api.md)
+- [Vivliostyle.js API Reference](https://github.com/vivliostyle/vivliostyle/blob/master/doc/api.md)
 
 - [Vivliostyle-print README](https://github.com/vivliostyle/vivliostyle-print/blob/master/README.md)
 
@@ -25,8 +25,8 @@ lang: ja
 
 ### よくある質問
 
-- [数式（MathML、TeX、AsciiMath）を埋め込むには？](https://github.com/vivliostyle/vivliostyle.js/issues/523)
+- [数式（MathML、TeX、AsciiMath）を埋め込むには？](https://github.com/vivliostyle/vivliostyle/issues/523)
 
-- [本の途中でページ・カウンターをリセットするには？](https://github.com/vivliostyle/vivliostyle.js/issues/522)
+- [本の途中でページ・カウンターをリセットするには？](https://github.com/vivliostyle/vivliostyle/issues/522)
 
 {% include nav-share.html %}

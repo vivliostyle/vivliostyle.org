@@ -66,10 +66,10 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
   - Supported in all browsers
 - [`:first-line` pseudo-element](https://www.w3.org/TR/CSS2/selector.html#first-line-pseudo)
   - Supported in all browsers
-  - Note: there is a bug when used alone or with the universal selector(`*`). [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/133)
+  - Note: there is a bug when used alone or with the universal selector(`*`). [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/133)
 - [`:first-letter` pseudo-element](https://www.w3.org/TR/CSS2/selector.html#first-letter)
   - Supported in all browsers
-  - Note: there is a bug when used alone, with the universal selector(`*`), or with non-ascii characters. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/34)
+  - Note: there is a bug when used alone, with the universal selector(`*`), or with non-ascii characters. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/34)
 - [`:before` and `:after` pseudo-elements](https://www.w3.org/TR/CSS2/selector.html#before-and-after)
   - Supported in all browsers
 
@@ -119,10 +119,10 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
   - Supported in all browsers
 - [`::first-line` pseudo-element](https://www.w3.org/TR/css3-selectors/#first-line)
   - Supported in all browsers
-  - Note: there is a bug when used alone or with the universal selector(`*`). [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/133)
+  - Note: there is a bug when used alone or with the universal selector(`*`). [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/133)
 - [`::first-letter` pseudo-element](https://www.w3.org/TR/css3-selectors/#first-letter)
   - Supported in all browsers
-  - Note: there is a bug when used alone, with the universal selector(`*`), or with non-ascii characters. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/34)
+  - Note: there is a bug when used alone, with the universal selector(`*`), or with non-ascii characters. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/34)
 - [`::before` and `::after` pseudo-elements](https://www.w3.org/TR/css3-selectors/#gen-content)
   - Supported in all browsers
 - [General sibling combinator `E ~ F`](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators)
@@ -204,22 +204,22 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
 - [background-attachment](https://www.w3.org/TR/CSS2/colors.html#propdef-background-attachment)
   - Supports [CSS Backgrounds 3 syntax](https://www.w3.org/TR/css3-background/#background-attachment)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-color](https://www.w3.org/TR/CSS2/colors.html#propdef-background-color)
   - Supports [CSS Backgrounds 3 syntax](https://www.w3.org/TR/css3-background/#background-color)
   - Support depends on browser capabilities
 - [background-image](https://www.w3.org/TR/CSS2/colors.html#propdef-background-image)
   - Supports [CSS Backgrounds 3 syntax](https://www.w3.org/TR/css3-background/#background-image)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-position](https://www.w3.org/TR/CSS2/colors.html#propdef-background-position)
   - Supports [CSS Backgrounds 3 syntax](https://www.w3.org/TR/css3-background/#background-position)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-repeat](https://www.w3.org/TR/CSS2/colors.html#propdef-background-repeat)
   - Supports [CSS Backgrounds 3 syntax](https://www.w3.org/TR/css3-background/#background-repeat)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [border](https://www.w3.org/TR/CSS2/box.html#propdef-border)
   - Support depends on browser capabilities
 - [border-bottom](https://www.w3.org/TR/CSS2/box.html#propdef-border-bottom)
@@ -374,7 +374,7 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
   - Support depends on browser capabilities
 - [quotes](https://www.w3.org/TR/CSS2/generate.html#propdef-quotes)
   - Supported in all browsers
-  - Note: not supported within `@page` rules. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/43)
+  - Note: not supported within `@page` rules. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/43)
 - [right](https://www.w3.org/TR/CSS2/visuren.html#propdef-right)
   - Support depends on browser capabilities
 - [table-layout](https://www.w3.org/TR/CSS2/tables.html#propdef-table-layout)
@@ -432,30 +432,30 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
   - Support depends on browser capabilities
 - [background-attachment](https://www.w3.org/TR/css3-background/#background-attachment)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-clip](https://www.w3.org/TR/css3-background/#background-clip)
   - Allowed prefixes: webkit
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-color](https://www.w3.org/TR/css3-background/#background-color)
   - Support depends on browser capabilities
 - [background-image](https://www.w3.org/TR/css3-background/#background-image)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-origin](https://www.w3.org/TR/css3-background/#background-origin)
   - Allowed prefixes: webkit
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-position](https://www.w3.org/TR/css3-background/#background-position)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-repeat](https://www.w3.org/TR/css3-background/#background-repeat)
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [background-size](https://www.w3.org/TR/css3-background/#background-size)
   - Allowed prefixes: webkit
   - Support depends on browser capabilities
-  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/22)
+  - Note: behavior when used within `@page` rules is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/22)
 - [border](https://www.w3.org/TR/css3-background/#border)
   - Support depends on browser capabilities
 - [border-bottom](https://www.w3.org/TR/css3-background/#border-bottom)
@@ -634,13 +634,13 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
 
 - [break-after](https://www.w3.org/TR/css3-multicol/#break-after)
   - Supported in all browsers
-  - Note: behavior when multiple forced break values coincide at a single break point is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/129)
+  - Note: behavior when multiple forced break values coincide at a single break point is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/129)
 - [break-before](https://www.w3.org/TR/css3-multicol/#break-before)
   - Supported in all browsers
-  - Note: behavior when multiple forced break values coincide at a single break point is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/129)
+  - Note: behavior when multiple forced break values coincide at a single break point is not compliant to the spec. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/129)
 - [break-inside](https://www.w3.org/TR/css3-multicol/#break-inside)
   - Supported in all browsers
-  - Note: All of `avoid-page`, `avoid-column` and `avoid-region` values are treated as if they were `avoid`. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/128)
+  - Note: All of `avoid-page`, `avoid-column` and `avoid-region` values are treated as if they were `avoid`. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/128)
 - [column-count](https://www.w3.org/TR/css3-multicol/#column-count)
   - Allowed prefixes: moz, webkit
   - Supported in all browsers
@@ -759,7 +759,7 @@ Properties where <quote>Allowed prefixes</quote> is indicated may be used with a
   - Supported in all browsers
 - [break-inside](https://www.w3.org/TR/css3-multicol/#break-inside)
   - Supported in all browsers
-  - Note: All of `avoid-page`, `avoid-column` and `avoid-region` values are treated as if they were `avoid`. [[Issue]](https://github.com/vivliostyle/vivliostyle.js/issues/128)
+  - Note: All of `avoid-page`, `avoid-column` and `avoid-region` values are treated as if they were `avoid`. [[Issue]](https://github.com/vivliostyle/vivliostyle/issues/128)
 - [orphans](https://www.w3.org/TR/css3-break/#propdef-orphans)
   - Supported in all browsers
 - [widows](https://www.w3.org/TR/css3-break/#propdef-widows)

@@ -112,7 +112,7 @@ navigation_header:
     url_ja: /ja/search/
 
 navigation_footer:
-  Vivliostyle on GitHub: https://github.com/vivliostyle/vivliostyle.js
+  Vivliostyle on GitHub: https://github.com/vivliostyle/vivliostyle
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/Vivliostyle

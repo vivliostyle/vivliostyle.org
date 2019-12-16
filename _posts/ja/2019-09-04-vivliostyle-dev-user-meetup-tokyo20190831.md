@@ -13,16 +13,16 @@ author: murakami
 - [**「Vivliostyle開発のこれまでと、これからへ」**](http://bit.ly/vivdev20190831)  
     by 村上真雄([@MurakamiShinyu](https://twitter.com/MurakamiShinyu)) Vivliostyle Foundation代表
 
-Vivliostyle の開発課題(issue)を [GitHub Projects - vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js/projects) で、課題カテゴリーごとのプロジェクトにまとめたので、ミーティング参加者にどのプロジェクトが重要か聞きました（複数回答）。結果は以下：
+Vivliostyle の開発課題(issue)を [GitHub Projects - vivliostyle.js](https://github.com/vivliostyle/vivliostyle/projects) で、課題カテゴリーごとのプロジェクトにまとめたので、ミーティング参加者にどのプロジェクトが重要か聞きました（複数回答）。結果は以下：
 
-- [Bugs](https://github.com/vivliostyle/vivliostyle.js/projects/5): 7人
-- [PDF printing](https://github.com/vivliostyle/vivliostyle.js/projects/2): 7人
-- [Input formats](https://github.com/vivliostyle/vivliostyle.js/projects/3): 7人
-- [Paged media](https://github.com/vivliostyle/vivliostyle.js/projects/1): 15人
-- [Typography](https://github.com/vivliostyle/vivliostyle.js/projects/4): 8人
-- [Layout enhancement](https://github.com/vivliostyle/vivliostyle.js/projects/6): 10人
-- [Web standards](https://github.com/vivliostyle/vivliostyle.js/projects/7): 7人
-- [Other improvements](https://github.com/vivliostyle/vivliostyle.js/projects/8):
+- [Bugs](https://github.com/vivliostyle/vivliostyle/projects/5): 7人
+- [PDF printing](https://github.com/vivliostyle/vivliostyle/projects/2): 7人
+- [Input formats](https://github.com/vivliostyle/vivliostyle/projects/3): 7人
+- [Paged media](https://github.com/vivliostyle/vivliostyle/projects/1): 15人
+- [Typography](https://github.com/vivliostyle/vivliostyle/projects/4): 8人
+- [Layout enhancement](https://github.com/vivliostyle/vivliostyle/projects/6): 10人
+- [Web standards](https://github.com/vivliostyle/vivliostyle/projects/7): 7人
+- [Other improvements](https://github.com/vivliostyle/vivliostyle/projects/8):
   - Improved error handling (more stable): 5人
   - UI multilingualization: 3人
   - Search function: 3人
