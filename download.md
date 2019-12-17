@@ -3,8 +3,8 @@ title: Download
 ---
 
 - [**Vivliostyle Viewer**](https://vivliostyle.org/viewer)
-  - [Download Stable Release (2019.8.101)](https://github.com/vivliostyle/vivliostyle/releases/download/2019.8.101/vivliostyle-js-2019.8.101.zip)  
-     ([Release notes](https://github.com/vivliostyle/vivliostyle/releases))
+  - [Download Stable Release](/downloads/vivliostyle-latest.zip)  
+     ([Release notes](https://github.com/vivliostyle/vivliostyle/releases/latest))
   - [Download Development Release (canary)](https://vivliostyle.github.io/viewer/vivliostyle-canary.zip)  
      ([Change Log](https://github.com/vivliostyle/vivliostyle/tree/master/CHANGELOG.md))
   - [User's Guide](https://vivliostyle.org/docs/user-guide)
