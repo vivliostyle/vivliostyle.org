@@ -2,7 +2,7 @@
 title: Download
 ---
 
-- [**Vivliostyle Viewer**](https://vivliostyle.org/viewer) (Vivliostyle Core + Vivliostyle Viewer)
+- [**Vivliostyle Viewer**](https://vivliostyle.org/viewer)
   - [Download Stable Release (2019.8.101)](https://github.com/vivliostyle/vivliostyle/releases/download/2019.8.101/vivliostyle-js-2019.8.101.zip)  
      ([Release notes](https://github.com/vivliostyle/vivliostyle/releases))
   - [Download Development Release (canary)](https://vivliostyle.github.io/viewer/vivliostyle-canary.zip)  

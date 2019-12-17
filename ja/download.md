@@ -3,7 +3,7 @@ title: ダウンロード
 lang: ja
 ---
 
-- [**Vivliostyle Viewer**](https://vivliostyle.org/viewer) (Vivliostyle Core + Vivliostyle Viewer)
+- [**Vivliostyle Viewer**](https://vivliostyle.org/viewer)
   - [最新リリース版のダウンロード (2019.8.101)](https://github.com/vivliostyle/vivliostyle/releases/download/2019.8.101/vivliostyle-js-2019.8.101.zip)  
      ([Release notes](https://github.com/vivliostyle/vivliostyle/releases))
   - [最新開発版のダウンロード (canary)](https://vivliostyle.github.io/viewer/vivliostyle-canary.zip)  
