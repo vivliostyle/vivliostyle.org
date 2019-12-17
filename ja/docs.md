@@ -3,14 +3,15 @@ title: ドキュメント
 lang: ja
 ---
 
-- [Vivliostyle Viewer ユーザーガイド(日本語)](https://vivliostyle.github.io/vivliostyle.js/docs/ja/)
-- [Vivliostyle Viewer README (日本語)](https://github.com/vivliostyle/vivliostyle-ui/blob/master/dist/README.ja.md)
-- [Vivliostyle License](https://github.com/vivliostyle/vivliostyle/blob/master/LICENSE.md)
-- [CSS Support Documentation](https://vivliostyle.org/docs/supported-features/)
-- [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/blob/master/CHANGELOG.md)
-- [Vivliostyle Development Guide](https://github.com/vivliostyle/vivliostyle/wiki/Development)
-- [Vivliostyle API Reference](https://vivliostyle.org/docs/api/)
-- [Vivliostyle CLI README](https://github.com/vivliostyle/vivliostyle-cli/blob/master/README.md)
+- [Vivliostyle ユーザーガイド (日本語)](/ja/docs/user-guide)
+- [Vivliostyle Viewer README (日本語)](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer/README.ja.md)
+- [CSS Support Documentation](/docs/supported-features)
+- [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/tree/master/CHANGELOG.md)
+- [Development Guide](https://github.com/vivliostyle/vivliostyle/wiki/Development)
+- [API Reference](/docs/api/)
+- [Vivliostyle CLI Documentation](https://github.com/vivliostyle/vivliostyle-cli/tree/master/README.md)
+- [vivliostyle-print Documentation](https://github.com/vivliostyle/vivliostyle-print/tree/master/README.md)
+- [Vivliostyle License](https://github.com/vivliostyle/vivliostyle/tree/master/LICENSE.md)
 
 ### よくある質問
 
