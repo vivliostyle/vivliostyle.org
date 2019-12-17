@@ -33,6 +33,7 @@ are made with the following steps:
 Create the markdown file `2018-10-03-vivliostyle-print.md` in the `_posts` directory.
 
 The markdown file begins with:
+
 ```
 ---
 title: On Vivliostyle-print
@@ -56,6 +57,7 @@ johannes:
 Create the markdown file `2018-10-03-vivliostyle-print.md` (same file name as the English version) in the `_posts/ja` directory.
 
 The markdown file begins with:
+
 ```
 ---
 title: Vivliostyle-print について
@@ -67,4 +69,3 @@ author: johannes
 #### Images
 
 To include images in the blog post, put the image files in the directory with same name of the blog post file name in the `/assets/posts/` directory. For example, image files in the blog post `2018-11-12-interview-by-fiduswriter` are placed in the directory `/assets/posts/2018-11-12-interview-by-fiduswriter/`.
-

@@ -305,7 +305,7 @@ const htmlDoc = `<!doctype html>
 
 const config = {
   title: "My printed page",
-  printCallback: iframeWin => iframeWin.print() // optional: only needed if calling something other than window.print() for printing.
+  printCallback: (iframeWin) => iframeWin.print(), // optional: only needed if calling something other than window.print() for printing.
 };
 
 printHTML(htmlDoc, config);

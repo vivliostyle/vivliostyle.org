@@ -1,9 +1,11 @@
 ---
-title: Documentation
+title: ドキュメント
+lang: ja
 ---
 
-- [Vivliostyle User’s Guide](/docs/user-guide)
-- [CSS Support Documentation](/docs/supported-features/)
+- [Vivliostyle Viewer ユーザーガイド (日本語)](/ja/docs/user-guide)
+- [Vivliostyle Viewer README (日本語)](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer/README.ja.md)
+- [CSS Support Documentation](/docs/supported-features)
 - [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/blob/master/CHANGELOG.md)
 - [Development Guide](https://github.com/vivliostyle/vivliostyle/wiki/Development)
 - [API Reference](/docs/api/)
@@ -12,9 +14,9 @@ title: Documentation
 - [vivliostyle-print Documentation](https://github.com/vivliostyle/vivliostyle-print/tree/master/README.md)
 - [Vivliostyle License](https://github.com/vivliostyle/vivliostyle/tree/master/LICENSE.md)
 
-### Frequently Asked Questions
+### よくある質問
 
-- [How to embed math (MathML, TeX, or AsciiMath)?](https://github.com/vivliostyle/vivliostyle/issues/523)
-- [How to reset page counter in a book?](https://github.com/vivliostyle/vivliostyle/issues/522)
+- [数式（MathML、TeX、AsciiMath）を埋め込むには？](https://github.com/vivliostyle/vivliostyle/issues/523)
+- [本の途中でページ・カウンターをリセットするには？](https://github.com/vivliostyle/vivliostyle/issues/522)
 
 {% include nav-share.html %}

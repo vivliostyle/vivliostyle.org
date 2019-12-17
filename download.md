@@ -2,17 +2,16 @@
 title: Download
 ---
 
-- [**Vivliostyle Viewer**](https://vivliostyle.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html)
-    - [Download Latest Release Version (2019.8.101)](https://github.com/vivliostyle/vivliostyle/releases/download/2019.8.101/vivliostyle-js-2019.8.101.zip)  
-        ([Release notes](https://github.com/vivliostyle/vivliostyle/releases))
-    - [Download Latest Development Version)](https://vivliostyle.github.io/vivliostyle.js/downloads/vivliostyle-js-latest.zip)  
-        ([Change Log](https://github.com/vivliostyle/vivliostyle/blob/master/CHANGELOG.md))
-    - [User's Guide](https://vivliostyle.github.io/vivliostyle.js/docs/en/)
-- [Vivliostyle on GitHub](https://github.com/vivliostyle/vivliostyle)
-    - [vivliostyle on npm](https://www.npmjs.com/package/vivliostyle)
-- [Vivliostyle-print on GitHub](https://github.com/vivliostyle/vivliostyle-print)
-    - [vivliostyle-print on npm](https://www.npmjs.com/package/vivliostyle-print)
-- [Vivliostyle CLI (savepdf) on GitHub](https://github.com/vivliostyle/vivliostyle-cli)
-    - [vivliostyle-cli on npm](https://www.npmjs.com/package/vivliostyle-savepdf)
+- [**Vivliostyle Viewer**](https://vivliostyle.org/viewer) (Vivliostyle Core + Vivliostyle Viewer)
+  - [Download Stable Release (2019.8.101)](https://github.com/vivliostyle/vivliostyle/releases/download/2019.8.101/vivliostyle-js-2019.8.101.zip)  
+     ([Release notes](https://github.com/vivliostyle/vivliostyle/releases))
+  - [Download Development Release (canary)](https://vivliostyle.github.io/viewer/vivliostyle-canary.zip)  
+     ([Change Log](https://github.com/vivliostyle/vivliostyle/tree/master/CHANGELOG.md))
+  - [User's Guide](https://vivliostyle.org/docs/user-guide)
+- Vivliostyle [GitHub](https://github.com/vivliostyle/vivliostyle) [npm](https://www.npmjs.com/org/vivliostyle)
+  - Vivliostyle Core [GitHub](https://github.com/vivliostyle/vivliostyle/tree/master/packages/core) [npm](https://www.npmjs.com/package/@vivliostyle/core)
+  - Vivliostyle Viewer [GitHub](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer) [npm](https://www.npmjs.com/package/@vivliostyle/viewer)
+- Vivliostyle CLI [GitHub](https://github.com/vivliostyle/vivliostyle-cli) [npm](https://www.npmjs.com/package/vivliostyle-cli)
+- vivliostyle-print [GitHub](https://github.com/vivliostyle/vivliostyle-print) [npm](https://www.npmjs.com/package/vivliostyle-print)
 
 {% include nav-share.html %}
