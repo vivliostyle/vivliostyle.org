@@ -16,7 +16,7 @@ Vivliostyle is an open source project for a new typesetting engine fitting for d
 - Implementing CSS typesetting features with JavaScript
 - Cooperating with the W3C standardization of CSS typesetting specifications, and advancing implementation
 
-☞ Check the latest [**Vivliostyle Viewer**](https://vivliostyle.org/viewer)
+☞ Check the latest [**Vivliostyle Viewer**](https://vivliostyle.org/viewer/)
 
 ## About Vivliostyle Foundation
 

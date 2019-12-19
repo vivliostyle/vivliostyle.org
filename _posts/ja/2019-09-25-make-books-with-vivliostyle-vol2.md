@@ -11,7 +11,7 @@ author:
 ](https://techbookfest.org/event/tbf07/circle/5649899693539328) の同人誌**『Vivliostyle で本を作ろう Vol.2』**の全篇を公開します。
 👉[Vivliostyle サンプル](/ja/samples/)
 
-[![『Vivliostyle で本を作ろう Vol. 2』](/samples/images/vug-vol2.png) Vivliostyle Viewer で閲覧](https://vivliostyle.org/viewer#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html&renderAllPages=true)  
+[![『Vivliostyle で本を作ろう Vol. 2』](/samples/images/vug-vol2.png) Vivliostyle Viewer で閲覧](https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html&renderAllPages=true)  
 [通常のウェブページとして閲覧 (Raw HTML)](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html)
 
 ソースは GitHub に公開：

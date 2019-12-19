@@ -3,7 +3,7 @@ title: ドキュメント
 lang: ja
 ---
 
-- [Vivliostyle ユーザーガイド (日本語)](/ja/docs/user-guide)
+- [Vivliostyle ユーザーガイド (日本語)](/ja/docs/user-guide/)
 - [Vivliostyle Viewer README (日本語)](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer/README.ja.md)
 - [CSS Support Documentation](/docs/supported-features)
 - [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/tree/master/CHANGELOG.md)

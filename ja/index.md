@@ -16,7 +16,7 @@ Vivliostyle は、電子出版＝ Web 出版の時代にマッチする新しい
 - CSS 組版機能を JavaScript で実装
 - CSS 組版関連仕様の W3C 標準化と連携して実装を推進
 
-☞ Check the latest [**Vivliostyle Viewer**](https://vivliostyle.org/viewer)
+☞ Check the latest [**Vivliostyle Viewer**](https://vivliostyle.org/viewer/)
 
 ## Vivliostyle Foundation について
 
