@@ -2,7 +2,7 @@
 title: Documentation
 ---
 
-- [Vivliostyle User’s Guide](/docs/user-guide/)
+- [Vivliostyle User’s Guide](https://vivliostyle.github.io/vivliostyle.js/docs/en/)
 - [Vivliostyle Viewer README](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer/README.md)
 - [CSS Support Documentation](/docs/supported-features/)
 - [Release Notes](https://github.com/vivliostyle/vivliostyle/releases) / [Change Log](https://github.com/vivliostyle/vivliostyle/tree/master/CHANGELOG.md)
