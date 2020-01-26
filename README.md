@@ -2,8 +2,6 @@
 
 This is the source for the [vivliostyle.org](https://vivliostyle.org/) web site.
 
-**Note:** This site was made using a Jekyll theme [Alembic](https://github.com/daviddarnes/alembic/)
-
 ### Install on local environment
 
 ```
