@@ -37,6 +37,15 @@ Vivliostyle は、電子出版＝ Web 出版の時代にマッチする新しい
 <div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].ja }}</a></strong>&ensp;({{ site.data.people[a].role_ja }})</div>
 {% endfor %}
 </div>
-<br>
+
+---------
+
+| 名称 | 一般社団法人ビブリオスタイル (Vivliostyle Foundation) |
+| 所在地 | 〒336-0015 埼玉県さいたま市南区太田窪1941-84 |
+| 代表者 | 代表理事　村上 真雄 (MURAKAMI Shinyu) |
+| 連絡先(電話) | 090-3688-2212 |
+| 連絡先(メール) | mail@vivliostyle.org |
+
+---------
 
 {% include nav-share.html %}
