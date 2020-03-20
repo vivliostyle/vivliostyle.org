@@ -33,7 +33,7 @@
   </head>
   <body data-vivliostyle-viewer-status="loading" data-bind="event: {keydown: handleKey}, attr: {'data-vivliostyle-viewer-status': viewer.state.status, 'aria-busy': viewer.state.status()=='loading'}">
     <section id="vivliostyle-welcome" hidden data-bind="visible: !viewer.state.status(), attr: {hidden: !!viewer.state.status(), 'aria-hidden': viewer.state.status()?'true':'false'}, click: navigation.onclickViewport, swipePages: true">
-      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.0.0-pre.8)</small></h1>
+      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.0.0-pre.9)</small></h1>
       <input id="vivliostyle-input-url" type="text" placeholder="Input a document URL" data-bind="textInput: viewer.inputUrl"/>
       <div id="vivliostyle-input-options">
         <label><input id="vivliostyle-book-mode" type="checkbox" data-bind="checked: settingsPanel.state.bookMode, disable: settingsPanel.isBookModeChangeDisabled" />&nbsp;<b>Book Mode</b></label>&emsp;
@@ -45,7 +45,7 @@
         <li>HTML documents, with CSS for paged media</li>
         <li>Book-like publications, with Table of Contents (<b>Book Mode</b>:&nbsp;On)</span>
           <ul>
-            <li>Web publications (a collection of HTML documents): specify URL of the primary entry page or manifest file.</li>
+            <li>Web publications (a collection of HTML documents): specify URL of the first HTML or the manifest file.</li>
             <li>Unzipped EPUB: specify URL of OPF file or top directory of the unzipped EPUB files.</li>
           </ul>
         </li>
@@ -267,7 +267,7 @@
             </div>
             <aside class="vivliostyle-menu-detail-aside">
               <div><small>Powered by</small> <a href="https://vivliostyle.org"><strong>Vivliostyle</strong></a> </div>
-              <div class="version"><small>(<span>Core: 2.0.0-pre.8,</span> <span>UI: 2.0.0-pre.8</span>)</small></div>
+              <div class="version"><small>(<span>Core: 2.0.0-pre.9,</span> <span>UI: 2.0.0-pre.9</span>)</small></div>
             </aside>
           </div>
         </li>

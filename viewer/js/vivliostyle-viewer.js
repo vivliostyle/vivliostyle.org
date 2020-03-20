@@ -1,5 +1,5 @@
 /**
- * @vivliostyle/viewer v2.0.0-pre.8
+ * @vivliostyle/viewer v2.0.0-pre.9
  * Vivliostyle Viewer UI component, for rich paged viewing and printing in browser.
  *
  * @author Vivliostyle Foundation
