@@ -33,7 +33,7 @@
   </head>
   <body data-vivliostyle-viewer-status="loading" data-bind="event: {keydown: handleKey}, attr: {'data-vivliostyle-viewer-status': viewer.state.status, 'aria-busy': viewer.state.status()=='loading'}">
     <section id="vivliostyle-welcome" hidden data-bind="visible: !viewer.state.status(), attr: {hidden: !!viewer.state.status(), 'aria-hidden': viewer.state.status()?'true':'false'}, click: navigation.onclickViewport, swipePages: true">
-      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.0.0-pre.9)</small></h1>
+      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.0.0-pre.10)</small></h1>
       <input id="vivliostyle-input-url" type="text" placeholder="Input a document URL" data-bind="textInput: viewer.inputUrl"/>
       <div id="vivliostyle-input-options">
         <label><input id="vivliostyle-book-mode" type="checkbox" data-bind="checked: settingsPanel.state.bookMode, disable: settingsPanel.isBookModeChangeDisabled" />&nbsp;<b>Book Mode</b></label>&emsp;
@@ -86,11 +86,12 @@
         <li><span>&amp;<b>userStyle</b>=&lt;user style sheet URL&gt;</span></li>
       </ul>
       <p>Options can also be set in the <a href="#" data-bind="click: settingsPanel.toggle">Settings</a> panel.</p>
-      <p>For more details, see documentation on <a href="https://vivliostyle.org"><strong>Vivliostyle.org</strong></a>.</p>
+      <p>For more details, see documentation:</p>
       <ul>
-        <li><a href="https://docs.vivliostyle.org/#/user-guide">User Guide</a></li>
-        <li><a href="https://docs.vivliostyle.org/#/ja/user-guide">ユーザーガイド (日本語)</a></li>
+        <li><a href="../docs/#/user-guide">Vivliostyle User Guide</a></li>
+        <li><a href="../docs/#/ja/user-guide">Vivliostyle ユーザーガイド (日本語)</a></li>
       </ul>
+      <p><a href="https://vivliostyle.org"><img src="https://vivliostyle.org/assets/vivliostyle-logo.svg" alt="Vivliostyle"/></a></p>
     </section>
     <div id="vivliostyle-viewer-viewport" data-vivliostyle-viewer-viewport="true" role="main" tabindex="0" data-bind="attr: {'data-vivliostyle-page-progression': viewer.state.pageProgression}, click: navigation.onclickViewport, swipePages: true"></div>
     <span role="button" id="vivliostyle-page-navigation-left" title="navigate to left" aria-keyshortcuts="ArrowLeft" data-bind="click: navigation.navigateToLeft, css: {'vivliostyle-menu-enabled': !navigation.isNavigateToLeftDisabled()}, attr: {'aria-disabled': navigation.isNavigateToLeftDisabled}"></span>
@@ -267,7 +268,7 @@
             </div>
             <aside class="vivliostyle-menu-detail-aside">
               <div><small>Powered by</small> <a href="https://vivliostyle.org"><strong>Vivliostyle</strong></a> </div>
-              <div class="version"><small>(<span>Core: 2.0.0-pre.9,</span> <span>UI: 2.0.0-pre.9</span>)</small></div>
+              <div class="version"><small>(<span>Core: 2.0.0-pre.10,</span> <span>UI: 2.0.0-pre.10</span>)</small></div>
             </aside>
           </div>
         </li>
