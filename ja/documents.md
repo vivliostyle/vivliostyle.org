@@ -31,8 +31,7 @@ lang: ja
 ## リファレンス
 
 - [API リファレンス](https://docs.vivliostyle.org/#/ja/api)
-- [サポートする機能](https://docs.vivliostyle.org/#/ja/supported-features)
-- [利用可能なプロパティ](https://docs.vivliostyle.org/#/ja/available-properties)
+- [サポートする CSS 機能](https://docs.vivliostyle.org/#/ja/supported-css-features)
 {% endcapture %}
 
 

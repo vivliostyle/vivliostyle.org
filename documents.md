@@ -30,8 +30,7 @@ title: Documents
 ## Reference
 
 - [API Reference](https://docs.vivliostyle.org/#/api)
-- [Supported Features](https://docs.vivliostyle.org/#/supported-features)
-- [Available Properties](https://docs.vivliostyle.org/#/available-properties)
+- [Supported CSS Features](https://docs.vivliostyle.org/#/supported-css-features)
 {% endcapture %}
 
 
