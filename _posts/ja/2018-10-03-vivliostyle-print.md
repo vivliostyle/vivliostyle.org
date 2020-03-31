@@ -3,6 +3,8 @@ title: Vivliostyle-print について
 lang: ja
 permalink: /ja/blog/2018/10/03/vivliostyle-print/
 author: johannes
+tags:
+  - Vivliostyle-print
 ---
 
 *（[英語元記事](/blog/2018/10/03/vivliostyle-print/) からの日本語訳）*

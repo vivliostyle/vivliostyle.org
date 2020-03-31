@@ -5,6 +5,8 @@ permalink: /ja/blog/2018/11/12/interview-by-fiduswriter/
 author:
  - murakami
  - johannes
+tags:
+  - Fidus Writer
 ---
 
 <div style="float: right"><a href="https://www.fiduswriter.org/2018/11/09/shinyu-murakami-on-vivliostyle-and-the-state-of-webbased-publishing/"><img src="/assets/posts/2018-11-12-interview-by-fiduswriter/fiduswriterweb1.png" alt="Fidus Writer サイトの元記事" /></a></div>

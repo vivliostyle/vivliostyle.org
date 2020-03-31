@@ -4,6 +4,8 @@ lang: ja
 permalink: /ja/blog/2018/11/22/introduction-of-viola/
 author:
   - spring_raining
+tags:
+  - Viola
 ---
 
 はじめまして、Vivliostyle プロジェクト コラボレーターの<a href="https://github.com/spring-raining">spring-raining</a>です。今回は Vivliostyle を活用して私が制作したオンラインエディタ、**Viola** についてご紹介したいと思います。

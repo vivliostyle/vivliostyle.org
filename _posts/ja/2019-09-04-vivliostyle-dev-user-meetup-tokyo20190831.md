@@ -2,6 +2,8 @@
 title: Vivliostyle 開発者とユーザーの集い 2019夏 開催しました！
 lang: ja
 author: murakami
+tags:
+  - イベント
 ---
 
 2019年8月31日（土）、[〈CSS組版 Vivliostyle 開発者とユーザーの集い 2019夏〉](https://connpass.com/event/141767/)イベントを、Vivliostyleユーザー会／Vivliostyle Foundation の主催、JAGAT XMLパブリッシング研究会の協力により、開催いたしました。参加・協力してくれたみなさま、ありがとうございます！

@@ -2,6 +2,8 @@
 title: Introduction of Viola — Online editor for printing and publishing
 author:
   - spring_raining
+tags:
+  - Viola
 ---
 
 Hello! I'm <a href="https://github.com/spring-raining">spring-raining</a>, a Vivliostyle project collaborator. In this entry, I'll introduce **Viola**, which is an online editor using Vivliostyle.

@@ -1,6 +1,8 @@
 ---
 title: On Vivliostyle-print
 author: johannes
+tags:
+  - Vivliostyle-print
 ---
 
 *An interview with myself about the new package Vivliostyle-print*

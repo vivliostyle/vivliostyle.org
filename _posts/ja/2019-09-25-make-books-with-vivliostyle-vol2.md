@@ -5,6 +5,8 @@ image: /samples/images/vug-vol2.png
 author:
   - spring_raining
   - murakami
+tags:
+  - 同人誌
 ---
 
 9 月 22 日に開催された [技術書典 7](https://techbookfest.org/event/tbf07) に出展した [Vivliostyle ユーザー会
