@@ -1,0 +1,6 @@
+.container {
+  .avatar {
+    @include thumbnail(100px, 100px);
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,81 @@
+@mixin frame {
+  width: 100%;
+  border: 2px solid $gray_lighter;
+  border-radius: $border-radius;
+  font-size: $body_font_size;
+  color: $text_color;
+  text-align: left;
+
+  @include headings {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.container {
+  .frame--large {
+    @include frame;
+
+    padding: 60px 80px;
+  }
+
+  .frame--medium {
+    @include frame;
+
+    padding: 40px 60px;
+
+    .heading__link {
+      display: none;
+    }
+  }
+
+  .frame--small {
+    @include frame;
+
+    padding: 30px;
+
+    .heading__link {
+      display: none;
+    }
+  }
+
+  .frame__contents {
+    @include list_row($gap_large, false);
+
+    justify-content: space-between;
+  }
+
+  .frame__link {
+    color: unset;
+    font-weight: unset;
+    text-decoration: unset;
+  }
+
+  .frame__thumbnail {
+    @include thumbnail(210px, auto);
+  }
+
+  @include media_medium {
+    // 縦並びにする
+    .frame__contents {
+      @include list_column($gap_large, false);
+
+      // 横いっぱいに広げる
+      .thumbnail {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @include media_small {
+    .frame--large {
+      padding: 60px 20px;
+    }
+
+    .frame--medium {
+      padding: 40px 20px;
+    }
+  }
+}

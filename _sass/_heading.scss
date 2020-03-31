@@ -1,0 +1,120 @@
+@mixin heading {
+  position: relative;
+  line-height: $heading_line_height;
+}
+
+.container {
+  // 見出しリンク（JSで自動付与）
+  .heading__link {
+    position: absolute;
+    transform: rotate(45deg);
+    font-family: $icon_font;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $gray_lighter;
+    }
+
+    &:hover {
+      color: $gray_light;
+    }
+
+    &:before {
+      content: "\F339";
+    }
+  }
+
+  h1 {
+    @include heading;
+
+    font-size: $h1_font_size;
+    font-weight: $bold_font_weight;
+    margin: 64px 0 30px;
+
+    .heading__link {
+      left: -60px;
+    }
+  }
+
+  h2 {
+    @include heading;
+
+    font-size: $h2_font_size;
+    font-weight: $bold_font_weight;
+    margin: 64px 0 30px;
+
+    .heading__link {
+      left: -60px;
+    }
+  }
+
+  h3 {
+    @include heading;
+
+    font-size: $h3_font_size;
+    font-weight: $bold_font_weight;
+    margin: 30px 0 20px;
+
+    .heading__link {
+      left: -50px;
+    }
+  }
+
+  h4 {
+    @include heading;
+
+    font-size: $h4_font_size;
+    font-weight: $regular_font_weight;
+    margin: 20px 0 5px;
+
+    .heading__link {
+      left: -44px;
+    }
+  }
+
+  h5 {
+    @include heading;
+
+    font-size: $h5_font_size;
+    font-weight: $regular_font_weight;
+
+    .heading__link {
+      left: -38px;
+    }
+  }
+
+  h6 {
+    @include heading;
+
+    font-size: $h6_font_size;
+    font-weight: $bold_font_weight;
+
+    .heading__link {
+      left: -34px;
+    }
+  }
+
+  @include media_large {
+    // サイズを小さくする
+    @include headings {
+      .heading__link {
+        left: -40px;
+        font-size: 30px;
+      }
+    }
+
+    h2 .heading__link {
+      top: 10px;
+    }
+  }
+
+  @include media_small {
+    @include headings {
+      .heading__link {
+        left: 0;
+        top: -40px;
+      }
+    }
+  }
+}

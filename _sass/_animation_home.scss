@@ -1,0 +1,159 @@
+@mixin animation_bar {
+  flex: auto;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $gray_light;
+  background-size: 200%;
+  background-position: 100% 0%;
+
+  @include media_small {
+    display: none;
+  }
+}
+
+.page_home {
+  #animation--flow {
+    @include list_row(0px, false);
+
+    justify-content: center;
+
+    .animation__img {
+      max-width: 340px;
+      margin-bottom: 40px;
+      transform: scale(0);
+    }
+
+    .animation__line {
+      @include list_row(0px);
+
+      align-items: center;
+    }
+
+    .animation__label {
+      padding: 10px 20px;
+      margin: 0 20px;
+      background-color: $gray_light;
+      color: $white;
+      font-weight: $bold_font_weight;
+      font-size: $button_large_font_size;
+    }
+
+    .animation__bar--none {
+      @include animation_bar;
+
+      background-color: transparent;
+    }
+
+    .animation__bar--left {
+      @include animation_bar;
+
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .animation__bar--right {
+      @include animation_bar;
+
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @keyframes img__appeal {
+      0% { transform: scale(0); }
+      80% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes step1__changecolor {
+      0% { background-color: $blue_dark; }
+      100% { background-color: $blue_dark; }
+    }
+
+    @keyframes step2__changecolor {
+      0% { background-color: $black; }
+      100% { background-color: $black; }
+    }
+
+    @keyframes step3__changecolor {
+      0% { background-color: $red; }
+      100% { background-color: $red; }
+    }
+
+    @keyframes line_progress {
+      0% { background-position: 100% 0%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    #step1__img {
+      animation: img__appeal 0.5s ease-in-out 0s forwards;
+    }
+
+    #step1__text {
+      animation: img__appeal 0.5s ease-in-out 0s forwards,
+      step1__changecolor 0.5s ease-in-out 0s forwards;
+    }
+
+    #step1__right {
+      background-image: linear-gradient(90deg, $blue_dark 50%, $gray_light 0%);
+      animation: line_progress 0.8s ease-in 0.2s forwards;
+    }
+
+    #step2__left {
+      background-image: linear-gradient(90deg, $blue_dark 50%, $gray_light 0%);
+      animation: line_progress 0.8s ease-out 1s forwards;
+    }
+
+    #step2__img {
+      animation: img__appeal 0.5s ease-in-out 1.8s forwards;
+    }
+
+    #step2__text {
+      animation: img__appeal 0.5s ease-in-out 1.8s forwards,
+      step2__changecolor 0.5s ease-in-out 1.8s forwards;
+    }
+
+    #step2__right {
+      background-image: linear-gradient(90deg, $red 50%, $gray_light 0%);
+      animation: line_progress 0.8s ease-in 2.1s forwards;
+    }
+
+    #step3__left {
+      background-image: linear-gradient(90deg, $red 50%, $gray_light 0%);
+      animation: line_progress 0.8s ease-out 2.9s forwards;
+    }
+
+    #step3__img {
+      animation: img__appeal 0.5s ease-in-out 3.7s forwards;
+    }
+
+    #step3__text {
+      animation: img__appeal 0.5s ease-in-out 3.7s forwards,
+      step3__changecolor 0.5s ease-in-out 3.7s forwards;
+    }
+
+    @include media_medium {
+      .animation__img {
+        width: calc(100vw / 3);
+        margin-bottom: 20px;
+      }
+
+      .animation__label {
+        margin: 0 10px;
+      }
+    }
+
+    @include media_small {
+      @include list_column(0px, false);
+
+      > * {
+        display: flex;
+      }
+
+      .animation__img,
+      .animation__line {
+        width: 50%;
+        justify-content: center;
+      }
+    }
+  }
+}

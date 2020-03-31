@@ -1,0 +1,54 @@
+@mixin section {
+  margin: $section_top_bottom auto;
+  width: $section_width;
+
+  @include media_large {
+    // 幅を広げる
+    width: $section_width_large;
+  }
+}
+
+@mixin section_color($background_color) {
+  width: 100%;
+  margin: 0;
+  padding: $section_top_bottom calc((100% - #{$section_width}) / 2);
+  background-color: $background_color;
+
+  @include media_large {
+    // 幅を広げる
+    width: 100%;
+    padding: $section_top_bottom calc((100% - #{$section_width_large}) / 2);
+  }
+}
+
+@mixin center {
+  text-align: center;
+
+  .heading__link {
+    display: none;
+  }
+
+  @include lists {
+    justify-content: center;
+  }
+}
+
+.section {
+  @include section;
+}
+
+.section--gray {
+  @include section;
+  @include section_color($gray_lighter);
+}
+
+.section--center {
+  @include section;
+  @include center;
+}
+
+.section--center--gray {
+  @include section;
+  @include section_color($gray_lighter);
+  @include center;
+}

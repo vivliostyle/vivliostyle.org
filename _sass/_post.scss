@@ -1,0 +1,36 @@
+.container {
+  .post__header {
+    display: flex;
+    color: $gray_dark;
+    margin-bottom: $gap_medium;
+  }
+
+  .post__date {
+    margin-right: $gap_medium;
+  }
+
+  .post__title {
+    margin: $gap_medium 0;
+  }
+
+  .post__authors {
+    padding: 0;
+    list-style: none;
+  }
+
+  .author__item {
+    color: $gray;
+  }
+
+  .author__link {
+    &:link,
+    &:visited {
+      color: $gray;
+    }
+  }
+
+  .post__thumbnail {
+    @include thumbnail(160px, 160px);
+    min-width: 160px;
+  }
+}

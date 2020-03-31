@@ -1,0 +1,18 @@
+@mixin banner($background_color) {
+  padding: 10px 30px;
+  text-align: center;
+  background-color: $background_color;
+
+  a {
+    &:link,
+    &:visited {
+      color: $white;
+    }
+  }
+}
+
+.container {
+  .banner {
+    @include banner($accent_color);
+  }
+}

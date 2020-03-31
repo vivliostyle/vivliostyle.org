@@ -1,0 +1,136 @@
+// ----------
+// Color
+// ----------
+
+$white:          #FFFFFF;
+$black:          #171717;
+$gray_dark:      #4F4F4F;
+$gray:           #828282;
+$gray_light:     #BDBDBD;
+$gray_lighter:   #F2F2F2;
+$green_dark:     #1B733E;
+$green:          #40CA77;
+$green_light:    #86F5B3;
+$green_lighter:  #D6FFE6;
+$violet_dark:    #712CC9;
+$violet:         #8D34FE;
+$violet_light:   #B784F9;
+$violet_lighter: #EEE0FF;
+$orange_dark:    #A36318;
+$orange:         #F5931F;
+$orange_light:   #FFC682;
+$orange_lighter: #FFF2E2;
+$red_dark:       #73281B;
+$red:            #D15430;
+$red_light:      #EE8567;
+$red_lighter:    #FCF2EF;
+$blue_dark:      #1E379B;
+$blue:           #3760FF;
+$blue_light:     #6C88F5;
+$blue_lighter:   #E4EAFF;
+
+$primary_color:         #1F4BF8;
+$accent_color:          #38A0F4;
+$text_color:            $black;
+$link_color:            $primary_color;
+$link_visited_color:    $violet_dark;
+$background_color:      $white;
+$background_code_color: $black;
+
+$twitter_color:  #0d94e7;
+$facebook_color: #3B5998;
+$slack_color:    #602268;
+$github_color:   $black;
+
+
+// ----------
+// Typography
+// ----------
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+@import url("https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css");
+
+$body_font:        "Roboto", "Noto Sans JP";
+$monospace_font:   "Roboto Mono";
+$vivliostyle_font: "Optima", "Marcellus";
+$icon_font:        "Material Design Icons";
+
+$h1_font_size:        44px;
+$h2_font_size:        44px;
+$h3_font_size:        34px;
+$h4_font_size:        28px;
+$h5_font_size:        22px;
+$h6_font_size:        18px;
+$body_font_size:      18px;
+$display_font_size:   26px;
+$monospace_font_size: 20px;
+$small_font_size:     16px;
+
+$button_large_font_size:  24px;
+$button_medium_font_size: 20px;
+$button_small_font_size:  14px;
+
+$body_line_height:    1.8;
+$heading_line_height: 1.4;
+$button_line_height:  1.4;
+
+$thin_font_weight:        100;
+$extra_light_font_weight: 200;
+$light_font_weight:       300;
+$regular_font_weight:     400;
+$medium_font_weight:      500;
+$semi_bold_font_weight:   600;
+$bold_font_weight:        700;
+$extra_bold_font_weight:  800;
+$black_font_weight:       900;
+$body_font_weight:        $regular_font_weight;
+
+
+// ----------
+// Animation
+// ----------
+
+$hover_opacity: 0.8;
+$hover_animation: all 0.2s;
+
+
+// ----------
+// Section
+// ----------
+
+$section_width:            70vw;
+$section_top_bottom:       64px;
+$section_first_top_bottom: 140px;
+
+$section_width_large:            90vw;
+$section_top_bottom_large:       64px;
+$section_first_top_bottom_large: 64px;
+
+$gap_small:  10px;
+$gap_medium: 20px;
+$gap_large:  30px;
+
+
+// ----------
+// Breakpoint
+// ----------
+
+$breakpoint_large:  1400px;
+$breakpoint_medium: 960px;
+$breakpoint_small:  560px;
+
+
+// ----------
+// Search
+// ----------
+
+$searchfield_height: 50px;
+$searchresult_triangle_size: 30px;
+
+
+// ----------
+// Others
+// ----------
+
+$border_radius:      2px;
+$header_height:      80px;

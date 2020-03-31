@@ -1,0 +1,12 @@
+.container {
+  .tip {
+    display: inline-block;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: $gray_lighter;
+    color: $black;
+    font-size: $small_font_size;
+    font-family: $monospace_font;
+  }
+}
