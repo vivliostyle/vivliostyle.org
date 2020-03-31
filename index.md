@@ -58,18 +58,18 @@ You can read EPUB, HTML or Web publications in Vivliostyle Viewer and use CSS to
 Vivliostyle is developing the following products.
 
 {% include projects.html
-  project1_src="/assets/projects/project1.png"
+  project1_src="/assets/projects/project1.svg"
   project1_name=site.data.project.project.name.en
   project1_link=site.data.project.project.github
-  project2_src="/assets/projects/project2.png"
+  project2_src="/assets/projects/project2.svg"
   project2_name=site.data.project.viewer.name
   project2_link=site.data.project.viewer.github
   project2_description="Load HTML and display the typesetting results on the browser."
-  project3_src="/assets/projects/project3.png"
+  project3_src="/assets/projects/project3.svg"
   project3_name=site.data.project.cli.name
   project3_link=site.data.project.cli.github
   project3_description="Typesetting from command line and generate PDF."
-  project4_src="/assets/projects/project4.png"
+  project4_src="/assets/projects/project4.svg"
   project4_name=site.data.project.pub.name
   project4_link=site.data.project.pub.github
   project4_description="Enter markdown and you can see the typesetting results immediately."
