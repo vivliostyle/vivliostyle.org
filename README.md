@@ -36,18 +36,25 @@ The markdown file begins with:
 ---
 title: On Vivliostyle-print
 author: johannes
+tags:
+  - Vivliostyle-print
+  - release
+image: /assets/posts/2018-10-03-vivliostyle-print/image.png
 ---
 ```
 
 The `author` value must be defined in the `_data/people.yml` file. e.g.:
 
 ```
-johannes:
-  en: Johannes Wilm
-  ja: ヨハネス・ウィルム
-  email: johannes@fiduswriter.org
-  role_en: Director, W3C Editing Taskforce Invited Expert
-  role_ja: 理事、W3C Editing Taskforce Invited Expert
+members:
+  johannes:
+    name:
+      ja: ヨハネス・ウィルム
+      en: Johannes Wilm
+    role:
+      ja: 理事、W3C Editing Taskforce Invited Expert
+      en: Director, W3C Editing Taskforce Invited Expert
+    email: johannes@fiduswriter.org
 ```
 
 #### Japanese blog post
@@ -61,6 +68,10 @@ The markdown file begins with:
 title: Vivliostyle-print について
 lang: ja
 author: johannes
+tags:
+  - Vivliostyle-print
+  - リリース
+image: /assets/posts/2018-10-03-vivliostyle-print/image.png
 ---
 ```
 
