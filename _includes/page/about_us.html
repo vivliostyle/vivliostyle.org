@@ -1,0 +1,41 @@
+{% include assign/lang.html %}
+
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="section">
+  <div class="container">
+    {{ include.foundation | markdownify }}
+
+    <ol class="list--medium--column">
+      <li class="frame--medium">
+        {{ include.foundation_frame | markdownify }}
+
+        <ul class="foundation__members">
+          {% for member in site.data.people.foundation_members %}
+            <li class="members__item">
+              {% if member[1].email %}
+                <a href="mailto:{{ member[1].email }}" class="members__link">{{ member[1].name[lang.code] }}</a>
+              {% else %}
+                {{ member[1].name[lang.code] }}
+              {% endif %}
+
+              ({{ member[1].role[lang.code] }})
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.devteam | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.sponsor | markdownify }}
+  </div>
+</section>

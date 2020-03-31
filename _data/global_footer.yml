@@ -1,0 +1,78 @@
+en:
+  - title: Getting Started
+    links:
+      - title: Vivliostyle Viewer
+        url: /getting_started#Vivliostyle Viewer v2.0.0
+      - title: Vivliostyle CLI
+        url: /getting_started#Vivliostyle CLI (To be released in February) v2.0.0
+      - title: Vivliostyle Pub
+        url: /getting_started#Vivliostyle Pub (Initial version will be released later this year) v0.0.0
+      - title: Samples
+        url: /samples
+      - title: Download
+        url: /download
+  - title: Documents
+    links:
+      - title: User Guide
+        url: /documents#User Guide
+      - title: Contribution Guide
+        url: /documents#Contribution Guide
+  - title: Community
+    links:
+      - title: Community
+        url: /community
+      - title: About Us
+        url: /about_us
+      - title: Sponsors
+        url: /about_us#Be a Sponsor of Vivliostyle
+      - title: History
+        url: /history
+  - title: Others
+    links:
+      - title: Blog
+        url: /blog
+      - title: FAQ
+        url: /faq
+      - title: Logo
+        url: /logo
+      - title: Make Books with Vivliostyle
+        url: /make_books_with_vivliostyle
+ja:
+  - title: 使ってみる
+    links:
+      - title: Vivliostyle Viewer
+        url: /ja/getting_started#Vivliostyle Viewer v2.0.0
+      - title: Vivliostyle CLI
+        url: /ja/getting_started#Vivliostyle CLI (2月中公開予定) v2.0.0
+      - title: Vivliostyle Pub
+        url: /ja/getting_started#Vivliostyle Pub (初期版を今年中に公開予定) v0.0.0
+      - title: サンプル
+        url: /ja/samples
+      - title: ダウンロード
+        url: /ja/download
+  - title: 開発する
+    links:
+      - title: ユーザーガイド
+        url: /ja/documents#ユーザーガイド
+      - title: コントリビューションガイド
+        url: /ja/documents#コントリビューションガイド
+  - title: コミュニティ
+    links:
+      - title: コミュニティ
+        url: /ja/community
+      - title: About Us
+        url: /ja/about_us
+      - title: スポンサー募集
+        url: /ja/about_us#Vivliostyle のスポンサーになりませんか
+      - title: Vivliostyle のなりたち
+        url: /ja/history
+  - title: その他
+    links:
+      - title: ブログ
+        url: /ja/blog
+      - title: FAQ
+        url: /ja/faq
+      - title: ロゴデザイン
+        url: /ja/logo
+      - title: Vivliostyle で本を作ろう
+        url: /ja/make_books_with_vivliostyle

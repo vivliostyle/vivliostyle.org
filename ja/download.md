@@ -1,9 +1,12 @@
 ---
+layout: page
 title: ダウンロード
 lang: ja
 ---
 
-- **Vivliostyle Viewer**
+
+{% capture contents %}
+- Vivliostyle Viewer
   - 最新安定版リリース
     - [最新安定版のダウンロード](/downloads/vivliostyle-latest.zip)
     - [オンライン Vivliostyle Viewer](https://vivliostyle.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html)
@@ -20,5 +23,12 @@ lang: ja
   - Vivliostyle Viewer [GitHub](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer/) [npm](https://www.npmjs.com/package/@vivliostyle/viewer/)
 - Vivliostyle CLI [GitHub](https://github.com/vivliostyle/vivliostyle-cli) [npm](https://www.npmjs.com/package/vivliostyle-cli)
 - vivliostyle-print [GitHub](https://github.com/vivliostyle/vivliostyle-print) [npm](https://www.npmjs.com/package/vivliostyle-print)
+{% endcapture %}
 
-{% include nav-share.html %}
+
+{% include page/download.html
+  title="ダウンロード"
+  lead="開発者が必要としそうなファイルのダウンロード先をまとめました。"
+
+  contents=contents
+%}

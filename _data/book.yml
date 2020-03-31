@@ -1,0 +1,88 @@
+vol1:
+  url:
+    web: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html
+    viewer: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&bookMode=true
+    print: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+    source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol1
+  img: /assets/samples/vug-vol1.png
+  toc:
+    - type: B
+      title: EPUB Adaptive Layout による段組混在レイアウトへの挑戦
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/arinoth/index.html
+      author: arinoth
+    - type: B
+      title: 私が組版オペレータになっても？
+      author: takanakahiko
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/takanakahiko/index.html
+    - type: B
+      title: CSS 組版やってみた！
+      author: やましー
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/yamasy/index.html
+    - type: D
+      title: "Vivliostyle.js: TypeScript 化の道のり"
+      author: 緑豆はるさめ
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/spring_raining/index.html
+    - type: A
+      title: Vivliostyle Viewer でCSS組版ちょっと入門
+      author: 村上真雄
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html
+vol2:
+  url:
+    web: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html
+    viewer: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html&bookMode=true
+    print: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+    source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol2
+  img: /assets/samples/vug-vol2.png
+  toc:
+    - type: D
+      title: Remark で広げる Markdown の世界
+      author: 緑豆はるさめ
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/spring-raining/index.html
+    - type: C
+      title: Vivliostyle で縦組シナリオを組版する
+      author: 小形 克宏
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/ogata/index.html
+    - type: C
+      title: EPUB ファイルから Vivliostyle で PDF を作りたい！！
+      author: 田島 淳
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/JunTajima/index.html
+    - type: E
+      title: CSS で View を定義する意義
+      author: アカベコ
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/akabeko/index.html
+    - type: D
+      title: Vivliostyle のこれからの開発課題
+      author: 村上 真雄
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/shinyu/index.html
+vol3:
+  url:
+    web: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/index.html
+    viewer: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/index.html&bookMode=true
+    print: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+    source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol3
+  img: /assets/samples/vug-vol3.png
+  toc:
+    - type: B
+      title: 「CSS 組版全然わからない！」からはじめる Vivliostyle 同人誌制作超入門
+      author: kondoyuko
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/kondoyuko/index.html
+    - type: C
+      title: GitHub+Circle CI を用いた Vivliostyle+Markdown による組版をやってみた
+      author: MH35
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/mh35/index.html
+    - type: D
+      title: Vivliostyle Flavored Markdown について
+      author: akabeko
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/akabeko/index.html
+    - type: E
+      title: “Vivliostyle”、未来へのステップ
+      author: 小形克宏
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/ogwata/index.html
+    - type: D
+      title: Viola のこれからと Vivliostyle Pub
+      author: spring-raining
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/spring-raining/index.html
+    - type: E
+      title: Web 出版の未来と CSS 組版
+      author: 村上真雄
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/shinyu/index.html

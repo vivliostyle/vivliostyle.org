@@ -1,30 +1,44 @@
-murakami:
-  en: Shinyu Murakami
-  ja: 村上 真雄
-  email: murakami@vivliostyle.org
-  role_en: Representative Director, Vivliostyle Project Leader
-  role_ja: 代表理事、Vivliostyle プロジェクト・リーダー
-florian:
-  en: Florian Rivoal
-  ja: リボアル・フロリアン
-  email: vivliostyle@florian.rivoal.net
-  role_en: Director, W3C CSS WG Invited Expert
-  role_ja: 理事、W3C CSS WG Invited Expert
-johannes:
-  en: Johannes Wilm
-  ja: ヨハネス・ウィルム
-  email: johannes@fiduswriter.org
-  role_en: Director, W3C Editing Taskforce Invited Expert
-  role_ja: 理事、W3C Editing Taskforce Invited Expert
-spring_raining:
-  en: spring-raining
-  ja: spring-raining
-  email: harusamex.com@gmail.com
-  role_en: Vivliostyle Project Collaborator
-  role_ja: Vivliostyle プロジェクト コラボレーター
-ogwata:
-  en: Katsuhiro OGATA
-  ja: 小形克宏
-  email: ogwata@vivliostyle.org
-  role_en: Vivliostyle Director
-  role_ja: Vivliostyle 理事
+foundation_members: &foundation_members
+  murakami:
+    name:
+      ja: 村上 真雄
+      en: Shinyu Murakami
+    role:
+      ja: 代表理事、Vivliostyle プロジェクト・リーダー
+      en: Representative Director, Vivliostyle Project Leader
+    email: murakami@vivliostyle.org
+  ogwata:
+    name:
+      ja: 小形 克宏
+      en: Katsuhiro Ogata
+    role:
+      ja: 理事、業務執行役員
+      en: Director, Executive Officer
+    email: ogwata@vivliostyle.org
+  florian:
+    name:
+      ja: リボアル・フロリアン
+      en: Florian Rivoal
+    role:
+      ja: 理事、W3C CSS WG Invited Expert
+      en: Director, W3C CSS WG Invited Expert
+    email: vivliostyle@florian.rivoal.net
+  johannes:
+    name:
+      ja: ヨハネス・ウィルム
+      en: Johannes Wilm
+    role:
+      ja: 理事、W3C Editing Taskforce Invited Expert
+      en: Director, W3C Editing Taskforce Invited Expert
+    email: johannes@fiduswriter.org
+
+members:
+  <<: *foundation_members
+  spring_raining:
+    name:
+      ja: spring-raining
+      en: spring-raining
+    role:
+      ja: Vivliostyle プロジェクト コラボレーター
+      en: Vivliostyle Project Collaborator
+    email: harusamex.com@gmail.com

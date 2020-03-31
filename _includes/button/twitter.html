@@ -1,0 +1,7 @@
+<li>
+  <a
+    href="{{ include.url | default: site.data.account.twitter.url }}"
+    class="{{ include.class | default: 'button--twitter--large' }}">
+    <i class="mdi mdi-twitter button__icon"></i>{{ include.text | default: "Twitter" }}
+  </a>
+</li>

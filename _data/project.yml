@@ -1,0 +1,45 @@
+project:
+  name:
+    ja: Vivliostyle Project
+    en: The Vivliostyle Project
+  github: https://github.com/vivliostyle
+viewer:
+  name: Vivliostyle Viewer
+  version: v2.0.0
+  github: https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer
+  url: https://vivliostyle.org/viewer
+  sample:
+    ja: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gon/index.html
+    en: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gutenberg/Alice.html&bookMode=true
+  thumbnail: /assets/projects/thumbnail-viewer.png
+  screenshot:
+      responsive: /assets/projects/screenshot-viewer-responsive.png
+      fixed: /assets/projects/screenshot-viewer-fixed.png
+cli:
+  name: Vivliostyle CLI
+  version: v2.0.0
+  github: https://github.com/vivliostyle/vivliostyle-cli
+  thumbnail: /assets/projects/thumbnail-cli.png
+  screenshot: /assets/projects/screenshot-cli.png
+pub:
+  name: Vivliostyle Pub
+  version: v0.0.0
+  # github: 
+  # url: 
+  sample:
+    ja: /ja/samples/
+    en: /samples/
+  thumbnail: /assets/projects/thumbnail-pub.png
+  screenshot: /assets/projects/screenshot-pub.png
+core:
+  name: Vivliostyle Core
+  version: v2.0.0
+  github: https://github.com/vivliostyle/vivliostyle/tree/master/packages/core
+  thumbnail: /assets/projects/thumbnail-core.png
+  # screenshot: 
+print:
+  name: Vivliostyle Print
+  # version: 
+  github: https://github.com/vivliostyle/vivliostyle-print
+  # thumbnail: 
+  # screenshot: 

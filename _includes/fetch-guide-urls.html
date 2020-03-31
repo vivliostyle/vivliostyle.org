@@ -1,0 +1,58 @@
+<script>
+  main(
+    "{{ include.user_guide_id | default: 'user-guide-list' }}",
+    "{{ include.user_guide_url | default: 'https://docs.vivliostyle.org/#/user-guide' }}",
+    "{{ include.user_guide_get_url | default: 'https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/user-guide.md' }}");
+  main(
+    "{{ include.contribution_guide_id | default: 'contribution-guide-list' }}",
+    "{{ include.contribution_guide_url | default: 'https://docs.vivliostyle.org/#/contribution-guide' }}",
+    "{{ include.contribution_guide_get_url | default: 'https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/contribution-guide.md' }}");
+
+  async function main(id, base_url, get_url) {
+    try {
+      const element = document.getElementById(id);
+      const headings = await fetchHeadings(get_url);
+
+      headings.forEach(function(name) {
+        element.insertAdjacentHTML("beforeend", listTemplate(name, base_url));
+      });
+    } catch(error) {
+      console.log(error);
+    }
+  }
+
+  function listTemplate(name, base_url) {
+    const anchor = name.toLowerCase().replace(/\s/g, "-");
+
+    return `
+      <li>
+        <a href="${base_url}#${anchor}">
+          ${name}
+        </a>
+      </li>
+      `;
+  }
+
+  async function fetchHeadings(url) {
+    // markdownを取得
+    const json = await fetchContent(url);
+    const markdown = decodeURIComponent(escape(atob(json.content)));
+
+    // h2を取得
+    const headings = markdown.match(/\n##\s*[^#\n]+\n/g).map(function(str) {
+      return str.match(/\n##\s*([^#\n]+)\n/)[1];
+    });
+    return headings;
+  }
+
+  function fetchContent(url) {
+    return fetch(url)
+      .then(function(response) {
+        if(!response.ok) {
+          return Promise.reject(response);
+        } else {
+          return response.json();
+        }
+      })
+  }
+</script>

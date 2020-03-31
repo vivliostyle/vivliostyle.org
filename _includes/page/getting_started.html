@@ -1,0 +1,19 @@
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="section">
+  <div class="container">
+    {{ include.viewer | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.cli | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.pub | markdownify }}
+  </div>
+</section>

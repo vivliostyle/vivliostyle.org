@@ -1,0 +1,9 @@
+<ul class="list--medium">
+  {% for name in include.namelist %}
+    <li>
+      <a href="https://github.com/{{ name }}">
+        <img src="https://github.com/{{ name }}.png" alt="{{ name }}" class="avatar">
+      </a>
+    </li>
+  {% endfor %}
+</ul>

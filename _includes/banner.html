@@ -1,0 +1,12 @@
+{% assign banners = site.data.banner[lang.code] %}
+
+<ol class="container">
+  {% for banner in banners %}
+    <li class="banner">
+      <a href="{{ banner.url | relative_url }}">
+        <i class="mdi mdi-new-box item__icon"></i>
+        {{ banner.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ol>

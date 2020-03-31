@@ -1,0 +1,7 @@
+<li>
+  <a
+    href="{{ include.url | default: site.data.account.slack.url }}"
+    class="{{ include.class | default: 'button--slack--large' }}">
+    <i class="mdi mdi-slack button__icon"></i>{{ include.text | default: "Slack" }}
+  </a>
+</li>

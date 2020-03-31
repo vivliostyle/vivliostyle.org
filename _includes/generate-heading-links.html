@@ -1,0 +1,13 @@
+<script>
+  const headings = document.querySelectorAll("h2, h3, h4, h5, h6");
+
+  headings.forEach(function(heading) {
+    const text = heading.innerText;
+    heading.setAttribute("id", text);
+
+    let link = document.createElement("a");
+    link.setAttribute("href", "#" + text);
+    link.classList.add("heading__link");
+    heading.insertBefore(link, heading.firstChild);
+  });
+</script>

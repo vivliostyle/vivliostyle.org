@@ -1,0 +1,44 @@
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="section page_make_books_with_vivliostyle">
+  <div class="container">
+    {{ include.description | markdownify }}
+
+    <ol class="list--medium--column">
+      {% for book in include.books %}
+        <li class="frame--large">
+          <div class="container">
+            {{ book.description | markdownify }}
+
+            <div class="frame__contents">
+              <a href="{{ book.web_url }}" class="frame__link">
+                <img src="{{ book.thumbnail | relative_url }}" alt="{{ book.title }}" class="frame__thumbnail">
+              </a>
+
+              <ol class="book__toc">
+                {% for article in book.toc %}
+                  <li class="toc__content">
+                    <div>
+                      <i class="mdi mdi-alpha-{{ article.type | downcase }}-circle toc__type"></i>
+                    </div>
+                    <div>
+                      <a href="{{ article.url }}">{{ article.title }}</a>
+                      （{{ article.author }}）
+                    </div>
+                  </li>
+                {% endfor %}
+              </ol>
+            </div>
+
+            <ol class="list--medium">
+              {% include button/primary.html url=book.web_url text=include.web_buttontext class="button--primary--medium" %}
+              {% include button/secondary.html url=book.viewer_url text=include.viewer_buttontext class="button--secondary--medium" %}
+              {% include button/secondary.html url=book.print_url text=include.print_buttontext class="button--secondary--medium" %}
+              {% include button/github.html url=book.source_url text=include.source_buttontext class="button--github--medium" %}
+            </ol>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

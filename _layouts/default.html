@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-	<head>
-		<!-- General meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		{% if page.indexing == false %}
-			<meta name="robots" content="noindex">
-		{% endif %}
-		{% include google-analytics.html %}
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
 
-		{% seo %}
+    {% include google-analytics.html %}
 
-		<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-		<meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
-		<link rel="alternate" type="application/atom+xml" title="Vivliostyle.org Blog" href="/blog/feed.xml"/>
-		<link rel="alternate" type="application/atom+xml" title="Vivliostyle.org ブログ" href="/ja/blog/feed.xml"/>
+    {% assign index_flag = page.url | remove: "/" | remove_first: page.lang | size %}
+    {% if index_flag == 0 %}
+      <title>{{ page.title }}</title>
+      {% seo title=false %}
+    {% else %}
+      {% seo %}
+    {% endif %}
+
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#1E2C9C' }}"/>
+    <link rel="alternate" type="application/atom+xml" title="Vivliostyle.org Blog" href="/blog/feed.xml"/>
+    <link rel="alternate" type="application/atom+xml" title="Vivliostyle.org ブログ" href="/ja/blog/feed.xml"/>
 
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
 
-		{% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
-	</head>
-	<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-		{% include site-icons.svg %}
+    {% if site.avatarurl %}
+      {% include site-favicons.html %}
+    {% endif %}
+  </head>
 
-		{{ content }}
+  {% assign title_class = page.title | slugify %}
 
-		{% if site.serviceWorker != false %}{% include site-sw.html %}{% endif %}
-		{% include clicky-analytics.html %}
-	</body>
+  <body class="layout-{{ page.layout }} {{ title_class }} {% if index_flag == 0 %}page_home{% endif %}">
+    {{ content }}
+
+    {% if site.serviceWorker != false %}
+      {% include site-sw.html %}
+    {% endif %}
+
+    {% include generate-heading-links.html %}
+    {% include clicky-analytics.html %}
+  </body>
 </html>

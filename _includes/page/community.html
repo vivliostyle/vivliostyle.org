@@ -1,0 +1,19 @@
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="section">
+  <div class="container">
+    {{ include.slack | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.sns | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.github | markdownify }}
+  </div>
+</section>

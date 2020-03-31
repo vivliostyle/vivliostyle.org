@@ -1,7 +1,10 @@
 ---
+layout: page
 title: Download
 ---
 
+
+{% capture contents %}
 - **Vivliostyle Viewer**
   - Latest Stable Release
     - [Download Latest Stable Release](/downloads/vivliostyle-latest.zip)
@@ -19,5 +22,12 @@ title: Download
   - Vivliostyle Viewer [GitHub](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer/) [npm](https://www.npmjs.com/package/@vivliostyle/viewer/)
 - Vivliostyle CLI [GitHub](https://github.com/vivliostyle/vivliostyle-cli) [npm](https://www.npmjs.com/package/vivliostyle-cli)
 - vivliostyle-print [GitHub](https://github.com/vivliostyle/vivliostyle-print) [npm](https://www.npmjs.com/package/vivliostyle-print)
+{% endcapture %}
 
-{% include nav-share.html %}
+
+{% include page/download.html
+  title="Download"
+  lead="We have collected links to download files that developers think they need."
+
+  contents=contents
+%}

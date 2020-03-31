@@ -4,9 +4,9 @@
 # 2. Installed Gems
 # 3. Gem settings
 # 4. Jekyll settings
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
+# 5. Jekyll collections settings
+# 6. Site settings
+# 7. Social links
 
 # 1. Files excluded from Jekyll builds
 exclude:
@@ -26,30 +26,29 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-default-layout
+  - jekyll-archives
   - jemoji
 
 # 3. Gem settings
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
-  username: Vivliostyle # jekyll-seo-tag > Owners twitter username
-author: Vivliostyle # jekyll-seo-tag > default author
-social: # jekyll-seo-tag > social overrides
-  name: Vivliostyle # jekyll-seo-tag > real name
-  links: # jekyll-seo-tag > social aliases (sameAs)
+  username: Vivliostyle              # jekyll-seo-tag > Owners twitter username
+author: Vivliostyle                  # jekyll-seo-tag > default author
+social:                              # jekyll-seo-tag > social overrides
+  name: Vivliostyle                  # jekyll-seo-tag > real name
+  links:                             # jekyll-seo-tag > social aliases (sameAs)
     - https://twitter.com/Vivliostyle
     - https://www.facebook.com/Vivliostyle
+    - https://github.com/vivliostyle
     # - https://www.linkedin.com/in/Vivliostyle
     # - https://plus.google.com/+Vivliostyle
-    - https://github.com/vivliostyle
 
 # 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty # Permalink style (/YYYY/MM/DD/page-name/)
+permalink: pretty                # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Asia/Tokyo # Timezone for blog posts and alike
+timezone: Asia/Tokyo             # Timezone for blog posts and alike
 
-# 6. Jekyll collections settings
+# 5. Jekyll collections settings
 defaults:
   - values:
       image: "/assets/default-social-image.png" # Default image for sharing
@@ -68,68 +67,30 @@ defaults:
     values:
       lang: "ja"
       permalink: /ja/blog/:year/:month/:day/:title/
+jekyll-archives:
+  enabled:
+    - tags
+  layout: blog_tag
+  permalinks:
+    tag: '/blog/tag/:name/'
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-lang: en # Set the site language
-title: "Vivliostyle Foundation" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/vivliostyle-logo.png" # Site logo, also used in jekyll-seo-tag
+# 6. Site settings
+encoding: utf-8                           # Make sure the encoding is right
+lang: en                                  # Set the site language
+title: "Vivliostyle"                      # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/vivliostyle-logo.svg"      # Site logo, also used in jekyll-seo-tag
 description: "Vivliostyle — open source, web browser based CSS typesetting engine project" # Site description and default description, also used in jekyll-seo-tag
-url: "https://vivliostyle.org" # Site url, also used in jekyll-seo-tag
+url: "https://vivliostyle.org"            # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/vivliostyle/vivliostyle.org"
 avatarurl: "/assets/vivliostyle-icon.png" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 
-# 8. Site navigation
-navigation_header:
-  - en: Home
-    ja: ホーム
-    url: /
-    url_ja: /ja/
-  - en: Samples
-    ja: サンプル
-    url: /samples/
-    url_ja: /ja/samples/
-  - en: Download
-    ja: ダウンロード
-    url: /download/
-    url_ja: /ja/download/
-  - en: Docs
-    ja: ドキュメント
-    url: /docs/
-    url_ja: /ja/docs/
-  - en: Community
-    ja: コミュニティ
-    url: /community/
-    url_ja: /ja/community/
-  - en: Blog
-    ja: ブログ
-    url: /blog/
-    url_ja: /ja/blog/
-  - en: Search
-    ja: 検索
-    url: /search/
-    url_ja: /ja/search/
-
-navigation_footer:
-  Vivliostyle on GitHub: https://github.com/vivliostyle/vivliostyle
-
-social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+# 7. Social links
+social_links:
   Twitter: https://twitter.com/Vivliostyle
   Facebook: https://www.facebook.com/Vivliostyle
-  # LinkedIn: https://www.linkedin.com/in/Vivliostyle
-  # Google+: https://plus.google.com/+Vivliostyle
   GitHub: https://github.com/vivliostyle
   link: https://vivliostyle.org
   RSS: /blog/feed.xml
-
-sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  # Google+: "#DC4E41"
-  # Pinterest: "#BD081C"
-  # LinkedIn: "#0077B5"
-  # tumblr: "#36465D"
-  # Reddit: "#FF4500"
-  # Hacker News: "#ff6600"
-  # Designer News: "#2D72D9"
+  # LinkedIn: https://www.linkedin.com/in/Vivliostyle
+  # Google+: https://plus.google.com/+Vivliostyle

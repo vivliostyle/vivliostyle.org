@@ -1,0 +1,35 @@
+{% include assign/lang.html %}
+
+{% include h1.html title=include.title lead=include.lead %}
+
+{% for category in include.sample.categories %}
+  <section class="section page_sample">
+    <div class="container">
+      <h2>{{ category.name[lang.code] }}</h2>
+
+      {% if category.samples[0].img %}
+        <ol class="list--medium--column">
+          {% for sample in category.samples %}
+            <li class="frame--large">
+              <h3>{{ sample.name[lang.code] }}</h3>
+
+              <div class="frame__contents sample-wrap">
+                <a href="{{ sample.urls[0].url }}">
+                  <img src="{{ sample.img | relative_url }}" class="thumbnail">
+                </a>
+
+                {% include sample_contents.html sample=sample %}
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        {% for sample in category.samples %}
+          <h3>{{ sample.name[lang.code] }}</h3>
+
+          {% include sample_contents.html sample=sample %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+{% endfor %}
