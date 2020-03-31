@@ -1,7 +1,7 @@
 ---
 title: 技術書典6に出展『Vivliostyleで本を作ろう Vol.1』公開！
 lang: ja
-image: /samples/images/vug-vol1.png
+image: /assets/samples/vug-vol1.png
 author:
   - spring_raining
   - murakami
@@ -12,7 +12,7 @@ tags:
 前回記事[「技術書典 6 に Vivliostyle ユーザー会が出展します！」](/ja/blog/2019/04/13/appearance-of-user-group-in-tbf06)にて紹介の『Vivliostyle で本を作ろう Vol. 1』全篇を公開します。
 👉[Vivliostyle サンプル](/ja/samples/)
 
-[![『Vivliostyle で本を作ろう Vol. 1』](/samples/images/vug-vol1.png) Vivliostyle Viewer で閲覧](https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&renderAllPages=true)  
+[![『Vivliostyle で本を作ろう Vol. 1』](/assets/samples/vug-vol1.png) Vivliostyle Viewer で閲覧](https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&renderAllPages=true)  
 [通常のウェブページとして閲覧 (Raw HTML)](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html)
 
 ソースは GitHub に公開：
