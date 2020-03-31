@@ -1,6 +1,6 @@
 en:
   - title: Getting Started
-    url: /getting_started/
+    url: /getting-started/
   - title: Samples
     url: /samples/
   - title: Documents
@@ -11,7 +11,7 @@ en:
     url: /blog/
 ja:
   - title: 使ってみる
-    url: /ja/getting_started/
+    url: /ja/getting-started/
   - title: サンプル
     url: /ja/samples/
   - title: ドキュメント

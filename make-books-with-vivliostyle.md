@@ -5,7 +5,7 @@ title: Make Books with Vivliostyle
 
 
 <script>
-  window.location.href = window.location.origin + '/ja/make_books_with_vivliostyle';
+  window.location.href = window.location.origin + '/ja/make-books-with-vivliostyle';
 </script>
 
 {% capture description %}

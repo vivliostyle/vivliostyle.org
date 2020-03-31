@@ -2,11 +2,11 @@ en:
   - title: Getting Started
     links:
       - title: Vivliostyle Viewer
-        url: /getting_started#Vivliostyle Viewer v2.0.0
+        url: /getting-started#Vivliostyle Viewer v2.0.0
       - title: Vivliostyle CLI
-        url: /getting_started#Vivliostyle CLI (To be released in February) v2.0.0
+        url: /getting-started#Vivliostyle CLI (To be released in February) v2.0.0
       - title: Vivliostyle Pub
-        url: /getting_started#Vivliostyle Pub (Initial version will be released later this year) v0.0.0
+        url: /getting-started#Vivliostyle Pub (Initial version will be released later this year) v0.0.0
       - title: Samples
         url: /samples
       - title: Download
@@ -22,9 +22,9 @@ en:
       - title: Community
         url: /community
       - title: About Us
-        url: /about_us
+        url: /about-us
       - title: Sponsors
-        url: /about_us#Be a Sponsor of Vivliostyle
+        url: /about-us#Be a Sponsor of Vivliostyle
       - title: History
         url: /history
   - title: Others
@@ -36,16 +36,16 @@ en:
       - title: Logo
         url: /logo
       - title: Make Books with Vivliostyle
-        url: /make_books_with_vivliostyle
+        url: /make-books-with-vivliostyle
 ja:
   - title: 使ってみる
     links:
       - title: Vivliostyle Viewer
-        url: /ja/getting_started#Vivliostyle Viewer v2.0.0
+        url: /ja/getting-started#Vivliostyle Viewer v2.0.0
       - title: Vivliostyle CLI
-        url: /ja/getting_started#Vivliostyle CLI (2月中公開予定) v2.0.0
+        url: /ja/getting-started#Vivliostyle CLI (2月中公開予定) v2.0.0
       - title: Vivliostyle Pub
-        url: /ja/getting_started#Vivliostyle Pub (初期版を今年中に公開予定) v0.0.0
+        url: /ja/getting-started#Vivliostyle Pub (初期版を今年中に公開予定) v0.0.0
       - title: サンプル
         url: /ja/samples
       - title: ダウンロード
@@ -61,9 +61,9 @@ ja:
       - title: コミュニティ
         url: /ja/community
       - title: About Us
-        url: /ja/about_us
+        url: /ja/about-us
       - title: スポンサー募集
-        url: /ja/about_us#Vivliostyle のスポンサーになりませんか
+        url: /ja/about-us#Vivliostyle のスポンサーになりませんか
       - title: Vivliostyle のなりたち
         url: /ja/history
   - title: その他
@@ -75,4 +75,4 @@ ja:
       - title: ロゴデザイン
         url: /ja/logo
       - title: Vivliostyle で本を作ろう
-        url: /ja/make_books_with_vivliostyle
+        url: /ja/make-books-with-vivliostyle
