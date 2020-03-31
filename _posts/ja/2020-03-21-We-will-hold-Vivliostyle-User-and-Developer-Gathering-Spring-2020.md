@@ -1,7 +1,7 @@
 ---
 title: “CSS組版 Vivliostyle ユーザーと開発者の集い 2020春” を開催します
 lang: ja
-image: /samples/images/user_meetup_1200x630.png
+image: /assets/posts/2020-03-21-We-will-hold-Vivliostyle-User-and-Developer-Gathering-Spring-2020/user_meetup_1200x630.png
 author:
   - ogwata
 ---
