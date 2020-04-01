@@ -92,7 +92,7 @@ $ vivliostyle preview index.html
 
 
 {% capture cli %}
-## Vivliostyle CLI <small>(To be released in February)</small> <span class="tip">{{ site.data.project.cli.version }}</span>
+## Vivliostyle CLI <span class="tip">{{ site.data.project.cli.version }}</span>
 
 - CSS typesetting on the command line with output to PDF.
 - PDF/X-1a output supported by merging PRESS-READY in v2. [Ghostscript](https://www.ghostscript.com/) and [Xpdf](http://www.xpdfreader.com/) are required for this feature. See [PRESS-READY](https://github.com/vibranthq/press-ready/blob/master/README.md) for more information.

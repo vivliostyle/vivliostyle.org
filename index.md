@@ -80,7 +80,7 @@ Other libraries for developers include ["Vivliostyle Core"]({{ site.data.project
 
 
 {% capture blog %}
-## Recent blogs
+## Recent blog posts
 
 {% assign posts = site.posts | where: "lang", page.lang | slice: 0, 3 %}
 {% include post-list.html posts=posts %}

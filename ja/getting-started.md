@@ -89,7 +89,7 @@ $ vivliostyle preview index.html
 
 
 {% capture cli %}
-## Vivliostyle CLI <small>(2月中公開予定)</small> <span class="tip">{{ site.data.project.cli.version }}</span>
+## Vivliostyle CLI <span class="tip">{{ site.data.project.cli.version }}</span>
 
 - コマンドラインから CSS 組版をして表示します。PDF に出力できます。
 - v2において press-ready をマージしたことにより、PDF/X-1a 出力がサポートされました（本機能には [Ghostscript](https://www.ghostscript.com/) と [Xpdf](http://www.xpdfreader.com/) が必要です。詳細は [press-ready](https://github.com/vibranthq/press-ready/blob/master/README.md) をご参照ください）。

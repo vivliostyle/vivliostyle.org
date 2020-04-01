@@ -1,7 +1,7 @@
 ---
 title: We will hold "Vivliostyle User / Dev Meetup 2020 Spring"
 lang: en
-image: /samples/images/user_meetup_1200x630.png
+image: /assets/posts/2020-03-21-We-will-hold-Vivliostyle-User-and-Developer-Gathering-Spring-2020/user_meetup_1200x630.png
 author:
   - ogwata
 ---
