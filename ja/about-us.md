@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Us
+title: 私たちについて
 lang: ja
 ---
 
@@ -59,8 +59,8 @@ Vivliostyle はボランティア・スタッフに支えられたオープン�
 
 
 {% include page/about_us.html
-  title="About Us"
-  lead="Vivliostyleを開発している私達についてご説明します。"
+  title="私たちについて"
+  lead="Vivliostyleを開発している私たちについてご説明します。"
 
   foundation=foundation
   foundation_frame=foundation_frame
