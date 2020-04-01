@@ -8,7 +8,7 @@ tags:
 *An interview with myself about the new package Vivliostyle-print*
 
 
-**[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle) has been with us for a few years already. It can both show paged media in the browser as well as print HTML with extra CSS targeted paged media. What need is there for a [Vivliostyle-print](https://github.com/vivliostyle/vivliostyle-print) then?**
+**[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) has been with us for a few years already. It can both show paged media in the browser as well as print HTML with extra CSS targeted paged media. What need is there for a [Vivliostyle-print](https://github.com/vivliostyle/vivliostyle-print) then?**
 
 It is true that  Vivliostyle.js already has existed a few years and Vivliostyle-print adds nothing new in terms of CSS. For end users who only know HTML and CSS and no JavaScript, using Vivliostyle Viewer (Vivliostyle.js + Vivliostyle-ui) continues to be the way to go.
 

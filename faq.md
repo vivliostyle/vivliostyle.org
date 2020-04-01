@@ -24,7 +24,7 @@ References:
 
 ### Where does the copyright of the Vivliostyle source code belong?
 
-The Vivliostyle source code has the following copyright notation: (e.g., in [epub.ts](https://github.com/vivliostyle/vivliostyle/blob/master/packages/core/src/vivliostyle/epub.ts))
+The Vivliostyle source code has the following copyright notation: (e.g., in [epub.ts](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/src/vivliostyle/epub.ts))
  
 > * Copyright 2013 Google, Inc.
 > * Copyright 2015 Trim-marks Inc.
@@ -53,7 +53,7 @@ See (GNU License FAQ):
 
 ### Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?
 
-Yes. [Vivliostyle Viewer](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer) and [Vivliostyle Print](https://github.com/vivliostyle/vivliostyle-print) run as an independent program on the client-side browser, and so can be used in combination with server-side programs or other client-side programs even if they are proprietary.
+Yes. [Vivliostyle Viewer](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer) and [Vivliostyle Print](https://github.com/vivliostyle/vivliostyle-print) run as an independent program on the client-side browser, and so can be used in combination with server-side programs or other client-side programs even if they are proprietary.
 
 It is also possible to modify Viviostyle (Viewer/Print) if the modified source code is published. However, the AGPL Viviostyle program and the proprietary program that calls it must not share complex data structures.
 
@@ -64,7 +64,7 @@ See (GNU License FAQ):
 
 ### How does Viviostyle Viewer run as an independent program?
 
-[Vivliostyle Viewer](https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer) consists of its main HTML file and JavaScript libraries linked from it. Even if the Vivliostyle Viewer is used in a commercial Web application and is placed on the same Web server as that Web application, it is loaded and runs on the end user's Web browser, so it is clearly separate from the Web application's server-side programs.
+[Vivliostyle Viewer](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer) consists of its main HTML file and JavaScript libraries linked from it. Even if the Vivliostyle Viewer is used in a commercial Web application and is placed on the same Web server as that Web application, it is loaded and runs on the end user's Web browser, so it is clearly separate from the Web application's server-side programs.
 
 Data such as the URL of the document to be displayed in Vivliostyle Viewer and the display settings are specified as the URL fragment parameters added to the URL of the main HTML file of Vivliostyle Viewer. In case that the URL parameters are used to pass data between the Viviostyle program and the front-end program (JavaScript etc.) for a commercial Web application, the two programs need not to be combined, so the Viviostyle Viewer can be treated as an independent program.
 
@@ -85,7 +85,7 @@ In commercial use of Vivliostyle under the AGPL license, you need to be aware of
 
 - If you modify and distribute Vivliostyle (Note: use on website is also considered to be distributed), you need to publish the modified Vivliostyle source code.
 - When you create and distribute a program that runs as a single combined program incorporating Vivliostyle, you need to publish the source code of the program under the AGPL license.
-- If you modify Viviostyle source code, retain the copyright notice in the header comments of the source files. The source files marked "Copyright 2013 Google, Inc." contain the source code from the original project "Adapt" which is licensed under Apache License 2.0. Retain the following description in the [README](https://github.com/vivliostyle/vivliostyle/blob/master/README.md) and [LICENSE](https://github.com/vivliostyle/vivliostyle/blob/master/LICENSE.md) files:
+- If you modify Viviostyle source code, retain the copyright notice in the header comments of the source files. The source files marked "Copyright 2013 Google, Inc." contain the source code from the original project "Adapt" which is licensed under Apache License 2.0. Retain the following description in the [README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md) and [LICENSE](https://github.com/vivliostyle/vivliostyle.js/blob/master/LICENSE.md) files:
     > Vivliostyle is implemented based on [Peter Sorotokin's EPUB Adaptive Layout implementation](https://github.com/sorotokin/adaptive-layout), which is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 {% endcapture %}
 

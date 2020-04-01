@@ -6,7 +6,7 @@ project:
 viewer:
   name: Vivliostyle Viewer
   version: v2.0.0
-  github: https://github.com/vivliostyle/vivliostyle/tree/master/packages/viewer
+  github: https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer
   url: https://vivliostyle.org/viewer
   sample:
     ja: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gon/index.html
@@ -34,7 +34,7 @@ pub:
 core:
   name: Vivliostyle Core
   version: v2.0.0
-  github: https://github.com/vivliostyle/vivliostyle/tree/master/packages/core
+  github: https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/core
   thumbnail: /assets/projects/thumbnail-core.png
   # screenshot: 
 print:
