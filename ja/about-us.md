@@ -37,8 +37,8 @@ lang: ja
 
 これまでの貢献者を、感謝の気持ちをこめてご紹介します。
 
-<ul class="list--medium" id="contributors-list"></ul>
-{% include fetch-contributors.html id="contributors-list" %}
+<ul class="list--small" id="contributors-list"></ul>
+{% include fetch-contributors-about-us.html id="contributors-list" %}
 
 <ol class="list--medium">
   {% include button/slack.html text="Slackに参加" %}

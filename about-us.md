@@ -34,8 +34,8 @@ Our goal is to develop, publish and disseminate "Vivliostyle", an open source ty
 
 Here are some of our past contributors with gratitude.
 
-<ul class="list--medium" id="contributors-list"></ul>
-{% include fetch-contributors.html id="contributors-list" %}
+<ul class="list--small" id="contributors-list"></ul>
+{% include fetch-contributors-about-us.html id="contributors-list" %}
 
 <ol class="list--medium">
   {% include button/slack.html text="Join our Slack" %}

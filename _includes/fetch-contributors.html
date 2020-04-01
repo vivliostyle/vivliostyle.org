@@ -1,19 +1,4 @@
 <script>
-  main("{{ include.id | default: 'contributors-list' }}");
-
-  async function main(id) {
-    try {
-      const element = document.getElementById(id);
-      const contributors = await fetchContributors("https://api.github.com/users/vivliostyle/repos");
-
-      contributors.forEach(function(name) {
-        element.insertAdjacentHTML("beforeend", avatarTemplate(name));
-      });
-    } catch(error) {
-      console.log(error);
-    }
-  }
-
   function avatarTemplate(name) {
     // _includes/avatar-list.html
     return `

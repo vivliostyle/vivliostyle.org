@@ -34,7 +34,8 @@ Related articles:
 - [Vivliostyle version 2019.8.100 released! Now written in TypeScript](https://vivliostyle.org/blog/2019/08/16/vivliostyle-2019.8.100-released/)
 
 
-{% include avatar-list.html namelist=site.data.developer.current_vivliostyle_dev %}
+<ul class="list--small" id="contributors-list"></ul>
+{% include fetch-contributors-history.html id="contributors-list" %}
 {% endcapture %}
 
 
