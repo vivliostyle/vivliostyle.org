@@ -4,7 +4,7 @@
   <ul class="list--small">
     {% for tag in include.tags %}
       <li>
-        <a href="{{ site.baseurl }}/blog/tag/{{ tag }}" class="button--primary--small">
+        <a href="{{ site.baseurl }}/blog/tag/{{ tag | slugify }}" class="button--primary--small">
           {{ tag }}
         </a>
       </li>

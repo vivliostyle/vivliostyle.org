@@ -3,7 +3,7 @@ title: Vivliostyle Developer and User Meeting 2019 Summer was held!
 lang: en
 author: murakami
 tags:
-  - book
+  - event
 ---
 
 _(The original article is [“Vivliostyle 開発者とユーザーの集い 2019 夏 開催しました！”](/ja/blog/2019/09/04/vivliostyle-dev-user-meetup-tokyo20190831/) in Japanese)_

@@ -4,6 +4,8 @@ lang: en
 image: /assets/posts/2020-03-21-We-will-hold-Vivliostyle-User-and-Developer-Gathering-Spring-2020/user_meetup_1200x630.png
 author:
   - ogwata
+tags:
+  - event
 ---
 (The original article is [“CSS組版 Vivliostyle ユーザーと開発者の集い 2020春 を開催します”](https://vivliostyle.org/ja/blog/2020/03/21/We-will-hold-Vivliostyle-User-and-Developer-Gathering-Spring-2020/) in Japanes)
 
