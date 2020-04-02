@@ -75,7 +75,7 @@ Vivliostyle is developing the following products.
   project4_description="Enter markdown and you can see the typesetting results immediately."
 %}
 
-Other libraries for developers include ["Vivliostyle Core"]({{ site.data.project.core.github }}), the core of the typography engine, and ["Vivliostyle Print"]({{ site.data.project.print.github }}), which embeds printing functionality into websites.
+Other libraries for developers include ["Vivliostyle Core"]({{ site.data.project.core.github }}), the core of the typesetting engine, and ["Vivliostyle Print"]({{ site.data.project.print.github }}), which embeds printing functionality into websites.
 {% endcapture %}
 
 
