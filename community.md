@@ -25,6 +25,7 @@ If you want to efficiently gather information about Vivliostyle, this is the pla
   {% include button/facebook.html url=site.data.account.facebook_group.url text=site.data.account.facebook_group.name %}
   {% include button/facebook.html url=site.data.account.facebook.url text="Facebook Page" %}
   {% include button/twitter.html %}
+  {% include button/secondary.html url=site.data.account.youtube.url text="YouTube Channel" %}
 </ol>
 {% endcapture %}
 
