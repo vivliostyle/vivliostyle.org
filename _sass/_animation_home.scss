@@ -134,6 +134,7 @@
     @include media_medium {
       .animation__img {
         width: calc(100vw / 3);
+        height: intrinsic;
         margin-bottom: 20px;
       }
 
