@@ -37,7 +37,7 @@ lang: ja
 
 創刊号らしく体験記事がたくさん集まりました。とくに村上ファウンダーの「Vivliostyle Viewer でCSS組版ちょっと入門」は今のところ数少ない Vivliostyle の入門記事です。
 
-関連記事：[技術書典6に出展『Vivliostyleで本を作ろう Vol.1』公開！](ja/blog/2019/05/06/make-books-with-vivliostyle-vol1/)
+関連記事：[技術書典6に出展『Vivliostyleで本を作ろう Vol.1』公開！](/ja/blog/2019/05/06/make-books-with-vivliostyle-vol1/)
 {% endcapture %}
 
 
