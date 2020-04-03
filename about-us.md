@@ -25,7 +25,7 @@ Our goal is to develop, publish and disseminate "Vivliostyle", an open source ty
 - Location: 1941-84 Daitakubo, Minami-ku, Saitama-shi, Saitama 336-0015, Japan
 - Phone: +81-90-3688-2212
 
-### Members
+### Directors
 {% endcapture %}
 
 
