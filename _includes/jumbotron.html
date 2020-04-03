@@ -1,0 +1,10 @@
+{% assign lead = site.data.jumbotron.lead[lang.code] %}
+
+<div class="jumbotron" style="background-image: url({{ site.data.jumbotron.image }})">
+  <p class="jumbotron__lead--top">CSS Typesetting</p>
+  <p class="jumbotron__lead">
+    {% for line in lead %}
+    {{ line }}<br/>
+    {% endfor %}
+  </p>
+</div>

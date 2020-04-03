@@ -1,0 +1,59 @@
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 120px 80px 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  font-family: $vivliostyle_font, $body_font;
+  color: $white;
+}
+
+.jumbotron__lead--top {
+  font-size: 80px;
+  font-weight: $medium_font_weight;
+  margin-bottom: $gap_large;
+  letter-spacing: -2px;
+  text-shadow: 1px 1px 3px $gray;
+}
+
+.jumbotron__lead {
+  font-size: $display_font_size;
+}
+
+@include media_large {
+  // 高さを可変にする
+  .jumbotron {
+    height: auto;
+    padding: 80px;
+  }
+
+  // 改行をなくす
+  .jumbotron__lead {
+    br {
+      display: none;
+    }
+  }
+}
+
+@include media_medium {
+  .jumbotron {
+    padding: 100px 60px;
+  }
+
+  .jumbotron__lead--top {
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  .jumbotron__lead {
+    font-size: 20px;
+  }
+}
+
+@include media_small {
+  .jumbotron {
+    padding: 100px 40px;
+  }
+}

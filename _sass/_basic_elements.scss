@@ -1,0 +1,46 @@
+// サイト全体を通して使う要素のスタイル
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: $body_line_height;
+  background-color: $background_color;
+  color: $text_color;
+  font-family: $body_font;
+  font-size: $body_font_size;
+  font-weight: $body_font_weight;
+}
+
+img {
+  display: block;
+}
+
+small {
+  font-size: $small_font_size;
+}
+
+a {
+  transition: $hover_animation;
+
+  &:link {
+    font-weight: $bold_font_weight;
+    color: $link_color;
+  }
+
+  &:visited {
+    color: $link_visited_color;
+  }
+
+  &:hover {
+    opacity: $hover_opacity;
+  }
+}
+
+ol,
+ul {
+  padding: 0;
+}

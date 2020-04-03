@@ -1,0 +1,82 @@
+{% include assign/lang.html %}
+{% assign global_header = site.data.global_header[lang.code] %}
+
+<header class="global-header">
+  <div class="global-header__brand">
+    <a href="{{ lang.url | relative_url }}">
+      <img class="global-header__logo" src="{{ site.logo | relative_url }}" alt="{{ site.title | append: ' logo' }}"/>
+    </a>
+
+    {% include site-search.html %}
+  </div>
+
+  <nav class="global-header__nav">
+    <ol class="nav__list">
+      <li class="nav__item--menu">
+        <div class="nav__link--menu">
+          <i class="mdi mdi-format-list-bulleted item__icon"></i>
+          <span class="nav__label">MENU</span>
+          <i class="mdi mdi-chevron-down item__icon"></i>
+        </div>
+        <ol class="nav__list--menu">
+          {% for item in global_header %}
+            {% if item.url contains '://' %}
+              {% assign url = item.url %}
+            {% else %}
+              {% assign url = item.url | relative_url %}
+            {% endif %}
+
+            {% if item.url == page.url %}
+              {% assign active = "--active" %}
+            {% else %}
+              {% assign active = "" %}
+            {% endif %}
+
+            <li class="nav__item{{ active }}">
+              <a class="nav__link" href="{{ url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ol>
+      </li>
+
+      <li class="nav__item">
+        <span class="nav__link">
+          <i class="mdi mdi-web item__icon"></i>
+          <span class="nav__label">{{ lang.name }}</span>
+          <i class="mdi mdi-chevron-down item__icon"></i>
+        </span>
+
+        <ul class="nav__dropdown">
+          {% for otherlang in site.data.language %}
+            {% assign url = page.url | remove_first: lang.url %}
+
+            {% if lang.name == otherlang[1].name %}
+              {% assign icon = "mdi-check" %}
+            {% else %}
+              {% assign icon = "mdi-blank" %}
+            {% endif %}
+
+            <li class="nav__item">
+              <a class="nav__link" href="{{ otherlang[1].url | append: url | relative_url }}">
+                <i class="mdi {{ icon }} item__icon"></i>
+                <span class="nav__label">{{ otherlang[1].name }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <a class="nav__link" href="{{ site.data.account.github.url }}">
+          <i class="mdi mdi-github-circle item__icon"></i>
+          <span class="nav__label">GitHub</span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</header>
+
+{% if page.jumbotron_image %}
+  {% include banner.html %}
+  {% include jumbotron.html %}
+{% endif %}

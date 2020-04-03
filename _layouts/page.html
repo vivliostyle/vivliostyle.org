@@ -2,18 +2,14 @@
 layout: default
 ---
 
-{% include site-header.html %}
+{% include global-header.html %}
 
-<main class="main  container">
-
-<article class="article  article--page  content  typeset">
-<h1>{{ page.title }}</h1>
-
-{{ content }}
-</article>
-
-{% if page.aside == true %}{% include site-aside.html %}{% endif %}
-
+<main class="main">
+  {% if page.under_construction %}
+    {% include under-construction.html %}
+  {% else %}
+    {{ content }}
+  {% endif %}
 </main>
 
-{% include site-footer.html %}
+{% include global-footer.html %}

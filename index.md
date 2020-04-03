@@ -1,51 +1,109 @@
 ---
-title: The Vivliostyle Project
-aside: true
-aside-type: blog-entries
-# feature_text: |
-#   ## Vivliostyle
-#   CSS Typesetting
-feature_image: "/assets/header-image.png"
-excerpt: "open source, web browser based CSS typesetting engine project"
 layout: page
+title: Vivliostyle — Enjoy CSS Typesetting!
+jumbotron_image: true
+excerpt: "open source, web browser based CSS typesetting engine project"
 ---
 
-Vivliostyle is an open source project for a new typesetting engine fitting for digital publishing = web publishing era based on web standard technology.
 
-- Enhancing typography and layout capability of web browsers, to be used as typesetting engines for both web/digital and print publishing
-- Implementing CSS typesetting features with JavaScript
-- Cooperating with the W3C standardization of CSS typesetting specifications, and advancing implementation
+{% capture sample1 %}
+## Want to make a book with CSS typesetting?
 
-☞ Check the latest [**Vivliostyle Viewer**](https://vivliostyle.org/viewer/)
+Vivliostyle Viewer loads HTML files from your browser, and Vivliostyle CLI loads HTML files from the command line, typesets them with CSS, and exports them to PDF.
 
-## About Vivliostyle Foundation
+<ol class="list--large">
+  {% include thumbnail/viewer.html url=site.data.project.viewer.url %}
+  {% include thumbnail/cli.html url=site.data.project.cli.github %}
+</ol>
 
-Our purpose is to promote the development,
-public release,
-and adoption of the open source typesetting software Vivliostyle
-which unifies the Web and publishing/printing world,
-so that the typesetting technique that has been cultivated throughout the history of printing
-is inherited and evolved on Web and digital publishing,
-and contribute to digitization of publishing indispensable
-for the advancement of academic,
-literary and informational communication around the world and improve accessibility.
-For this purpose, we carry out activities such as:
+<ol class="list--medium">
+  {% include button/primary.html url=site.data.project.viewer.url text="Open Vivliostyle Viewer" %}
+  {% include button/primary.html url=site.data.project.cli.github text="Check out Vivliostyle CLI" %}
+  {% include button/simple.html text="or" %}
+  {% include button/secondary.html url=site.data.project.pub.sample.en text="View samples" %}
+</ol>
 
-- Maintenance and management of Vivliostyle open source project and community
-- Research and development of Vivliostyle and related technologies
-- Promotion and education of Vivliostyle and CSS typesetting
-- Promote standardization in cooperation with groups related to standard technologies such as Web, publishing, and accessibility
-- Cooperation with external projects working with Vivliostyle
+　
 
-<div style="margin: 2em 0 1em; text-align: right">
-<div><strong>Vivliostyle Foundation</strong></div>
-<div>Established in August 2018</div>
-<br>
-{% assign people = "murakami, florian, johannes" | split: ", " %}
-{% for a in people %}
-<div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].en }}</a></strong>&ensp;({{ site.data.people[a].role_en }})</div>
-{% endfor %}
-</div>
-<br>
+With Vivliostyle Pub, you can create printable PDF from your browser.
 
-{% include nav-share.html %}
+<ol class="list--large">
+  {% include thumbnail/pub.html url=site.data.project.pub.github %}
+</ol>
+
+<ol class="list--medium">
+  {% include button/disabled.html url=site.data.project.pub.url text="Try Vivliostyle Pub (launched during 2020)" %}
+</ol>
+{% endcapture %}
+
+
+{% capture sample2 %}
+## Want to read EPUB or Web documents in your favorite style?
+
+You can read EPUB, HTML or Web publications in Vivliostyle Viewer and use CSS to present it in your preferred style.
+
+<ol class="list--large">
+  {% include thumbnail/viewer.html url=site.data.project.viewer.sample.en %}
+</ol>
+
+<ol class="list--medium">
+  {% include button/primary.html url=site.data.project.viewer.sample.en text="Open Vivliostyle Viewer" %}
+</ol>
+{% endcapture %}
+
+
+{% capture project %}
+## What is the Vivliostyle project?
+
+Vivliostyle is developing the following products.
+
+{% include projects.html
+  project1_src="/assets/projects/project1.svg"
+  project1_name=site.data.project.project.name.en
+  project1_link=site.data.project.project.github
+  project2_src="/assets/projects/project2.svg"
+  project2_name=site.data.project.viewer.name
+  project2_link=site.data.project.viewer.github
+  project2_description="Load HTML and display the typesetting results on the browser."
+  project3_src="/assets/projects/project3.svg"
+  project3_name=site.data.project.cli.name
+  project3_link=site.data.project.cli.github
+  project3_description="Typesetting from command line and generate PDF."
+  project4_src="/assets/projects/project4.svg"
+  project4_name=site.data.project.pub.name
+  project4_link=site.data.project.pub.github
+  project4_description="Enter markdown and you can see the typesetting results immediately."
+%}
+
+Other libraries for developers include ["Vivliostyle Core"]({{ site.data.project.core.github }}), the core of the typesetting engine, and ["Vivliostyle Print"]({{ site.data.project.print.github }}), which embeds printing functionality into websites.
+{% endcapture %}
+
+
+{% capture blog %}
+## Recent blog posts
+
+{% assign posts = site.posts | where: "lang", page.lang | slice: 0, 3 %}
+{% include post-list.html posts=posts %}
+{% endcapture %}
+
+
+{% capture dev %}
+## Help improve Vivliostyle
+
+The Vivliostyle project discusses development matters on Slack. Please take a look. Click the button below for the development guide and documentation.
+
+<ol class="list--medium">
+  {% include button/slack.html text="Join our Slack" %}
+  {% include button/github.html text="Join development" %}
+  {% include button/secondary.html url="/documents" text="See Documents" %}
+</ol>
+{% endcapture %}
+
+
+{% include page/index.html
+  sample1=sample1
+  sample2=sample2
+  project=project
+  blog=blog
+  dev=dev
+%}

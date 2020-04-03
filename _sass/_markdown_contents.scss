@@ -1,0 +1,77 @@
+@mixin markdown_contents {
+  img {
+    margin: 0 auto;
+    max-width: 50vw;
+  }
+
+  ol,
+  ul {
+    padding-left: $gap_large;
+  }
+
+  blockquote {
+    color: $gray;
+    border-left: calc(#{$gap_small} / 2) solid $gray_light;
+    margin-left: calc(#{$gap_small} / 2);
+    padding-left: $gap_small;
+  }
+
+  pre {
+    padding: $gap_medium calc(#{$gap_medium} * 2);
+    background: $background_code_color;
+    color: $white;
+    font-family: $monospace_font;
+    font-size: $monospace_font_size;
+    white-space: pre-wrap;
+
+    code {
+      background: transparent;
+      padding: 0;
+    }
+  }
+
+  code {
+    font-family: $monospace_font;
+    background: $gray_lighter;
+    padding: 0px 6px;
+    border-radius: $border_radius;
+  }
+
+  // 要素間の隙間
+  > p,
+  > ul,
+  > ol,
+  > blockquote,
+  > pre {
+    margin: $gap_medium 0;
+  }
+
+  > img {
+    margin: $gap_large auto;
+  }
+
+  > {
+    @include lists {
+      margin: $gap_large 0;
+    }
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media_large {
+    // 画像を大きく表示
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.container {
+  @include markdown_contents;
+}

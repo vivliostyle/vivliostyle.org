@@ -1,7 +1,0 @@
-<time datetime="{{ include.date | date_to_xmlschema }}" class="time">
-	{%- if page.lang == "ja" -%}
-	{{- include.date | date: "%Y年%m月%d日" -}}
-	{%- else -%}
-	{{- include.date | date_to_string -}}
-	{%- endif -%}
-</time>

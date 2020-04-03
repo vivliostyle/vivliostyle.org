@@ -1,0 +1,11 @@
+{% if include.frames %}
+  <ol class="list--medium--column {{ include.class }}">
+    {% for frame_contents in include.frames %}
+    <li class="{{ include.listclass | default: 'frame--large' }}">
+        <div class="container">
+          {{ frame_contents | markdownify }}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}

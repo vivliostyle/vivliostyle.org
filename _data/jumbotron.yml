@@ -1,0 +1,8 @@
+image: /assets/header-image.svg
+lead:
+  en:
+    - An open source project for a new typesetting system fitting for
+    - digital and web publishing based on the latest web standard technology
+  ja:
+    - 最新 Web 標準技術により、電子出版や Web 出版のための
+    - 新しい組版システムを作るオープンソース・プロジェクト

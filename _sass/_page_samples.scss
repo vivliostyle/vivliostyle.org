@@ -1,0 +1,11 @@
+.page_sample {
+  .sample-wrap {
+    justify-content: unset;
+  }
+
+  @include media_large {
+    .sample-wrap {
+      @include list_column($gap_large, false);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin thumbnail($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: $border_radius;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  .thumbnail {
+    @include thumbnail(320px, auto);
+  }
+}

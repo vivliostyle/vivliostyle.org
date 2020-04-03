@@ -1,18 +1,51 @@
 ---
-title: Vivliostyle コミュニティ
+layout: page
+title: コミュニティ
 lang: ja
 ---
 
-- [Slack&mdash;ここから参加できます!](https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
-  - [Slack ログの閲覧](https://github.com/vivliostyle/vivliostyle-wiki/wiki/Slack)
-- [Vivliostyle Forum&mdash;Facebook 公開グループ {% include icon.html id="facebook" %}](https://www.facebook.com/groups/vivliostyle/)
-- [Facebook ページ {% include icon.html id="facebook" %}](https://www.facebook.com/vivliostyle/)
-- [Twitter {% include icon.html id="twitter" %}](https://twitter.com/Vivliostyle)
-- [GitHub {% include icon.html id="github" %}](https://github.com/vivliostyle)
+{% capture slack %}
+## Slack
 
-### コンタクト
+最もアクティブ。Vivliostyle についての質問にも素早い反応が期待できます。
 
-Project Leader: [村上 真雄 (@MurakamiShinyu) {% include icon.html id="twitter" title="twitter: @MurakamiShinyu" %}](https://twitter.com/MurakamiShinyu)&nbsp; [{% include icon.html id="facebook" title="facebook: shinyu.murakami" %}](https://www.facebook.com/shinyu.murakami)&nbsp; [{% include icon.html id="email" title="email: murakami@vivliostyle.org" %}](mailto:murakami@vivliostyle.org)
+<ol class="list--medium">
+  {% include button/slack.html %}
+  {% include button/secondary.html url=site.data.account.slack_log.url text="Slack のログを見る" %}
+</ol>
+{% endcapture %}
 
-<br>
-{% include nav-share.html %}
+
+{% capture sns %}
+## SNS
+
+効率よく Vivliostyle についての情報を集めたい方はこちら。
+
+<ol class="list--medium">
+  {% include button/facebook.html url=site.data.account.facebook_group.url text=site.data.account.facebook_group.name %}
+  {% include button/facebook.html url=site.data.account.facebook.url text="Facebook ページ" %}
+  {% include button/twitter.html %}
+  {% include button/secondary.html url=site.data.account.youtube.url text="YouTube チャンネル" %}
+</ol>
+{% endcapture %}
+
+
+{% capture github %}
+## GitHub
+
+Vivliostyle の開発現場を見たいならこちら。
+
+<ol class="list--medium">
+  {% include button/github.html %}
+</ol>
+{% endcapture %}
+
+
+{% include page/community.html
+  title="コミュニティ"
+  lead="Vivliostyleはオープンソース開発。当然コミュニティも各種そろってます。あなたの目的に応じて、ぜひご参加ください！"
+
+  slack=slack
+  sns=sns
+  github=github
+%}

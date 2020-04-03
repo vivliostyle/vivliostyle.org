@@ -1,0 +1,34 @@
+<section class="section">
+  <div class="container">
+    {% for lang in site.data.language %}
+      {% assign lang_name = lang[1].name %}
+      {% assign lang_code = lang[1].code %}
+
+      <h2>{{ lang_name }}</h2>
+
+      <p>{{ site.data.404[lang_code] }}</p>
+
+      <ul>
+        {% for item in site.html_pages %}
+          {% unless
+            item.title == false
+            or item.lang != lang_code
+            or item.url contains "/404.html"
+            or item.url contains "/offline"
+            or item.url contains "/blog/tag"
+          %}
+            {% if item.url contains '://' %}
+              {% assign url = item.url %}
+            {% else %}
+              {% assign url = item.url | relative_url %}
+            {% endif %}
+
+            <li>
+              <a href="{{ url }}">{{ item.title }}</a>
+            </li>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</section>

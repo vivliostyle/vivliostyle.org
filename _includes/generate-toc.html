@@ -1,0 +1,57 @@
+<script>
+  window.onload = function() {
+    //
+    // 目次生成
+    //
+    const tocHeadings = document.querySelectorAll("h2, h3, h4, h5, h6");
+    const list = document.getElementById("toc");
+
+    tocHeadings.forEach(function(heading) {
+      const headingLevel = parseInt(heading.tagName[1]);
+      const text = heading.innerText;
+      const id = heading.id;
+
+      let link = document.createElement("a");
+      link.innerText = text;
+      link.setAttribute("href", "#" + id);
+
+      let item = document.createElement("li");
+      item.classList.add("toc-list__item--level" + headingLevel);
+
+      item.appendChild(link);
+      list.appendChild(item);
+    });
+
+
+    //
+    // スクロールと目次のインデックスを合わせる
+    //
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "-5% 0px -95%",
+      threshold: 0
+    });
+
+    tocHeadings.forEach(heading => {
+      observer.observe(heading);
+    });
+
+    function callback(entries) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          activateTOCIndex(entry.target);
+        }
+      });
+    }
+
+    function activateTOCIndex(element) {
+      const currentActiveIndex = document.querySelector(".toc-list__item--active");
+      if(currentActiveIndex) {
+        currentActiveIndex.classList.remove("toc-list__item--active");
+      }
+
+      const newActiveIndex = document.querySelector(`.toc-list a[href='#${element.id}']`).parentNode;
+      newActiveIndex.classList.add("toc-list__item--active");
+    }
+  }
+</script>

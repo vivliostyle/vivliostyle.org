@@ -1,0 +1,39 @@
+.container {
+  .list--small {
+    @include list_row($gap_small);
+  }
+
+  .list--small--column {
+    @include list_column($gap_small, false);
+  }
+
+  .list--medium {
+    @include list_row($gap_medium);
+  }
+
+  .list--medium--column {
+    @include list_column($gap_medium, false);
+  }
+
+  .list--large {
+    @include list_row($gap_large, false);
+  }
+
+  .list--large--column {
+    @include list_column($gap_large, false);
+  }
+
+  @include media_small {
+    .list--large {
+      @include list_column($gap_large, false);
+
+      align-items: center;
+    }
+
+    .list--medium {
+      @include list_column($gap_medium, false);
+
+      align-items: center;
+    }
+  }
+}

@@ -3,6 +3,8 @@ title: 技術書典6にVivliostyleユーザー会が出展します！
 lang: ja
 permalink: /ja/blog/2019/04/13/appearance-of-user-group-in-tbf06
 author: spring_raining
+tags:
+  - イベント
 ---
 
 **【追記】** 『Vivliostyle で本を作ろう Vol. 1』の全篇を[公開](https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&renderAllPages=true)しました。👉[Vivliostyle サンプル](/ja/samples/)

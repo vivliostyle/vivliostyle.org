@@ -1,0 +1,87 @@
+.global-header {
+  .global-header__search {
+    position: relative;
+    margin-left: $gap_large;
+  }
+
+  .global-header__searchfield {
+    display: flex;
+    border: 1px solid $gray_light;
+    border-radius: $header_height;
+    background-color: $white;
+  }
+
+  .global-header__searchicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: $searchfield_height;
+    height: $searchfield_height;
+    padding-left: $gap_small;
+    font-size: 26px;
+    color: $gray_light;
+  }
+
+  .global-header__input {
+    width: 160px;
+    height: $searchfield_height;
+    margin: 0;
+    padding: $gap_small $gap_small $gap_small 0px;
+    border: 0;
+    outline: none;
+    appearance: none;
+    font-size: $body_font_size;
+    background-color: transparent;
+  }
+
+  .global-header__searchresult {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: calc(#{$searchfield_height} + #{$searchresult_triangle_size} + #{$gap_medium});
+    width: 50vw;
+    padding: $gap_medium calc(#{$gap_medium} * 2);
+    border: 1px solid $gray_light;
+    background-color: $white;
+    transition: $hover_animation;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: calc(-2 * #{$searchresult_triangle_size});
+      border-bottom: $searchresult_triangle_size solid $gray_light;
+      border-top: $searchresult_triangle_size solid transparent;
+      border-left: $searchresult_triangle_size solid transparent;
+      border-right: $searchresult_triangle_size solid transparent;
+    }
+
+    &:after {
+      top: calc(-2 * #{$searchresult_triangle_size} + 2px);
+      border-bottom: $searchresult_triangle_size solid $white;
+      transform: scale(0.95);
+    }
+  }
+
+  .global-header__searchresult.open {
+    display: block;
+  }
+
+  .searchresult__header {
+    font-size: $display_font_size;
+    text-align: right;
+    color: $gray;
+  }
+
+  .searchresult__closeicon {
+    cursor: pointer;
+  }
+
+  @include media_medium {
+    // 検索ボックスをなくす
+    .global-header__search {
+      display: none;
+    }
+  }
+}

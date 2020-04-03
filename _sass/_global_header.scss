@@ -1,0 +1,177 @@
+@mixin nav_item {
+  flex-shrink: 0;
+  position: relative;
+  background-color: $white;
+  transition: $hover_animation;
+
+  &:hover {
+    background-color: $blue_lighter;
+
+    .nav__dropdown {
+      display: block;
+    }
+  }
+}
+
+.global-header {
+  @include list;
+
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: $header_height;
+  padding: 0 $gap_large;
+
+  // ----------
+  // logo
+  // ----------
+
+  .global-header__brand {
+    @include list;
+
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .global-header__logo {
+    width: auto;
+    height: 40px;
+  }
+
+  // ----------
+  // nav
+  // ----------
+
+  .nav__list,
+  .nav__list--menu {
+    @include list;
+
+    flex-wrap: nowrap;
+    font-weight: $bold_font_weight;
+  }
+
+  .nav__item,
+  .nav__item--menu {
+    @include nav_item;
+  }
+
+  .nav__item--active {
+    @include nav_item;
+
+    box-shadow: inset 0 -6px 0 $primary_color;
+  }
+
+  .nav__dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    min-width: 100%;
+    border: 1px solid $gray_lighter;
+    transition: $hover_animation;
+  }
+
+  .item__icon {
+    font-size: 22px;
+    margin: 0 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nav__link,
+  .nav__link--menu {
+    display: flex;
+    align-items: center;
+    height: $header_height;
+    padding: 0 24px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:link,
+    &:visited {
+      color: $text_color;
+    }
+  }
+
+  .nav__link--menu {
+    display: none;
+  }
+
+  @include media_large {
+    // MENUをドロップダウンにする
+    .nav__link--menu {
+      display: flex;
+    }
+
+    .nav__item--menu {
+      &:hover {
+        .nav__list--menu {
+          display: block;
+        }
+      }
+    }
+
+    .nav__list--menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      z-index: 10;
+      min-width: 100%;
+      margin: 0;
+      border: 1px solid $gray_lighter;
+      transition: $hover_animation;
+    }
+
+    // アクティブの印を左側につける
+    .nav__item--active {
+      box-shadow: inset 6px 0 0 $primary_color;
+    }
+  }
+
+  @include media_medium {
+    // アイコンを大きくする
+    .item__icon {
+      font-size: 32px;
+    }
+
+    // ラベルを消す
+    .nav__label {
+      display: none;
+    }
+
+    .nav__dropdown .nav__label {
+      display: block;
+    }
+
+    // メニューを幅いっぱいに広げる
+    .nav__item,
+    .nav__item--menu {
+      position: unset;
+    }
+  }
+
+  @include media_small {
+    padding: 0 20px;
+
+    // ボタンを小さくする
+    .nav__link,
+    .nav__link--menu {
+      padding: 0 10px;
+    }
+
+    .global-header__logo {
+      height: 30px;
+    }
+
+    .item__icon {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}

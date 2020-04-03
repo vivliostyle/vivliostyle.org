@@ -1,0 +1,33 @@
+{% include assign/lang.html %}
+
+<div class="container">
+  <div class="list--small--column">
+    <ul class="list--small">
+      {% for item in include.sample.urls %}
+        {% assign text = item.name[lang.code] %}
+
+        {% if item.url contains 'github.com' %}
+          {% include button/github.html url=item.url text=text class="button--github--medium" %}
+        {% else %}
+          {% include button/secondary.html url=item.url text=text class="button--secondary--medium" %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <ul class="list--small">
+      {% for tag in include.sample.tags %}
+        <li class="tip">
+          {% if tag.url %}
+            <a href="{{ tag.url }}">{{ tag.name[lang.code] }}</a>
+          {% else %}
+            {{ tag.name[lang.code] }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% if include.sample.comment[lang.code] %}
+    <p>{{ include.sample.comment[lang.code] | markdownify }}</p>
+  {% endif %}
+</div>

@@ -1,0 +1,19 @@
+{% include assign/lang.html %}
+
+{% if include.author %}
+  <ul class="post__authors">
+    {% for name in include.author %}
+      {% assign member = site.data.people.members[name] %}
+
+      <li class="author__item">
+        {% if member.email %}
+          <a href="mailto:{{ member.email }}" class="author__link">{{ member.name[lang.code] }}</a>
+        {% else %}
+          {{ member.name[lang.code] }}
+        {% endif %}
+
+        ({{ member.role[lang.code] }})
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

@@ -1,0 +1,14 @@
+<li class="frame--medium">
+  <div class="frame__contents">
+    <div class="plan__text">
+      <h3>{{ include.title }}</h3>
+      {{ include.description | markdownify }}
+    </div>
+
+    {% if include.thumbnail %}
+      <a href="{{ include.url | relative_url }}" class="frame__link">
+        <img src="{{ include.thumbnail | relative_url }}" alt="{{ include.title }}" class="frame__thumbnail">
+      </a>
+    {% endif %}
+  </div>
+</li>

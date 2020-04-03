@@ -1,20 +1,25 @@
-<section class="section  typeset">
-	<ul class="list  list--posts">
-		{% assign one_lang_posts = site.posts | where:"lang",page.lang %}
-		{% for page in one_lang_posts %}
-			<li class="item  item--post">
-				<article class="article  article--post">
+<ol class="list--medium--column">
+  {% for post in include.posts %}
+    <li class="frame--medium">
+      {% include post-header.html
+        date=post.date
+        tags=post.tags
+      %}
 
-					<h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
-					{% include post-meta.html  %}
-					{% if page.lang == "ja" %}
-					{{ page.excerpt | markdownify | truncate: 200 }}
-					{% else %}
-					{{ page.excerpt | markdownify | truncatewords: 50 }}
-					{% endif %}
+      <a href="{{ site.baseurl }}{{ post.url }}" class="frame__link">
+        <div class="frame__contents">
+          <div class="post__text">
+            <h3>{{ post.title }}</h3>
+            <p class="post__excerpt">
+              {{ post.excerpt | strip_html | truncate: 200 }}
+            </p>
+          </div>
 
-				</article>
-			</li>
-		{% endfor %}
-	</ul>
-</section>
+          {% if post.image %}
+            <img src="{{ post.image }}" class="thumbnail post__thumbnail">
+          {% endif %}
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ol>

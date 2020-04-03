@@ -1,0 +1,53 @@
+<script>
+  function avatarTemplate(name) {
+    // _includes/avatar-list.html
+    return `
+      <li class="avatar-list__item">
+        <a href="https://github.com/${name}">
+          <img src="https://github.com/${name}.png" alt="${name}" class="avatar">
+        </a>
+      </li>
+      `;
+  }
+
+  async function fetchContributors(org_url) {
+    // repository情報を取得
+    let repositories = await fetchJSON(org_url);
+    repositories = repositories.filter(function(repository) {
+      // forkしたものでない、かつ、orgでない
+      return !repository["fork"] && repository.name != "vivliostyle.org";
+    })
+
+    // contributor情報を取得
+    const promises = repositories.map(function(repository) {
+      let contributors_url = repository["contributors_url"];
+      return fetchUsersFromRepository(contributors_url);
+    });
+    let contributors = await Promise.all(promises);
+    contributors = new Set(contributors.flat());
+
+    return [...contributors].filter(function(contributor) {
+      // dependabotでない
+      return contributor != "dependabot[bot]";
+    });
+  }
+
+  async function fetchUsersFromRepository(url) {
+    const contributors = await fetchJSON(url);
+
+    return contributors.map(function(user) {
+      return user["login"];
+    });
+  }
+
+  function fetchJSON(url) {
+    return fetch(url)
+      .then(function(response) {
+        if(!response.ok) {
+          return Promise.reject(response);
+        } else {
+          return response.json();
+        }
+      })
+  }
+</script>

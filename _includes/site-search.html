@@ -1,13 +1,20 @@
-<div class="form  form--search">
-    <form id="contact-form" action="">
-        <label class="label" for="search">Search term:</label>
-        <input class="input" id="search" type="search" name="search" placeholder="e.g. About us" autocomplete="off" />
+<form class="global-header__search" action="">
+  <div class="global-header__searchfield">
+    <div class="global-header__searchicon">
+      <i class="mdi mdi-magnify"></i>
+    </div>
+    <input class="global-header__input" id="search-form" type="text" name="search" placeholder="Search" autocomplete="off" />
+  </div>
 
-        <ul class="list  list--results" id="list">
-            <!-- results go here -->
-      	</ul>
-    </form>
-</div>
+  <div class="global-header__searchresult" id="result-area">
+    <header class="searchresult__header">
+      <i class="mdi mdi-close searchresult__closeicon" id="close-icon"></i>
+    </header>
+    <div class="container">
+      <ul class="list--medium--column" id="result-list"></ul>
+    </div>
+  </div>
+</form>
 
 <script type="text/javascript" src="{{ "/assets/scripts/fetch.js" | relative_url }}"></script>
 <script type="text/javascript">
@@ -30,11 +37,13 @@
         const resultsArray = findResults(this.value, pages);
         const html = resultsArray.map(item => {
           return `
-              <li class="item  item--result">
-                  <article class="article  typeset">
-                      <h4><a href="${item.url}">${item.title}</a></h4>
-                      <p>${item.excerpt}</p>
-                  </article>
+              <li class="frame--small">
+                <a href="${item.url}" class="frame__link">
+                  <h3>${item.title}</h3>
+                  <div class="frame__contents">
+                    <p>${item.excerpt.slice(0,140)}</p>
+                  </div>
+                </a>
               </li>`;
         }).join('');
         if ((resultsArray.length == 0) || (this.value == '')) {
@@ -42,10 +51,13 @@
         } else {
             resultsList.innerHTML = html;
         }
+        resultArea.classList.add('open');
     }
 
-    const field = document.querySelector('#search');
-    const resultsList = document.querySelector('#list');
+    const field = document.querySelector('#search-form');
+    const resultsList = document.querySelector('#result-list');
+    const closeIcon = document.querySelector('#close-icon');
+    const resultArea = document.querySelector('#result-area');
 
     field.addEventListener('keyup', displayResults);
 
@@ -53,6 +65,14 @@
         if (event.keyCode == 13) {
           event.preventDefault();
         }
+    });
+
+    closeIcon.addEventListener('click', function(event) {
+      if(resultArea.classList.contains('open')) {
+        resultArea.classList.remove('open');
+      } else {
+        resultArea.classList.add('open');
+      }
     });
 </script>
 <noscript>Please enable JavaScript to use the search form.</noscript>

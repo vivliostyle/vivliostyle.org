@@ -1,0 +1,4 @@
+{% assign array = "" | split: "" %}
+{% for content in include %}
+  {% assign array = array | push: content[1] %}
+{% endfor %}

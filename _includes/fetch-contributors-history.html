@@ -1,0 +1,28 @@
+{% include fetch-contributors.html %}
+
+{% assign old = site.data.developer.old_vivliostyle_dev %}
+{% assign current = site.data.developer.current_vivliostyle_dev %}
+
+<script>
+  (async function() {
+    try {
+      const element = document.getElementById("{{ include.id | default: 'contributors-list' }}");
+      const namelistOld = eval("[{% for name in old %}'{{ name }}',{% endfor %}]");
+      const namelistCurrent = eval("[{% for name in current %}'{{ name }}',{% endfor %}]");
+      const contributors = await fetchContributors("https://api.github.com/users/vivliostyle/repos");
+      const contributorsExceptForOld = contributors.filter(function(contributor) {
+        return !namelistOld.includes(contributor);
+      });
+
+      // 1. namelistOld に入っていない contributors
+      // 2. 1. に入っていない namelistCurrent
+      const namelist = [...new Set([...contributorsExceptForOld, ...namelistCurrent])];
+
+      namelist.forEach(function(name) {
+        element.insertAdjacentHTML("beforeend", avatarTemplate(name));
+      });
+    } catch(error) {
+      console.log(error);
+    }
+  })();
+</script>

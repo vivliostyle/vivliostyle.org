@@ -2,6 +2,8 @@
 title: Vivliostyle Developer and User Meeting 2019 Summer was held!
 lang: en
 author: murakami
+tags:
+  - event
 ---
 
 _(The original article is [“Vivliostyle 開発者とユーザーの集い 2019 夏 開催しました！”](/ja/blog/2019/09/04/vivliostyle-dev-user-meetup-tokyo20190831/) in Japanese)_
@@ -16,16 +18,16 @@ Presentation materials at the event are available:
 - [**Vivliostyle Development, the past and toward the future**](http://bit.ly/vivdev20190831)  
    by Shinyu Murakami ([@MurakamiShinyu](https://twitter.com/MurakamiShinyu)) Vivliostyle Foundation
 
-I just organized Vivliostyle issues into projects by issue category using [GitHub Projects - vivliostyle](https://github.com/vivliostyle/vivliostyle/projects). So I asked the meeting participants which projects were important (multiple answers). The results were:
+I just organized Vivliostyle issues into projects by issue category using [GitHub Projects - vivliostyle](https://github.com/vivliostyle/vivliostyle.js/projects). So I asked the meeting participants which projects were important (multiple answers). The results were:
 
-- [Bugs](https://github.com/vivliostyle/vivliostyle/projects/5): 7 votes
-- [PDF printing](https://github.com/vivliostyle/vivliostyle/projects/2): 7 votes
-- [Input formats](https://github.com/vivliostyle/vivliostyle/projects/3): 7 votes
-- [Paged media](https://github.com/vivliostyle/vivliostyle/projects/1): 15 votes
-- [Typography](https://github.com/vivliostyle/vivliostyle/projects/4): 8 votes
-- [Layout enhancement](https://github.com/vivliostyle/vivliostyle/projects/6): 10 votes
-- [Web standards](https://github.com/vivliostyle/vivliostyle/projects/7): 7 votes
-- [Other improvements](https://github.com/vivliostyle/vivliostyle/projects/8):
+- [Bugs](https://github.com/vivliostyle/vivliostyle.js/projects/5): 7 votes
+- [PDF printing](https://github.com/vivliostyle/vivliostyle.js/projects/2): 7 votes
+- [Input formats](https://github.com/vivliostyle/vivliostyle.js/projects/3): 7 votes
+- [Paged media](https://github.com/vivliostyle/vivliostyle.js/projects/1): 15 votes
+- [Typography](https://github.com/vivliostyle/vivliostyle.js/projects/4): 8 votes
+- [Layout enhancement](https://github.com/vivliostyle/vivliostyle.js/projects/6): 10 votes
+- [Web standards](https://github.com/vivliostyle/vivliostyle.js/projects/7): 7 votes
+- [Other improvements](https://github.com/vivliostyle/vivliostyle.js/projects/8):
   - Improved error handling (more stable): 5 votes
   - UI multilingualization: 3 votes
   - Search function: 3 votes

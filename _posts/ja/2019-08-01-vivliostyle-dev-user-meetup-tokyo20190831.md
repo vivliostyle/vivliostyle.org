@@ -2,6 +2,8 @@
 title: Vivliostyle 開発者とユーザーの集い 2019-08-31 のお知らせ
 lang: ja
 author: murakami
+tags:
+  - イベント
 ---
 
 2019年8月31日（土）東京都内で、Vivliostyle の開発者とユーザーのミーティング・交流会を行います。

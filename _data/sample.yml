@@ -1,0 +1,421 @@
+tag:
+  - &tag_ruby
+    name:
+      ja: ルビ
+      en: ruby
+  - &tag_page_header
+    name:
+      ja: ページヘッダー
+      en: page header
+  - &tag_page_counter
+    name:
+      ja: ページカウンタ
+      en: page counter
+  - &tag_web_font
+    name:
+      ja: ウェブフォント
+      en: web font
+  - &tag_toc
+    name:
+      ja: 目次
+      en: table of contents
+  - &tag_eal
+    name:
+      ja: EAL
+      en:  EAL
+    url: http://idpf.org/epub/pgt/
+  - &tag_columns
+    name:
+      ja: 段組
+      en: multi-column
+  - &tag_multi_html
+    name:
+      ja: 複数HTML
+      en: Multiple HTML
+  - &tag_tachikiri_nuritashi
+    name:
+      ja: 裁切り塗り足し
+      en: Fill a bleed
+  - &tag_flexbox
+    name:
+      ja: Flexbox
+      en: Flexbox
+  - &tag_wrap_around
+    name:
+      ja: 回り込み
+      en: exclusions
+  - &tag_footnote
+    name:
+      ja: 脚注
+      en: footnote
+  - &tag_float
+    name:
+      ja: ページフロート
+      en: page float
+  - &tag_math
+    name:
+      ja: 数式
+      en: math
+    url: https://github.com/jagat-xpub/cosmology/blob/gh-pages/markup-notes.md#%E6%95%B0%E5%BC%8F
+  - &tag_scholarly_html
+    name:
+      ja: Scholarly HTML
+      en:  Scholarly HTML
+    url: https://github.com/jagat-xpub/cosmology/blob/gh-pages/markup-notes.md#scholarly-html%E5%BD%A2%E5%BC%8F%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+
+link_name:
+  - &link_name_default
+    ja: デフォルト
+    en: default
+  - &link_name_default_tate
+    ja: デフォルト（縦組）
+    en: default (vertical text)
+  - &link_name_default_yoko
+    ja: デフォルト（横組）
+    en: default (horizontal text)
+  - &link_name_html
+    ja: HTML
+    en:  HTML
+  - &link_name_print_tate
+    ja: 印刷用（縦組）
+    en: for printing (vertical text)
+  - &link_name_print_yoko
+    ja: 印刷用（横組）
+    en: for printing (horizontal text)
+  - &link_name_source
+    ja: ソース
+    en: source
+  - &link_name_kotei_tate
+    ja: 固定ページサイズ（縦組）
+    en: fixed page size (vertical text)
+  - &link_name_kotei_yoko
+    ja: 固定ページサイズ（横組）
+    en: fixed page size (horizontal text)
+  - &link_name_kahen
+    ja: 可変ページサイズ
+    en: flexible page size
+  - &link_name_kahen_tate
+    ja: 可変ページサイズ（縦組）
+    en: flexible page size (vertical text)
+  - &link_name_kahen_yoko
+    ja: 可変ページサイズ（横組）
+    en: flexible page size (horizontal text)
+  - &link_name_page_float_on
+    ja: ページフロート有
+    en: with a page float
+  - &link_name_page_float_off
+    ja: ページフロート無
+    en: no page float
+  - &link_name_justification_on
+    ja: justification ＆ hyphenation 有
+    en: with a justification & hyphenation
+  - &link_name_justification_off
+    ja: justification ＆ hyphenation 無
+    en: no justification & hyphenation
+
+
+categories:
+  - name:
+      ja: 単純な長文組版
+      en: Typesetting simple and long sentences
+    samples:
+      - name:
+          ja: ごん狐（書籍）
+          en: “Gon, the Little Fox” (book)
+        img: assets/samples/gon.png
+        tags:
+          - *tag_ruby
+          - *tag_page_header
+        urls:
+          - name: *link_name_kotei_tate
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gon/index.html
+          - name: *link_name_kahen_tate
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gon/responsive.html
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/gon/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/gon
+      - name:
+          ja: Alice’s Adventures in Wonderland（書籍）
+          en: “Alice’s Adventures in Wonderland” (book)
+        img: assets/samples/alice.png
+        tags:
+            - *tag_web_font
+            - *tag_page_counter
+            - *tag_toc
+            - *tag_page_header
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gutenberg/Alice.html&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/gutenberg/Alice.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/gutenberg/
+  - name:
+      ja: EPUB Adaptive Layout (EAL) による複雑な組版
+      en: Complex typesetting with “EPUB Adaptive Layout" (EAL)
+    samples:
+      - name:
+          ja: JDIR（雑誌）
+          en: “JDIR” (magazine)
+        img: assets/samples/webmag.png
+        tags:
+          - *tag_eal
+          - *tag_columns
+          - *tag_toc
+          - *tag_multi_html
+          - *tag_tachikiri_nuritashi
+        urls:
+          - name: *link_name_default_tate
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html&style=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/css/viv-style-v.css&bookMode=true
+          - name: *link_name_default_yoko
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html&style=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/css/viv-style-h.css&bookMode=true
+          - name: *link_name_print_tate
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html&style=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/css/viv-print-v.css&bookMode=true
+          - name: *link_name_print_yoko
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html&style=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/css/viv-print-h.css&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/webmag
+        comment:
+          ja: このサンプルは株式会社日本ビジネスプレスの承諾をいただき、“[JDIR JBpress Digital Innovation Review”](http://jbpress.ismedia.jp/feature/jdir) の記事を掲載したものです
+          en: In this sample, [JDIR JBpress Digital Innovation Review](http://jbpress.ismedia.jp/feature/jdir)’s articles are used with permission from Japan Business Press Co., Ltd.
+      - name:
+          ja: The Vivlio Daily（新聞）
+          en: “The Vivlio Daily” (newspaper)
+        img: assets/samples/news.png
+        tags:
+          - *tag_eal
+          - *tag_columns
+          - *tag_toc
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/news/index.html&spread=false&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/news/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/news
+      - name:
+          ja: Scholarly HTML（論文）
+          en: “Scholarly HTML” (Academic article)
+        img: assets/samples/scholarly.png
+        tags:
+          - *tag_eal
+          - *tag_columns
+          - *tag_web_font
+          - *tag_flexbox
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/index.html&spread=false
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/scholarly
+      - name:
+          ja: Apollo 8（雑誌）
+          en: “Apollo 8” (magazine)
+        img: assets/samples/apollo.png
+        tags:
+          - *tag_eal
+          - *tag_wrap_around
+          - *tag_columns
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/adaptive-layout/apollo8/index.xhtml&spread=false
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/adaptive-layout/apollo8/index.xhtml
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/adaptive-layout/apollo8
+        comment:
+            ja: from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)
+            en:  from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)
+  - name:
+      ja: 段組／図版の段抜き配置
+      en: A illustration stretching across several columns
+    samples:
+      - name:
+          ja: 白馬岳（雑誌）
+          en:  “Mt. Shirouma” (magazine)
+        img: assets/samples/shirouma.png
+        tags:
+          - *tag_ruby
+          - *tag_columns
+        urls:
+          - name: *link_name_kahen_tate
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/shirouma/responsive.html
+          - name: *link_name_kotei_tate
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/shirouma/index.html
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/shirouma/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/shirouma
+      - name:
+          ja: 宇宙論入門（論文）
+          en: “The Introduction to Cosmology” (Academic article)
+        img: assets/samples/cosmology.png
+        tags:
+          - *tag_columns
+          - *tag_float
+          - *tag_math
+          - *tag_scholarly_html
+        urls:
+          - name: *link_name_page_float_on
+            url: https://vivliostyle.org/viewer/#src=https://jagat-xpub.github.io/cosmology/&style=https://jagat-xpub.github.io/cosmology/css/page-float.css
+          - name: *link_name_page_float_off
+            url: https://vivliostyle.org/viewer/#src=https://jagat-xpub.github.io/cosmology/
+          - name: *link_name_html
+            url: https://jagat-xpub.github.io/cosmology/
+          - name: *link_name_source
+            url: https://github.com/jagat-xpub/cosmology
+  - name:
+      ja: 目次と複数のHTMLからなる雑誌
+      en: A magazine consisting of a table of contents and multiple HTML
+    samples:
+      - name:
+          ja: Vivliostyle で本を作ろう Vol.1
+          en: “Make Books with Vivliostyle, Vol. 1”
+        img: assets/samples/vug-vol1.png
+        tags:
+          - *tag_toc
+          - *tag_page_header
+          - *tag_footnote
+          - *tag_multi_html
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&bookMode=true
+          - name: *link_name_print_yoko
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol1
+      - name:
+          ja: Vivliostyle で本を作ろう Vol.2
+          en: “Make Books with Vivliostyle, Vol. 2”
+        img: assets/samples/vug-vol2.png
+        tags:
+          - *tag_toc
+          - *tag_page_header
+          - *tag_footnote
+          - *tag_multi_html
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html&bookMode=true
+          - name: *link_name_print_yoko
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol2
+      - name:
+          ja: Vivliostyle で本を作ろう Vol.3
+          en: “Make Books with Vivliostyle, Vol. 3”
+        img: assets/samples/vug-vol3.png
+        tags:
+          - *tag_toc
+          - *tag_page_header
+          - *tag_footnote
+          - *tag_multi_html
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/index.html&bookMode=true
+          - name: *link_name_print_yoko
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol3
+  - name:
+      ja: その他
+      en: Others
+    samples:
+      - name:
+          ja: The Adventures of Sherlock Holmes（書籍）
+          en: “The Adventures of Sherlock Holmes” (book)
+        tags:
+          - *tag_web_font
+          - *tag_page_counter
+          - *tag_toc
+          - *tag_page_header
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gutenberg/Sherlock.html&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/gutenberg/Sherlock.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/gutenberg/
+      - name:
+          ja: The Malay Archipelago（雑誌）
+          en: “The Malay Archipelago” (magazine)
+        tags:
+          - *tag_columns
+          - *tag_footnote
+          - *tag_eal
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/variable-page-size/TheMalayArchipelago/main.xhtml
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/variable-page-size/TheMalayArchipelago/main.xhtml
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/variable-page-size/TheMalayArchipelago
+      - name:
+          ja: 高瀬舟（書籍）
+          en: “Takasebune” (book)
+        tags:
+          - *tag_columns
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/variable-page-size/ja-vertical/Takasebune/main.xhtml
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/variable-page-size/ja-vertical/Takasebune/main.xhtml
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/variable-page-size/ja-vertical/Takasebune
+      - name:
+          ja: Wood Engraving（書籍）
+          en: “Wood Engraving” (book)
+        tags:
+          - *tag_web_font
+        urls:
+          - name: *link_name_justification_on
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/wood/index.html
+          - name: *link_name_justification_off
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/wood_chrome/index.html
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/wood/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/wood
+      - name:
+          ja: Candle（書籍）
+          en: “Candle” (book)
+        tags:
+          - *tag_eal
+          - *tag_wrap_around
+          - *tag_columns
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/adaptive-layout/candle/index.xhtml&spread=false&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/adaptive-layout/candle/index.xhtml
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/adaptive-layout/candle
+        comment:
+            ja: from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)
+            en:  from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)
+      - name:
+          ja: Advanced Adaptive Layout（雑誌）
+          en: “Advanced Adaptive Layout” (magazine)
+        tags:
+          - *tag_eal
+          - *tag_wrap_around
+          - *tag_columns
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/adaptive-layout/adaptive/main.xhtml&spread=false&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/adaptive-layout/adaptive/main.xhtml
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/adaptive-layout/adaptive
+        comment:
+            ja: from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)
+            en:  from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)

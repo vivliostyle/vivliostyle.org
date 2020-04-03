@@ -1,0 +1,7 @@
+<li>
+  <a
+    href="{{ include.url | default: site.data.account.github.url }}"
+    class="{{ include.class | default: 'button--github--large' }}">
+    <i class="mdi mdi-github-circle button__icon"></i>{{ include.text | default: "GitHub" }}
+  </a>
+</li>

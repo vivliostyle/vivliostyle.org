@@ -1,51 +1,110 @@
 ---
-title: The Vivliostyle Project
-aside: true
+layout: page
+title: Vivliostyle — 楽しく CSS 組版！
 lang: ja
-aside-type: blog-entries
-# feature_text: |
-#   ## Vivliostyle
-#   CSS Typesetting
-feature_image: "/assets/header-image.png"
+jumbotron_image: true
 excerpt: "open source, web browser based CSS typesetting engine project"
 ---
 
-Vivliostyle は、電子出版＝ Web 出版の時代にマッチする新しい組版エンジンを、Web 標準技術で作るオープンソース・プロジェクトです。
 
-- Web ブラウザの組版をもっと良くして Web・電子出版と印刷出版の共通の組版エンジンに
-- CSS 組版機能を JavaScript で実装
-- CSS 組版関連仕様の W3C 標準化と連携して実装を推進
+{% capture sample1 %}
+## CSS 組版で本を作りたい！
 
-☞ Check the latest [**Vivliostyle Viewer**](https://vivliostyle.org/viewer/)
+Vivliostyle Viewer はブラウザから、Vivliostyle CLI はコマンドラインから HTML ファイルを読み込み、CSS で組版後、PDF に書き出せます。
 
-## Vivliostyle Foundation について
+<ol class="list--large">
+  {% include thumbnail/viewer.html url=site.data.project.viewer.url %}
+  {% include thumbnail/cli.html url=site.data.project.cli.github %}
+</ol>
 
-私たちは、オープンな標準技術で Web と出版・印刷の世界をひとつにするオープンソースの組版ソフトウェア Vivliostyle の開発、公開、普及を促進することにより、これまで印刷の歴史とともに培われてきた組版の技術を Web と電子出版において継承・進化させて、これからの世界の学術・文芸・情報コミュニケーションの発展に欠かせない出版の電子化とアクセシビリティの向上に寄与することを目指し、次のような活動を行います。
+<ol class="list--medium">
+  {% include button/primary.html url=site.data.project.viewer.url text="Vivliostyle Viewer で開く" %}
+  {% include button/primary.html url=site.data.project.cli.github text="Vivliostyle CLI をチェックする" %}
+  {% include button/simple.html text="または" %}
+  {% include button/secondary.html url=site.data.project.pub.sample.ja text="作成例を見る" %}
+</ol>
 
-- Vivliostyle オープンソース・プロジェクトとコミュニティの維持管理
-- Vivliostyle と関連技術の研究開発
-- Vivliostyle と CSS 組版の普及啓発・教育
-- Web・出版・アクセシビリティ等の標準技術に関する諸団体と連携して標準化推進
-- Vivliostyle と連携する外部のプロジェクトとの協力
+　
 
-<div style="margin: 2em 0 1em; text-align: right">
-<div><strong><ruby>Vivliostyle Foundation<rt style="font-size: 75%">一般社団法人ビブリオスタイル</rt></ruby></strong></div>
-<div>2018年8月&ensp;設立</div>
-<br>
-{% assign people = "murakami, florian, johannes" | split: ", " %}
-{% for a in people %}
-<div><strong><a href="mailto:{{ site.data.people[a].email }}">{{ site.data.people[a].ja }}</a></strong>&ensp;({{ site.data.people[a].role_ja }})</div>
-{% endfor %}
-</div>
+Vivliostyle Pub を使えば、印刷可能なPDFをブラウザ上から作成できます。
 
----------
+<ol class="list--large">
+  {% include thumbnail/pub.html url=site.data.project.pub.github %}
+</ol>
 
-| 名称 | 一般社団法人ビブリオスタイル (Vivliostyle Foundation) |
-| 所在地 | 〒336-0015 埼玉県さいたま市南区太田窪1941-84 |
-| 代表者 | 代表理事　村上 真雄 (MURAKAMI Shinyu) |
-| 連絡先(電話) | 090-3688-2212 |
-| 連絡先(メール) | mail@vivliostyle.org |
+<ol class="list--medium">
+  {% include button/disabled.html url=site.data.project.pub.url text="Vivliostyle Pub を試す（2020年中に公開予定）" %}
+</ol>
+{% endcapture %}
 
----------
 
-{% include nav-share.html %}
+{% capture sample2 %}
+## EPUB や Web 上の文書を、好みのスタイルで読みたい！
+
+Vivliostyle Viewer で EPUB や HTML、複数の HTML 文書（Web出版物）を読み込み、CSS で指定すれば、自分好みのスタイルで表示できます。
+
+<ol class="list--large">
+  {% include thumbnail/viewer.html url=site.data.project.viewer.sample.ja %}
+</ol>
+
+<ol class="list--medium">
+  {% include button/primary.html url=site.data.project.viewer.sample.ja text="Vivliostyle Viewer で開く" %}
+</ol>
+{% endcapture %}
+
+
+{% capture project %}
+## Vivliostyle とは？
+
+Vivliostyle には開発中も含め、次のプロダクトがあります。
+
+{% include projects.html
+  project1_src="/assets/projects/project1.svg"
+  project1_name=site.data.project.project.name.ja
+  project1_link=site.data.project.project.github
+  project2_src="/assets/projects/project2.svg"
+  project2_name=site.data.project.viewer.name
+  project2_link=site.data.project.viewer.github
+  project2_description="HTML を読み込んで組版結果をブラウザに表示"
+  project3_src="/assets/projects/project3.svg"
+  project3_name=site.data.project.cli.name
+  project3_link=site.data.project.cli.github
+  project3_description="コマンドラインから組版して PDF を生成"
+  project4_src="/assets/projects/project4.svg"
+  project4_name=site.data.project.pub.name
+  project4_link=site.data.project.pub.github
+  project4_description="マークダウンを入力すると組版結果が見られる（2020年中公開予定）"
+%}
+
+このほか開発者向けライブラリとして、組版エンジンのコア [“Vivliostyle Core”]({{ site.data.project.core.github }})、およびWebサイトに印刷機能を組み込む [“Vivliostyle Print”]({{ site.data.project.print.github }}) があります。
+{% endcapture %}
+
+
+{% capture blog %}
+## 最近のブログ
+
+{% assign posts = site.posts | where: "lang", page.lang | slice: 0, 3 %}
+{% include post-list.html posts=posts %}
+{% endcapture %}
+
+
+{% capture dev %}
+## 一緒に開発しませんか
+
+Vivliostyleプロジェクトでは、開発方針などをSlack上で話し合っています。ぜひ見てみてください。開発ガイド、ドキュメントは下記ボタンからご覧ください。
+
+<ol class="list--medium">
+  {% include button/slack.html text="Slack に参加" %}
+  {% include button/github.html text="開発に参加" %}
+  {% include button/secondary.html url="/ja/documents" text="ドキュメントを見る" %}
+</ol>
+{% endcapture %}
+
+
+{% include page/index.html
+  sample1=sample1
+  sample2=sample2
+  project=project
+  blog=blog
+  dev=dev
+%}

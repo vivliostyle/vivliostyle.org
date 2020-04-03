@@ -1,0 +1,68 @@
+.page_home {
+  @include sections {
+    width: 100%;
+    margin: 0;
+    padding: 100px calc((100% - #{$section_width}) / 2);
+    font-size: $display_font_size;
+    color: $gray_dark;
+
+    @include headings {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    @include media_large {
+      // 幅を広げる
+      padding: 100px calc((100% - #{$section_width_large}) / 2);
+    }
+  }
+
+  .project__list {
+    @include list_column(0px, false);
+  }
+
+  .project__innerlist {
+    @include list_row(0px, false);
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  .project__img {
+    width: 100%;
+    margin: $gap_small auto;
+  }
+
+  .project__link {
+    font-size: $h4_font_size;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $text_color;
+    }
+  }
+
+  .project__description {
+    margin: 0 $gap_small;
+    font-size: $small_font_size;
+  }
+
+  @include media_small {
+    .project__img {
+      margin: 0;
+    }
+
+    .project__link {
+      display: inline-block;
+      margin-top: $gap_medium;
+      font-size: 15px;
+    }
+
+    .project__description {
+      display: none;
+    }
+  }
+}

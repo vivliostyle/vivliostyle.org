@@ -1,0 +1,13 @@
+{% if include.title %}
+  <section class="section--gray">
+    <div class="container">
+      {% if include.title %}
+        <h1>{{ include.title }}</h1>
+      {% endif %}
+
+      {% if include.lead %}
+        {{ include.lead | markdownify }}
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
