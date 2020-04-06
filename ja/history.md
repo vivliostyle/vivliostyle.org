@@ -19,7 +19,7 @@ Vivliostyle という名前は、ギリシャ語で本を表す βιβλίο（�
 
 ## EPUB Adaptive Layout 実装をベースに CSS Paged Media の実装
 
-プロジェクト開始時（2015 年春）、ブラウザ上で動く JavaScript による CSS 組版エンジンを、いちから作るか既存のオープンソースを元にするか検討しました。そして注目したのが、[Peter Sorotokin](https://github.com/sorotokin) 氏（元 Adobe、その後 Google に所属）による、EPUB のページレイアウトのために CSS を拡張する提案 [EPUB Adaptive Layout 仕様](http://idpf.org/epub/pgt/) と、[EPUB Adaptive Layout の JavaScript 実装](https://github.com/sorotokin/adaptive-layout) です。これをベースにして、[CSS Paged Media](https://www.w3.org/TR/css-page-3/) 仕様をはじめとする本の組版に必要な機能を実装していくことになりました。その開発の中心になったのは、[川久保 亮](https://github.com/kwkbtr)氏です。多大な貢献をしてくれた開発者たちに感謝します。
+プロジェクト開始時、ブラウザ上で動く JavaScript による CSS 組版エンジンを、いちから作るか既存のオープンソースを元にするか検討しました。そして注目したのが、[Peter Sorotokin](https://github.com/sorotokin) 氏（元 Adobe、その後 Google に所属）による、EPUB のページレイアウトのために CSS を拡張する提案 [EPUB Adaptive Layout 仕様](http://idpf.org/epub/pgt/) と、[EPUB Adaptive Layout の JavaScript 実装](https://github.com/sorotokin/adaptive-layout) です。これをベースにして、[CSS Paged Media](https://www.w3.org/TR/css-page-3/) 仕様をはじめとする本の組版に必要な機能を実装していくことになりました。その開発の中心になったのは、[川久保 亮](https://github.com/kwkbtr)氏です。多大な貢献をしてくれた開発者たちに感謝します。
 
 
 {% include avatar-list.html namelist=site.data.developer.old_vivliostyle_dev %}

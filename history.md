@@ -18,7 +18,7 @@ The name “Vivliostyle” is a combination of the Greek word “βιβλίο”
 
 ## Based on the EPUB Adaptive Layout implementation, making a CSS Paged Media implementation
 
-At the start of the project (Spring 2015), we considered whether to make a JavaScript CSS typesetting engine running in the browser from scratch or from existing open source. Then we looked at [EPUB Adaptive Layout](http://idpf.org/epub/pgt/), a proposal to extend CSS for EPUB page layout, and the [JavaScript Implementation for EPUB Adaptive Layout](https://github.com/sorotokin/adaptive-layout) by [Peter Sorotokin](https://github.com/sorotokin) (former Adobe, then Google), and decided to use it as a base for implementing [CSS Paged Media](https://www.w3.org/TR/css-page-3/) and other features required for book typesetting.  Its main developer was [Toru Kawakubo](https://github.com/kwkbtr). Thanks to the developers for their significant contributions.
+At the start of the project, we considered whether to make a JavaScript CSS typesetting engine running in the browser from scratch or from existing open source. Then we looked at [EPUB Adaptive Layout](http://idpf.org/epub/pgt/), a proposal to extend CSS for EPUB page layout, and the [JavaScript Implementation for EPUB Adaptive Layout](https://github.com/sorotokin/adaptive-layout) by [Peter Sorotokin](https://github.com/sorotokin) (former Adobe, then Google), and decided to use it as a base for implementing [CSS Paged Media](https://www.w3.org/TR/css-page-3/) and other features required for book typesetting.  Its main developer was [Toru Kawakubo](https://github.com/kwkbtr). Thanks to the developers for their significant contributions.
 
 
 {% include avatar-list.html namelist=site.data.developer.old_vivliostyle_dev %}
