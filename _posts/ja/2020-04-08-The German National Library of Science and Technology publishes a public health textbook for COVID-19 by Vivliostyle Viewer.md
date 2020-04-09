@@ -24,6 +24,6 @@ author:
 - https://vivliostyle.slack.com/archives/CAECW4S93/p1585151457004400
 - https://vivliostyle.slack.com/archives/CJAP6GBKQ/p1585377306007500
 
-前掲プレスリリースは4月9日のものですが、Worthington 氏によれば初期リリース版は3月31日には学生達の元に届けられたとのことです。本書が一刻も早い刊行を急いでいたことを考えれば、Vivliostyle Viewer が彼等の期待に応えることができたことにホッとしています。
+前掲プレスリリースは4月9日のものですが、Worthington 氏によれば初期リリース版は3月31日には学生達の元に届けられたとのことです。本書が一刻も早い刊行を急いでいたことを考えれば、Vivliostyle Viewer が彼等の期待に応えられたことにホッとしています。
 
 Worthington 氏によれば、本書を皮切りとして、Vivliostyle viewerを使って続刊したいとのことです。私達のプロダクトがCOVID-19との戦いの一助になれば幸いです。
