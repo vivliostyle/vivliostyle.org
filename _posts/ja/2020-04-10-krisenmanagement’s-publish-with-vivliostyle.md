@@ -1,7 +1,7 @@
 ---
-title: ドイツ国立科学技術図書館が Vivliostyle Viewer により、COVID-19対策の公衆衛生教科書を出版
+title: ドイツ国立科学技術図書館が Vivliostyle により、COVID-19対策の公衆衛生教科書を出版
 lang: ja
-image: /samples/images/krisenmanagment.png
+image: /assets/posts/2020-04-10-krisenmanagement’s-publish-with-vivliostyle/krisenmanagment.png
 author:
   - ogwata
 ---
