@@ -8,7 +8,7 @@ author:
 
 <div style="float: right; margin: 0 0 1em 1em;"><a href="https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/"><img src="/assets/posts/2020-04-10-tib-book-against-covid19/krisenmanagment.png" alt="TIB book: Krisenmanagement (Crisis Management)" style="width: 300px; box-shadow: 2px 4px 5px 3px grey;" /></a></div>
 
-この数週間、世界中で新型コロナウイルス（COVID-19）が猛威を振るっています。ドイツでもこの数週間、医療関係者は厳しい戦いを強いられてきました。
+世界中で新型コロナウイルス（COVID-19）が猛威を振るっています。ドイツでもこの数週間、医療関係者は厳しい戦いを強いられてきました。
 
 [TIB（ドイツ国立科学技術図書館）](https://www.tib.eu/en/tib/profile/foundation/)はこの戦いに打ち勝つため、ドイツ国内で公衆衛生サービスの第一線に立つ医学生を対象にした、オープンに利用できる学習システムの開発を急いできました。
 
