@@ -1,6 +1,7 @@
 ---
 title: On Vivliostyle and webbased publishing — Interview by Fidus Writer
 author: murakami
+image: /assets/posts/2018-11-12-interview-by-fiduswriter/fiduswriterweb1.png
 tags:
   - Fidus Writer
 ---
