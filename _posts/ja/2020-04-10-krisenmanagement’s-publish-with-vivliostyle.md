@@ -19,7 +19,7 @@ author:
 
 - [Krisenmanagement - Lehrbuch für den Öffentlichen Gesundheitsdienst](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/)
 - [Vivliostyle+Fidus WriterによるPDF出力](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/pdf/Krisenmanagement-Pre-Release-v1-978-3-9812871-2-7-PDF.pdf)
-- [Vivliostyle Viewerによる表示](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/vivliostyle-viewer-2.0.0-pre.10/viewer/#src=https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/webbuch/9783981287127KRIv1.xhtml&bookMode=true&renderAllPages=true)
+- [ウェブブック版（Vivliostyle Viewerで表示）](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/vivliostyle-viewer-2.0.0-pre.10/viewer/#src=https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/webbuch/9783981287127KRIv1.xhtml&bookMode=true&renderAllPages=true)
 - [GitHub](https://github.com/akademie-oeffentliches-gesundheitswesen/krisenmanagment)
 
 私達が、TIBのスタッフである Simon Worthington 氏からSlackで質問を受けたのは、3月26日のことでした。そこから数日間、私達はWorthington 氏と技術上のやりとりをしました。そのログは下記から読むことができます。
@@ -32,7 +32,7 @@ author:
 [^1]: https://vivliostyle.org/ja/blog/2018/11/12/interview-by-fiduswriter/
 [^2]:https://web.hypothes.is/
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In fact, we are super glad to have tools like <a href="https://twitter.com/fiduswriter?ref_src=twsrc%5Etfw">@fiduswriter</a>, <a href="https://twitter.com/Vivliostyle?ref_src=twsrc%5Etfw">@Vivliostyle</a>, <a href="https://twitter.com/hypothes_is?ref_src=twsrc%5Etfw">@hypothes_is</a>, <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a> etc. in place. Without them, a rapid and fully web-based production workflow of a book with +100 authors would hardly be possible.<br>Thanks <a href="https://twitter.com/mrchristian99?ref_src=twsrc%5Etfw">@mrchristian99</a> for bringing it all together! <a href="https://t.co/FxgSEPgJE2">https://t.co/FxgSEPgJE2</a></p>&mdash; Lambert Heller 🌈🦄🐶 (@Lambo) <a href="https://twitter.com/Lambo/status/1247862424931315712?ref_src=twsrc%5Etfw">April 8, 2020</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In fact, we are super glad to have tools like <a href="https://twitter.com/fiduswriter?ref_src=twsrc%5Etfw">@fiduswriter</a>, <a href="https://twitter.com/Vivliostyle?ref_src=twsrc%5Etfw">@Vivliostyle</a>, <a href="https://twitter.com/hypothes_is?ref_src=twsrc%5Etfw">@hypothes_is</a>, <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a> etc. in place. Without them, a rapid and fully web-based production workflow of a book with +100 authors would hardly be possible.<br>Thanks <a href="https://twitter.com/mrchristian99?ref_src=twsrc%5Etfw">@mrchristian99</a> for bringing it all together! <a href="https://t.co/FxgSEPgJE2">https://t.co/FxgSEPgJE2</a></p>&mdash; Lambert Heller 🌈🦄🐶 (@Lambo) <a href="https://twitter.com/Lambo/status/1247862424931315712?ref_src=twsrc%5Etfw">April 8, 2020</a></blockquote>
 
 冒頭のプレスリリースは4月9日のものですが、Worthington 氏によれば初期リリース版は3月31日には学生達の元に届けられたとのことです。本書が一刻も早い刊行を急いでいたことを考えれば、Vivliostyle が彼等の期待に見事に応えられたことを誇りに思っています。
 
