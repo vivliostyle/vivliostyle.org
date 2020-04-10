@@ -30,7 +30,7 @@ author:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">In fact, we are super glad to have tools like <a href="https://twitter.com/fiduswriter?ref_src=twsrc%5Etfw">@fiduswriter</a>, <a href="https://twitter.com/Vivliostyle?ref_src=twsrc%5Etfw">@Vivliostyle</a>, <a href="https://twitter.com/hypothes_is?ref_src=twsrc%5Etfw">@hypothes_is</a>, <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a> etc. in place. Without them, a rapid and fully web-based production workflow of a book with +100 authors would hardly be possible.<br>Thanks <a href="https://twitter.com/mrchristian99?ref_src=twsrc%5Etfw">@mrchristian99</a> for bringing it all together! <a href="https://t.co/FxgSEPgJE2">https://t.co/FxgSEPgJE2</a></p>&mdash; Lambert Heller 🌈🦄🐶 (@Lambo) <a href="https://twitter.com/Lambo/status/1247862424931315712?ref_src=twsrc%5Etfw">April 8, 2020</a></blockquote>
 
-本書が一刻も早い刊行を急いでいたことを考えれば、Vivliostyle が彼等の期待に見事に応えられたことを誇りに思っています。
+冒頭のプレスリリースは4月9日のものですが、GitHubのリポジトリを見ると4月3日には完成したようです。本書が一刻も早い刊行を急いでいたことを考えれば、Vivliostyle が彼等の期待に見事に応えられたことを誇りに思っています。
 
 Worthington 氏によれば、TIBは本書を皮切りとして次々に刊行を続ける予定だとのことです。私達としては、これからも可能な限り彼等へのサポートを続けていくつもりです。また、もしも Vivliostyle を新型コロナウイルスへの対応で利用したい方がいれば、どんなことでも[私達にご質問ください。](https://vivliostyle.org/ja/community/)
 
