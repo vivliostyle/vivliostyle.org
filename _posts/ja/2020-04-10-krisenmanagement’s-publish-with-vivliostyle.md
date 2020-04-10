@@ -18,7 +18,7 @@ author:
  “Krisenmanagement” そのものの説明と閲覧は下記からどうぞ。
 
 - [Krisenmanagement - Lehrbuch für den Öffentlichen Gesundheitsdienst](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/)
-- [Vivliostyle+Fidus WriterによるPDF出力](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/pdf/Krisenmanagement-Pre-Release-v1-978-3-9812871-2-7-PDF.pdf)
+- [PDF版（Vivliostyle+Fidus Writerによる出力）](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/pdf/Krisenmanagement-Pre-Release-v1-978-3-9812871-2-7-PDF.pdf)
 - [ウェブブック版（Vivliostyle Viewerで表示）](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/vivliostyle-viewer-2.0.0-pre.10/viewer/#src=https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/webbuch/9783981287127KRIv1.xhtml&bookMode=true&renderAllPages=true)
 - [GitHub](https://github.com/akademie-oeffentliches-gesundheitswesen/krisenmanagment)
 
