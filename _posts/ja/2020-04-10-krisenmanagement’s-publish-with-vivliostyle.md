@@ -22,10 +22,7 @@ author:
 - [ウェブブック版（Vivliostyle Viewerで表示）](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/vivliostyle-viewer-2.0.0-pre.10/viewer/#src=https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/webbuch/9783981287127KRIv1.xhtml&bookMode=true&renderAllPages=true)
 - [GitHub](https://github.com/akademie-oeffentliches-gesundheitswesen/krisenmanagment)
 
-私達が、TIBのスタッフである Simon Worthington 氏からSlackで質問を受けたのは、3月26日のことでした。そこから数日間、私達はWorthington 氏と技術上のやりとりをしました。そのログは下記から読むことができます。
-
-- https://vivliostyle.slack.com/archives/CAECW4S93/p1585151457004400
-- https://vivliostyle.slack.com/archives/CJAP6GBKQ/p1585377306007500
+私達が、TIBのスタッフである Simon Worthington 氏からSlackで質問を受けたのは、3月26日のことでした。そこから数日間、私達はWorthington 氏と技術上のやりとりをしました。
 
 制作を担当したTIBの Lambert Heller 氏は4月8日、[自身のTwitterへの投稿](https://twitter.com/Lambo/status/1247862424931315712)で、このプロジェクトで使ったVivliostyleやFidus Writer[^1]、Hypothesis[^2]、GitHubなどのツールを挙げた上で、「これらがなければ、100人もの著者がいる本を迅速に制作するWebベースでのワークフローを構築するのはほとんど不可能でした」と述べています。
 
