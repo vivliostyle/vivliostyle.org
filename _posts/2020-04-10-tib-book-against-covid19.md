@@ -10,14 +10,14 @@ author:
 
 In recent weeks, the new coronavirus (COVID-19) has been rampant around the world. Healthcare professionals have been faced with tough fights in Germany in recent weeks.
 
-To overcome this battle, [TIB (German National Library of Science and Technology)](https://www.tib.eu/en/tib/profile/foundation/) has rushed to develop openly accessible learning systems for medical students at the forefront of public health services in Germany.
+To overcome this battle, [TIB - Leibniz Information Centre for Science and Technology (aka German National Library of Science and Technology)](https://www.tib.eu/en/tib/profile/foundation/) has rushed to develop openly accessible learning systems for medical students at the forefront of public health services in Germany.
 
 On April 9, 2020, the TIB announced that it had completed its first work, the textbook “Krisenmanagement” (Crisis Management), using Vivliostyle. You can read the press release below.
 
 - [Accelerating Open Health Training Against COVID-19 (English)](https://blogs.tib.eu/wp/tib/2020/04/09/accelerating-open-health-training-against-covid-19/)
 - [Schneller Fortbilden und Informieren zur Bekämpfung von COVID-19 (German)](https://blogs.tib.eu/wp/tib/2020/04/09/schneller-fortbilden-und-informieren-zur-bekaempfung-von-covid-19/)
 
-You can access to the textbook “Krisenmanagement” and its description with the links below:
+You can access the textbook “Krisenmanagement” and its description with the links below:
 
 - [Krisenmanagement - Lehrbuch für den Öffentlichen Gesundheitsdienst](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/)
 - [PDF version (output by Vivliostyle)](https://akademie-oeffentliches-gesundheitswesen.github.io/krisenmanagment/pdf/Krisenmanagement-Pre-Release-v1-978-3-9812871-2-7-PDF.pdf)
@@ -32,6 +32,8 @@ TIB's Lambert Heller, who was in charge of the production, [posted his Twitter o
 
 The first press release is from April 9th, but the GitHub repository shows that it was completed on April 3rd. Given that this book was in a hurry to publish as soon as possible, we are proud that Vivliostyle has met their expectations brilliantly.
 
-According to Worthington, the TIB will continue to publish this book one after another. We will continue to support them as much as possible. Also, if you want to use Vivliostyle in response to the new coronavirus, please do whatever you want [please ask us.](https://vivliostyle.org/community/)
+According to Worthington, the TIB will continue to publish the books one after another with an important book on ‘contact tracing’ which details how the German system works in detail and will be used to bring more health employees up to speed on the procedures.
+
+We will continue to support them as much as possible. Also, if you want to use Vivliostyle in response to the new coronavirus, please do whatever you want [please ask us.](https://vivliostyle.org/community/)
 
 Every day is a difficult situation, but let's work together to fight off COVID-19!
