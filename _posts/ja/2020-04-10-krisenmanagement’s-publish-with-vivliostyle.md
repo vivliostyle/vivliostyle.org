@@ -27,7 +27,7 @@ author:
 - https://vivliostyle.slack.com/archives/CAECW4S93/p1585151457004400
 - https://vivliostyle.slack.com/archives/CJAP6GBKQ/p1585377306007500
 
-制作を担当したTIBのSimon Worthington 氏は4月8日、自身のTwitterへの投稿で、このプロジェクトで使ったVivliostyleやFidus Writer[^1]、Hypothesis[^2]、GitHubなどのツールを挙げた上で、「これらがなければ、100人もの著者がいる本を迅速に制作するWebベースでのワークフローを構築するのはほとんど不可能でした」と述べています。
+制作を担当したTIBのSimon Worthington 氏は4月8日、[自身のTwitterへの投稿](https://twitter.com/Lambo/status/1247862424931315712)で、このプロジェクトで使ったVivliostyleやFidus Writer[^1]、Hypothesis[^2]、GitHubなどのツールを挙げた上で、「これらがなければ、100人もの著者がいる本を迅速に制作するWebベースでのワークフローを構築するのはほとんど不可能でした」と述べています。
 
 [^1]: https://vivliostyle.org/ja/blog/2018/11/12/interview-by-fiduswriter/
 [^2]:https://web.hypothes.is/
