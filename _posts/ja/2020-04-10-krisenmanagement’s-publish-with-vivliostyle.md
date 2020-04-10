@@ -27,9 +27,10 @@ author:
 - https://vivliostyle.slack.com/archives/CAECW4S93/p1585151457004400
 - https://vivliostyle.slack.com/archives/CJAP6GBKQ/p1585377306007500
 
-制作を担当したTIBのSimon Worthington 氏は4月8日、自身のTwitterへの投稿で、このプロジェクトに使ったVivliostyleやFidus Writer[^1]、GitHubなどのツールを挙げた上で、「これらのツールがなければ、100人もの著者がいる本を迅速に制作するWebベースでのワークフローを構築するのはほとんど不可能でした」と述べています。
+制作を担当したTIBのSimon Worthington 氏は4月8日、自身のTwitterへの投稿で、このプロジェクトで使ったVivliostyleやFidus Writer[^1]、Hypothesis[^2]、GitHubなどのツールを挙げた上で、「これらがなければ、100人もの著者がいる本を迅速に制作するWebベースでのワークフローを構築するのはほとんど不可能でした」と述べています。
 
 [^1]: https://vivliostyle.org/ja/blog/2018/11/12/interview-by-fiduswriter/
+[^2]:https://web.hypothes.is/
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">In fact, we are super glad to have tools like <a href="https://twitter.com/fiduswriter?ref_src=twsrc%5Etfw">@fiduswriter</a>, <a href="https://twitter.com/Vivliostyle?ref_src=twsrc%5Etfw">@Vivliostyle</a>, <a href="https://twitter.com/hypothes_is?ref_src=twsrc%5Etfw">@hypothes_is</a>, <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a> etc. in place. Without them, a rapid and fully web-based production workflow of a book with +100 authors would hardly be possible.<br>Thanks <a href="https://twitter.com/mrchristian99?ref_src=twsrc%5Etfw">@mrchristian99</a> for bringing it all together! <a href="https://t.co/FxgSEPgJE2">https://t.co/FxgSEPgJE2</a></p>&mdash; Lambert Heller 🌈🦄🐶 (@Lambo) <a href="https://twitter.com/Lambo/status/1247862424931315712?ref_src=twsrc%5Etfw">April 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
