@@ -2,6 +2,7 @@
 title: Vivliostyle と Webベース出版について——Fidus Writer 開発者によるインタビュー
 lang: ja
 permalink: /ja/blog/2018/11/12/interview-by-fiduswriter/
+image: /assets/posts/2018-11-12-interview-by-fiduswriter/fiduswriterweb1.png
 author:
  - murakami
  - johannes
