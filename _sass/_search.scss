@@ -1,9 +1,4 @@
 .global-header {
-  .global-header__search {
-    position: relative;
-    margin-left: $gap_large;
-  }
-
   .global-header__searchfield {
     display: flex;
     border: 1px solid $gray_light;
@@ -24,7 +19,7 @@
   }
 
   .global-header__input {
-    width: 140px;
+    width: 300px;
     height: $searchfield_height;
     margin: 0;
     padding: $gap_small $gap_small $gap_small 0px;
@@ -40,6 +35,7 @@
     position: absolute;
     z-index: 10;
     top: calc(#{$searchfield_height} + #{$searchresult_triangle_size} + #{$gap_medium});
+    right: 0;
     width: 50vw;
     padding: $gap_medium calc(#{$gap_medium} * 2);
     border: 1px solid $gray_light;
@@ -51,6 +47,7 @@
       content: "";
       position: absolute;
       top: calc(-2 * #{$searchresult_triangle_size});
+      right: 20px;
       border-bottom: $searchresult_triangle_size solid $gray_light;
       border-top: $searchresult_triangle_size solid transparent;
       border-left: $searchresult_triangle_size solid transparent;
@@ -69,8 +66,10 @@
   }
 
   .searchresult__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $gap_medium;
     font-size: $display_font_size;
-    text-align: right;
     color: $gray;
   }
 
@@ -79,9 +78,16 @@
   }
 
   @include media_medium {
-    // 検索ボックスをなくす
-    .global-header__search {
-      display: none;
+    // 検索ウィンドウの幅をいっぱいにする
+    .global-header__searchresult {
+      width: 100%;
+    }
+  }
+
+  @include media_small {
+    // 検索ボックスの幅を調整
+    .global-header__input {
+      width: auto;
     }
   }
 }

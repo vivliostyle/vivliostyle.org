@@ -1,20 +1,24 @@
-<form class="global-header__search" action="">
-  <div class="global-header__searchfield">
-    <div class="global-header__searchicon">
-      <i class="mdi mdi-magnify"></i>
-    </div>
-    <input class="global-header__input" id="search-form" type="text" name="search" placeholder="Search" autocomplete="off" />
-  </div>
+<div class="global-header__searchresult" id="result-area">
+  <header class="searchresult__header">
+    <!-- 検索フォーム -->
+    <form action="">
+      <div class="global-header__searchfield">
+        <div class="global-header__searchicon">
+          <i class="mdi mdi-magnify"></i>
+        </div>
+        <input class="global-header__input" id="search-form" type="text" name="search" placeholder="Search" autocomplete="off" />
+      </div>
+    </form>
 
-  <div class="global-header__searchresult" id="result-area">
-    <header class="searchresult__header">
-      <i class="mdi mdi-close searchresult__closeicon" id="close-icon"></i>
-    </header>
-    <div class="container">
-      <ul class="list--medium--column" id="result-list"></ul>
-    </div>
+    <!-- ×ボタン -->
+    <i class="mdi mdi-close searchresult__closeicon" id="close-icon"></i>
+  </header>
+
+  <!-- 検索結果 -->
+  <div class="container">
+    <ul class="list--medium--column" id="result-list"></ul>
   </div>
-</form>
+</div>
 
 <script type="text/javascript" src="{{ "/assets/scripts/fetch.js" | relative_url }}"></script>
 <script type="text/javascript">
@@ -51,35 +55,59 @@
     } else {
       resultsList.innerHTML = html;
     }
-    resultArea.classList.add('open');
   }
 
+  function openResultArea() {
+    resultArea.classList.add('open');
+    field.focus();
+  }
+
+  function closeResultArea() {
+    resultArea.classList.remove('open');
+    field.value = "";
+    field.blur();
+  }
+
+
+  const searchButton = document.querySelector('#search-button');
   const field = document.querySelector('#search-form');
   const resultsList = document.querySelector('#result-list');
   const closeIcon = document.querySelector('#close-icon');
   const resultArea = document.querySelector('#result-area');
 
+  // アイコンにマウスオーバーして検索ウィンドウを開く
+  searchButton.addEventListener('mouseenter', function(event) {
+    openResultArea();
+  });
+
+  // アイコンからマウスアウトすると検索ウィンドウを閉じる
+  searchButton.addEventListener('mouseleave', function(event) {
+    if(field.value.length == 0 && resultArea.classList.contains('open')) {
+      closeResultArea();
+    }
+  });
+
+  // 検索ボックスで入力すると検索結果を出す
   field.addEventListener('keyup', displayResults);
 
-  // Enterを押しても遷移しない
+  // 検索ボックスでEnterを押しても遷移しない
   field.addEventListener('keypress', function(event) {
-    if (event.keyCode == 13) {
+    if(event.keyCode == 13) {
       event.preventDefault();
     }
   });
 
-  // ×ボタンで結果表示を隠す
+  // ×ボタンで検索ウィンドウを閉じる
   closeIcon.addEventListener('click', function(event) {
     if(resultArea.classList.contains('open')) {
-      resultArea.classList.remove('open');
+      closeResultArea();
     }
   });
 
-  // Escで結果表示を隠す
+  // Escで検索ウィンドウを閉じる
   window.addEventListener('keydown', function(event) {
     if(event.keyCode == 27 && resultArea.classList.contains('open')) {
-      resultArea.classList.remove('open');
-      document.activeElement.blur();
+      closeResultArea();
     }
   });
 </script>

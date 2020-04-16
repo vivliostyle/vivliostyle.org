@@ -161,17 +161,15 @@
     // ボタンを小さくする
     .nav__link,
     .nav__link--menu {
-      padding: 0 10px;
+      padding: 0 5px;
     }
 
     .global-header__logo {
       height: 30px;
     }
 
-    .item__icon {
-      &:last-child {
-        display: none;
-      }
+    .item__icon.mdi-chevron-down {
+      display: none;
     }
   }
 }

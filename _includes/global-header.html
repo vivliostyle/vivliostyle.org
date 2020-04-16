@@ -6,8 +6,6 @@
     <a href="{{ lang.url | relative_url }}">
       <img class="global-header__logo" src="{{ site.logo | relative_url }}" alt="{{ site.title | append: ' logo' }}"/>
     </a>
-
-    {% include site-search.html %}
   </div>
 
   <nav class="global-header__nav">
@@ -39,6 +37,15 @@
         </ol>
       </li>
 
+      <!-- 検索 -->
+      <li class="nav__item">
+        <div class="nav__link" id="search-button">
+          <i class="mdi mdi-magnify item__icon"></i>
+          {% include site-search.html %}
+        </div>
+      </li>
+
+      <!-- 言語切り替え -->
       <li class="nav__item">
         <span class="nav__link">
           <i class="mdi mdi-web item__icon"></i>
@@ -65,6 +72,7 @@
         </ul>
       </li>
 
+      <!-- GitHubへのリンク -->
       <li class="nav__item">
         <a class="nav__link" href="{{ site.data.account.github.url }}">
           <i class="mdi mdi-github-circle item__icon"></i>
