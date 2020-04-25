@@ -4,13 +4,24 @@
   background-color: $white;
   transition: $hover_animation;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $blue_lighter;
-
-    .nav__dropdown {
-      display: block;
-    }
   }
+
+  .nav__dropdown.open {
+    display: block;
+  }
+}
+
+@mixin nav_dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  min-width: 100%;
+  border: 1px solid $gray_lighter;
+  transition: $hover_animation;
 }
 
 .global-header {
@@ -42,7 +53,7 @@
   // ----------
 
   .nav__list,
-  .nav__list--menu {
+  .nav__dropdown--menu {
     @include list;
 
     flex-wrap: nowrap;
@@ -61,13 +72,7 @@
   }
 
   .nav__dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    z-index: 10;
-    min-width: 100%;
-    border: 1px solid $gray_lighter;
-    transition: $hover_animation;
+    @include nav_dropdown;
   }
 
   .item__icon {
@@ -108,23 +113,12 @@
       display: flex;
     }
 
-    .nav__item--menu {
-      &:hover {
-        .nav__list--menu {
-          display: block;
-        }
-      }
+    .nav__dropdown--menu {
+      @include nav_dropdown;
     }
 
-    .nav__list--menu {
-      display: none;
-      position: absolute;
-      right: 0;
-      z-index: 10;
-      min-width: 100%;
-      margin: 0;
-      border: 1px solid $gray_lighter;
-      transition: $hover_animation;
+    .nav__dropdown--menu.open {
+      display: block;
     }
 
     // アクティブの印を左側につける

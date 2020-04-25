@@ -74,7 +74,10 @@
   }
 
   .searchresult__closeicon {
-    cursor: pointer;
+    border: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
   }
 
   @include media_medium {

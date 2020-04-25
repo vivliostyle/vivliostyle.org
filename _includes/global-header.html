@@ -11,12 +11,13 @@
   <nav class="global-header__nav">
     <ol class="nav__list">
       <li class="nav__item--menu">
-        <div class="nav__link--menu">
+        <div tabindex="0" class="nav__link--menu" id="main-button">
           <i class="mdi mdi-format-list-bulleted item__icon"></i>
           <span class="nav__label">MENU</span>
           <i class="mdi mdi-chevron-down item__icon"></i>
         </div>
-        <ol class="nav__list--menu">
+
+        <ol class="nav__dropdown--menu" id="main-menu">
           {% for item in global_header %}
             {% if item.url contains '://' %}
               {% assign url = item.url %}
@@ -39,20 +40,20 @@
 
       <!-- 検索 -->
       <li class="nav__item">
-        <div class="nav__link" id="search-button">
+        <div tabindex="0" class="nav__link" id="search-button" title="Search">
           <i class="mdi mdi-magnify item__icon"></i>
-          {% include site-search.html %}
         </div>
+        {% include site-search.html %}
       </li>
 
       <!-- 言語切り替え -->
       <li class="nav__item">
-        <span class="nav__link">
+        <div tabindex="0" class="nav__link" id="lang-button" title="Language">
           <i class="mdi mdi-web item__icon"></i>
           <i class="mdi mdi-chevron-down item__icon"></i>
-        </span>
+        </div>
 
-        <ul class="nav__dropdown">
+        <ul class="nav__dropdown" id="lang-menu">
           {% for otherlang in site.data.language %}
             {% assign url = page.url | remove_first: lang.url %}
 
@@ -74,13 +75,15 @@
 
       <!-- GitHubへのリンク -->
       <li class="nav__item">
-        <a class="nav__link" href="{{ site.data.account.github.url }}">
+        <a class="nav__link" href="{{ site.data.account.github.url }}" title="GitHub">
           <i class="mdi mdi-github-circle item__icon"></i>
         </a>
       </li>
     </ol>
   </nav>
 </header>
+
+{% include keyboard-operation.html %}
 
 {% if page.jumbotron_image %}
   {% include banner.html %}

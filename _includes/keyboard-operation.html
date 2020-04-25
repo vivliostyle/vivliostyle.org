@@ -1,0 +1,78 @@
+<script>
+  addKeyboardOperations({ menuButtonId: "lang-button", menuId: "lang-menu" });
+  addKeyboardOperations({ menuButtonId: "main-button", menuId: "main-menu" });
+
+  function addKeyboardOperations({ menuButtonId, menuId }) {
+    const menuButton = document.getElementById(menuButtonId);
+
+    const menu = document.getElementById(menuId);
+    const menuList = menu.querySelectorAll("a");
+
+    menuButton.addEventListener("focus", function(event) {
+      // 左から来た場合はリストの一番上、右から来た場合はリストの一番下にフォーカス
+      const elementList = Array.from(document.querySelectorAll(`${event.relatedTarget.tagName},${event.target.tagName}`));
+      const targetIndex = elementList.indexOf(event.target);
+      const relatedTargetIndex = elementList.indexOf(event.relatedTarget);
+      const linkList = menu.querySelectorAll("a");
+      let nextLink;
+
+      if(targetIndex > relatedTargetIndex) {
+        nextLink = linkList[0];
+      } else {
+        nextLink = linkList[linkList.length-1];
+      }
+
+      openMenu(menuButton, menu);
+      nextLink.focus();
+    });
+
+    menuButton.addEventListener("mouseenter", function(event) {
+      openMenu(menuButton, menu);
+      menu.querySelector("a").focus();
+    });
+
+    menuButton.addEventListener("mouseleave", function(event) {
+      closeMenu(menuButton, menu);
+    });
+
+    menu.addEventListener("focusout", function(event) {
+      if(!menu.contains(event.relatedTarget)) {
+        closeMenu(menuButton, menu);
+      }
+    });
+
+    menu.addEventListener("mouseover", function(event) {
+      openMenu(menuButton, menu);
+    });
+
+    menu.addEventListener("mouseleave", function(event) {
+      closeMenu(menuButton, menu);
+    });
+
+    menuList.forEach(function(item, i) {
+      item.addEventListener("keydown", function(event) {
+        // 上矢印
+        if(event.keyCode == 38 && i != 0) {
+          event.preventDefault();
+          menuList[i-1].focus();
+        }
+
+        // 下矢印
+        if(event.keyCode == 40 && i != menuList.length-1) {
+          event.preventDefault();
+          menuList[i+1].focus();
+        }
+      });
+    });
+  }
+
+  function openMenu(button, menu) {
+    button.tabIndex = "-1";
+    menu.classList.add("open");
+  }
+
+  function closeMenu(button, menu) {
+    button.tabIndex = "0";
+    menu.classList.remove("open");
+  }
+</script>

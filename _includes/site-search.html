@@ -11,7 +11,9 @@
     </form>
 
     <!-- ×ボタン -->
-    <i class="mdi mdi-close searchresult__closeicon" id="close-icon"></i>
+    <button id="close-icon" class="searchresult__closeicon" title="Close">
+      <i class="mdi mdi-close"></i>
+    </button>
   </header>
 
   <!-- 検索結果 -->
@@ -37,8 +39,8 @@
     });
   }
 
-  function displayResults() {
-    const resultsArray = findResults(this.value, pages);
+  function displayResults(word) {
+    const resultsArray = findResults(word, pages);
     const html = resultsArray.map(item => {
       return `
                 <li class="frame--small">
@@ -50,20 +52,24 @@
                   </a>
                 </li>`;
     }).join('');
-    if ((resultsArray.length == 0) || (this.value == '')) {
+
+    if(word == '') {
+      resultsList.innerHTML = "";
+    } else if (resultsArray.length == 0) {
       resultsList.innerHTML = `<p>Sorry, nothing was found</p>`;
     } else {
       resultsList.innerHTML = html;
     }
   }
 
-  function openResultArea() {
-    resultArea.classList.add('open');
-    field.focus();
+  function openResultArea(button, menu) {
+    button.tabIndex = "-1";
+    menu.classList.add('open');
   }
 
-  function closeResultArea() {
-    resultArea.classList.remove('open');
+  function closeResultArea(button, menu) {
+    button.tabIndex = "0";
+    menu.classList.remove('open');
     field.value = "";
     field.blur();
   }
@@ -75,20 +81,58 @@
   const closeIcon = document.querySelector('#close-icon');
   const resultArea = document.querySelector('#result-area');
 
-  // アイコンにマウスオーバーして検索ウィンドウを開く
-  searchButton.addEventListener('mouseenter', function(event) {
-    openResultArea();
+  searchButton.addEventListener('focus', function(event) {
+    openResultArea(searchButton, resultArea);
+    field.focus();
   });
 
-  // アイコンからマウスアウトすると検索ウィンドウを閉じる
+  searchButton.addEventListener('mouseenter', function(event) {
+    openResultArea(searchButton, resultArea);
+    field.focus();
+  });
+
   searchButton.addEventListener('mouseleave', function(event) {
-    if(field.value.length == 0 && resultArea.classList.contains('open')) {
-      closeResultArea();
+    if(field.value == "") {
+      closeResultArea(searchButton, resultArea);
+    }
+  });
+
+  resultArea.addEventListener("focusout", function(event) {
+    if(!resultArea.contains(event.relatedTarget)) {
+      closeResultArea(searchButton, resultArea);
+    }
+  });
+
+  resultArea.addEventListener("mouseover", function(event) {
+    openResultArea(searchButton, resultArea);
+  });
+
+  resultArea.addEventListener("mouseleave", function(event) {
+    if(field.value == "") {
+      closeResultArea(searchButton, resultArea);
     }
   });
 
   // 検索ボックスで入力すると検索結果を出す
-  field.addEventListener('keyup', displayResults);
+  field.addEventListener('keyup', function(event) {
+    displayResults(field.value);
+    const itemList = resultsList.querySelectorAll("a");
+    itemList.forEach(function(item, i) {
+      item.addEventListener("keydown", function(event) {
+        // 上矢印
+        if(event.keyCode == 38 && i != 0) {
+          event.preventDefault();
+          itemList[i-1].focus();
+        }
+
+        // 下矢印
+        if(event.keyCode == 40 && i != itemList.length-1) {
+          event.preventDefault();
+          itemList[i+1].focus();
+        }
+      });
+    });
+  });
 
   // 検索ボックスでEnterを押しても遷移しない
   field.addEventListener('keypress', function(event) {
@@ -99,15 +143,20 @@
 
   // ×ボタンで検索ウィンドウを閉じる
   closeIcon.addEventListener('click', function(event) {
-    if(resultArea.classList.contains('open')) {
-      closeResultArea();
+    closeResultArea(searchButton, resultArea);
+  });
+
+  // ×ボタンで検索ウィンドウを閉じる
+  closeIcon.addEventListener('keydown', function(event) {
+    if(event.keyCode == 13) {
+      closeResultArea(searchButton, resultArea);
     }
   });
 
   // Escで検索ウィンドウを閉じる
   window.addEventListener('keydown', function(event) {
-    if(event.keyCode == 27 && resultArea.classList.contains('open')) {
-      closeResultArea();
+    if(event.keyCode == 27) {
+      closeResultArea(searchButton, resultArea);
     }
   });
 </script>
