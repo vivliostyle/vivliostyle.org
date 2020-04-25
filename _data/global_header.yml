@@ -3,6 +3,8 @@ en:
     url: /getting-started/
   - title: Samples
     url: /samples/
+  - title: Download
+    url: /download/
   - title: Documents
     url: /documents/
   - title: FAQ
@@ -14,6 +16,8 @@ ja:
     url: /ja/getting-started/
   - title: サンプル
     url: /ja/samples/
+  - title: ダウンロード
+    url: /ja/download/
   - title: ドキュメント
     url: /ja/documents/
   - title: FAQ
