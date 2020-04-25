@@ -49,8 +49,8 @@ Here are some of our past contributors with gratitude.
 Vivliostyle open source development relies on volunteer staff. To continue development, we need your support.
 
 <ol class="list--medium">
+  {% include button/primary.html url=site.data.account.github_sponsor.url text="Become a sponsor via Github" %}
   <!-- {% include button/primary.html url=site.data.account.congrant.url text="Donate by credit card payment (to congrant)" %} -->
-  {% include button/disabled.html url=site.data.account.github_sponsor.url text="Become a sponsor via Github (Coming soon)" %}
 </ol>
 {% endcapture %}
 
