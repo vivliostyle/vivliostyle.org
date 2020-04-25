@@ -52,8 +52,8 @@ lang: ja
 Vivliostyle はボランティア・スタッフに支えられたオープンソース開発。開発を継続するために、できる範囲で援助をご検討ください。
 
 <ol class="list--medium">
+  {% include button/primary.html url=site.data.account.github_sponsor.url text="GitHub スポンサーに応募する" %}
   {% include button/disabled.html url=site.data.account.congrant.url text="クレジットカード決済で寄付する（準備中）" %}
-  {% include button/disabled.html url=site.data.account.github_sponsor.url text="GitHub スポンサーに応募する（準備中）" %}
 </ol>
 {% endcapture %}
 
