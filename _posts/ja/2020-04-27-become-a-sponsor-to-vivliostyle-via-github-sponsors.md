@@ -7,7 +7,7 @@ author:
 ---
 少し前に申請していた GitHub Sponsors に無事通過し、このほど募集ページが公開されました。
 
-- {Become a sponsor to vivliostyle }(https://github.com/sponsors/vivliostyle)
+- [Become a sponsor to vivliostyle](https://github.com/sponsors/vivliostyle)
 
 このページから任意のコース（tier）の “Select” をクリックすることで、Vivliostyleに対して毎月一定額を支援することが可能になります。支払いはクレジットカードとPayPalの2種類。また、“Who can see your sponsorship?” （あなたの支援を誰かが見ることができますか？）の項目で “Private” を選択すれば、匿名による寄付も可能です（デフォルトは名前を公開する “Everyone”）。
 
