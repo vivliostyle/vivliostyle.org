@@ -7,6 +7,23 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 ---
 
 
+{% capture whatsnew %}
+## 新着情報・ブログ
+
+{% assign show_count = 3 %}
+{% assign pickups = site.data.whatsnew.ja | limit: show_count %}
+{% assign pickups_count = pickups | size %}
+{% assign post_count = show_count | minus: pickups_count %}
+{% assign posts = site.posts | where: "lang", page.lang | slice: 0, post_count %}
+{% assign posts = pickups | concat: posts %}
+{% include post-list-horizontal.html posts=posts %}
+
+<ol class="list--medium">
+  {% include button/primary.html url="/ja/blog" text="ブログ記事一覧" %}
+</ol>
+{% endcapture %}
+
+
 {% capture sample1 %}
 ## CSS 組版で本を作りたい！
 
@@ -80,14 +97,6 @@ Vivliostyle には開発中も含め、次のプロダクトがあります。
 {% endcapture %}
 
 
-{% capture blog %}
-## 最近のブログ
-
-{% assign posts = site.posts | where: "lang", page.lang | slice: 0, 3 %}
-{% include post-list.html posts=posts %}
-{% endcapture %}
-
-
 {% capture dev %}
 ## 一緒に開発しませんか
 
@@ -102,9 +111,9 @@ Vivliostyleプロジェクトでは、開発方針などをSlack上で話し合�
 
 
 {% include page/index.html
+  whatsnew=whatsnew
   sample1=sample1
   sample2=sample2
   project=project
-  blog=blog
   dev=dev
 %}

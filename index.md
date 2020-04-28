@@ -6,6 +6,23 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 ---
 
 
+{% capture whatsnew %}
+## Whats' New
+
+{% assign show_count = 3 %}
+{% assign pickups = site.data.whatsnew.en | limit: show_count %}
+{% assign pickups_count = pickups | size %}
+{% assign post_count = show_count | minus: pickups_count %}
+{% assign posts = site.posts | where: "lang", page.lang | slice: 0, post_count %}
+{% assign posts = pickups | concat: posts %}
+{% include post-list-horizontal.html posts=posts %}
+
+<ol class="list--medium">
+  {% include button/primary.html url="/blog" text="Blog Posts" %}
+</ol>
+{% endcapture %}
+
+
 {% capture sample1 %}
 ## Want to make a book with CSS typesetting?
 
@@ -79,14 +96,6 @@ Other libraries for developers include ["Vivliostyle Core"]({{ site.data.project
 {% endcapture %}
 
 
-{% capture blog %}
-## Recent blog posts
-
-{% assign posts = site.posts | where: "lang", page.lang | slice: 0, 3 %}
-{% include post-list.html posts=posts %}
-{% endcapture %}
-
-
 {% capture dev %}
 ## Help improve Vivliostyle
 
@@ -101,9 +110,9 @@ The Vivliostyle project discusses development matters on Slack. Please take a lo
 
 
 {% include page/index.html
+  whatsnew=whatsnew
   sample1=sample1
   sample2=sample2
   project=project
-  blog=blog
   dev=dev
 %}

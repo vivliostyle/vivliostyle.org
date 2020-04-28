@@ -1,0 +1,19 @@
+<ol class="list--medium list--whatsnew">
+  {% for post in include.posts %}
+    <li class="frame--small frame--whatsnew">
+      {% include post-header.html
+        date=post.date
+      %}
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="frame__link">
+        <div class="post__text">
+          <h3>{{ post.title }}</h3>
+        </div>
+
+        {% if post.image %}
+          <img src="{{ post.image }}" class="thumbnail thumbnail--whatsnew">
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ol>
