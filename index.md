@@ -7,7 +7,7 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 
 
 {% capture whatsnew %}
-## Whats' New
+## What's New
 
 {% assign show_count = 3 %}
 {% assign pickups = site.data.whatsnew.en | limit: show_count %}
