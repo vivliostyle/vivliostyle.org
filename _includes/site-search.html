@@ -72,6 +72,7 @@
     menu.classList.remove('open');
     field.value = "";
     field.blur();
+    resultsList.innerHTML = "";
   }
 
 
@@ -98,7 +99,7 @@
   });
 
   resultArea.addEventListener("focusout", function(event) {
-    if(!resultArea.contains(event.relatedTarget)) {
+    if(!resultArea.contains(event.relatedTarget) && field.value == "") {
       closeResultArea(searchButton, resultArea);
     }
   });
