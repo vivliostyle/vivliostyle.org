@@ -60,4 +60,4 @@ There are 10 tiers in total, a wide range of options from $1 to $6,000 per month
   - Put your large logo on the official website [vivliostyle.org](https://vivliostyle.org/)
   - 12 hours of support or consulting per month
 
-Vivliostyle is developed by volunteers. Take this opportunity to consider supporting us!
+Vivliostyle is developed by volunteers. Take this opportunity to consider [supporting us](https://github.com/sponsors/vivliostyle)!

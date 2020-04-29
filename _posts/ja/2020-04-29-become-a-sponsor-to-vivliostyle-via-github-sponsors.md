@@ -58,4 +58,4 @@ author:
   - 公式サイト [vivliostyle.org](https://vivliostyle.org) にあなたの大型のロゴを掲載
   - 月12時間のサポートまたはコンサルティング
 
-Vivliostyle はボランティアによって開発されています。この機会にぜひ、支援をご検討ください！
+Vivliostyle はボランティアによって開発されています。この機会にぜひ、[支援](https://github.com/sponsors/vivliostyle)をご検討ください！
