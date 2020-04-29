@@ -19,49 +19,49 @@ In addition, who can see your sponsorship? If you select "Private", you can also
 
 There are 10 tiers in total, ranging from $1 to $6,000 per month, with a wide range of options available. The recruitment page is in English, so i'll explain it here by the Japanese translation.
 
-- **毎月$1 ⭐️**
-**ファン・スポンサー：**Vivliostyleを愛してくれてありがとうございます。お礼として [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)リポジトリのBACKERS.mdファイルで、バッジ⭐️とともにあなたのアイコンを掲載します。
+- **$1 a month ⭐️**
+**Fan Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository, along with the badge ⭐️.
 
-- **毎月$3 🌟**
-**ファン・スポンサー：**Vivliostyleを愛してくれてありがとうございます。あなたのサポートに感謝をこめて、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルで、バッジ🌟とともにあなたのアイコンを掲載します。
+- **$3 a month 🌟**
+**🌟Fan Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository, along with the badge 🌟.
 
-- **毎月 $10 🌹**
-**ベーシック・スポンサー：** Vivliostyleを愛してくれてありがとうございます。お礼としてお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ🌹とともにあなたのアイコンを掲載します。
+- **$10 a month 🌹**
+**🌹 Basic Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge🌹.
 
-- **毎月$30 💐**
-**ベーシック・スポンサー：** Vivliostyleを愛してくれてありがとうございます。あなたのサポートに感謝をこめて、お名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ💐とともにあなたのアイコンを掲載します。
+- **$30 a month 💐**
+**💐 Basic Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge💐.
 
-- **毎月$100 🥉**
-**ブロンズ・スポンサー：**Vivliostyleを愛してくれてありがとうございます。Bronze Sponsor としてあなたのお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ🥉とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
-- [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのREADMEファイルにあなたのロゴを掲載
+- **$100 a month 🥉**
+**🥉Bronze Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge🥉. Additional benefits include:
+- Put your logo in the README file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository
 
-- **毎月$200 🥈**
-**シルバー・スポンサー：**Vivliostyleを愛してくれてありがとうございます。Silver Sponsor としてあなたのお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ🥈とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
-- [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのREADMEファイルにあなたのロゴを掲載
+- **$200 a month 🥈**
+**🥈Silver Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge🥈. Additional benefits include:
+- Put your logo in the README file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository
 
-- **毎月$500 🥇**
-**ゴールド・スポンサー：**Vivliostyleを愛してくれてありがとうございます。Gold Sponsor としてあなたのお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ🥇とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
-- [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのREADMEファイルにあなたのロゴを掲載
-- 公式サイト [vivliostyle.org](vivliostyle.org) にあなたのロゴを掲載
+- **$500 a month 🥇**
+**🥇Gold Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge🥇. Additional benefits include:
+- Put your logo in the README file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository
+- Put your logo on the official website [vivliostyle.org](https://vivliostyle.org/)
 
-- **毎月$1,000 🏆**
-**プラチナ・スポンサー：**Vivliostyleを愛してくれてありがとうございます。Platinum Sponsor としてあなたのお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ🏆とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
-- [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのREADMEファイルにあなたの大型のロゴを掲載
-- 公式サイト [vivliostyle.org](vivliostyle.org) にあなたの大型のロゴを掲載
-- 月2時間のサポートまたはコンサルティング
-
-
-- **毎月$2,500 💎**
-**ダイヤモンド・スポンサー：**Vivliostyleを愛してくれてありがとうございます。Diamond Sponsor としてあなたのお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ💎とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
-- [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのREADMEファイルにあなたの大型のロゴを掲載
-- 公式サイト [vivliostyle.org](vivliostyle.org) にあなたの大型のロゴを掲載
-- 月5時間のサポートまたはコンサルティング
+- **$1000 a month 🏆**
+**🏆Platinum Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge🏆. Additional benefits include:
+- Put your large logo in the README file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository
+- Put your large logo on the official website [vivliostyle.org](https://vivliostyle.org/)
+- 2 hours of support or consulting per month
 
 
-- **毎月$6,000 💠**
-**スペシャル・スポンサー：**Vivliostyleを愛してくれてありがとうございます。Special Sponsor としてあなたのお名前をTwitterで告知し、[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのBACKERS.mdファイルと公式サイト [vivliostyle.org](vivliostyle.org) で、バッジ💠とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
-- [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) リポジトリのREADMEファイルにあなたの大型のロゴを掲載
-- 公式サイト [vivliostyle.org](vivliostyle.org) にあなたの大型のロゴを掲載
-- 月12時間のサポートまたはコンサルティング
+- **$2500 a month 💎**
+**💎Diamond Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge💎. Additional benefits include:
+- Put your large logo in the README file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository
+- Put your large logo on the official website [vivliostyle.org](https://vivliostyle.org/)
+- 5 hours of support or consulting per month
+
+
+- **$6000 a month 💠**
+**💠Special Sponsor:** Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository and on the official website [vivliostyle.org](https://vivliostyle.org/), along with the badge💠. Additional benefits include:
+- Put your large logo in the README file in the [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) repository
+- Put your large logo on the official website [vivliostyle.org](https://vivliostyle.org/)
+- 12 hours of support or consulting per month
 
 Vivliostyle is developed by volunteers. Take this opportunity to consider your support!
