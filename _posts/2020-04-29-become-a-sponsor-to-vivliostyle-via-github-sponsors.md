@@ -5,6 +5,8 @@ image: /assets/posts/2020-04-29-become-a-sponsor-to-vivliostyle-via-github-spons
 author:
   - ogwata
 ---
+<div style="float: right; margin: 0 0 1em 1em;"><a href="https://github.com/sponsors/vivliostyle"><img src="/assets/posts/2020-04-29-become-a-sponsor-to-vivliostyle-via-github-sponsors/gitHub-sponsors.png" alt="Become a sponsor to vivliostyle" style="width: 300px; box-shadow: 2px 4px 5px 3px grey;" /></a></div>
+
 The original article is [GitHub Sponsors で Vivliostyle を支援しませんか](https://vivliostyle.org/ja/blog/2020/04/29/become-a-sponsor-to-vivliostyle-via-github-sponsors/) in Japanese)
 
 We had previously applied for GitHub Sponsors, and the other day we passed the screening and the recruitment page was released.
