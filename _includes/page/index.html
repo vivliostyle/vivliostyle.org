@@ -2,6 +2,12 @@
   {% include top-animation.html %}
 </section>
 
+<section class="section--center--gray">
+  <div class="container">
+    {{ include.whatsnew | markdownify }}
+  </div>
+</section>
+
 <section class="section--center">
   <div class="container">
     {{ include.sample1 | markdownify }}
@@ -21,12 +27,6 @@
 </section>
 
 <section class="section--center">
-  <div class="container">
-    {{ include.blog | markdownify }}
-  </div>
-</section>
-
-<section class="section--center--gray">
   <div class="container">
     {{ include.dev | markdownify }}
   </div>

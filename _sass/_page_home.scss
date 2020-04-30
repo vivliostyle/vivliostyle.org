@@ -50,6 +50,32 @@
     font-size: $small_font_size;
   }
 
+  .list--whatsnew {
+    flex-wrap: nowrap;
+  }
+
+  .frame--whatsnew {
+    flex: 1;
+
+    .post__date {
+      min-height: 32px;
+    }
+  }
+
+  .thumbnail--whatsnew {
+    max-height: 160px;
+  }
+
+  .post__text {
+    @include headings {
+      font-size: $h4_font_size;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+  }
+
   @include media_small {
     .project__img {
       margin: 0;
