@@ -38,7 +38,7 @@
     right: 0;
     width: 50vw;
     padding: $gap_medium calc(#{$gap_medium} * 2);
-    border: 1px solid $gray_light;
+    border: 1px solid $gray_lighter;
     background-color: $white;
     transition: $hover_animation;
 
@@ -74,13 +74,22 @@
   }
 
   .searchresult__closeicon {
-    cursor: pointer;
+    border: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
   }
 
   @include media_medium {
     // 検索ウィンドウの幅をいっぱいにする
     .global-header__searchresult {
       width: 100%;
+      top: 80px;
+
+      &:before,
+      &:after {
+        display: none;
+      }
     }
   }
 

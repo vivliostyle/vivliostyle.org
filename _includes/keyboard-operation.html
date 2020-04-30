@@ -1,0 +1,92 @@
+<script>
+  addKeyboardOperations({ menuButtonId: "lang-button", menuId: "lang-menu" });
+  addKeyboardOperations({ menuButtonId: "main-button", menuId: "main-menu" });
+
+  function addKeyboardOperations({ menuButtonId, menuId }) {
+    function openMenu() {
+      menuButton.tabIndex = "-1";
+      menu.classList.add("open");
+    }
+
+    function closeMenu() {
+      menuButton.tabIndex = "0";
+      menu.classList.remove("open");
+    }
+
+    function isInMenu(relatedTarget) {
+      return menu.contains(relatedTarget) || relatedTarget == menuButton;
+    }
+
+    const menuButton = document.getElementById(menuButtonId);
+    const menu = document.getElementById(menuId);
+    const menuList = menu.querySelectorAll("a");
+
+    menuButton.addEventListener("focus", function(event) {
+      if(!event.relatedTarget) return;
+
+      const elementList = Array.from(document.querySelectorAll(`${event.relatedTarget.tagName},${event.target.tagName}`));
+      const targetIndex = elementList.indexOf(event.target);
+      const relatedTargetIndex = elementList.indexOf(event.relatedTarget);
+      let nextLink;
+
+      // 左から来た場合はリストの一番上、右から来た場合はリストの一番下にフォーカス
+      if(targetIndex > relatedTargetIndex) {
+        nextLink = menuList[0];
+      } else {
+        nextLink = menuList[menuList.length-1];
+      }
+
+      openMenu();
+      nextLink.focus();
+    });
+
+    menuButton.addEventListener("mouseenter", function(event) {
+      openMenu();
+    });
+
+    menuButton.addEventListener("mouseleave", function(event) {
+      if(isInMenu(event.relatedTarget)) return;
+      closeMenu();
+    });
+
+    menu.addEventListener("focusout", function(event) {
+      if(isInMenu(event.relatedTarget)) return;
+      closeMenu();
+    });
+
+    menu.addEventListener("mouseover", function(event) {
+      openMenu();
+    });
+
+    menu.addEventListener("mouseleave", function(event) {
+      if(isInMenu(event.relatedTarget)) return;
+      closeMenu();
+    });
+
+    menuList.forEach(function(item, i) {
+      item.addEventListener("mousedown", function(event) {
+        event.target.click();
+      });
+
+      item.addEventListener("keydown", function(event) {
+        // 上矢印
+        if(event.keyCode == 38 && i != 0) {
+          event.preventDefault();
+          menuList[i-1].focus();
+        }
+
+        // 下矢印
+        if(event.keyCode == 40 && i != menuList.length-1) {
+          event.preventDefault();
+          menuList[i+1].focus();
+        }
+      });
+    });
+
+    window.addEventListener("keydown", function(event) {
+      if(event.keyCode == 27) {
+        closeMenu();
+      }
+    });
+  }
+</script>
