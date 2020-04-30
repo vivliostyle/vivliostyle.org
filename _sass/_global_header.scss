@@ -61,7 +61,8 @@
   }
 
   .nav__item,
-  .nav__item--menu {
+  .nav__item--menu,
+  .nav__item--search {
     @include nav_item;
   }
 
@@ -125,32 +126,43 @@
     .nav__item--active {
       box-shadow: inset 6px 0 0 $primary_color;
     }
+
+    // アイコンを大きくする
+    .item__icon {
+      margin: 0;
+      font-size: 32px;
+    }
   }
 
   @include media_medium {
-    // アイコンを大きくする
-    .item__icon {
-      font-size: 32px;
+    // 余白を小さくする
+    .nav__link,
+    .nav__link--menu {
+      padding: 0 10px;
     }
 
-    // ラベルを消す
-    .nav__label {
-      display: none;
+    .item__icon.mdi-chevron-down {
+      font-size: 30px;
     }
 
     .nav__dropdown .nav__label {
       display: block;
     }
 
-    // メニューを幅いっぱいに広げる
-    .nav__item,
-    .nav__item--menu {
+    // 検索ウィンドウを幅いっぱいに広げる
+    .nav__item--search {
       position: unset;
     }
   }
 
   @include media_small {
     padding: 0 20px;
+
+    // メニューを幅いっぱいに広げる
+    .nav__item,
+    .nav__item--menu {
+      position: unset;
+    }
 
     // ボタンを小さくする
     .nav__link,
@@ -163,6 +175,11 @@
     }
 
     .item__icon.mdi-chevron-down {
+      display: none;
+    }
+
+    // ラベルを消す
+    .nav__label {
       display: none;
     }
   }
