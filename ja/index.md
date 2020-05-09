@@ -110,10 +110,25 @@ Vivliostyleプロジェクトでは、開発方針などをSlack上で話し合�
 {% endcapture %}
 
 
+{% capture sponsor %}
+## スポンサー
+
+Vivliostyleは独立したオープンソースプロジェクトです。私たちのプロジェクトは皆さんの支援がなければ開発を続けることができません。
+現在の総支援額は **毎月27ドル** です。あなたもぜひ支援をご検討ください。
+
+{% include all-sponsors.html %}
+
+<ol class="list--medium">
+  {% include button/primary.html url=site.data.account.github_sponsor.url text="GitHub スポンサーに応募する" %}
+</ol>
+{% endcapture %}
+
+
 {% include page/index.html
   whatsnew=whatsnew
   sample1=sample1
   sample2=sample2
   project=project
   dev=dev
+  sponsor=sponsor
 %}

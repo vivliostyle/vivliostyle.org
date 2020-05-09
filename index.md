@@ -109,10 +109,25 @@ The Vivliostyle project discusses development matters on Slack. Please take a lo
 {% endcapture %}
 
 
+{% capture sponsor %}
+## Sponsors
+
+Vivliostyle is an independent, open source project. Our project would not be able to continue its development without the support of backers.
+The current amount of support is **$27.00** per month. Please consider helping us.
+
+{% include all-sponsors.html %}
+
+<ol class="list--medium">
+  {% include button/primary.html url=site.data.account.github_sponsor.url text="Become a sponsor to Vivliostyle" %}
+</ol>
+{% endcapture %}
+
+
 {% include page/index.html
   whatsnew=whatsnew
   sample1=sample1
   sample2=sample2
   project=project
   dev=dev
+  sponsor=sponsor
 %}

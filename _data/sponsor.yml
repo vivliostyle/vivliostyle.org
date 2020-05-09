@@ -1,0 +1,41 @@
+- name: Fan Sponsor
+  tier:
+    - badge: 🌟
+      users:
+        - vvakame
+        - nishinos
+    - badge: ⭐️
+      users:
+        - munepi
+- name: Basic Sponsor
+  tier:
+    - badge: 💐
+      users:
+    - badge: 🌹
+      users:
+        - hidaruma
+        - youchan
+# - name: Bronze Sponsor
+  # tier:
+    # - badge: 🥉
+      # users:
+# - name: Silver Sponsor
+  # tier:
+    # - badge: 🥈
+      # users:
+# - name: Gold Sponsor
+  # tier:
+    # - badge: 🥇
+      # users:
+# - name: Platinum Sponsor
+  # tier:
+    # - badge: 🏆
+      # users:
+# - name: Diamond Sponsor
+  # tier:
+    # - badge: 💎
+      # users:
+# - name: Special Sponsor
+  # tier:
+    # - badge: 💠
+      # users:

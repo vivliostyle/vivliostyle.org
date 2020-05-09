@@ -1,0 +1,17 @@
+<ol class="list--small">
+  {% assign sponsor_groups = site.data.sponsor | reverse %}
+  {% for sponsor_group in sponsor_groups %}
+    {% for tier in sponsor_group.tier %}
+      {% for user in tier.users %}
+        <li class="avatar-list__item">
+          <a href="https://github.com/{{ user }}">
+            <img src="https://github.com/{{ user }}.png" alt="{{ user }}" class="avatar">
+          </a>
+          <div class="avatar__badge">
+            <i>{{ tier.badge }}</i>
+          </div>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</ol>
