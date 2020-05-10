@@ -1,4 +1,4 @@
-- name: Fan Sponsor
+- name: Fan Sponsors
   tier:
     - badge: 🌟
       users:
@@ -7,7 +7,7 @@
     - badge: ⭐️
       users:
         - munepi
-- name: Basic Sponsor
+- name: Basic Sponsors
   tier:
     - badge: 💐
       users:
@@ -15,27 +15,27 @@
       users:
         - hidaruma
         - youchan
-# - name: Bronze Sponsor
+# - name: Bronze Sponsors
   # tier:
     # - badge: 🥉
       # users:
-# - name: Silver Sponsor
+# - name: Silver Sponsors
   # tier:
     # - badge: 🥈
       # users:
-# - name: Gold Sponsor
+# - name: Gold Sponsors
   # tier:
     # - badge: 🥇
       # users:
-# - name: Platinum Sponsor
+# - name: Platinum Sponsors
   # tier:
     # - badge: 🏆
       # users:
-# - name: Diamond Sponsor
+# - name: Diamond Sponsors
   # tier:
     # - badge: 💎
       # users:
-# - name: Special Sponsor
+# - name: Special Sponsors
   # tier:
     # - badge: 💠
       # users:
