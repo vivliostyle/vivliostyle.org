@@ -1,3 +1,35 @@
+# - name: Special Sponsors
+  # tier:
+    # - badge: 💠
+      # users:
+# - name: Diamond Sponsors
+  # tier:
+    # - badge: 💎
+      # users:
+# - name: Platinum Sponsors
+  # tier:
+    # - badge: 🏆
+      # users:
+# - name: Gold Sponsors
+  # tier:
+    # - badge: 🥇
+      # users:
+# - name: Silver Sponsors
+  # tier:
+    # - badge: 🥈
+      # users:
+# - name: Bronze Sponsors
+  # tier:
+    # - badge: 🥉
+      # users:
+- name: Basic Sponsors
+  tier:
+    # - badge: 💐
+      # users:
+    - badge: 🌹
+      users:
+        - hidaruma
+        - youchan
 - name: Fan Sponsors
   tier:
     - badge: 🌟
@@ -7,35 +39,3 @@
     - badge: ⭐️
       users:
         - munepi
-- name: Basic Sponsors
-  tier:
-    - badge: 💐
-      users:
-    - badge: 🌹
-      users:
-        - hidaruma
-        - youchan
-# - name: Bronze Sponsors
-  # tier:
-    # - badge: 🥉
-      # users:
-# - name: Silver Sponsors
-  # tier:
-    # - badge: 🥈
-      # users:
-# - name: Gold Sponsors
-  # tier:
-    # - badge: 🥇
-      # users:
-# - name: Platinum Sponsors
-  # tier:
-    # - badge: 🏆
-      # users:
-# - name: Diamond Sponsors
-  # tier:
-    # - badge: 💎
-      # users:
-# - name: Special Sponsors
-  # tier:
-    # - badge: 💠
-      # users:

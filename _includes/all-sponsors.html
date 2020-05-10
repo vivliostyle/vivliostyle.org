@@ -1,6 +1,5 @@
 <ol class="list--small">
-  {% assign sponsor_groups = site.data.sponsor | reverse %}
-  {% for sponsor_group in sponsor_groups %}
+  {% for sponsor_group in site.data.sponsor %}
     {% for tier in sponsor_group.tier %}
       {% for user in tier.users %}
         <li class="avatar-list__item">
