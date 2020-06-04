@@ -113,7 +113,7 @@ The Vivliostyle project discusses development matters on Slack. Please take a lo
 ## Sponsors
 
 Vivliostyle is an independent, open source project. Our project would not be able to continue its development without the support of backers.
-The current amount of support is **$27.00** per month. Please consider helping us.
+The current amount of support is **$30.00** per month. Please consider helping us.
 
 {% include all-sponsors.html %}
 
