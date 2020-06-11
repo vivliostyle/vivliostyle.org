@@ -1,7 +1,7 @@
 ---
 title: 2019年度事業報告書を公開します
 lang: ja
-image: /assets/posts/2020-06-11-fy2019-activity-report-is-now-available/fy2019-activity-report.png
+image: /assets/posts/2020-06-11-fy2019-activity-report-is-now-available/fy2019-activity-report-ja.png
 author:
   - ogwata
 ---
