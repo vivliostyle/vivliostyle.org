@@ -1,5 +1,5 @@
 /**
- * @vivliostyle/viewer v2.1.0
+ * @vivliostyle/viewer v2.1.1
  * Vivliostyle Viewer - HTML+CSS typesetting and rich paged viewing with EPUB/Web publications support
  *
  * @author Vivliostyle Foundation
