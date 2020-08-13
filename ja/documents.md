@@ -6,6 +6,12 @@ lang: ja
 
 
 {% capture guide %}
+## チュートリアルガイド
+
+### Create Book
+
+<ul id="create-book-list"></ul>
+
 ## ガイド
 
 ### ユーザーガイド
@@ -16,13 +22,21 @@ lang: ja
 
 <ul id="contribution-guide-list"></ul>
 
-{% include fetch-guide-urls.html
-  user_guide_id="user-guide-list"
-  user_guide_url="https://docs.vivliostyle.org/#/ja/user-guide"
-  user_guide_get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/user-guide.md"
-  contribution_guide_id="contribution-guide-list"
-  contribution_guide_url="https://docs.vivliostyle.org/#/ja/contribution-guide"
-  contribution_guide_get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/contribution-guide.md"
+{% include fetch-guide-urls.html %}
+{% include fetch-guide-url.html
+  id="create-book-list"
+  url="https://docs.vivliostyle.org/#/ja/create-book"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/create-book.md"
+%}
+{% include fetch-guide-url.html
+  id="user-guide-list"
+  url="https://docs.vivliostyle.org/#/ja/user-guide"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/user-guide.md"
+%}
+{% include fetch-guide-url.html
+  id="contribution-guide-list"
+  url="https://docs.vivliostyle.org/#/ja/contribution-guide"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/contribution-guide.md"
 %}
 {% endcapture %}
 
