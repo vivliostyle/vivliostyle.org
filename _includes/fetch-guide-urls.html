@@ -1,14 +1,5 @@
 <script>
-  main(
-    "{{ include.user_guide_id | default: 'user-guide-list' }}",
-    "{{ include.user_guide_url | default: 'https://docs.vivliostyle.org/#/user-guide' }}",
-    "{{ include.user_guide_get_url | default: 'https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/user-guide.md' }}");
-  main(
-    "{{ include.contribution_guide_id | default: 'contribution-guide-list' }}",
-    "{{ include.contribution_guide_url | default: 'https://docs.vivliostyle.org/#/contribution-guide' }}",
-    "{{ include.contribution_guide_get_url | default: 'https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/contribution-guide.md' }}");
-
-  async function main(id, base_url, get_url) {
+  async function fetchGuideUrl(id, base_url, get_url) {
     try {
       const element = document.getElementById(id);
       const headings = await fetchHeadings(get_url);
@@ -39,7 +30,7 @@
     const markdown = decodeURIComponent(escape(atob(json.content)));
 
     // h2を取得
-    const headings = markdown.match(/\n##\s*[^#\n]+\n/g).map(function(str) {
+    const headings = markdown.replace(/```.+?```/gs, "").match(/\n##\s*[^#\n]+\n/g).map(function(str) {
       return str.match(/\n##\s*([^#\n]+)\n/)[1];
     });
     return headings;
