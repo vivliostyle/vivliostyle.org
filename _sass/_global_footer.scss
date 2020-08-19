@@ -57,6 +57,10 @@
     }
   }
 
+  @include media_large {
+    margin: $section_first_top_bottom_large auto 0;
+  }
+
   @include media_medium {
     flex-direction: column;
     padding: 60px;

@@ -1,0 +1,11 @@
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="with-toc">
+  <section class="section page_make_books_with_create_book">
+    <div class="container">
+      {{ include.content | markdownify }}
+    </div>
+  </section>
+
+  {% include toc.html %}
+</section>

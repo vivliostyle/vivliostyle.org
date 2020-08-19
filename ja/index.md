@@ -11,12 +11,12 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 ## 新着情報・ブログ
 
 {% assign show_count = 3 %}
-{% assign pickups = site.data.whatsnew.ja | limit: show_count %}
+{% assign pickups = site.data.whatsnew.pickups.ja | limit: show_count %}
 {% assign pickups_count = pickups | size %}
 {% assign post_count = show_count | minus: pickups_count %}
 {% assign posts = site.posts | where: "lang", page.lang | slice: 0, post_count %}
 {% assign posts = pickups | concat: posts %}
-{% include post-list-horizontal.html posts=posts %}
+{% include post-list-horizontal.html posts=posts feature=site.data.whatsnew.feature.ja %}
 
 <ol class="list--medium">
   {% include button/primary.html url="/ja/blog" text="ブログ記事一覧" %}

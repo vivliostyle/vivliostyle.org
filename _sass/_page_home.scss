@@ -16,6 +16,10 @@
       // 幅を広げる
       padding: 100px calc((100% - #{$section_width_large}) / 2);
     }
+
+    @include media_small {
+      font-size: $display_font_size * 0.8;
+    }
   }
 
   .project__list {
@@ -60,10 +64,11 @@
     .post__date {
       min-height: 32px;
     }
-  }
 
-  .thumbnail--whatsnew {
-    max-height: 160px;
+    .frame--whatsnew__inner {
+      max-height: 340px;
+      overflow: hidden;
+    }
   }
 
   .post__text {

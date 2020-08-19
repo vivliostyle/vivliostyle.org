@@ -47,6 +47,7 @@ social:                              # jekyll-seo-tag > social overrides
 permalink: pretty                # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: Asia/Tokyo             # Timezone for blog posts and alike
+highlighter: rouge
 
 # 5. Jekyll collections settings
 defaults:

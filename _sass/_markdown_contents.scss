@@ -17,12 +17,14 @@
   }
 
   pre {
+    margin: $gap_small 0;
     padding: $gap_medium calc(#{$gap_medium} * 2);
     background: $background_code_color;
     color: $white;
     font-family: $monospace_font;
     font-size: $monospace_font_size;
     white-space: pre-wrap;
+    line-break: anywhere;
 
     code {
       background: transparent;
@@ -35,6 +37,7 @@
     background: $gray_lighter;
     padding: 0px 6px;
     border-radius: $border_radius;
+    cursor: text;
   }
 
   // 要素間の隙間
@@ -64,10 +67,18 @@
     margin-bottom: 0;
   }
 
-  @include media_large {
+  @include media_medium {
     // 画像を大きく表示
     img {
       max-width: 100%;
+    }
+  }
+
+  @include media_small {
+    // サイズを小さく
+    pre {
+      font-size: $monospace_font_size * 0.9;
+      padding: $gap_small calc(#{$gap_small} * 2);
     }
   }
 }
