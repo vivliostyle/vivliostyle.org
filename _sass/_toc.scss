@@ -109,5 +109,13 @@
     .toc__nav {
       width: $section_width_large;
     }
+
+    // H2未満は非表示
+    .toc-list__item--level3,
+    .toc-list__item--level4,
+    .toc-list__item--level5,
+    .toc-list__item--level6 {
+      display: none;
+    }
   }
 }
