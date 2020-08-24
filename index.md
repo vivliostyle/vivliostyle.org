@@ -10,12 +10,12 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 ## What's New
 
 {% assign show_count = 3 %}
-{% assign pickups = site.data.whatsnew.en | limit: show_count %}
+{% assign pickups = site.data.whatsnew.pickups.en | limit: show_count %}
 {% assign pickups_count = pickups | size %}
 {% assign post_count = show_count | minus: pickups_count %}
 {% assign posts = site.posts | where: "lang", page.lang | slice: 0, post_count %}
 {% assign posts = pickups | concat: posts %}
-{% include post-list-horizontal.html posts=posts %}
+{% include post-list-horizontal.html posts=posts feature=site.data.whatsnew.feature.en %}
 
 <ol class="list--medium">
   {% include button/primary.html url="/blog" text="Blog Posts" %}
