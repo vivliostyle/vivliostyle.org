@@ -14,7 +14,7 @@ lang: ja
 {% capture content %}
 ## Create Book を使うには
 
-1. まず [Node.js (v.10以上)](https://nodejs.org/ja/) をインストールしてください。
+1. まず [Node.js (v.10以上)<i class="mdi mdi-open-in-new"></i>](https://nodejs.org/ja/) をインストールしてください。
 2. Create Book のインストールコマンドは下記の通りです。`<directory>` には作成しようとする本のプロジェクトフォルダ名を指定します。
 
     ```
@@ -40,13 +40,13 @@ lang: ja
 
 もともと markdown はブログの原稿を書くために考案された形式です。ここから分かるように、その魅力は「原稿として書けること」、そして「HTMLに変換できること」の2つです。原稿を最初からHTMLで書く人はほとんどいないでしょう。しかし markdown 形式ならそれができます。プレーンテキストの書きやすさと、HTML の利便性の両立を狙ったフォーマットが markdown なのです。
 
-markdown には各種の方言がありますが、その中でもっとも有力なのが [GFM (GitHub Flavored Markdown)](https://github.github.com/gfm/) です。ただし、これは技術ドキュメント向けに工夫された記法なので、日本語書籍向けの記法を追加したのが [VFM (Vivliostyle Flavored Markdown)](https://github.com/vivliostyle/vfm) です。
+markdown には各種の方言がありますが、その中でもっとも有力なのが [GFM (GitHub Flavored Markdown)<i class="mdi mdi-open-in-new"></i>](https://github.github.com/gfm/) です。ただし、これは技術ドキュメント向けに工夫された記法なので、日本語書籍向けの記法を追加したのが [VFM (Vivliostyle Flavored Markdown)](https://github.com/vivliostyle/vfm) です。
 
 つまり、VFM は GFM の上位互換です。見出しなどよく使う記法は GFM のままですから、慣れた人ならあまり苦労せずに使い始めることができるでしょう。以下、この項では「VFM を使ってなにが書けるの？」という疑問にお答えします。
 
 ### GFMの記法
 
-基本となるGFM の主な記法をご紹介しましょう。これ以外にもたくさんの記法があります。詳細は[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)や、[GitHubの解説ページ](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)を参照してください。
+基本となるGFM の主な記法をご紹介しましょう。これ以外にもたくさんの記法があります。詳細は[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)や、[GitHubの解説ページ<i class="mdi mdi-open-in-new"></i>](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)を参照してください。
 
 #### 見出し
 
@@ -343,7 +343,7 @@ text[^n]text^[text]
 
 {% include figure.html
   src="/assets/misc/make_books_with_create_book/sample_endnote.png"
-  caption="出典：[『斜陽』](https://www.aozora.gr.jp/cards/000035/files/1565_8559.html)太宰治、1947年"
+  caption='出典：[『斜陽』<i class="mdi mdi-open-in-new"></i>](https://www.aozora.gr.jp/cards/000035/files/1565_8559.html)太宰治、1947年'
 %}
 
 
@@ -388,11 +388,11 @@ text[^n]text^[text]
 
 {% include figure.html
   src="/assets/misc/make_books_with_create_book/sample_footnote.png"
-  caption="出典：[『あのときの王子くん』](https://www.aozora.gr.jp/cards/001265/files/46817_24670.html)アントワーヌ・ド・サン＝テグジュペリ作、大久保ゆう訳、1943年 (一部仮名を漢字にあらためました)/[CC BY 2.1 JP](https://creativecommons.org/licenses/by/2.1/jp/)"
+  caption='出典：[『あのときの王子くん』<i class="mdi mdi-open-in-new"></i>](https://www.aozora.gr.jp/cards/001265/files/46817_24670.html)アントワーヌ・ド・サン＝テグジュペリ作、大久保ゆう訳、1943年 (一部仮名を漢字にあらためました)/[CC BY 2.1 JP<i class="mdi mdi-open-in-new"></i>](https://creativecommons.org/licenses/by/2.1/jp/)'
 %}
 
 
-この他にも、引用やコード、表組みなど、さまざまな表現が可能です。ぜひ[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)や[GitHubの解説ページ](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)をご参照ください。
+この他にも、引用やコード、表組みなど、さまざまな表現が可能です。ぜひ[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)や[GitHubの解説ページ<i class="mdi mdi-open-in-new"></i>](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)をご参照ください。
 
 
 #### 縦中横
@@ -431,7 +431,7 @@ text<span class="tcy">nn</span>text
 
 {% include figure.html
   src="/assets/misc/make_books_with_create_book/sample_tcy.png"
-  caption="出典：[『アリスはふしぎの国で』](https://www.aozora.gr.jp/cards/001393/files/57320_57183.html)ルイス・キャロル作、大久保ゆう訳、1865年/[CC BY 2.1 JP](https://creativecommons.org/licenses/by/2.1/jp/)"
+  caption='出典：[『アリスはふしぎの国で』<i class="mdi mdi-open-in-new"></i>](https://www.aozora.gr.jp/cards/001393/files/57320_57183.html)ルイス・キャロル作、大久保ゆう訳、1865年/[CC BY 2.1 JP<i class="mdi mdi-open-in-new"></i>](https://creativecommons.org/licenses/by/2.1/jp/)'
 %}
 
 
