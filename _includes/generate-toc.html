@@ -53,5 +53,19 @@
       const newActiveIndex = document.querySelector(`.toc-list a[href='#${element.id}']`).parentNode;
       newActiveIndex.classList.add("toc-list__item--active");
     }
+
+    //
+    // 目次の折りたたみ
+    //
+    const tocFoldButton = document.getElementById("tocFoldButton");
+    const tocFoldOpenClass = "toc__fold--open";
+
+    tocFoldButton.addEventListener("click", function(event) {
+      if(tocFoldButton.classList.contains(tocFoldOpenClass)) {
+        tocFoldButton.classList.remove(tocFoldOpenClass);
+      } else {
+        tocFoldButton.classList.add(tocFoldOpenClass);
+      }
+    })
   }
 </script>
