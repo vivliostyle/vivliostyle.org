@@ -56,6 +56,10 @@
     margin: calc(#{$section_first_top_bottom} - #{$section_top_bottom}) auto;
   }
 
+  .toc__fold {
+    display: none;
+  }
+
   .toc-list {
     position: sticky;
     top: $gap_medium;
@@ -108,6 +112,33 @@
     // 通常の1カラム表示に合わせる
     .toc__nav {
       width: $section_width_large;
+      margin-bottom: 0;
+    }
+
+    // 目次を折りたたんで表示する
+    .toc__fold {
+      @include toc_item;
+
+      display: block;
+      line-height: 2;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+
+    .toc-list {
+      display: none;
+    }
+
+    .toc__fold--open + .toc-list {
+      display: block;
+    }
+
+    // H2未満は非表示
+    .toc-list__item--level3,
+    .toc-list__item--level4,
+    .toc-list__item--level5,
+    .toc-list__item--level6 {
+      display: none;
     }
   }
 }

@@ -1,4 +1,10 @@
+{% include assign/lang.html %}
+
 <nav class="toc__nav">
+  <p class="toc__fold" id="tocFoldButton" tabindex="0">
+    {{ site.data.toc[lang.code] }}
+    <i class="mdi mdi mdi-chevron-down"></i>
+  </p>
   <ol class="toc-list" id="toc">
   </ol>
 </nav>
