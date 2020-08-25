@@ -132,13 +132,5 @@
     .toc__fold--open + .toc-list {
       display: block;
     }
-
-    // H2未満は非表示
-    .toc-list__item--level3,
-    .toc-list__item--level4,
-    .toc-list__item--level5,
-    .toc-list__item--level6 {
-      display: none;
-    }
   }
 }
