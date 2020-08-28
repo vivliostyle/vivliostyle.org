@@ -1,0 +1,26 @@
+{% include assign/lang.html %}
+
+<ol class="list--medium">
+  {% for plan in site.data.creditcard_sponsor_plan %}
+    <li class="frame--small plan">
+      <div class="container">
+        <div class="frame__contents plan__header">
+          <div class="plan__icon">{{ plan.icon }}</div>
+          <h3 class="plan__name">{{ plan.name[lang.code] }}</h3>
+        </div>
+
+        <p>{{ plan.description[lang.code] | markdownify }}</p>
+
+        {% capture purchase_text %}{{ include.purchase_text_suffix }} {{ plan.price[lang.code] }} {{ include.purchase_text_prefix }}{% endcapture %}
+        <ul class="list--medium">
+          <li>
+            {% include creditcard-sponsor-form.html
+              iid=plan.code
+              purchase_text=purchase_text
+            %}
+          </li>
+        </ul>
+      </div>
+    </li>
+  {% endfor %}
+</ol>

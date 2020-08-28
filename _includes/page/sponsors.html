@@ -1,0 +1,19 @@
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="section">
+  <div class="container">
+    {{ include.github_sponsor | markdownify }}
+  </div>
+</section>
+
+<section class="section page_sponsors">
+  <div class="container">
+    {{ include.creditcard_sponsor | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ include.sponsors | markdownify }}
+  </div>
+</section>

@@ -1,0 +1,20 @@
+.page_sponsors {
+  .plan {
+    width: calc(50% - #{$gap_medium});
+  }
+
+  .plan__header {
+    justify-content: start;
+    align-items: center;
+  }
+
+  .plan__icon {
+    font-size: 3rem;
+  }
+
+  @include media_small {
+    .plan {
+      width: 100%;
+    }
+  }
+}
