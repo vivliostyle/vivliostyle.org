@@ -1,0 +1,276 @@
+-
+  code: FS1
+  icon: ⭐️
+  name:
+    ja: ファン・スポンサー100
+    en: Fan Sponsor 100
+  price:
+    ja: 毎月 ¥100
+    en: ¥100 a month
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。お礼として vivliostyle.jsリポジトリの BACKERS.md ファイルで、バッジ⭐️とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge ⭐️.
+-
+  code: FD10
+  icon: ⭐️
+  name:
+    ja: ファン・ドナー1,000
+    en: Fan Donor 1,000
+  price:
+    ja: 単発 ¥1,000
+    en: ¥1,000 a once
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。お礼として vivliostyle.jsリポジトリの BACKERS.md ファイルで、バッジ⭐️とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge ⭐️.
+-
+  code: FS3
+  icon: 🌟
+  name:
+    ja: ファン・スポンサー300
+    en: Fan Sponsor 300
+  price:
+    ja: 毎月 ¥300
+    en: ¥300 a month
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、vivliostyle.js リポジトリの BACKERS.md ファイルで、バッジ🌟とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge 🌟.
+-
+  code: FD30
+  icon: 🌟
+  name:
+    ja: ファン・ドナー3,000
+    en: Fan Donor 3,000
+  price:
+    ja: 単発 ¥3,000
+    en: ¥3,000 a once
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、vivliostyle.js リポジトリの BACKERS.md ファイルで、バッジ🌟とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge 🌟.
+-
+  code: BS10
+  icon: 🌹
+  name:
+    ja: ベーシック・スポンサー1,000
+    en: Basic Sponsor 1,000
+  price:
+    ja: 毎月 ¥1,000
+    en: 1,000 a month
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。お礼としてお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🌹とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🌹.
+-
+  code: BD100
+  icon: 🌹
+  name:
+    ja: ベーシック・ドナー10,000
+    en: Basic Donor 10,000
+  price:
+    ja: 単発 ¥10,000
+    en: ¥1,0000 a once
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。お礼としてお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🌹とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🌹.
+-
+  code: BS30
+  icon: 💐
+  name:
+    ja: ベーシック・スポンサー3,000
+    en: Basic Sponsor 3,000
+  price:
+    ja: 毎月 ¥3,000
+    en: ¥3,000 a month
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、お名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💐とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 💐.
+-
+  code: BD300
+  icon: 💐
+  name:
+    ja: ベーシック・ドナー30,000
+    en: Basic Donor 30,000
+  price:
+    ja: 単発 ¥30,000
+    en: ¥30,000 a once
+  description:
+    ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、お名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💐とともにあなたのアイコンを掲載します。
+    en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 💐.
+-
+  code: BS100
+  icon: 🥉
+  name:
+    ja: ブロンズ・スポンサー10,000
+    en: Bronze Sponsor 10,000
+  price:
+    ja: 毎月 ¥10,000
+    en: ¥10,000 a month
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥉とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたのロゴを掲載
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🥉. Additional benefits include:
+      - Put your logo in the README file in the vivliostyle.js repository
+-
+  code: BD1000
+  icon: 🥉
+  name:
+    ja: ブロンズ・ドナー100,000
+    en: Bronze Donor 100,000
+  price:
+    ja: 単発 ¥100,000
+    en: ¥100,000 a once
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥉とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたのロゴを掲載
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🥉. Additional benefits include:
+      - Put your logo in the README file in the vivliostyle.js repository
+-
+  code: SS200
+  icon: 🥈
+  name:
+    ja: シルバー・スポンサー20,000
+    en: Silver Sponsor 20,000
+  price:
+    ja: 毎月 ¥20,000
+    en: ¥20,000 a month
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥈とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたのロゴを掲載
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🥈. Additional benefits include:
+      - Put your logo in the README file in the vivliostyle.js repository
+-
+  code: SD2000
+  icon: 🥈
+  name:
+    ja: シルバー・ドナー200,000
+    en: Silver Donor 200,000
+  price:
+    ja: 単発 ¥200,000
+    en: ¥200,000 a once
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥈とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたのロゴを掲載
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🥈. Additional benefits include
+      - Put your logo in the README file in the vivliostyle.js repository
+-
+  code: GS500
+  icon: 🥇
+  name:
+    ja: ゴールド・スポンサー50,000
+    en: Gold Sponsor 50,000
+  price:
+    ja: 毎月 ¥50,000
+    en: ¥50,000 a month
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥇とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたのロゴを掲載
+      - 公式サイト vivliostyle.org にあなたのロゴを掲載
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🥇. Additional benefits include:
+      - Put your logo in the README file in the vivliostyle.js repository
+      - Put your logo on the official website vivliostyle.org
+-
+  code: GD5000
+  icon: 🥇
+  name:
+    ja: ゴールド・ドナー500,000
+    en: Gold Donor 500,000
+  price:
+    ja: 単発 ¥500,000
+    en: ¥500,000 a once
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥇とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたのロゴを掲載
+      - 公式サイト vivliostyle.org にあなたのロゴを掲載
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🥇. Additional benefits include:
+      - Put your logo in the README file in the vivliostyle.js repository
+      - Put your logo on the official website vivliostyle.org
+-
+  code: PS1000
+  icon: 🏆
+  name:
+    ja: プラチナ・スポンサー100,000
+    en: Platinum Sponsor 100,000
+  price:
+    ja: 毎月 ¥100,000
+    en: ¥100,000 a month
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。Platinum Sponsor としてあなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🏆とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたの大型のロゴを掲載
+      - 公式サイト vivliostyle.org にあなたの大型のロゴを掲載
+      - 月2時間のサポートまたはコンサルティング
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🏆. Additional benefits include:
+      - Put your large logo in the README file in the vivliostyle.js repository
+      - Put your large logo on the official website vivliostyle.org
+      - 2 hours of support or consulting per month
+-
+  code: PD10000
+  icon: 🏆
+  name:
+    ja: プラチナ・ドナー1,000,000
+    en: Platinum Donor 1,000,000
+  price:
+    ja: 単発 ¥1,000,000
+    en: ¥1,000,000 a once
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🏆とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたの大型のロゴを掲載
+      - 公式サイト vivliostyle.org にあなたの大型のロゴを掲載
+      - 月2時間のサポートまたはコンサルティング
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🏆. Additional benefits include:
+      - Put your large logo in the README file in the vivliostyle.js repository
+      - Put your large logo on the official website vivliostyle.org
+      - 2 hours of support or consulting per month
+-
+  code: DS2500
+  icon: 💎
+  name:
+    ja: ダイヤモンド・スポンサー250,000
+    en: Diamond Sponsor 250,000
+  price:
+    ja: 毎月 ¥250,000
+    en: ¥250,000 a month
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💎とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたの大型のロゴを掲載
+      - 公式サイト vivliostyle.org にあなたの大型のロゴを掲載
+      - 月5時間のサポートまたはコンサルティング
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 💎. Additional benefits include:
+      - Put your large logo in the README file in the vivliostyle.js repository
+      - Put your large logo on the official website vivliostyle.org
+      - 5 hours of support or consulting per month
+-
+  code: SS6000
+  icon: 💠
+  name:
+    ja: スペシャル・スポンサー600,000
+    en: Special Sponsor 600,000
+  price:
+    ja: 毎月 ¥600,000
+    en: ¥600,000 a month
+  description:
+    ja: |
+      Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💠とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
+      - vivliostyle.js リポジトリの README ファイルにあなたの大型のロゴを掲載
+      - 公式サイト vivliostyle.org にあなたの大型のロゴを掲載
+      - 月12時間のサポートまたはコンサルティング
+    en: |
+      Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 💠. Additional benefits include:
+      - Put your large logo in the README file in the vivliostyle.js repository
+      - Put your large logo on the official website vivliostyle.org
+      - 12 hours of support or consulting per month

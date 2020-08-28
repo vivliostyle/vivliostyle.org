@@ -1,0 +1,9 @@
+<form action="{{ site.data.account.robotpayment.url }}" method="post">
+  <input type="hidden" name="aid" value="{{ site.data.account.robotpayment.id }}">
+  <input type="hidden" name="pt" value="1">
+  <input type="hidden" name="iid" value="{{ include.iid }}">
+  <input type="submit" name="submit" value="{{ include.purchase_text }}" class="button--primary--medium">
+  {% if include.lang == "en" %}
+    <input type="hidden" name="lang" value="en">
+  {% endif %}
+</form>
