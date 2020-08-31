@@ -4,3 +4,4 @@ _site
 /vendor/bundle
 .bundle
 .vercel
+Gemfile.lock
