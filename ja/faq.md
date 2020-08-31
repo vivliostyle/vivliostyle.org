@@ -75,7 +75,7 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
 ### 目次パネルを有効にするには？
 
-HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で **Book Mode** を指定することで、目次パネルが有効になります。
+HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定することで、目次パネルが有効になります。
 
 ```html
 <nav role="doc-toc">
@@ -94,7 +94,7 @@ HTMLファイル内に次のような目次要素がある場合、Vivliostyle V
 
 ### 複数のHTMLファイルを連結して組版表示するには？
 
-Vivliostyle Viewer で **Book Mode** を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
+Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
 
 ```html
 <nav role="doc-toc">
@@ -165,10 +165,11 @@ vivliostyle build --book --size A4 --output example.pdf example.html
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) ではZIP解凍済みのEPUBファイルからPDFを生成することができます。それには `vivliostyle build` コマンドに --book オプションを指定して、入力として解凍済みEPUBのディレクトリを指定します。
 
-例えば、`epub-sample-dir` が解凍したEPUBのディレクトリの場合：
+例えば、EPUBファイル `example.epub` をPDFファイル `example.pdf` に変換するには、次のように、まずEPUBファイルをZIP解凍してそれから vivliostyle を実行します：
 
 ```
-vivliostyle build --book --size A4 --output epub-sample.pdf epub-sample-dir/
+unzip example.epub -d example/
+vivliostyle build --book --size A4 --output example.pdf example/
 ```
 
 ### 印刷用のPDF（PDF/X-1a 形式）を生成するには？
@@ -193,9 +194,15 @@ Windows:
 
 ## Create Book についての FAQ
 
+### Create Book とは？
+
+[Create Book](https://www.npmjs.com/package/create-book) は、簡単に本を作れる環境を構築します。
+
+👉[チュートリアルガイド: Create Book](https://docs.vivliostyle.org/#/ja/create-book)
+
 ### テーマをカスタマイズするには？
 
-Create Book によりインストールされたテーマパッケージは、プロジェクトフォルダ内の node_modules フォルダ内にインストールされます（例：テーマ「techbook」の場合 `node_modules/@vivliostyle/theme-techbook/`）。これを別のフォルダ（例えば `my-theme/` フォルダ）にコピーしてカスタマイズすることができます。
+Create Book によりインストールされたテーマパッケージは、プロジェクトフォルダ内の `node_modules` フォルダ内にインストールされます（例：テーマ「techbook」の場合 `node_modules/@vivliostyle/theme-techbook/`）。これを別のフォルダ（例えば `my-theme/` フォルダ）にコピーしてカスタマイズすることができます。
 
 ```
 cp -R node_modules/@vivliostyle/theme-techbook/ my-theme/
@@ -282,7 +289,7 @@ MathML の要素 `<math>` … `</math>` は、HTML文書内に直接書くこと
 
 TeX または AsciiMath の数式を利用するには、その数式を含むHTML要素に属性 `data-math-typeset="true"` を指定し、テキスト内に以下の方法で数式を記述します：
 - TeX 数式は `\(` … `\)` または `$$`…`$$` で囲む
-- AsciiMath は <code>\`</code> … <code>\`</code> で囲む
+- AsciiMath は \` … \` で囲む
 
 数式のテストのHTMLソース: <https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
 
