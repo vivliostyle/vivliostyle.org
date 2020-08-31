@@ -5,7 +5,7 @@ lang: ja
 ---
 
 <style>
-a {
+.url {
   word-break: break-all;
 }
 </style>
@@ -21,7 +21,7 @@ a {
 
 まず、ローカルWebサーバーを起動して、ローカルのHTML文書にブラウザからアクセスできるようにします。ここでは、ローカルWebサーバーとして Node.js の http-server を使う方法を説明します。
 
-Node.js がインストールされていない場合はまずそのインストールをします。👉 <https://nodejs.org>
+Node.js がインストールされていない場合はまずそのインストールをします。👉 <span class="url"><https://nodejs.org></span>
 
 ターミナル（Windows ではコマンドプロンプト）で、次のコマンドにより http-server をインストールします：
 
@@ -35,20 +35,20 @@ npm install -g http-server
 http-server . --cors -o -c-1
 ```
 
-これで、ローカルWebサーバーのURL <http://localhost:8080> が開き、ブラウザでローカルにあるファイルの一覧を見ることができます。そこで表示したいHTMLファイルを見つけてそのURLをコピーし、別に開いたオンラインの Vivliostyle Viewer <https://vivliostyle.org/viewer/> にそのURLを指定して組版表示することができます。 
+これで、ローカルWebサーバーのURL <http://localhost:8080> が開き、ブラウザでローカルにあるファイルの一覧を見ることができます。そこで表示したいHTMLファイルを見つけてそのURLをコピーし、別に開いたオンラインの Vivliostyle Viewer <span class="url"><https://vivliostyle.org/viewer/></span> にそのURLを指定して組版表示することができます。 
 （http-server コマンドの `--cors` オプションは、別のドメインでのスクリプトからこのローカルサーバーの文書をアクセスできるようにする指定、`-o` オプションはブラウザを起動する指定、`-c-1` はキャッシュを無効にする指定です。）
 
 ### GitHubやGistにある文書を Vivliostyle Viewer で表示するには？
 
 [GitHub](https://github.com/) や [Gist](https://gist.github.com/) 上にあるHTML文書を [Vivliostyle Viewer](https://vivliostyle.org/viewer/) で表示することができます。
 
-例1: GitHubリポジトリ内のHTMLファイル <https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html> を Vivliostyle Viewer で開く:
-<https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
+例1: GitHubリポジトリ内のHTMLファイル <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span> を Vivliostyle Viewer で開く:
+<span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
 - GitHub上のファイルのURLをそのまま Vivliostyle Viewer に指定できます。
 
-例2: Gist に置かれた HTML ファイル <https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7#file-index-html> を Vivliostyle Viewer で開く:
-<https://vivliostyle.org/viewer/#src=https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7/raw/af7fea921d57d6601d153101850bf95850262ece/index.html&bookMode=true>
+例2: Gist に置かれた HTML ファイル <span class="url"><https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7#file-index-html></span> を Vivliostyle Viewer で開く:
+<span class="url"><https://vivliostyle.org/viewer/#src=https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7/raw/af7fea921d57d6601d153101850bf95850262ece/index.html&bookMode=true></span>
 
 - Gist上のファイルの `Raw` コンテンツへのリンクのURLを Vivliostyle Viewer に指定できます。
 - この例では URL にパラメータとして `&bookMode=true` を指定することにより、この HTML ファイル内の目次からリンクされる複数のHTMLファイルをロードします。
@@ -65,7 +65,7 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
 - [IDPF/epub3-samples](https://github.com/IDPF/epub3-samples/)の 『[Accessible EPUB 3](https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/)』
 
-  <https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true>
+  <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
 👉ユーザーガイドの [EPUB](https://docs.vivliostyle.org/#/ja/user-guide#epub)
 
@@ -189,7 +189,7 @@ apt-get install poppler-utils ghostscript
 ```
 
 Windows:
-- Ghostscript for Windows を <https://www.ghostscript.com/download/gsdnld.html> からダウンロードしてインストール。それからインストールしたGhostscriptの実行ファイルのあるディレクトリ（例："C:\Program Files\gs\gs9.52\bin"）を `PATH` 環境変数に追加。
+- Ghostscript for Windows を <span class="url"><https://www.ghostscript.com/download/gsdnld.html></span> からダウンロードしてインストール。それからインストールしたGhostscriptの実行ファイルのあるディレクトリ（例："C:\Program Files\gs\gs9.52\bin"）を `PATH` 環境変数に追加。
 - Xpdf command line tools for Windows を <http://www.xpdfreader.com/download.html> からダウンロードしてインストール。それからインストールしたXpdfの実行ファイルのあるディレクトリ（例："C:\xpdf-tools-win-4.02\bin64"）を `PATH` 環境変数に追加。
 
 ## Create Book についての FAQ
@@ -270,7 +270,7 @@ nav li a::after {
 }
 ```
 
-実例については、Vivliostyleのサンプル紹介ページ <https://vivliostyle.org/ja/samples/> の「目次」タグが付いたサンプルをご覧ください。
+実例については、Vivliostyleのサンプル紹介ページ <span class="url"><https://vivliostyle.org/ja/samples/></span> の「目次」タグが付いたサンプルをご覧ください。
 
 👉以下も参照:
 - [目次パネルを有効にするには？](#目次パネルを有効にするには？)
@@ -291,9 +291,9 @@ TeX または AsciiMath の数式を利用するには、その数式を含むHT
 - TeX 数式は `\(` … `\)` または `$$`…`$$` で囲む
 - AsciiMath は \` … \` で囲む
 
-数式のテストのHTMLソース: <https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
+数式のテストのHTMLソース: <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
-Vivliostyle Viewer で組版表示: <https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
+Vivliostyle Viewer で組版表示: <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
 👉[vivliostyle.js issue#523: ASCIIMATH and MathJAX](https://github.com/vivliostyle/vivliostyle.js/issues/523)
 

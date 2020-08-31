@@ -4,7 +4,7 @@ title: FAQ
 ---
 
 <style>
-a {
+.url {
   word-break: break-all;
 }
 </style>
@@ -20,7 +20,7 @@ a {
 
 First, you need to start a local web server so that your local HTML documents can be accessed in the browser. Here explains how to use Node.js's http-server as the local web server.
 
-If Node.js is not installed, install Node.js first. 👉 <https://nodejs.org>
+If Node.js is not installed, install Node.js first. 👉 <span class="url"><https://nodejs.org></span>
 
 In your Terminal (or Command Prompt on Windows), install http-server with the following command:
 
@@ -34,7 +34,7 @@ Start http-server in the directory containing the HTML and CSS files you want to
 http-server . --cors -o -c-1
 ```
 
-This will open the URL <http://localhost:8080> of your local web server and allow you to view a list of local files in your browser. You can then find the HTML file you want to typeset and view, copy the URL, and specify it in the online Vivliostyle Viewer <https://vivliostyle.org/viewer/>.
+This will open the URL <http://localhost:8080> of your local web server and allow you to view a list of local files in your browser. You can then find the HTML file you want to typeset and view, copy the URL, and specify it in the online Vivliostyle Viewer <span class="url"><https://vivliostyle.org/viewer/></span>.
 
 (Here, the `--cors` option of the http-server command allows scripts in another domain to access this local server's documents, the `-o` option is to start your browser, and `-c-1` disables the cache.)
 
@@ -42,13 +42,13 @@ This will open the URL <http://localhost:8080> of your local web server and allo
 
 You can view HTML documents on [GitHub](https://github.com/) or [Gist](https://gist.github.com/) with [Vivliostyle Viewer](https://vivliostyle.org/viewer/).
 
-Example 1: To open an HTML file in GitHub <https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html> with Vivliostyle Viewer:
-<https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
+Example 1: To open an HTML file in GitHub <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span> with Vivliostyle Viewer:
+<span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
 - You can specify the URL of a file on GitHub to Vivliostyle Viewer.
 
-Example 2: To open an HTML file in Gist <https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7#file-index-html> with Vivliostyle Viewer:
-<https://vivliostyle.org/viewer/#src=https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7/raw/af7fea921d57d6601d153101850bf95850262ece/index.html&bookMode=true>
+Example 2: To open an HTML file in Gist <span class="url"><https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7#file-index-html></span> with Vivliostyle Viewer:
+<span class="url"><https://vivliostyle.org/viewer/#src=https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7/raw/af7fea921d57d6601d153101850bf95850262ece/index.html&bookMode=true></span>
 
 - You can specify the URL of the link to the `Raw` content of a file on Gist to Vivliostyle Viewer.
 - In this example, with the parameter `&bookMode=true` added to the URL, multiple HTML files linked from the table of contents in this HTML file will be loaded.
@@ -65,7 +65,7 @@ An example of displaying unzipped EPUB on GitHub:
 
 - [Accessible EPUB 3](https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/) on [IDPF/epub3-samples](https://github.com/IDPF/epub3-samples/)
 
-  <https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true>
+  <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
 👉User Guide: [EPUB](https://docs.vivliostyle.org/#/user-guide#epub)
 
@@ -188,7 +188,7 @@ apt-get install poppler-utils ghostscript
 ```
 
 Windows:
-- Download and install the Ghostscript for Windows at <https://www.ghostscript.com/download/gsdnld.html>. Then, add the installed Ghostscript's bin directory (e.g., "C:\Program Files\gs\gs9.52\bin") to the `PATH` environment variable.
+- Download and install the Ghostscript for Windows at <span class="url"><https://www.ghostscript.com/download/gsdnld.html></span>. Then, add the installed Ghostscript's bin directory (e.g., "C:\Program Files\gs\gs9.52\bin") to the `PATH` environment variable.
 - Download and install the Xpdf command line tools for Windows at <http://www.xpdfreader.com/download.html>. Then, add the installed Xpdf's bin directory (e.g., "C:\xpdf-tools-win-4.02\bin64") to the `PATH` environment variable.
 
 ## Create Book FAQ
@@ -290,9 +290,9 @@ To use TeX or AsciiMath formulas, set the attribute `data-math-typeset="true"` t
 - Enclose the TeX formula in `\(` … `\)` or `$$`…`$$`
 - Enclose AsciiMath in \` … \`
 
-HTML source for testing formulas: <https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
+HTML source for testing formulas: <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
-Typeset and view with Vivliostyle Viewer: <https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html>
+Typeset and view with Vivliostyle Viewer: <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
 👉[vivliostyle.js issue#523: ASCIIMATH and MathJAX](https://github.com/vivliostyle/vivliostyle.js/issues/523)
 
