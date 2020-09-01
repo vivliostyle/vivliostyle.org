@@ -26,7 +26,7 @@ title: Getting Started
 
 
 {% capture viewer %}
-## Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span>
+<h2 id="vivliostyle-viewer">Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span></h2>
 
 - A browser-based formatting engine that reads HTML and displays the results of the typesetting in the browser.
 - In order to typeset and display local files, you need to start the web server (see FAQ for details).
@@ -92,7 +92,7 @@ $ vivliostyle preview index.html
 
 
 {% capture cli %}
-## Vivliostyle CLI <span class="tip">{{ site.data.project.cli.version }}</span>
+<h2 id="vivliostyle-cli">Vivliostyle CLI <span class="tip">{{ site.data.project.cli.version }}</span></h2>
 
 - CSS typesetting on the command line with output to PDF.
 - PDF/X-1a output supported by merging PRESS-READY in v2. [Ghostscript](https://www.ghostscript.com/) and [Xpdf](http://www.xpdfreader.com/) are required for this feature. See [PRESS-READY](https://github.com/vibranthq/press-ready/blob/master/README.md) for more information.
@@ -107,7 +107,7 @@ $ vivliostyle preview index.html
 
 <!-- pub -->
 {% capture pub %}
-## Vivliostyle Pub <small>(Initial version will be released later this year)</small> <span class="tip">{{ site.data.project.pub.version }}</span>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Initial version will be released later this year)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
 Edit text/Markdown/HTML in the left pane and preview the formatted results in the right pane.
 

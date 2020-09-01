@@ -20,7 +20,7 @@ title: FAQ
 
 First, you need to start a local web server so that your local HTML documents can be accessed in the browser. Here explains how to use Node.js's http-server as the local web server.
 
-If Node.js is not installed, install Node.js first. 👉 <span class="url"><https://nodejs.org></span>
+If Node.js is not installed, install Node.js first. 👉<span class="url"><https://nodejs.org></span>
 
 In your Terminal (or Command Prompt on Windows), install http-server with the following command:
 
@@ -75,7 +75,7 @@ An example of displaying unzipped EPUB on GitHub:
 
 ### How to enable the TOC panel?
 
-The TOC (Table of Contents) panel is enabled by setting [**Book Mode**](#What%20is%20Book%20Mode%3F) in Vivliostyle Viewer and the HTML file contains a TOC element, e.g.:
+The TOC (Table of Contents) panel is enabled by setting [**Book Mode**](#what-is-book-mode) in Vivliostyle Viewer and the HTML file contains a TOC element, e.g.:
 
 ```html
 <nav role="doc-toc">
@@ -90,11 +90,11 @@ The TOC (Table of Contents) panel is enabled by setting [**Book Mode**](#What%20
 
 👉User Guide: [TOC panel](https://docs.vivliostyle.org/#/user-guide#toc-panel)
 
-👉See also: [How to make a TOC?](#How%20to%20make%20a%20TOC%3f)
+👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
 ### How to typeset and view multiple HTML files concatenated?
 
-When you enable [**Book Mode**](#What%20is%20Book%20Mode%3F) with Vivliostyle Viewer, and load an HTML file containing a table of contents element with links to other HTML file as shown below, the HTML files linked from the table of contents element are also loaded and typeset in succession:
+When you enable [**Book Mode**](#what-is-book-mode) with Vivliostyle Viewer, and load an HTML file containing a table of contents element with links to other HTML file as shown below, the HTML files linked from the table of contents element are also loaded and typeset in succession:
 
 ```html
 <nav role="doc-toc">
@@ -113,15 +113,15 @@ When you enable [**Book Mode**](#What%20is%20Book%20Mode%3F) with Vivliostyle Vi
 
 👉User Guide: [Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/user-guide#web-publications-multi-html-documents)
 
-👉See also: [How to make a TOC?](#How%20to%20make%20a%20TOC%3f)
+👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
 ### What is Book Mode?
 
 Book Mode is enabled by checking the **Book Mode** checkbox in the [Vivliostyle Viewer](https://vivliostyle.org/viewer/) UI or by adding `&bookMode=true` to the URL parameter. In this mode, the following features are enabled:
 
-- [Navigation from the TOC panel](#How%20to%20enable%20the%20TOC%20panel%3F)
-- [Typeset and view multiple HTML files concatenated](#How%20to%20typeset%20and%20view%20multiple%20HTML%20files%20concatenated%3F)
-- [Typeset and view unzipped EPUB](#How%20to%20view%20EPUB%3F)
+- [Navigation from the TOC panel](#how-to-enable-the-toc-panel)
+- [Typeset and view multiple HTML files concatenated](#how-to-typeset-and-view-multiple-html-files-concatenated)
+- [Typeset and view unzipped EPUB](#how-to-view-epub)
 
 ### How to make the text size variable?
 
@@ -272,8 +272,8 @@ nav li a::after {
 For real examples, see the samples with "table of contents" tag in the [Vivliostyle Samples](https://vivliostyle.org/samples/) page.
 
 👉See also:
-- [How to enable the TOC panel?](#How%20to%20enable%20the%20TOC%20panel%3F)
-- [How to typeset and view multiple HTML files concatenated?](#How%20to%20typeset%20and%20view%20multiple%20HTML%20files%20concatenated%3F)
+- [How to enable the TOC panel?](#how-to-enable-the-toc-panel)
+- [How to typeset and view multiple HTML files concatenated?](#how-to-typeset-and-view-multiple-html-files-concatenated)
 
 ### How to embed math formulas (MathML, TeX or AsciiMath)
 

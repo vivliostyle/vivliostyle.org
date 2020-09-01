@@ -15,13 +15,13 @@ lang: ja
 
 ### ローカル環境で Vivliostyle Viewer を使うには？
 
-👉 [Vivliostyle Viewer の配布パッケージの README（日本語）](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/viewer/README.ja.md) の「配布パッケージ `vivliostyle-viewer-*.zip` を使う場合」をご覧ください。
+👉[Vivliostyle Viewer の配布パッケージの README（日本語）](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/viewer/README.ja.md) の「配布パッケージ `vivliostyle-viewer-*.zip` を使う場合」をご覧ください。
 
 ### オンラインの Vivliostyle Viewer でローカルの文書を表示するには？
 
 まず、ローカルWebサーバーを起動して、ローカルのHTML文書にブラウザからアクセスできるようにします。ここでは、ローカルWebサーバーとして Node.js の http-server を使う方法を説明します。
 
-Node.js がインストールされていない場合はまずそのインストールをします。👉 <span class="url"><https://nodejs.org></span>
+Node.js がインストールされていない場合はまずそのインストールをします。👉<span class="url"><https://nodejs.org></span>
 
 ターミナル（Windows ではコマンドプロンプト）で、次のコマンドにより http-server をインストールします：
 
@@ -75,7 +75,7 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
 ### 目次パネルを有効にするには？
 
-HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定することで、目次パネルが有効になります。
+HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#book-mode-とは) を指定することで、目次パネルが有効になります。
 
 ```html
 <nav role="doc-toc">
@@ -90,11 +90,11 @@ HTMLファイル内に次のような目次要素がある場合、Vivliostyle V
 
 👉ユーザーガイドの [目次パネル](https://docs.vivliostyle.org/#/ja/user-guide#%E7%9B%AE%E6%AC%A1%E3%83%91%E3%83%8D%E3%83%AB)
 
-👉次も参照: [目次を作るには？](#目次を作るには？)
+👉次も参照: [目次を作るには？](#目次を作るには)
 
 ### 複数のHTMLファイルを連結して組版表示するには？
 
-Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
+Vivliostyle Viewer で [**Book Mode**](#book-mode-とは) を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
 
 ```html
 <nav role="doc-toc">
@@ -113,15 +113,15 @@ Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定した
 
 👉ユーザーガイドの [Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/user-guide#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89)
 
-👉次も参照: [目次を作るには？](#目次を作るには？)
+👉次も参照: [目次を作るには？](#目次を作るには)
 
 ### Book Mode とは？
 
 [Vivliostyle Viewer](https://vivliostyle.org/viewer/) のUIの **Book Mode** チェックボックスをチェック、あるいはURLパラメータに `&bookMode=true` を追加することにより Book Mode が有効になります。このモードでは、次の機能が有効になります：
 
-- [目次パネルからのナビゲーションが有効](#目次パネルを有効にするには？)
-- [複数の HTML ファイルを連結して組版表示](#複数のHTMLファイルを連結して組版表示するには？)
-- [EPUB（ZIP解凍済み）の組版表示](#EPUBを閲覧するには？)
+- [目次パネルからのナビゲーションが有効](#目次パネルを有効にするには)
+- [複数の HTML ファイルを連結して組版表示](#複数のhtmlファイルを連結して組版表示するには)
+- [EPUB（ZIP解凍済み）の組版表示](#epubを閲覧するには)
 
 ### 文字サイズを可変にするには？
 
@@ -273,8 +273,8 @@ nav li a::after {
 実例については、Vivliostyleのサンプル紹介ページ <span class="url"><https://vivliostyle.org/ja/samples/></span> の「目次」タグが付いたサンプルをご覧ください。
 
 👉以下も参照:
-- [目次パネルを有効にするには？](#目次パネルを有効にするには？)
-- [複数のHTMLファイルを連結して組版表示するには？](#複数のHTMLファイルを連結して組版表示するには？)
+- [目次パネルを有効にするには？](#目次パネルを有効にするには)
+- [複数のHTMLファイルを連結して組版表示するには？](#複数のhtmlファイルを連結して組版表示するには)
 
 ### 数式（MathML、TeX、AsciiMath）を埋め込むには？
 
