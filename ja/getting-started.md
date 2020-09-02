@@ -27,7 +27,7 @@ lang: ja
 
 
 {% capture viewer %}
-## Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span>
+<h2 id="vivliostyle-viewer">Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span></h2>
 
 - ブラウザで動作する組版エンジン。HTML を読み込んで組版結果をブラウザに表示します。
 - ローカルのファイルを組版・表示するには、webサーバー起動が必要です（くわしくはFAQをご覧ください）。
@@ -89,7 +89,7 @@ $ vivliostyle preview index.html
 
 
 {% capture cli %}
-## Vivliostyle CLI <span class="tip">{{ site.data.project.cli.version }}</span>
+<h2 id="vivliostyle-cli">Vivliostyle CLI <span class="tip">{{ site.data.project.cli.version }}</span></h2>
 
 - コマンドラインから CSS 組版をして表示します。PDF に出力できます。
 - v2において press-ready をマージしたことにより、PDF/X-1a 出力がサポートされました（本機能には [Ghostscript](https://www.ghostscript.com/) と [Xpdf](http://www.xpdfreader.com/) が必要です。詳細は [press-ready](https://github.com/vibranthq/press-ready/blob/master/README.md) をご参照ください）。
@@ -104,7 +104,7 @@ $ vivliostyle preview index.html
 
 <!-- pub -->
 {% capture pub %}
-## Vivliostyle Pub <small>(初期版を今年中に公開予定)</small> <span class="tip">{{ site.data.project.pub.version }}</span>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(初期版を今年中に公開予定)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
 左ペインでテキスト / Markdown / HTML を入力・編集すると、右ペインで組版結果がプレビューできます。
 

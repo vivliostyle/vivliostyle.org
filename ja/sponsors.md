@@ -15,7 +15,7 @@ indexing: false
 
 上記は英語ページですが、以下に和訳があります。ご参照ください。
 
-[GitHub Sponsors で Vivliostyle を支援しませんか](https://vivliostyle.org/ja/blog/2020/04/29/become-a-sponsor-to-vivliostyle-via-github-sponsors/#GitHub%20Sponsors%20%E3%81%A7%20Vivliostyle%20%E3%82%92%E6%94%AF%E6%8F%B4%E3%81%97%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B)
+[GitHub Sponsors で Vivliostyle を支援しませんか](/ja/blog/2020/04/29/become-a-sponsor-to-vivliostyle-via-github-sponsors/)
 {% endcapture %}
 
 
