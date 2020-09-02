@@ -149,7 +149,7 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 ## Vivliostyle CLI についての FAQ
 
-### PDFの「しおり」(Bookmarks)」を有効にするには？
+### PDFの「しおり」(Bookmarks)を有効にするには？
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) v2.1 以降では、組版する文書の目次データを使ってPDFの「しおり」(Bookmarks) を自動生成することができます。PDF の「しおり」は、Adobe Acrobat のような PDF 閲覧ソフトで目次ナビゲーションに利用できるものです。
 
