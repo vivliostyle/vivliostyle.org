@@ -6,7 +6,7 @@
     en: Fan Sponsor 100
   price:
     ja: 毎月 ¥100
-    en: ¥100 a month
+    en: ¥100 per month
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。お礼として vivliostyle.jsリポジトリの BACKERS.md ファイルで、バッジ⭐️とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge ⭐️.
@@ -18,7 +18,7 @@
     en: Fan Donor 1,000
   price:
     ja: 単発 ¥1,000
-    en: ¥1,000 a once
+    en: ¥1,000 only once
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。お礼として vivliostyle.jsリポジトリの BACKERS.md ファイルで、バッジ⭐️とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge ⭐️.
@@ -30,7 +30,7 @@
     en: Fan Sponsor 300
   price:
     ja: 毎月 ¥300
-    en: ¥300 a month
+    en: ¥300 per month
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、vivliostyle.js リポジトリの BACKERS.md ファイルで、バッジ🌟とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge 🌟.
@@ -42,7 +42,7 @@
     en: Fan Donor 3,000
   price:
     ja: 単発 ¥3,000
-    en: ¥3,000 a once
+    en: ¥3,000 only once
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、vivliostyle.js リポジトリの BACKERS.md ファイルで、バッジ🌟とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will put your icon in the BACKERS.md file in the vivliostyle.js repository, along with the badge 🌟.
@@ -54,7 +54,7 @@
     en: Basic Sponsor 1,000
   price:
     ja: 毎月 ¥1,000
-    en: 1,000 a month
+    en: ¥1,000 per month
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。お礼としてお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🌹とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🌹.
@@ -66,7 +66,7 @@
     en: Basic Donor 10,000
   price:
     ja: 単発 ¥10,000
-    en: ¥1,0000 a once
+    en: ¥1,0000 only once
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。お礼としてお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🌹とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 🌹.
@@ -78,7 +78,7 @@
     en: Basic Sponsor 3,000
   price:
     ja: 毎月 ¥3,000
-    en: ¥3,000 a month
+    en: ¥3,000 per month
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、お名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💐とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 💐.
@@ -90,7 +90,7 @@
     en: Basic Donor 30,000
   price:
     ja: 単発 ¥30,000
-    en: ¥30,000 a once
+    en: ¥30,000 only once
   description:
     ja: Vivliostyle を愛してくれてありがとうございます。あなたのサポートに感謝をこめて、お名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💐とともにあなたのアイコンを掲載します。
     en: Thank you for loving Vivliostyle. As a thank you, we will announce your name on Twitter, and put your icon in the BACKERS.md file in the vivliostyle.js repository and on the official website vivliostyle.org, along with the badge 💐.
@@ -102,7 +102,7 @@
     en: Bronze Sponsor 10,000
   price:
     ja: 毎月 ¥10,000
-    en: ¥10,000 a month
+    en: ¥10,000 per month
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥉とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -118,7 +118,7 @@
     en: Bronze Donor 100,000
   price:
     ja: 単発 ¥100,000
-    en: ¥100,000 a once
+    en: ¥100,000 only once
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥉とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -134,7 +134,7 @@
     en: Silver Sponsor 20,000
   price:
     ja: 毎月 ¥20,000
-    en: ¥20,000 a month
+    en: ¥20,000 per month
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥈とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -150,7 +150,7 @@
     en: Silver Donor 200,000
   price:
     ja: 単発 ¥200,000
-    en: ¥200,000 a once
+    en: ¥200,000 only once
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥈とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -166,7 +166,7 @@
     en: Gold Sponsor 50,000
   price:
     ja: 毎月 ¥50,000
-    en: ¥50,000 a month
+    en: ¥50,000 per month
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥇とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -184,7 +184,7 @@
     en: Gold Donor 500,000
   price:
     ja: 単発 ¥500,000
-    en: ¥500,000 a once
+    en: ¥500,000 only once
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🥇とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -202,7 +202,7 @@
     en: Platinum Sponsor 100,000
   price:
     ja: 毎月 ¥100,000
-    en: ¥100,000 a month
+    en: ¥100,000 per month
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。Platinum Sponsor としてあなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🏆とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -222,7 +222,7 @@
     en: Platinum Donor 1,000,000
   price:
     ja: 単発 ¥1,000,000
-    en: ¥1,000,000 a once
+    en: ¥1,000,000 only once
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ🏆とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -242,7 +242,7 @@
     en: Diamond Sponsor 250,000
   price:
     ja: 毎月 ¥250,000
-    en: ¥250,000 a month
+    en: ¥250,000 per month
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💎とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：
@@ -262,7 +262,7 @@
     en: Special Sponsor 600,000
   price:
     ja: 毎月 ¥600,000
-    en: ¥600,000 a month
+    en: ¥600,000 per month
   description:
     ja: |
       Vivliostyle を愛してくれてありがとうございます。あなたのお名前を Twitter で告知し、vivliostyle.js リポジトリの BACKERS.md ファイルと公式サイト vivliostyle.org で、バッジ💠とともにあなたのアイコンを掲載します。その他、以下の特典が加えられます：

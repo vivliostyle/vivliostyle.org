@@ -65,6 +65,8 @@
     top: $gap_medium;
     padding-left: $gap_medium;
     list-style: none;
+    height: 90vh;
+    overflow: scroll;
   }
 
   .toc-list__item--active {
@@ -127,6 +129,7 @@
 
     .toc-list {
       display: none;
+      height: inherit;
     }
 
     .toc__fold--open + .toc-list {
