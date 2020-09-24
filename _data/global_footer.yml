@@ -2,77 +2,77 @@ en:
   - title: Getting Started
     links:
       - title: Vivliostyle Viewer
-        url: /getting-started#vivliostyle-viewer
+        url: /getting-started/#vivliostyle-viewer
       - title: Vivliostyle CLI
-        url: /getting-started#vivliostyle-cli
+        url: /getting-started/#vivliostyle-cli
       - title: Vivliostyle Pub
-        url: /getting-started#vivliostyle-pub
+        url: /getting-started/#vivliostyle-pub
       - title: Samples
-        url: /samples
+        url: /samples/
       - title: Download
-        url: /download
+        url: /download/
   - title: Documents
     links:
       - title: User Guide
-        url: /documents#user-guide
+        url: /documents/#user-guide
       - title: Contribution Guide
-        url: /documents#contribution-guide
+        url: /documents/#contribution-guide
   - title: Community
     links:
       - title: Community
-        url: /community
+        url: /community/
       - title: About Us
-        url: /about-us
+        url: /about-us/
       - title: Sponsors
-        url: /about-us#become-a-sponsor-of-vivliostyle
+        url: /about-us/#become-a-sponsor-of-vivliostyle
       - title: History
-        url: /history
+        url: /history/
   - title: Others
     links:
       - title: Blog
-        url: /blog
+        url: /blog/
       - title: FAQ
-        url: /faq
+        url: /faq/
       - title: Logo
-        url: /logo
+        url: /logo/
       - title: Make Books with Vivliostyle
-        url: /make-books-with-vivliostyle
+        url: /make-books-with-vivliostyle/
 ja:
   - title: 使ってみる
     links:
       - title: Vivliostyle Viewer
-        url: /ja/getting-started#vivliostyle-viewer
+        url: /ja/getting-started/#vivliostyle-viewer
       - title: Vivliostyle CLI
-        url: /ja/getting-started#vivliostyle-cli
+        url: /ja/getting-started/#vivliostyle-cli
       - title: Vivliostyle Pub
-        url: /ja/getting-started#vivliostyle-pub
+        url: /ja/getting-started/#vivliostyle-pub
       - title: サンプル
-        url: /ja/samples
+        url: /ja/samples/
       - title: ダウンロード
-        url: /ja/download
+        url: /ja/download/
   - title: ドキュメント
     links:
       - title: ユーザーガイド
-        url: /ja/documents#ユーザーガイド
+        url: /ja/documents/#ユーザーガイド
       - title: コントリビューションガイド
-        url: /ja/documents#コントリビューションガイド
+        url: /ja/documents/#コントリビューションガイド
   - title: コミュニティ
     links:
       - title: コミュニティ
-        url: /ja/community
+        url: /ja/community/
       - title: 私たちについて
-        url: /ja/about-us
+        url: /ja/about-us/
       - title: スポンサー募集
-        url: /ja/about-us#vivliostyle-のスポンサーになりませんか
+        url: /ja/about-us/#vivliostyle-のスポンサーになりませんか
       - title: Vivliostyle のなりたち
-        url: /ja/history
+        url: /ja/history/
   - title: その他
     links:
       - title: ブログ
-        url: /ja/blog
+        url: /ja/blog/
       - title: FAQ
-        url: /ja/faq
+        url: /ja/faq/
       - title: ロゴデザイン
-        url: /ja/logo
+        url: /ja/logo/
       - title: Vivliostyle で本を作ろう
-        url: /ja/make-books-with-vivliostyle
+        url: /ja/make-books-with-vivliostyle/
