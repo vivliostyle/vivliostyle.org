@@ -10,15 +10,15 @@ vol1:
       title: EPUB Adaptive Layout による段組混在レイアウトへの挑戦
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/arinoth/index.html
       author: arinoth
-    - type: B
+    - type: A
       title: 私が組版オペレータになっても？
       author: takanakahiko
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/takanakahiko/index.html
-    - type: B
+    - type: A
       title: CSS 組版やってみた！
       author: やましー
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/yamasy/index.html
-    - type: D
+    - type: C
       title: "Vivliostyle.js: TypeScript 化の道のり"
       author: 緑豆はるさめ
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/spring_raining/index.html
@@ -34,23 +34,23 @@ vol2:
     source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol2
   img: /assets/samples/vug-vol2.png
   toc:
-    - type: D
+    - type: C
       title: Remark で広げる Markdown の世界
       author: 緑豆はるさめ
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/spring-raining/index.html
-    - type: C
+    - type: B
       title: Vivliostyle で縦組シナリオを組版する
       author: 小形 克宏
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/ogata/index.html
-    - type: C
+    - type: B
       title: EPUB ファイルから Vivliostyle で PDF を作りたい！！
       author: 田島 淳
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/JunTajima/index.html
-    - type: E
+    - type: D
       title: CSS で View を定義する意義
       author: アカベコ
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/akabeko/index.html
-    - type: D
+    - type: C
       title: Vivliostyle のこれからの開発課題
       author: 村上 真雄
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol2/shinyu/index.html
@@ -62,27 +62,51 @@ vol3:
     source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol3
   img: /assets/samples/vug-vol3.png
   toc:
-    - type: B
+    - type: A
       title: 「CSS 組版全然わからない！」からはじめる Vivliostyle 同人誌制作超入門
       author: kondoyuko
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/kondoyuko/index.html
-    - type: C
+    - type: B
       title: GitHub+Circle CI を用いた Vivliostyle+Markdown による組版をやってみた
       author: MH35
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/mh35/index.html
-    - type: D
+    - type: C
       title: Vivliostyle Flavored Markdown について
       author: akabeko
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/akabeko/index.html
-    - type: E
+    - type: D
       title: “Vivliostyle”、未来へのステップ
       author: 小形克宏
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/ogwata/index.html
-    - type: D
+    - type: C
       title: Viola のこれからと Vivliostyle Pub
       author: spring-raining
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/spring-raining/index.html
-    - type: E
+    - type: D
       title: Web 出版の未来と CSS 組版
       author: 村上真雄
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol3/shinyu/index.html
+vol4:
+  url:
+    web: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/index.html
+    viewer: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/index.html&bookMode=true
+    print: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/index.html&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D&bookMode=true
+    source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol4/
+  img: /assets/samples/vug-vol4.png
+  toc:
+    - type: A
+      title: "@vivliostyle/theme-academic でレポート書いてみた！"
+      author: やましー
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/yamasy/index.html
+    - type: A
+      title: CSS で技術系同人誌のレイアウトを作る際に気をつけていること
+      author: spring-raining
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/spring-raining/index.html
+    - type: A
+      title: Create Book で同人誌を作ろう！
+      author: 小形克宏
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/ogwata/index.html
+    - type: D
+      title: Vivliostyle FAQ よくある質問
+      author: 村上真雄
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/shinyu/index.html
