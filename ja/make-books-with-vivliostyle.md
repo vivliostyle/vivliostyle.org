@@ -8,11 +8,17 @@ lang: ja
 {% capture description %}
 「Vivliostyle で本を作ろう」はユーザ会編集による同人誌。Vivliostyleを使うノウハウや、開発に参加するための情報がギッシリ詰まってます。毎回の[技術書典](https://techbookfest.org/)にあわせて刊行していますが、ご存知の通り技術書典8 (2020年2月29日、3月1日) は[開催中止](https://techbookfest.org/event/tbf08)。そこで、ここで販売予定だった第3号の内容を公開することにしました。あわせてバックナンバーも公開。これを読んで、Vivliostyle で本を作ろう！
 
-<i class="mdi mdi-alpha-a-circle toc__type"></i>……入門、
-<i class="mdi mdi-alpha-b-circle toc__type"></i>……使用レポート、
-<i class="mdi mdi-alpha-c-circle toc__type"></i>……活用事例、
-<i class="mdi mdi-alpha-d-circle toc__type"></i>……開発について、
-<i class="mdi mdi-alpha-e-circle toc__type"></i>……Vivliostyle とはなにか？
+- <i class="mdi mdi-alpha-a-circle toc__type"></i> **入門・使用レポート**……組版に関する tips を含む
+- <i class="mdi mdi-alpha-b-circle toc__type"></i> **業務での活用事例**……周辺ツールとの連携や、特殊な要求にこたえるための工夫など
+- <i class="mdi mdi-alpha-c-circle toc__type"></i> **開発について**……今後の予定や現状の課題など
+- <i class="mdi mdi-alpha-d-circle toc__type"></i> **Vivliostyle について**……開発以外の総合的な話題
+{% endcapture %}
+
+
+{% capture vol4_description %}
+## Vivliostyle で本を作ろう Vol.4<small>（2020年9月12日）</small>
+
+Vivliostyle.js v2.0.0 以降に登場したプロジェクトについての原稿が集まりました。CSS 組版の知見や FAQ は役立つこと間違いなし。
 {% endcapture %}
 
 
@@ -39,6 +45,17 @@ lang: ja
 
 関連記事：[技術書典6に出展『Vivliostyleで本を作ろう Vol.1』公開！](/ja/blog/2019/05/06/make-books-with-vivliostyle-vol1/)
 {% endcapture %}
+
+
+{% include assign/hash.html
+  description=vol4_description
+  thumbnail=site.data.book.vol4.img
+  toc=site.data.book.vol4.toc
+  web_url=site.data.book.vol4.url.web
+  viewer_url=site.data.book.vol4.url.viewer
+  print_url=site.data.book.vol4.url.print
+  source_url=site.data.book.vol4.url.source
+%}{% assign vol4 = hash %}
 
 
 {% include assign/hash.html
@@ -75,6 +92,7 @@ lang: ja
 
 
 {% include assign/array.html
+  vol4=vol4
   vol3=vol3
   vol2=vol2
   vol1=vol1
