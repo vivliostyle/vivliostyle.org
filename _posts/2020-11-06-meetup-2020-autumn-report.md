@@ -5,7 +5,7 @@ image: /assets/posts/2020-11-06-meetup-2020-autumn-report/2020fall_user_meeting_
 author:
   - ogwata
 ---
-(The original article is [「Vivliostyle ユーザーと開発者の集い 2020春」開催報告](https://vivliostyle.org/ja/blog/2020/11/06/meetup-2020-autumn-report/) in Japanese)
+(The original article is [「Vivliostyle ユーザーと開発者の集い 2020秋」開催報告](https://vivliostyle.org/ja/blog/2020/11/06/meetup-2020-autumn-report/) in Japanese)
 
 Recently, on October 24, we held an online ["Vivliostyle User and Developer Meetup - Fall 2020."](https://vivliostyle.connpass.com/event/189940/)
 
