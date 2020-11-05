@@ -1,7 +1,7 @@
 ---
 title: 「Vivliostyle ユーザーと開発者の集い 2020秋」開催報告
 lang: ja
-image: /assets/posts/2020-11-06-meetup-2020-autumn-report/2020fall_user_meeting_banner
+image: /assets/posts/2020-11-06-meetup-2020-autumn-report/f2020fall_user_meeting_banner.png
 author:
   - ogwata
 ---
@@ -33,6 +33,6 @@ Q&Aセッション ／終会の挨拶 [動画](https://youtu.be/tTv8Uq3tqr8)
 
 最後に宣伝です。11月9日（日曜）に月例の開発者会議をオンラインで開催します。イベントでご覧に入れたVivliostyleのプロダクトをどうのように開発するか、皆で話し合います。誰でも参加可能ですので、見るだけでよいのでぜひご参加ください。
 
--[Vivliostyle|Slack 招待リンク] (https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
+-[Vivliostyle|Slack 招待リンク](https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
 
 URLは当日、Slackの #general チャンネルで告知します。もちろんSlackも公開していますので、ぜひ覗いてみてください。
