@@ -7,11 +7,11 @@ author:
 ---
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2020秋」開催報告](https://vivliostyle.org/ja/blog/2020/11/06/meetup-2020-autumn-report/) in Japanese)
 
-Recently, on October 24, we held an online ["Vivliostyle User and Developer Meetup - Fall 2020."](https://vivliostyle.connpass.com/event/189940/)
+Recently, on October 24, we held an online event,  ["Vivliostyle User and Developer Meetup - Fall 2020."](https://vivliostyle.connpass.com/event/189940/)
 
 We live streamed the event on our YouTube channel. Including the day of the event, 446 people watched it until a week later! This is a record number of people since Vivliostyle began, and I can't help but feel the anticipation and enthusiasm for CSS typesetting.
 
-The video and slide material from the day's presentations are available below.
+Movie and slides from the day's presentations are available below.
 
 **Opening**
 - [Japanese] Opening Speech / Current State and Outlook for Vivliostyle [Shinyu Murakami](https://twitter.com/MurakamiShinyu)） [movie](https://youtu.be/LwGDDGbmrKE)
