@@ -19,7 +19,7 @@ Movie and slides from the day's presentations are available below.
 
 **Part 1 Vivliostyle Today**
 
-- [Japanese] The growing CSS typesetting ecosystem with the Vivliostyle CLI（[Ryokuto Harusame](https://twitter.com/spring_raining)）[movie](https://youtu.be/KxapwLgmtKA) [slide](https://speakerdeck.com/spring_raining/vivliostyle-user-and-developer-meetup-2020-autumn)
+- [Japanese] The growing CSS typesetting ecosystem with the Vivliostyle CLI（[spring-raining](https://twitter.com/spring_raining)）[movie](https://youtu.be/KxapwLgmtKA) [slide](https://speakerdeck.com/spring_raining/vivliostyle-user-and-developer-meetup-2020-autumn)
 - [Japanese] Vivliostyle Themes project for speedy and customizable bookmaking（[Yamasy](https://twitter.com/yamasy1549)）[movie](https://youtu.be/zEQ1nPq2FHo) [slide](https://www.slideshare.net/yamasy1549s/vivliostyle-themes-238958997)
 - [Japanese] The Current State of the Vivliostyle Pub and its Challenges（[takanakahiko](https://twitter.com/takanakahiko)）[movie](https://youtu.be/Ym71Lqmc3HY) [slide](https://speakerdeck.com/takanakahiko/current-status-and-issues-of-vivliostyle-pub)
 
