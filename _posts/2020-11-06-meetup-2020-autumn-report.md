@@ -1,7 +1,7 @@
 ---
 title: Event report of "Vivliostyle User/Dev meetup autumn 2020"
 lang: en
-image: /assets/posts/2020-11-06-meetup-2020-autumn-report/2020fall_user_meeting_banner
+image: /assets/posts/2020-11-06-meetup-2020-autumn-report/2020fall_user_meeting_banner.png
 author:
   - ogwata
 ---
@@ -44,6 +44,6 @@ Akabeko-san, who was also a speaker at the event, reports on the day's events on
 
 Finally, I'll give you some publicity. we're hosting our monthly developer meeting online on Sunday, November 8. We will discuss how we can develop the Vivliostyle products you saw at the event. Everyone is welcome to attend, so just come and watch.
 
-- [Vivliostyle|Slack Invitation link](https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
+- [Vivliostyle Slack Invitation link](https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ)
 
 The URL will be announced on the day of the event on the #general channel on Slack. Of course, Slack will be open to the public, so please take a look at it.
