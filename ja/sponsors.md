@@ -31,6 +31,8 @@ indexing: false
   purchase_text_prefix="で支援する"
 %}
 
+寄付をした場合、確定申告で寄付金控除が利用できます。詳しくは[国税庁のウェブページ](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1150.htm) をご参照ください。
+
 支援について不明点があれば、下記メールアドレスにご質問ください。
 
 [sponsors@vivliostyle.org](mailto:sponsors@vivliostyle.org)
