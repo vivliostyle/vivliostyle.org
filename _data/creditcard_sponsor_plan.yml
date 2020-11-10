@@ -2,7 +2,7 @@
   code: FS1
   icon: ⭐️
   name:
-    ja: ファン・スポンサー100
+    ja: Fan Sponsor 100
     en: Fan Sponsor 100
   price:
     ja: 毎月 ¥100
@@ -14,7 +14,7 @@
   code: FD10
   icon: ⭐️
   name:
-    ja: ファン・ドナー1,000
+    ja: Fan Donor 1,000
     en: Fan Donor 1,000
   price:
     ja: 単発 ¥1,000
@@ -26,7 +26,7 @@
   code: FS3
   icon: 🌟
   name:
-    ja: ファン・スポンサー300
+    ja: Fan Sponsor 300
     en: Fan Sponsor 300
   price:
     ja: 毎月 ¥300
@@ -38,7 +38,7 @@
   code: FD30
   icon: 🌟
   name:
-    ja: ファン・ドナー3,000
+    ja: Fan Donor 3,000
     en: Fan Donor 3,000
   price:
     ja: 単発 ¥3,000
@@ -50,7 +50,7 @@
   code: BS10
   icon: 🌹
   name:
-    ja: ベーシック・スポンサー1,000
+    ja: Basic Sponsor 1,000
     en: Basic Sponsor 1,000
   price:
     ja: 毎月 ¥1,000
@@ -62,7 +62,7 @@
   code: BD100
   icon: 🌹
   name:
-    ja: ベーシック・ドナー10,000
+    ja: Basic Donor 10,000
     en: Basic Donor 10,000
   price:
     ja: 単発 ¥10,000
@@ -74,7 +74,7 @@
   code: BS30
   icon: 💐
   name:
-    ja: ベーシック・スポンサー3,000
+    ja: Basic Sponsor 3,000
     en: Basic Sponsor 3,000
   price:
     ja: 毎月 ¥3,000
@@ -86,7 +86,7 @@
   code: BD300
   icon: 💐
   name:
-    ja: ベーシック・ドナー30,000
+    ja: Basic Donor 30,000
     en: Basic Donor 30,000
   price:
     ja: 単発 ¥30,000
@@ -98,7 +98,7 @@
   code: BS100
   icon: 🥉
   name:
-    ja: ブロンズ・スポンサー10,000
+    ja: Bronze Sponsor 10,000
     en: Bronze Sponsor 10,000
   price:
     ja: 毎月 ¥10,000
@@ -114,7 +114,7 @@
   code: BD1000
   icon: 🥉
   name:
-    ja: ブロンズ・ドナー100,000
+    ja: Bronze Donor 100,000
     en: Bronze Donor 100,000
   price:
     ja: 単発 ¥100,000
@@ -130,7 +130,7 @@
   code: SS200
   icon: 🥈
   name:
-    ja: シルバー・スポンサー20,000
+    ja: Silver Sponsor 20,000
     en: Silver Sponsor 20,000
   price:
     ja: 毎月 ¥20,000
@@ -146,7 +146,7 @@
   code: SD2000
   icon: 🥈
   name:
-    ja: シルバー・ドナー200,000
+    ja: Silver Donor 200,000
     en: Silver Donor 200,000
   price:
     ja: 単発 ¥200,000
@@ -162,7 +162,7 @@
   code: GS500
   icon: 🥇
   name:
-    ja: ゴールド・スポンサー50,000
+    ja: Gold Sponsor 50,000
     en: Gold Sponsor 50,000
   price:
     ja: 毎月 ¥50,000
@@ -180,7 +180,7 @@
   code: GD5000
   icon: 🥇
   name:
-    ja: ゴールド・ドナー500,000
+    ja: Gold Donor 500,000
     en: Gold Donor 500,000
   price:
     ja: 単発 ¥500,000
@@ -198,7 +198,7 @@
   code: PS1000
   icon: 🏆
   name:
-    ja: プラチナ・スポンサー100,000
+    ja: Platinum Sponsor 100,000
     en: Platinum Sponsor 100,000
   price:
     ja: 毎月 ¥100,000
@@ -218,7 +218,7 @@
   code: PD10000
   icon: 🏆
   name:
-    ja: プラチナ・ドナー1,000,000
+    ja: Platinum Donor 1,000,000
     en: Platinum Donor 1,000,000
   price:
     ja: 単発 ¥1,000,000
@@ -238,7 +238,7 @@
   code: DS2500
   icon: 💎
   name:
-    ja: ダイヤモンド・スポンサー250,000
+    ja: Diamond Sponsor 250,000
     en: Diamond Sponsor 250,000
   price:
     ja: 毎月 ¥250,000
@@ -258,7 +258,7 @@
   code: SS6000
   icon: 💠
   name:
-    ja: スペシャル・スポンサー600,000
+    ja: Special Sponsor 600,000
     en: Special Sponsor 600,000
   price:
     ja: 毎月 ¥600,000
