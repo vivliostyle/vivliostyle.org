@@ -1,7 +1,7 @@
 ---
 title: GitHubのアカウントがなくともVivliostyleを支援できるようになりました
 lang: ja
-image: /assets/posts/2020-11-20-You-can-support-Vivliostyle-without-a-GitHub-account/
+image: /assets/posts/2020-11-20-You-can-support-Vivliostyle-without-a-GitHub-account/2020-11-20-You-can-support-Vivliostyle-without-a-GitHub-account.png
 author:
   - ogwata
 ---
