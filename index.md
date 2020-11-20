@@ -118,7 +118,7 @@ The current amount of support is **$48.00** per month. Please consider helping u
 {% include all-sponsors.html %}
 
 <ol class="list--medium">
-  {% include button/primary.html url=site.data.account.github_sponsor.url text="Become a sponsor to Vivliostyle" %}
+  {% include button/primary.html url="/sponsors" text="Become a sponsor to Vivliostyle" %}
 </ol>
 {% endcapture %}
 

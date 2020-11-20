@@ -1,7 +1,6 @@
 ---
 layout: page
 title: How about supporting Vivliostyle
-indexing: false
 ---
 
 
