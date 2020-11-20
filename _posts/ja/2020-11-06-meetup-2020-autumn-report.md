@@ -4,6 +4,8 @@ lang: ja
 image: /assets/posts/2020-11-06-meetup-2020-autumn-report/2020fall_user_meeting_banner.png
 author:
   - ogwata
+tags:
+  - イベント
 ---
 　去る10月24日、オンラインで[「Vivliostyle ユーザーと開発者の集い 2020秋」](https://vivliostyle.connpass.com/event/189940/)を開催しました。
 
