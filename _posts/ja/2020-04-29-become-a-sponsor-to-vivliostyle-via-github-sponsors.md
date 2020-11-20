@@ -4,8 +4,8 @@ lang: ja
 image: /assets/posts/2020-04-29-become-a-sponsor-to-vivliostyle-via-github-sponsors/gitHub-sponsors.png
 author:
   - ogwata
-  tags:
-    - sponsor
+tags:
+  - sponsor
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><a href="https://github.com/sponsors/vivliostyle"><img src="/assets/posts/2020-04-29-become-a-sponsor-to-vivliostyle-via-github-sponsors/gitHub-sponsors.png" alt="Become a sponsor to vivliostyle" style="width: 300px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></a></div>
 

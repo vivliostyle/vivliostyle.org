@@ -4,8 +4,8 @@ lang: ja
 image: /assets/posts/2020-04-26-vivliostyle-dev-user-2020spring/user_meetup_1200x630.png
 author:
   - ogwata
-  tags:
-    - イベント
+tags:
+  - イベント
 ---
 ご報告が遅れてしまいましたが、「Vivliostyle ユーザーと開発者の集い 2020春」を、無事に終えることができました。
 
