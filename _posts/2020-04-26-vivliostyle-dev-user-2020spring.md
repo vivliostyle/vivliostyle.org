@@ -4,6 +4,8 @@ lang: en
 image: /assets/posts/2020-04-26-vivliostyle-dev-user-2020spring/user_meetup_1200x630.png
 author:
   - ogwata
+  tags:
+    - event
 ---
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2020春」開催報告](https://vivliostyle.org/ja/blog/2020/04/26/vivliostyle-dev-user-2020spring/) in Japanese)
 

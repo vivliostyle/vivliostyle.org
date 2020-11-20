@@ -4,6 +4,8 @@ lang: en
 image: /assets/posts/2020-11-06-meetup-2020-autumn-report/2020fall_user_meeting_banner.png
 author:
   - ogwata
+  tags:
+    - event
 ---
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2020秋」開催報告](https://vivliostyle.org/ja/blog/2020/11/06/meetup-2020-autumn-report/) in Japanese)
 
