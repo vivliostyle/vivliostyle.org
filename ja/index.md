@@ -119,7 +119,7 @@ Vivliostyleは独立したオープンソースプロジェクトです。私た
 {% include all-sponsors.html %}
 
 <ol class="list--medium">
-  {% include button/primary.html url=site.data.account.github_sponsor.url text="GitHub スポンサーに応募する" %}
+  {% include button/primary.html url="/ja/sponsors" text="スポンサーに応募する" %}
 </ol>
 {% endcapture %}
 

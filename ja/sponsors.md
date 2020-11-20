@@ -2,7 +2,6 @@
 layout: page
 title: あなたも Vivliostyle のスポンサーになりませんか
 lang: ja
-indexing: false
 ---
 
 
