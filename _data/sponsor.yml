@@ -1,3 +1,5 @@
+# default link: github
+
 # - name: Special Sponsors
   # tier:
     # - badge: 💠
@@ -28,23 +30,25 @@
       # users:
     - badge: 🌹
       users:
-        - hidaruma
-        - youchan
-        - azettl
+        - name: hidaruma
+        - name: youchan
+        - name: azettl
 - name: Fan Sponsors
   tier:
     - badge: 🌟
       users:
-        - vvakame
-        - nishinos
-        - skoji
-        - y-mikou
+        - name: vvakame
+        - name: nishinos
+        - name: skoji
+        - name: y-mikou
     - badge: ⭐️
       users:
-        - munepi
-        - zonuexe
-        - niszet
-        - yuji-1980
-        - omasanori
-        - monaka
-        - liarnose
+        - name: munepi
+        - name: zonuexe
+        - name: niszet
+        - name: yuji-1980
+        - name: omasanori
+        - name: monaka
+        - name: liarnose
+          icon: https://pbs.twimg.com/profile_images/649617031/rect5153_400x400.png
+          link: https://twitter.com/liarnose

@@ -5,9 +5,15 @@
     {% for tier in sponsor_group.tier %}
       {% for user in tier.users %}
         <li class="avatar-list__item">
-          <a href="https://github.com/{{ user }}">
-            <img src="https://github.com/{{ user }}.png" alt="{{ user }}" class="avatar">
-          </a>
+          {% if user.icon and user.link %}
+            <a href="{{ user.link }}">
+              <img src="{{ user.icon }}" alt="{{ user.name }}" class="avatar">
+            </a>
+          {% else %}
+            <a href="https://github.com/{{ user.name }}">
+              <img src="https://github.com/{{ user.name }}.png" alt="{{ user.name }}" class="avatar">
+            </a>
+          {% endif %}
           <div class="avatar__badge">
             <i>{{ tier.badge }}</i>
           </div>
