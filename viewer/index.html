@@ -33,7 +33,7 @@
   </head>
   <body data-vivliostyle-viewer-status="loading" data-bind="event: {keydown: handleKey}, attr: {'data-vivliostyle-viewer-status': viewer.state.status, 'aria-busy': viewer.state.status()=='loading'}">
     <section id="vivliostyle-welcome" hidden data-bind="visible: !viewer.state.status(), attr: {hidden: !!viewer.state.status(), 'aria-hidden': viewer.state.status()?'true':'false'}, click: navigation.onclickViewport, swipePages: true">
-      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.1.4)</small></h1>
+      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.2.0)</small></h1>
       <input id="vivliostyle-input-url" type="text" placeholder="Input a document URL" data-bind="textInput: viewer.inputUrl"/>
       <div id="vivliostyle-input-options">
         <label><input id="vivliostyle-book-mode" type="checkbox" data-bind="checked: settingsPanel.state.bookMode, disable: settingsPanel.isBookModeChangeDisabled" />&nbsp;<b>Book Mode</b></label>&emsp;
@@ -93,9 +93,12 @@
       </ul>
       <p><a href="https://vivliostyle.org"><img src="resources/vivliostyle-logo.svg" alt="Vivliostyle"/></a></p>
     </section>
-    <div id="vivliostyle-viewer-viewport" data-vivliostyle-viewer-viewport="true" role="main" tabindex="0" data-bind="attr: {'data-vivliostyle-page-progression': viewer.state.pageProgression}, click: navigation.onclickViewport, swipePages: true"></div>
+    <div id="vivliostyle-viewer-viewport" data-vivliostyle-viewer-viewport="true" role="main" tabindex="0" data-bind="attr: {'data-vivliostyle-page-progression': viewer.state.pageProgression}, click: navigation.onclickViewport, swipePages: true, event: {'wheel': navigation.onwheelViewport}"></div>
     <span role="button" id="vivliostyle-page-navigation-left" title="navigate to left" aria-keyshortcuts="ArrowLeft" data-bind="click: navigation.navigateToLeft, css: {'vivliostyle-menu-enabled': !navigation.isNavigateToLeftDisabled()}, attr: {'aria-disabled': navigation.isNavigateToLeftDisabled}"></span>
     <span role="button" id="vivliostyle-page-navigation-right" title="navigate to right" aria-keyshortcuts="ArrowRight" data-bind="click: navigation.navigateToRight, css: {'vivliostyle-menu-enabled': !navigation.isNavigateToRightDisabled()}, attr: {'aria-disabled': navigation.isNavigateToRightDisabled}"></span>
+    <div aria-label="Page Slider" id="vivliostyle-page-slider-bar" data-bind="attr: {'dir': viewer.state.pageProgression}">
+      <input role="slider" id="vivliostyle-page-slider" tabindex="-1" type="range" data-bind="value: navigation.pageSlider, valueUpdate: 'input', css: {'vivliostyle-menu-disabled': navigation.isPageSliderDisabled}, 'disable': navigation.isPageSliderDisabled, attr: {'max': navigation.pageSliderMax}, event: {'mouseup': navigation.onmouseupPageSlider, 'touchend': navigation.onmouseupPageSlider, 'wheel': navigation.onwheelPageSlider}" min="1"/>
+    </div>
     <div id="vivliostyle-loading-overlay" hidden data-bind="visible: !isDebug, attr: {hidden: !viewer.state.status()}">
       <div class="vivliostyle-loading-spinner"></div>
     </div>
@@ -268,7 +271,7 @@
             </div>
             <aside class="vivliostyle-menu-detail-aside">
               <div><small>Powered by</small> <a href="https://vivliostyle.org"><strong>Vivliostyle</strong></a> </div>
-              <div class="version"><small>(<span>Core: 2.1.4</span>)</small></div>
+              <div class="version"><small>(<span>core+viewer: 2.2.0</span>)</small></div>
             </aside>
           </div>
         </li>
@@ -281,8 +284,8 @@
         <li class="vivliostyle-menu-item vivliostyle-menu-disabled" id="vivliostyle-menu-item_move-previous" data-bind="click: navigation.navigateToPrevious, css: {'vivliostyle-menu-disabled': navigation.isNavigateToPreviousDisabled}"><span role="button" class="vivliostyle-menu-icon-button" title="Previous Page (↑)" aria-keyshortcuts="ArrowUp PageUp" data-bind="menuButton: true, attr: {'aria-disabled': navigation.isNavigateToPreviousDisabled}"></span></li>
         <li class="vivliostyle-menu-item vivliostyle-menu-disabled" id="vivliostyle-menu-item_move-next" data-bind="click: navigation.navigateToNext, css: {'vivliostyle-menu-disabled': navigation.isNavigateToNextDisabled}"><span role="button" class="vivliostyle-menu-icon-button" title="Next Page (↓)" aria-keyshortcuts="ArrowDown PageDown" data-bind="menuButton: true, attr: {'aria-disabled': navigation.isNavigateToNextDisabled}"></span></li>
         <li class="vivliostyle-menu-item vivliostyle-menu-disabled" id="vivliostyle-menu-item_move-last" data-bind="click: navigation.navigateToLast, css: {'vivliostyle-menu-disabled': navigation.isNavigateToLastDisabled}"><span role="button" class="vivliostyle-menu-icon-button" title="Last Page (End)" aria-keyshortcuts="End Meta+ArrowDown" data-bind="menuButton: true, attr: {'aria-disabled': navigation.isNavigateToLastDisabled}"></span></li>
-        <li class="vivliostyle-menu-item" id="vivliostyle-menu-item_page-number" data-bind="css: {'vivliostyle-menu-disabled': navigation.isPageNumberDisabled}"><input aria-label="Page number" id="vivliostyle-page-number" title="Go to Page… (G)" aria-keyshortcuts="G" data-bind="value: navigation.pageNumber, attr: {'aria-disabled': navigation.isPageNumberDisabled}" onfocus="setTimeout(()=>{this.setSelectionRange(0,this.value.length)},0)" type="text" inputmode="numeric" autocomplete="off"/></li>
-        <li class="vivliostyle-menu-item" id="vivliostyle-menu-item_total-pages" data-bind="css: {'vivliostyle-menu-disabled': navigation.isPageNumberDisabled}"><span aria-label="Total pages" id="vivliostyle-total-pages" data-bind="text: navigation.totalPages"></span></li>
+        <li class="vivliostyle-menu-item" id="vivliostyle-menu-item_page-number" data-bind="css: {'vivliostyle-menu-disabled': navigation.isPageNumberDisabled}"><input aria-label="Page number" id="vivliostyle-page-number" title="Go to Page… (G)" aria-keyshortcuts="G" data-bind="value: navigation.pageNumber, attr: {'aria-disabled': navigation.isPageNumberDisabled}, event: {'focus': navigation.onfocusPageNumber,'wheel': navigation.onwheelPageSlider}" type="text" inputmode="numeric" autocomplete="off"/></li>
+        <li class="vivliostyle-menu-item" id="vivliostyle-menu-item_total-pages" data-bind="css: {'vivliostyle-menu-disabled': navigation.isPageNumberDisabled}"><span aria-label="Total pages" id="vivliostyle-total-pages" tabindex="0" data-bind="text: navigation.totalPages"></span></li>
       </ul>
       <ul class="vivliostyle-menu" id="vivliostyle-menu_zoom" data-bind="visible: !navigation.hideZoom">
         <li class="vivliostyle-menu-item vivliostyle-menu-disabled" id="vivliostyle-menu-item_zoom-out" data-bind="click: navigation.zoomOut, css: {'vivliostyle-menu-disabled': navigation.isZoomOutDisabled}"><span role="button" class="vivliostyle-menu-icon-button" title="Zoom: Out (O)" aria-keyshortcuts="O" data-bind="menuButton: true, attr: {'aria-disabled': navigation.isZoomOutDisabled}"></span></li>
