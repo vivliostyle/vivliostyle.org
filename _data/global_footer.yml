@@ -24,7 +24,7 @@ en:
       - title: About Us
         url: /about-us/
       - title: Sponsors
-        url: /about-us/#become-a-sponsor-of-vivliostyle
+        url: /sponsors
       - title: History
         url: /history/
   - title: Others
@@ -63,7 +63,7 @@ ja:
       - title: 私たちについて
         url: /ja/about-us/
       - title: スポンサー募集
-        url: /ja/about-us/#vivliostyle-のスポンサーになりませんか
+        url: /ja/sponsors/
       - title: Vivliostyle のなりたち
         url: /ja/history/
   - title: その他
