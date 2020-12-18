@@ -1,7 +1,7 @@
 ---
 title: Vivliostyleの開発状況をOnline.tex 2020で報告
 lang: ja
-image: /assets/posts/
+image: /assets/posts/2020-12-21-Update-on-the-development-of-Vivliostyle-at-Online.tex-2020/fig-1.png
 author:
   - ogwata
 tags:
@@ -25,9 +25,7 @@ tags:
 
 ## 1. 行頭インデントが消えてしまっている
 
-お恥ずかしいことに、これは私のケアレスミスです。本来、VFMでは段落区切り（ハード改行）はリターン2つです。なのに当日私がデモで使った原稿は、1つしか入っていませんでした。この場合GFMなどでは無視するのですが、VFMの場合は段落区切りではないソフト改行と解釈され、HTMLでは｀<br />｀に変換されます。
-
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2020-12-21-Update-on-the-development-of-Vivliostyle-at-Online.tex-2020/fig-1.png" alt="A text document created with a single return code to separate paragraphs" style="width: 300px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></a></div>
+お恥ずかしいことに、これは私のケアレスミスです。本来、VFMでは段落区切り（ハード改行）はリターン2つです。なのに当日私がデモで使った原稿は、1つしか入っていませんでした。この場合GFMなどでは無視するのですが、VFMの場合は段落区切りではないソフト改行と解釈され、HTMLでは｀<br />｀に変換されます（上図）。
 
 そのために改行はされたものの、段落の区切りではないので行頭もインデントはされませんでした。下記の段落区切りをリターン2つに修正したスクリーンショットをご覧ください。
 
@@ -55,7 +53,7 @@ tags:
 
 使えません。これについてIssue登録しました。
 
-- [テーブルでルビを指定するとパイプ文字がセルの区切りにパースされる]
+- [テーブルでルビを指定するとパイプ文字がセルの区切りにパースされる](https://github.com/vivliostyle/vfm/issues/44)
 
 つまり、ルビの指定に使うパイプ文字 `|` が、セルの区切りとして解釈されてしまいます。
 
@@ -70,3 +68,5 @@ tags:
 ## 5. エディタのカーソル位置が、プレビュー画面で表示されるとよい
 
 確かにそうですね。これも既に ver. 1 の実装要件を定めた[「Vivliostyle Pubv1 要件仕様 (WIP)」](https://github.com/vivliostyle/community/wiki/Vivliostyle-Pub-v1-Req#%E5%8E%9F%E7%A8%BF%E7%B7%A8%E9%9B%86%E7%94%BB%E9%9D%A2%E3%81%A8%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC)に盛り込まれ、実装する予定です。
+
+こうしてまとめると、図らずも Vivliostyle Pub の開発がまだまだ初期段階であることがよく分かるような事例ばかりです。
