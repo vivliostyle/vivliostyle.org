@@ -36,7 +36,7 @@ This caused a line break, but not a paragraph break, so the beginning of the lin
 
 In fact, this problem has been pointed out before. So Murakami decided to take this opportunity to register it as an Issue.
 
-- [ルビの文字サイズ問題: Minimum font size setting in Chrome causes ruby font size problem #673 <i class="mdi mdi-open-in-new"></i>](https://github.com/vivliostyle/vivliostyle.js/issues/673)
+- [ルビの文字サイズ問題: Minimum font size setting in Chrome causes ruby font size problem #673](https://github.com/vivliostyle/vivliostyle.js/issues/673)
 
 Let me explain briefly. Originally, Vivliostyle was a kind of polyfill intended to complement the browser. In other words, it leaves a lot of the functionality to the browser and implements its own features that are not implemented in the browser, such as pagination.
 
