@@ -49,27 +49,12 @@ $youtube_color:  #FF0000;
 // ----------
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
-@import url("https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css");
+@import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
 
 $body_font:        "Roboto", "Noto Sans JP";
 $monospace_font:   "Roboto Mono";
 $vivliostyle_font: "Optima", "Marcellus";
-$icon_font:        "Material Design Icons";
-
-$h1_font_size:        44px;
-$h2_font_size:        44px;
-$h3_font_size:        34px;
-$h4_font_size:        28px;
-$h5_font_size:        22px;
-$h6_font_size:        18px;
-$body_font_size:      18px;
-$display_font_size:   26px;
-$monospace_font_size: 18px;
-$small_font_size:     16px;
-
-$button_large_font_size:  24px;
-$button_medium_font_size: 20px;
-$button_small_font_size:  14px;
+$icon_font:        "Font Awesome 5 Free";
 
 $body_line_height:    1.8;
 $heading_line_height: 1.4;

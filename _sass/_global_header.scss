@@ -77,7 +77,7 @@
   }
 
   .item__icon {
-    font-size: 28px;
+    font-size: 20px;
     margin: 0 5px;
 
     &:first-child {
@@ -87,6 +87,10 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .item__icon.fa-chevron-down {
+    font-size: 12px;
   }
 
   .nav__link,
@@ -126,12 +130,6 @@
     .nav__item--active {
       box-shadow: inset 6px 0 0 $primary_color;
     }
-
-    // アイコンを大きくする
-    .item__icon {
-      margin: 0;
-      font-size: 32px;
-    }
   }
 
   @include media_medium {
@@ -139,10 +137,6 @@
     .nav__link,
     .nav__link--menu {
       padding: 0 10px;
-    }
-
-    .item__icon.mdi-chevron-down {
-      font-size: 30px;
     }
 
     .nav__dropdown .nav__label {
@@ -164,17 +158,11 @@
       position: unset;
     }
 
-    // ボタンを小さくする
-    .nav__link,
-    .nav__link--menu {
-      padding: 0 5px;
-    }
-
     .global-header__logo {
       height: 30px;
     }
 
-    .item__icon.mdi-chevron-down {
+    .item__icon.fa-chevron-down {
       display: none;
     }
 

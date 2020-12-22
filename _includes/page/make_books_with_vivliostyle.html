@@ -19,7 +19,7 @@
                 {% for article in book.toc %}
                   <li class="toc__content">
                     <div>
-                      <i class="mdi mdi-alpha-{{ article.type | downcase }}-circle toc__type"></i>
+                      <i class="toc__type">{{ article.type }}</i>
                     </div>
                     <div>
                       <a href="{{ article.url }}">{{ article.title }}</a>

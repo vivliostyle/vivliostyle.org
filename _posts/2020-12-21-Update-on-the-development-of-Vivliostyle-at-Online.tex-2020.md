@@ -10,9 +10,9 @@ tags:
 
 ### Introduction
 
-I'm sorry for the delay in reporting, but on November 21, I reported on the development of Vivliostyle Pub at the [Online.tex 2020<i class="mdi mdi-open-in-new"></i>](https://connpass.com/event/188075/) conference. This was the first time we actually demonstrated Vivliostyle Pub in a public forum.
+I'm sorry for the delay in reporting, but on November 21, I reported on the development of Vivliostyle Pub at the [Online.tex 2020<i class="fas fa-external-link-alt"></i>](https://connpass.com/event/188075/) conference. This was the first time we actually demonstrated Vivliostyle Pub in a public forum.
 
-- [あしたのVivliostyle<i class="mdi mdi-open-in-new"></i>](https://www2.slideshare.net/ogwata_1959/vivliostyle-239370581)
+- [あしたのVivliostyle<i class="fas fa-external-link-alt"></i>](https://www2.slideshare.net/ogwata_1959/vivliostyle-239370581)
 
 As a forum hosted by a proven Tex community, the feedback was very encouraging. Thank you again.
 
@@ -46,7 +46,7 @@ The same is true for this ruby typography, which is the result of Chrome's rende
 
 As a workaround, if you set the minimum font size to 0px in the Chrome preferences, it will be rendered as specified in the CSS (Right figure, bottom).
 
-Here is a side note. If you look closely, you can see that the ruby typesetting in this screenshot does not follow [JLReq 3.3.8's rule  <i class="mdi mdi-open-in-new"></i>](https://www.w3.org/TR/jlreq/#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters) that if a ruby extends beyond its parent character, it should be hung on the parent character. In fact, Vivliostyle cannot even fully implement the W3C specification for pagination, and as a result, it often fails to follow the rules in the details. This Ruby typography may be an example of how Vivliostyle is being developed.
+Here is a side note. If you look closely, you can see that the ruby typesetting in this screenshot does not follow [JLReq 3.3.8's rule  <i class="fas fa-external-link-alt"></i>](https://www.w3.org/TR/jlreq/#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters) that if a ruby extends beyond its parent character, it should be hung on the parent character. In fact, Vivliostyle cannot even fully implement the W3C specification for pagination, and as a result, it often fails to follow the rules in the details. This Ruby typography may be an example of how Vivliostyle is being developed.
 
 ### 3. How to use ruby for text in a table
 

@@ -12,7 +12,16 @@
   }
 
   .toc__type {
-    font-size: $h5_font_size;
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-family: $monospace_font;
+    font-style: normal;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    line-height: 1.5;
   }
 
   @include media_small {

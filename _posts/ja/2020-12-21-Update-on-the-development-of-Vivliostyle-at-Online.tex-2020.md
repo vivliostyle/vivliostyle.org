@@ -10,9 +10,9 @@ tags:
 
 #### はじめに
 
-だいぶ報告が遅れてしまいましたが、去る11月21日、オンラインで開催された[「Online.tex 2020」<i class="mdi mdi-open-in-new"></i>](https://connpass.com/event/188075/)で、Vivliostyle Pubの開発状況について報告しました。この日のスライドを下記で公開しています。Vivliostyle Pubのデモを実際に公開の場でおこなったのは、この時が初めてだったと思います。
+だいぶ報告が遅れてしまいましたが、去る11月21日、オンラインで開催された[「Online.tex 2020」<i class="fas fa-external-link-alt"></i>](https://connpass.com/event/188075/)で、Vivliostyle Pubの開発状況について報告しました。この日のスライドを下記で公開しています。Vivliostyle Pubのデモを実際に公開の場でおこなったのは、この時が初めてだったと思います。
 
-- [あしたのVivliostyle<i class="mdi mdi-open-in-new"></i>](https://www2.slideshare.net/ogwata_1959/vivliostyle-239370581)
+- [あしたのVivliostyle<i class="fas fa-external-link-alt"></i>](https://www2.slideshare.net/ogwata_1959/vivliostyle-239370581)
 
 実績あるTexコミュニティの主催だけあって、大変歯ごたえのあるフィードバックがいただけました。あらためて感謝いたします。
 
@@ -37,7 +37,7 @@ tags:
 
 この問題、じつは以前から指摘されていましたが、この機会にIssueとして登録しました。
 
-- [ルビの文字サイズ問題: Minimum font size setting in Chrome causes ruby font size problem #673 <i class="mdi mdi-open-in-new"></i>](https://github.com/vivliostyle/vivliostyle.js/issues/673)
+- [ルビの文字サイズ問題: Minimum font size setting in Chrome causes ruby font size problem #673 <i class="fas fa-external-link-alt"></i>](https://github.com/vivliostyle/vivliostyle.js/issues/673)
 
 簡単に説明しましょう。元来 Vivliostyle はブラウザの補完を目的とするpolyfill（ポリフィル）の一種です。つまり、多くの機能はブラウザにまかせ、そこで実装されていない、たとえばページネーション等の機能を自前で実装しているわけです。
 
@@ -47,7 +47,7 @@ tags:
 
 対処法として、Chromeの設定で最小文字サイズを0pxにすると、CSSの指定どおりにレンダリングされます（下図下）。
 
-ちょっと脇道に逸れますが、よくみるとこのスクリーンショットのルビ組版は、ルビが親文字よりはみ出した場合、親文字に掛けるよう処理する[JLReq 3.3.8  <i class="mdi mdi-open-in-new"></i>](https://www.w3.org/TR/jlreq/#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters)通りではないことに気付きでしょうか。じつは、Vivliostyle はページネーションのためのW3C仕様の実装も十分にできていません。その結果、細部ではしばしばルールどおりに組版できないのが実情なのです。図らずもこのルビ組版は、そんなVivliostyleの開発状況を示す一例と言えるかもしれません。
+ちょっと脇道に逸れますが、よくみるとこのスクリーンショットのルビ組版は、ルビが親文字よりはみ出した場合、親文字に掛けるよう処理する[JLReq 3.3.8  <i class="fas fa-external-link-alt"></i>](https://www.w3.org/TR/jlreq/#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters)通りではないことに気付きでしょうか。じつは、Vivliostyle はページネーションのためのW3C仕様の実装も十分にできていません。その結果、細部ではしばしばルールどおりに組版できないのが実情なのです。図らずもこのルビ組版は、そんなVivliostyleの開発状況を示す一例と言えるかもしれません。
 
 #### 3. テーブル中のテキストにルビが使えないか
 
