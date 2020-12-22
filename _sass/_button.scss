@@ -13,12 +13,12 @@
 }
 
 @mixin large {
-  padding: 15px 20px;
+  padding: 10px 15px;
   font-size: $button_large_font_size;
 }
 
 @mixin medium {
-  padding: 10px 15px;
+  padding: 5px 10px;
   font-size: $button_medium_font_size;
 }
 
@@ -69,6 +69,10 @@
 
 @mixin github {
   @include button_color($github_color, $github_color, $white);
+}
+
+@mixin youtube {
+  @include button_color($youtube_color, $youtube_color, $white);
 }
 
 .button--primary--small {
@@ -212,6 +216,24 @@
 .button--github--large {
   @include button;
   @include github;
+  @include large;
+}
+
+.button--youtube--small {
+  @include button;
+  @include youtube;
+  @include small;
+}
+
+.button--youtube--medium {
+  @include button;
+  @include youtube;
+  @include medium;
+}
+
+.button--youtube--large {
+  @include button;
+  @include youtube;
   @include large;
 }
 

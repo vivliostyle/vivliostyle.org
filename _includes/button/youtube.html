@@ -1,0 +1,7 @@
+<li>
+  <a
+    href="{{ include.url | default: site.data.account.youtube.url }}"
+    class="{{ include.class | default: 'button--youtube--large' }}">
+    <i class="fab fa-youtube button__icon"></i>{{ include.text | default: "YouTube" }}
+  </a>
+</li>
