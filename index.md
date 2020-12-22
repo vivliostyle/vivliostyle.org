@@ -49,7 +49,7 @@ With Vivliostyle Pub, you can create printable PDF from your browser.
 </ol>
 
 <ol class="list--medium">
-  {% include button/disabled.html url=site.data.project.pub.url text="Try Vivliostyle Pub (beta launched during June, 2020)" %}
+  {% include button/disabled.html url=site.data.project.pub.url text="Try Vivliostyle Pub (will be released by the end of 2021)" %}
 </ol>
 {% endcapture %}
 
