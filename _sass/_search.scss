@@ -48,7 +48,7 @@
       position: absolute;
       top: calc(-2 * #{$searchresult_triangle_size});
       right: 20px;
-      border-bottom: $searchresult_triangle_size solid $gray_light;
+      border-bottom: $searchresult_triangle_size solid $gray_lighter;
       border-top: $searchresult_triangle_size solid transparent;
       border-left: $searchresult_triangle_size solid transparent;
       border-right: $searchresult_triangle_size solid transparent;
