@@ -8,11 +8,11 @@ tags:
   - イベント
 ---
 
-#### はじめに
+## はじめに
 
-だいぶ報告が遅れてしまいましたが、去る11月21日、オンラインで開催された[「Online.tex 2020」<i class="mdi mdi-open-in-new"></i>](https://connpass.com/event/188075/)で、Vivliostyle Pubの開発状況について報告しました。この日のスライドを下記で公開しています。Vivliostyle Pubのデモを実際に公開の場でおこなったのは、この時が初めてだったと思います。
+だいぶ報告が遅れてしまいましたが、去る11月21日、オンラインで開催された[「Online.tex 2020」<i class="fas fa-external-link-alt"></i>](https://connpass.com/event/188075/)で、Vivliostyle Pubの開発状況について報告しました。この日のスライドを下記で公開しています。Vivliostyle Pubのデモを実際に公開の場でおこなったのは、この時が初めてだったと思います。
 
-- [あしたのVivliostyle<i class="mdi mdi-open-in-new"></i>](https://www2.slideshare.net/ogwata_1959/vivliostyle-239370581)
+- [あしたのVivliostyle<i class="fas fa-external-link-alt"></i>](https://www2.slideshare.net/ogwata_1959/vivliostyle-239370581)
 
 実績あるTexコミュニティの主催だけあって、大変歯ごたえのあるフィードバックがいただけました。あらためて感謝いたします。
 
@@ -24,7 +24,7 @@ tags:
 - [4. フォーカスが最初のページに戻ってしまう](#4-フォーカスが最初のページに戻ってしまう)
 - [5. エディタのカーソル位置が、プレビュー画面で表示されるとよい](#5-エディタのカーソル位置がプレビュー画面で表示されるとよい)
 
-#### 1. 行頭インデントが消えてしまっている
+## 1. 行頭インデントが消えてしまっている
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2020-12-21-Update-on-the-development-of-Vivliostyle-at-Online.tex-2020/fig-1.png" alt="A text document created with a double return code to separate paragraphs" style="width: 500px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
@@ -33,11 +33,11 @@ tags:
 そのために改行はされたものの、段落の区切りではないので行頭はインデントはされませんでした。段落区切りをリターン2つに修正したスクリーンショットをご覧ください（右図下）
 。
 
-#### 2. ルビ文字のサイズが大きすぎる
+## 2. ルビ文字のサイズが大きすぎる
 
 この問題、じつは以前から指摘されていましたが、この機会にIssueとして登録しました。
 
-- [ルビの文字サイズ問題: Minimum font size setting in Chrome causes ruby font size problem #673 <i class="mdi mdi-open-in-new"></i>](https://github.com/vivliostyle/vivliostyle.js/issues/673)
+- [ルビの文字サイズ問題: Minimum font size setting in Chrome causes ruby font size problem #673 <i class="fas fa-external-link-alt"></i>](https://github.com/vivliostyle/vivliostyle.js/issues/673)
 
 簡単に説明しましょう。元来 Vivliostyle はブラウザの補完を目的とするpolyfill（ポリフィル）の一種です。つまり、多くの機能はブラウザにまかせ、そこで実装されていない、たとえばページネーション等の機能を自前で実装しているわけです。
 
@@ -47,9 +47,9 @@ tags:
 
 対処法として、Chromeの設定で最小文字サイズを0pxにすると、CSSの指定どおりにレンダリングされます（下図下）。
 
-ちょっと脇道に逸れますが、よくみるとこのスクリーンショットのルビ組版は、ルビが親文字よりはみ出した場合、親文字に掛けるよう処理する[JLReq 3.3.8  <i class="mdi mdi-open-in-new"></i>](https://www.w3.org/TR/jlreq/#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters)通りではないことに気付きでしょうか。じつは、Vivliostyle はページネーションのためのW3C仕様の実装も十分にできていません。その結果、細部ではしばしばルールどおりに組版できないのが実情なのです。図らずもこのルビ組版は、そんなVivliostyleの開発状況を示す一例と言えるかもしれません。
+ちょっと脇道に逸れますが、よくみるとこのスクリーンショットのルビ組版は、ルビが親文字よりはみ出した場合、親文字に掛けるよう処理する[JLReq 3.3.8  <i class="fas fa-external-link-alt"></i>](https://www.w3.org/TR/jlreq/#adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters)通りではないことに気付きでしょうか。じつは、Vivliostyle はページネーションのためのW3C仕様の実装も十分にできていません。その結果、細部ではしばしばルールどおりに組版できないのが実情なのです。図らずもこのルビ組版は、そんなVivliostyleの開発状況を示す一例と言えるかもしれません。
 
-#### 3. テーブル中のテキストにルビが使えないか
+## 3. テーブル中のテキストにルビが使えないか
 
 実際にテーブルの中でルビを指定してみたところ、ルビの指定に使うパイプ文字 `|` が、セルの区切りとして解釈されてしまいました。VFMのバグですね。これについてIssue登録しました（現在、熱心な討論がつづいているので、興味のある方はぜひ覗いてみて下さい）。
 
@@ -59,13 +59,13 @@ tags:
 
 なお、この件について当日私は、以前から登録されているIssue [図表キャプション内で他の記法が使えない #35](https://github.com/vivliostyle/vfm/issues/35)と同様の問題で、ある要素の中で別の要素をネストできないと説明をしましたが、これはまた別の問題であり間違いです。お詫びして取り消します。
 
-#### 4. フォーカスが最初のページに戻ってしまう
+## 4. フォーカスが最初のページに戻ってしまう
 
 はい、確かに現状は好ましくない動作であり、既に Issue として登録されています。
 
 - [エディターで更新のたびにプレビューが１ページ目に戻らないようにすること #53](https://github.com/vivliostyle/vivliostyle-pub/issues/53)
 
-#### 5. エディタのカーソル位置が、プレビュー画面で表示されるとよい
+## 5. エディタのカーソル位置が、プレビュー画面で表示されるとよい
 
 確かに。これも既に ver. 1 の実装要件を定めた[「Vivliostyle Pubv1 要件仕様 (WIP)」](https://github.com/vivliostyle/community/wiki/Vivliostyle-Pub-v1-Req#%E5%8E%9F%E7%A8%BF%E7%B7%A8%E9%9B%86%E7%94%BB%E9%9D%A2%E3%81%A8%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC)に盛り込まれており、実装する予定です。
 

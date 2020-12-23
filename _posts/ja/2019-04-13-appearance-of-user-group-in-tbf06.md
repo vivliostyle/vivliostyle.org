@@ -23,23 +23,23 @@ tags:
 
 かつてない技術書典の盛り上がり……乗るしかない、このビックウェーブに！ Vivliostyle の 1 ユーザーとして、私は Vivliostyle のさらなる普及を目指して「Vivliostyle ユーザー会」を立ち上げました。そして、Vivliostyle ユーザーだけの夢の合同誌「Vivliostyle で本を作ろう Vol.1」がここに完成したのです！ ここでは、それぞれの記事の内容を簡単に紹介します。
 
-#### [●EPUB Adaptive Layout による段組み混在レイアウトへの挑戦 （arinoth）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/6!)>)
+### [●EPUB Adaptive Layout による段組み混在レイアウトへの挑戦 （arinoth）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/6!)>)
 
 「ふりがなプログラミング」シリーズなど、多くの商業技術書を手がける編集プロダクション「リブロワークス」が、新しく Vivliostyle を使って試みられているレイアウト制作について紹介しています。Vivliostyle の裏で動く EPUB Adaptive Layout まで立ち入った貴重な記事です！
 
-#### [● 私が組版オペレータになっても？（takanakahiko）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/8!)>)
+### [● 私が組版オペレータになっても？（takanakahiko）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/8!)>)
 
 本書と同じく、Vivliostyle で合同誌を制作した際の工程について紹介しています。複数人で記事を執筆する際は、Markdown で執筆ができる点も魅力ですね〜
 
-#### [●CSS 組版やってみた！（やましー）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/10!)>)
+### [●CSS 組版やってみた！（やましー）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/10!)>)
 
 CSS 組版が気に入りすぎて、同人誌だけでなく卒論まで Vivliostyle で組版してしまった剛の者による解説記事です。卒論という時間的な制約が強い条件で、CI による PDF のビルドにより極限まで作業を省力化している点がグッドです！
 
-#### [●Vivliostyle.js: TypeScript 化の道のり （spring-raining）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/12!)>)
+### [●Vivliostyle.js: TypeScript 化の道のり （spring-raining）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/12!)>)
 
 Vivilostyle.js で現在進行している TypeScript 化について、私も記事を書きました。先に予告しておきますが、分量はちょっと少なめです…
 
-#### [●Vivliostyle Viewer で CSS 組版ちょっと入門 （村上 真雄）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/14!)>)
+### [●Vivliostyle Viewer で CSS 組版ちょっと入門 （村上 真雄）](<https://vivliostyle.org/viewer/#b=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/index.html&f=epubcfi(/14!)>)
 
 Vivliostyle Foundation 代表の村上による、「Vivliostyle Viewer」プロジェクトの解説です。「ちょっと」と言いつつめちゃめちゃ紹介されているので、この記事の内容だけでも大分使いこなせそうです…！
 

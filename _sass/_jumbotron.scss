@@ -39,16 +39,17 @@
 
 @include media_medium {
   .jumbotron {
-    padding: 100px 60px;
+    padding: 60px 30px;
+    text-align: center;
   }
 
   .jumbotron__lead--top {
-    font-size: 64px;
+    font-size: 50px;
     line-height: 1;
   }
 
   .jumbotron__lead {
-    font-size: 20px;
+    font-size: $body_font_size;
   }
 }
 

@@ -35,12 +35,13 @@ $text_color:            $black;
 $link_color:            $primary_color;
 $link_visited_color:    $violet_dark;
 $background_color:      $white;
-$background_code_color: $black;
+$background_code_color: $gray_dark;
 
 $twitter_color:  #0d94e7;
 $facebook_color: #3B5998;
 $slack_color:    #602268;
 $github_color:   $black;
+$youtube_color:  #FF0000;
 
 
 // ----------
@@ -48,27 +49,27 @@ $github_color:   $black;
 // ----------
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
-@import url("https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css");
+@import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
 
 $body_font:        "Roboto", "Noto Sans JP";
 $monospace_font:   "Roboto Mono";
 $vivliostyle_font: "Optima", "Marcellus";
-$icon_font:        "Material Design Icons";
+$icon_font:        "Font Awesome 5 Free";
 
-$h1_font_size:        44px;
-$h2_font_size:        44px;
-$h3_font_size:        34px;
-$h4_font_size:        28px;
-$h5_font_size:        22px;
-$h6_font_size:        18px;
-$body_font_size:      18px;
-$display_font_size:   26px;
-$monospace_font_size: 18px;
-$small_font_size:     16px;
+$h1_font_size:        42px;
+$h2_font_size:        36px;
+$h3_font_size:        30px;
+$h4_font_size:        26px;
+$h5_font_size:        20px;
+$h6_font_size:        16px;
+$body_font_size:      16px;
+$display_font_size:   24px;
+$monospace_font_size: 16px;
+$small_font_size:     14px;
 
-$button_large_font_size:  24px;
-$button_medium_font_size: 20px;
-$button_small_font_size:  14px;
+$button_large_font_size:  20px;
+$button_medium_font_size: 16px;
+$button_small_font_size:  12px;
 
 $body_line_height:    1.8;
 $heading_line_height: 1.4;

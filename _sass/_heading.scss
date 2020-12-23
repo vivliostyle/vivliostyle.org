@@ -21,7 +21,7 @@
     }
 
     &:before {
-      content: "\F339";
+      content: "\f0c1";
     }
   }
 
@@ -128,19 +128,19 @@
     }
 
     h3 {
-      font-size: $h3_font_size * 0.9;
+      font-size: $h3_font_size * 0.7;
     }
 
     h4 {
-      font-size: $h4_font_size * 0.9;
+      font-size: $h4_font_size * 0.7;
     }
 
     h5 {
-      font-size: $h5_font_size * 0.9;
+      font-size: $h5_font_size * 0.7;
     }
 
     h6 {
-      font-size: $h6_font_size * 0.9;
+      font-size: $h6_font_size * 0.7;
     }
   }
 }

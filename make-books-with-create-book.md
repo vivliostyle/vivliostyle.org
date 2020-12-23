@@ -14,7 +14,7 @@ toc: true
 {% capture content %}
 ## To use Create Book
 
-1. Install [Node.js (v.10 or higher)<i class="mdi mdi-open-in-new"></i>](https://nodejs.org/en/) first.
+1. Install [Node.js (v.10 or higher)<i class="fas fa-external-link-alt"></i>](https://nodejs.org/en/) first.
 2. Create Book installation commands are as follows. The `<directory>` is the project folder name of the book to be made.
 
     ```
@@ -41,13 +41,13 @@ By editing the `manuscript.md` (Figure 1①) in the folder made by the installat
 
 Originally, markdown is a format designed for writing blog posts. As you can see from this, its two main attractions are that it can be written as a manuscript and that it can be converted to HTML. There are a minority of people who write manuscripts in HTML from the beginning. But if it's in markdown format, you can do it. Markdown is a format that attempts to combine the ease of writing plain text with the convenience of HTML.
 
-There are various dialects of markdown, the most powerful of which is [GFM (GitHub Flavored Markdown)<i class="mdi mdi-open-in-new"></i>](https://github.github.com/gfm/).  However, this notation is designed for technical documentation, so [VFM (Vivliostyle Flavored Markdown)](https://github.com/vivliostyle/vfm) is an additional notation for Japanese books.
+There are various dialects of markdown, the most powerful of which is [GFM (GitHub Flavored Markdown)<i class="fas fa-external-link-alt"></i>](https://github.github.com/gfm/).  However, this notation is designed for technical documentation, so [VFM (Vivliostyle Flavored Markdown)](https://github.com/vivliostyle/vfm) is an additional notation for Japanese books.
 
 In other words, VFM is upward compatible with GFM. The headings and other commonly used notations remain the same as in GFM, so those who are familiar with it should be able to start using it with little difficulty.  In this section, "What can I write using VFM?" We will answer the question.
 
 ### GFM notation
 
-Here are the main basic GFM notations. There are many more notations to choose from. For more information, see the tutorial guide or [the GitHub documentation page<i class="mdi mdi-open-in-new"></i>](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
+Here are the main basic GFM notations. There are many more notations to choose from. For more information, see the tutorial guide or [the GitHub documentation page<i class="fas fa-external-link-alt"></i>](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
 
 #### Heading
 
@@ -344,7 +344,7 @@ text[^n]text^[text]
 
 {% include figure.html
   src="/assets/misc/make_books_with_create_book/sample_endnote.png"
-  caption='Source: ["Shayo"<i class="mdi mdi-open-in-new"></i>](https://www.aozora.gr.jp/cards/000035/files/1565_8559.html), DAZAI Osamu, 1947'
+  caption='Source: ["Shayo"<i class="fas fa-external-link-alt"></i>](https://www.aozora.gr.jp/cards/000035/files/1565_8559.html), DAZAI Osamu, 1947'
 %}
 
 
@@ -389,11 +389,11 @@ If you selected the theme file `@vivliostyle/theme-techbook` during installation
 
 {% include figure.html
   src="/assets/misc/make_books_with_create_book/sample_footnote.png"
-  caption='Source: [“Le Petit Prince”<i class="mdi mdi-open-in-new"></i>](https://www.aozora.gr.jp/cards/001265/files/46817_24670.html) by Antoine de Saint-Exupery, translated by OKUBO Yu, 1943 (some kana are changed to kanji) / [CC BY 2.1 JP<i class="mdi mdi-open-in-new"></i>](https://creativecommons.org/licenses/by/2.1/jp/)'
+  caption='Source: [“Le Petit Prince”<i class="fas fa-external-link-alt"></i>](https://www.aozora.gr.jp/cards/001265/files/46817_24670.html) by Antoine de Saint-Exupery, translated by OKUBO Yu, 1943 (some kana are changed to kanji) / [CC BY 2.1 JP<i class="fas fa-external-link-alt"></i>](https://creativecommons.org/licenses/by/2.1/jp/)'
 %}
 
 
-You can also use citations, code, tables, and many other expressions. Please refer to the tutorial guide and [GitHub's documentation page<i class="mdi mdi-open-in-new"></i>](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) for more information.
+You can also use citations, code, tables, and many other expressions. Please refer to the tutorial guide and [GitHub's documentation page<i class="fas fa-external-link-alt"></i>](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) for more information.
 
 
 #### Tate-chu-yoko (Horizontal-in-Vertical)
@@ -432,7 +432,7 @@ text<span class="tcy">nn</span>text
 
 {% include figure.html
   src="/assets/misc/make_books_with_create_book/sample_tcy.png"
-  caption='Source: [“Alice in Wonderland”<i class="mdi mdi-open-in-new"></i>](https://www.aozora.gr.jp/cards/001393/files/57320_57183.html) by Lewis Carroll, translated by OKUBO Yu, 1865/[CC BY 2.1 JP<i class="mdi mdi-open-in-new"></i>](https://creativecommons.org/licenses/by/2.1/jp/)'
+  caption='Source: [“Alice in Wonderland”<i class="fas fa-external-link-alt"></i>](https://www.aozora.gr.jp/cards/001393/files/57320_57183.html) by Lewis Carroll, translated by OKUBO Yu, 1865/[CC BY 2.1 JP<i class="fas fa-external-link-alt"></i>](https://creativecommons.org/licenses/by/2.1/jp/)'
 %}
 
 

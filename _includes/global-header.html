@@ -12,9 +12,9 @@
     <ol class="nav__list">
       <li class="nav__item--menu">
         <div tabindex="0" class="nav__link--menu" id="main-button">
-          <i class="mdi mdi-format-list-bulleted item__icon"></i>
+          <i class="fas fa-list-ul item__icon"></i>
           <span class="nav__label">MENU</span>
-          <i class="mdi mdi-chevron-down item__icon"></i>
+          <i class="fas fa-chevron-down item__icon"></i>
         </div>
 
         <ol class="nav__dropdown--menu" id="main-menu">
@@ -41,7 +41,7 @@
       <!-- 検索 -->
       <li class="nav__item--search">
         <div tabindex="0" class="nav__link" id="search-button" title="Search">
-          <i class="mdi mdi-magnify item__icon"></i>
+          <i class="fas fa-search item__icon"></i>
         </div>
         {% include site-search.html %}
       </li>
@@ -49,8 +49,8 @@
       <!-- 言語切り替え -->
       <li class="nav__item">
         <div tabindex="0" class="nav__link" id="lang-button" title="Language">
-          <i class="mdi mdi-web item__icon"></i>
-          <i class="mdi mdi-chevron-down item__icon"></i>
+          <i class="fas fa-globe-americas item__icon"></i>
+          <i class="fas fa-chevron-down item__icon"></i>
         </div>
 
         <ul class="nav__dropdown" id="lang-menu">
@@ -58,14 +58,14 @@
             {% assign url = page.url | remove_first: lang.url %}
 
             {% if lang.name == otherlang[1].name %}
-              {% assign icon = "mdi-check" %}
+              {% assign icon = "check" %}
             {% else %}
-              {% assign icon = "mdi-blank" %}
+              {% assign icon = "blank" %}
             {% endif %}
 
             <li class="nav__item">
               <a class="nav__link" href="{{ otherlang[1].url | append: url | relative_url }}">
-                <i class="mdi {{ icon }} item__icon"></i>
+                <i class="fas {{ icon }} item__icon"></i>
                 <span class="nav__label">{{ otherlang[1].name }}</span>
               </a>
             </li>
@@ -76,7 +76,7 @@
       <!-- GitHubへのリンク -->
       <li class="nav__item">
         <a class="nav__link" href="{{ site.data.account.github.url }}" title="GitHub">
-          <i class="mdi mdi-github-circle item__icon"></i>
+          <i class="fab fa-github item__icon"></i>
         </a>
       </li>
     </ol>

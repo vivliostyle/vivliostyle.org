@@ -10,7 +10,7 @@ tags:
 
 イベントでの発表資料が公開されています：
 
-### 《第1部》Vivliostyle 開発者ミーティング
+## 《第1部》Vivliostyle 開発者ミーティング
 
 - [**「Vivliostyle開発のこれまでと、これからへ」**](http://bit.ly/vivdev20190831)  
     by 村上真雄([@MurakamiShinyu](https://twitter.com/MurakamiShinyu)) Vivliostyle Foundation代表
@@ -31,7 +31,7 @@ Vivliostyle の開発課題(issue)を [GitHub Projects - vivliostyle.js](https:/
   - Chrome extension: 6人
   - Documentation: 12人
 
-### 《第2部》Vivliostyle・CSS組版ユーザーミーティング
+## 《第2部》Vivliostyle・CSS組版ユーザーミーティング
 
 - [**Vivliostyleユーザー会の合同誌の制作｜Markdownの複雑化と締め切りのはざまで**](https://speakerdeck.com/spring_raining/vivliostyle-meetup)  
     by 緑豆はるさめ([@spring_raining](https://twitter.com/spring_raining)) Vivliostyleユーザー会
@@ -48,12 +48,12 @@ Vivliostyle の開発課題(issue)を [GitHub Projects - vivliostyle.js](https:/
 - [**EPUBファイルからVivliostyleでPDFを作る**](https://speakerdeck.com/juntajima/epubhuairukaravivliostyledepdfwozuo-ru) by 田嶋淳([@JunTajima](https://twitter.com/JunTajima)) 
 電書魂
 
-### イベントの Twitter 実況のまとめ
+## イベントの Twitter 実況のまとめ
 
 - [Togetterまとめ：CSS組版 Vivliostyle 開発者とユーザーの集い 2019夏](https://togetter.com/li/1397878)
   - Twitter ハッシュタグ: [#Vivliostyle](https://twitter.com/search?q=%23Vivliostyle)
 
-### イベントの参加者による報告ブログ記事
+## イベントの参加者による報告ブログ記事
 
 - [アカベコマイリ： CSS 組版 Vivliostyle 開発者とユーザーの集い 2019 夏](https://akabeko.me/blog/2019/09/vivliostyle/)
 - [senooken.jp： 参加報告 CSS組版 #Vivliostyle 開発者とユーザーの集い 2019夏](https://senooken.jp/blog/2019/09/01/)

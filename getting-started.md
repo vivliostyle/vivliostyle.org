@@ -107,7 +107,7 @@ $ vivliostyle preview index.html
 
 <!-- pub -->
 {% capture pub %}
-<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Initial version will be released later this year)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Initial version will be released by the end of 2021)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
 Edit text/Markdown/HTML in the left pane and preview the formatted results in the right pane.
 
