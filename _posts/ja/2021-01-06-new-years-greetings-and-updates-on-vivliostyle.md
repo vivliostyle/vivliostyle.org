@@ -1,7 +1,7 @@
 ---
 title: 新年のご挨拶とVivliostyleのアップデートについて
 lang: ja
-image: /assets/posts/
+image: /assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/fig1.png
 author:
   - ogwata
 tags:
@@ -10,7 +10,7 @@ tags:
   - Vivliostyle Pub
   - Vivliostyle CLI
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><a href="https://vivliostyle.org/ja/sponsors/"><img src="/assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/fig1.png" alt="Implementation of named strings in Vivliostyle Viewer" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></a></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/fig1.png" alt="Implementation of named strings in Vivliostyle Viewer" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
 
 ## はじめに
@@ -32,7 +32,7 @@ Vivliostyleにとって昨年は、開発体制を整えたり、新プロジェ
 
 - [Test cases / Named Strings](https://raw.githack.com/vivliostyle/vivliostyle.js/master/packages/core/test/files/#Named_Strings)
 
-上記ページの “canary” をクリックすると named strings を実装したカナリア・バージョンの Vivliostyle Viewer （図上）が、“2019.11” か “2018.2” をクリックするとまだ実装してない過去バージョンのVivliostyle Viewer（図下）が起動し、両者を比較することができます。
+上記ページの “canary” または “stable” をクリックすると named strings を実装した最新バージョンの Vivliostyle Viewer （図上）が、“2019.11” か “2018.2” をクリックするとまだ実装してない過去バージョンのVivliostyle Viewer（図下）が起動し、両者を比較することができます。
 
 これを見れば、出版に詳しい方なら「ああ、天柱やノンブルね」とうなずかれるかもしれません。もちろんそれは正しいのですが、named strings の可能性はそれに留まるものではありません。たとえばbody要素の中で使えます。これにより本文や見出しの中でnamed stringsとして指定した任意の文字列、たとえば本のタイトルや著者名等を代入することができるのです。
 
@@ -44,11 +44,13 @@ Vivliostyleにとって昨年は、開発体制を整えたり、新プロジェ
 
 - [Vivliostyle CLI v3.0 new spec](https://github.com/vivliostyle/community/wiki/Vivliostyle-CLI-v3.0-new-spec)
 
-目玉となるのは、`--generate-webbook`オプションの追加です。これによりMarkdown（VFM）ファイルを読み込んで、webbook（本を作ることができるHTMLファイル群とCSS、画像、フォントなどの関連ファイルをフォルダにまとめるファイル形式）に出力できるようになります。webbookについては、2020年秋の開発者イベントにおける村上代表の発表をご参照下さい。
+目玉となるのは、WebBook生成機能の追加です。これによりMarkdown（VFM）ファイルを読み込んで、webbook（本を作るためのHTMLファイル群とCSS、画像、フォントなどの関連ファイルをフォルダにまとめるフォーマット）に出力できるようになります。webbookについては、2020年秋の開発者イベントにおける村上代表の発表をご参照下さい。
 
 - [これからのオープンな出版標準としての「WebBook」](https://github.com/vivliostyle/community/wiki/Rapid-publishing-for-public-health-books-against-COVID-19#%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%AA%E5%87%BA%E7%89%88%E3%81%AE%E6%A8%99%E6%BA%96%E3%81%A8%E3%81%97%E3%81%A6webbook)
 
 このwebbookを中間ファイルとして出力することで、そこからEPUB、Webページ、PDFなどへ容易に変換することができるようになります。夢が広がりますね。
+
+なお、[Issue #86](https://github.com/vivliostyle/vivliostyle-cli/issues/86)でv3.0 の仕様について議論が続いているので、興味のある方はぜひご参加ください。
 
 ## そしてVivliostyle Pub について
 
