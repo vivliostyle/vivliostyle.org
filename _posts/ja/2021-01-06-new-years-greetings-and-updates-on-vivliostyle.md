@@ -5,7 +5,8 @@ image: /assets/posts/
 author:
   - ogwata
 tags:
-  - リリース, Vivliostyle Core
+  - リリース
+  - Vivliostyle Core
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><a href="https://vivliostyle.org/ja/sponsors/"><img src="/assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/fig1.png" alt="Implementation of named strings in Vivliostyle Viewer" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></a></div>
 
