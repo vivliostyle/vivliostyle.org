@@ -5,7 +5,7 @@ image: /assets/posts/
 author:
   - ogwata
 tags:
-  - リリース,Vivliostyle Core
+  - リリース, Vivliostyle Core
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><a href="https://vivliostyle.org/ja/sponsors/"><img src="/assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/fig1.png" alt="Implementation of named strings in Vivliostyle Viewer" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></a></div>
 
@@ -32,6 +32,8 @@ Vivliostyleにとって昨年は、開発体制を整えたり、新プロジェ
 上記ページの “canary” をクリックすると named strings を実装したカナリア・バージョンの Vivliostyle Viewer （図上）が、“2019.11” か “2018.2” をクリックするとまだ実装してない過去バージョンのVivliostyle Viewer（図下）が起動し、両者を比較することができます。
 
 これを見れば、出版に詳しい方なら「ああ、天柱やノンブルね」とうなずかれるかもしれません。もちろんそれは正しいのですが、named strings の可能性はそれに留まるものではありません。たとえばbody要素の中で使えます。これにより本文や見出しの中でnamed stringsとして指定した任意の文字列、たとえば本のタイトルや著者名等を代入することができるのです。
+
+なお、これらのバージョンの開発には、[株式会社日本ビジネスプレス](https://jbpress.ismedia.jp/)より支援をいただいていることを記して感謝いたします。
 
 ## Vivliostyle CLI  v3.0 と webbook への出力
 
