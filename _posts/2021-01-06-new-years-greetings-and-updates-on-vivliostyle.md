@@ -15,15 +15,15 @@ tags:
 
 ## Introduction
 
-Happy New Year to you all! Thank you for Vivliostyle again this year.
+Happy New Year to you all! Vivliostyle would like to thank all the contributors who have collaborated with us on our projects over the last year and all the users of our products.
 
-Last year was a “year of preparation” for Vivliostyle, as we set up our development system and launched new projects. This year, we would like to make the most of our achievements and make a big leap forward.
+Last year was a year of preparation for Vivliostyle, as we set up our development system and launched new projects. This year, we would like to make the most of our achievements and make a big leap forward.
 
 Last year Vivliostyle has been steadily updating and adding features. Originally, we should have announced the release on this blog, but we ware unable to do so last year. So we'd like to give you a brief overview of Vivliostyle's current development status in this post.
 
 ## Added features for vivliostyle.js
 
-First of all, the update history of [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js), which is the foundation of the entire project, can be found on the [GitHub release history page](https://github.com/vivliostyle/vivliostyle.js/releases). The following two features have been added that should not be overlooked.
+First, let's talk about vivliostyle.js, the foundation of the entire project. The complete changelog of [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js) can be found on the [GitHub release history page](https://github.com/vivliostyle/vivliostyle.js/releases). The following two features are especially worth highlighting:
 
 - [v2.2.0 (2020-11-26)](https://github.com/vivliostyle/vivliostyle.js/releases/tag/v2.2.0).......Add page slider in Vivliostyle Viewer UI.
 - [v2.4.0 (2020-12-28)](https://github.com/vivliostyle/vivliostyle.js/releases/tag/v2.4.0).......Support [named strings<i class="fas fa-external-link-alt"></i>](https://www.w3.org/TR/css-gcpm-3/#named-strings)for running headers and footers.
@@ -32,9 +32,9 @@ One of the most promising ones is “named strings”. The following test page w
 
 - [Test cases / Named Strings](https://raw.githack.com/vivliostyle/vivliostyle.js/master/packages/core/test/files/#Named_Strings)
 
- Click on “canary” or “stable” to launch the latest version of Vivliostyle Viewer (shown in the figure above), which implements named strings. Clicking on “2019.11” or “2018.2” will launch a previous version of Vivliostyle Viewer ( shown in the figure below ) that has not yet implemented named strings. You can thus compare this two.
+ Click on “canary” and “stable” to launch the latest version of Vivliostyle Viewer (shown in the figure above), which implements named strings. Clicking on “2019.11” or “2018.2” will launch a previous version of Vivliostyle Viewer ( shown in the figure below ) that has not yet implemented named strings. You can thus compare this two.
 
-If you are familiar with publishing, you may nod your head and say, “Oh, you mean Running Heads”. That's true, of course, but it's not the only possibility for “named strings”. For example, it can be used in the body element, which allows you to substitute any string you specify as “named strings” in the body or headings, such as the title of a book or the name of the author.
+If you are familiar with publishing, you may recognize this feature as useful for running headers. And it does work for that, but it is not the only way to use “named strings”. For example, it can be used in the body element, which allows you to substitute any string you specify as “named strings” in the body or headings, such as the title of a book or the name of the author.
 
 In addition, express our deepest gratitude Japan Business Press Co.Ltd, for their support in the development of these versions.
 
