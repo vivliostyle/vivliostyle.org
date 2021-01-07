@@ -32,7 +32,7 @@ One of the most promising ones is “named strings”. The following test page w
 
 - [Test cases / Named Strings](https://raw.githack.com/vivliostyle/vivliostyle.js/master/packages/core/test/files/#Named_Strings)
 
- Click on “canary” and “stable” to launch the latest version of Vivliostyle Viewer (shown in the figure above), which implements named strings. Clicking on “2019.11” or “2018.2” will launch a previous version of Vivliostyle Viewer ( shown in the figure below ) that has not yet implemented named strings. You can thus compare this two.
+ Click on “stable” or “canary” to launch the latest versions of Vivliostyle Viewer (shown in the figure above). Both of them contain the “named strings” feature. Clicking on “2019.11” or “2018.2” will launch an older version of Vivliostyle Viewer (shown in the figure below) without said “named strings” feature. This way you can compare versions of Vivliostyle with or without the “named strings” feature.
 
 If you are familiar with publishing, you may recognize this feature as useful for running headers. And it does work for that, but it is not the only way to use “named strings”. For example, it can be used in the body element, which allows you to substitute any string you specify as “named strings” in the body or headings, such as the title of a book or the name of the author.
 
