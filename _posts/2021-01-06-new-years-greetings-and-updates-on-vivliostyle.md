@@ -36,7 +36,7 @@ One of the most promising ones is “named strings”. The following test page w
 
 If you are familiar with publishing, you may recognize this feature as useful for running headers. And it does work for that, but it is not the only way to use “named strings”. For example, it can be used in the body element, which allows you to substitute any string you specify as “named strings” in the body or headings, such as the title of a book or the name of the author.
 
-In addition, express our deepest gratitude Japan Business Press Co.Ltd, for their support in the development of these versions.
+We also want to express our deepest gratitude to Japan Business Press Co.Ltd for their support in the development of these versions.
 
 ## Vivliostyle CLI v3.0 and output to webbook
 
@@ -54,7 +54,7 @@ In addition, there is an ongoing discussion about the v3.0 specification at [Iss
 
 ## And about Vivliostyle Pub
 
-Finally, let's talk about our main goal, Vivliostyle Pub. vivliostyle.js and Vivliostyle CLI 3.0 that we' ve mentioned so far are all elemental technologies of Vivliostyle Pub. Its requirements specification is summarized below.
+Finally, let's talk about our main goal, Vivliostyle Pub. vivliostyle.js and Vivliostyle CLI 3.0 that we have mentioned so far are all elemental technologies of Vivliostyle Pub. Its requirements specification is summarized below.
 
 - [Vivliostyle Pub v1 要件仕様 (WIP)](https://github.com/vivliostyle/community/wiki/Vivliostyle-Pub-v1-Req)
 
