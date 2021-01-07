@@ -19,11 +19,11 @@ Happy New Year to you all! Thank you for Vivliostyle again this year.
 
 Last year was a “year of preparation” for Vivliostyle, as we set up our development system and launched new projects. This year, we would like to make the most of our achievements and make a big leap forward.
 
-Last year Vivliostyle has been steadily updating and adding features. Originally, We should have announced the release on this blog, but We ware unable to do so last year. So We'd like to give you a brief overview of Vivliostyle's current development status in this post.
+Last year Vivliostyle has been steadily updating and adding features. Originally, We should have announced the release on this blog, but We ware unable to do so last year. So we'd like to give you a brief overview of Vivliostyle's current development status in this post.
 
 ## Added features for vivliostyle.js
 
-First of all, the update history of [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js), which is the foundation of the entire project, can be found on the [GitHub release history page](https://github. com/vivliostyle/vivliostyle.js/releases). The following two features have been added that should not be overlooked.
+First of all, the update history of [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js), which is the foundation of the entire project, can be found on the [GitHub release history page](https://github.com/vivliostyle/vivliostyle.js/releases). The following two features have been added that should not be overlooked.
 
 - [v2.2.0 (2020-11-26)](https://github.com/vivliostyle/vivliostyle.js/releases/tag/v2.2.0).......Add page slider in Vivliostyle Viewer UI.
 - [v2.4.0 (2020-12-28)](https://github.com/vivliostyle/vivliostyle.js/releases/tag/v2.4.0).......Support [named strings<i class="fas fa-external-link-alt"></i>](https://www.w3.org/TR/css-gcpm-3/#named-strings)for running headers and footers.
