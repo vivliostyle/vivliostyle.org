@@ -1,5 +1,5 @@
 ---
-title: New Year's Message and Update on Vivliostyle
+title: New Year's Greetings and Updates on Vivliostyle
 lang: en
 image: /assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/fig1.png
 author:
@@ -19,7 +19,7 @@ Happy New Year to you all! Thank you for Vivliostyle again this year.
 
 Last year was a “year of preparation” for Vivliostyle, as we set up our development system and launched new projects. This year, we would like to make the most of our achievements and make a big leap forward.
 
-Last year Vivliostyle has been steadily updating and adding features. Originally, We should have announced the release on this blog, but We ware unable to do so last year. So we'd like to give you a brief overview of Vivliostyle's current development status in this post.
+Last year Vivliostyle has been steadily updating and adding features. Originally, we should have announced the release on this blog, but we ware unable to do so last year. So we'd like to give you a brief overview of Vivliostyle's current development status in this post.
 
 ## Added features for vivliostyle.js
 
