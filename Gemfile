@@ -7,6 +7,7 @@ gem 'jekyll-redirect-from'
 gem 'jekyll-default-layout'
 gem 'jemoji'
 gem 'tzinfo-data'
+gem 'webrick'
 
 group :jekyll_plugins do
   gem 'github-pages'
