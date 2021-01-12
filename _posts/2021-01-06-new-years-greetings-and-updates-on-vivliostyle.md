@@ -5,7 +5,7 @@ image: /assets/posts/2021-01-06-new-years-greetings-and-updates-on-vivliostyle/f
 author:
   - ogwata
 tags:
-  - リリース
+  - Release
   - Vivliostyle Core
   - Vivliostyle Pub
   - Vivliostyle CLI
