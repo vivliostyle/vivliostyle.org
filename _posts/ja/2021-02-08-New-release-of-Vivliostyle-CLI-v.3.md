@@ -1,5 +1,5 @@
 ---
-title: Vivliostyle CLI がメジャーバージョンアップ
+title: Vivliostyle CLI がv.3にメジャーバージョンアップ
 lang: ja
 image: /assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/@@@.xxx
 author:
@@ -39,4 +39,4 @@ tags:
 7. [Chromium<i class="fas fa-external-link-alt"></i>](https://www.chromium.org/Home)により組版結果をプレビュー(〜1.05)
 8. ChromiumからPDFを出力(〜1.15)
 
-以上述べたような v.3へのバージョンアップによって、Vivliostyle CLI の実用性は格段に向上しました。言うまでもなく、CLI は来るべき Vivliostyle Pub の心臓部とも言える重要コンポーネントです。Vivliostyleの次なるステップに、どうかご注目ください。
+以上述べたような v.3へのバージョンアップによって、Vivliostyle CLI の実用性は格段に向上しました。言うまでもなく、CLI は来るべき Vivliostyle Pub の心臓部とも言える重要コンポーネントです。Vivliostyleの次なるステップに、どうかご注目ください！
