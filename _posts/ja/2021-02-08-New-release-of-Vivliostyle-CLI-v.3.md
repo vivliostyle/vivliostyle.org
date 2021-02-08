@@ -23,7 +23,7 @@ tags:
 - 設定ファイル`vivliostyle.config.js`を使って出版物のカスタマイズが可能になった
 - [Vivliostyle Themes](https://github.com/vivliostyle/themes)をスタイルに指定できるようになった
 - 以下の形式を読み込めるようになった
-    - [“VFM”](https://vivliostyle.org/ja/make-books-with-create-book/#vfm-%E3%81%A7%E5%8E%9F%E7%A8%BF%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)……書籍用に独自拡張したMarkdown
+    - [“VFM”](https://vivliostyle.org/ja/make-books-with-create-book/#vfm-%E3%81%A7%E5%8E%9F%E7%A8%BF%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)……書籍用に拡張したMarkdown
     - “EPUB”……電子書籍のデファクト形式
 - 以下の形式で出力できるようになった
     - [webpub](https://github.com/vivliostyle/community/wiki/Rapid-publishing-for-public-health-books-against-COVID-19#%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%AA%E5%87%BA%E7%89%88%E3%81%AE%E6%A8%99%E6%BA%96%E3%81%A8%E3%81%97%E3%81%A6webbook)……HTMLの交換形式（[前回エントリの](https://vivliostyle.org/ja/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/) “webbook” と同じ。変更理由は[こちら](https://github.com/vivliostyle/vivliostyle-cli/pull/116)）
