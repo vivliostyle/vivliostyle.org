@@ -1,5 +1,5 @@
 ---
-title: New release of Vivliostyle CLI v.3
+title: Vivliostyle CLI is Major Upgrade to v.3
 lang: en
 image: /assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.png
 author:
