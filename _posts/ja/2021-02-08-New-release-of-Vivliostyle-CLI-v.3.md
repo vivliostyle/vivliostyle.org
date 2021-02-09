@@ -11,7 +11,7 @@ tags:
   - VFM
   - Vivliostyle Themes
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><video src="/assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.mp4" alt="New release of Vivliostyle CLI v.3" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><video src="/assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.mp4"  loop autoplay muted alt="New release of Vivliostyle CLI v.3" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
 
 今年初めてのエントリ[「新年のご挨拶とVivliostyleのアップデートについて」](https://vivliostyle.org/ja/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/)の中で、Vivliostyle CLI v.3を準備中であることを書きましたが、本日正式にリリースしたことをお知らせします！
