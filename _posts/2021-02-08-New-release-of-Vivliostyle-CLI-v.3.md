@@ -22,7 +22,7 @@ In my first entry of the year, [“New Year's Greetings and Updates on Vivliosty
 
 As a major upgrade, v.3 includes many changes. Let's list just some of a major new features:
 
-- Publications can now be customized using a `vivliostyle.config.js` initial file
+- Publications can now be customized using a `vivliostyle.config.js` configuration file
 - [Vivliostyle Themes](https://github.com/vivliostyle/themes) can now be specified as a style.
 - The following input formats are now also accepted:
     - [“VFM”](https://vivliostyle.org/make-books-with-create-book/#lets-write-a-manuscript-with-vfm)......Markdown enhanced for books.
@@ -30,12 +30,12 @@ As a major upgrade, v.3 includes many changes. Let's list just some of a major n
 - We support the following output format:
     - [webpub](https://github.com/vivliostyle/community/wiki/Rapid-publishing-for-public-health-books-against-COVID-19#%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%AA%E5%87%BA%E7%89%88%E3%81%AE%E6%A8%99%E6%BA%96%E3%81%A8%E3%81%97%E3%81%A6webbook)......HTML exchange format (Same as “webbook” in [the entry of 2021/01/06.](https://vivliostyle.org/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/#vivliostyle-cli-v30-and-output-to-webbook) Same as “webbook”. The reason for the change is [here](https://github.com/vivliostyle/vivliostyle-cli/pull/116))
 
-Of the above, [@spring_raining<i class="fas fa-external-link-alt"></i>](https://twitter.com/spring_raining), a contributor, made a short video about the initial file, Vivliostyle Themes, and the build process using VFM. The video is shown at the beginning of this entry. Here is a detailed timeline of the video:
+Of the above, [@spring_raining<i class="fas fa-external-link-alt"></i>](https://twitter.com/spring_raining), a contributor, made a short video about the configuration file, Vivliostyle Themes, and the build process using VFM. The video is shown at the beginning of this entry. Here is a detailed timeline of the video:
 
 1. Overview of the work. (to 0.01 sec.)
-2. Generate initial files using a terminal. (to 0.02 sec.)
-3. Load the initial file `Vivliostyle.config.js`. (to 0.12 sec.)
-4. Customize by overwriting the initial files. (to 0.21 sec.)
+2. Generate configuration files using a terminal. (to 0.02 sec.)
+3. Load the configuration file `Vivliostyle.config.js`. (to 0.12 sec.)
+4. Customize by overwriting the configuration files. (to 0.21 sec.)
 5. Using a terminal to load the style file.  ([Bunko Theme](https://github.com/vivliostyle/themes#bunko)). (to 0.27 sec.)
 6. Use a terminal to read Markdown file, then build and output PDF file. (to 0.47 sec.)
 7. Using [Chromium<i class="fas fa-external-link-alt"></i>](https://www.chromium.org/Home) to Preview Typesetting Results.(to 1.05 sec.)
