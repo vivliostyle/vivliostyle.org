@@ -20,9 +20,9 @@ In my first entry of the year, [“New Year's Greetings and Updates on Vivliosty
 
 - [vivliostyle/vivliostyle-cli/release/v3.0.0](https://github.com/vivliostyle/vivliostyle-cli/releases/tag/v3.0.0)
 
-As a major upgrade, v.3 includes many changes. Let's list just some of a major new features.
+As a major upgrade, v.3 includes many changes. Let's list just some of a major new features:
 
-- Publications can now be customized using a `vivliostyle.config.js` configuration file
+- Publications can now be customized using a `vivliostyle.config.js` initial file
 - [Vivliostyle Themes](https://github.com/vivliostyle/themes) can now be specified as a style.
 - The following input formats are now also accepted:
     - [“VFM”](https://vivliostyle.org/make-books-with-create-book/#lets-write-a-manuscript-with-vfm)......Markdown enhanced for books.
