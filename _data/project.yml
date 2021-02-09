@@ -17,7 +17,7 @@ viewer:
       fixed: /assets/projects/screenshot-viewer-fixed.png
 cli:
   name: Vivliostyle CLI
-  version: v3.0.1
+  version: v3.0.3
   github: https://github.com/vivliostyle/vivliostyle-cli
   thumbnail: /assets/projects/thumbnail-cli.png
   screenshot: /assets/projects/screenshot-cli.png
@@ -25,7 +25,7 @@ pub:
   name: Vivliostyle Pub
   version: v0.0.0
   github: https://github.com/vivliostyle/vivliostyle-pub
-  # url: 
+  # url:
   sample:
     ja: /ja/samples/
     en: /samples/
@@ -36,10 +36,10 @@ core:
   version: v2.4.2
   github: https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/core
   thumbnail: /assets/projects/thumbnail-core.png
-  # screenshot: 
+  # screenshot:
 print:
   name: Vivliostyle Print
-  # version: 
+  # version:
   github: https://github.com/vivliostyle/vivliostyle-print
-  # thumbnail: 
-  # screenshot: 
+  # thumbnail:
+  # screenshot:
