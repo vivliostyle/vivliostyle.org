@@ -13,7 +13,7 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><video src="/assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.mp4"  controls alt="New release of Vivliostyle CLI v.3" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
-(The original article is [Vivliostyle CLI がにメジャーバージョンアップ](https://vivliostyle.org/blog/2021/02/08/New-release-of-Vivliostyle-CLI-v.3))
+(The original article is [Vivliostyle CLI がv3にメジャーバージョンアップ](https://vivliostyle.org/blog/2021/02/08/New-release-of-Vivliostyle-CLI-v.3))
 
 In our first entry of the year, [“New Year's Greetings and Updates on Vivliostyle”](https://vivliostyle.org/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/), We are pleased to announce that we have officially released v3.0.0 on February 7!
 
