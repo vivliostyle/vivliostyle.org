@@ -15,7 +15,7 @@ tags:
 
 (The original article is [Vivliostyle CLI がv3にメジャーバージョンアップ](https://vivliostyle.org/blog/2021/02/08/New-release-of-Vivliostyle-CLI-v.3))
 
-In our first entry of the year, [“New Year's Greetings and Updates on Vivliostyle”](https://vivliostyle.org/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/), We are pleased to announce that we have officially released v3.0.0 on February 7!
+In our first entry of the year, [“New Year's Greetings and Updates on Vivliostyle”](https://vivliostyle.org/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/), we wrote that Vivliostyle CLI v3 was being prepared, and we are happy to announce that v3.0.0 was officially released on February 7!
 
 
 - [vivliostyle/vivliostyle-cli/release/v3.0.0](https://github.com/vivliostyle/vivliostyle-cli/releases/tag/v3.0.0)
