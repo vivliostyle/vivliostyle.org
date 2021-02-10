@@ -1,5 +1,5 @@
 ---
-title: Vivliostyle CLI is Major Upgrade to v.3
+title: Vivliostyle CLI has been majorly upgraded to v3
 lang: en
 image: /assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.png
 author:
@@ -13,14 +13,14 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><video src="/assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.mp4"  controls alt="New release of Vivliostyle CLI v.3" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
-(The original article is [Vivliostyle CLI がv.3にメジャーバージョンアップ](https://vivliostyle.org/blog/2021/02/08/New-release-of-Vivliostyle-CLI-v.3))
+(The original article is [Vivliostyle CLI がにメジャーバージョンアップ](https://vivliostyle.org/blog/2021/02/08/New-release-of-Vivliostyle-CLI-v.3))
 
-In my first entry of the year, [“New Year's Greetings and Updates on Vivliostyle”](https://vivliostyle.org/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/), I wrote that Vivliostyle CLI v.3 was in preparation, and I'm happy to announce that it was officially released today!
+In our first entry of the year, [“New Year's Greetings and Updates on Vivliostyle”](https://vivliostyle.org/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/), We are pleased to announce that we have officially released v3.0.0 on February 7!
 
 
 - [vivliostyle/vivliostyle-cli/release/v3.0.0](https://github.com/vivliostyle/vivliostyle-cli/releases/tag/v3.0.0)
 
-As a major upgrade, v.3 includes many changes. Let's list just some of a major new features:
+As a major upgrade,  includes many changes. Let's list just some of a major new features:
 
 - Publications can now be customized using a `vivliostyle.config.js` configuration file
 - [Vivliostyle Themes](https://github.com/vivliostyle/themes) can now be specified as a style.
@@ -41,4 +41,4 @@ Of the above, [@spring_raining<i class="fas fa-external-link-alt"></i>](https://
 7. Using [Chromium<i class="fas fa-external-link-alt"></i>](https://www.chromium.org/Home) to Preview Typesetting Results.(to 1.05 sec.)
 8. Export PDF file from Chromium. (to 1.15 sec.)
 
-With the above mentioned upgrade to v.3, the utility of the Vivliostyle CLI has been greatly improved. The CLI is a key component at the heart of [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub), which we hope to release this year. Please stay tuned for Vivliostyle's next step!
+With the above mentioned upgrade to , the utility of the Vivliostyle CLI has been greatly improved. The CLI is a key component at the heart of [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub), which we hope to release this year. Please stay tuned for Vivliostyle's next step!

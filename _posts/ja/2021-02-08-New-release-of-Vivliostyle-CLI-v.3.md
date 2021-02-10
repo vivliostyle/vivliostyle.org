@@ -1,5 +1,5 @@
 ---
-title: Vivliostyle CLI がv.3にメジャーバージョンアップ
+title: Vivliostyle CLI がv3にメジャーバージョンアップ
 lang: ja
 image: /assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.png
 author:
@@ -14,11 +14,11 @@ tags:
 <div style="float: right; margin: 0 0 1em 1em;"><video src="/assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliostyle-v3-instruction-720p.mp4"  controls alt="New release of Vivliostyle CLI v.3" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
 
-今年初めてのエントリ[「新年のご挨拶とVivliostyleのアップデートについて」](https://vivliostyle.org/ja/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/)の中で、Vivliostyle CLI v.3を準備中であることを書きましたが、本日正式にリリースしたことをお知らせします！
+今年初めてのエントリ[「新年のご挨拶とVivliostyleのアップデートについて」](https://vivliostyle.org/ja/blog/2021/01/06/new-years-greetings-and-updates-on-vivliostyle/)の中で、Vivliostyle CLI v3を準備中であることを書きましたが、2月7日、正式にv3.0.0をリリースしたことをお知らせします！
 
 - [vivliostyle/vivliostyle-cli/release/v3.0.0](https://github.com/vivliostyle/vivliostyle-cli/releases/tag/v3.0.0)
 
-メジャーバージョンアップだけあって、v.3には多くの変更が含まれています。そのうち主要な新機能だけでも挙げてみましょう。
+メジャーバージョンアップだけあって、v3には多くの変更が含まれています。そのうち主要な新機能だけでも挙げてみましょう。
 
 - 設定ファイル`vivliostyle.config.js`を使って出版物のカスタマイズが可能になりました
 - [Vivliostyle Themes](https://github.com/vivliostyle/themes)をスタイルに指定できるようになりました
@@ -39,4 +39,4 @@ tags:
 7. [Chromium<i class="fas fa-external-link-alt"></i>](https://www.chromium.org/Home)により組版結果をプレビュー(〜1.05)
 8. ChromiumからPDFを出力(〜1.15)
 
-以上述べたような v.3へのバージョンアップによって、Vivliostyle CLI の実用性は格段に向上しました。このCLIは今年公開を目指す [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub) の心臓部とも言える重要コンポーネントです。Vivliostyleの次なるステップに、どうかご注目ください！
+以上述べたような v3へのバージョンアップによって、Vivliostyle CLI の実用性は格段に向上しました。このCLIは今年公開を目指す [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub) の心臓部とも言える重要コンポーネントです。Vivliostyleの次なるステップに、どうかご注目ください！
