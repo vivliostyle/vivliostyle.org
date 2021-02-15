@@ -13,7 +13,7 @@
   }
 
   function listTemplate(name, base_url) {
-    const anchor = name.toLowerCase().replace(/\s/g, "-");
+    const anchor = name.toLowerCase().replace(/\s/g, "-").replace(/[()\/\.]/g, "");
 
     return `
       <li>

@@ -6,33 +6,35 @@ lang: ja
 
 
 {% capture guide %}
-## チュートリアルガイド
+## 📖 ユーザーガイド
+{% include fetch-guide-urls.html %}
+
+### Vivliostyle Viewer
+<ul id="vivliostyle-viewer-list"></ul>
+{% include fetch-guide-url.html
+  id="vivliostyle-viewer-list"
+  url="https://docs.vivliostyle.org/#/ja/vivliostyle-viewer"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/vivliostyle-viewer.md"
+%}
+
+### Vivliostyle CLI
+<ul id="vivliostyle-cli-list"></ul>
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-list"
+  url="https://docs.vivliostyle.org/#/ja/vivliostyle-cli"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/vivliostyle-cli.md"
+%}
 
 ### Create Book
-
 <ul id="create-book-list"></ul>
-
-## ガイド
-
-### ユーザーガイド
-
-<ul id="user-guide-list"></ul>
-
-### コントリビューションガイド
-
-<ul id="contribution-guide-list"></ul>
-
-{% include fetch-guide-urls.html %}
 {% include fetch-guide-url.html
   id="create-book-list"
   url="https://docs.vivliostyle.org/#/ja/create-book"
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/create-book.md"
 %}
-{% include fetch-guide-url.html
-  id="user-guide-list"
-  url="https://docs.vivliostyle.org/#/ja/user-guide"
-  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/user-guide.md"
-%}
+
+## 🛠 コントリビューションガイド
+<ul id="contribution-guide-list"></ul>
 {% include fetch-guide-url.html
   id="contribution-guide-list"
   url="https://docs.vivliostyle.org/#/ja/contribution-guide"
@@ -42,7 +44,7 @@ lang: ja
 
 
 {% capture reference %}
-## リファレンス
+## 📚 リファレンス
 
 - [API リファレンス](https://docs.vivliostyle.org/#/ja/api)
 - [サポートする CSS 機能](https://docs.vivliostyle.org/#/ja/supported-css-features)

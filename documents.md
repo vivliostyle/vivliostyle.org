@@ -5,33 +5,35 @@ title: Documents
 
 
 {% capture guide %}
-## Tutorial Guide
+## 📖 User Guide
+{% include fetch-guide-urls.html %}
+
+### Vivliostyle Viewer
+<ul id="vivliostyle-viewer-list"></ul>
+{% include fetch-guide-url.html
+  id="vivliostyle-viewer-list"
+  url="https://docs.vivliostyle.org/#/vivliostyle-viewer"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/vivliostyle-viewer.md"
+%}
+
+### Vivliostyle CLI
+<ul id="vivliostyle-cli-list"></ul>
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-list"
+  url="https://docs.vivliostyle.org/#/vivliostyle-cli"
+  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/vivliostyle-cli.md"
+%}
 
 ### Create Book
-
 <ul id="create-book-list"></ul>
-
-## Guide
-
-### User Guide
-
-<ul id="user-guide-list"></ul>
-
-### Contribution Guide
-
-<ul id="contribution-guide-list"></ul>
-
-{% include fetch-guide-urls.html %}
 {% include fetch-guide-url.html
   id="create-book-list"
   url="https://docs.vivliostyle.org/#/create-book"
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/create-book.md"
 %}
-{% include fetch-guide-url.html
-  id="user-guide-list"
-  url="https://docs.vivliostyle.org/#/user-guide"
-  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/user-guide.md"
-%}
+
+## 🛠 Contribution Guide
+<ul id="contribution-guide-list"></ul>
 {% include fetch-guide-url.html
   id="contribution-guide-list"
   url="https://docs.vivliostyle.org/#/contribution-guide"
@@ -43,7 +45,7 @@ title: Documents
 {% capture reference %}
 ## Reference
 
-- [API Reference](https://docs.vivliostyle.org/#/api)
+- [Core API Reference](https://docs.vivliostyle.org/#/api)
 - [Supported CSS Features](https://docs.vivliostyle.org/#/supported-css-features)
 {% endcapture %}
 
