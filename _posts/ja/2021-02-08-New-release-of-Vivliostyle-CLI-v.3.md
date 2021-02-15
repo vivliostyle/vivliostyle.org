@@ -43,4 +43,4 @@ tags:
 
 ## 追記（2021/02/16）
 
-[ドキュメント>ユーザガイド](https://vivliostyle.org/ja/documents/#-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89)に[「Vivliostyle CLI」](https://vivliostyle.org/ja/documents/#vivliostyle-cli)を追加しました。これはインストールから始まり、オプションごとにその機能を詳しく説明した公式ガイドです。ぜひご一読ください！
+[ドキュメント>ユーザガイド](https://vivliostyle.org/ja/documents/#-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%AC%E3%82%A4%E3%83%89)に[「Vivliostyle CLI」](https://vivliostyle.org/ja/documents/#vivliostyle-cli)を追加しました。これはインストールから始まり、目的ごとにその機能を詳しく説明した公式ガイドです。ぜひご一読ください！

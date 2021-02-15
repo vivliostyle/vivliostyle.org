@@ -44,4 +44,4 @@ With the above mentioned upgrade to , the utility of the Vivliostyle CLI has bee
 
 ## Postscript (2021/02/16)
 
-[“Vivliostyle CLI”](https://vivliostyle.org/documents/#vivliostyle-cli) has been added to [“Documentation > User Guides”](https://vivliostyle.org/documents/#-user-guide). This is an official guide that starts with installation and goes through each option in detail explaining its functionality. Please check it out!
+[“Vivliostyle CLI”](https://vivliostyle.org/documents/#vivliostyle-cli) has been added to [“Documentation > User Guides”](https://vivliostyle.org/documents/#-user-guide). This is an official guide that starts with installation and goes through each purpose in detail explaining its functionality. Please check it out!
