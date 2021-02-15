@@ -41,3 +41,7 @@ Of the above, [@spring_raining<i class="fas fa-external-link-alt"></i>](https://
 8. Export PDF file from Chromium. (to 1.15 sec.)
 
 With the above mentioned upgrade to , the utility of the Vivliostyle CLI has been greatly improved. The CLI is a key component at the heart of [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub), which we hope to release this year. Please stay tuned for Vivliostyle's next step!
+
+## Postscript (2021/02/16)
+
+[“Vivliostyle CLI”](https://vivliostyle.org/documents/#vivliostyle-cli) has been added to [“Documentation > User Guides”](https://vivliostyle.org/documents/#-user-guide). This is an official guide that starts with installation and goes through each purpose in detail explaining its functionality. Please check it out!
