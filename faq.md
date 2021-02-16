@@ -67,7 +67,7 @@ An example of displaying unzipped EPUB on GitHub:
 
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
-👉User Guide: [EPUB](https://docs.vivliostyle.org/#/user-guide#epub)
+👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/#/vivliostyle-viewer#epub)
 
 ### How to integrate Vivliostyle Viewer into my website?
 
@@ -88,7 +88,7 @@ The TOC (Table of Contents) panel is enabled by setting [**Book Mode**](#what-is
 </nav>
 ```
 
-👉User Guide: [TOC panel](https://docs.vivliostyle.org/#/user-guide#toc-panel)
+👉[Vivliostyle Viewer User Guide: TOC panel](https://docs.vivliostyle.org/#/vivliostyle-viewer#toc-panel)
 
 👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
@@ -111,7 +111,7 @@ When you enable [**Book Mode**](#what-is-book-mode) with Vivliostyle Viewer, and
 </nav>
 ```
 
-👉User Guide: [Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/user-guide#web-publications-multi-html-documents)
+👉[Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/vivliostyle-viewer#web-publications-multi-html-documents)
 
 👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
@@ -151,45 +151,21 @@ You can also specify the page size by **User Style Preferences** → **Page Size
 
 ### How to enable PDF Bookmarks?
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) v2.1 and later allow you to automatically generate PDF Bookmarks with the table of contents data in your document.
+[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) can automatically generate PDF Bookmarks with the table of contents data in your document. PDF Bookmarks are available for table-of-contents navigation in PDF viewing software such as Adobe Acrobat.
 
-To enable PDF bookmarks, use `vivliostyle build` command the `--book` option.
-
-Example:
-```
-vivliostyle build --book --size A4 --output example.pdf example.html
-```
+👉[Vivliostyle CLI User Guide: Generate PDF Bookmarks](https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-bookmarks)
 
 ### How to convert EPUB to PDF?
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) can generate PDF files from unzipped EPUB files. To do so, give the `vivliostyle build` command with the --book option and the directory of the unzipped EPUB as input.
+[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) can generate PDF files from EPUB or unzipped EPUB files.
 
-For example, to convert an EPUB file `example.epub` to PDF `example.pdf`, first unzip the EPUB file and run vivliostyle, as follows:
-
-```
-unzip example.epub -d example/
-vivliostyle build --book --size A4 --output example.pdf example/
-```
+👉[Vivliostyle CLI User Guide: Generate PDF from EPUB](https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-from-epub)
 
 ### How to generate PDF for print (PDF/X-1a format)?
 
 You can use `vivliostyle build` command with the `--press-ready` option to output in PDF/X-1a format suitable for printing.
 
-To use this feature, you need [Ghostscript](https://www.ghostscript.com) and [Xpdf](https://www.xpdfreader.com/) (or [Poppler](https://poppler.freedesktop.org)) installed. Here's how to install them on major operating systems:
-
-macOS (with [Homebrew](https://brew.sh)):
-```
-brew install poppler ghostscript
-```
-
-Ubuntu:
-```
-apt-get install poppler-utils ghostscript
-```
-
-Windows:
-- Download and install the Ghostscript for Windows at <span class="url"><https://www.ghostscript.com/download/gsdnld.html></span>. Then, add the installed Ghostscript's bin directory (e.g., "C:\Program Files\gs\gs9.52\bin") to the `PATH` environment variable.
-- Download and install the Xpdf command line tools for Windows at <http://www.xpdfreader.com/download.html>. Then, add the installed Xpdf's bin directory (e.g., "C:\xpdf-tools-win-4.02\bin64") to the `PATH` environment variable.
+👉[Vivliostyle CLI User Guide: Generate PDF for print (PDF/X-1a format)](https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-for-print-pdfx-1a-format)
 
 ## Create Book FAQ
 
@@ -197,7 +173,7 @@ Windows:
 
 [Create Book](https://www.npmjs.com/package/create-book) makes an environment for creating a book.
 
-👉[Tutorial Guide: Create Book](https://docs.vivliostyle.org/#/create-book)
+👉[Create Book User Guide](https://docs.vivliostyle.org/#/create-book)
 
 ### How to customize a theme?
 
@@ -214,27 +190,20 @@ Then, change the value of `theme:` in `vivliostyle.config.js` as follows:
 ```
 ↓
 ```
-  theme: 'my-theme',
+  theme: 'my-theme/theme.css',
 ```
 
-This will allow you to customize the style sheets in the `my-theme` folder and change the style at will.
+This will allow you to customize the style sheet at will.
 
-It is also possible to create your own theme without copying an existing theme package. In that case, you need to create a `package.json` file in your theme folder, in this case the `my-theme` folder, as follows:
-
-```
-{
-  "name": "my-theme",
-  "main": "theme.css"
-}
-```
+The style sheet `theme.css` is created using [Sass](https://sass-lang.com/), and its source are the `*.scss` files in the `scss/` folder. To reflect the changes in the SCSS files to the CSS file, run `npm install` in the copied theme folder (`my-theme/` in this example), and then run `npm run build` or `npm run dev`.
 
 ## CSS Typesetting Techniques FAQ
 
 ### How to make a book from multiple HTML files?
 
-👉See User Guide: [Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/user-guide#web-publications-multi-html-documents).
+👉See [Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/vivliostyle-viewer#web-publications-multi-html-documents).
 
-To use this feature in [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli), specify the `--book` option.
+👉See [Vivliostyle CLI User Guide: Configuration file vivliostyle.config.js](https://docs.vivliostyle.org/#/vivliostyle-cli#configuration-file-vivliostyleconfigjs) and [Web Publications (webpub)](https://docs.vivliostyle.org/#/vivliostyle-cli#web-publications-webpub).
 
 ### How to make a TOC?
 
@@ -274,6 +243,8 @@ For real examples, see the samples with "table of contents" tag in the [Vivliost
 👉See also:
 - [How to enable the TOC panel?](#how-to-enable-the-toc-panel)
 - [How to typeset and view multiple HTML files concatenated?](#how-to-typeset-and-view-multiple-html-files-concatenated)
+
+👉See also [Vivliostyle CLI User Guide: Creating a Table of Contents](https://docs.vivliostyle.org/#/vivliostyle-cli#creating-a-table-of-contents).
 
 ### How to embed math formulas (MathML, TeX or AsciiMath)
 
