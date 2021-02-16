@@ -5,7 +5,7 @@ title: Documents
 
 
 {% capture guide %}
-## 📖 User Guide
+## 📖 User Guides
 {% include fetch-guide-urls.html %}
 
 ### Vivliostyle Viewer
@@ -32,7 +32,7 @@ title: Documents
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/create-book.md"
 %}
 
-## 🛠 Contribution Guide
+## 🛠 Contribution Guides
 <ul id="contribution-guide-list"></ul>
 {% include fetch-guide-url.html
   id="contribution-guide-list"
@@ -43,7 +43,7 @@ title: Documents
 
 
 {% capture reference %}
-## Reference
+## References
 
 - [Core API Reference](https://docs.vivliostyle.org/#/api)
 - [Supported CSS Features](https://docs.vivliostyle.org/#/supported-css-features)
