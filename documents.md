@@ -33,12 +33,23 @@ title: Documents
 %}
 
 ## 🛠 Contribution Guides
+
+### Vivliostyle.js
 <ul id="contribution-guide-list"></ul>
 {% include fetch-guide-url.html
   id="contribution-guide-list"
   url="https://docs.vivliostyle.org/#/contribution-guide"
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/contribution-guide.md"
 %}
+
+### Vivliostyle CLI
+- [CONTRIBUTING.md](https://github.com/vivliostyle/vivliostyle-cli/blob/main/CONTRIBUTING.md)
+
+### Vivliostyle Themes
+- [CONTRIBUTING.md](https://github.com/vivliostyle/themes/blob/master/CONTRIBUTING.md)
+
+### VFM
+- [CONTRIBUTING.md](https://github.com/vivliostyle/vfm/blob/master/CONTRIBUTING.md)
 {% endcapture %}
 
 
