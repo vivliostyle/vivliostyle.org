@@ -21,7 +21,7 @@ lang: ja
     npm create book <directory>
     ```
 
-3. インストールの際、作りたい本の用途に合わせ以下のテーマファイルのいずれかを指定します
+3. インストールの際、作りたい本の用途に合わせ以下のテーマパッケージのいずれかを指定します
     - `@vivliostyle/theme-techbook`……技術同人誌をふくむ横書き冊子
     - `@vivliostyle/theme-academic`……論文、レポートをふくむ横書き文書
     - `@vivliostyle/theme-bunko`……小説同人誌をふくむ縦書き文書／冊子
@@ -349,7 +349,7 @@ text[^n]text^[text]
 
 #### 脚注
 
-インストールの際にテーマファイル `@vivliostyle/theme-techbook`を選択した場合、以下の記法で脚注を使えます。
+インストールの際にテーマパッケージ `@vivliostyle/theme-techbook`を選択した場合、以下の記法で脚注を使えます。
 
 ##### 記法
 
@@ -397,7 +397,7 @@ text[^n]text^[text]
 
 #### 縦中横
 
-Create Book は、インストールの際テーマファイル `@vivliostyle/theme-bunko` を選択すると縦書きになります。その際、下記のように HTML により縦中横を指定することができます。
+Create Book は、インストールの際テーマパッケージ `@vivliostyle/theme-bunko` を選択すると縦書きになります。その際、下記のように HTML により縦中横を指定することができます。
 
 ##### 記法
 
@@ -446,7 +446,7 @@ text<span class="tcy">nn</span>text
 2. それをVivliostyle CLIが、`vivliostyle.config.js` (図1❷) の設定に従い組版
 3. さらに `package.json` (図1❸) の設定に従い、PDF ファイルに出力
 
-作りたい本の大まかな用途や造本イメージは、インストール時にテーマファイルを選択することで決定しましたが、さらに細かな設定を `vivliostyle.config.js` や `package.json` を編集することでおこなう訳です。複数の原稿を1冊にまとめたり、目次、奥付の追加する設定もここでおこないます。
+作りたい本の大まかな用途や造本イメージは、インストール時にテーマパッケージを選択することで決定しましたが、さらに細かな設定を `vivliostyle.config.js` や `package.json` を編集することでおこなう訳です。複数の原稿を1冊にまとめたり、目次、奥付の追加する設定もここでおこないます。
 
 #### vivliostyle.config.js (図1❷)の編集
 
@@ -458,7 +458,7 @@ text<span class="tcy">nn</span>text
 - 🅑[著者名とメールアドレスの指定](https://docs.vivliostyle.org/#/ja/create-book#%E8%91%97%E8%80%85%E5%90%8D%E3%81%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AE%E6%8C%87%E5%AE%9A)
 - 🅒[使用言語の指定](https://docs.vivliostyle.org/#/ja/create-book#%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E8%A8%80%E8%AA%9E%E3%81%AE%E6%8C%87%E5%AE%9A)
 - 🅓[判型の指定](https://docs.vivliostyle.org/#/ja/create-book#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
-- 🅔[テーマファイルの指定](https://docs.vivliostyle.org/#/ja/create-book#%E3%83%86%E3%83%BC%E3%83%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%8C%87%E5%AE%9A)
+- 🅔[テーマパッケージの指定](https://docs.vivliostyle.org/#/ja/create-book#%E3%83%86%E3%83%BC%E3%83%9E%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E6%8C%87%E5%AE%9A)
 - 🅕[目次の追加](https://docs.vivliostyle.org/#/ja/create-book#%E7%9B%AE%E6%AC%A1%E3%81%AE%E8%BF%BD%E5%8A%A0)
 - 🅖[複数原稿の掲載](https://docs.vivliostyle.org/#/ja/create-book#%E8%A4%87%E6%95%B0%E5%8E%9F%E7%A8%BF%E3%81%AE%E6%8E%B2%E8%BC%89)
 - 🅗[奥付の追加](https://docs.vivliostyle.org/#/ja/create-book#%E5%A5%A5%E4%BB%98%E3%81%AE%E8%BF%BD%E5%8A%A0)
