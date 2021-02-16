@@ -21,7 +21,7 @@ toc: true
     npm create book <directory>
     ```
 
-3. When you install it, specify one of the following theme files, depending on the purpose of the book you want to create:
+3. When you install it, specify one of the following theme packages, depending on the purpose of the book you want to create:
     - `@vivliostyle/theme-techbook`......Technical books.
     - `@vivliostyle/theme-academic`......Academic articles.
     - `@vivliostyle/theme-bunko`......Japanese novel style (vertical text).
@@ -350,7 +350,7 @@ text[^n]text^[text]
 
 #### Footnotes
 
-If you selected the theme file `@vivliostyle/theme-techbook` during installation, you can use footnotes in the following notation.
+If you selected the theme package `@vivliostyle/theme-techbook` during installation, you can use footnotes in the following notation.
 
 ##### Notation
 
@@ -398,7 +398,7 @@ You can also use citations, code, tables, and many other expressions. Please ref
 
 #### Tate-chu-yoko (Horizontal-in-Vertical)
 
-When installing the Creat Book, select the theme file `@vivliostyle/theme-bunko`, and it will be vertical writing. In this case, you can specify Tate-chu-yoko using HTML as follows.
+When installing the Creat Book, select the theme package `@vivliostyle/theme-bunko`, and it will be vertical writing. In this case, you can specify Tate-chu-yoko using HTML as follows.
 
 ##### Notation
 
@@ -448,7 +448,7 @@ Once your manuscript is complete, you can make your book. Create Book will autom
 2. Vivliostyle CLI will typeset it according to the settings in `vivliostyle.config.js` (Fig-1❷).
 3. Then, according to the settings of `package.json` (fig-1❸ ), output to a PDF file.
 
-A general purpose of the book has been determined by selecting the theme file at the time of installation, but can be further refined by editing the `Vivliostyle.config.js` and the `package.json` files. You can also bundle multiple manuscripts into one book and add a table of contents and a colophon here.
+A general purpose of the book has been determined by selecting the theme package at the time of installation, but can be further refined by editing the `Vivliostyle.config.js` and the `package.json` files. You can also bundle multiple manuscripts into one book and add a table of contents and a colophon here.
 
 #### Editing vivliostyle.config.js (fig-1❷)
 
@@ -460,7 +460,7 @@ A general purpose of the book has been determined by selecting the theme file at
 - 🅑[Specify a author name and e-mail address](https://docs.vivliostyle.org/#/create-book#specify-a-author-name-and-e-mail-address)
 - 🅒[Specify a language to use](https://docs.vivliostyle.org/#/create-book#specify-a-language-to-use)
 - 🅓[Specifying a format](https://docs.vivliostyle.org/#/create-book#specifying-a-format)
-- 🅔[Specify a theme file](https://docs.vivliostyle.org/#/create-book#specify-a-theme-file)
+- 🅔[Specify a theme package](https://docs.vivliostyle.org/#/create-book#specify-a-theme-package)
 - 🅕[Add a table of contents](https://docs.vivliostyle.org/#/create-book#add-a-table-of-contents)
 - 🅖[Publication of multiple manuscripts](https://docs.vivliostyle.org/#/create-book#publication-of-multiple-manuscripts)
 - 🅗[Add a colophon](https://docs.vivliostyle.org/#/create-book#add-a-colophon)
