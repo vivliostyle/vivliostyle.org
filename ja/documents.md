@@ -57,7 +57,7 @@ lang: ja
 {% capture reference %}
 ## 📚 リファレンス
 
-- [API リファレンス](https://docs.vivliostyle.org/#/ja/api)
+- [Core API リファレンス](https://docs.vivliostyle.org/#/ja/api)
 - [サポートする CSS 機能](https://docs.vivliostyle.org/#/ja/supported-css-features)
 {% endcapture %}
 
