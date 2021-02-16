@@ -67,7 +67,7 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
-👉ユーザーガイドの [EPUB](https://docs.vivliostyle.org/#/ja/user-guide#epub)
+👉[Vivliostyle Viewer ユーザーガイド: EPUB](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#epub)
 
 ### Webサイトに Vivliostyle Viewer を組み込むには？
 
@@ -88,7 +88,7 @@ HTMLファイル内に次のような目次要素がある場合、Vivliostyle V
 </nav>
 ```
 
-👉ユーザーガイドの [目次パネル](https://docs.vivliostyle.org/#/ja/user-guide#%E7%9B%AE%E6%AC%A1%E3%83%91%E3%83%8D%E3%83%AB)
+👉[Vivliostyle Viewer ユーザーガイド: 目次パネル](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#%E7%9B%AE%E6%AC%A1%E3%83%91%E3%83%8D%E3%83%AB)
 
 👉次も参照: [目次を作るには？](#目次を作るには)
 
@@ -111,7 +111,7 @@ Vivliostyle Viewer で [**Book Mode**](#book-mode-とは) を指定した場合�
 </nav>
 ```
 
-👉ユーザーガイドの [Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/user-guide#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89)
+👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89)
 
 👉次も参照: [目次を作るには？](#目次を作るには)
 
@@ -151,46 +151,21 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 ### PDFの「しおり」(Bookmarks)を有効にするには？
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) v2.1 以降では、組版する文書の目次データを使ってPDFの「しおり」(Bookmarks) を自動生成することができます。PDF の「しおり」は、Adobe Acrobat のような PDF 閲覧ソフトで目次ナビゲーションに利用できるものです。
+[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) では、組版する文書の目次データを使ってPDFの「しおり」(Bookmarks) を自動生成することができます。PDF の「しおり」は、Adobe Acrobat のような PDF 閲覧ソフトで目次ナビゲーションに利用できるものです。
 
-PDFの「しおり」生成を有効にするには `vivliostyle build` コマンドに `--book` オプションを指定する必要があります。
-
-例：
-
-```
-vivliostyle build --book --size A4 --output example.pdf example.html
-```
+👉[Vivliostyle CLI ユーザーガイド: PDF の「しおり」(Bookmarks) の生成](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#pdf-%E3%81%AE%E3%80%8C%E3%81%97%E3%81%8A%E3%82%8A%E3%80%8Dbookmarks-%E3%81%AE%E7%94%9F%E6%88%90)
 
 ### EPUBをPDFに変換するには？
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) ではZIP解凍済みのEPUBファイルからPDFを生成することができます。それには `vivliostyle build` コマンドに --book オプションを指定して、入力として解凍済みEPUBのディレクトリを指定します。
+[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) では EPUB ファイルあるいは解凍(unzip)された EPUB から PDF を生成することができます。
 
-例えば、EPUBファイル `example.epub` をPDFファイル `example.pdf` に変換するには、次のように、まずEPUBファイルをZIP解凍してそれから vivliostyle を実行します：
-
-```
-unzip example.epub -d example/
-vivliostyle build --book --size A4 --output example.pdf example/
-```
+👉[Vivliostyle CLI ユーザーガイド: EPUB から PDF を生成](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#epub-%E3%81%8B%E3%82%89-pdf-%E3%82%92%E7%94%9F%E6%88%90)
 
 ### 印刷用のPDF（PDF/X-1a 形式）を生成するには？
 
 `vivliostyle build` コマンドの `--press-ready` オプションにより印刷入稿に適した PDF/X-1a 形式で出力することができます。
 
-この機能を使うためには [Ghostscript](https://www.ghostscript.com) と [Xpdf](https://www.xpdfreader.com/)（または [Poppler](https://poppler.freedesktop.org/)）をインストールする必要があります。主なOSでそれらをインストールする方法は以下です：
-
-macOS ([Homebrew](https://brew.sh/index_ja) を利用):
-```
-brew install poppler ghostscript
-```
-
-Ubuntu:
-```
-apt-get install poppler-utils ghostscript
-```
-
-Windows:
-- Ghostscript for Windows を <span class="url"><https://www.ghostscript.com/download/gsdnld.html></span> からダウンロードしてインストール。それからインストールしたGhostscriptの実行ファイルのあるディレクトリ（例："C:\Program Files\gs\gs9.52\bin"）を `PATH` 環境変数に追加。
-- Xpdf command line tools for Windows を <http://www.xpdfreader.com/download.html> からダウンロードしてインストール。それからインストールしたXpdfの実行ファイルのあるディレクトリ（例："C:\xpdf-tools-win-4.02\bin64"）を `PATH` 環境変数に追加。
+👉[Vivliostyle CLI ユーザーガイド: 印刷用 PDF（PDF/X-1a 形式）の生成](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E5%8D%B0%E5%88%B7%E7%94%A8-pdf%EF%BC%88pdfx-1a-%E5%BD%A2%E5%BC%8F%EF%BC%89%E3%81%AE%E7%94%9F%E6%88%90)
 
 ## Create Book についての FAQ
 
@@ -198,7 +173,7 @@ Windows:
 
 [Create Book](https://www.npmjs.com/package/create-book) は、簡単に本を作れる環境を構築します。
 
-👉[チュートリアルガイド: Create Book](https://docs.vivliostyle.org/#/ja/create-book)
+👉[Create Book ユーザーガイド](https://docs.vivliostyle.org/#/ja/create-book)
 
 ### テーマをカスタマイズするには？
 
@@ -215,27 +190,20 @@ cp -R node_modules/@vivliostyle/theme-techbook/ my-theme/
 ```
 ↓
 ```
-  theme: 'my-theme',
+  theme: 'my-theme/theme.css',
 ```
 
-これで `my-theme` フォルダ内のスタイルシートをカスタマイズして自由にスタイルを変えることができるようになります。
+これでこのスタイルシートをカスタマイズして自由にスタイルを変えることができるようになります。
 
-既存のテーマパッケージをコピーしないで、オリジナルのテーマを作ることもできます。その場合、テーマのフォルダ（この場合 `my-theme` フォルダ）内に、次のような `package.json` ファイルを作る必要があります：
-
-```
-{
-  "name": "my-theme",
-  "main": "theme.css"
-}
-```
+このスタイルシート `theme.css` の作成には [Sass](https://sass-lang.com/) が使われており、そのソースは、`scss/` フォルダにある `*.scss` ファイルです。SCSS ファイルの変更を CSS ファイルに反映させるには、コピーしたテーマのフォルダ（この例では `my-theme/`）をカレントディレクトリにして `npm install` を実行したあと、 `npm run build` または `npm run dev` を実行してください。
 
 ## CSS組版のテクニックについてのFAQ
 
 ### 複数のHTMLファイルから本を作るには？
 
-👉ユーザーガイドの [Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/user-guide#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89) をご覧ください。
+👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89) をご覧ください。
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) でこの機能を使うには `--book` オプションを指定します。
+👉[Vivliostyle CLI ユーザーガイド: 構成ファイル vivliostyle.config.js](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-vivliostyleconfigjs) および [Web 出版物 (webpub)](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#web-%E5%87%BA%E7%89%88%E7%89%A9-webpub) をご覧ください。
 
 ### 目次を作るには？
 
@@ -275,6 +243,8 @@ nav li a::after {
 👉以下も参照:
 - [目次パネルを有効にするには？](#目次パネルを有効にするには)
 - [複数のHTMLファイルを連結して組版表示するには？](#複数のhtmlファイルを連結して組版表示するには)
+
+👉[Vivliostyle CLI ユーザーガイド: 目次の作成](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E7%9B%AE%E6%AC%A1%E3%81%AE%E4%BD%9C%E6%88%90) をご覧ください。
 
 ### 数式（MathML、TeX、AsciiMath）を埋め込むには？
 
