@@ -26,8 +26,9 @@
       # users:
 - name: Basic Sponsors
   tier:
-    # - badge: 💐
-      # users:
+    - badge: 💐
+      users:
+        - name: libroworks
     - badge: 🌹
       users:
         - name: hidaruma
@@ -42,7 +43,6 @@
         - name: skoji
         - name: y-mikou
         - name: 74th
-        - name: libroworks
     - badge: ⭐️
       users:
         - name: munepi
