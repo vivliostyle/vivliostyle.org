@@ -286,41 +286,6 @@ AGPL は、GPL (GNU General Public License) と同様の互恵的なライセン
 - [Frequently Asked Questions about the GNU Licenses](https://www.gnu.org/licenses/gpl-faq.en.html)
   - [GNUライセンスに関してよく聞かれる質問（GNUライセンスFAQ）日本語版](https://www.gnu.org/licenses/gpl-faq.ja.html)
 
-### Vivliostyle Pub のオープンソース・ライセンスの種類は？
-
-Vivliostyle Pub のライセンスは [Apache License 2.0](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE) です。
-
-
-👉[Apache License 2.0（原文）<i class="fas fa-external-link-alt"></i>](https://opensource.org/licenses/Apache-2.0)
-
-👉[Apache License 2.0（日本語参考訳）<i class="fas fa-external-link-alt"></i>](https://licenses.opensource.jp/Apache-2.0/Apache-2.0.html)
-
-他方、Vivliostyle 組版エンジンの中心である Vivliostyle Core と、それを組み込んでいる Vivliostyle Viewer や Vivliostyle CLI はAGPL v3 です。これらはVivliostyle の主要プロダクトであることから、**Vivliostyle のライセンスは、基本的にAGPL v3** であると言えます。
-
-それでも、これらを直接使っていないプログラム（たとえば [VFM](https://github.com/vivliostyle/vfm/blob/master/LICENSE)）、あるいはVivliostyle Viewer や Vivliostyle CLI を独立したプログラムとして呼び出しているプログラム（たとえば [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE)）は、必ずしも AGPL v3 である必要はありません。そこでユーザが利用しやすいように、より制限のゆるい Apache License 2.0 にしています。
-
-ただし、 より詳細に見ると、Vivliostyle Pub は Vivliostyle Viewer や Vivliostyle CLI を呼び出していることから、Vivliostyle Pub のシステムは AGPL v3 の部分（Vivliostyle Viewer等を使った部分）と、Apache License 2.0の部分（Vivliostyle Pub 独自部分）から構成されていることが分かります。つまり、Vivliostyle Pub システム全体では、2種類のライセンスがあるとも言えます。
-
-すこし詳しく説明しましょう。たとえば現在の Vivliostyle Pubでは、エディター画面の右側に、プレビュー画面としてVivliostyle Viewerが埋め込まれています。これはHTMLの iframe 要素を使って別のWebページとして埋め込んでいるものです。つまり、Vivliostyle Pubのエディター画面（左半分）は独自部分なのでApache License 2.0、一方プレビュー画面（右半分）はVivliostyle Viewer そのものなので、AGPL v3 ということになります。
-
-
-![画面右のプレビューウィンドウは、iframe 要素によりVivliostyle Viewer を埋め込んでいる](/assets/faq/fig-1.png)
-
-
-このとき注意すべきことがあります。それはVivliostyle Pub がまだ開発途上であり、将来実装方法が変わる可能性があることです。前に述べたように Vivliostyle Pub の独自部分がApache License 2.0である要件は、「Vivliostyle Viewer等を独立したプログラムとして呼び出していること」でした。
-
-
-👉[Vivliostyle Viewer または Vivliostyle Print を商用の Web アプリケーションから呼び出して利用することはできますか？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%BE%E3%81%9F%E3%81%AF-vivliostyle-print-%E3%82%92%E5%95%86%E7%94%A8%E3%81%AE-web-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8B%E3%82%89%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
-
-👉[Vivliostyle Viewer が独立したプログラムとして動作する条件は？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%8C%E7%8B%AC%E7%AB%8B%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%A8%E3%81%97%E3%81%A6%E5%8B%95%E4%BD%9C%E3%81%99%E3%82%8B%E6%9D%A1%E4%BB%B6%E3%81%AF)
-
-逆に言えば、将来の Vivliostyle Pub が、より密接に Vivliostyle Viewer や Vivliostyle CLI を組み込む方向に開発がすすめば、AGPL v3 にライセンスを変更する必要があります。
-
-前述のように、現在のバージョンの Vivliostyle Pubは右半分のプレビュー画面で HTML の iframe 要素を使っていることから、左半分のエディター画面から独立して動作していると解釈できます。したがって AGPL v3 に抵触しません。
-
-それに対して、将来のバージョンアップでメインのWebページにJavaScriptライブラリをロードしてプレビュー画面を構成する実装も考えられるでしょう（[React Vivliostyle](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/react) は、そのような使い方を想定したJavaScriptライブラリです）。その場合は JavaScriptライブラリや、Vivliostyle のライブラリ、そして Vivliostyle Pub 独自のプログラムが混在することになります。これは「密接に組み込む」状態と言え、AGPL v3 へのライセンス変更が必要になります。
-
-これはあくまで将来の可能性の一つであり、必ずしもVivliostyle Pubがそうなるという意味ではありません。しかし今からその選択肢を排除できません。ライセンスを変更した場合は、必ずその旨お知らせします。今はそのようなこともあり得ることだけ、お含み置きください。
 
 ### Vivliostyle ソースコードのコピーライトの帰属先は？
 
@@ -388,8 +353,46 @@ Vivliostyle を AGPL ライセンスに従いながら商用利用する上で�
 - Vivliostyle を組み込んで単一の結合したプログラムとして動作するものを作成して配布する場合は、その全体のソースコードを AGPL ライセンスで公開する必要があります。
 - Vivliostyle のソースコードを改変する場合は、ソースファイルのヘッダーコメントにあるコピーライトの記述を保持してください。「Copyright 2013 Google, Inc.」の記述があるソースファイルには元プロジェクトである "Adapt" 由来のソースコードが含まれており、その元ソースコードは Apache License 2.0 の適用を受けます。[README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md) や [LICENSE](https://github.com/vivliostyle/vivliostyle.js/blob/master/scripts/package-artifacts/LICENSE.md) ファイルの次の記述を保持してください:
     > Vivliostyle Core is implemented based on [Peter Sorotokin's EPUB Adaptive Layout implementation](https://github.com/sorotokin/adaptive-layout), which is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-{% endcapture %}
 
+
+
+### Vivliostyle Pub のオープンソース・ライセンスの種類は？
+
+Vivliostyle Pub のライセンスは [Apache License 2.0](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE) です。
+
+
+👉[Apache License 2.0（原文）<i class="fas fa-external-link-alt"></i>](https://opensource.org/licenses/Apache-2.0)
+
+👉[Apache License 2.0（日本語参考訳）<i class="fas fa-external-link-alt"></i>](https://licenses.opensource.jp/Apache-2.0/Apache-2.0.html)
+
+他方、Vivliostyle 組版エンジンの中心である Vivliostyle Core と、それを組み込んでいる Vivliostyle Viewer や Vivliostyle CLI はAGPL v3 です。これらはVivliostyle の主要プロダクトであることから、**Vivliostyle のライセンスは、基本的にAGPL v3** であると言えます。
+
+それでも、これらを直接使っていないプログラム（たとえば [VFM](https://github.com/vivliostyle/vfm/blob/master/LICENSE)）、あるいはVivliostyle Viewer や Vivliostyle CLI を独立したプログラムとして呼び出しているプログラム（たとえば [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE)）は、必ずしも AGPL v3 である必要はありません。そこでユーザが利用しやすいように、より制限のゆるい Apache License 2.0 にしています。
+
+ただし、 より詳細に見ると、Vivliostyle Pub は Vivliostyle Viewer や Vivliostyle CLI を呼び出していることから、Vivliostyle Pub のシステムは AGPL v3 の部分（Vivliostyle Viewer等を使った部分）と、Apache License 2.0の部分（Vivliostyle Pub 独自部分）から構成されていることが分かります。つまり、Vivliostyle Pub システム全体では、2種類のライセンスがあるとも言えます。
+
+すこし詳しく説明しましょう。たとえば現在の Vivliostyle Pubでは、エディター画面の右側に、プレビュー画面としてVivliostyle Viewerが埋め込まれています。これはHTMLの iframe 要素を使って別のWebページとして埋め込んでいるものです。つまり、Vivliostyle Pubのエディター画面（左半分）は独自部分なのでApache License 2.0、一方プレビュー画面（右半分）はVivliostyle Viewer そのものなので、AGPL v3 ということになります。
+
+
+![画面右のプレビューウィンドウは、iframe 要素によりVivliostyle Viewer を埋め込んでいる](/assets/faq/fig-1.png)
+
+
+このとき注意すべきことがあります。それはVivliostyle Pub がまだ開発途上であり、将来実装方法が変わる可能性があることです。前に述べたように Vivliostyle Pub の独自部分がApache License 2.0である要件は、「Vivliostyle Viewer等を独立したプログラムとして呼び出していること」でした。
+
+
+👉[Vivliostyle Viewer または Vivliostyle Print を商用の Web アプリケーションから呼び出して利用することはできますか？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%BE%E3%81%9F%E3%81%AF-vivliostyle-print-%E3%82%92%E5%95%86%E7%94%A8%E3%81%AE-web-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8B%E3%82%89%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
+
+👉[Vivliostyle Viewer が独立したプログラムとして動作する条件は？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%8C%E7%8B%AC%E7%AB%8B%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%A8%E3%81%97%E3%81%A6%E5%8B%95%E4%BD%9C%E3%81%99%E3%82%8B%E6%9D%A1%E4%BB%B6%E3%81%AF)
+
+逆に言えば、将来の Vivliostyle Pub が、より密接に Vivliostyle Viewer や Vivliostyle CLI を組み込む方向に開発がすすめば、AGPL v3 にライセンスを変更する必要があります。
+
+前述のように、現在のバージョンの Vivliostyle Pubは右半分のプレビュー画面で HTML の iframe 要素を使っていることから、左半分のエディター画面から独立して動作していると解釈できます。したがって AGPL v3 に抵触しません。
+
+それに対して、将来のバージョンアップでメインのWebページにJavaScriptライブラリをロードしてプレビュー画面を構成する実装も考えられるでしょう（[React Vivliostyle](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/react) は、そのような使い方を想定したJavaScriptライブラリです）。その場合は JavaScriptライブラリや、Vivliostyle のライブラリ、そして Vivliostyle Pub 独自のプログラムが混在することになります。これは「密接に組み込む」状態と言え、AGPL v3 へのライセンス変更が必要になります。
+
+これはあくまで将来の可能性の一つであり、必ずしもVivliostyle Pubがそうなるという意味ではありません。しかし今からその選択肢を排除できません。ライセンスを変更した場合は、必ずその旨お知らせします。今はそのようなこともあり得ることだけ、お含み置きください。
+
+{% endcapture %}
 
 {% include page/faq.html
   title="FAQ"
