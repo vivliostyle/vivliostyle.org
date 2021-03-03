@@ -361,9 +361,9 @@ Vivliostyle を AGPL ライセンスに従いながら商用利用する上で�
 Vivliostyle Pub のライセンスは [Apache License 2.0](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE) です。
 
 
-👉[Apache License 2.0（原文）<i class="fas fa-external-link-alt"></i>](https://opensource.org/licenses/Apache-2.0)
+- 👉[Apache License 2.0（原文）<i class="fas fa-external-link-alt"></i>](https://opensource.org/licenses/Apache-2.0)
+- 👉[Apache License 2.0（日本語参考訳）<i class="fas fa-external-link-alt"></i>](https://licenses.opensource.jp/Apache-2.0/Apache-2.0.html)
 
-👉[Apache License 2.0（日本語参考訳）<i class="fas fa-external-link-alt"></i>](https://licenses.opensource.jp/Apache-2.0/Apache-2.0.html)
 
 他方、Vivliostyle 組版エンジンの中心である Vivliostyle Core と、それを組み込んでいる Vivliostyle Viewer や Vivliostyle CLI はAGPL v3 です。これらはVivliostyle の主要プロダクトであることから、**Vivliostyle のライセンスは、基本的にAGPL v3** であると言えます。
 
@@ -380,9 +380,8 @@ Vivliostyle Pub のライセンスは [Apache License 2.0](https://github.com/vi
 このとき注意すべきことがあります。それはVivliostyle Pub がまだ開発途上であり、将来実装方法が変わる可能性があることです。前に述べたように Vivliostyle Pub の独自部分がApache License 2.0である要件は、「Vivliostyle Viewer等を独立したプログラムとして呼び出していること」でした。
 
 
-👉[Vivliostyle Viewer または Vivliostyle Print を商用の Web アプリケーションから呼び出して利用することはできますか？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%BE%E3%81%9F%E3%81%AF-vivliostyle-print-%E3%82%92%E5%95%86%E7%94%A8%E3%81%AE-web-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8B%E3%82%89%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
-
-👉[Vivliostyle Viewer が独立したプログラムとして動作する条件は？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%8C%E7%8B%AC%E7%AB%8B%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%A8%E3%81%97%E3%81%A6%E5%8B%95%E4%BD%9C%E3%81%99%E3%82%8B%E6%9D%A1%E4%BB%B6%E3%81%AF)
+- 👉[Vivliostyle Viewer または Vivliostyle Print を商用の Web アプリケーションから呼び出して利用することはできますか？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%BE%E3%81%9F%E3%81%AF-vivliostyle-print-%E3%82%92%E5%95%86%E7%94%A8%E3%81%AE-web-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8B%E3%82%89%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
+- 👉[Vivliostyle Viewer が独立したプログラムとして動作する条件は？](https://vivliostyle.org/ja/faq/#vivliostyle-viewer-%E3%81%8C%E7%8B%AC%E7%AB%8B%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%A8%E3%81%97%E3%81%A6%E5%8B%95%E4%BD%9C%E3%81%99%E3%82%8B%E6%9D%A1%E4%BB%B6%E3%81%AF)
 
 逆に言えば、将来の Vivliostyle Pub が、より密接に Vivliostyle Viewer や Vivliostyle CLI を組み込む方向に開発がすすめば、AGPL v3 にライセンスを変更する必要があります。
 
