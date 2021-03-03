@@ -231,7 +231,7 @@ nav li a::before {
 }
 nav li a::after {
   text-align: right;
-  content: target-counter(attr(href url), page);  
+  content: target-counter(attr(href url), page);
   align-self: flex-end;
   flex: none;
   order: 2;
@@ -253,7 +253,7 @@ Vivliostyle Viewer can typeset and display math formulas using [MathJax](https:/
 You can embed math formulas in your HTML document in the following formats
 - MathML
 - TeX formulas
-- AsciiMath 
+- AsciiMath
 
 MathML elements `<math>` … `</math>` can be written directly in HTML documents.
 
@@ -288,7 +288,7 @@ References:
 ### Where does the copyright of the Vivliostyle source code belong?
 
 The Vivliostyle source code has the following copyright notation: (e.g., in [epub.ts](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/src/vivliostyle/epub.ts))
- 
+
 > * Copyright 2013 Google, Inc.
 > * Copyright 2015 Trim-marks Inc.
 > * Copyright 2018 Vivliostyle Foundation
@@ -350,6 +350,38 @@ In commercial use of Vivliostyle under the AGPL license, you need to be aware of
 - When you create and distribute a program that runs as a single combined program incorporating Vivliostyle, you need to publish the source code of the program under the AGPL license.
 - If you modify Viviostyle source code, retain the copyright notice in the header comments of the source files. The source files marked "Copyright 2013 Google, Inc." contain the source code from the original project "Adapt" which is licensed under Apache License 2.0. Retain the following description in the [README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md) and [LICENSE](https://github.com/vivliostyle/vivliostyle.js/blob/master/scripts/package-artifacts/LICENSE.md) files:
     > Vivliostyle Core is implemented based on [Peter Sorotokin's EPUB Adaptive Layout implementation](https://github.com/sorotokin/adaptive-layout), which is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+### What open source license does Vivliostyle Pub use?
+
+Vivliostyle Pub is licensed under the [Apache License 2.0](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE):
+
+- 👉[Apache License 2.0<i class="fas fa-external-link-alt"></i>](https://opensource.org/licenses/Apache-2.0)
+
+On the other hand, Vivliostyle Core, the core of the Vivliostyle typesetting engine, and Vivliostyle Viewer and Vivliostyle CLI, which incorporate it, are AGPL v3. Since these are the main products of Vivliostyle, it can be said that **the license of Vivliostyle is essentially AGPL v3.**
+
+However, programs that do not use them directly (e.g., [VFM](https://github.com/vivliostyle/vfm/blob/master/LICENSE)), or that call Vivliostyle Viewer or Vivliostyle CLI as independent programs (e.g.,  [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub/blob/master/LICENSE)), do not necessarily need to be under the AGPL v3. Therefore, to make it easier for users to use, we have put them under the less restrictive Apache License 2.0.
+
+In more detail, note that Vivliostyle Pub calls Vivliostyle Viewer and Vivliostyle CLI, so the Vivliostyle Pub system consists of the AGPL v3 part (the part that uses Vivliostyle Viewer, etc.) and the Apache License 2.0 part (Vivliostyle Pub's own part). In other words, the entire Vivliostyle Pub system has two different licenses.
+
+Let's explain it in concrete terms. Take a look at the screenshot below. In the current Vivliostyle Pub, the Vivliostyle Viewer is embedded as a preview screen on the right side of the editor screen. This is embedded as a separate web page using the HTML iframe element. In other words, the editor screen (left half) of Vivliostyle Pub is a proprietary part of Vivliostyle Pub, and is therefore Apache License 2.0, while the preview screen (right half) is Vivliostyle Viewer itself, and is therefore AGPL v3.
+
+
+![The preview window on the right side of the screen embeds the Vivliostyle Viewer using the iframe element.](/assets/faq/fig-1.png)
+
+
+There is one thing you should be aware of. It is note that Vivliostyle Pub is still under development and the way it is implemented may change in the future. As mentioned earlier, the requirement for the original part of Vivliostyle Pub to be under the Apache License 2.0 was that it “calls Vivliostyle Viewer, etc. as an independent program”. See the following article:
+
+
+- 👉[Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?](http://127.0.0.1:4000/faq/#can-i-use-vivliostyle-viewer-or-vivliostyle-print-by-calling-it-from-a-commercial-web-application)
+- 👉[How does Viviostyle Viewer run as an independent program?](http://127.0.0.1:4000/faq/#how-does-viviostyle-viewer-run-as-an-independent-program)
+
+Conversely, if the future Vivliostyle Pub is developed to more closely incorporate Vivliostyle Viewer and/or Vivliostyle CLI, the license will need to be changed to AGPL v3.
+
+As mentioned above, the current version of Vivliostyle Pub uses HTML iframe elements in the right half preview screen, which can be interpreted as working independently from the left half editor screen. Therefore, it does not violate the AGPL v3.
+
+In contrast, a future version might choose to load a JavaScript library into the main web page to configure the preview screen ([React Vivliostyle](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/react) is a JavaScript library designed for such usage). In that case, you would have a mix of JavaScript libraries, Vivliostyle libraries, and Vivliostyle Pub's own programs. This can be called a “closely-embedded” situation, and would require a license change to AGPL v3.
+
+This is just one of the possibilities for the future, and it doesn't necessarily mean that Vivliostyle Pub will choose it. However, we certainly can't rule out that option. If we change our license, we will certainly let you know. For now, just be aware that such a thing is possible.
 {% endcapture %}
 
 
