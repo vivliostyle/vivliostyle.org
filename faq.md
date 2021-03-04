@@ -363,10 +363,10 @@ However, programs that do not use them directly (e.g., [VFM](https://github.com/
 
 In more detail, note that Vivliostyle Pub calls Vivliostyle Viewer and Vivliostyle CLI, so the Vivliostyle Pub system consists of the AGPL v3 part (the part that uses Vivliostyle Viewer, etc.) and the Apache License 2.0 part (Vivliostyle Pub's own part). In other words, the entire Vivliostyle Pub system has two different licenses.
 
-Let's explain it in concrete terms. Take a look at the screenshot below. In the current Vivliostyle Pub, the Vivliostyle Viewer is embedded as a preview screen on the right side of the editor screen. This is embedded as a separate web page using the HTML iframe element. In other words, the editor screen (left half) of Vivliostyle Pub is a proprietary part of Vivliostyle Pub, and is therefore Apache License 2.0, while the preview screen (right half) is Vivliostyle Viewer itself, and is therefore AGPL v3.
+Let's explain it in concrete terms. Take a look at the screenshot below. In the current Vivliostyle Pub, the Vivliostyle Viewer is embedded as a preview window on the right side of the editor window. This is embedded as a separate web page using the HTML iframe element. In other words, the editor window (left half) of Vivliostyle Pub is a proprietary part of Vivliostyle Pub, and is therefore Apache License 2.0, while the preview window (right half) is Vivliostyle Viewer itself, and is therefore AGPL v3.
 
 
-![The preview window on the right side of the screen embeds the Vivliostyle Viewer using the iframe element.](/assets/faq/fig-1.png)
+![The preview window on the right side of the window embeds the Vivliostyle Viewer using the iframe element.](/assets/faq/fig-1.png)
 
 
 There is one thing you should be aware of. It is note that Vivliostyle Pub is still under development and the way it is implemented may change in the future. As mentioned earlier, the requirement for the original part of Vivliostyle Pub to be under the Apache License 2.0 was that it “calls Vivliostyle Viewer, etc. as an independent program”. See the following article:
@@ -377,9 +377,9 @@ There is one thing you should be aware of. It is note that Vivliostyle Pub is st
 
 Conversely, if the future Vivliostyle Pub is developed to more closely incorporate Vivliostyle Viewer and/or Vivliostyle CLI, the license will need to be changed to AGPL v3.
 
-As mentioned above, the current version of Vivliostyle Pub uses HTML iframe elements in the right half preview screen, which can be interpreted as working independently from the left half editor screen. Therefore, it does not violate the AGPL v3.
+As mentioned above, the current version of Vivliostyle Pub uses HTML iframe elements in the right half preview window, which can be interpreted as working independently from the left half editor window. Therefore, it does not violate the AGPL v3.
 
-In contrast, a future version might choose to load a JavaScript library into the main web page to configure the preview screen ([React Vivliostyle](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/react) is a JavaScript library designed for such usage). In that case, you would have a mix of JavaScript libraries, Vivliostyle libraries, and Vivliostyle Pub's own programs. This can be called a “closely-embedded” situation, and would require a license change to AGPL v3.
+In contrast, a future version might choose to load a JavaScript library into the main web page to configure the preview window ([React Vivliostyle](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/react) is a JavaScript library designed for such usage). In that case, you would have a mix of JavaScript libraries, Vivliostyle libraries, and Vivliostyle Pub's own programs. This can be called a “closely incorporated” situation, and would require a license change to AGPL v3.
 
 This is just one of the possibilities for the future, and it doesn't necessarily mean that Vivliostyle Pub will choose it. However, we certainly can't rule out that option. If we change our license, we will certainly let you know. For now, just be aware that such a thing is possible.
 {% endcapture %}
