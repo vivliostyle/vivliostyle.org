@@ -369,7 +369,7 @@ Let's explain it in concrete terms. Take a look at the screenshot below. In the 
 ![The preview window on the right side of the window embeds the Vivliostyle Viewer using the iframe element.](/assets/faq/fig-1.png)
 
 
-There is one thing you should be aware of. It is note that Vivliostyle Pub is still under development and the way it is implemented may change in the future. As mentioned earlier, the requirement for the original part of Vivliostyle Pub to be under the Apache License 2.0 was that it “calls Vivliostyle Viewer, etc. as an independent program”. See the following article:
+There is one thing you should be aware of. It is noted that Vivliostyle Pub is still under development and the way it is implemented may change in the future. As mentioned earlier, the requirement for the original part of Vivliostyle Pub to be under the Apache License 2.0 was that it “calls Vivliostyle Viewer, etc. as an independent program”. See the following article:
 
 
 - 👉[Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?](http://127.0.0.1:4000/faq/#can-i-use-vivliostyle-viewer-or-vivliostyle-print-by-calling-it-from-a-commercial-web-application)
