@@ -5,7 +5,7 @@ image: /assets/posts/2021-02-08-Vivliostyle-CLI-is-Major-Upgrade-to-v.3/vivliost
 author:
   - ogwata
 tags:
-  - リリース
+  - Release
   - Vivliostyle CLI
   - Vivliostyle Pub
   - VFM
