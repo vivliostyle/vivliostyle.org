@@ -30,7 +30,6 @@ lang: ja
 <h2 id="vivliostyle-viewer">Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span></h2>
 
 - ブラウザで動作する組版エンジン。HTML を読み込んで組版結果をブラウザに表示します。
-- ローカルのファイルを組版・表示するには、webサーバー起動が必要です（くわしくはFAQをご覧ください）。
 
 <ol class="list--medium">
   {% include button/primary.html url=site.data.project.viewer.url text="Vivliostyle Viewer を使う" %}
@@ -39,7 +38,8 @@ lang: ja
 
 {% include frame-list.html frames=viewer_frames %}
 
-他にプライベートネットワークで使える[ダウンロード版](https://github.com/vivliostyle/vivliostyle.js/releases)もあります。用途に合わせてお使いいただけます。
+Vivliostyle Viewer について詳しくは [Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer) を参照してください。
+
 {% endcapture %}
 
 
@@ -99,6 +99,9 @@ $ vivliostyle preview index.html
 </ol>
 
 {% include frame-list.html frames=cli_frames %}
+
+Vivliostyle CLI について詳しくは [Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli) を参照してください。
+
 {% endcapture %}
 
 
