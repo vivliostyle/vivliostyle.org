@@ -34,6 +34,4 @@ tags:
 
 いつも当イベントでは、コミュニティ外部の方々にも登壇していただいています。今回も第1部として[和田優斗 <i class="fas fa-external-link-alt"></i>](https://twitter.com/kyoto_ysfh)さん、[逢賀サク <i class="fas fa-external-link-alt"></i>](https://twitter.com/ogs_52843)さん、そして[Andreas Zettl <i class="fas fa-external-link-alt"></i>](https://twitter.com/andreas_zettl)さんから貴重な報告を聞くことができました。和田さんには[2020年度未踏事業として採択された <i class="fas fa-external-link-alt"></i>](https://www.ipa.go.jp/jinzai/mitou/2020/gaiyou_sd-2.html)新組版システム「Twight」をご発表いただきました。逢賀さんには非エンジニアの立場から取っつきづらいVivliostyleの現状を鋭く批判していただきました。また、Andreas さんには世界の主要CSS組版エンジン全てをAPI化し、自在に切り替えてプレビューできるご自身のサービス、[PrintCSS Playground <i class="fas fa-external-link-alt"></i>](https://printcss.live/) と [PrintCSS Cloud <i class="fas fa-external-link-alt"></i>](https://printcss.cloud/) を紹介してもらいました。まさに当イベントでしか聞けない素晴らしい発表ばかりで、心から御礼申し上げます。
 
-仄聞するところによりますと、おもに標準化関係者に、和田さんの「Twight」が独自仕様であることを批判する声があるそうです。この点について私達の考えは、上記⑬村上代表のコメントのとおりです。つまり、私達の指針は標準の実装であり、その意味から和田さんの方向と対極にあります。しかし両者のどちらかが間違っているということはなく、ページ組版というゴールに至るアプローチが違うだけです。ゴールを共有している以上、両者は水と油ではなく将来交流の機会があるかもしれません。ゼロから成果を上げた和田さんには心からのエールを送る一方、「Twightには負けませんよ！」と言っておきましょう。
-
 さて、次回のイベントは10月を予定しています。その時期には、いよいよ私達のWebアプリ、Vivliostyle Pub が姿を現しているはずです。当然イベントでも大きく扱われるはずです。どうかその時をお待ちください！
