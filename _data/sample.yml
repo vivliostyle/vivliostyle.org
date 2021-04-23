@@ -35,7 +35,7 @@ tag:
   - &tag_tachikiri_nuritashi
     name:
       ja: 裁切り塗り足し
-      en: Fill a bleed
+      en: Bleed
   - &tag_flexbox
     name:
       ja: Flexbox
@@ -102,13 +102,13 @@ link_name:
     en: flexible page size (horizontal text)
   - &link_name_page_float_on
     ja: ページフロート有
-    en: with a page float
+    en: with page floats
   - &link_name_page_float_off
     ja: ページフロート無
-    en: no page float
+    en: no page floats
   - &link_name_justification_on
     ja: justification ＆ hyphenation 有
-    en: with a justification & hyphenation
+    en: with justification & hyphenation
   - &link_name_justification_off
     ja: justification ＆ hyphenation 無
     en: no justification & hyphenation
@@ -117,7 +117,7 @@ link_name:
 categories:
   - name:
       ja: 単純な長文組版
-      en: Typesetting simple and long sentences
+      en: Typesetting simple and long texts
     samples:
       - name:
           ja: ごん狐（書籍）
@@ -232,7 +232,7 @@ categories:
             en:  from Peter Sorotokin’s [Adaptive Layout](https://github.com/sorotokin/adaptive-layout)
   - name:
       ja: 段組／図版の段抜き配置
-      en: A illustration stretching across several columns
+      en: Multi-column layout with figures spanning columns
     samples:
       - name:
           ja: 白馬岳（雑誌）
