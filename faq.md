@@ -12,9 +12,13 @@ title: FAQ
 {% capture license %}
 ## Vivliostyle Viewer FAQ
 
+User Guide: [Vivliostyle Viewer User Guide](https://docs.vivliostyle.org/#/vivliostyle-viewer)
+
 ### How to use Vivliostyle Viewer in a local environment?
 
-👉See [Vivliostyle Viewer's README: To use the distribution package `vivliostyle-viewer-*.zip`](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/viewer/README.md#to-use-the-distribution-package-vivliostyle-viewer-zip).
+To use Vivliostyle Viewer in a local environment, it is convenient to use the preview command of the Vivliostyle CLI. For information on how to install and use the Vivliostyle CLI, see [Vivliostyle CLI User Guide](https://docs.vivliostyle.org/#/vivliostyle-cli), and [Preview the typesetting results](https://docs.vivliostyle.org/#/vivliostyle-cli#preview-the-typesetting-results).
+
+👉[Vivliostyle Viewer User Guide: To use Vivliostyle Viewer in a local environment](https://docs.vivliostyle.org/#/vivliostyle-viewer#to-use-vivliostyle-viewer-in-a-local-environment)
 
 ### How to view my local documents with the online Vivliostyle Viewer?
 
@@ -68,6 +72,8 @@ An example of displaying unzipped EPUB on GitHub:
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
 👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/#/vivliostyle-viewer#epub)
+
+To view (or convert to PDF) EPUB in a local environment, it is convenient to use Vivliostyle CLI. Soo [Vivliostyle CLI User Guide](https://docs.vivliostyle.org/#/vivliostyle-cli), [Generate PDF from EPUB](https://docs.vivliostyle.org/#/vivliostyle-cli#generate-pdf-from-epub) and [Preview the typesetting results](https://docs.vivliostyle.org/#/vivliostyle-cli#preview-the-typesetting-results).
 
 ### How to integrate Vivliostyle Viewer into my website?
 
@@ -148,6 +154,8 @@ You can also specify the page size by **User Style Preferences** → **Page Size
 ```
 
 ## Vivliostyle CLI FAQ
+
+User Guide: [Vivliostyle CLI User Guide](https://docs.vivliostyle.org/#/vivliostyle-cli)
 
 ### How to enable PDF Bookmarks?
 

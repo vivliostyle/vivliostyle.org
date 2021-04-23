@@ -56,8 +56,8 @@ title: Documents
 {% capture reference %}
 ## References
 
-- [Core API Reference](https://docs.vivliostyle.org/#/api)
 - [Supported CSS Features](https://docs.vivliostyle.org/#/supported-css-features)
+- [Core API Reference](https://docs.vivliostyle.org/#/api)
 {% endcapture %}
 
 
@@ -78,9 +78,11 @@ Vivliostyle project discusses development matters on Slack.
 
 
 {% capture plan_core_description %}
+- [Support CSS Grid Layout #539](https://github.com/vivliostyle/vivliostyle.js/issues/539)
+- [Support CSS custom properties (variables) #540](https://github.com/vivliostyle/vivliostyle.js/issues/540)
+- [Support for running elements? #424](https://github.com/vivliostyle/vivliostyle.js/issues/424)
 - [Support the font-variant-\* longhands #592](https://github.com/vivliostyle/vivliostyle.js/issues/592)
 - [add support for user-select #587](https://github.com/vivliostyle/vivliostyle.js/issues/587)
-- [Support non-unzipped EPUB loading #541](https://github.com/vivliostyle/vivliostyle.js/issues/541)
 {% endcapture %}
 
 
@@ -90,7 +92,7 @@ Vivliostyle project discusses development matters on Slack.
 
 {% capture plan_cli_description %}
 - [Add --grayscale option #44](https://github.com/vivliostyle/vivliostyle-cli/issues/44)
-- [Need to post-fix PDF for Japanese/Chinese text accessibility #40](https://github.com/vivliostyle/vivliostyle-cli/issues/40)
+- [TOC generation in an entry file #115](https://github.com/vivliostyle/vivliostyle-cli/issues/115)
 {% endcapture %}
 
 

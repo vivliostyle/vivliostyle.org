@@ -29,7 +29,6 @@ title: Getting Started
 <h2 id="vivliostyle-viewer">Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span></h2>
 
 - A browser-based formatting engine that reads HTML and displays the results of the typesetting in the browser.
-- In order to typeset and display local files, you need to start the web server (see FAQ for details).
 
 <ol class="list--medium">
   {% include button/primary.html url=site.data.project.viewer.url text="Use Vivliostyle Viewer" %}
@@ -38,7 +37,8 @@ title: Getting Started
 
 {% include frame-list.html frames=viewer_frames %}
 
-There is also a [downloadable version](https://github.com/vivliostyle/vivliostyle.js/releases) that can be used on private networks, so you can do what you want with it without going through us.
+For more information about Vivliostyle Viewer, see [Vivliostyle Viewer User Guide](https://docs.vivliostyle.org/#/vivliostyle-viewer).
+
 {% endcapture %}
 
 
@@ -102,6 +102,9 @@ $ vivliostyle preview index.html
 </ol>
 
 {% include frame-list.html frames=cli_frames %}
+
+For more information about Vivliostyle CLI, see [Vivliostyle CLI User Guide](https://docs.vivliostyle.org/#/vivliostyle-cli).
+
 {% endcapture %}
 
 

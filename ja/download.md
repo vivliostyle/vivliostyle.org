@@ -6,6 +6,9 @@ lang: ja
 
 
 {% capture contents %}
+
+💡Vivliostyle をローカル環境で使うには Vivliostyle CLI がお勧めです。Vivliostyle CLI には Vivliostyle Viewer が統合されています。👉[Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli)
+
 - Vivliostyle.js [GitHub](https://github.com/vivliostyle/vivliostyle.js) [npm](https://www.npmjs.com/org/vivliostyle)
   - Vivliostyle Viewer [GitHub](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer/) [npm](https://www.npmjs.com/package/@vivliostyle/viewer/)
     - [すべてのリリース](https://vivliostyle.github.io/)
@@ -14,8 +17,8 @@ lang: ja
       - [オンライン Vivliostyle Viewer](/viewer/)
       - [Release notes](https://github.com/vivliostyle/vivliostyle.js/releases)
     - [最新開発版リリース (Canary)](https://vivliostyle.github.io/#canary-release-equivalent-to-master)
-      - [最新開発版のダウンロード (Canary)](https://vivliostyle.now.sh/vivliostyle-viewer-canary.zip)
-      - [オンライン Vivliostyle Viewer (Canary)](https://vivliostyle.now.sh/)
+      - [最新開発版のダウンロード (Canary)](https://vivliostyle.vercel.app/vivliostyle-viewer-canary.zip)
+      - [オンライン Vivliostyle Viewer (Canary)](https://vivliostyle.vercel.app/)
       - [Change Log](https://github.com/vivliostyle/vivliostyle.js/tree/master/CHANGELOG.md)
   - Vivliostyle Core [GitHub](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/core) [npm](https://www.npmjs.com/package/@vivliostyle/core)
 - Vivliostyle CLI [GitHub](https://github.com/vivliostyle/vivliostyle-cli) [npm](https://www.npmjs.com/package/@vivliostyle/cli)

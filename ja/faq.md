@@ -13,9 +13,13 @@ lang: ja
 {% capture license %}
 ## Vivliostyle Viewer についての FAQ
 
+ユーザーガイド: [Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer)
+
 ### ローカル環境で Vivliostyle Viewer を使うには？
 
-👉[Vivliostyle Viewer の配布パッケージの README（日本語）](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/viewer/README.ja.md) の「配布パッケージ `vivliostyle-viewer-*.zip` を使う場合」をご覧ください。
+Vivliostyle Viewer をローカル環境で利用するには、Vivliostyle CLI の preview コマンドを使うのが便利です。Vivliostyle CLI のインストール方法と使い方については、[Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli)、preview コマンドについては [組版結果のプレビュー](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E7%B5%84%E7%89%88%E7%B5%90%E6%9E%9C%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC) をご覧ください。
+
+👉[Vivliostyle Viewer ユーザーガイド: Vivliostyle Viewer をローカル環境で利用するには](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#vivliostyle-viewer-%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E7%92%B0%E5%A2%83%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF)
 
 ### オンラインの Vivliostyle Viewer でローカルの文書を表示するには？
 
@@ -68,6 +72,8 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
 👉[Vivliostyle Viewer ユーザーガイド: EPUB](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#epub)
+
+ローカル環境で EPUB を閲覧または PDF に変換をするには Vivliostyle CLI が便利です。[Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli) の [EPUB から PDF を生成](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#epub-%E3%81%8B%E3%82%89-pdf-%E3%82%92%E7%94%9F%E6%88%90) および [組版結果のプレビュー](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E7%B5%84%E7%89%88%E7%B5%90%E6%9E%9C%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC) をご覧ください。
 
 ### Webサイトに Vivliostyle Viewer を組み込むには？
 
@@ -148,6 +154,8 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 ```
 
 ## Vivliostyle CLI についての FAQ
+
+ユーザーガイド: [Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli)
 
 ### PDFの「しおり」(Bookmarks)を有効にするには？
 
