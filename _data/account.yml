@@ -18,7 +18,7 @@ slack:
   url: https://join.slack.com/t/vivliostyle/shared_invite/enQtNzc1NjE4ODk1ODI5LWQxZjM4YTZjMmQ0ZTUyNmUyOGZlMzIwZjQ5OWYwYjkyZDZmOTIwNGMwOWU5NDc0NjE5OTAyMmVhZTRhYTAyNWQ
 slack_log:
   name: Slack logs
-  url: https://github.com/vivliostyle/discussion/wiki/Slack
+  url: https://github.com/vivliostyle/community/blob/master/slack-logs/index.md
 robotpayment:
   name: 
   url: https://credit.j-payment.co.jp/gateway/payform.aspx
