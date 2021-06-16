@@ -21,10 +21,10 @@ tags:
 
 - [①図版入りWeb記事を、紙の雑誌のように組版した例->EPUB Adaptive Layout (EAL) による複雑な組版（サンプルページ）](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html&style=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/css/viv-style-v.css&bookMode=true)
 - [②1つの素材から複数の形式で出版・配信した例->Rapid publishing for public health books against COVID 19](https://github.com/vivliostyle/community/wiki/Rapid-publishing-for-public-health-books-against-COVID-19)
--[③商業出版の紙書籍でマンガ表現を実現した例->『そろそろ常識？マンガでわかる「正規表現」』の制作<i class="fas fa-external-link-alt"></i>](https://libroworks.co.jp/?p=3271)
+- [③商業出版の紙書籍でマンガ表現を実現した例->『そろそろ常識？マンガでわかる「正規表現」』の制作<i class="fas fa-external-link-alt"></i>](https://libroworks.co.jp/?p=3271)
 - [④VScode上のテキストファイルから縦組PDFを出力した例->novel-writer（Visual Studio Codeプラグイン）<i class="fas fa-external-link-alt"></i>](https://marketplace.visualstudio.com/items?itemName=TaiyoFujii.novel-writer)
 - [⑤世界中に散在する移動拠点に文書を配布する例->Vivliostyle Pub](https://vivliostyle.org/ja/getting-started/#vivliostyle-pub)
 
-上記のうち、③と④については当法人は開発に関わっておらず、独自にVivliostyleを利用してくれた事例です。以前から私たちのプロダクトを選んでくださったことをうれしく思っていましたが、今回のような機会で、すこしでも世に広めるお手伝いができればと考え、取り上げた次第です。ぜひ動画のデモをご覧ください。
+上記のうち、③と④については当法人は開発に関わっておらず、独自にVivliostyleを利用してくれた事例です。以前から私たちのプロダクトを選んでくださったことをうれしく思っていましたが、今回のような機会ですこしでも世に広めるお手伝いができればと考え、取り上げた次第です。ぜひ動画のデモをご覧ください。
 
 ところでこれは個人的な反省点ですが、スライドとデモの切り替えにもたついてしまったのが心残りでした。当法人で使っているGoogle Meetでは「全画面共有」として、ユーザのデスクトップ全体を画面共有できる機能がサポートされています。しかしこの日使われたZoomでは同種の機能がなく、フロントエンドのアプリケーションを切り替えたい場合は、別途パネルから手動操作する必要があります。このため上記③のような、AtomエディターでMarkdownを書き換えて保存すると、即座にVivliostyle Viewerのプレビューに反映されるというような、複数のアプリケーションが連携する振る舞いが伝わりづらかったように思います。このあたりをどう伝えるか、今後の課題としたいと思います。
