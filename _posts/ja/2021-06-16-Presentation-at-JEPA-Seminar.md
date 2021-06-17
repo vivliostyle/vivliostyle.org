@@ -15,7 +15,7 @@ tags:
 - [募集ページ<i class="fas fa-external-link-alt"></i>](https://kokucheese.com/event/index/611843/)
 - [講演動画（YouTube）<i class="fas fa-external-link-alt"></i>](https://www.youtube.com/watch?v=cpQ1XCS7aV0)
 - [スライド資料：Vivliostyle:オープンソースCSS組版システム（村上真雄）](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/events/JEPA20210615/slide.html&bookMode=true&spread=false)
-- [スライド資料：Vivliostyleの利用事例と普及戦略（小形克宏）](https://vivliostyle.org/assets/posts/2021-06-16-Presentation-at-JEPA-Seminar/20210615_VivliostyleUse%20Cases.pdf)
+- [スライド資料：Vivliostyleの利用事例と普及戦略（小形克宏）](https://vivliostyle.org/assets/posts/2021-06-16-Presentation-at-JEPA-Seminar/20210615-VivliostyleUse-Cases.pdf)
 
 講演の概要は、まず村上がCSS組版とVivliostyleプロジェクトについて概説した後、小形が利用事例として以下の5つをデモを交えて報告するというものでした。
 
