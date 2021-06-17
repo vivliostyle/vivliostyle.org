@@ -17,7 +17,7 @@ On June 15, 2021, at the invitation of the Japan Electronic Publishing Associati
 - [Presentation slide: Vivliostyle:オープンソースCSS組版システム (Shinyu Murakami)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/events/JEPA20210615/slide.html&bookMode=true&spread=false)
 - [Presentation slide: Vivliostyleの利用事例と普及戦略（Katsuhiro Ogata）](https://vivliostyle.org/assets/posts/2021-06-16-Presentation-at-JEPA-Seminar/20210615-VivliostyleUse-Cases.pdf)
 
-The summary of the lecture was as follows: Shinyu Murakami gave an overview of CSS typesetting and the Vivliostyle project, and then I reported on the following five use cases with demonstrations.
+The summary of the presentation was as follows: Shinyu Murakami gave an overview of CSS typesetting and the Vivliostyle project, and then I reported on the following five use cases with demonstrations.
 
 - [1. An example of typesetting an illustrated article on the Web as if it were a paper magazine->Complex typesetting with “EPUB Adaptive Layout" (EAL)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/index.html&style=https://vivliostyle.github.io/vivliostyle_doc/samples/webmag/css/viv-style-v.css&bookMode=true)
 - [2. Examples of publishing and distribution in multiple formats from a single source->Rapid publishing for public health books against COVID 19](https://github.com/vivliostyle/community/wiki/Rapid-publishing-for-public-health-books-against-COVID-19)
