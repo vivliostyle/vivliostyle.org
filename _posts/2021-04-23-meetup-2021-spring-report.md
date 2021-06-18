@@ -1,5 +1,5 @@
 ﻿---
-title: Event report of ”Vivliostyle User/Dev meetup Spring 2021“
+title: Event report of “Vivliostyle User/Dev meetup Spring 2021”
 lang: en
 image: /assets/posts/2021-04-23-meetup-2021-spring-report/user-meeting-banner-2021spring.png
 author:
@@ -7,7 +7,7 @@ author:
 tags:
   - event
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-04-23-meetup-2021-spring-report/user-meeting-banner-2021spring.png" alt="Event report of ”Vivliostyle User/Dev meetup Spring 2021“" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-04-23-meetup-2021-spring-report/user-meeting-banner-2021spring.png" alt="Event report of “Vivliostyle User/Dev meetup Spring 2021”" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2021春」開催報告](https://vivliostyle.org/ja/blog/2021/04/23/meetup-2021-spring-report/) in Japanese)
 
