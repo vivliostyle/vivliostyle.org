@@ -6,11 +6,11 @@ tags:
   - 同人誌
 ---
 
-こんにちは、Vivliostyle コラボレーターの spring-raining です。7 月 10-25 日に開催される技術書典 11 で Vivliostyle ユーザー会が頒布予定の『Vivliostyle で本を作ろう Vol. 5』と、無料配布キャンペーンについてお知らせします。
+こんにちは、Vivliostyle コラボレーターの spring-raining です。7 月 10-25 日に開催される[技術書典 11](https://techbookfest.org/event/tbf11) で Vivliostyle ユーザー会が頒布予定の『Vivliostyle で本を作ろう Vol. 5』と、無料配布キャンペーンについてお知らせします。
 
 ## Vivliostyleで本を作ろう Vol. 5
 
-https://techbookfest.org/organization/6255412097581056
+[https://techbookfest.org/organization/6255412097581056](https://techbookfest.org/organization/6255412097581056)
 
 第 5 回となった合同誌企画。今回は以下の記事を掲載予定です。どの記事もとても興味深い内容です！　また、今回もこれまでの『Vivliostyle で本を作ろう』と同様、物理書籍は有料となる代わりに全篇をこちらのサイトにて無料公開予定です。
 
@@ -26,7 +26,7 @@ https://techbookfest.org/organization/6255412097581056
 
 Vivliostyle ユーザー会では、技術書典のオフラインイベント再開を記念して、Vivliostyle を使って本を制作されているサークルの方に、こちらの「Vivliostyle で本を作ろう vol.5」を無料でお送りするキャンペーンを実施予定です。以下の内容を読み、ご希望の方はこちらのフォームから登録をお願いします。後ほど、お渡しのため個別にご連絡します。
 
-https://forms.gle/zz83U64RLd4dSw6y5
+[https://forms.gle/zz83U64RLd4dSw6y5](https://forms.gle/zz83U64RLd4dSw6y5)
 
 ### お渡し条件
 
@@ -36,7 +36,7 @@ https://forms.gle/zz83U64RLd4dSw6y5
 
 ### お渡し方法
 
-宅急便の匿名配送 (https://www.kuronekoyamato.co.jp/ytc/customer/send/sp/) を利用して配送予定です。住所等を Vivliostyle ユーザー会に直接教える必要はありません。
+宅急便の匿名配送 ([https://www.kuronekoyamato.co.jp/ytc/customer/send/sp/](https://www.kuronekoyamato.co.jp/ytc/customer/send/sp/)) を利用して配送予定です。住所等を Vivliostyle ユーザー会に直接教える必要はありません。
 
 ### 免責事項
 
