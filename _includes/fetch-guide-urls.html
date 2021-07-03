@@ -5,7 +5,10 @@
       const headings = await fetchHeadings(get_url);
 
       headings.forEach(function(name) {
-        element.insertAdjacentHTML("beforeend", listTemplate(name, base_url));
+        // 目次を除く
+        if(!name.toLowerCase().match(/^(目次|table of contents)$/)) {
+          element.insertAdjacentHTML("beforeend", listTemplate(name, base_url));
+        }
       });
     } catch(error) {
       console.log(error);
