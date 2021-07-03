@@ -32,6 +32,14 @@ title: Documents
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/create-book.md"
 %}
 
+### VFM
+<ul id="vfm-list"></ul>
+{% include fetch-guide-url.html
+  id="vfm-list"
+  url="https://vivliostyle.github.io/vfm/#/vfm"
+  get_url="https://api.github.com/repos/vivliostyle/vfm/contents/docs/vfm.md"
+%}
+
 ## 🛠 Contribution Guides
 
 ### Vivliostyle.js
