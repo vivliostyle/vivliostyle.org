@@ -30,6 +30,7 @@ lang: ja
 <h2 id="vivliostyle-viewer">Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span></h2>
 
 - ブラウザで動作する組版エンジン。HTML を読み込んで組版結果をブラウザに表示します。
+- **💡Vivliostyle をローカル環境で使うには Vivliostyle CLI がお勧めです。Vivliostyle CLI には Vivliostyle Viewer が統合されています。👉[Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli)**
 
 <ol class="list--medium">
   {% include button/primary.html url=site.data.project.viewer.url text="Vivliostyle Viewer を使う" %}
