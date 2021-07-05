@@ -33,7 +33,7 @@ lang: ja
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/create-book.md"
 %}
 
-### VFM
+### Vivliostyle Flavored Markdown (VFM)
 <ul id="vfm-list"></ul>
 {% include fetch-guide-url.html
   id="vfm-list"
