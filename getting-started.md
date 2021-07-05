@@ -29,6 +29,7 @@ title: Getting Started
 <h2 id="vivliostyle-viewer">Vivliostyle Viewer <span class="tip">{{ site.data.project.viewer.version }}</span></h2>
 
 - A browser-based formatting engine that reads HTML and displays the results of the typesetting in the browser.
+- **💡To use Vivliostyle in a local environment, the recommend tool is Vivliostyle CLI, which includes the Vivliostyle Viewer. 👉[Vivliostyle CLI User Guide](https://docs.vivliostyle.org/#/vivliostyle-cli)**
 
 <ol class="list--medium">
   {% include button/primary.html url=site.data.project.viewer.url text="Use Vivliostyle Viewer" %}
