@@ -16,19 +16,6 @@
   <div class="container">
     {{ include.plan | markdownify }}
 
-    <ol class="list--medium--column">
-      {% for plan in include.plans %}
-        {% if plan.description.size > 1 %}
-          {% include plan.html
-            title=plan.title
-            description=plan.description
-            url=plan.url
-            thumbnail=plan.thumbnail
-          %}
-        {% endif %}
-      {% endfor %}
-    </ol>
-
     {{ include.community | markdownify }}
   </div>
 </section>
