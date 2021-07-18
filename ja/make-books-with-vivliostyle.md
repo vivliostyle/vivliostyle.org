@@ -15,6 +15,13 @@ lang: ja
 {% endcapture %}
 
 
+{% capture vol5_description %}
+## Vivliostyle で本を作ろう Vol.5<small>（2021年7月11日）</small>
+
+特にアクティブに開発されている VFM や、CSS 組版の基本的な標準仕様で、2021年春ごろに Vivliostyle への実装が進んだ CSS Paged Media Level 3 について紹介されています。
+{% endcapture %}
+
+
 {% capture vol4_description %}
 ## Vivliostyle で本を作ろう Vol.4<small>（2020年9月12日）</small>
 
@@ -45,6 +52,17 @@ Vivliostyle.js v2.0.0 以降に登場したプロジェクトについての原�
 
 関連記事：[技術書典6に出展『Vivliostyleで本を作ろう Vol.1』公開！](/ja/blog/2019/05/06/make-books-with-vivliostyle-vol1/)
 {% endcapture %}
+
+
+{% include assign/hash.html
+  description=vol5_description
+  thumbnail=site.data.book.vol5.img
+  toc=site.data.book.vol5.toc
+  web_url=site.data.book.vol5.url.web
+  viewer_url=site.data.book.vol5.url.viewer
+  print_url=site.data.book.vol5.url.print
+  source_url=site.data.book.vol5.url.source
+%}{% assign vol5 = hash %}
 
 
 {% include assign/hash.html
@@ -92,6 +110,7 @@ Vivliostyle.js v2.0.0 以降に登場したプロジェクトについての原�
 
 
 {% include assign/array.html
+  vol5=vol5
   vol4=vol4
   vol3=vol3
   vol2=vol2

@@ -110,3 +110,31 @@ vol4:
       title: Vivliostyle FAQ よくある質問
       author: 村上真雄
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol4/artifacts/content/shinyu/index.html
+vol5:
+  url:
+    web: https://raw.githack.com/spring-raining/tbf11-draft/main/content/index.html
+    viewer: https://vivliostyle.org/viewer/#src=https://github.com/spring-raining/tbf11-draft/blob/main/content/index.html&bookMode=true
+    print: https://vivliostyle.org/viewer/#src=https://github.com/spring-raining/tbf11-draft/blob/main/content/index.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A/*%3C/viewer%3E*/%0A@page%7Bmarks:crop%20cross;bleed:3mm%7D
+    source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol5/
+  img: /assets/samples/vug-vol5.png
+  toc:
+    - type: A
+      title: Vivliostyle Theme のつくりかた
+      author: やましー
+      url: https://raw.githack.com/spring-raining/tbf11-draft/main/content/yamasy/index.html
+    - type: A
+      title: Markdown を拡張する MDX はドキュメント作成の新たな可能性？
+      author: spring-raining
+      url: https://raw.githack.com/spring-raining/tbf11-draft/main/content/spring-raining/index.html
+    - type: A
+      title: VFM 入門 2021 夏
+      author: アカベコ
+      url: https://raw.githack.com/spring-raining/tbf11-draft/main/content/akabeko/index.html
+    - type: D
+      title: Vivliostyle Foundation 2020 年度の活動まとめ
+      author: 小形克宏
+      url: https://raw.githack.com/spring-raining/tbf11-draft/main/content/ogwata/index.html
+    - type: D
+      title: CSS 組版の基本仕様 CSS Paged Media 入門のススメ
+      author: 村上真雄
+      url: https://raw.githack.com/spring-raining/tbf11-draft/main/content/shinyu/index.html
