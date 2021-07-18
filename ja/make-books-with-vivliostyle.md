@@ -6,7 +6,7 @@ lang: ja
 
 
 {% capture description %}
-「Vivliostyle で本を作ろう」はユーザ会編集による同人誌。Vivliostyleを使うノウハウや、開発に参加するための情報がギッシリ詰まってます。毎回の[技術書典](https://techbookfest.org/)にあわせて刊行していますが、ご存知の通り技術書典8 (2020年2月29日、3月1日) は[開催中止](https://techbookfest.org/event/tbf08)。そこで、ここで販売予定だった第3号の内容を公開することにしました。あわせてバックナンバーも公開。これを読んで、Vivliostyle で本を作ろう！
+「Vivliostyle で本を作ろう」はユーザ会編集による同人誌。Vivliostyleを使うノウハウや、開発に参加するための情報がギッシリ詰まってます。毎回の[技術書典](https://techbookfest.org/)にあわせて刊行していますが、同時に Web 上でバックナンバーも公開することにしました。これを読んで、Vivliostyle で本を作ろう！
 
 - <i class="toc__type">A</i> **入門・使用レポート**……組版に関する tips を含む
 - <i class="toc__type">B</i> **業務での活用事例**……周辺ツールとの連携や、特殊な要求にこたえるための工夫など
