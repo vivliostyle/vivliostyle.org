@@ -73,7 +73,19 @@ lang: ja
 {% capture plan %}
 ## 今後の開発予定
 
-あなたもコントリビュートしてみませんか？
+プロジェクトごとに、注目の issue をまとめました。あなたもコントリビュートしてみませんか？
+
+- Vivliostyle.js
+  - [開発優先度の高い issue](https://github.com/vivliostyle/vivliostyle.js/issues?q=is%3Aissue+is%3Aopen+label%3AP1)
+  - [はじめてコントリビュートする人にもおすすめの issue](https://github.com/vivliostyle/vivliostyle.js/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- Vivliostyle CLI
+  - [はじめてコントリビュートする人にもおすすめの issue](https://github.com/vivliostyle/vivliostyle-cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- VFM
+  - [vfm v1.0.0 をリリースするための issue](https://github.com/vivliostyle/vfm/milestone/2)
+- Create Book
+  - [create-book v1.0.0 をリリースするための issue](https://github.com/vivliostyle/create-book/milestone/1)
+- Themes
+  - [はじめてコントリビュートする人にもおすすめの issue](https://github.com/vivliostyle/themes/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 {% endcapture %}
 
 
@@ -86,76 +98,6 @@ Vivliostyle プロジェクトでは、開発方針などをSlack上で話し合
 {% endcapture %}
 
 
-{% capture plan_core_description %}
-- [Support CSS Grid Layout #539](https://github.com/vivliostyle/vivliostyle.js/issues/539)
-- [Support CSS custom properties (variables) #540](https://github.com/vivliostyle/vivliostyle.js/issues/540)
-- [Support for running elements? #424](https://github.com/vivliostyle/vivliostyle.js/issues/424)
-- [Support the font-variant-\* longhands #592](https://github.com/vivliostyle/vivliostyle.js/issues/592)
-- [add support for user-select #587](https://github.com/vivliostyle/vivliostyle.js/issues/587)
-{% endcapture %}
-
-
-{% capture plan_pub_description %}
-{% endcapture %}
-
-
-{% capture plan_cli_description %}
-- [Add --grayscale option #44](https://github.com/vivliostyle/vivliostyle-cli/issues/44)
-- [TOC generation in an entry file #115](https://github.com/vivliostyle/vivliostyle-cli/issues/115)
-{% endcapture %}
-
-
-{% capture plan_viewer_description %}
-- [UI tests need to be updated #618](https://github.com/vivliostyle/vivliostyle.js/issues/618)
-- [Localization of Vivliostyle Viewer UI #617](https://github.com/vivliostyle/vivliostyle.js/issues/617)
-{% endcapture %}
-
-
-{% capture plan_others_description %}
-{% endcapture %}
-
-
-{% include assign/hash.html
-  title=site.data.project.core.name
-  url=site.data.project.core.github
-  description=plan_core_description
-  thumbnail=site.data.project.core.thumbnail
-%}{% assign core = hash %}
-
-
-{% include assign/hash.html
-  title=site.data.project.pub.name
-  url=site.data.project.pub.github
-  description=plan_pub_description
-  thumbnail=site.data.project.pub.thumbnail
-%}{% assign pub = hash %}
-
-
-{% include assign/hash.html
-  title=site.data.project.cli.name
-  url=site.data.project.cli.github
-  description=plan_cli_description
-  thumbnail=site.data.project.cli.thumbnail
-%}{% assign cli = hash %}
-
-
-{% include assign/hash.html
-  title=site.data.project.viewer.name
-  url=site.data.project.viewer.github
-  description=plan_viewer_description
-  thumbnail=site.data.project.viewer.thumbnail
-%}{% assign viewer = hash %}
-
-
-{% include assign/hash.html
-  title="その他"
-  description=plan_others_description
-%}{% assign others = hash %}
-
-
-{% assign plans = "" | split: "" | push: core | push: pub | push: cli | push: viewer | push: others %}
-
-
 {% include page/documents.html
   title="ドキュメント"
   lead="開発者が困ったとき、迷ったとき頼りになる、さまざまな文書をまとめました。「今後の開発予定」では GitHub の当該 Issue にジャンプします。"
@@ -163,6 +105,5 @@ Vivliostyle プロジェクトでは、開発方針などをSlack上で話し合
   guide=guide
   reference=reference
   plan=plan
-  plans=plans
   community=community
 %}
