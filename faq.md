@@ -380,8 +380,8 @@ Let's explain it in concrete terms. Take a look at the screenshot below. In the 
 There is one thing you should be aware of. It is noted that Vivliostyle Pub is still under development and the way it is implemented may change in the future. As mentioned earlier, the requirement for the original part of Vivliostyle Pub to be under the Apache License 2.0 was that it “calls Vivliostyle Viewer, etc. as an independent program”. See the following article:
 
 
-- 👉[Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?](http://127.0.0.1:4000/faq/#can-i-use-vivliostyle-viewer-or-vivliostyle-print-by-calling-it-from-a-commercial-web-application)
-- 👉[How does Viviostyle Viewer run as an independent program?](http://127.0.0.1:4000/faq/#how-does-viviostyle-viewer-run-as-an-independent-program)
+- 👉[Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?](#can-i-use-vivliostyle-viewer-or-vivliostyle-print-by-calling-it-from-a-commercial-web-application)
+- 👉[How does Viviostyle Viewer run as an independent program?](#how-does-viviostyle-viewer-run-as-an-independent-program)
 
 Conversely, if the future Vivliostyle Pub is developed to more closely incorporate Vivliostyle Viewer and/or Vivliostyle CLI, the license will need to be changed to AGPL v3.
 
