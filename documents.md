@@ -80,7 +80,7 @@ The following list is a summary of the hot issues for each project. Would you li
 - Vivliostyle CLI
   - [Good issues for first time contributors](https://github.com/vivliostyle/vivliostyle-cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - VFM
-  - [Issues to release vfm v1.0.0](https://github.com/vivliostyle/vfm/milestone/2)
+  - [Issues to release vfm v2.0.0](https://github.com/vivliostyle/vfm/milestone/1)
 - Create Book
   - [Issues to release create-book v1.0.0](https://github.com/vivliostyle/create-book/milestone/1)
 - Themes
