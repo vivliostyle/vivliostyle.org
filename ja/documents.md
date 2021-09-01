@@ -81,7 +81,7 @@ lang: ja
 - Vivliostyle CLI
   - [はじめてコントリビュートする人にもおすすめの issue](https://github.com/vivliostyle/vivliostyle-cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - VFM
-  - [vfm v1.0.0 をリリースするための issue](https://github.com/vivliostyle/vfm/milestone/2)
+  - [vfm v2.0.0 をリリースするための issue](https://github.com/vivliostyle/vfm/milestone/1)
 - Create Book
   - [create-book v1.0.0 をリリースするための issue](https://github.com/vivliostyle/create-book/milestone/1)
 - Themes
