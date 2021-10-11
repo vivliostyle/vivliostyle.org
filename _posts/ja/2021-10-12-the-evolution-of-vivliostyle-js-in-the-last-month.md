@@ -21,13 +21,13 @@ tags:
 - [font-variant-east-asian](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-east-asian)……OpenTypeの日本語を含む東アジアフォントのグリフ置換機能を制御
 - [font-variant-ligatures](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-ligatures)……OpenTypeの欧文フォントの合字を制御
 - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……OpenTypeフォントの数字、分数、序数記号の表記を制御
-- [width: min-content](https://developer.mozilla.org/ja/docs/Web/CSS/width)……対称の要素が取り得る最小の幅にセットする
-- [width: max-content](https://developer.mozilla.org/ja/docs/Web/CSS/width)……対称の要素が取り得る最大の幅にセットする
+- [width: min-content](https://developer.mozilla.org/ja/docs/Web/CSS/width)……対象の要素が取り得る最小の幅にセットする
+- [width: max-content](https://developer.mozilla.org/ja/docs/Web/CSS/width)……対象の要素が取り得る最大の幅にセットする
 - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range)…… `@font-face`で定義されたフォントのうち、特定の符号位置を指定できる
 
 中でも注目したいのが、最後の`unicode-range`です。これにより、たとえば欧文と和文で異なるフォントを指定したり、あるいは特定の文字や約物だけ別のフォントを指定したりすることが可能になります。また、Webフォントを指定する際、このセレクタにより容量を押さえるためのサブセットを指定することが可能になります。
 
-## バグ修正にともない、以下のデフォルト値を変更
+## バグ修正にともなうデフォルト値の変更
 
 ## Vivliostyle ViewerのUIにテキスト検索機能を追加
 
