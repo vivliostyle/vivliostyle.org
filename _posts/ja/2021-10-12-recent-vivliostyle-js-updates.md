@@ -49,9 +49,9 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 - [ Default body margin should be 0 in paged media #776 ](https://github.com/vivliostyle/vivliostyle.js/issues/776)
 
-### `root`要素で指定された継承プロパティを、`@page`の内容に継承できるよう修正
+### ルート要素で指定された継承プロパティを、`@page`の内容に継承できるよう修正
 
-これもスクリーンショットで比較してみましょう。まず、`root`要素の中で以下のように記述したHTMLを用意します（コード全体は[こちら](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)）。`html`要素の中で、`root`セレクタにより、文字に関するスタイル（色、フォント名、バリアント、サイズ等）を指定しています。これらは[継承プロパティ](https://developer.mozilla.org/ja/docs/Web/CSS/inheritance#inherited_properties)ですので、続く`@page`で指定されたヘッダとフッタに継承されるはずです。
+これもスクリーンショットで比較してみましょう。まず、ルート要素の中で以下のように記述したHTMLを用意します（コード全体は[こちら](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)）。`html`要素の中で、`root`セレクタにより、文字に関するスタイル（色、フォント名、バリアント、サイズ等）を指定しています。これらは[継承プロパティ](https://developer.mozilla.org/ja/docs/Web/CSS/inheritance#inherited_properties)ですので、続く`@page`で指定されたヘッダとフッタに継承されるはずです。
 
 ```html
     <style>
