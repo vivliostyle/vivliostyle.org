@@ -1,7 +1,7 @@
 ---
 title: 最近のvivliostyle.jsの進化について
 lang: ja
-image: /assets/posts/2021-10-12-the-evolution-of-vivliostyle-js-in-the-last-month/2021-10-12-the-evolution-of-vivliostyle-js-in-the-last-month.png
+image: /assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png
 author:
  - ogwata
 tags:
@@ -9,7 +9,7 @@ tags:
  - Vivliostyle Core
  - Vivliostyle Viewer
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-the-evolution-of-vivliostyle-js-in-the-last-month/2021-10-12-the-evolution-of-vivliostyle-js-in-the-last-month.png" alt="この1ヵ月のvivliostyle.jsの進化について" style="width: 700px;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png" alt="最近のvivliostyle.jsの進化について" style="width: 700px;" /></div>
 
 この1ヵ月、vivliostyle.jsは大幅なアップデートを重ねてきました。9月初頭までv2.8.1でしたが、本稿執筆時点のバージョンはv2.11.1になっています。その概要は[Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)で一覧できます。この記事では追加された便利な機能、そしてバグの修正にともなうデフォルト値の変更について説明し、最後に近日中に実装予定の機能について予告します。
 
@@ -19,35 +19,73 @@ tags:
     - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……CSSの特定のプロパティや、プロパティと値の組み合わせがブラウザにサポートされているかチェックできる
 - [v2.10.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#features-1)
     - [line-break: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/line-break)……句読点やスペースを含め、全ての文字間での改行を許容する
+    - [overflow-wrap: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap)……インライン要素に対してテキストが行ボックスからあふれないよう、通常改行しない箇所でも改行する
+    - [white-space: break-spaces](https://developer.mozilla.org/ja/docs/Web/CSS/white-space)……要素内の文字列に含まれるホワイトスペースの扱いについて、行末のホワイトスペースの後で改行する
     - [font-variant-caps](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-caps)……OpenTypeの欧文フォントにおける大文字関係の制御
     - [font-variant-ligatures](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-ligatures)……OpenTypeの欧文フォントにおける合字の制御
     - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……OpenTypeフォントの数字、分数、序数記号におけるグリフを制御
-    - [width: min-content](https://developer.mozilla.org/ja/docs/Web/CSS/width)……対象の要素が取り得る最小の幅にセットする
-    - [width: max-content](https://developer.mozilla.org/ja/docs/Web/CSS/width)……対象の要素が取り得る最大の幅にセットする
+    - [min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……ボックス内で自動改行される場合において、そのボックスの幅が最小になるよう、最も語長が長い単語に合わせてボックスを生成する
+    - [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……コンテンツが最大幅になるよう、単語の途中で改行せずにコンテナを生成する
+    - [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)……利用可能領域が可変の場合において、max-contentを使ってボックスを生成し、利用可能領域がmax-contentの幅を下回った場合はmin-contentに切り替えてボックスを生成する
     - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range)…… `@font-face`で定義されたフォントのうち、特定の符号位置を指定する
 
-中でも注目したいのが、最後の`unicode-range`です。これにより、たとえば欧文と和文で異なるフォントを指定したり、あるいは特定の文字や約物だけ別のフォントを指定したりすることが可能になります。また、Webフォントを指定する際、このプロパティを使ってグリフのサブセットを作成することで、容量を抑え表示速度を向上させることが期待できます。
+中でも注目したいのが、最後の`unicode-range`です。これにより、たとえば欧文と和文で異なるフォントを指定したり、あるいは特定の文字や約物だけ別のフォントを指定したりすることが可能になります。また、Webフォントを指定する際、この機能を使ってグリフのサブセットを作成することで、容量を抑え表示速度を向上させることが期待できます。
 
-## バグ修正にともなう組版結果への影響① `body`における`margin`の初期値を`8`から`0`に変更
+## バグ修正にともなう組版結果への影響
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-the-evolution-of-vivliostyle-js-in-the-last-month/fig-2.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 900px; " /></div>
+###  デフォルトスタイルシートにおける、`body`の`margin`の値を`8`から`0`に変更
 
-[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/#variable-auto-margins)では、`body`（本文）と他の要素との`margin`（間隔）の初期値は、`0`と定められています。ところが、v2.10.0 よりも前のバージョンでは初期値は`8`でした。
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-2.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 900px; " /></div>
 
-スクリーンショットをご覧ください。左側のVivliostyle Viewerはv2.9.1、そして右側はバグを修正した2.10.0です。左の旧バージョンの緑色枠の外側には間隔が確保されているのに対し、右側のv2.10.0では間隔はゼロであることが分かります。
+vivliostyle.jsでは、当初から[ユーザーエージェントのデフォルトスタイルシート](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064)のなかで、`body`（本文）の`margin`の値を`8`に設定してきました。この設定はWebブラウザのデフォルト値を踏襲したものです。
 
-これは破壊的な変更であり、v2.10.0以降のバージョンは、それよりも前のバージョンとは非互換の関係になります。ご迷惑をおかけしますが、お手元のデータに影響がないかご確認ください。詳細は下記のIssueを参照してください。スクリーンショットのHTMLとCSSのコードも、このIssueにあるサンプルコードを使っています。
+ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/#variable-auto-margins)では`@page {...}`の`margin`プロパティにより指定されることになっています。そもそも、VivliostyleをふくむほとんどのCSS Paged Media実装では、デフォルトで`@page { margin: 10% }`が設定されているので、デフォルトスタイルシートの`body { margin: 8px; }`は無意味になります。このような状況で、ユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
+
+つまり、デフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Media実装には適していないと言えます。この状況を修正するため、v2.10.0でデフォルトスタイルシートの設定を`body { margin: 0px; }`に変更しました。
+
+スクリーンショットをご覧ください。左側のVivliostyle Viewerはv2.9.1、そして右側はバグを修正したv2.10.0です。左の旧バージョンの緑色枠の外側には8pxの間隔が確保されているのに対し、右側のv2.10.0では間隔はゼロであることが分かります（HTMLとCSSのコードは [Issue #776](https://github.com/vivliostyle/vivliostyle.js/issues/776)を参照）。
+
+この修正により、v2.10.0の前後で組版結果が異なる可能性があります。以前からVivliostyle Viewer、Vivliostyle CLI、Create Bookをお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
 - [ Default body margin should be 0 in paged media #776 ](https://github.com/vivliostyle/vivliostyle.js/issues/776)
 
-## バグ修正にともなう組版結果への影響② ルート要素のスタイルをページコンテキストに継承するように変更
+### `root`要素で指定された継承プロパティを、`@page`の内容に継承できるよう修正
 
+これもスクリーンショットで比較してみましょう。まず、`root`要素の中で以下のように記述したHTMLを用意します（コード全体は[こちら](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)）。`html`要素の中で、`root`セレクタにより、文字に関するスタイル（色、フォント名、バリアント、サイズ等）を指定しています。これらは[継承プロパティ](https://developer.mozilla.org/ja/docs/Web/CSS/inheritance#inherited_properties)ですので、続く`@page`で指定されたヘッダとフッタに継承されるはずです。
+
+```html
+    <style>
+      :root {
+        color: maroon;
+        font-family: "Georgia", serif;
+        font-variant: small-caps;
+        font-style: italic;
+        font-size: 200%;
+      }
+      @page {
+        @top-center {
+          content: "Here is the Page Header";
+        }
+        @bottom-center {
+          content: counter(page);
+        }
+      }
+    </style>
+```
+
+これを修正前後のVivliostyle Viewerに読み込ませたスクリーンショットをご覧ください。左側は修正前のv2.9.1、右側は修正したv2.10.0です。
+
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
+
+画面の上端のヘッダと下端のフッタを左右で比べてください。左側の旧バージョンでは本来継承されるはずの文字に関するスタイルが有効にならず、ただヘッダとフッタの内容、位置だけが表示されてしまっています。明らかなバグです。しかし右側の新バージョンをみると、ヘッダとフッタは指定通りに表示されていることが分かります。
+
+この修正によって、前項と同じくv2.10.0の前後で組版結果が異なる可能性があります。以前からVivliostyle Viewer、Vivliostyle CLI、Create Bookをお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
 - [ Root element styles are not inherited to page context #568 ](https://github.com/vivliostyle/vivliostyle.js/issues/568)
 
 ## Vivliostyle ViewerのUIにテキスト検索機能を追加
 
-本ページ一番上のVivliostyle Viewerスクリーンショットをご覧ください。画面左上に虫眼鏡のアイコンがあります。これが新設されたテキスト検索アイコンです。以下のページから、実際に最新バージョンのVivliostyle  Viewerを使えますので、ぜひお試しください。
+本ページ一番上のVivliostyle Viewerスクリーンショットをご覧ください。画面左上に虫眼鏡のアイコンが確認できるでしょう。これが新設されたテキスト検索アイコンです。以下のページから、実際に最新バージョンのVivliostyle  Viewerが使えますので、ぜひお試しください。
 
 - [Vivliostyle で本を作ろう Vol.5](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/&bookMode=true)
 
@@ -59,4 +97,4 @@ tags:
 - [CSS Grid Layout](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout)……画面を複数のグリッドに分割することで、要素を列と行に整列させられる
 - WebフォントにおけるJavaScript 埋め込みコードをサポート……容量が大きくなりがちな東アジアフォントに多い、JavaScript 埋め込みコードによるWebフォントの指定をサポートする予定です（なお、現在でも`@import`埋め込みコードや、`link`要素による指定はサポートされています）
 
-なお、来月11月13日（土曜）に開催予定の「Vivliostyle ユーザーと開発者の集い 2021秋」では、村上代表がvivliostyle.jsのアップデートについて、デモを交えながらより詳しく説明する予定です。近日中に告知を開始しますので、どうかお楽しみに！
+以上、駆け足で紹介しましたが、来月11月13日（土曜）に開催予定の「Vivliostyle ユーザーと開発者の集い 2021秋」では、村上代表がvivliostyle.jsのアップデートについて、デモを交えながら詳しく説明する予定です。近日中にイベント告知を開始しますので、どうかお楽しみに！
