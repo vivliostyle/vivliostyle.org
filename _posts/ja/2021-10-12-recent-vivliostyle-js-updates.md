@@ -26,7 +26,7 @@ tags:
     - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……OpenTypeフォントの数字、分数、序数記号におけるグリフを制御
     - [min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……ボックス内で自動改行される場合において、そのボックスの幅が最小になるよう、最も語長が長い単語に合わせてボックスを生成する
     - [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……コンテンツが最大幅になるよう、単語の途中で改行せずにボックスを生成する
-    - [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)……利用可能領域が可変の場合において、max-contentを使ってボックスを生成し、利用可能領域がmax-contentの幅を下回った場合はmin-contentに切り替えてボックスを生成する
+    - [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)……利用可能領域が可変の場合においてmax-contentを使ってボックスを生成し、もし利用可能領域がmax-contentの幅を下回った場合はmin-contentに切り替えてボックスを生成する
     - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range)…… `@font-face`で定義されたフォントのうち、特定の符号位置を指定する
 
 中でも注目したいのが、最後の`unicode-range`です。これにより、たとえば欧文と和文で異なるフォントを指定したり、あるいは特定の文字や約物だけ別のフォントを指定したりすることが可能になります。また、Webフォントを指定する際、この機能を使ってグリフのサブセットを作成することで、容量を抑え表示速度を向上させることが期待できます。
