@@ -77,11 +77,11 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
 
-画面の上端のヘッダと下端のフッタを左右で比べてください。左側の旧バージョンでは本来継承されるはずの文字に関するスタイルが有効にならず、ただヘッダとフッタの内容、位置だけが表示されてしまっています。これはぜひ直したいバグです。しかし右側の新バージョンをみると、ヘッダとフッタは指定通り、適切に表示されていることが分かります。みごとに修正されました。
+画面の上端のヘッダと下端のフッタを左右で比べてください。左側の旧バージョンでは本来継承されるはずの文字に関するスタイルが有効にならず、ただヘッダとフッタの内容、位置だけが表示されてしまっています。これはぜひ直したいバグです。そこで右側の新バージョンをみると、ヘッダとフッタは指定通り、適切に表示されていることが分かります。みごとに修正されました。
 
 この修正によって、前項と同じくv2.10.0の前後で組版結果が異なる可能性があります。以前からVivliostyle Viewer、Vivliostyle CLI、Create Bookをお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
-- [ Root element styles are not inherited to page context #568 ](https://github.com/vivliostyle/vivliostyle.js/issues/568)
+- [Root element styles are not inherited to page context #568](https://github.com/vivliostyle/vivliostyle.js/issues/568)
 
 ## Vivliostyle ViewerのUIにテキスト検索機能を追加
 
