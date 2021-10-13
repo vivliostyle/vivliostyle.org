@@ -16,7 +16,7 @@ tags:
 ## CSSの機能追加
 
  - [v2.9.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#290-2021-09-03)
-    - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……CSSの特定のプロパティやプロパティと値の組み合わせがサポートされているかどうかでスタイルを切り替えることができる
+    - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……CSSの特定のプロパティ、あるいはプロパティと値の組み合わせがサポートされているかどうかでスタイルを切り替えることができる
 - [v2.10.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#2100-2021-09-17)
     - [line-break: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/line-break)……句読点やスペースを含め、全ての文字間での改行を許容する
     - [overflow-wrap: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap)……インライン要素に対してテキストが行ボックスからあふれないよう、通常改行しない箇所でも改行する
@@ -49,7 +49,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 つまり、今までVivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0で、このデフォルトスタイルシートの設定を削除しました（`margin`のデフォルトは0になります）。
 
-スクリーンショットをご覧ください。左側のVivliostyle Viewerはv2.9.1、そして右側はバグを修正したv2.10.0です。左の旧バージョンの緑色枠の外側には8pxの間隔が確保されているのに対し、右側のv2.10.0では間隔はゼロであることが分かります（HTMLとCSSのコードは [Issue #776](https://github.com/vivliostyle/vivliostyle.js/issues/776)を参照）。
+スクリーンショットをご覧ください。意図的にマージンをなくすよう`@page {margin: 0;}`を指定したのに、左側のv2.9.1の緑色枠の外側には8pxの間隔が発生しています（現物は[こちら](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://github.com/ogwata/testbed-20211012/blob/main/test.html)）。それに対し、右側のv2.10.0では指定通り間隔はゼロであることが分かります（現物は[こちら](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://github.com/ogwata/testbed-20211012/blob/main/test.html)。コードは[こちら](https://github.com/ogwata/testbed-20211012/blob/main/test.html)）。
 
 この修正により、v2.10.0の前後で組版結果が異なる可能性があります。Vivliostyle.jsを組み込んだ Vivliostyle Viewer、Vivliostyle CLI、Create Bookを、以前からお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
@@ -77,7 +77,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 }
 ```
 
-これを修正前後のVivliostyle Viewerに読み込ませたスクリーンショットをご覧ください。左側は修正前のv2.9.1、右側は修正したv2.10.0です。
+これを修正前後のVivliostyle Viewerに読み込ませたスクリーンショットをご覧ください。左側は[修正前のv2.9.1](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)（現物は[こちら](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2))）、右側は[修正したv2.10.0](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)です（現物は[こちら](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)）。
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
 
