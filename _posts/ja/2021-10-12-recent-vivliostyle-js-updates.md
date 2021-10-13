@@ -31,6 +31,12 @@ tags:
 
 中でも注目したいのが、最後の`unicode-range`です。これにより、たとえば欧文と和文で異なるフォントを指定したり、あるいは特定の文字や約物だけ別のフォントを指定したりすることが可能になります。また、Webフォントを指定する際、この機能を使ってグリフのサブセットを作成することで、容量を抑え表示速度を向上させることが期待できます。
 
+## Vivliostyle ViewerのUIにテキスト検索機能を追加
+
+本ページ一番上のVivliostyle Viewerスクリーンショットをご覧ください。画面左上に虫眼鏡のアイコンが確認できるでしょう。これが新設されたテキスト検索アイコンです。以下のページから、実際に最新バージョンのVivliostyle  Viewerが使えますので、ぜひお試しください。
+
+- [Vivliostyle で本を作ろう Vol.5](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/&bookMode=true)
+
 ## バグ修正にともなう組版結果への影響
 
 ###  デフォルトスタイルシートにおける、`body`の`margin`の値を`8`から`0`に変更
@@ -82,12 +88,6 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 この修正によって、前項と同じくv2.10.0の前後で組版結果が異なる可能性があります。以前からVivliostyle Viewer、Vivliostyle CLI、Create Bookをお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
 - [Root element styles are not inherited to page context #568](https://github.com/vivliostyle/vivliostyle.js/issues/568)
-
-## Vivliostyle ViewerのUIにテキスト検索機能を追加
-
-本ページ一番上のVivliostyle Viewerスクリーンショットをご覧ください。画面左上に虫眼鏡のアイコンが確認できるでしょう。これが新設されたテキスト検索アイコンです。以下のページから、実際に最新バージョンのVivliostyle  Viewerが使えますので、ぜひお試しください。
-
-- [Vivliostyle で本を作ろう Vol.5](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/&bookMode=true)
 
 ## 直近のアップデート予定
 
