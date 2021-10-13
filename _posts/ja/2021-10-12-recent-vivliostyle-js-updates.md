@@ -11,7 +11,7 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png" alt="最近のVivliostyle.jsの進化について" style="width: 700px;" /></div>
 
-この1ヵ月、Vivliostyle.jsは大幅なアップデートを重ねてきました。9月初頭までv2.8.1でしたが、本稿執筆時点のバージョンはv2.11.1になっています。その概要は[Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)で一覧できます。この記事では追加された便利な機能、そしてバグ修正にともなう組版結果への影響について説明し、最後に近日中に実装予定の機能について予告します。
+この1ヵ月、Vivliostyle.jsは重要なアップデートを重ねてきました。9月初頭までv2.8.1でしたが、本稿執筆時点のバージョンはv2.11.1になっています。その概要は[Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)で一覧できます。この記事では追加された便利な機能、そしてバグ修正にともなう組版結果への影響について説明し、最後に近日中に実装予定の機能について予告します。
 
 ## CSSの機能追加
 
@@ -89,7 +89,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 ## 直近のアップデート予定
 
-最後に、 2021年10月中に予定されている機能追加について、簡単にご紹介しましょう。
+最後に、 この1ヵ月くらいに予定されている機能追加について、簡単にご紹介しましょう。
 
 - [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……日本語フォントにおける重複約物の詰めや、和欧文間のアキの調整
 - [CSS Grid Layout](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout)……画面を複数のグリッドに分割することで、要素を列と行に整列させられる
