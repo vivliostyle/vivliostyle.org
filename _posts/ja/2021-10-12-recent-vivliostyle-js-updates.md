@@ -1,5 +1,5 @@
 ---
-title: 最近のvivliostyle.jsの進化について
+title: 最近のVivliostyle.jsの進化について
 lang: ja
 image: /assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png
 author:
@@ -9,9 +9,9 @@ tags:
  - Vivliostyle Core
  - Vivliostyle Viewer
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png" alt="最近のvivliostyle.jsの進化について" style="width: 700px;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png" alt="最近のVivliostyle.jsの進化について" style="width: 700px;" /></div>
 
-この1ヵ月、vivliostyle.jsは大幅なアップデートを重ねてきました。9月初頭までv2.8.1でしたが、本稿執筆時点のバージョンはv2.11.1になっています。その概要は[Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)で一覧できます。この記事では追加された便利な機能、そしてバグ修正にともなう組版結果への影響について説明し、最後に近日中に実装予定の機能について予告します。
+この1ヵ月、Vivliostyle.jsは大幅なアップデートを重ねてきました。9月初頭までv2.8.1でしたが、本稿執筆時点のバージョンはv2.11.1になっています。その概要は[Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)で一覧できます。この記事では追加された便利な機能、そしてバグ修正にともなう組版結果への影響について説明し、最後に近日中に実装予定の機能について予告します。
 
 ## CSSの機能追加
 
@@ -43,15 +43,15 @@ tags:
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-2.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 900px; " /></div>
 
-vivliostyle.jsでは、当初から[ユーザーエージェントのデフォルトスタイルシート](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064)のなかで、`body`（本文）の`margin`の値を8pxに設定してきました。この設定はWebブラウザのデフォルト値を踏襲したものです。
+Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォルトスタイルシート](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064)のなかで、`body`（本文）の`margin`の値を8pxに設定してきました。この設定はWebブラウザのデフォルト値を踏襲したものです。
 
-ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、本文の`margin`の値を`@page {...}`の`margin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。そうした中、vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
+ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、ページのマージンを`@page {...}のmargin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。そうした中、Vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、Vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
 
-つまり、今までvivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0で、このデフォルトスタイルシートの設定を削除しました（`margin`のデフォルトは0になります）。
+つまり、今までVivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0で、このデフォルトスタイルシートの設定を削除しました（`margin`のデフォルトは0になります）。
 
 スクリーンショットをご覧ください。左側のVivliostyle Viewerはv2.9.1、そして右側はバグを修正したv2.10.0です。左の旧バージョンの緑色枠の外側には8pxの間隔が確保されているのに対し、右側のv2.10.0では間隔はゼロであることが分かります（HTMLとCSSのコードは [Issue #776](https://github.com/vivliostyle/vivliostyle.js/issues/776)を参照）。
 
-この修正により、v2.10.0の前後で組版結果が異なる可能性があります。vivliostyle.jsを組み込んだ Vivliostyle Viewer、Vivliostyle CLI、Create Bookを、以前からお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
+この修正により、v2.10.0の前後で組版結果が異なる可能性があります。Vivliostyle.jsを組み込んだ Vivliostyle Viewer、Vivliostyle CLI、Create Bookを、以前からお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
 - [ Default body margin should be 0 in paged media #776 ](https://github.com/vivliostyle/vivliostyle.js/issues/776)
 
@@ -95,4 +95,4 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 - [CSS Grid Layout](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout)……画面を複数のグリッドに分割することで、要素を列と行に整列させられる
 - WebフォントにおけるJavaScript 埋め込みコードをサポート……容量が大きくなりがちな東アジアフォントに多い、JavaScript 埋め込みコードによるWebフォントの指定をサポートする予定です（なお、現在でも`@import`埋め込みコードや、`link`要素による指定はサポートされています）
 
-以上、駆け足で紹介しましたが、来月11月13日（土曜）に開催予定の「Vivliostyle ユーザーと開発者の集い 2021秋」では、村上代表がvivliostyle.jsのアップデートについて、デモを交えながら詳しく説明する予定です。近日中にイベント告知を開始しますので、どうかお楽しみに！
+以上、駆け足で紹介しましたが、来月11月13日（土曜）に開催予定の「Vivliostyle ユーザーと開発者の集い 2021秋」では、村上代表がVivliostyle.jsのアップデートについて、デモを交えながら詳しく説明する予定です。近日中にイベント告知を開始しますので、どうかお楽しみに！
