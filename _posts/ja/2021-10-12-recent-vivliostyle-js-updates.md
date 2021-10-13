@@ -47,7 +47,7 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、本文の`margin`の値を`@page {...}`の`margin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。そうした中、vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
 
-つまり、今までvivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0でデフォルトスタイルシートの設定を`body { margin: 0px; }`に変更しました。
+つまり、今までvivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0で、このデフォルトスタイルシートの設定を削除しました（`margin`のデフォルトは0になります）。
 
 スクリーンショットをご覧ください。左側のVivliostyle Viewerはv2.9.1、そして右側はバグを修正したv2.10.0です。左の旧バージョンの緑色枠の外側には8pxの間隔が確保されているのに対し、右側のv2.10.0では間隔はゼロであることが分かります（HTMLとCSSのコードは [Issue #776](https://github.com/vivliostyle/vivliostyle.js/issues/776)を参照）。
 
@@ -68,12 +68,12 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
   font-size: 200%;
 }
 @page {
-      @top-center {
-          content: "Here is the Page Header";
-        }
-      @bottom-center {
-          content: counter(page);
-        }
+  @top-center {
+    content: "Here is the Page Header";
+  }
+  @bottom-center {
+    content: counter(page);
+  }
 }
 ```
 
