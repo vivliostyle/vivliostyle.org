@@ -39,9 +39,9 @@ tags:
 
 vivliostyle.jsでは、当初から[ユーザーエージェントのデフォルトスタイルシート](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064)のなかで、`body`（本文）の`margin`の値を`8`に設定してきました。この設定はWebブラウザのデフォルト値を踏襲したものです。
 
-ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/#variable-auto-margins)では`@page {...}`の`margin`プロパティにより指定されることになっています。そもそも、VivliostyleをふくむほとんどのCSS Paged Media実装では、デフォルトで`@page { margin: 10% }`が設定されているので、デフォルトスタイルシートの`body { margin: 8px; }`は無意味になります。このような状況で、ユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
+ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/#variable-auto-margins)では、本文の`margin`の値を`@page {...}`の`margin`プロパティによって指定することになっています。そもそも、VivliostyleをふくむほとんどのCSS Paged Media実装では、デフォルトで`@page { margin: 10% }`が設定されているので、デフォルトスタイルシートの`body { margin: 8px; }`は無意味になります。このような状況で、ユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
 
-つまり、デフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Media実装には適していないと言えます。この状況を修正するため、v2.10.0でデフォルトスタイルシートの設定を`body { margin: 0px; }`に変更しました。
+つまり、今までvivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0でデフォルトスタイルシートの設定を`body { margin: 0px; }`に変更しました。
 
 スクリーンショットをご覧ください。左側のVivliostyle Viewerはv2.9.1、そして右側はバグを修正したv2.10.0です。左の旧バージョンの緑色枠の外側には8pxの間隔が確保されているのに対し、右側のv2.10.0では間隔はゼロであることが分かります（HTMLとCSSのコードは [Issue #776](https://github.com/vivliostyle/vivliostyle.js/issues/776)を参照）。
 
@@ -77,7 +77,7 @@ vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
 
-画面の上端のヘッダと下端のフッタを左右で比べてください。左側の旧バージョンでは本来継承されるはずの文字に関するスタイルが有効にならず、ただヘッダとフッタの内容、位置だけが表示されてしまっています。これはぜひ直したいバグです。そこで右側の新バージョンをみると、ヘッダとフッタは指定通り、適切に表示されていることが分かります。みごとに修正されました。
+画面の上端のヘッダと下端のフッタを左右で比べてください。左側の旧バージョンでは本来継承されるはずの文字に関するスタイルが有効にならず、ただヘッダとフッタの内容、位置だけが表示されてしまっています。これはぜひ直したいバグです。そこで右側の新バージョンをみると、ヘッダとフッタは指定通り、適切に表示されていることが分かります。
 
 この修正によって、前項と同じくv2.10.0の前後で組版結果が異なる可能性があります。以前からVivliostyle Viewer、Vivliostyle CLI、Create Bookをお使いのユーザは、お手元のデータに影響がないか、一度ご確認ください。詳細は下記のIssueを参照してください。
 
