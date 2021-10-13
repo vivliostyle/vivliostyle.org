@@ -91,7 +91,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 最後に、 この1ヵ月くらいに予定されている機能追加について、簡単にご紹介しましょう。
 
-- [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……日本語フォントにおける重複約物の詰めや、和欧文間のアキの調整
+- [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……日本語フォントにおける連続約物の詰めや、和欧文間のアキの調整
 - [CSS Grid Layout](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout)……画面を複数のグリッドに分割することで、要素を列と行に整列させられる
 - WebフォントにおけるJavaScript 埋め込みコードをサポート……容量が大きくなりがちな東アジアフォントに多い、JavaScript 埋め込みコードによるWebフォントの指定をサポートする予定です（なお、現在でも`@import`埋め込みコードや、`link`要素による指定はサポートされています）
 
