@@ -20,7 +20,7 @@ tags:
 - [v2.10.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#2100-2021-09-17)
     - [line-break: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/line-break)……句読点やスペースを含め、全ての文字間での改行を許容する
     - [overflow-wrap: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap)……インライン要素に対してテキストが行ボックスからあふれないよう、通常改行しない箇所でも改行する
-    - [white-space: break-spaces](https://developer.mozilla.org/ja/docs/Web/CSS/white-space)……要素内の文字列に含まれるホワイトスペースの扱いを規定。`white-space: pre-wrap` と似ているが、重複するホワイトスペースの間も改行する
+    - [white-space: break-spaces](https://developer.mozilla.org/ja/docs/Web/CSS/white-space)……要素内の文字列に含まれるホワイトスペースの扱いを規定。`white-space: pre-wrap` と似ているが、連続するホワイトスペースの間も改行する
     - [font-variant-caps](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-caps)……OpenTypeの欧文フォントにおける大文字関係の制御
     - [font-variant-ligatures](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-ligatures)……OpenTypeの欧文フォントにおける合字の制御
     - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……OpenTypeフォントの数字、分数、序数記号におけるグリフを制御
