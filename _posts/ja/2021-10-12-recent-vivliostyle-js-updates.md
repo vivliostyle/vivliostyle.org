@@ -16,7 +16,7 @@ tags:
 ## CSSの機能追加
 
  - [v2.9.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#290-2021-09-03)
-    - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……CSSの特定のプロパティや、プロパティと値の組み合わせがブラウザにサポートされているかチェックできる
+    - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……CSSの特定のプロパティやプロパティと値の組み合わせがサポートされているかどうかでスタイルを切り替えることができる
 - [v2.10.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#2100-2021-09-17)
     - [line-break: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/line-break)……句読点やスペースを含め、全ての文字間での改行を許容する
     - [overflow-wrap: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap)……インライン要素に対してテキストが行ボックスからあふれないよう、通常改行しない箇所でも改行する
