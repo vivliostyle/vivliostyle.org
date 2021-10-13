@@ -25,7 +25,7 @@ tags:
     - [font-variant-ligatures](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-ligatures)……OpenTypeの欧文フォントにおける合字の制御
     - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……OpenTypeフォントの数字、分数、序数記号におけるグリフを制御
     - [min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content)……ボックス内で自動改行される場合において、そのボックスの幅が最小になるよう、最も語長が長い単語に合わせてボックスを生成する
-    - [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……コンテンツが最大幅になるよう、単語の途中で改行せずにボックスを生成する
+    - [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……コンテンツが最大幅になるよう、自動改行せずにボックスを生成する
     - [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)……利用可能領域が可変の場合において、まずmax-contentを使ってボックスを生成し、利用可能領域がmax-contentの幅を下回るとmin-contentに切り替えてボックスを生成する
     - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range)…… `@font-face`で定義されたフォントのうち、特定の符号位置を指定する
 
