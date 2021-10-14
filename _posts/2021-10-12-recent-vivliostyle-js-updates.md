@@ -1,51 +1,56 @@
 ---
-title: 最近のVivliostyle.jsの進化について
-lang: ja
+title: Recent Vivliostyle.js updates
+lang: en
 image: /assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png
 author:
  - ogwata
 tags:
- - リリース
+ - Release
  - Vivliostyle Core
  - Vivliostyle Viewer
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png" alt="最近のVivliostyle.jsの進化について" style="width: 700px;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-1.png" alt="Recent Vivliostyle.js updates" style="width: 700px;" /></div>
 
-この1ヵ月、Vivliostyle.jsは重要なアップデートを重ねてきました。9月初頭までv2.8.1でしたが、本稿執筆時点のバージョンはv2.11.1になっています。その概要は[Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)で一覧できます。この記事では追加された便利な機能、そしてバグ修正にともなう組版結果への影響について説明し、最後に近日中に実装予定の機能について予告します。
+Over the past month, Vivliostyle.js has been undergoing a series of important updates. It was v2.8.1 until early September, and now it is v2.11.1. An overview can be found in the [Change Log](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md). This article describes the useful features that have been added, the impact of the bug fixes on the typesetting results, and concludes with a preview of the features that will be implemented in the near future.
 
-## CSSの機能追加
+## Added CSS functionality
 
  - [v2.9.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#290-2021-09-03)
-    - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……CSSの特定のプロパティ、あるいはプロパティと値の組み合わせがサポートされているかどうかでスタイルを切り替えることができる
+    - [@supports](https://developer.mozilla.org/ja/docs/Web/CSS/@supports)……You can switch styles based on whether a particular CSS property, or combination of properties and values, is supported
 - [v2.10.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#2100-2021-09-17)
-    - [line-break: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/line-break)……句読点やスペースを含め、全ての文字間での改行を許容する
-    - [overflow-wrap: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap)……インライン要素に対してテキストが行ボックスからあふれないよう、通常改行しない箇所でも改行する
-    - [white-space: break-spaces](https://developer.mozilla.org/ja/docs/Web/CSS/white-space)……要素内の文字列に含まれるホワイトスペースの扱いを規定。`white-space: pre-wrap` と似ているが、連続するホワイトスペースの間も改行する
-    - [font-variant-caps](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-caps)……OpenTypeの欧文フォントにおける大文字関係の制御
-    - [font-variant-ligatures](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-ligatures)……OpenTypeの欧文フォントにおける合字の制御
-    - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……OpenTypeフォントの数字、分数、序数記号におけるグリフを制御
-    - [min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content)……ボックス内で自動改行される場合において、そのボックスの幅が最小になるよう、最も語長が長い単語に合わせてボックスを生成する
-    - [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……コンテンツが最大幅になるよう、自動改行せずにボックスを生成する
-    - [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)……利用可能領域が可変の場合において、まずmax-contentを使ってボックスを生成し、利用可能領域がmax-contentの幅を下回った場合は、利用可能領域とmin-contentの大きい方に切り替えてボックスを生成する
-    - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range)…… `@font-face`で定義されたフォントのうち、特定の符号位置を指定する
+    - [line-break: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/line-break)……Allow line breaks between all characters, including punctuation and spaces.
+    - [overflow-wrap: anywhere](https://developer.mozilla.org/ja/docs/Web/CSS/overflow-wrap)……To prevent text from overflowing the line box for inline elements, line breaks are intentionally added where they would not normally be.
+    - [white-space: break-spaces](https://developer.mozilla.org/ja/docs/Web/CSS/white-space)……Defines the handling of whitespace in strings within an element, similar to `white-space: pre-wrap`, but also breaks lines between consecutive whitespaces.
+    - [font-variant-caps](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-caps)……Controls uppercase related glyphs in Latin fonts in OpenType format.
+    - [font-variant-ligatures](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-ligatures)……Controls the glyphs of ligatures in OpenType fonts.
+    - [font-variant-numeric](https://developer.mozilla.org/ja/docs/Web/CSS/font-variant-numeric)……Controls the glyphs of numbers, fractions, and ordinal symbols in OpenType fonts.
+    - [min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content)……For automatic line breaks within a box, the box will be generated for the word with the longest word length to minimize the width of the box.
+    - [max-content](https://developer.mozilla.org/en-US/docs/Web/CSS/max-content)……Generates a box without automatic line breaks so that the content is at its maximum width.
+    - [fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content)……In the case where the available area is variable, the box is first generated using max-content, and if the available area is less than the width of max-content, the box is generated by switching to the larger of the available area and min-content.
+    - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range)…… Specifies a specific code point in the font defined by `@font-face`.
 
-中でも注目したいのが、最後の`unicode-range`です。これにより、たとえば欧文と和文で異なるフォントを指定したり、あるいは特定の文字や約物だけ別のフォントを指定したりすることが可能になります。また、中国語や日本語のWebフォントを指定する際、この機能を使ってグリフのサブセットを作成することで、容量を抑え表示速度を向上させることが期待できます。
+The last one, `unicode-range`, is particularly noteworthy. This makes it possible, for example, to use different fonts for Latin and Japanese, or to specify a different font for a particular character or punctuation. Also, when specifying Chinese or Japanese web fonts, you can use this feature to create a subset of glyphs to reduce capacity and improve display speed.
 
-## Vivliostyle ViewerのUIにテキスト検索機能を追加
+## Added text search function to Vivliostyle Viewer UI
 
-本ページ一番上のVivliostyle Viewerスクリーンショットをご覧ください。画面左上に虫眼鏡のアイコンが確認できるでしょう。これが新設されたテキスト検索アイコンです。以下のページから、実際に最新バージョンのVivliostyle  Viewerが使えますので、ぜひお試しください。
+Look at the Vivliostyle Viewer screenshot at the top of this page. You can see a magnifying glass icon in the upper left corner of the screen. This is the new text search icon.You can actually use the latest version of Vivliostyle Viewer from below.
 
 - [Vivliostyle で本を作ろう Vol.5](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/&bookMode=true)
 
-## バグ修正にともなう組版結果への影響
+## Impact of bug fixes on typesetting results
 
-###  デフォルトスタイルシートにおける、`body`の`margin`の値を8pxから0に変更
+###  Changed the value of `margin` for `body` in the default style sheet from 8px to 0
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-2.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 900px; " /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-2.png" alt="Changed the value of margin for body in the default style sheet from 8px to 0" /></div>
 
-Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォルトスタイルシート](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064)のなかで、`body`（本文）の`margin`の値を8pxに設定してきました。この設定はWebブラウザのデフォルト値を踏襲したものです。
+From the beginning, Vivliostyle.js has defined a `margin` value of 8px for the `body` in the [default style sheet](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064) for user agents. This setting follows the default value of web browsers.
 
-ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、ページのマージンを`@page {...}のmargin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。そうした中、Vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、Vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
+ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、ページのマージンを`@page {...}`の`margin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。
+
+However, in [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/), the page margin is specified by the `margin` property of `@page {...}`. Based on this, most CSS Paged Media implementations, including Vivliostyle, set `@page {margin: 10%}` in the default stylesheet. 
+
+
+そうした中、Vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、Vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
 
 つまり、今までVivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0で、このデフォルトスタイルシートの設定を削除しました（`margin`のデフォルトは0になります）。
 

@@ -45,7 +45,7 @@ tags:
 
 Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォルトスタイルシート](https://github.com/vivliostyle/vivliostyle.js/blob/v2.9.1/packages/core/src/vivliostyle/assets.ts#L1064)のなかで、`body`（本文）の`margin`の値を8pxに設定してきました。この設定はWebブラウザのデフォルト値を踏襲したものです。
 
-ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、ページのマージンを`@page {...}のmargin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。そうした中、Vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、Vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
+ところが、[CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)では、ページのマージンを`@page {...}`の`margin`プロパティによって指定することになっています。これにもとづき、VivliostyleをふくむほとんどのCSS Paged Media実装は、デフォルトスタイルシートで`@page { margin: 10% }`を設定しています。そうした中、Vivliostyle.jsだけが加えて`body { margin: 8px; }`を設定するのは意味がありません。さらに言えば、Vivliostyle.jsのユーザはページ領域内の余分な余白を避けるため、常に`body { margin: 0 }`を指定なければなりませんでした。
 
 つまり、今までVivliostyle.jsが設定してきたデフォルトスタイルシートの`body { margin: 8px; }`は、CSS Paged Mediaの実装には適していないと言えます。この状況を修正するため、v2.10.0で、このデフォルトスタイルシートの設定を削除しました（`margin`のデフォルトは0になります）。
 
