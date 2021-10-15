@@ -77,7 +77,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 }
 ```
 
-これを修正前後のVivliostyle Viewerに読み込ませたスクリーンショットをご覧ください。左側は[修正前のv2.9.1](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)（現物は[こちら](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)）、右側は[修正したv2.10.0](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)です（現物は[こちら](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)）。
+これを修正前後のVivliostyle Viewerに読み込ませたスクリーンショットをご覧ください。左側は修正前のv2.9.1（現物は[こちら](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)）、右側は修正したv2.10.0です（現物は[こちら](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)）。
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
 
