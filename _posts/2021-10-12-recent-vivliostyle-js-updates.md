@@ -79,7 +79,7 @@ Let's compare this with screenshots as well. First, prepare the HTML containing 
 
 The screenshots are the above HTML loaded in Vivliostyle Viewer before and after fix. The left side is v2.9.1 before the fix (the original is [here](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)), and the right side is v2.10.0 after the fix (the original is [here](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)).
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body における margin のデフォルト値を8から0に変更 "style="width: 1200px; " /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body における margin のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
 
 Compare the page header and the page footer on the left and right. In the old version on the left, the text styles that should be inherited are not enabled on the page header and footer contents. This is a bug that needs to be fixed. In the new version on the right, you can see that the header and footer are displayed properly as specified.
 
