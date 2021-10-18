@@ -21,7 +21,7 @@ Over the past month, Vivliostyle.js has been undergoing a series of important up
     - [line-break: anywhere](https://developer.mozilla.org/en-US/docs/Web/CSS/line-break)……Allow line breaks between all characters, including punctuation and spaces.
     - [overflow-wrap: anywhere](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap)……To prevent text from overflowing the line box for inline elements, line breaks are intentionally added where they would not normally be.
     - [white-space: break-spaces](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)……Defines the handling of whitespace in text within an element, similar to `white-space: pre-wrap`, but also breaks lines between consecutive whitespaces.
-    - [font-variant-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)……Controls glyphs for capital letter in Latin fonts in OpenType format.
+    - [font-variant-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)……Controls glyphs for capital letters in Latin fonts in OpenType format.
     - [font-variant-ligatures](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures)……Controls the glyphs of ligatures in OpenType fonts.
     - [font-variant-numeric](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)……Controls the glyphs of numbers, fractions, and ordinal symbols in OpenType fonts.
     - [min-content](https://developer.mozilla.org/en-US/docs/Web/CSS/min-content)……For automatic line breaks within a box, the box will be generated for the word with the longest word length to minimize the width of the box.

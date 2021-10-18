@@ -57,7 +57,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 ### ルート要素で指定された継承プロパティを、`@page`の内容に継承できるよう修正
 
-これもスクリーンショットで比較してみましょう。まず、ルート要素の中で以下のように記述したHTMLを用意します（コード全体は[こちら](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)）。`root`セレクタにより、文字に関するスタイル（色、フォント名、バリアント、サイズ等）を指定しています。これらは[継承プロパティ](https://developer.mozilla.org/ja/docs/Web/CSS/inheritance#inherited_properties)ですので、続く`@page`で指定されたヘッダとフッタに継承されるはずです。
+これもスクリーンショットで比較してみましょう。まず、ルート要素の中で以下のように記述したHTMLを用意します（コード全体は[こちら](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)）。`:root`セレクタにより、文字に関するスタイル（色、フォント名、バリアント、サイズ等）を指定しています。これらは[継承プロパティ](https://developer.mozilla.org/ja/docs/Web/CSS/inheritance#inherited_properties)ですので、続く`@page`で指定されたヘッダとフッタに継承されるはずです。
 
 ```css
 :root {
@@ -79,7 +79,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 これを修正前後のVivliostyle Viewerに読み込ませたスクリーンショットをご覧ください。左側は[修正前のv2.9.1](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)（現物は[こちら](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)）、右側は[修正したv2.10.0](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)です（現物は[こちら](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)）。
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body における margin のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
 
 画面の上端のヘッダと下端のフッタを左右で比べてください。左側の旧バージョンでは本来継承されるはずの文字に関するスタイルが有効にならず、ただヘッダとフッタの内容、位置だけが表示されてしまっています。これはぜひ直したいバグです。そこで右側の新バージョンをみると、ヘッダとフッタは指定通り、適切に表示されていることが分かります。
 
@@ -91,7 +91,7 @@ Vivliostyle.jsでは、当初から[ユーザーエージェントのデフォ�
 
 最後に、 この1ヵ月くらいに予定されている機能追加について、簡単にご紹介しましょう。
 
-- [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……日本語フォントにおける連続約物の詰めや、和欧文間のアキの調整
+- [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……日本語／中国語と欧語における単語間の間隔や、連続する全角句読点類の間隔を調整
 - [CSS Grid Layout](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout)……画面を複数のグリッドに分割することで、要素を列と行に整列させられる
 - WebフォントにおけるJavaScript 埋め込みコードをサポート……容量が大きくなりがちな東アジアフォントに多い、JavaScript 埋め込みコードによるWebフォントの指定をサポートする予定です（なお、現在でも`@import`埋め込みコードや、`link`要素による指定はサポートされています）
 
