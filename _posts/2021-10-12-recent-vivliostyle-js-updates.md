@@ -51,13 +51,13 @@ In other words, the default style sheet `body { margin: 8px; }` that Vivliostyle
 
 Please see the screenshot. Even though I specified `@page {margin: 0;}` to intentionally eliminate the margin, there is a spacing of 8px outside the green frame in v2.9.1 on the left (original [here](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://github.com/ogwata/testbed-20211012/blob/main/test.html)). On the other hand, v2.10.0 on the right side renders with zero spacing as specified (original [here](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://github.com/ogwata/testbed-20211012/blob/main/test.html), code [here](https://github.com/ogwata/testbed-20211012/blob/main/test.html)). 
 
-Due to this fix, the typesetting results may differ before and after v2.10.0. If you have been using Vivliostyle Viewer, Vivliostyle CLI, or Create Book which incorporates Vivliostyle .js, please check once to see if your data is affected. Please refer to the issue below for details.
+Due to this fix, the typesetting results may differ before and after v2.10.0. If you have been using Vivliostyle Viewer, Vivliostyle CLI, or Create Book which incorporates Vivliostyle.js, please check once to see if your data is affected. Please refer to the issue below for details.
 
 - [ Default body margin should be 0 in paged media #776 ](https://github.com/vivliostyle/vivliostyle.js/issues/776)
 
-### The inheritance property specified by the root element can now be inherited to the contents of the `@page`
+### Inherited properties specified on the root element can now be inherited to the contents of the `@page`
 
-Let's compare this with a screenshot as well. First, prepare the HTML containing the root element as shown below (the entire code is [here](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)). Note that the `root` selector specifies the style of the text (color, font-family, variant, size, etc.). Since these are [inherited properties](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance#inherited_properties), they should be inherited by the headers and footers specified in the following `@page`.
+Let's compare this with screenshots as well. First, prepare the HTML containing the root element as shown below (the entire code is [here](https://github.com/ogwata/testbed-20211012/blob/main/test-2.html)). Note that the `:root` selector specifies the style of the text (color, font-family, variant, size, etc.). Since these are [inherited properties](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance#inherited_properties), they should be inherited by the headers and footers specified in the following `@page`.
 
 ```css
 :root {
@@ -77,11 +77,11 @@ Let's compare this with a screenshot as well. First, prepare the HTML containing
 }
 ```
 
-The screenshots are the above HTML loaded in Vivliostyle Viewe before and after each fix. The left side is v2.9.1 before the fix (the original is [here](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)), and the right side is v2.10.0 after the fix (the original is [here](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)).
+The screenshots are the above HTML loaded in Vivliostyle Viewer before and after fix. The left side is v2.9.1 before the fix (the original is [here](https://vivliostyle.github.io/viewer/v2.9.1/#src=https://ogwata.github.io/testbed-20211012/test-2)), and the right side is v2.10.0 after the fix (the original is [here](https://vivliostyle.github.io/viewer/v2.10.0/#src=https://ogwata.github.io/testbed-20211012/test-2)).
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body`における`margin`のデフォルト値を8から0に変更" style="width: 1200px; " /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-10-12-recent-vivliostyle-js-updates/fig-3.png" alt="body における margin のデフォルト値を8から0に変更"style="width: 1200px; " /></div>
 
-Compare the header at the top of the screen with the footer at the bottom. In the old version on the left, the text styles that should be inherited are not enabled, and only the content and position of the header and footer are displayed. This is a bug that needs to be fixed. If you look at the new version on the right, you can see that the header and footer are displayed properly as specified.
+Compare the page header and the page footer on the left and right. In the old version on the left, the text styles that should be inherited are not enabled on the page header and footer contents. This is a bug that needs to be fixed. In the new version on the right, you can see that the header and footer are displayed properly as specified.
 
 As in the previous section, this fix may result in different typesetting results before and after v2.10.0. If you have been using Vivliostyle Viewer, Vivliostyle CLI, or Create Book for a long time, please check if your data is affected. For more details, please refer to the following Issue.
 
@@ -91,8 +91,8 @@ As in the previous section, this fix may result in different typesetting results
 
 Finally, I'd like to give you a brief overview of some of the features that are scheduled to be added in the month or so to come.
 
-- [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……To adjust the spacing between Japanese and Western words, as well as the justification of consecutive words in Japanese fonts.
+- [CSS Text Level 4: text-spacing](https://drafts.csswg.org/css-text-4/#text-spacing-property)……Adjusts spacing between Japanese or Chinese and Western words, as well as consecutive fullwidth punctuations.
 - [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)……By dividing the screen into multiple grids, elements can be aligned into columns and rows.
-- Support for JavaScript embedding code in web fonts ……Supports the use of Web fonts with JavaScript embedding code for East Asian fonts, which tend to be large in size (Note that the `@import` embed code and the `link` element are still supported).
+- Support for JavaScript embedding code for web fonts ……Supports the use of Web fonts with JavaScript embedding code for East Asian fonts, which tend to be large in size (Note that the `@import` embed code and the `link` element are still supported).
 
 In addition, at the "Vivliostyle Users/Dev meetup 2021 Autumn" scheduled to be held next month on Sunday, November 14, Founder Murakami will be explaining the Vivliostyle.js update in detail with a demo. We hope you can join us!
