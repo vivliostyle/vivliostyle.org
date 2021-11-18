@@ -13,7 +13,7 @@ tags:
 - [イベント資料一覧<i class="fas fa-external-link-alt"></i>](https://vivliostyle.connpass.com/event/227954/presentation/)
 - [CSS組版 Vivliostyle ユーザーと開発者の集い 2021秋の板書<i class="fas fa-external-link-alt"></i>](https://miro.com/app/board/o9J_lKvZd38=/)
 
-また、当法人のYouTubeチャンネルで、以下のように発表ごとの動画を公開しています。ぜひご視聴ください。
+また、[当法人のYouTubeチャンネル](https://www.youtube.com/playlist?list=PLgmHvdtAuq5OVe_QSWjEsyX2jktccRtTY)で、以下のように発表ごとの動画を公開しています。ぜひご視聴ください。
 
 - 第1部 ユーザから見たVivliostyle
     - [人工言語イジェール語の辞書をVivliostyleで作る<i class="fas fa-external-link-alt"></i>](https://youtu.be/qfH3OV-_DlI)[（ざすろん）](https://twitter.com/Zaslon)(10:29)
