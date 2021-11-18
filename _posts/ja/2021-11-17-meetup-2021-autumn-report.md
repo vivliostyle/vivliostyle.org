@@ -11,7 +11,7 @@ tags:
 11月14日、恒例の「Vivliostyle ユーザーと開発者の集い 2021秋」がオンラインで開催されました。スライド資料、そして当日SNSで寄せられたコメントまとめ（by[やましー](https://twitter.com/yamasy1549)さん）を、下記のページで公開しています。
 
 - [イベント資料一覧<i class="fas fa-external-link-alt"></i>](https://vivliostyle.connpass.com/event/227954/presentation/)
-- [CSS組版 Vivliostyle ユーザーと開発者の集い 2021秋の板書](https://miro.com/app/board/o9J_lKvZd38=/)
+- [CSS組版 Vivliostyle ユーザーと開発者の集い 2021秋の板書<i class="fas fa-external-link-alt"></i>](https://miro.com/app/board/o9J_lKvZd38=/)
 
 また、当法人のYouTubeチャンネルで、以下のように発表ごとの動画を公開しています。ぜひご視聴ください。
 
