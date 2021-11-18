@@ -8,7 +8,7 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-11-17-meetup-2021-autumn-report/2021fall_user_meeting_banner.png" alt="Vivliostyle User / Dev Meetup 2021 Autumn" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
-(The original article is [「Vivliostyle ユーザーと開発者の集い 2021秋」開催報告](https://vivliostyle.org/ja/blog/2021/11/17/meetup-2021-autumn-report/)] in Japanese)
+(The original article is [「Vivliostyle ユーザーと開発者の集い 2021秋」開催報告](https://vivliostyle.org/ja/blog/2021/11/17/meetup-2021-autumn-report/) in Japanese)
 
 The semi-annual “Vivliostyle User/Dev Meetup Autumn 2021” was held online on January 14. The slides and a summary of comments from the day (by yamasy1549) are available at the following page.
 
