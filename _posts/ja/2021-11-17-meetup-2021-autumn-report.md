@@ -2,13 +2,13 @@
 title: 「Vivliostyle ユーザーと開発者の集い 2021秋」開催報告
 lang: ja
 image: /assets/posts/2021-11-17-meetup-2021-autumn-report/2021fall_user_meeting_banner.png
-  - ogwata
+author:  ogwata
 tags:
   - イベント
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2021-11-17-meetup-2021-autumn-report/2021fall_user_meeting_banner.png" alt="「Vivliostyle ユーザーと開発者の集い 2021秋」開催報告" style="width: 400px; box-shadow: 1px 2px 2.5px 1.5px grey;" /></div>
 
-11月14日、恒例の「Vivliostyle ユーザーと開発者の集い 2021秋」がオンラインで開催されました.。スライド資料、そして当日SNSで寄せられたコメントまとめ（by[やましー](https://twitter.com/yamasy1549)さん）を、下記のページで公開しています。
+11月14日、恒例の「Vivliostyle ユーザーと開発者の集い 2021秋」がオンラインで開催されました。スライド資料、そして当日SNSで寄せられたコメントまとめ（by[やましー](https://twitter.com/yamasy1549)さん）を、下記のページで公開しています。
 
 - [イベント資料一覧<i class="fas fa-external-link-alt"></i>](https://vivliostyle.connpass.com/event/227954/presentation/)
 - [CSS組版 Vivliostyle ユーザーと開発者の集い 2021秋の板書](https://miro.com/app/board/o9J_lKvZd38=/)
@@ -32,7 +32,7 @@ tags:
 
 今回は、私の設定の不手際により開始時間が30分ほど遅れてしまいました。またその影響もあり、高井歩さんの発表で予定していたアンケートがうまくとれなかったなど、反省点が多く残りました。参加を申し込んでくださったユーザーの皆さん、そしてスピーカーの皆さんには大変ご迷惑をおかけしました。深くお詫び申し上げます。
 
-個人的に印象に残っているのは、イベント冒頭、ざすろんさんによる「Vivliostyleの公式サイトにある情報はアプリケーションの説明ばかりで、CSS組版そのものについての説明がない」という指摘で、大変刺さりました。たしかにユーザの立場で考えると、公式サイトの情報は偏りがありました。折りしも村上代表と、Vivliostyle.jsのCSS使用の実装にある程度目途がついてきたので、次のステップとしてCSS組版の普及に取り組んでいこうと話していたところです。この機会に、どのようなことができるか考え直したいと思います。
+個人的に印象に残っているのは、イベント冒頭、ざすろんさんによる「Vivliostyleの公式サイトにある情報はアプリケーションの説明ばかりで、CSS組版そのものについての説明がない」という指摘で、大変刺さりました。たしかにユーザの立場で考えると、公式サイトの情報は偏りがありました。折りしも村上代表と、Vivliostyle.jsのCSS仕様の実装にある程度目途がついてきたので、次のステップとしてCSS組版の普及に取り組んでいこうと話していたところです。この機会に、どのようなことができるか考え直したいと思います。
 
 次回は来年、2022年春に開催の予定です。この頃にはVivliostyle Pubのベータ版公開も始まっているはずです。次回はどんな発表ができるのか、どうかお楽しみに！
 
