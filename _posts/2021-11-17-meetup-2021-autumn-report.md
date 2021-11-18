@@ -10,7 +10,7 @@ tags:
 
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2021秋」開催報告](https://vivliostyle.org/ja/blog/2021/11/17/meetup-2021-autumn-report/) in Japanese)
 
-The semi-annual “Vivliostyle User/Dev Meetup Autumn 2021” was held online on January 14. The slides and a summary of comments from the day (by yamasy1549) are available at the following page.
+The semi-annual “Vivliostyle User/Dev Meetup Autumn 2021” was held online on November 14. The slides and a summary of comments from the day (by yamasy1549) are available at the following page.
 
 - [[Japanese] List of event materials<i class="fas fa-external-link-alt"></i>](https://vivliostyle.connpass.com/event/227954/presentation/)
 - [[Japanese] Board writing of “Vivliostyle User / Dev Meetup 2021 Autumn”<i class="fas fa-external-link-alt"></i>](https://miro.com/app/board/o9J_lKvZd38=/)
