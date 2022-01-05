@@ -308,9 +308,9 @@ Trim-marks Inc. (formerly Vivliostyle Inc.) developed Vivliostyle from 2015 to M
 Vivliostyle Foundation took over the open source management of Vivliostyle after Trim-marks Inc. dropped the open source Vivliostyle in March 2018. The rights to the source code for Vivliostyle written after that belong to Vivliostyle Foundation.
 
 
-### Are there open source license restrictions on publications made with Viviostyle?
+### Are there open source license restrictions on publications made with Vivliostyle?
 
-No. The fact that the Vivliostylelicense is AGPL does not affect publications made using Viviostyle. There is no obligation to publish the source data (HTML or CSS) of the publication.
+No. The fact that the Vivliostylelicense is AGPL does not affect publications made using Vivliostyle. There is no obligation to publish the source data (HTML or CSS) of the publication.
 
 
 ### Can I use Vivliostylein my company without restrictions?
@@ -381,7 +381,7 @@ There is one thing you should be aware of. It is noted that Vivliostyle Pub is s
 
 
 - 👉[Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?](#can-i-use-vivliostyle-viewer-or-vivliostyle-print-by-calling-it-from-a-commercial-web-application)
-- 👉[How does VivliostyleViewer run as an independent program?](#how-does-viviostyle-viewer-run-as-an-independent-program)
+- 👉[How does VivliostyleViewer run as an independent program?](#how-does-Vivliostyle-viewer-run-as-an-independent-program)
 
 Conversely, if the future Vivliostyle Pub is developed to more closely incorporate Vivliostyle Viewer and/or Vivliostyle CLI, the license will need to be changed to AGPL v3.
 
