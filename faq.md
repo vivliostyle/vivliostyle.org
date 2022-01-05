@@ -284,7 +284,7 @@ Typeset and view with Vivliostyle Viewer: <span class="url"><https://vivliostyle
 
 ### What open source license does Vivliostyle use?
 
-Viviostyle uses AGPLv3 (GNU Affero General Public License, version 3) as its open source license.
+Vivliostyleuses AGPLv3 (GNU Affero General Public License, version 3) as its open source license.
 
 AGPL is a reciprocal license (the same license applies to derivative works) similar to the GPL (GNU General Public License), which permits modification and commercial use of the software. Unlike the GPL, users over the network are guaranteed access to the source code.
 
@@ -310,12 +310,12 @@ Vivliostyle Foundation took over the open source management of Vivliostyle after
 
 ### Are there open source license restrictions on publications made with Viviostyle?
 
-No. The fact that the Viviostyle license is AGPL does not affect publications made using Viviostyle. There is no obligation to publish the source data (HTML or CSS) of the publication.
+No. The fact that the Vivliostylelicense is AGPL does not affect publications made using Viviostyle. There is no obligation to publish the source data (HTML or CSS) of the publication.
 
 
-### Can I use Viviostyle in my company without restrictions?
+### Can I use Vivliostylein my company without restrictions?
 
-Yes. You are free to copy and use Viviostyle within a company or organization, and you are not required to publish it even if you modify the source code.
+Yes. You are free to copy and use Vivliostylewithin a company or organization, and you are not required to publish it even if you modify the source code.
 
 See (GNU License FAQ):
 - [Does the GPL require that source code of modified versions be posted to the public?](https://www.gnu.org/licenses/gpl-faq.en.html#GPLRequireSourcePostedPublic)
@@ -326,21 +326,21 @@ See (GNU License FAQ):
 
 Yes. [Vivliostyle Viewer](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer) and [Vivliostyle Print](https://github.com/vivliostyle/vivliostyle-print) run as an independent program on the client-side browser, and so can be used in combination with server-side programs or other client-side programs even if they are proprietary.
 
-It is also possible to modify Viviostyle (Viewer/Print) if the modified source code is published. However, the AGPL Viviostyle program and the proprietary program that calls it must not share complex data structures.
+It is also possible to modify Vivliostyle(Viewer/Print) if the modified source code is published. However, the AGPL Vivliostyleprogram and the proprietary program that calls it must not share complex data structures.
 
 See (GNU License FAQ):
 - [Can I release a nonfree program that's designed to load a GPL-covered plug-in?](https://www.gnu.org/licenses/gpl-faq.en.html#NFUseGPLPlugins)
 - [I'd like to incorporate GPL-covered software in my proprietary system. I have no permission to use that software except what the GPL gives me. Can I do this?](https://www.gnu.org/licenses/gpl-faq.en.html#GPLInProprietarySystem)
 
 
-### How does Viviostyle Viewer run as an independent program?
+### How does VivliostyleViewer run as an independent program?
 
 [Vivliostyle Viewer](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer) consists of its main HTML file and JavaScript libraries linked from it. Even if the Vivliostyle Viewer is used in a commercial Web application and is placed on the same Web server as that Web application, it is loaded and runs on the end user's Web browser, so it is clearly separate from the Web application's server-side programs.
 
-Data such as the URL of the document to be displayed in Vivliostyle Viewer and the display settings are specified as the URL fragment parameters added to the URL of the main HTML file of Vivliostyle Viewer. In case that the URL parameters are used to pass data between the Viviostyle program and the front-end program (JavaScript etc.) for a commercial Web application, the two programs need not to be combined, so the Viviostyle Viewer can be treated as an independent program.
+Data such as the URL of the document to be displayed in Vivliostyle Viewer and the display settings are specified as the URL fragment parameters added to the URL of the main HTML file of Vivliostyle Viewer. In case that the URL parameters are used to pass data between the Vivliostyleprogram and the front-end program (JavaScript etc.) for a commercial Web application, the two programs need not to be combined, so the VivliostyleViewer can be treated as an independent program.
 
 
-### How does Viviostyle Print run as an independent program?
+### How does VivliostylePrint run as an independent program?
 
 [Vivliostyle Print](https://github.com/vivliostyle/vivliostyle-print) is a JavaScript program that adds a printing feature to Web pages with formatting by Vivliostyle. In case that Vivliostyle Print is used from another program such as the front-end side of a commercial Web application, it invokes the main function of the Vivliostyle Print program with parameters and waits for termination. A simple return value such as an exit code or number of pages processed may be returned. In this way, the two programs do not share a complex data structure or exchange data with each other, so the Vivliostyle Print can be treated as an independent program.
 
@@ -356,7 +356,7 @@ In commercial use of Vivliostyle under the AGPL license, you need to be aware of
 
 - If you modify and distribute Vivliostyle (Note: use on website is also considered to be distributed), you need to publish the modified Vivliostyle source code.
 - When you create and distribute a program that runs as a single combined program incorporating Vivliostyle, you need to publish the source code of the program under the AGPL license.
-- If you modify Viviostyle source code, retain the copyright notice in the header comments of the source files. The source files marked "Copyright 2013 Google, Inc." contain the source code from the original project "Adapt" which is licensed under Apache License 2.0. Retain the following description in the [README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md) and [LICENSE](https://github.com/vivliostyle/vivliostyle.js/blob/master/scripts/package-artifacts/LICENSE.md) files:
+- If you modify Vivliostylesource code, retain the copyright notice in the header comments of the source files. The source files marked "Copyright 2013 Google, Inc." contain the source code from the original project "Adapt" which is licensed under Apache License 2.0. Retain the following description in the [README](https://github.com/vivliostyle/vivliostyle.js/blob/master/README.md) and [LICENSE](https://github.com/vivliostyle/vivliostyle.js/blob/master/scripts/package-artifacts/LICENSE.md) files:
     > Vivliostyle Core is implemented based on [Peter Sorotokin's EPUB Adaptive Layout implementation](https://github.com/sorotokin/adaptive-layout), which is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ### What open source license does Vivliostyle Pub use?
@@ -381,7 +381,7 @@ There is one thing you should be aware of. It is noted that Vivliostyle Pub is s
 
 
 - 👉[Can I use Vivliostyle Viewer or Vivliostyle Print by calling it from a commercial Web application?](#can-i-use-vivliostyle-viewer-or-vivliostyle-print-by-calling-it-from-a-commercial-web-application)
-- 👉[How does Viviostyle Viewer run as an independent program?](#how-does-viviostyle-viewer-run-as-an-independent-program)
+- 👉[How does VivliostyleViewer run as an independent program?](#how-does-viviostyle-viewer-run-as-an-independent-program)
 
 Conversely, if the future Vivliostyle Pub is developed to more closely incorporate Vivliostyle Viewer and/or Vivliostyle CLI, the license will need to be changed to AGPL v3.
 
