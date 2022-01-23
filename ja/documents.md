@@ -33,6 +33,13 @@ lang: ja
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/create-book.md"
 %}
 
+### Vivliostyle Themes
+<ul>
+  <li><a href="https://vivliostyle.github.io/themes/#/ja/spec.md">仕様</a></li>
+  <li><a href="https://vivliostyle.github.io/themes/#/ja/tutorial/step0.md">開発チュートリアル</a></li>
+  <li><a href="https://vivliostyle.github.io/themes/#/ja/official.md">運用ガイドライン</a></li>
+</ul>
+
 ### Vivliostyle Flavored Markdown (VFM)
 <ul id="vfm-list"></ul>
 {% include fetch-guide-url.html
