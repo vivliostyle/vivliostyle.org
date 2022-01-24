@@ -29,13 +29,13 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 つまり、日本語や中国語でWebフォントを使う場合、上記3の方法は大変有効になり得ます。ところがVivliostyleは、今までこれに対応できていませんでした。
 
-## JavaScriptによるWebフォントをVivliostyleで使うには
+## JavaScriptによるWebフォントをVivliostyle CLIで使うには
 
 各社のWebフォントサービスを、実際にVivliostyle Viewerで使ってみたテストサンプルを下記で公開しています。
 
 - [各社Webフォントサービスのテストサンプル](https://github.com/vivliostyle/vivliostyle.js/issues/735#issuecomment-1006275491)
 
-ところでWebフォントサービスの中には、ドメイン登録を利用条件にしているものがあります。しかし従来、Vivliostyle CLIはfileプロトコルによりHTMLドキュメントをロードしてきました。fileプロトコルではドメイン登録はできません。そこで今回のアップデートで、新しく httpプロトコルでロードするオプションを追加しました。具体的には以下のようにして利用できます。
+ところでWebフォントサービスの中には、ドメイン登録を利用条件にしているものがあります。他方Vivliostyle CLIに限っては、今までfileプロトコルによりHTMLドキュメントをロードしてきました。しかしfileプロトコルではドメイン登録はできません。そこで今回のアップデートで、新しく httpプロトコルでロードするオプションを追加しました。具体的には以下のようにして利用できます。
 
 1. あらかじめWebフォントサービスに、ドメインとして `http://localhost:13000`を登録（各社の差異は後述）
 2. 実行時にオプションとして `--http` を指定
@@ -65,7 +65,7 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 ## その他のJavaScript対応のメリット
 
-JavaScriptに対応するメリットは、Webフォントに留まりません。現在広く流通している各種JavaScriptライブラリ、たとえば以下のようなライブラリを、Vivliostyleで利用できるようになりました。
+JavaScriptに対応したメリットは、Webフォントに留まりません。現在広く流通している各種JavaScriptライブラリ、たとえば以下のようなライブラリを、Vivliostyleで利用できるようになりました。
 
 - [楽譜を作成する “VexTab”<i class="fas fa-external-link-alt"></i>](http://vexflow.com/vextab/tutorial.html)
     - [Vivliostyle Viewerでのテスト](https://vivliostyle.vercel.app/#src=https://raw.githack.com/0xfe/vextab/master/doc/tutorial.html)
