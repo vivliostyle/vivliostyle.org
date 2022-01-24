@@ -29,7 +29,7 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 つまり、日本語や中国語でWebフォントを使う場合、上記3の方法は大変有効になり得ます。ところがVivliostyleは、今までこれに対応できていませんでした。
 
-## JavaScriptによるWebフォントをVivliostyle CLIで使うには
+## Vivliostyle CLIでJavaScriptによるWebフォントを使うには
 
 各社のWebフォントサービスを、実際にVivliostyle Viewerで使ってみたテストサンプルを下記で公開しています。
 
