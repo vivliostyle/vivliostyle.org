@@ -19,10 +19,10 @@ tags:
 
 ## WebフォントにおけるJavaScript 対応のメリット
 
-その中でも大きなメリットは、JavaScriptで利用するタイプのWebフォントサービスが利用可能になったことでしょう。一般にWebフォントをロードする方法は、以下の3種類です（カッコ内は該当するサービス名の例）。
+その中でも大きなメリットは、JavaScriptで利用するタイプのWebフォントサービスが利用可能になったことでしょう。一般にWebフォントをロードする方法は、以下の3種類です（カッコ内は該当するサービス名の例）：
 
-1. `@font-face` でネット上にあるフォントをロードする方法
-2. `@import`か`link`要素で外部スタイルシート経由でロードする方法（DynaFont、Google Fonts等）
+1. `@font-face` によりネット上にあるフォントをロードする方法
+2. `@import`か`link`要素により外部スタイルシート経由でロードする方法（DynaFont、Google Fonts等）
 3. JavaScriptによりロードする方法（DynaFont、Adobe Fonts、TypeSquare、FONTPLUS等）
 
 Webフォントを使う上でネックになるのは、フォントをロードする速度がネットワークの速度に依存することです。これにより表示まで時間がかかりがちになります。この問題は文字セットが大規模になる日本語や中国語、韓国語フォントでより顕著になります。しかし、上記のうち3の方法であれば、JavaScriptを使って対象となるHTMLを読み込み、必要な文字だけを抽出したサブセットを作成することで、ロードの速度を早めることができます（ダイナミックサブセット）。
@@ -35,12 +35,12 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 - [各社Webフォントサービスのテストサンプル](https://github.com/vivliostyle/vivliostyle.js/issues/735#issuecomment-1006275491)
 
-ところでWebフォントサービスの中には、ドメイン登録（利用サイトの登録）を利用条件にしているものがあります。他方、Vivliostyle CLIに限っては今までfileプロトコルによりHTMLドキュメントをロードしてきました。しかしfileプロトコルではドメイン登録はできません。そこで今回のアップデートで、新しく httpプロトコルでロードするオプションを追加しました。具体的には以下のようにして利用できます。
+ところでWebフォントサービスの中には、ドメイン登録（利用サイトの登録）を利用条件にしているものがあります。他方、Vivliostyle CLIに限っては今までfileプロトコルによりHTMLドキュメントをロードしてきました。しかしfileプロトコルではドメイン登録はできません。そこで今回のアップデートで、新しく httpプロトコルでロードするオプションを追加しました。具体的には以下のようにして利用できます：
 
 1. あらかじめWebフォントサービスに、ドメインとして `http://localhost:13000`を登録（各社の差異は後述）
-2. 実行時にオプションとして `--http` を指定
+2. オプションとして `--http` を指定して実行
 
-より詳しい情報は、下記を参照してください。
+より詳しい情報は、下記を参照してください：
 
 - [ Feat/http hosting #234 ](https://github.com/vivliostyle/vivliostyle-cli/pull/234)
 
@@ -48,7 +48,7 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 ### FONTPLUS
 
-`https://`なども含める「サイトURL」を登録します。Vivliostyle CLI で `--http` オプションをつけて利用するには、`http://localhost:13000/`を登録します。
+`https://`などを含めた「サイトURL」を登録します。Vivliostyle CLI で `--http` オプションをつけて利用するには、`http://localhost:13000/`を登録します。
 
 ### TypeSquare
 
@@ -56,7 +56,7 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 ### DynaFont
 
-ドメイン登録を利用条件にしていますが、localhost はドメイン登録なしで使えます。以下の同社FAQを参考にしてください：
+ドメイン登録が利用条件になっていますが、localhost はドメイン登録なしで使えます。以下の同社FAQを参考にしてください：
 
 - [Q：ローカル環境でWebフォントを使うことはできますか？<i class="fas fa-external-link-alt"></i>](https://www.dynacw.co.jp/support/support_faq_detail.aspx?qid=456&fcid=223)
 
@@ -64,7 +64,7 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 ## その他のJavaScript対応のメリット
 
-JavaScriptに対応したメリットは、Webフォントに留まりません。現在広く流通している各種JavaScriptライブラリ、たとえば以下のようなライブラリを、Vivliostyleで利用できるようになりました。
+JavaScriptに対応したメリットは、Webフォントに留まりません。現在広く流通している各種JavaScriptライブラリ、たとえば以下のようなライブラリを、Vivliostyleで利用できるようになりました：
 
 - [楽譜を作成する “VexTab”<i class="fas fa-external-link-alt"></i>](http://vexflow.com/vextab/tutorial.html)
     - [Vivliostyle Viewerでのテスト](https://vivliostyle.vercel.app/#src=https://raw.githack.com/0xfe/vextab/master/doc/tutorial.html)
@@ -73,7 +73,7 @@ JavaScriptに対応したメリットは、Webフォントに留まりません�
 
 ## おわりに
 
-以上、今回のアップデートにおけるJavaScript対応について簡単にまとめました。より詳細な情報は、以下のIssueをご参照ください。
+以上、今回のアップデートにおけるJavaScript対応について簡単にまとめました。より詳細な情報は、以下のIssueをご参照ください：
 
 - [Allow JavaScript in HTML documents #733](https://github.com/vivliostyle/vivliostyle.js/issues/733)
 - [Support Web fonts loaded via JavaScript #735](https://github.com/vivliostyle/vivliostyle.js/issues/735)
