@@ -10,7 +10,7 @@ tags:
 
 ## はじめに
 
-2022年1月17日にVivliostyle.jsが v2.13.0 に、同じく18日に Vivliostyle CLI が v4.6.0 にアップデートしました。改訂の詳細は下記をご覧ください。
+2022年1月17日にVivliostyle.jsが v2.13.0 に、同じく18日に Vivliostyle CLI が v4.6.0 にアップデートしました。改訂の詳細は下記をご覧ください：
 
 - [vivliostyle /vivliostyle.js /CHANGELOG.md](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)
 - [vivliostyle /vivliostyle-cli /CHANGELOG.md](https://github.com/vivliostyle/vivliostyle-cli/blob/main/CHANGELOG.md)
@@ -31,7 +31,7 @@ Webフォントを使う上でネックになるのは、フォントをロー�
 
 ## Vivliostyle CLIでJavaScriptによるWebフォントを使うには
 
-各社のWebフォントサービスを、実際にVivliostyle Viewerで使ってみたテストサンプルを下記で公開しています。
+各社のWebフォントサービスを、実際にVivliostyle Viewerで使ってみたテストサンプルを下記で公開しています：
 
 - [各社Webフォントサービスのテストサンプル](https://github.com/vivliostyle/vivliostyle.js/issues/735#issuecomment-1006275491)
 
