@@ -66,7 +66,7 @@ Domain registration is a requirement for use, but localhost can be used without 
 
 The benefits of JavaScript support are not limited to web fonts. Various JavaScript libraries that are widely available today, such as the following libraries, can now be used in Vivliostyle:
 
-- [Make score “VexTab”<i class="fas fa-external-link-alt"></i>](http://vexflow.com/vextab/tutorial.html)
+- [Make music scores “VexTab”<i class="fas fa-external-link-alt"></i>](http://vexflow.com/vextab/tutorial.html)
     - [Testing with Vivliostyle Viewer](https://vivliostyle.vercel.app/#src=https://raw.githack.com/0xfe/vextab/master/doc/tutorial.html)
 - [Make charts “Charts.js”<i class="fas fa-external-link-alt"></i>](https://www.chartjs.org/)
     - [Testing with Vivliostyle Viewer](https://vivliostyle.vercel.app/#src=https://raw.githack.com/zopyx/print-css-rocks/master/lessons/lesson-chart-js/index.html)
