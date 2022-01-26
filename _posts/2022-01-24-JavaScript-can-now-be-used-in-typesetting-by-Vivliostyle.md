@@ -15,7 +15,7 @@ Vivliostyle.js was updated to v2.13.0 on January 17, 2022, and Vivliostyle CLI w
 - [vivliostyle /vivliostyle.js /CHANGELOG.md](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md)
 - [vivliostyle /vivliostyle-cli /CHANGELOG.md](https://github.com/vivliostyle/vivliostyle-cli/blob/main/CHANGELOG.md)
 
-The highlight of this update is that JavaScript can now be used for CSS typesetting. In the previous version, if JavaScript code was included in the HTML, it was removed internally. However, if JavaScript was left unusable, it would limit the utility of Vivliostyle products. Therefore, we have made this available in this update.
+The highlight of this update is that JavaScript can now be used for CSS typesetting. In the previous versions, if JavaScript code was included in the HTML, it was removed internally. However, if JavaScript was left unusable, it would limit the utility of Vivliostyle products. Therefore, we have made this available in this update.
 
 ## Benefits of JavaScript Support in Web Fonts
 
