@@ -6,7 +6,7 @@ author:  ogwata
 tags:
   - Release
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2022-01-24-JavaScript-can-now-be-used-in-typesetting-by-Vivliostyle/fig-1.png" alt="JavaScript can now be used in typesetting by Vivliostyle" style="width: 620px;" /><figcaption>DynaFont's "DF Jade Fang Song StdN W4" in Vivliostyle Pub, currently under development.</figcaption></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2022-01-24-JavaScript-can-now-be-used-in-typesetting-by-Vivliostyle/fig-1.png" alt="JavaScript can now be used in typesetting by Vivliostyle" style="width: 620px;" /><figcaption>DynaFont's "DFJadeFangSong JP13N W4" in Vivliostyle Pub, currently under development.</figcaption></div>
 
 ## Introduction
 
@@ -61,6 +61,12 @@ Domain registration is a requirement for use, but localhost can be used without 
 - [Q: Can I use Web fonts in my local environment?<i class="fas fa-external-link-alt"></i>](https://www.dynacw.co.jp/support/support_faq_detail.aspx?qid=456&fcid=223)
 
 > Answer: In response to the demand for developing in a local environment, DynaFont Online allows you to display web fonts on a local server. By setting up a local server on your PC and placing the target HTML and CSS files in the localhost folder, you can access `https://localhost/` from your browser to display the web fonts.
+
+Note: To use DynaFont's web font service “DynaFont Online”, you need to have an address in Japan. See the FAQ below for details.
+
+- [Q: Can foreign companies sign up for this service?<i class="fas fa-external-link-alt"></i>](https://dfo.dynacw.co.jp/support/support_faq_detail.aspx?qid=488&fcid=231)
+
+> Answer: Yes, only domestic companies can sign up. However, editing work can be done outside of Japan.
 
 ## Other benefits of JavaScript support
 
