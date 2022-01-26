@@ -66,7 +66,7 @@ Note: To use DynaFont's web font service “DynaFont Online”, you need to have
 
 - [Q: Can foreign companies sign up for this service?<i class="fas fa-external-link-alt"></i>](https://dfo.dynacw.co.jp/support/support_faq_detail.aspx?qid=488&fcid=231)
 
-> Answer: Yes, only domestic companies can sign up. However, editing work can be done outside of Japan.
+> Answer: Only domestic companies can sign up. However, editing work can be done outside of Japan.
 
 ## Other benefits of JavaScript support
 
