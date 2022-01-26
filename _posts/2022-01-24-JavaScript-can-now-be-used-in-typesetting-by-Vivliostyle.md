@@ -21,9 +21,9 @@ The highlight of this update is that JavaScript can now be used for CSS typesett
 
 One of the most significant advantages is the availability of Web font services that use JavaScript. In general, there are three ways to load Web fonts (examples of the corresponding service names are in parentheses):
 
-1. How to load fonts from the net with `@font-face`.
-2. How to load via external style sheets with `@import` or `link` elements (DynaFont, Google Fonts, etc.).
-3. How to load using JavaScript (DynaFont, Adobe Fonts, TypeSquare, FONTPLUS, etc.).
+1. Load fonts from the internet with `@font-face`.
+2. Load fonts via external style sheets with `@import` or `link` elements (DynaFont, Google Fonts, etc.).
+3. Load fonts using JavaScript (DynaFont, Adobe Fonts, TypeSquare, FONTPLUS, etc.).
 
 One of the bottlenecks in using web fonts is that the speed at which the fonts load depends on the speed of the network. This tends to slow down the display process. This problem is more pronounced with CJK fonts, which have larger character sets. However, if you use method 3 above, you can speed up the loading process by using JavaScript to load the target HTML and create a subset that extracts only the necessary characters (dynamic subset).
 
