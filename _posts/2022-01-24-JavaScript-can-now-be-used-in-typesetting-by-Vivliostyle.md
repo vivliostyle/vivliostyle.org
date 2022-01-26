@@ -25,9 +25,9 @@ One of the most significant advantages is the availability of Web font services 
 2. Load fonts via external style sheets with `@import` or `link` elements (DynaFont, Google Fonts, etc.).
 3. Load fonts using JavaScript (DynaFont, Adobe Fonts, TypeSquare, FONTPLUS, etc.).
 
-One of the bottlenecks in using web fonts is that the speed at which the fonts load depends on the speed of the network. This tends to slow down the display process. This problem is more pronounced with CJK fonts, which have larger character sets. However, if you use method 3 above, you can speed up the loading process by using JavaScript to load the target HTML and create a subset that extracts only the necessary characters (dynamic subset).
+One of the bottlenecks in using web fonts is that the speed at which the fonts load depends on the speed of the network. This tends to slow down the display process. This problem is more pronounced with CJK (Chinese, Japanese, and Korean) fonts, which have larger character sets. However, if you use the method 3 above, you can speed up the loading process by using JavaScript to load the target HTML and create a subset that extracts only the necessary characters (dynamic subsetting).
 
-In other words, if you want to use web fonts in Chinese, Japanese, or Korean, the above 3 methods can be very effective. However, Vivliostyle has not been able to support this until now.
+In other words, if you want to use web fonts in Chinese, Japanese, or Korean, using JavaScript can be very effective. However, Vivliostyle has not been able to support this until now.
 
 ## How to use web fonts with JavaScript in Vivliostyle CLI
 
