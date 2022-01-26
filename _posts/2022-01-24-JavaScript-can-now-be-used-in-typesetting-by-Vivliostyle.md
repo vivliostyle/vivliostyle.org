@@ -73,7 +73,7 @@ The benefits of JavaScript support are not limited to web fonts. Various JavaScr
 
 ## Conclusion
 
-This article provides a brief summary of the JavaScript support in this update. For more detailed information, please refer to the following Issue:
+This article provides a brief summary of the JavaScript support in this update. For more detailed information, please refer to the following issues:
 
 - [Allow JavaScript in HTML documents #733](https://github.com/vivliostyle/vivliostyle.js/issues/733)
 - [Support Web fonts loaded via JavaScript #735](https://github.com/vivliostyle/vivliostyle.js/issues/735)
