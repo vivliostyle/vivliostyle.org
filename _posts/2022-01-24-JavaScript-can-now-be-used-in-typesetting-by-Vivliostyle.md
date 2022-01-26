@@ -37,7 +37,7 @@ Test samples of each Web font service actually used with Vivliostyle Viewer is a
 
 By the way, some web font services require domain registration (registration of the site to be used) as a condition of use. On the other hand, Vivliostyle CLI has been using the file protocol to load HTML documents. However, the file protocol does not allow for domain registration. So, in this update, we added a new option to load with http protocol. Specifically, it can be used as follows:
 
-1. Register `http://localhost:13000` as a domain name with a web font service in advance (see below for the differences between each company).
+1. Register `http://localhost:13000` as a site to be used with web fonts to the web font service in advance (see below for the differences between each company).
 2. Run with the option `--http`.
 
 For more detailed information, please refer to the following:
