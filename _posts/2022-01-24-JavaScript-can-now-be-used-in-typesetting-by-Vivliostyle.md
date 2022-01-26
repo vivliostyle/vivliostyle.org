@@ -31,7 +31,7 @@ In other words, if you want to use web fonts in Chinese, Japanese, or Korean, us
 
 ## How to use web fonts with JavaScript in Vivliostyle CLI
 
-A test sample of each Web font service actually used with Vivliostyle Viewer is available below:
+Test samples of each Web font service actually used with Vivliostyle Viewer is available below:
 
 - [Test samples of each Web font service](https://github.com/vivliostyle/vivliostyle.js/issues/735#issuecomment-1006275491)
 
