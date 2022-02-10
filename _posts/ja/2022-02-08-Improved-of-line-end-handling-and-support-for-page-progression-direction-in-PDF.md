@@ -1,12 +1,12 @@
 ---
-title: 行末処理が進化、そしてPDF出力ではページ進行方向をサポート
+title: 行末処理が進化して多様な組版ができるように
 lang: ja
 image: /assets/posts/2022-02-08-Improved-of-line-end-handling-and-support-for-page-progression-direction-in-PDF/fig-1.png
 author:  ogwata
 tags:
   - リリース
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2022-02-08-Improved-of-line-end-handling-and-support-for-page-progression-direction-in-PDF/fig-1.png" alt="Improved of line end handling adn support for page progression direction in PDF output" style="width: 850px;  box-shadow: 1px 2px 2.5px 1.5px grey;" /><figcaption>図1 Vivliostyle Viewerの旧版 v.2.13.0（左）と新版 v2.14.0（右）</figcaption></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2022-02-08-Improved-of-line-end-handling-and-support-for-page-progression-direction-in-PDF/fig-1.png" alt="Improved of line end handling" style="width: 850px;  box-shadow: 1px 2px 2.5px 1.5px grey;" /><figcaption>図1 Vivliostyle Viewerの旧版 v.2.13.0（左）と新版 v2.14.0（右）</figcaption></div>
 
 ## はじめに
 
