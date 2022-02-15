@@ -14,7 +14,7 @@ Vivliostyle.js was updated to v2.14.0 on February 4, 2022. Please refer to the f
 
 - [Vivliostyle.js v2.14.0](https://github.com/vivliostyle/vivliostyle.js/blob/master/CHANGELOG.md#2140-2022-02-04)
 
-While the new version does not have the same prominent features as the JavaScript support introduced in [the previous article](https://vivliostyle.org/ja/blog/2022/01/24/JavaScript-can-now-be-used-in-typesetting-by-Vivliostyle/), it does provide more options for East Asian languages, especially Japanese typesetting. This article will briefly explain its contents.
+While the new version does not have the same prominent features as the JavaScript support introduced in [the previous article](https://vivliostyle.org/blog/2022/01/24/JavaScript-can-now-be-used-in-typesetting-by-Vivliostyle/), it does provide more options for East Asian languages, especially Japanese typesetting. This article will briefly explain its contents.
 
 
 ## Evolution of end of line handling
