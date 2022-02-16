@@ -36,7 +36,7 @@ Now let's take a look at Figure 1. Notice the fractions written in red for each 
 
 On the other hand, what about the new version on the right, except for the first block, there are two 0/3, two 2/3, and one 3/3. In other words, there are two extremes: those that are not aligned with the  reference line at all (0/3) and those that are aligned with the  reference line a lot (2/3, 3/3). This is the evolution of the new version. In other words, you can now choose between two different types of typesetting.
 
-It is generally said that "the basis of Japanese typesetting is solid setting. This is a way of saying that kanji and kana should be set at the same spacing as the character size (solid/full-width), but it does not describe everything. This is because the character advance of punctuation and parentheses is not solid.Another way of saying this is that there can be different methods within the same Japanese typesetting for how to format them. It can be roughly summarized into two categories.
+It is generally said that "the basis of Japanese typesetting is solid setting. This is a way of saying that kanji and kana should be set at the same inter-character spacing as the character size (solid/full-width), but it does not describe everything. This is because the character advance of punctuation and parentheses is not solid.Another way of saying this is that there can be different methods within the same Japanese typesetting for how to format them. It can be roughly summarized into two categories.
 
 1. Give priority to aligning the head and end of lines.
 2. Give priority to aligning inter-character spacing with solid setting.
