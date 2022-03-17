@@ -111,7 +111,7 @@ For more information about Vivliostyle CLI, see [Vivliostyle CLI User Guide](htt
 
 <!-- pub -->
 {% capture pub %}
-<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Initial version will be released by the end of 2021)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Alpha version to be released in April 2022)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
 Edit text/Markdown/HTML in the left pane and preview the formatted results in the right pane.
 
