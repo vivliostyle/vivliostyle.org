@@ -108,7 +108,7 @@ Vivliostyle CLI について詳しくは [Vivliostyle CLI ユーザーガイド]
 
 <!-- pub -->
 {% capture pub %}
-<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(初期版を2021年中に公開予定)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(2022年4月中にアルファ版を公開予定)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
 左ペインでテキスト / Markdown / HTML を入力・編集すると、右ペインで組版結果がプレビューできます。
 

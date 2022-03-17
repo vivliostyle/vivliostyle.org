@@ -50,7 +50,7 @@ Vivliostyle Pub を使えば、印刷可能なPDFをブラウザ上から作成�
 </ol>
 
 <ol class="list--medium">
-  {% include button/disabled.html url=site.data.project.pub.url text="Vivliostyle Pub を試す（2021年中公開予定）" %}
+  {% include button/disabled.html url=site.data.project.pub.url text="Vivliostyle Pub を試す（2022年4月中にアルファ版を公開予定）" %}
 </ol>
 {% endcapture %}
 
