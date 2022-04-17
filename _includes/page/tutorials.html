@@ -1,0 +1,11 @@
+{% include h1.html title=include.title lead=include.lead %}
+
+<section class="with-toc">
+  <section class="section">
+    <div class="container">
+      {{ content | markdownify }}
+    </div>
+  </section>
+
+  {% include toc.html %}
+</section>

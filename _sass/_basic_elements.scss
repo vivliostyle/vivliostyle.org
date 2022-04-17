@@ -45,6 +45,20 @@ ul {
   padding: 0;
 }
 
+table {
+  width: 100%;
+
+  th,
+  td {
+    padding: 3px 10px;
+    border: 1px solid $gray_dark;
+  }
+
+  th {
+    background-color: $gray_lighter;
+  }
+}
+
 @include media_small {
   // フォントサイズを小さく
   body {

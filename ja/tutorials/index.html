@@ -1,0 +1,38 @@
+---
+layout: page
+title: チュートリアル
+lang: ja
+---
+
+
+{% capture content %}
+組版とは、文章や画像などをレイアウトすることをいいます。Web の技術を用いて CSS で組版ができるようにしたツールが Vivliostyle です。原稿を書き、CSS でスタイルを設定することで、PDF や EPUB といった形式で出版物を作成できます。
+
+組版アプリケーションを使っていて「このオプション、もう少し細かく設定できたらなぁ……」と思ったことはありませんか？　Vivliostyle を使った CSS 組版では、比較的柔軟かつプログラマブルに原稿のスタイルを設定できます。このチュートリアルでは、必要なツールのインストールから CSS 組版の基礎までを紹介します。
+
+チュートリアルの目標は以下のとおりです。
+- Vivliostyle を使って PDF 形式の出版物を作成できる
+- CSS 組版に慣れていなくても、CSS 組版の基本が理解できる
+
+## チュートリアル一覧
+- [①インストール](/ja/tutorials/install)
+- [②PDFの作成](/ja/tutorials/create-publications)
+- [③原稿とテーマのカスタマイズ](/ja/tutorials/customize)
+- [④用紙と文字のスタイル](/ja/tutorials/configure-page-text)
+- [⑤カウンタと柱のスタイル](/ja/tutorials/configure-counters-running-heads)
+- [⑥基本的な要素のスタイル](/ja/tutorials/configure-basic-elements)
+- [⑦目次の作成](/ja/tutorials/create-table-of-contents)
+
+## 今後追加予定のチュートリアル
+- 段組みの設定
+- Web フォントの設定
+
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル"
+  lead="Vivliostyle を使った CSS 組版のチュートリアルです。Vivliostyle で CSS 組版に入門してみませんか？"
+
+  content=content
+%}

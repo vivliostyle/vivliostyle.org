@@ -1,0 +1,188 @@
+---
+layout: page
+title: チュートリアル⑥基本的な要素のスタイル
+lang: ja
+---
+
+
+{% capture content %}
+## このチュートリアルの目標
+
+- セクションのスタイルを設定できる
+- 見出しのスタイルを設定できる
+- ソースコードのスタイルを設定できる
+- 図のスタイルを設定できる
+- 後注のスタイルを設定できる
+
+## 基本的な要素のスタイル
+
+原稿中によく出現する基本的な要素のスタイルを CSS で設定します。このチュートリアルでは CSS とともにスタイルの一例を紹介しますので、自分好みのスタイルに変更してみてください。
+
+このチュートリアルで紹介するスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+</ol>
+
+
+### セクションのスタイル
+
+```
+body > section {
+  margin: 10px auto;
+}
+```
+
+
+### 見出しのスタイル
+
+```
+body {
+  counter-reset: section subsection figure;
+}
+
+section > {
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    font-weight: bold;
+    break-after: avoid;
+  }
+
+  h1 {
+    margin: 10pt auto 5pt;
+    font-size: 14pt;
+    line-height: 1.5;
+
+    counter-increment: section;
+    counter-reset: subsection;
+
+    &:before {
+      margin-right: 1rem;
+      content: counter(chapter) '.' counter(section) '章';
+    }
+  }
+
+  h2 {
+    margin: 8pt auto 4pt;
+    font-size: 12pt;
+
+    counter-increment: subsection;
+
+    &:before {
+      margin-right: 1rem;
+      content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
+    }
+  }
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-headings.png)
+
+
+### ソースコードのスタイル
+
+ソースコードのシンタックスハイライトには [Prism.js](https://prismjs.com/) が使えます。Prism.js の CSS を読み込み、キャプションなどのスタイルを設定します。
+
+```
+@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
+
+code {
+  background-color: #f6f6f6;
+  padding: 0 3pt;
+}
+
+figure[class^='language-'] {
+  margin: 0.5em 0;
+
+  figcaption {
+    background-color: #e6e6e6;
+  }
+
+  pre {
+    margin: 0pt;
+  }
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-code.png)
+
+
+### 図のスタイル
+
+CSS カウンタで図にも番号を振っておくと便利です。
+
+```
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figure {
+  figcaption {
+    text-align: center;
+
+    counter-increment: figure;
+
+    &:before {
+      margin-right: 1rem;
+      content: 'Figure' counter(figure) '.';
+
+      :root:lang(ja) & {
+        content: '図' counter(figure) '.';
+      }
+    }
+  }
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-figure1.png)
+![](/assets/tutorials/ja/configure-basic-elements/preview-figure2.png)
+
+
+### 後注のスタイル
+
+後注の参照元には footnote-ref、参照先（↩）には footnote-back というクラスが付与されています。後注のリストは footnotes クラスが付与された section 要素の中にあります。
+
+```
+.footnote-ref sup {
+  background-color: #ff8989;
+}
+
+.footnote-back {
+  background-color: #ff8989;
+}
+
+.footnotes {
+  font-size: 8pt;
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-footnote1.png)
+![](/assets/tutorials/ja/configure-basic-elements/preview-footnote2.png)
+
+
+## まとめ
+
+このチュートリアルでは、基本的な要素のスタイルを定義しました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+</ol>
+
+---
+
+次のチュートリアルでは、目次を作成します。
+
+- 前：[チュートリアル⑤カウンタと柱のスタイル](/ja/tutorials/configure-counters-running-heads)
+- 次：[チュートリアル⑦目次の作成](/ja/tutorials/create-table-of-contents)
+- [チュートリアル一覧](/ja/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル⑥基本的な要素のスタイル"
+  lead="SCSS を編集し、基本的な要素のスタイルを設定してみましょう。"
+
+  content=content
+%}

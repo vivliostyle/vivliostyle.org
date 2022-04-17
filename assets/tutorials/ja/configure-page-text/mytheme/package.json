@@ -1,0 +1,33 @@
+{
+  "name": "mytheme",
+  "description": "チュートリアルで使うテーマ",
+  "version": "0.0.1",
+  "author": "Vivliostyle <mail@vivliostyle.org>",
+  "scripts": {
+    "build:scss": "sass scss:.",
+    "watch:scss": "sass --watch scss:."
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "latest",
+    "sass": "^1.32.8"
+  },
+  "files": [
+    "*.css",
+    "*.css.map",
+    "scss",
+    "example",
+    "vivliostyle.config.js"
+  ],
+  "keywords": [
+    "vivliostyle",
+    "vivliostyle-theme"
+  ],
+  "license": "CC0-1.0",
+  "vivliostyle": {
+    "theme": {
+      "name": "mytheme",
+      "style": "./theme_common.css",
+      "category": "misc"
+    }
+  }
+}
