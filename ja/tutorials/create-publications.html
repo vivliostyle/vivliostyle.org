@@ -53,6 +53,7 @@ license と theme は上下キーで選択します。choose theme では、作�
 - @vivliostyle/theme-techbook……技術同人誌をふくむ横書き冊子
 - @vivliostyle/theme-academic……論文、レポートをふくむ横書き文書
 - @vivliostyle/theme-bunko……小説同人誌をふくむ縦書き文書／冊子
+- @vivliostyle/theme-gutenberg……小説同人誌をふくむ横書き文書／冊子
 - @vivliostyle/theme-slide……スライド
 
 ```
@@ -90,14 +91,17 @@ cd mybook
 
 ### PDF の作成
 
-続いて、サンプル原稿から PDF を作成します。テキストエディタでサンプル原稿を開き、その内容を確認してみましょう。前のステップで @vivliostyle/theme-bunko テーマを選択した場合、サンプル原稿は mybook/manuscript.md にあります（サンプル原稿のパスはテーマによって異なります。mybook/vivliostyle.config.js の entry と書かれた部分を参照してください）。
+続いて、サンプル原稿から PDF を作成します。テキストエディタでサンプル原稿を開き、その内容を確認してみましょう。前のステップで @vivliostyle/theme-bunko テーマを選択した場合、サンプル原稿は mybook/bunko.md にあります（サンプル原稿のパスはテーマによって異なります。mybook/vivliostyle.config.js の entry と書かれた部分を参照してください）。
 
 ```
-# {吾輩|わがはい}は猫である。
+# 銀河鉄道の夜
 
-{吾輩|わがはい}は猫である。名前はまだ無い。
+<div class="author">宮沢賢治</div>
 
-どこで生れたかとんと{見当|けんとう}がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番{獰悪|どうあく}な種族...
+## 一、{午后|ごご}の授業
+
+「ではみなさんは、そういうふうに川だと{云|い}われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に{吊|つる}した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを{指|さ}しながら、みんなに{問|とい}をかけました。
+...
 ```
 
 では、このサンプルから PDF を作成してみましょう。ターミナルで以下のコマンドを入力します。
@@ -122,8 +126,8 @@ $ npm run build
 
 ℹ Rendering browser (Chromium) is not installed yet. Downloading now...
 ✔ Successfully downloaded browser
-✔ manuscript.md {吾輩|わがはい}は猫である。
-✔ manuscript.md {吾輩|わがはい}は猫である。
+✔ bunko.md 銀河鉄道の夜
+✔ bunko.md 銀河鉄道の夜
 ◡ Processing PDF
 mybook.pdf has been created.
 🎉 Built successfully.
@@ -148,12 +152,17 @@ npm run preview
 
 ![プレビュー画面](/assets/tutorials/ja/create-publications/preview1.png)
 
-プレビューを起動させたまま、サンプル原稿を編集し、保存します（猫を犬にしてみました）。
+プレビューを起動させたまま、サンプル原稿を編集し、保存します（夜を朝にしてみました）。
 
 ```
-# {吾輩|わがはい}は犬である。
+# 銀河鉄道の朝
 
-{吾輩|わがはい}は犬である。名前は...
+<div class="author">宮沢賢治</div>
+
+## 一、{午后|ごご}の授業
+
+「ではみなさんは、そういうふうに川だと{云|い}われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に{吊|つる}した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを{指|さ}しながら、みんなに{問|とい}をかけました。
+...
 ```
 
 すると、サンプル原稿の編集に合わせて自動的にプレビュー画面が更新されます。
