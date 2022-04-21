@@ -1,0 +1,56 @@
+---
+layout: page
+title: チュートリアル①インストール
+lang: ja
+---
+
+
+{% capture content %}
+## このチュートリアルの目標
+
+- Vivliostyle で出版物を作るための準備ができる
+
+
+## 前提条件
+
+このチュートリアルを効果的に読み進めるには、次の環境と知識が必要です。
+
+- 環境
+  - インターネットに接続できる環境
+  - サポートが終了していない以下の OS
+    - macOS
+    - Windows
+    - Linux
+- 知識
+  - HTML と CSS の基本的な知識
+  - ターミナルとコマンドの基本的な知識
+
+
+## インストール
+
+まずはツールをインストールします。用意するものは次の3つです。
+
+### Node.js
+<https://nodejs.org/ja/> にアクセスし、バージョン 12 以上のものをダウンロードしてください。ダウンロード後、画面の指示に従ってインストールを完了してください。
+
+### テキストエディタ
+[Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)、[Atom](https://atom.io/) など、お好みのテキストエディタを準備してください。
+
+### ターミナル
+PC に最初からインストールされているもの（Windows の Windows Terminal、macOS のターミナル.app など）で構いません。
+
+---
+
+次のチュートリアルからは、PDF 形式の出版物を作っていきます。
+
+- 次：[チュートリアル②PDFの作成](/ja/tutorials/create-publications)
+- [チュートリアル一覧](/ja/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル①インストール"
+  lead="Vivliostyle を使うために必要なツールをインストールします。"
+
+  content=content
+%}

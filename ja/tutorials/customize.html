@@ -1,0 +1,280 @@
+---
+layout: page
+title: チュートリアル③原稿とテーマのカスタマイズ
+lang: ja
+---
+
+
+{% capture content %}
+## このチュートリアルの目標
+
+- PDF の作成に必要なファイルがわかる
+- 設定ファイルの構造がわかる
+- 原稿ファイル・既存テーマのカスタマイズ方法がわかる
+
+
+## PDF の作成に必要なファイル
+
+前回のチュートリアルで作成した雛形には、PDF の作成に必要なファイル（設定ファイル、原稿ファイル、スタイルファイル）が全て含まれています。
+
+
+### 設定ファイル
+[Create Book](https://github.com/vivliostyle/create-book) を使って出版物を作成するには、package.json と vivliostyle.config.js という2つの設定ファイルが必要になります。
+
+
+#### package.json
+
+出版物を作成するためのコマンド、必要なリソースのバージョンなどをまとめた設定ファイルです。編集する機会は基本的にありません。
+
+#### vivliostyle.config.js
+
+出版物に関する設定ファイルです。雛形作成時に設定した項目もこのファイルで管理されています（上書き可能です）。原稿ファイルを増やしたい時や、テーマを別のものに変えたい時は、このファイルを編集します。
+
+```
+module.exports = {
+  title: 'mybook',
+  author: '山田太郎 <yamadataro@example.com>',
+  language: 'ja',
+  theme: '@vivliostyle/theme-bunko',
+  entry: [
+    'bunko.md',
+    {
+      path: 'epigraph.md',
+      title: 'Epigraph',
+      theme: '@vivliostyle/theme-whatever',
+    },
+    'glossary.html',
+  ],
+  entryContext: './manuscripts',
+  output: [
+    './output.pdf',
+    {
+      path: './book',
+      format: 'webpub',
+    },
+  ],
+  workspaceDir: '.vivliostyle',
+  toc: true,
+  cover: './cover.png',
+  vfm: {
+    hardLineBreaks: true,
+    disableFormatHtml: true,
+  },
+}
+```
+
+vivliostyle.config.js では、以下の項目を設定できます。
+
+| プロパティ名 | 説明 |
+| --- | --- |
+| [title](https://docs.vivliostyle.org/#/ja/create-book#%E6%9B%B8%E5%90%8D%E3%81%AE%E6%8C%87%E5%AE%9A) | タイトル |
+| [author](https://docs.vivliostyle.org/#/ja/create-book#%E8%91%97%E8%80%85%E5%90%8D%E3%81%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AE%E6%8C%87%E5%AE%9A) | 著者情報 |
+| [language](https://docs.vivliostyle.org/#/ja/create-book#%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E8%A8%80%E8%AA%9E%E3%81%AE%E6%8C%87%E5%AE%9A) | 使用する言語 |
+| [size](https://docs.vivliostyle.org/#/ja/create-book#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A) | 用紙サイズ |
+| [theme](https://docs.vivliostyle.org/#/ja/create-book#%E3%83%86%E3%83%BC%E3%83%9E%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E6%8C%87%E5%AE%9A) | テーマパッケージ |
+| entry | 出版物に含める原稿ファイルの一覧 |
+| entryContext | 原稿ファイルがあるディレクトリ |
+| output | 出版物の出力形式（PDF または webpub） |
+| workspaceDir | 中間ファイル（Markdown から作られた HTML）の保存先ディレクトリ |
+| toc | 目次を作成するかどうか |
+| cover | 表紙画像 |
+| vfm | [VFM 記法](https://vivliostyle.github.io/vfm/#/ja/vfm)に関する設定 |
+
+詳細は [Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-vivliostyleconfigjs)を参照してください。
+
+
+### 原稿ファイル
+
+Markdown 記法を拡張した [VFM 記法](https://vivliostyle.github.io/vfm/#/ja/vfm)で記述できます。HTML による記述も可能です。原稿を変更したい場合は、このファイルを編集したり、新しくファイルを追加したりします。
+
+
+### スタイルファイル
+
+出版物のスタイルを定義するスタイルファイルは SCSS で記述され、CSS にトランスパイルされて使用されます。詳細は [Vivliostyle Themes ドキュメント](https://vivliostyle.github.io/themes/#/ja/spec#scss)を参照してください。
+
+多くの場合、スタイルファイルは複数のファイルからなり、1つのディレクトリに格納されています。例えば、雛形作成時に選択したテーマは themes/packages/@vivliostyle/theme-bunko という名前のディレクトリにダウンロードされています。出版物のスタイルを変更したい場合は、これらのファイルを編集したり、新しくファイルを追加したりします。
+
+
+## カスタマイズ
+
+前回のチュートリアルではサンプル原稿を直接編集して PDF を作成していました。また、スタイルには既存のテーマ @vivliostyle/theme-bunko が適用されていました。今回はサンプル原稿ではなく、自分で新しい原稿を用意してみましょう。さらに、既存テーマをカスタマイズして PDF を作成してみましょう。
+
+
+### 原稿ファイルのカスタマイズ
+
+原稿ファイルは、vivliostyle.config.js の entry で設定した値に対応しています。例えば vivliostyle.config.js で以下のような設定をした場合、
+
+```
+module.exports = {
+  ...
+  entry: [
+    'maegaki.md',
+    'honbun.md',
+    'atogaki.md',
+  ],
+  entryContext: './manuscripts',
+  ...
+}
+```
+
+- 原稿ファイルは maegaki.md と honbun.md と atogaki.md の3つ
+- 原稿ファイルは全て ./manuscripts というディレクトリに含まれている
+
+という条件で PDF が作成されます。
+
+では、この条件で作成される PDF をプレビューしてみましょう。以下のボタンから vivliostyle.config.js および原稿ファイルをダウンロードし、mybook ディレクトリの中に置いてみましょう。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/customize/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/customize/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
+</ol>
+
+```
+mybook/
+├── package.json
+├── vivliostyle.config.js (*既存のファイルを上書き)
+├── manuscripts/ (*)
+│   ├── maegaki.md
+│   ├── honbun.md
+│   └── atogaki.md
+└── themes/
+    └── packages/
+        └── @vivliostyle/
+            └── theme-bunko/
+```
+
+プレビュー機能を起動すると、vivliostyle.config.js で指定した通りの順番で、原稿ファイルが出版物に反映されていることがわかります（反映されない場合は、 `npm run preview` が実行されているターミナルで `Ctrl+C` を入力してコマンドの実行を停止し、再度 `npm run preview` を実行してください）。
+
+```
+npm run preview
+```
+
+![](/assets/tutorials/ja/customize/preview3.png)
+![](/assets/tutorials/ja/customize/preview4.png)
+![](/assets/tutorials/ja/customize/preview5.png)
+
+このように、原稿ファイルを増やしたいときは、
+1. 新しい原稿ファイルを作成
+1. vivliostyle.config.js の entry に追記
+
+という手順を踏みます。
+
+
+### 既存テーマのカスタマイズ
+
+vivliostyle.config.js の theme には、npm package として公開されているテーマの名前、スタイルファイルを格納したディレクトリの名前、または特定のスタイルファイルの名前を設定します。デフォルトでは vivliostyle.config.js で以下のように設定されています。
+
+```
+module.exports = {
+  ...
+  theme: '@vivliostyle/theme-bunko',
+  ...
+}
+```
+
+この場合、
+
+- 原稿ファイルには @vivliostyle/theme-bunko という名前の npm package のテーマを適用する
+
+という設定で PDF が作成されます。
+
+では、既存のテーマ @vivliostyle/theme-bunko をカスタマイズし、そのスタイルを PDF に適用してみましょう。既存のテーマを改造する場合は、既存のテーマのディレクトリ (themes/packages/@vivliostyle/theme-bunko) をコピーし、別の名前をつけて保存します。
+
+```
+mybook/
+├── package.json
+├── vivliostyle.config.js
+├── manuscripts/
+│   ├── maegaki.md
+│   ├── honbun.md
+│   └── atogaki.md
+└── themes/
+    ├── mytheme/ (*theme-bunkoをコピー)
+    └── packages/
+        └── @vivliostyle/
+            └── theme-bunko/
+```
+
+その後、vivliostyle.config.js の theme を、コピーしたディレクトリの名前に書き換えます。
+
+```
+module.exports = {
+  ...
+  theme: 'themes/mytheme',
+  ...
+}
+```
+
+すると、
+
+- 原稿ファイルには ./themes/mytheme という名前のディレクトリで定義されているテーマを適用する
+
+という設定で PDF が作成されます。
+
+以降はこの mytheme を編集していきます。スタイルを編集する際は、mytheme ディレクトリに移動し、SCSS を CSS にトランスパイルするコマンドを実行しておきます。
+
+```
+# mytheme ディレクトリに移動するコマンド
+cd themes/mytheme
+
+# SCSS を CSS にトランスパイルするコマンド
+npm run watch:scss
+```
+
+コマンドを実行すると以下のような表示が出ます（テーマによって、SCSS を CSS にトランスパイルするコマンドが異なる可能性があります。各テーマの package.json を確認してください）。
+
+```
+$ npm run watch:scss
+
+> @vivliostyle/theme-bunko@0.5.0 watch:scss
+> sass --watch scss:.
+
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+```
+
+手始めに、見出しの色を赤にしてみましょう。themes/mytheme/scss/theme_common.scss に以下を追記します。
+
+```
+h1 {
+  color: red;
+}
+```
+
+または以下のボタンから theme_common.scss をダウンロードし、mytheme/scss/theme_common.scss を置き換えます。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/customize/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+</ol>
+
+すると、`npm run watch:scss` が SCSS ファイルの変更を自動で検知して CSS ファイルを更新します。`npm run preview` は CSS ファイルの更新を検知して、プレビュー画面を更新します。プレビューを確認すると、意図した通りに、見出しの色が赤くなっていることがわかります。
+
+![](/assets/tutorials/ja/customize/preview6.png)
+
+このように、既存テーマをカスタマイズしたいときは、
+1. 既存テーマのディレクトリをコピー
+1. vivliostyle.config.js の theme を変更
+1. `npm run watch:scss` で SCSS を CSS にトランスパイル
+
+という手順を踏みます。
+
+
+## まとめ
+
+このチュートリアルを通して、PDF の作成に必要なファイルを知り、原稿ファイル・既存テーマをカスタマイズできるようになりました。実際の執筆においても、複数の原稿ファイルを用意することや、テーマをカスタマイズする機会は多いと思います。
+
+---
+
+次のチュートリアルでは、SCSS を編集して用紙と文字の設定を行います。
+
+- 前：[チュートリアル②PDFの作成](/ja/tutorials/create-publications)
+- 次：[チュートリアル④用紙と文字のスタイル](/ja/tutorials/configure-page-text)
+- [チュートリアル一覧](/ja/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル③原稿とテーマのカスタマイズ"
+  lead="雛形をカスタマイズし、自分だけの出版物を作る準備をしましょう。"
+
+  content=content
+%}

@@ -1,0 +1,151 @@
+---
+layout: page
+title: チュートリアル⑦目次の作成
+lang: ja
+---
+
+
+{% capture content %}
+## このチュートリアルの目標
+
+- 目次を自動で作成できる
+- 目次を手動で作成できる
+
+
+## 目次の自動作成
+
+Vivliostyle の機能を使って目次を自動で作成することができます。このとき目次に表示されるのは、
+- 本のタイトル
+- 目次ページのタイトル（デフォルトは "Table of Contents"）
+- 各原稿ファイルのタイトルとリンク
+
+です。vivliostyle.config.js に以下の項目を追記します。
+
+```
+module.exports = {
+  ...
+  toc: true,
+  tocTitle: '目次',
+}
+```
+
+以下のコマンドを実行します。
+
+```
+npm run preview
+```
+
+すると、PDF の1ページ目に目次が自動で追加されます。tocTitle の値を変更することで、目次ページのタイトルを自由に変更できます。
+
+![](/assets/tutorials/ja/create-table-of-contents/preview-table-of-contents1.png)
+
+参照：[Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E7%9B%AE%E6%AC%A1%E3%81%AE%E4%BD%9C%E6%88%90)
+
+
+## 目次の手動作成
+
+Vivliostyle の機能を使って作られる目次には、現状、各原稿ファイルのタイトルしか表示できません。したがって、例えば原稿ファイルの各見出しを目次に表示したい場合は、手動で目次ファイルを作成する必要があります。
+
+では、テキストエディタを開いて manuscripts/toc.md という名前の目次ファイルを作ってみましょう。role 属性の値 "doc-toc" は、[Digital Publishing WAI-ARIA](https://www.w3.org/TR/dpub-aria-1.0/) という仕様で定義されてます。Vivliostyle は、この属性のある要素（通常は nav）を目次として認識して、リンクされている HTML をまとめて一冊の本のように扱い、プレビュー画面の目次パネルのナビゲーションも有効にします。
+
+```
+<nav id="toc" role="doc-toc">
+
+1. [まえがき](maegaki.html)
+1. [本文](honbun.html)
+    1. [ソースコード](honbun.html#code)
+        1. [キャプション付き](honbun.html#code-with-caption)
+    1. [後注](honbun.html#footnotes)
+    1. [Frontmatter](honbun.html#frontmatter)
+    1. [改行](honbun.html#newline)
+    1. [画像](honbun.html#figure)
+        1. [キャプション](honbun.html#figure-with-caption)
+    1. [数式](honbun.html#math)
+    1. [HTML](honbun.html#html)
+        1. [Markdown と HTML の併用](honbun.html#html-with-markdown)
+    1. [ルビ](honbun.html#ruby)
+1. [あとがき](atogaki.html)
+
+</nav>
+```
+
+目次ファイルを独自に作る場合は、vivliostyle.config.js の entry に追記が必要です。目次ファイルには `rel: 'contents'` を指定してください。
+
+```
+module.exports = {
+  ...
+  entry: [
+    {
+      path: 'toc.md',
+      rel: 'contents',
+    },
+    'maegaki.md',
+    ...
+}
+```
+
+目次用の CSS も追記します。
+
+```
+#toc li {
+  list-style: none;
+
+  ol {
+    padding-left: 1em;
+  }
+
+  a {
+    display: inline-flex;
+    width: 100%;
+    text-decoration: none;
+    color: currentColor;
+    align-items: baseline;
+
+    &::before {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      border-bottom: 1px dotted;
+      content: '';
+      order: 1;
+      flex: auto;
+    }
+
+    &::after {
+      text-align: right;
+      content: target-counter(attr(href), page);
+      align-self: flex-end;
+      flex: none;
+      order: 2;
+    }
+  }
+}
+```
+
+![](/assets/tutorials/ja/create-table-of-contents/preview-table-of-contents2.png)
+
+参考：[Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E7%9B%AE%E6%AC%A1%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9)
+
+
+## まとめ
+
+このチュートリアルでは、目次を作成してそのスタイルを定義しました。今回のチュートリアルで使用した vivliostyle.config.js、原稿ファイル、スタイルファイルは以下のボタンからダウンロードできます。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-table-of-contents/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-table-of-contents/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-table-of-contents/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
+</ol>
+
+---
+
+- 前：[チュートリアル⑤カウンタと柱のスタイル](/ja/tutorials/configure-counters-running-heads)
+- [チュートリアル一覧](/ja/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル⑦目次の作成"
+  lead="Vivliostyle の機能を使って目次を作成してみましょう。"
+
+  content=content
+%}

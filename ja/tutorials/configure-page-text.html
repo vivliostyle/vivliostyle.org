@@ -1,0 +1,262 @@
+---
+layout: page
+title: チュートリアル④用紙と文字のスタイル
+lang: ja
+---
+
+
+{% capture content %}
+## このチュートリアルの目標
+
+- 用紙の設定方法がわかる
+- 文字の設定方法がわかる
+
+
+## チュートリアルで使用するファイル
+
+以降のチュートリアルで使うファイルを用意しました。以下のボタンから、vivliostyle.config.js、原稿ファイル、スタイルファイルをダウンロードし、mybook ディレクトリの中に置いてみましょう。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-page-text/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-page-text/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-page-text/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
+</ol>
+
+```
+mybook/
+├── package.json
+├── vivliostyle.config.js (*既存のファイルを上書き)
+├── manuscripts/ (*既存のファイルを上書き)
+│   ├── maegaki.md
+│   ├── honbun.md
+│   └── atogaki.md
+└── themes/
+    └── mytheme/ (*既存のファイルを上書き)
+```
+
+themes/mytheme/scss/theme_common.scss には、ブラウザに設定されているデフォルトのスタイルを打ち消すための CSS が書かれています。
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+ターミナルで以下のコマンドを実行し、スタイルがほとんど何も適用されていない PDF を見てみましょう。
+
+```
+npm run preview
+```
+
+![](/assets/tutorials/ja/configure-page-text/preview-reset1.png)
+![](/assets/tutorials/ja/configure-page-text/preview-reset2.png)
+![](/assets/tutorials/ja/configure-page-text/preview-reset3.png)
+
+チュートリアルを通して、このまっさらな本の見た目を CSS で整えていきます。CSS は themes/mytheme/scss/theme_common.scss に記述します。
+
+
+## 用紙のスタイル
+
+用紙に関する設定は [@page](https://developer.mozilla.org/ja/docs/Web/CSS/@page) というルールを使って記述します。
+
+### 用紙サイズ
+
+[size](https://developer.mozilla.org/ja/docs/Web/CSS/@page/size) 記述子を使います。
+
+```
+@page {
+  size: 148mm 210mm; /* A5サイズ */
+}
+```
+
+### 余白
+
+CSS プロパティの margin を使います。
+
+```
+@page {
+  margin: 10mm 15mm;
+}
+```
+
+![](/assets/tutorials/ja/configure-page-text/preview-margin.png)
+
+綴るタイプの本では、ノド（綴る側）の余白を広くしたい場合があります。[@page :left](https://developer.mozilla.org/ja/docs/Web/CSS/:left) と [@page :right](https://developer.mozilla.org/ja/docs/Web/CSS/:right) を使えば、右に来るページと左に来るページのスタイルを個別に設定できます。
+
+```
+@page :left { /* 左ページの右余白を広げる */
+  margin-right: 25mm;
+}
+
+@page :right { /* 右ページの左余白を広げる */
+  margin-left: 25mm;
+}
+```
+
+![](/assets/tutorials/ja/configure-page-text/preview-inside-margin.png)
+
+余白とフォントサイズをセットで考える場合は、[CSS組版 with Vivliostyleでゼロから版面設計をやってみよう](https://libroworks.co.jp/?p=5709)を参照してください。
+
+
+### ページの始まる側
+
+Vivliostyle では、各原稿ファイル（このチュートリアルでは、まえがき、本文、目次の3つ）の先頭で必ず改ページされるようになっています。各原稿ファイルの内容を左／右／奇数ページ／偶数ページのいずれかから開始する場合は、body 要素の break-before で設定します。
+
+```
+body {
+  break-before: left; /* 左ページから開始 */
+  break-before: right; /* 右ページから開始 */
+  break-before: recto; /* 奇数ページから開始 */
+  break-before: verso; /* 偶数ページから開始 */
+}
+```
+
+これまでは本文（この原稿は…）が左ページから始まっていましたが、`break-before: right;` を設定すると、左側に空白ページが追加され、本文が右ページから始まるようになりました。
+
+![](/assets/tutorials/ja/configure-page-text/preview-break-before.png)
+
+参考：[Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E5%90%84%E7%AB%A0%E3%82%92%E5%B7%A6%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%82%E3%82%8B%E3%81%84%E3%81%AF%E5%8F%B3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%8B%E3%82%89%E3%81%AB)
+
+
+### 表紙
+
+全原稿ファイルの中で1ページ目のスタイルは [@page :first](https://developer.mozilla.org/ja/docs/Web/CSS/:first)、各原稿ファイルの1ページ目のスタイルは <span>@</span>page :nth(1) で設定できます。
+
+
+### 空白ページ
+
+空白ページのスタイルは [@page :blank](https://developer.mozilla.org/ja/docs/Web/CSS/:blank)で設定できます。
+
+
+## 文字のスタイル
+
+文字に関する各種設定は、CSS プロパティを使うことで実現できます。
+
+
+### 組方向
+
+CSS プロパティの writing-mode を使います。
+
+```
+html {
+  writing-mode: vertical-rl; /* 縦書き */
+}
+```
+
+![](/assets/tutorials/ja/configure-page-text/preview-writing-mode.png)
+
+
+### フォントファミリー
+
+CSS プロパティの font-family を使います。
+
+```
+html {
+  font-family: '游明朝', 'YuMincho', serif;
+}
+```
+
+### フォントサイズ
+
+CSS プロパティの font-size を使います。
+
+```
+html {
+  font-size: 12pt;
+}
+
+ruby > rt { /* ルビ */
+  font-size: 0.5rem;
+}
+```
+
+
+### 行間
+
+CSS プロパティの line-height を使います。
+
+```
+p {
+  line-height: 1.5;
+}
+```
+
+
+### インデント
+
+CSS プロパティの text-indent を使います。
+
+```
+p {
+  text-indent: 1em;
+}
+```
+
+![](/assets/tutorials/ja/configure-page-text/preview-text-indent.png)
+
+
+### 行末揃え
+
+CSS プロパティの text-align を使います。
+
+```
+html {
+  text-align: justify;
+}
+```
+
+![](/assets/tutorials/ja/configure-page-text/preview-text-align.png)
+
+
+### ぶらさがり
+
+CSS プロパティの text-spacing と hanging-punctuation を使います。
+
+```
+html {
+  text-spacing: allow-end;
+  hanging-punctuation: allow-end;
+}
+```
+
+参考：[行末処理が進化して多様な組版ができるように \| Vivliostyle](https://vivliostyle.org/ja/blog/2022/02/08/Improved-of-line-end-handling-and-support-for-page-progression-direction-in-PDF/)
+
+
+### ウィドウとオーファン
+
+段落の最後の1行だけが次ページの先頭に現れることを widow、最初の1行だけが前ページの末尾に現れることを orphan といいます。ページの先頭／末尾に現れる段落の最小行数を設定するには、CSS プロパティの widows と orphans を使います。
+
+```
+html {
+  widows: 1;
+  orphans: 1;
+}
+```
+
+
+## まとめ
+
+このチュートリアルでは、用紙と文字に関するスタイルをゼロから定義しました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-page-text/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+</ol>
+
+---
+
+次のチュートリアルでは、カウンタと柱の設定を行います。
+
+- 前：[チュートリアル③原稿とテーマのカスタマイズ](/ja/tutorials/customize)
+- 次：[チュートリアル⑤カウンタと柱のスタイル](/ja/tutorials/configure-counters-running-heads)
+- [チュートリアル一覧](/ja/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル④用紙と文字のスタイル"
+  lead="SCSS を編集し、用紙と文字のスタイルを設定してみましょう。"
+
+  content=content
+%}

@@ -14,6 +14,8 @@ en:
 ja:
   - title: 使ってみる
     url: /ja/getting-started/
+  - title: チュートリアル
+    url: /ja/tutorials/
   - title: サンプル
     url: /ja/samples/
   - title: ダウンロード

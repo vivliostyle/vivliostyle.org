@@ -1,0 +1,202 @@
+---
+layout: page
+title: チュートリアル②PDFの作成
+lang: ja
+---
+
+
+{% capture content %}
+## このチュートリアルの目標
+
+- 雛形の作成方法がわかる
+- PDF の作成方法がわかる
+- プレビュー機能の使い方がわかる
+
+
+## PDF の作成
+
+Vivliostyle には様々なツールがありますが、このチュートリアルでは [Create Book](https://github.com/vivliostyle/create-book) を使います。Create Book を使って出版物の雛形を作り、雛形に含まれるサンプル原稿やサンプルスタイルを改造することで、自分だけの出版物を作っていきます。
+
+### 雛形の作成（新しく出版物を作る時のみ）
+
+出版物の雛形を作ります。ターミナルを開き、次のように入力し、Enter キーを押します。`mybook` の部分は自由に変えて構いません。
+
+```
+npm create book mybook
+```
+
+以下の表示が出た場合、`y` を入力して Enter キーを押します。
+
+```
+Need to install the following packages:
+  create-book
+Ok to proceed? (y)
+```
+
+雛形を作るにあたって必要な情報を入力していきます。description という表示になったら、出版物の詳細をテキスト入力します。空欄にする場合は、何も入力せずに Enter キーを押して次に進みます。
+
+```
+$ npm create book mybook
+? description 私の書いた本
+```
+
+Enter キーを押すと次の入力画面に進みます。author name と author email も同様に入力します。
+
+```
+$ npm create book mybook
+? description 私の書いた本
+? author name 山田太郎
+? author email yamadataro@example.com
+```
+
+license と theme は上下キーで選択します。choose theme では、作りたい本の用途に合わせて以下のテーマパッケージのいずれかを選択します。このチュートリアルでは、 @vivliostyle/theme-bunko を選択してみましょう。
+- @vivliostyle/theme-techbook……技術同人誌をふくむ横書き冊子
+- @vivliostyle/theme-academic……論文、レポートをふくむ横書き文書
+- @vivliostyle/theme-bunko……小説同人誌をふくむ縦書き文書／冊子
+- @vivliostyle/theme-gutenberg……小説同人誌をふくむ横書き文書／冊子
+- @vivliostyle/theme-slide……スライド
+
+```
+$ npm create book mybook
+? description 私の書いた本
+? author name 山田太郎
+? author email yamadataro@example.com
+? license CC0-1.0
+? choose theme @vivliostyle/theme-bunko
+```
+
+Enter キーを押すと、出版物の作成に必要なリソースのダウンロードが始まります（通常は数分以内に終わります）。以下の内容が表示されると完了です。
+
+```
+Success! Created mybook.
+
+1. cd mybook
+2. create and edit Markdown files
+3. edit entry field in your vivliostyle.config.js
+4. yarn build or npm run build
+
+See https://docs.vivliostyle.org for futher information.
+
+🖊️Happy writing!
+```
+
+指示のとおり、ターミナルで以下のコマンドを入力し、今自動で作られた作業用のディレクトリに移動しましょう。
+
+```
+cd mybook
+```
+
+ここまでの作業は新しく出版物を作成するときだけ行います。既存の原稿を修正するときには必要ありません。
+
+
+### PDF の作成
+
+続いて、サンプル原稿から PDF を作成します。テキストエディタでサンプル原稿を開き、その内容を確認してみましょう。前のステップで @vivliostyle/theme-bunko テーマを選択した場合、サンプル原稿は mybook/bunko.md にあります（サンプル原稿のパスはテーマによって異なります。mybook/vivliostyle.config.js の entry と書かれた部分を参照してください）。
+
+```
+# 銀河鉄道の夜
+
+<div class="author">宮沢賢治</div>
+
+## 一、{午后|ごご}の授業
+
+「ではみなさんは、そういうふうに川だと{云|い}われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に{吊|つる}した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを{指|さ}しながら、みんなに{問|とい}をかけました。
+...
+```
+
+では、このサンプルから PDF を作成してみましょう。ターミナルで以下のコマンドを入力します。
+
+```
+npm run build
+```
+
+このコマンドを実行することで、Vivliostyle は以下の手順で PDF を作成します。
+
+1. Markdown 形式で書かれたサンプル原稿を HTML に変換
+2. vivliostyle.config.js という設定ファイルに従い、組版
+3. package.json という設定ファイルに従い、PDF を作成
+
+コマンドを実行すると、次のような表示が出ます。初回実行時はリソースのダウンロードが発生します（通常は数分以内に終わります）。
+
+```
+$ npm run build
+
+> mybook@0.0.0 build
+> vivliostyle build
+
+ℹ Rendering browser (Chromium) is not installed yet. Downloading now...
+✔ Successfully downloaded browser
+✔ bunko.md 銀河鉄道の夜
+✔ bunko.md 銀河鉄道の夜
+◡ Processing PDF
+mybook.pdf has been created.
+🎉 Built successfully.
+```
+
+mybook.pdf という名前の PDF が作成されました。早速ファイルを開いてみましょう。サンプル原稿に書かれた内容が PDF になっており、@vivliostyle/theme-bunko テーマが適用されていますね！
+
+![作成された PDF](/assets/tutorials/ja/create-publications/build.png)
+
+
+### 原稿の編集とプレビュー
+
+では、サンプル原稿を編集してから PDF をもう一度作成してみましょう。テキストエディタで原稿を編集→ターミナルでコマンドを実行して PDF を作成……という流れを踏んでもよいのですが、原稿を編集するたびにコマンドを実行するのは面倒です。もっと効率的な本作りのために、Vivliostyle はプレビュー機能を用意しています。プレビュー機能を使うと、サンプル原稿の編集に合わせて PDF のプレビューを自動的に表示できます。
+
+実際にやってみましょう。ターミナルで以下のコマンドを入力します。
+
+```
+npm run preview
+```
+
+ブラウザが起動し、原稿のプレビューが表示されます。
+
+![プレビュー画面](/assets/tutorials/ja/create-publications/preview1.png)
+
+プレビューを起動させたまま、サンプル原稿を編集し、保存します（夜を朝にしてみました）。
+
+```
+# 銀河鉄道の朝
+
+<div class="author">宮沢賢治</div>
+
+## 一、{午后|ごご}の授業
+
+「ではみなさんは、そういうふうに川だと{云|い}われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に{吊|つる}した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを{指|さ}しながら、みんなに{問|とい}をかけました。
+...
+```
+
+すると、サンプル原稿の編集に合わせて自動的にプレビュー画面が更新されます。
+
+![サンプル原稿編集後のプレビュー画面](/assets/tutorials/ja/create-publications/preview2.png)
+
+
+## まとめ
+
+このチュートリアルを通して、サンプル原稿を編集し、PDF を作成できるようになりました。実際の執筆においては、以下の手順を踏むことになるでしょう。
+
+1. 雛形の作成
+  - ターミナルで `npm create book mybook` を実行
+  - `mybook` の部分は自由に変更可能
+1. プレビューの起動
+  - ターミナルで `npm run preview` を実行
+1. 原稿の編集
+  - 原稿を編集すると、自動的にプレビュー画面が更新
+1. PDF の作成
+  - ターミナルで `npm run build` を実行
+
+---
+
+次のチュートリアルでは、原稿とテーマのカスタマイズを行います。
+
+- 前：[チュートリアル①インストール](/ja/tutorials/install)
+- 次：[チュートリアル③原稿とテーマのカスタマイズ](/ja/tutorials/customize)
+- [チュートリアル一覧](/ja/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="チュートリアル②PDFの作成"
+  lead="Vivliostyle を使って PDF 形式の出版物を作成してみましょう。"
+
+  content=content
+%}
