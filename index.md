@@ -49,7 +49,7 @@ With Vivliostyle Pub, you can create printable PDF from your browser.
 </ol>
 
 <ol class="list--medium">
-  {% include button/disabled.html url=site.data.project.pub.url text="Try Vivliostyle Pub (will be released by the end of 2021)" %}
+  {% include button/primary.html url=site.data.project.pub.url text="Try Vivliostyle Pub (Now in alpha version)" %}
 </ol>
 {% endcapture %}
 
@@ -88,8 +88,8 @@ Vivliostyle is developing the following products.
   project3_description="Typesetting from command line and generate PDF."
   project4_src="/assets/projects/project4.svg"
   project4_name=site.data.project.pub.name
-  project4_link=site.data.project.pub.github
-  project4_description="Enter markdown and you can see the typesetting results immediately."
+  project4_link=site.data.project.pub.url
+  project4_description="Enter markdown and you can see the typesetting results immediately (Now in alpha version)"
 %}
 
 Other libraries for developers include ["Vivliostyle Core"]({{ site.data.project.core.github }}), the core of the typesetting engine, and ["Vivliostyle Print"]({{ site.data.project.print.github }}), which embeds printing functionality into websites.

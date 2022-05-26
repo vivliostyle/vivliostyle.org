@@ -50,7 +50,7 @@ Vivliostyle Pub を使えば、印刷可能なPDFをブラウザ上から作成�
 </ol>
 
 <ol class="list--medium">
-  {% include button/disabled.html url=site.data.project.pub.url text="Vivliostyle Pub を試す（2022年4月中にアルファ版を公開予定）" %}
+  {% include button/primary.html url=site.data.project.pub.url text="Vivliostyle Pub を試す（ただ今アルファ版を公開中）" %}
 </ol>
 {% endcapture %}
 
@@ -89,8 +89,8 @@ Vivliostyle には開発中も含め、次のプロダクトがあります。
   project3_description="コマンドラインから組版して PDF を生成"
   project4_src="/assets/projects/project4.svg"
   project4_name=site.data.project.pub.name
-  project4_link=site.data.project.pub.github
-  project4_description="マークダウンを入力すると組版結果が見られる（2022年4月中にアルファ版を公開予定）"
+  project4_link=site.data.project.pub.url
+  project4_description="マークダウンを入力すると組版結果が見られる（ただ今アルファ版を公開中）"
 %}
 
 このほか開発者向けライブラリとして、組版エンジンのコア [“Vivliostyle Core”]({{ site.data.project.core.github }})、およびWebサイトに印刷機能を組み込む [“Vivliostyle Print”]({{ site.data.project.print.github }}) があります。
