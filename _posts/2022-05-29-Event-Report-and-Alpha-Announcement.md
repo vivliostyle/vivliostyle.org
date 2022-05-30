@@ -19,8 +19,8 @@ Sorry for the delay in reporting, but our annual meetup was held online on April
 
 The program for the day was as follows (The link in the title of the program is to the video recording).
 
-- 13:05-13:15 (10min.）[Explanation of purpose ;Japanese](https://youtu.be/Q2Y5r8F1KTo) ([Katsuhiro Ogata](https://twitter.com/ogwata))
-- 13:15-13:40 (25min.) [How I use Vivliostyle ;Japanese](https://youtu.be/iHYC552z2Rc) ([Taiyo Fijii](https://twitter.com/t_trace))
+- 13:05-13:15 (10min.) [Explanation of purpose ;Japanese](https://youtu.be/Q2Y5r8F1KTo) ([Katsuhiro Ogata](https://twitter.com/ogwata))
+- 13:15-13:40 (25min.) [How I use Vivliostyle ;Japanese](https://youtu.be/iHYC552z2Rc) ([Taiyo Fujii](https://twitter.com/t_trace))
 - 13:40-14:00 (20min.) [Vivliostyle's 2022 Development Plan ;Japanese](https://youtu.be/SrptSRhiR1M) ([Shinyu Murakami](https://twitter.com/MurakamiShinyu)) [[slide]](https://vivliostyle.org/viewer/#src=https://github.com/murakamishinyu/vivliostyle-dev2022spring/blob/main/slide.html&bookMode=true&spread=false)
 - 14:00-14:10 (10min.) Break
 - 14:10-14:30 (20min.) [Vivliostyle Pub, which has released an alpha version ;Japanese](https://youtu.be/35eHzZay-Bo) ([takanakahiko](https://twitter.com/takanakahiko))
