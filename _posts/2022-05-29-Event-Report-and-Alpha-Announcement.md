@@ -33,9 +33,7 @@ The program for the day was as follows (The link in the title of the program is 
 - 16:10-16:50（40分）[4月開発者会議](https://youtu.be/o1mWsPHHQpg)
 - 16:50-17:00（10分）[クロージング](https://youtu.be/VHucqSCSQxs)（[村上真雄](https://twitter.com/MurakamiShinyu)）
 
-Especially precious was the presence of guest sci-fi novelist [Taiyo Fujii](https://taiyolab.com/?lang=en), who demonstrated his own [galley workflow](https://github.com/ttrace/autobuild) using Vivliostyle for PDF output. His case study was also discussed during the free discussion session [”4月開発者会議“](https://youtu.be/o1mWsPHHQpg) in the latter half of the day, where the committers had a lively discussion about possible improvements. Slides from the day are below. Please take a look.
-
-- [イベント資料一覧](https://vivliostyle.connpass.com/event/243092/presentation/)
+Especially precious was the presence of guest sci-fi novelist [Taiyo Fujii](https://taiyolab.com/?lang=en), who demonstrated his own [galley workflow](https://github.com/ttrace/autobuild) using Vivliostyle for PDF output. His case study was also discussed during the free discussion session [”4月開発者会議“](https://youtu.be/o1mWsPHHQpg) in the latter half of the day, where the committers had a lively discussion about possible improvements. 
 
 ## Vivliostyle Pub alpha version is now available!
 
