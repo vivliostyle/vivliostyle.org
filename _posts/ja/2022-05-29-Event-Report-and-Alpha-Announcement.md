@@ -26,7 +26,7 @@ tags:
 - 14:50-15-00（10分）休憩
 - 15-00-15:20（20分）[既存のThemesで印刷用PDFを作るには](https://youtu.be/B_-I9Y90oXA)（[Yusuke S.](https://twitter.com/Uske_S)）[［スライド］](https://drive.google.com/file/d/1j0esl4jr20RoF5gpz_HZXHuJI4dfovGK/view)
 - 15:20-15:40（20分）[vivliostyle.orgではじめるCSS組版チュートリアル](https://youtu.be/SMomqtdZXvg)（[やましー](https://twitter.com/yamasy1549)）[［スライド］](https://www.slideshare.net/yamasy1549s/vivliostyleorgcss)
-- 15:40-16:00（20分）[緑豆はるさめ Vivliostyle CLI update - 2022 Spring](https://youtu.be/GMzLJ17MLOk)（[緑豆はるさめ](https://twitter.com/spring_raining)）
+- 15:40-16:00（20分）[Vivliostyle CLI update - 2022 Spring](https://youtu.be/GMzLJ17MLOk)（[緑豆はるさめ](https://twitter.com/spring_raining)）
 - 16:00-16:10（10分）休憩
 - 16:10-16:50（40分）[4月開発者会議](https://youtu.be/o1mWsPHHQpg)
 - 16:50-17:00（10分）[クロージング](https://youtu.be/VHucqSCSQxs)（[村上真雄](https://twitter.com/MurakamiShinyu)）
