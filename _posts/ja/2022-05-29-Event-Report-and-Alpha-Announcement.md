@@ -41,7 +41,7 @@ tags:
 
 - [Vivliostyle Pubアルファ版](https://vivliostyle-pub-develop.vercel.app/)
 
-ChromePC版ブラウザを使えば、どなたでも無料で利用できます。また操作方法をまとめた下記ユーザガイドも、ぜひご活用ください。
+Chromeブラウザ（PC版）を使えば、どなたでも無料で利用できます。また操作方法をまとめた下記ユーザガイドも、ぜひご活用ください。
 
 - [Vivliostyle Pub アルファ版ユーザガイド](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/)
 

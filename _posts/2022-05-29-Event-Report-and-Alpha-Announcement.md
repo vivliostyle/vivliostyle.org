@@ -43,7 +43,7 @@ Another important event of the day was the announcement of the alpha release of 
 
 - [Vivliostyle Pub alpha release](https://vivliostyle-pub-develop.vercel.app/)
 
-Anyone with a PC version of the Chrome browser can use this service free of charge. Please also take a look at the User's Guide below, which outlines how to use the system.
+Anyone with a Chrome browser (PC version) can use this service free of charge. Please also take a look at the User's Guide below, which outlines how to use the system.
 
 - [Vivliostyle Pub アルファ版ユーザガイド](https://vivliostyle.github.io/docs-vivliostyle-pub/#/) (Unfortunately, only the Japanese version is available so far.)
 
