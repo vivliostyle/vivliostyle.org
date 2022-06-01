@@ -26,7 +26,7 @@
   </head>
   <body data-vivliostyle-viewer-status="loading" data-bind="event: {keydown: handleKey}, attr: {'data-vivliostyle-viewer-status': viewer.state.status, 'aria-busy': viewer.state.status()=='loading'}">
     <section id="vivliostyle-welcome" hidden data-bind="visible: !viewer.state.status(), attr: {hidden: viewer.state.status()?'':false, 'aria-hidden': viewer.state.status()?'true':'false'}, click: navigation.onclickViewport, swipePages: true">
-      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.15.3)</small></h1>
+      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.15.4)</small></h1>
       <input id="vivliostyle-input-url" type="text" placeholder="Input a document URL" data-bind="textInput: viewer.inputUrl"/>
       <div id="vivliostyle-input-options">
         <label data-bind="hidden: settingsPanel.isBookModeChangeDisabled"><input id="vivliostyle-book-mode" type="checkbox" data-bind="checked: settingsPanel.state.bookMode" />&nbsp;<b>Book Mode</b>&emsp;</label>
@@ -239,7 +239,7 @@
             </div>
             <aside class="vivliostyle-menu-detail-aside">
               <div><small>Powered by</small> <a href="https://vivliostyle.org"><strong>Vivliostyle</strong></a> </div>
-              <div class="version"><small>(<span>core+viewer: 2.15.3</span>)</small></div>
+              <div class="version"><small>(<span>core+viewer: 2.15.4</span>)</small></div>
             </aside>
           </div>
         </li>
