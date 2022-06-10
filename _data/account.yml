@@ -19,10 +19,6 @@ slack:
 slack_log:
   name: Slack logs
   url: https://github.com/vivliostyle/community/blob/master/slack-logs/index.md
-robotpayment:
-  name: 
-  url: https://credit.j-payment.co.jp/gateway/payform.aspx
-  id: 119076
 youtube:
   name: Vivliostyle Foundation
   url: https://www.youtube.com/channel/UCMi_9RMA2z1AlX1dc_ImZbQ/featured?view_as=subscriber
