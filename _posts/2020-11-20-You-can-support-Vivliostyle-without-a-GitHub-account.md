@@ -20,3 +20,5 @@ So, in order to help people who don't have a GitHub account to support Vivliosty
 GitHub sponsors only support recurring payments on a monthly basis. However, Robot Payment offers both recurring payments and one-time payments. The amount of support is also set to range from 100 yen to 250,000 yen for recurring payments and 100 yen to 600,000 yen for one-time payments. Also, while GitHub sponsors' payments are in dollars, Robot Payment is in yen.
 
 Vivliostyle is an open source project. We hope that as many people as possible will support us in the way you prefer.
+
+**Postscript (2022-06-13)**: Sponsorship through Robot Payment has ended. Thank you for your continued support.
