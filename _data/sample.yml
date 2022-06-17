@@ -396,8 +396,36 @@ categories:
           - name: *link_name_source
             url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/variable-page-size/TheMalayArchipelago
       - name:
+          ja: 銀河鉄道の夜（書籍）
+          en: “Night on the Galactic Railroad (銀河鉄道の夜)” (book)
+        tags:
+          - *tag_ruby
+          - *tag_page_header
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/gingatetsudo/index.html&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/gingatetsudo/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/gingatetsudo
+      - name:
+          ja: 新美南吉童話集（書籍）
+          en: “Nankichi Niimi Fairy Tale Collection (新美南吉童話集)” (book)
+        tags:
+          - *tag_toc
+          - *tag_ruby
+          - *tag_page_header
+          - *tag_multi_html
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/samples/niimi-webpub/publication.json&bookMode=true
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/samples/niimi-webpub/toc.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/samples/niimi-webpub
+      - name:
           ja: 高瀬舟（書籍）
-          en: “Takasebune” (book)
+          en: “Takasebune (高瀬舟)” (book)
         tags:
           - *tag_columns
         urls:
