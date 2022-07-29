@@ -21,7 +21,7 @@ As a result of this update, for example, the current Vivliostyle Pub alpha versi
 - [You can edit with multiple users using the features of GitHub.](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/multi-user-collaborative-editing/overview)
 - [You can export PDF files.](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/functions-of-the-actions-menu/export#pdf)
 
-However, due to the specification that the typesetting engines responsible for preview and PDF output are different, the fonts used in preview and those used in PDF output may not match, and the pages may differ from each other.
+However, due to the different location of the typesetting engine between preview and PDF output, the fonts used in preview and PDF output may not match, and this may cause pages to differ from each other.
 
 - [How to use fonts](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/create-and-save-documents/how-to-specify-fonts#%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%97%E3%81%8F%E3%81%BF)
 
