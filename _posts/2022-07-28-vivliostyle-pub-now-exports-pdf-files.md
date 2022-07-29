@@ -10,7 +10,7 @@ author:
 
 Vivliostyle Pub released an alpha version in April. Since then, development has proceeded smoothly, and just recently it has become possible to export to PDF files. The user guide has been substantially revised accordingly.
 
-- [Vivliostyle Pub Alpha version User Guide](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/) (Sorry, the English translation has not yet been translated)
+- [Vivliostyle Pub Alpha version User Guide](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/) (Sorry, the English translation is still under preparation.)
 
 As a result of this update, for example, the current Vivliostyle Pub alpha version can do the following.
 
