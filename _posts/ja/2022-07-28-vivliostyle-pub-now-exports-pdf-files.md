@@ -21,7 +21,7 @@ author:
 - [GitHubの機能を使って複数ユーザーによる編集ができる](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/multi-user-collaborative-editing/overview)
 - [PDFの書き出しができる](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/functions-of-the-actions-menu/export#pdf)
 
-ただし、プレビューとPDF出力を担当する組版エンジンが異なるという仕様により、場合によってプレビューで使われるフォントとPDF出力で使われるフォントが一致せず、これにより互いにページが食い違ってしまうことがあり得ます。
+ただし、プレビューとPDF出力とでは組版エンジンの場所が異なるという仕様により、場合によってプレビューで使われるフォントとPDF出力で使われるフォントが一致せず、互いにページが食い違ってしまうことがあります。
 
 - [フォントを利用するしくみ](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/create-and-save-documents/how-to-specify-fonts#%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%97%E3%81%8F%E3%81%BF)
 
