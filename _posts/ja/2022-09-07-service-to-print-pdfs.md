@@ -23,7 +23,7 @@ author:
 
 [![mybooksPODのリンク](/assets/posts/2022-09-07-service-to-print-pdfs/fig-3.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-3.png)
 
-④すると新規タブにmybooksPODが表示されます。
+④すると新規タブにmybooksPODが表示されます。ページの内容をよく読んでから入稿をするようにしてください。
 
 [![mybooksPOD](/assets/posts/2022-09-07-service-to-print-pdfs/fig-4.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-4.png)
 
