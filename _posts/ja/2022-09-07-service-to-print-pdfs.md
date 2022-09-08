@@ -19,7 +19,7 @@ author:
 
 [![Actionメニュー > Export（出力）](/assets/posts/2022-09-07-service-to-print-pdfs/fig-2.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-2.png)
 
-③同じく画面左のインデックスから「印刷会社への入稿」（赤四角❶）をクリックすると、「印刷会社への入稿」の節が表示されます。記事を読んだ上で、そのなかの [mybooksPOD](https://pod.mybooks.jp/)のリンク（赤丸❷）をクリックしてください。
+③同じく画面左のインデックスから「印刷会社への入稿」（赤四角❶）をクリックすると、「印刷会社への入稿」の節が表示されます。記事を読んだ上で、そのなかの [mybooksPOD  <i class="fas fa-external-link-alt"></i>](https://pod.mybooks.jp/)のリンク（赤丸❷）をクリックしてください。
 
 [![mybooksPODのリンク](/assets/posts/2022-09-07-service-to-print-pdfs/fig-3.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-3.png)
 
@@ -31,7 +31,7 @@ author:
 
 - [入稿について  <i class="fas fa-external-link-alt"></i>](https://pod.mybooks.jp/other/apply.html)
 
-フォームへの入力終わったら、画面下端の「次へ進む」をクリックしてください。
+フォームへの入力が終わったら、画面下端の「次へ進む」をクリックしてください。
 
 [![見積もり依頼](/assets/posts/2022-09-07-service-to-print-pdfs/fig-5.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-5.png)
 
