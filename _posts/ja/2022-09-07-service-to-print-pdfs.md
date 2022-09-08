@@ -7,7 +7,7 @@ author:
 ---
 
 
-7月に、[Vivliostyle PubでPDFが出力できるようになった](http://127.0.0.1:4000/ja/blog/2022/07/28/vivliostyle-pub-now-exports-pdf-files/)ことを報告しました。このたび、そのPDFをPOD（プリントオンデマンド）で印刷できるサービスが開始されました。これは[欧文印刷株式会社  <i class="fas fa-external-link-alt"></i>](https://obun.jp/)による印刷サービス [mybooksPOD  <i class="fas fa-external-link-alt"></i>](https://pod.mybooks.jp/)との提携によるものです。サービス名にある「POD」とは「Print On Demand」の略で、必要に応じて必要な部数だけを印刷できる方式です。
+7月に、[Vivliostyle PubでPDFが出力できるようになった](https://vivliostyle.org/ja/blog/2022/07/28/vivliostyle-pub-now-exports-pdf-files/)ことを報告しました。このたび、そのPDFをPOD（プリントオンデマンド）で印刷できるサービスが開始されました。これは[欧文印刷株式会社  <i class="fas fa-external-link-alt"></i>](https://obun.jp/)による印刷サービス [mybooksPOD  <i class="fas fa-external-link-alt"></i>](https://pod.mybooks.jp/)との提携によるものです。サービス名にある「POD」とは「Print On Demand」の略で、必要に応じて必要な部数だけを印刷できる方式です。
 
 以下、Vivliostyle Pubからこのサービスを利用する方法を順を追ってご説明します。大まかな流れは、mybooksPODのページに遷移→PDFファイルを添えて見積もり依頼→サービスから見積金額が返信→OKならば正式に印刷を発注→納品というものです。
 
