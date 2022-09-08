@@ -7,7 +7,7 @@ author:
 ---
 
 
-7月に、[Vivliostyle PubでPDFが出力できるようになった](http://127.0.0.1:4000/ja/blog/2022/07/28/vivliostyle-pub-now-exports-pdf-files/)ことを報告しました。このたび、そのPDFをPOD（プリントオンデマンド）で印刷できるサービスが開始されました。これは[欧文印刷株式会社](https://obun.jp/)による印刷サービス [mybooksPOD](https://pod.mybooks.jp/)との提携によるものです。サービス名にある「POD」とは「Print On Demand」の略で、必要に応じて必要な部数だけを印刷する方式です。
+7月に、[Vivliostyle PubでPDFが出力できるようになった](http://127.0.0.1:4000/ja/blog/2022/07/28/vivliostyle-pub-now-exports-pdf-files/)ことを報告しました。このたび、そのPDFをPOD（プリントオンデマンド）で印刷できるサービスが開始されました。これは[欧文印刷株式会社  <i class="fas fa-external-link-alt"></i>](https://obun.jp/)による印刷サービス [mybooksPOD  <i class="fas fa-external-link-alt"></i>](https://pod.mybooks.jp/)との提携によるものです。サービス名にある「POD」とは「Print On Demand」の略で、必要に応じて必要な部数だけを印刷できる方式です。
 
 以下、Vivliostyle Pubからこのサービスを利用する方法を順を追ってご説明します。大まかな流れは、mybooksPODのページに遷移→PDFファイルを添えて見積もり依頼→サービスから見積金額が返信→OKならば正式に印刷を発注→納品というものです。
 
@@ -19,7 +19,7 @@ author:
 
 [![Actionメニュー > Export（出力）](/assets/posts/2022-09-07-service-to-print-pdfs/fig-2.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-2.png)
 
-③同じく画面左のインデックスから「印刷会社への入稿」（赤四角）をクリックすると、「印刷会社への入稿」の節が表示されます。記事を読んだ上で、そのなかの [mybooksPOD](https://pod.mybooks.jp/)のリンク（赤丸）をクリックしてください。
+③同じく画面左のインデックスから「印刷会社への入稿」（赤四角❶）をクリックすると、「印刷会社への入稿」の節が表示されます。記事を読んだ上で、そのなかの [mybooksPOD](https://pod.mybooks.jp/)のリンク（赤丸❷）をクリックしてください。
 
 [![mybooksPODのリンク](/assets/posts/2022-09-07-service-to-print-pdfs/fig-3.png)](/assets/posts/2022-09-07-service-to-print-pdfs/fig-3.png)
 
@@ -29,7 +29,7 @@ author:
 
 ⑤ページ下へスクロールすると「見積もり依頼」のセクションがあります。印刷したいPDFファイルを選択、アップロードしたあと、フォームに必要事項を記入していきます。以下のページも参考にしてください。
 
-- [入稿について](https://pod.mybooks.jp/other/apply.html)
+- [入稿について  <i class="fas fa-external-link-alt"></i>](https://pod.mybooks.jp/other/apply.html)
 
 フォームへの入力終わったら、画面下端の「次へ進む」をクリックしてください。
 
@@ -41,4 +41,4 @@ author:
 
 ⑦数日後、欧文印刷株式会社から見積もり結果が届くでしょう。もしもその内容に納得がいくなら発注し、納品をお待ちください。納得がいかない場合はキャンセルすればよいだけです。
 
-なお、mybooksPOD に関する詳細はここでは触れません。不明の点は欧文印刷株式会社に直接[お問い合わせください](https://otoiawase.jp/do/public/form/mybooks/1)。
+なお、mybooksPOD に関する詳細はここでは触れません。不明点があれば欧文印刷株式会社に直接[お問い合わせください  <i class="fas fa-external-link-alt"></i>](https://otoiawase.jp/do/public/form/mybooks/1)。
