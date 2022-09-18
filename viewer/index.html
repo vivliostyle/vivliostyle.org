@@ -26,7 +26,7 @@
   </head>
   <body data-vivliostyle-viewer-status="loading" data-bind="event: {keydown: handleKey}, attr: {'data-vivliostyle-viewer-status': viewer.state.status, 'aria-busy': viewer.state.status()=='loading'}">
     <section id="vivliostyle-welcome" hidden data-bind="visible: !viewer.state.status(), attr: {hidden: viewer.state.status()?'':false, 'aria-hidden': viewer.state.status()?'true':'false'}, click: navigation.onclickViewport, swipePages: true">
-      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.18.0)</small></h1>
+      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.18.1)</small></h1>
       <input id="vivliostyle-input-url" type="text" placeholder="Input a document URL or HTML code" data-bind="textInput: viewer.inputUrl"/>
       <div id="vivliostyle-input-options">
         <label data-bind="hidden: settingsPanel.isBookModeChangeDisabled"><input id="vivliostyle-book-mode" type="checkbox" data-bind="checked: settingsPanel.state.bookMode" />&nbsp;<b>Book Mode</b>&emsp;</label>
@@ -156,7 +156,11 @@
                 <fieldset class="vivliostyle-menu-detail-group" id="vivliostyle-settings_crop-marks" aria-keyshortcuts="O">
                   <legend class="vivliostyle-menu-detail-group-heading">Crop Marks</legend>
                   <ul class="vivliostyle-menu-detail-group">
-                    <li><label><input type="checkbox" name="vivliostyle-settings_crop-marks" data-bind="checked: settingsPanel.state.pageStyle.cropMarks" /> <span>Print crop marks</span></label>
+                    <li>
+                      <div>
+                        <label><input type="checkbox" name="vivliostyle-settings_crop-marks-specified" data-bind="checked: settingsPanel.state.pageStyle.cropMarksSpecified" /> <span>Crop marks:</span></label>
+                        <span class="vivliostyle-menu-disabled" data-bind="css: {'vivliostyle-menu-disabled': !settingsPanel.state.pageStyle.cropMarksSpecified()}, click: ()=>{settingsPanel.state.pageStyle.cropMarksSpecified(true);return true;}"><input type="text" autocomplete="off" name="vivliostyle-settings_crop-marks" data-bind="value: settingsPanel.state.pageStyle.cropMarks, attr: {tabindex: settingsPanel.state.pageStyle.cropMarksSpecified()?0:-1}" /></span>
+                      </div>
                       <ul class="vivliostyle-menu-detail-group">
                         <li>
                           <div>
@@ -264,7 +268,7 @@
             </div>
             <aside class="vivliostyle-menu-detail-aside">
               <div><small>Powered by</small> <a href="https://vivliostyle.org"><strong>Vivliostyle</strong></a> </div>
-              <div class="version"><small>(<span>core+viewer: 2.18.0</span>)</small></div>
+              <div class="version"><small>(<span>core+viewer: 2.18.1</span>)</small></div>
             </aside>
           </div>
         </li>
