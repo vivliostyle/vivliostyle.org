@@ -138,3 +138,31 @@ vol5:
       title: CSS 組版の基本仕様 CSS Paged Media 入門のススメ
       author: 村上真雄
       url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/shinyu/index.html
+vol6:
+  url:
+    web: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/index.html
+    viewer: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/&bookMode=true
+    print: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/&bookMode=true&style=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/theme/theme_print.css
+    source: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol6/
+  img: /assets/samples/vug-vol6.png
+  toc:
+    - type: A
+      title: あなたが知らないかもしれない CSS 変数活用法
+      author: spring-raining
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/spring-raining/index.html
+    - type: A
+      title: GitLab CI/CD を用いた、Vivliostyle 組版事始め
+      author: MH35
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/mh35/index.html
+    - type: A
+      title: rem へ寄せてゆく
+      author: アカベコ
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/akabeko/index.html
+    - type: D
+      title: Vivliostyle Pub がフォントを扱う仕組み
+      author: 小形克宏
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/ogwata/index.html
+    - type: C
+      title: Vivliostyle.js における Web 標準 CSS サポートの大改善
+      author: 村上真雄
+      url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/shinyu/index.html

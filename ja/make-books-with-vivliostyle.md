@@ -15,6 +15,14 @@ lang: ja
 {% endcapture %}
 
 
+
+{% capture vol6_description %}
+## Vivliostyle で本を作ろう Vol.6<small>（2022年9月11日）</small>
+
+Vivliostyle.js v2.16.0 と v2.17.0 で機能が追加された、新しい CSS プロパティ対応の件を中心に、より実践的な CSS の活用方法について多く紹介されました。
+{% endcapture %}
+
+
 {% capture vol5_description %}
 ## Vivliostyle で本を作ろう Vol.5<small>（2021年7月11日）</small>
 
@@ -52,6 +60,17 @@ Vivliostyle.js v2.0.0 以降に登場したプロジェクトについての原�
 
 関連記事：[技術書典6に出展『Vivliostyleで本を作ろう Vol.1』公開！](/ja/blog/2019/05/06/make-books-with-vivliostyle-vol1/)
 {% endcapture %}
+
+
+{% include assign/hash.html
+  description=vol6_description
+  thumbnail=site.data.book.vol6.img
+  toc=site.data.book.vol6.toc
+  web_url=site.data.book.vol6.url.web
+  viewer_url=site.data.book.vol6.url.viewer
+  print_url=site.data.book.vol6.url.print
+  source_url=site.data.book.vol6.url.source
+%}{% assign vol6 = hash %}
 
 
 {% include assign/hash.html
@@ -110,6 +129,7 @@ Vivliostyle.js v2.0.0 以降に登場したプロジェクトについての原�
 
 
 {% include assign/array.html
+  vol6=vol6
   vol5=vol5
   vol4=vol4
   vol3=vol3
