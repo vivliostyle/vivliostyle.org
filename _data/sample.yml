@@ -362,6 +362,24 @@ categories:
             url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/index.html
           - name: *link_name_source
             url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol5/
+      - name:
+          ja: Vivliostyle で本を作ろう Vol.6
+          en: “Make Books with Vivliostyle, Vol. 6”
+        img: assets/samples/vug-vol6.png
+        tags:
+          - *tag_toc
+          - *tag_page_header
+          - *tag_footnote
+          - *tag_multi_html
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/&bookMode=true
+          - name: *link_name_print_yoko
+            url: https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/&bookMode=true&style=https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/theme/theme_print.css
+          - name: *link_name_html
+            url: https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol6/content/index.html
+          - name: *link_name_source
+            url: https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/vivliostyle-user-group-vol6/
   - name:
       ja: その他
       en: Others
