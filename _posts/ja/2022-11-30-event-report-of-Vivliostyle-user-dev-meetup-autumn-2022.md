@@ -77,7 +77,7 @@ v2では見出しの`id`属性に限っては、`section`要素の`aria-labelled
 
 ## Vivliostyle入門本が商業出版される
 
-C&R研究所から待望のVivliostyle入門本が出版されます！　これを詳しく説明したのが、大津雄一郎さんの[vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門』](https://youtu.be/u2DDCgHfQpQ)です。この本ではHTMLやCSSの知識がいくらかある人をメインターゲットにして、必要最低限の組版の知識を取り混ぜて、Vivliostyleの解説をすすめる形にするとのことです。構成案は以下の通りです。
+C&R研究所から待望のVivliostyle入門本が出版されます！　これを詳しく説明したのが、大津雄一郎さんの[vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門』](https://youtu.be/u2DDCgHfQpQ)です。この本ではHTMLやCSSの知識を多少持っている人をメインターゲットにして、必要最低限の組版の知識を取り混ぜて、Vivliostyleの解説をすすめる形にするとのことです。構成案は以下の通りです。
 
 1. VivliostyleとCSS組版
 2. CSS組版ハンズオン
@@ -87,7 +87,7 @@ C&R研究所から待望のVivliostyle入門本が出版されます！　これ
 6. 入稿と印刷
 7. Vivliostyle Pub
 
-また、本書のハンズオンで使用予定のVSCodeの機能拡張[vivliostyle-cli-helper](https://marketplace.visualstudio.com/items?itemName=Libroworks.vivliostyle-cli-helper)のデモを見ることができました（15:21）。これを使うとVSCodeで原稿を書きながらCSS組版したプレビュー画面を簡単に表示させることができます。なんて便利！
+また、本書のハンズオンで使用予定のVSCodeの機能拡張[vivliostyle-cli-helper](https://marketplace.visualstudio.com/items?itemName=Libroworks.vivliostyle-cli-helper)のデモを見ることができました（15:21）。これを使うとVSCodeで原稿を書きながらプレビュー画面を簡単に表示させることができます。なんて便利！
 
 本書の発売予定は来年、2023年3月〜4月とのこと。楽しみに見守ろうと思います。
 
