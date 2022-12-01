@@ -23,7 +23,7 @@ tags:
     - 13:10-13:40（30分）**Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ**（[鈴木丈 FONT WORKS](https://twitter.com/terkel)）（[slide](https://speakerdeck.com/terkel/vivliostyle-dot-js-noxian-xing-shi-zhuang-karakao-erucss-text-spacing-puropatei), [movie](https://youtu.be/vfb-FBTyAUU)）
         - まだブラウザで実装されていない、Vivliostyle.jsの先行実装（和欧間のアキ、連続する約物のスペーシング、行頭・行末のスペーシング）を、ユーザーの立場からレビューします。後半10分からは、実装者である村上代表が疑問に回答します。
     - 13:40-14:10（30分）**Vivliostyle.jsにおけるWeb標準、CSSサポートの大改善**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-dev2022autumn/), [movie](https://youtu.be/p7YKTuBC68Q)）
-        - 最近、新しく利用可能になったCSSグリッドレイアウト、CSS変数（カスタムプロパティ）CSS4セレクター（`:has()`疑似クラスなど）等について詳しく説明します。あわせて課題として残っている未実装のCSSの機能などについても説明します。
+        - 最近、新しく利用可能になったCSSグリッドレイアウト、CSS変数（カスタムプロパティ）CSSセレクター レベル4（`:has()`疑似クラスなど）等について詳しく説明します。あわせて課題として残っている未実装のCSSの機能などについても説明します。
     - 14:10-14:15（5分）休憩
 - **第2部　Vivliostyle開発報告**
     - 14:15-14:25（10分）**Vivliostyleプロジェクトの今までとこれから**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-proj2022autumn/), [movie](https://youtu.be/9c5ueJcYKeE)）
@@ -45,10 +45,54 @@ tags:
     - 16:25-16:35（10分）**クロージング**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[movie](https://youtu.be/Qiu0i-J8ATI)）
         - 村上代表による閉会のことば。
 
-## 今回の見所、聞き所
+今回のイベントでも、いくつもの「へえ！」というようなトピックがありました。以下では短くそれらをご紹介しましょう。
 
-振り返ってみて、今回のトピックと言えるのは、Webフォントサービス[FONT PLUS](https://fontplus.jp/)を担当されている鈴木丈さんによる招待講演「Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ」ではないでしょうか。ブラウザがまだ実装していない仕様のうち、[CSS Text Level4](https://www.w3.org/TR/css-text-4/)に規定されたプロパティ`text-spacing`に絞って、Vivliostyle.jsにおける実装を検証、評価して下さいました。その内容は、現在の実装を概ね肯定するものでした。また、後半22分以降の村上代表によるコメントも、いわば鈴木さんの疑問に答えて種明かしをする内容で、聞き応えのあるものでした。
+## 鈴木丈さん（[FONT PLUS](https://fontplus.jp/)）による実装の評価
 
-次回は来年、2023年4月の開催予定です。それまでVivliostyleの開発がどこまで進むのか、どうかご注目ください。
+鈴木さんの[Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ](https://youtu.be/vfb-FBTyAUU)では、ブラウザがまだ実装していない仕様のうち、[CSSテキスト レベル4](https://www.w3.org/TR/css-text-4/)のプロパティ`text-spacing`に絞って、Vivliostyle.jsにおける実装を検証、評価して下さいました。その内容は現在の実装を概ね肯定するもので、私たちとしては今までやってきたことが間違っていなかったと心強く思いました。また、後半22分以降の村上代表によるコメントも、いわば鈴木さんの疑問に答えて実装の種明かしをする内容で、聞き応えのある対話が聞けたように思います。
+
+## 近い将来Vivliostyle.jsで行取りが可能に
+
+村上代表の[Vivliostyle.jsにおけるWeb標準、CSSサポートの大改善](https://youtu.be/p7YKTuBC68Q)では、後述する`:has()`疑似クラスをはじめ、多くの改善点の説明や近い将来のアップデートが予告されました。
+
+その中でも注目したいのが[lh and rlh units](https://drafts.csswg.org/css-values-4/#lh)のサポート予告です（16:12）。これは`line-height`で指定された数値を単位として扱えるようにするもので、実装されれば「本文のn行分」という方法で見出しや画像等のサイズが指定できるようになります。とくに伝統的な日本語組版とCSS組版の違いに戸惑ってきたユーザーには朗報かもしれません。
+
+## VFMｖ2における非互換変更について
+
+村上代表の[「Vivliostyleプロジェクトの今までとこれから」](https://youtu.be/9c5ueJcYKeE)では、VivliostyleのMarkdown方言、VFMが近々v2にアップデートすることが予告されました（2:41付近）。この中には非互換な変更が含まれるので、現在VFMで書いたデータを持っているユーザは対応が必要になります。
+
+具体的には、現行v1では見出しの属性は基本的に`section`要素にコピーされ、`id`属性は同じく`section`要素に移動していましたが、v2からは廃止します。これにより、例えば特定レベルの見出しをそのままそレベルの柱に指定できるなど、Markdownの制限の中である程度柔軟な範囲指定を可能にする、便利な機能でした。
+
+しかし最近、Vivliostyle.jsで子要素や後に続く任意の要素を指定する`:has()`疑似クラスを実装したことで、より精密な指定ができるようになりました。これにより従来の振る舞いは廃止する方が、ユーザーにとってメリットが大きいと判断したものです。
+
+v2では見出しの`id`属性に限っては、`section`要素の`aria-labelledby`属性にコピーされることになりますが、これ以外の属性はコピーや移動はしないようになります。どうかご注意ください。
+
+## Vivliostyle CLIにおけるテーマ機能の強化
+
+緑豆はるさめさんの[Vivliostyle CLI update - 2022 Autumn](https://youtu.be/Le_Zea-mCCs)で注目したいのは、次バージョンで予定されているテーマ機能の強化です（10:20付近）。これはVivliostyle.jsで実装されたCSS変数（カスタムプロパティ）を本格的に利用しようとするものです。
+
+具体的には、Vivliostyle themeの中で共通して使えるベーシックな`@vivliostyle/theme-base`を用意し、それを他のthemeが参照する形にします。これにより全体で使う変数を共通化することができます。たとえば文字の色や段組の数などさまざまなCSSの機能が、まるでスイッチをオン／オフするような感覚で利用することができるでしょう。この日は開発中の機能のデモを実際に見ることができ（14:35）、便利さを実感することができました。とても楽しみです。
+
+また、このテーマ機能の強化の後、いよいよEPUB出力のサポートに取り組むとのこと。来年はすばらしい年になりそうです。
+
+## Vivliostyle入門本が商業出版される
+
+C&R研究所から待望のVivliostyle入門本が出版されます！　これを詳しく説明したのが、大津雄一郎さんの[vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門』](https://youtu.be/u2DDCgHfQpQ)です。この本ではHTMLやCSSの知識がいくらかある人をメインターゲットにして、必要最低限の組版の知識を取り混ぜて、Vivliostyleの解説をすすめる形にするとのことです。構成案は以下の通りです。
+
+1. VivliostyleとCSS組版
+2. CSS組版ハンズオン
+3. VFM Markdown入門
+4. Vivliostyle CLIの活用
+5. CSS組版デザインTips
+6. 入稿と印刷
+7. Vivliostyle Pub
+
+また、本書のハンズオンで使用予定のVSCodeの機能拡張[vivliostyle-cli-helper](https://marketplace.visualstudio.com/items?itemName=Libroworks.vivliostyle-cli-helper)のデモを見ることができました（15:21）。これを使うとVSCodeで原稿を書きながらCSS組版したプレビュー画面を簡単に表示させることができます。なんて便利！
+
+本書の発売予定は来年、2023年3月〜4月とのこと。楽しみに見守ろうと思います。
+
+## おわりに
+
+ここまで、当日のトピックを紹介してきましたが、これ以外にも聞き応えのある発表が盛り沢山。ぜひ上記のリストからご確認ください。次回は来年、2023年4月の開催予定です。それまでVivliostyleの開発がどこまで進むのか、どうか来年もVivliostyleにご注目ください。
 
 
