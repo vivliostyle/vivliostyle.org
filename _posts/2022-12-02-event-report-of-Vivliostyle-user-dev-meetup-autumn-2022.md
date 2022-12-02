@@ -10,90 +10,90 @@ tags:
 
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2022秋」開催報告](https://vivliostyle.org/ja/blog/2022/11/30/event-report-of-Vivliostyle-user-dev-meetup-autumn-2022/) in Japanese)
 
-## 「CSS組版 Vivliostyle ユーザーと開発者の集い 2022秋」の開催
+## “Vivliostyle User/Dev Meetup Autumn 2022” was held
 
-11月20日に秋のユーザーイベントがオンライン開催されました。
+The annual fall user event was held online on November 20.
 
-- [CSS組版 Vivliostyle ユーザーと開発者の集い 2022秋](https://connpass.com/event/264332/)
+- [Vivliostyle User/Dev Meetup Autumn 2022](https://connpass.com/event/264332/)
 
-当日のプログラムと、それぞれのスライド資料、アーカイブ動画へのリンクは下記の通りです。
+The program for the day and links to the respective slide materials and archived videos are below.
 
-- **第1部**
-    - 13:00-13:10（10分）**本日の趣旨説明**（[小形克宏](https://twitter.com/ogwata)）（[movie](https://youtu.be/g41n3xi86uQ)）
-        - この日発表予定の演題とその概要を簡単にご説明します。
-    - 13:10-13:40（30分）**Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ**（[鈴木丈 FONT WORKS](https://twitter.com/terkel)）（[slide](https://speakerdeck.com/terkel/vivliostyle-dot-js-noxian-xing-shi-zhuang-karakao-erucss-text-spacing-puropatei), [movie](https://youtu.be/vfb-FBTyAUU)）
-        - まだブラウザで実装されていない、Vivliostyle.jsの先行実装（和欧間のアキ、連続する約物のスペーシング、行頭・行末のスペーシング）を、ユーザーの立場からレビューします。後半10分からは、実装者である村上代表が疑問に回答します。
-    - 13:40-14:10（30分）**Vivliostyle.jsにおけるWeb標準、CSSサポートの大改善**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-dev2022autumn/), [movie](https://youtu.be/p7YKTuBC68Q)）
-        - 最近、新しく利用可能になったCSSグリッドレイアウト、CSS変数（カスタムプロパティ）CSSセレクター レベル4（`:has()`疑似クラスなど）等について詳しく説明します。あわせて課題として残っている未実装のCSSの機能などについても説明します。
-    - 14:10-14:15（5分）休憩
-- **第2部　Vivliostyle開発報告**
-    - 14:15-14:25（10分）**Vivliostyleプロジェクトの今までとこれから**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-proj2022autumn/), [movie](https://youtu.be/9c5ueJcYKeE)）
-        - Vivliostyleプロジェクトで予定されている、非互換変更を含む拡張予定について説明します。たとえばVFMバージョン2（Markdown拡張仕様）でおこなうセクション分けの仕様変更、あるいはVivliostyle CLI v6における拡張予定、そしてthemeのスタイルシートの刷新などです。
-    - 14:25-14:45（20分）**Vivliostyle CLI update - 2022 Autumn**（[緑豆はるさめ](https://twitter.com/spring_raining)）（[slide](https://paper.dropbox.com/doc/Vivliostyle-CLI-update-2022-Autumn--BtWcfC5r~eWo7mcxlTy~XLm8AQ-PShS2Bb2KLXRTWoqdN36J), [movie](https://youtu.be/Le_Zea-mCCs)）
-        - 前半はこの半年のVivliostyle CLIのアップデート内容、例えばブラウザのライブラリをPuppeteerからPlaywriteに変更したこと、`--css`オプションの追加、裁ち落とし関連のオプション追加等について説明します。後半は現在取り組んでいるテーマ機能の強化について詳しく説明します。
-    - 14:45-15:05（20分）**VFMの仕様設計の再考**（[@nosuke23](https://twitter.com/nosuke23)）（[slide](https://vivliostyle-20221120-nosuke23.vercel.app/1), [movie](https://youtu.be/etP3E3XLXMc)）
-        - Markdownの拡張方法について、考慮すべき点を整理します。セマンティックなマークアップは、どうしても名前衝突をおこす可能性が高くなります。これを防ぐために、CSSをモジュール化してコンポーネントを宣言的に割り当てる「宣言的マークアップ」が有効ではないかということを説明します。後半、発表を踏まえて村上代表、及びVFMのメンテナーakabeko氏が入って3人で討論します。
-    - 15:05-15:10（5分）休憩
-- **第3部　広がるVivliostyle**
-    - 15:10-15:30（20分）**vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』**（[大津雄一郎](https://twitter.com/arinoth)）（[slide](https://onedrive.live.com/view.aspx?resid=FD4E1B19C4E7DE29!45691&ithint=file%2cpptx&authkey=!AO3fsykPK085SGQ), [movie](https://youtu.be/u2DDCgHfQpQ)）
-        - 来年春に出版が予定されている『Viviliostyle CSS組版入門(仮)』の内容、及びそこで教材として使われるツールvivliostyle cli helperについて、著者みずからが詳しく説明します。
-    - 15:30-15:50（20分）**Vivliostyle、もう一つのブルーオーシャン**（[小形克宏](https://twitter.com/ogwata)）（[slide](https://vivliostyle.org/viewer/#src=https://ogwata.github.io/slide-2022-11-20/myslide.html), [movie](https://youtu.be/zdfskfdUd-8)）
-        - Vivliostyleの強みはページ組版だけではありません。最近のVivliostyleのユーザー事例を見ると、いずれも共同編集機能を駆使したものであることが分かります。この共同編集機能こそがVivliostyleにとってのもう一つのブルーオーシャンなのかもしれません。そうだとすれば、ページ組版はオプションでよいことになります。
-    - 15:50-15:55（5分）休憩
-- **第4部　11月開発者会議**
-    - 15:55-16:25（40分）（[movie](https://youtu.be/WGZZQIJHna0)）
-        - この日出された論点を材料に、今後のVivliostyleの課題について登壇者とメンテナーが議論しました。
-    - 16:25-16:35（10分）**クロージング**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[movie](https://youtu.be/Qiu0i-J8ATI)）
-        - 村上代表による閉会のことば。
+- **Part 1**
+    - 13:00-13:10（10 min.）**Explanation of the purpose of today's meeting**（[Katsuhiro Ogata](https://twitter.com/ogwata)）（[movie](https://youtu.be/g41n3xi86uQ)）
+        - Here is a brief overview of the abstracts scheduled for presentation on this day.
+    - 13:10-13:40（30 min.）**CSS text-spacing property from the perspective of the preceding implementation of Vivliostyle.js**（[Suzuki Takeru, FONT WORKS](https://twitter.com/terkel)）（[slide](https://speakerdeck.com/terkel/vivliostyle-dot-js-noxian-xing-shi-zhuang-karakao-erucss-text-spacing-puropatei), [movie](https://youtu.be/vfb-FBTyAUU)）
+        - We will review the prior implementation of Vivliostyle.js (spacing between Japanese and Western words, spacing of consecutive punctuation, and spacing at the beginning and end of lines), which has not yet been implemented in the browser, from the user's perspective. From the last 10 minutes, Representative Murakami, the implementer, will answer questions.
+    - 13:40-14:10（30分）**Great improvements in web standards and CSS support in Vivliostyle.js**（[Shinyu Murakami](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-dev2022autumn/), [movie](https://youtu.be/p7YKTuBC68Q)）
+        - The newly available CSS Grid Layout, CSS Variables (Custom Properties), CSS Selectors level 4 (such as `:has()` pseudo-classes), etc. will be explained in detail. We will also discuss some of the remaining unimplemented CSS features that remain to be addressed.
+    - 14:10-14:15（5 min.）Break
+- **Part 2.　Vivliostyle Development Report**
+    - 14:15-14:25（10 min.）**The Vivliostyle Project: Past and Future**（[Shinyu Murakami](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-proj2022autumn/), [movie](https://youtu.be/9c5ueJcYKeE)）
+        - This section describes planned enhancements to the Vivliostyle project, including incompatible changes. For example, the sectioning specification changes in VFM version 2 (Markdown Extensions Specification), planned enhancements in Vivliostyle CLI v6, and the theme stylesheet revamp.
+    - 14:25-14:45（20 min.）**Vivliostyle CLI update - 2022 Autumn**（[spring_raining](https://twitter.com/spring_raining)）（[slide](https://paper.dropbox.com/doc/Vivliostyle-CLI-update-2022-Autumn--BtWcfC5r~eWo7mcxlTy~XLm8AQ-PShS2Bb2KLXRTWoqdN36J), [movie](https://youtu.be/Le_Zea-mCCs)）
+        - The first half of the presentation will cover updates to the Vivliostyle CLI over the past six months, such as changing the browser library from Puppeteer to Playwrite, adding the `--css` option, adding options related to bleed-off, etc. The second half of the presentation will detail the theme enhancements we are currently working on.
+    - 14:45-15:05（20 min.）**Rethinking VFM Specification Design**（[@nosuke23](https://twitter.com/nosuke23)）（[slide](https://vivliostyle-20221120-nosuke23.vercel.app/1), [movie](https://youtu.be/etP3E3XLXMc)）
+        - Here are some considerations for how to extend Markdown. Semantic markup inevitably leads to a higher likelihood of name collisions. To prevent this, we will explain that “declarative markup,” in which CSS is modularized and components are assigned in a declarative manner, may be effective. In the latter half of the session, based on the presentation, Representative Murakami and a VFM maintainer, akabeko-san, will join the three of us for a discussion.
+    - 15:05-15:10（5 min.）Break
+- **Part 3.　Vivliostyle Spreading**
+    - 15:10-15:30（20 min.）**Release of vivliostyle-cli-helper and commercial publication “Introduction to Viviliostyle CSS Typography (tentative)”**（[Yuichiro Otsu,　LibroWorks Inc.](https://twitter.com/arinoth)）（[slide](https://onedrive.live.com/view.aspx?resid=FD4E1B19C4E7DE29!45691&ithint=file%2cpptx&authkey=!AO3fsykPK085SGQ), [movie](https://youtu.be/u2DDCgHfQpQ)）
+        - The author will give a detailed explanation of the contents of “Introduction to Vivliostyle CSS Typography (tentative),” which is scheduled for publication next spring, as well as the tool vivliostyle cli helper, which will be used as a teaching tool in the book.
+    - 15:30-15:50（20 min.）**Vivliostyle, Another Blue Ocean**（[Katsuhiro Ogata](https://twitter.com/ogwata)）（[slide](https://vivliostyle.org/viewer/#src=https://ogwata.github.io/slide-2022-11-20/myslide.html), [movie](https://youtu.be/zdfskfdUd-8)）
+        - Vivliostyle's strength is not limited to pagination. Recent examples of Vivliostyle users show that they all make full use of the collaborative editing feature. This collaborative editing capability may be another blue ocean for Vivliostyle. If so, then pagination should be optional.
+    - 15:50-15:55（5 min.）Break
+- **Part 4.　November Dev Meeting**
+    - 15:55-16:25（40 min.）（[movie](https://youtu.be/WGZZQIJHna0)）
+        - Using the issues raised on the day as material, the speakers and maintainers discussed future issues for Vivliostyle.
+    - 16:25-16:35（10 min.）**Closing**（[Shinyu Murakami](https://twitter.com/MurakamiShinyu)）（[movie](https://youtu.be/Qiu0i-J8ATI)）
+        - Closing remarks by Representative Murakami.
 
-今回のイベントでも、いくつもの「へえ！」というようなトピックがありました。以下では短くそれらをご紹介しましょう。
+This year's event was many amazing topics discussed. Let us briefly introduce some of them below.
 
-## 鈴木丈さん（[FONT PLUS](https://fontplus.jp/)）による実装の評価
+## Evaluation of implementation by Takeru Suzuki-san ([FONT PLUS](https://fontplus.jp/))
 
-鈴木さんの[Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ](https://youtu.be/vfb-FBTyAUU)では、ブラウザがまだ実装していない仕様のうち、[CSSテキスト レベル4](https://www.w3.org/TR/css-text-4/)のプロパティ`text-spacing`に絞って、Vivliostyle.jsにおける実装を検証、評価して下さいました。その内容は現在の実装を概ね肯定するもので、私たちとしては今までやってきたことが間違っていなかったと心強く思いました。また、後半22分以降の村上代表によるコメントも、いわば鈴木さんの疑問に答えて実装の種明かしをする内容で、聞き応えのある対話が聞けたように思います。
+In Suzuki-san's session [CSS text-spacing property from the perspective of the preceding implementation of Vivliostyle.js](https://youtu.be/vfb-FBTyAUU), among the specifications that browsers have not implemented yet, [CSS Text level 4](https://www.w3.org/TR/css-text-4/) property `text-spacing` Focusing on, we verified and evaluated the implementation in Vivliostyle.js. The content was generally affirmative of the current implementation, and I was reassured that what we had done so far was not wrong. In addition, the comments by Representative Murakami from the 22nd minute of the second half onward, in which he answered Suzuki-san's questions and explained the algorithm of implementation, were also worth listening to, and I think we heard a worthwhile dialogue.
 
-## 近い将来Vivliostyle.jsで行取りが簡単に
+## “Gyou-dori” will become easy with Vivliostyle.js in the near future
 
-村上代表の[Vivliostyle.jsにおけるWeb標準、CSSサポートの大改善](https://youtu.be/p7YKTuBC68Q)では、後述する`:has()`疑似クラスをはじめ、多くの改善点の説明や近い将来のアップデートが予告されました。
+In Representative Murakami's session [Great improvements in web standards and CSS support in Vivliostyle.js](https://youtu.be/p7YKTuBC68Q), many improvements were explained, including the `:has()` pseudo-class, which will be described later, and future updates were also announced.
 
-中でも大きいのが、従来はブラウザーが実装している最新のCSSの機能のうち使えないものがあったところ、v2.16.0 (2022-07-19)、及びv2.17.0 (2022-07-29)において、基本的にすべて使えるようにしたことです。これにより将来ブラウザが実装するCSSの機能も、そのままVivliostyle.jsで使えるようになります。
+The most significant of these is that, while some of the latest CSS features implemented by browsers were previously unavailable, v2.16.0 (2022-07-19) and v2.17.0 (2022-07-29) allow the use of basically all of them. This means that CSS features implemented by future browsers can be used directly in Vivliostyle.js.
 
-そうしたCSS機能の中で、個人的に注目しているのが[lh and rlh units](https://drafts.csswg.org/css-values-4/#lh)です（16:12）。これは`line-height`で指定された数値を単位として扱えるようにするもので、実装されれば「本文のn行分」という方法で見出しや画像等のサイズがごく簡単に指定できるようになります。とくに伝統的な日本語組版とCSS組版の違いに戸惑ってきたユーザーには朗報かもしれません。
+Among such CSS features, I am focusing on [`lh and rlh units`](https://drafts.csswg.org/css-values-4/#lh) (16:12). If implemented, it will be very easy to specify the size of headings, images, etc. in the way of “n lines of text”(Gyou-dori). This may be especially good news for users who have been confused by the difference between traditional Japanese typesetting and CSS typesetting.
 
-## VFMｖ2における非互換変更について
+## Incompatibility Changes in VFM v2
 
-村上代表の[Vivliostyleプロジェクトの今までとこれから](https://youtu.be/9c5ueJcYKeE)では、VivliostyleのMarkdown方言、VFMが近々v2にアップデートすることが予告されました（2:41付近）。この中には非互換な変更が含まれるので、現在VFMで書いたデータを持っているユーザは対応が必要になります。
+In [The Vivliostyle Project: Past and Future](https://youtu.be/9c5ueJcYKeE) by Representative Murakami, it was announced that VFM, the Markdown dialect of Vivliostyle, will be updated to v2 in the near future (2: 41). This will include incompatible changes, so users who currently have data written in VFM will need to take action.
 
-具体的には、現行v1では見出しの属性は基本的に`section`要素にコピーされ、`id`属性は同じく`section`要素に移動していましたが、v2からは廃止します。これらの振る舞いは、特定のsectionの範囲にスタイルが指定できるなど、Markdownの制限の中である程度柔軟な範囲指定を可能にする、便利な機能でした。
+Specifically, in the current v1, heading attributes were essentially copied to the `section` element, and the `id` attribute was also moved to the `section` element. However, starting with v2, these behaviors will be eliminated. They allow the ability for styles to be specified for an arbitrary range of sections. This is a useful feature that allows for some flexibility in Markdown with its limitations.
 
-しかし最近、Vivliostyle.jsで子要素や後に続く任意の要素を指定する`:has()`疑似クラスを実装したことで、より精密な指定ができるようになりました。これにより従来の振る舞いは廃止する方が、ユーザーにとってメリットが大きいと判断したものです。
+But recently I implemented a `:has()` pseudo-class that specifies child elements and any elements that follow them in the Vivliostyle.js. This allows for more precise specifie. Thus, we decided that abolishing the traditional behavior would be more beneficial for users.
 
-v2では見出しの`id`属性に限っては、`section`要素の`aria-labelledby`属性にコピーされることになりますが、これ以外の属性はコピーや移動はしないようになります。どうかご注意ください。
+In v2, only the `id` attribute of the heading will be copied to the `aria-labelledby` attribute of the `section` element. However, other attributes will not be copied or moved. Please take note of this.
 
-## Vivliostyle CLIにおけるテーマ機能の強化
+## Theme enhancements in the Vivliostyle CLI
 
-緑豆はるさめさんの[Vivliostyle CLI update - 2022 Autumn](https://youtu.be/Le_Zea-mCCs)で注目したいのは、次バージョンで予定されているテーマ機能の強化です（10:20付近）。これはVivliostyle.jsで実装されたCSS変数（カスタムプロパティ）を本格的に利用しようとするものです。
+Notable in spring_raining-san's [Vivliostyle CLI update - 2022 Autumn](https://youtu.be/Le_Zea-mCCs) is the enhancement of theme functionality planned for the next version (10:20). This is an attempt to make full use of CSS Variables (Custom Properties) implemented in Vivliostyle.js.
 
-具体的には、Vivliostyle themeの中で共通して使えるベーシックなテーマ、`@vivliostyle/theme-base`を用意し、それを他のテーマが参照する形にします。これにより全体で使う変数を共通化することができます。たとえばフォントの種類、文字のサイズや色、段組の数などさまざまなCSSの機能が、まるでスイッチをオン／オフするような感覚で設定することができるでしょう。この日は開発中の機能のデモを実際に見ることができ（14:35）、便利さを実感することができました。とても楽しみです。
+Specifically, a basic theme, `@vivliostyle/theme-base`, is prepared that can be used commonly within the Vivliostyle theme, and is referenced by other themes. This allows you to share variables that are used throughout the theme. For example, font type, font size and color, number of columns, and various other CSS features can be set as if you were turning a switch on and off. On this day, we were able to actually see a demonstration of a feature under development (14:35). I could feel how useful it is. Looking forward to it very much.
 
-また、このテーマ機能の強化の後、いよいよEPUB出力のサポートに取り組むとのこと。来年はすばらしい年になりそうです。
+Also, after this enhancement of the theme feature, he will at last be working on support for EPUB output. Next year is going to be a great year.
 
-## Vivliostyle入門本が商業出版される
+## Introductory book on Vivliostyle to be published commercially
 
-C&R研究所から待望のVivliostyle入門本が出版されます！　これを詳しく説明したのが、大津雄一郎さんの[vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』](https://youtu.be/u2DDCgHfQpQ)です。この本ではHTMLやCSSの知識を多少持っている人をメインターゲットにして、必要最低限の組版の知識を取り混ぜて、Vivliostyleの解説をすすめる形にするとのことです。構成案は以下の通りです。
+The C&R Institute is publishing a long-awaited book on an introduction to Vivliostyle!　This is explained in detail in Yuichiro Otsu-san's [Publication of vivliostyle-cli-helper and commercial publication “Introduction to Viviliostyle CSS typesetting (tentative)”](https://youtu.be/u2DDCgHfQpQ). The book will mainly target people who have some knowledge of HTML and CSS, and will explain Vivliostyle with a minimum of typographical knowledge. The proposed structure is as follows
 
-1. VivliostyleとCSS組版
-2. CSS組版ハンズオン
-3. VFM Markdown入門
-4. Vivliostyle CLIの活用
-5. CSS組版デザインTips
-6. 入稿と印刷
+1. Vivliostyle and CSS typesetting
+2. Hands-on CSS typesetting
+3. Introduction to VFM Markdown
+4. Utilizing the Vivliostyle CLI
+5. Design Tips for CSS typesetting
+6. Sending and Printing
 7. Vivliostyle Pub
 
-また、本書のハンズオンで使用予定のVSCodeの機能拡張[vivliostyle-cli-helper](https://marketplace.visualstudio.com/items?itemName=Libroworks.vivliostyle-cli-helper)のデモを見ることができました（15:21）。これを使うとVSCodeで原稿を書きながらプレビュー画面を簡単に表示させることができます。なんて便利！
+In addition, the VSCode extension [vivliostyle-cli-helper](https://marketplace.visualstudio.com/items?itemName=Libroworks.vivliostyle-cli-helper), which was demonstrated (15:21). With it, you can easily display a preview screen while writing a manuscript in VSCode. How convenient!
 
-本書の発売予定は来年、2023年3月〜4月とのこと。楽しみに見守りたいと思います。
+The book is scheduled to be released next year, March-April 2023. We look forward to seeing it.
 
-## おわりに
+## Conclusion
 
-ここまで、当日のトピックをピックアップしましたが、これ以外にも聞き応えのある発表が盛り沢山でした。ぜひ上記リストからご自分の目で確かめてみてください。次回は来年、2023年4月の開催予定です。それまでVivliostyleの開発がどこまで進むのか、どうか来年もVivliostyleにご注目ください。
+We have picked up the topics of the day so far, but there were many more presentations that were worth listening to. Please take a look at the list above and see for yourself. The next meetup will be held in April 2023. Please keep your eyes on Vivliostyle next year to see how far the development of Vivliostyle progresses until then.

@@ -34,7 +34,7 @@ tags:
         - Markdownの拡張方法について、考慮すべき点を整理します。セマンティックなマークアップは、どうしても名前衝突をおこす可能性が高くなります。これを防ぐために、CSSをモジュール化してコンポーネントを宣言的に割り当てる「宣言的マークアップ」が有効ではないかということを説明します。後半、発表を踏まえて村上代表、及びVFMのメンテナーakabeko氏が入って3人で討論します。
     - 15:05-15:10（5分）休憩
 - **第3部　広がるVivliostyle**
-    - 15:10-15:30（20分）**vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』**（[大津雄一郎](https://twitter.com/arinoth)）（[slide](https://onedrive.live.com/view.aspx?resid=FD4E1B19C4E7DE29!45691&ithint=file%2cpptx&authkey=!AO3fsykPK085SGQ), [movie](https://youtu.be/u2DDCgHfQpQ)）
+    - 15:10-15:30（20分）**vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』**（[大津雄一郎 リブロワークス](https://twitter.com/arinoth)）（[slide](https://onedrive.live.com/view.aspx?resid=FD4E1B19C4E7DE29!45691&ithint=file%2cpptx&authkey=!AO3fsykPK085SGQ), [movie](https://youtu.be/u2DDCgHfQpQ)）
         - 来年春に出版が予定されている『Viviliostyle CSS組版入門(仮)』の内容、及びそこで教材として使われるツールvivliostyle cli helperについて、著者みずからが詳しく説明します。
     - 15:30-15:50（20分）**Vivliostyle、もう一つのブルーオーシャン**（[小形克宏](https://twitter.com/ogwata)）（[slide](https://vivliostyle.org/viewer/#src=https://ogwata.github.io/slide-2022-11-20/myslide.html), [movie](https://youtu.be/zdfskfdUd-8)）
         - Vivliostyleの強みはページ組版だけではありません。最近のVivliostyleのユーザー事例を見ると、いずれも共同編集機能を駆使したものであることが分かります。この共同編集機能こそがVivliostyleにとってのもう一つのブルーオーシャンなのかもしれません。そうだとすれば、ページ組版はオプションでよいことになります。
