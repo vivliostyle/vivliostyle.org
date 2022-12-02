@@ -16,7 +16,7 @@ The annual fall user event was held online on November 20.
 
 - [Vivliostyle User/Dev Meetup Autumn 2022](https://connpass.com/event/264332/)
 
-The program for the day and links to the respective slide materials and archived videos are below.
+The program for the day and links to the respective slides and archived videos are below.
 
 - **Part 1**
     - 13:00-13:10（10 min.）**Explanation of the purpose of today's meeting**（[Katsuhiro Ogata](https://twitter.com/ogwata)）（[movie](https://youtu.be/g41n3xi86uQ)）
@@ -28,9 +28,9 @@ The program for the day and links to the respective slide materials and archived
     - 14:10-14:15（5 min.）Break
 - **Part 2.　Vivliostyle Development Report**
     - 14:15-14:25（10 min.）**The Vivliostyle Project: Past and Future**（[Shinyu Murakami](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-proj2022autumn/), [movie](https://youtu.be/9c5ueJcYKeE)）
-        - This section describes planned enhancements to the Vivliostyle project, including incompatible changes. For example, the sectioning specification changes in VFM version 2 (Markdown Extensions Specification), planned enhancements in Vivliostyle CLI v6, and the theme stylesheet revamp.
+        - This section describes planned enhancements to the Vivliostyle project, including incompatible changes. For example, the sectioning specification changes in VFM v2 (Markdown Extensions Specification), planned enhancements in Vivliostyle CLI v6, and the theme stylesheet revamp.
     - 14:25-14:45（20 min.）**Vivliostyle CLI update - 2022 Autumn**（[spring_raining](https://twitter.com/spring_raining)）（[slide](https://paper.dropbox.com/doc/Vivliostyle-CLI-update-2022-Autumn--BtWcfC5r~eWo7mcxlTy~XLm8AQ-PShS2Bb2KLXRTWoqdN36J), [movie](https://youtu.be/Le_Zea-mCCs)）
-        - The first half of the presentation will cover updates to the Vivliostyle CLI over the past six months, such as changing the browser library from Puppeteer to Playwrite, adding the `--css` option, adding options related to bleed-off, etc. The second half of the presentation will detail the theme enhancements we are currently working on.
+        - The first half of the presentation will cover updates to the Vivliostyle CLI over the past six months, such as changing the browser library from Puppeteer to Playwrite, adding the `--css` option, adding options related to bleed-off, etc. The second half of the presentation will detail the theme enhancements he is currently working on.
     - 14:45-15:05（20 min.）**Rethinking VFM Specification Design**（[@nosuke23](https://twitter.com/nosuke23)）（[slide](https://vivliostyle-20221120-nosuke23.vercel.app/1), [movie](https://youtu.be/etP3E3XLXMc)）
         - Here are some considerations for how to extend Markdown. Semantic markup inevitably leads to a higher likelihood of name collisions. To prevent this, we will explain that “declarative markup,” in which CSS is modularized and components are assigned in a declarative manner, may be effective. In the latter half of the session, based on the presentation, Representative Murakami and a VFM maintainer, akabeko-san, will join the three of us for a discussion.
     - 15:05-15:10（5 min.）Break
@@ -62,11 +62,11 @@ Among such CSS features, I am focusing on [`lh and rlh units`](https://drafts.cs
 
 ## Incompatibility Changes in VFM v2
 
-In [The Vivliostyle Project: Past and Future](https://youtu.be/9c5ueJcYKeE) by Representative Murakami, it was announced that VFM, the Markdown dialect of Vivliostyle, will be updated to v2 in the near future (2: 41). This will include incompatible changes, so users who currently have data written in VFM will need to take action.
+In [The Vivliostyle Project: Past and Future](https://youtu.be/9c5ueJcYKeE) by Representative Murakami, it was announced that VFM, the Markdown dialect of Vivliostyle, will be updated to v2 in the near future (2:41). This will include incompatible changes, so users who currently have data written in VFM will need to take action.
 
-Specifically, in the current v1, heading attributes were essentially copied to the `section` element, and the `id` attribute was also moved to the `section` element. However, starting with v2, these behaviors will be eliminated. They allow the ability for styles to be specified for an arbitrary range of sections. This is a useful feature that allows for some flexibility in Markdown with its limitations.
+Specifically, in the current v1, heading attributes were essentially copied to the `section` element, and the `id` attribute was also moved to the `section` element. However, starting with v2, these behaviors will be eliminated. These behaviors were useful features that allowed some flexibility in range specification within the limitations of Markdown, such as the ability to specify styles for entire sections, including headings.
 
-But recently I implemented a `:has()` pseudo-class that specifies child elements and any elements that follow them in the Vivliostyle.js. This allows for more precise specifie. Thus, we decided that abolishing the traditional behavior would be more beneficial for users.
+But recently We implemented a `:has()` pseudo-class that specifies child elements and any elements that follow them in the Vivliostyle.js. This allows for more precise specifie. Thus, we decided that abolishing the traditional behavior would be more beneficial for users.
 
 In v2, only the `id` attribute of the heading will be copied to the `aria-labelledby` attribute of the `section` element. However, other attributes will not be copied or moved. Please take note of this.
 
@@ -74,13 +74,13 @@ In v2, only the `id` attribute of the heading will be copied to the `aria-labell
 
 Notable in spring_raining-san's [Vivliostyle CLI update - 2022 Autumn](https://youtu.be/Le_Zea-mCCs) is the enhancement of theme functionality planned for the next version (10:20). This is an attempt to make full use of CSS Variables (Custom Properties) implemented in Vivliostyle.js.
 
-Specifically, a basic theme, `@vivliostyle/theme-base`, is prepared that can be used commonly within the Vivliostyle theme, and is referenced by other themes. This allows you to share variables that are used throughout the theme. For example, font type, font size and color, number of columns, and various other CSS features can be set as if you were turning a switch on and off. On this day, we were able to actually see a demonstration of a feature under development (14:35). I could feel how useful it is. Looking forward to it very much.
+Specifically, a basic theme, `@vivliostyle/theme-base`, is prepared that can be used commonly within the Vivliostyle theme, and is referenced by other themes. This allows you to share variables that are used throughout the theme. For example, font name, font size and color, number of columns, and various other CSS features can be set as if you were turning a switch on and off. On this day, we were able to actually see a demonstration of a feature under development (14:35). I could feel how useful it is. Looking forward to it very much.
 
 Also, after this enhancement of the theme feature, he will at last be working on support for EPUB output. Next year is going to be a great year.
 
 ## Introductory book on Vivliostyle to be published commercially
 
-The C&R Institute is publishing a long-awaited book on an introduction to Vivliostyle!　This is explained in detail in Yuichiro Otsu-san's [Publication of vivliostyle-cli-helper and commercial publication “Introduction to Viviliostyle CSS typesetting (tentative)”](https://youtu.be/u2DDCgHfQpQ). The book will mainly target people who have some knowledge of HTML and CSS, and will explain Vivliostyle with a minimum of typographical knowledge. The proposed structure is as follows
+The [C&R Kenkyujo](https://www.c-r.com/) is publishing a long-awaited book on an introduction to Vivliostyle!　This is explained in detail in Yuichiro Otsu-san's [Publication of vivliostyle-cli-helper and commercial publication “Introduction to Viviliostyle CSS typesetting (tentative)”](https://youtu.be/u2DDCgHfQpQ). The book will mainly target people who have some knowledge of HTML and CSS, and will explain Vivliostyle with a minimum of typographical knowledge. The proposed structure is as follows
 
 1. Vivliostyle and CSS typesetting
 2. Hands-on CSS typesetting
@@ -96,4 +96,4 @@ The book is scheduled to be released next year, March-April 2023. We look forwar
 
 ## Conclusion
 
-We have picked up the topics of the day so far, but there were many more presentations that were worth listening to. Please take a look at the list above and see for yourself. The next meetup will be held in April 2023. Please keep your eyes on Vivliostyle next year to see how far the development of Vivliostyle progresses until then.
+I have picked up the topics of the day so far, but there were many more presentations that were worth listening to. Please take a look at the list above and see for yourself. The next meetup will be held in April 2023. Please keep your eyes on Vivliostyle next year to see how far the development of Vivliostyle progresses until then.
