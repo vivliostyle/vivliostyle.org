@@ -6,7 +6,7 @@ author:  ogwata
 tags:
   - event
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2022-11-30-event-report-of-Vivliostyle-user-dev-meetup-autumn-2022/fig-1.png" alt="「Vivliostyle ユーザーと開発者の集い 2022秋」開催報告" style="width: 500px;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2022-11-30-event-report-of-Vivliostyle-user-dev-meetup-autumn-2022/fig-1.png" alt="Event report of “Vivliostyle User/Dev Meetup Autumn 2022”" style="width: 500px;" /></div>
 
 (The original article is [「Vivliostyle ユーザーと開発者の集い 2022秋」開催報告](https://vivliostyle.org/ja/blog/2022/11/30/event-report-of-Vivliostyle-user-dev-meetup-autumn-2022/) in Japanese)
 
