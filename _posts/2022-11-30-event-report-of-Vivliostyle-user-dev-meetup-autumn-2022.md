@@ -74,7 +74,7 @@ In v2, only the `id` attribute of the heading will be copied to the `aria-labell
 
 Notable in spring_raining-san's [Vivliostyle CLI update - 2022 Autumn](https://youtu.be/Le_Zea-mCCs) is the enhancement of theme functionality planned for the next version (10:20). This is an attempt to make full use of CSS Variables (Custom Properties) implemented in Vivliostyle.js.
 
-Specifically, a basic theme, `@vivliostyle/theme-base`, is prepared that can be used commonly within the Vivliostyle theme, and is referenced by other themes. This allows you to share variables that are used throughout the theme. For example, font name, font size and color, number of columns, and various other CSS features can be set as if you were turning a switch on and off. On this day, we were able to actually see a demonstration of a feature under development (14:35). I could feel how useful it is. Looking forward to it very much.
+Specifically, a basic theme, `@vivliostyle/theme-base`, is prepared that can be used commonly within the Vivliostyle theme, and is referenced by other themes. This allows you to share variables that are used throughout the theme. For example, font name, font size and color, number of columns, and various other CSS features can be set as if you were turning a switch on and off. On this day, we were able to actually see a demonstration of a feature under development (14:35). We could feel how useful it is. Looking forward to it very much.
 
 Also, after this enhancement of the theme feature, he will at last be working on support for EPUB output. Next year is going to be a great year.
 
