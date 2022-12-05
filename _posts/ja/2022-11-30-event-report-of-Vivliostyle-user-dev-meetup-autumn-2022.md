@@ -34,7 +34,7 @@ tags:
         - Markdownの拡張方法について、考慮すべき点を整理します。セマンティックなマークアップは、どうしても名前衝突をおこす可能性が高くなります。これを防ぐために、CSSをモジュール化してコンポーネントを宣言的に割り当てる「宣言的マークアップ」が有効ではないかということを説明します。後半、発表を踏まえて村上代表、及びVFMのメンテナーakabeko氏が入って3人で討論します。
     - 15:05-15:10（5分）休憩
 - **第3部　広がるVivliostyle**
-    - 15:10-15:30（20分）**vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』**（[大津雄一郎](https://twitter.com/arinoth)）（[slide](https://onedrive.live.com/view.aspx?resid=FD4E1B19C4E7DE29!45691&ithint=file%2cpptx&authkey=!AO3fsykPK085SGQ), [movie](https://youtu.be/u2DDCgHfQpQ)）
+    - 15:10-15:30（20分）**vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』**（[大津雄一郎 リブロワークス](https://twitter.com/arinoth)）（[slide](https://onedrive.live.com/view.aspx?resid=FD4E1B19C4E7DE29!45691&ithint=file%2cpptx&authkey=!AO3fsykPK085SGQ), [movie](https://youtu.be/u2DDCgHfQpQ)）
         - 来年春に出版が予定されている『Viviliostyle CSS組版入門(仮)』の内容、及びそこで教材として使われるツールvivliostyle cli helperについて、著者みずからが詳しく説明します。
     - 15:30-15:50（20分）**Vivliostyle、もう一つのブルーオーシャン**（[小形克宏](https://twitter.com/ogwata)）（[slide](https://vivliostyle.org/viewer/#src=https://ogwata.github.io/slide-2022-11-20/myslide.html), [movie](https://youtu.be/zdfskfdUd-8)）
         - Vivliostyleの強みはページ組版だけではありません。最近のVivliostyleのユーザー事例を見ると、いずれも共同編集機能を駆使したものであることが分かります。この共同編集機能こそがVivliostyleにとってのもう一つのブルーオーシャンなのかもしれません。そうだとすれば、ページ組版はオプションでよいことになります。
@@ -55,7 +55,7 @@ tags:
 
 村上代表の[Vivliostyle.jsにおけるWeb標準、CSSサポートの大改善](https://youtu.be/p7YKTuBC68Q)では、後述する`:has()`疑似クラスをはじめ、多くの改善点の説明や近い将来のアップデートが予告されました。
 
-中でも大きいのが、従来はブラウザーが実装している最新のCSSの機能のうち使えないものがあったところ、v2.16.0 (2022-07-19)、及びv2.17.0 (2022-07-29)において、基本的にすべて使えるようにしたことです。これにより将来ブラウザが実装するCSSの機能も、そのままVivliostyle.jsで使えるようになります。
+中でも大きいのが、従来ブラウザーが実装している最新のCSSの機能のうち使えないものがあったところ、v2.16.0 (2022-07-19)、及びv2.17.0 (2022-07-29)において、基本的にすべて使えるようにしたことです。これにより将来ブラウザが実装するCSSの機能も、そのままVivliostyle.jsで使えるようになります。
 
 そうしたCSS機能の中で、個人的に注目しているのが[lh and rlh units](https://drafts.csswg.org/css-values-4/#lh)です（16:12）。これは`line-height`で指定された数値を単位として扱えるようにするもので、実装されれば「本文のn行分」という方法で見出しや画像等のサイズがごく簡単に指定できるようになります。とくに伝統的な日本語組版とCSS組版の違いに戸惑ってきたユーザーには朗報かもしれません。
 
@@ -63,7 +63,7 @@ tags:
 
 村上代表の[Vivliostyleプロジェクトの今までとこれから](https://youtu.be/9c5ueJcYKeE)では、VivliostyleのMarkdown方言、VFMが近々v2にアップデートすることが予告されました（2:41付近）。この中には非互換な変更が含まれるので、現在VFMで書いたデータを持っているユーザは対応が必要になります。
 
-具体的には、現行v1では見出しの属性は基本的に`section`要素にコピーされ、`id`属性は同じく`section`要素に移動していましたが、v2からは廃止します。これらの振る舞いは、特定のsectionの範囲にスタイルが指定できるなど、Markdownの制限の中である程度柔軟な範囲指定を可能にする、便利な機能でした。
+具体的には、現行v1では見出しの属性は基本的に`section`要素にコピーされ、`id`属性は同じく`section`要素に移動していましたが、v2からは廃止します。これらの振る舞いは、見出しを含むsection全体にスタイルが指定できるなど、Markdownの制限の中である程度柔軟な範囲指定を可能にする、便利な機能でした。
 
 しかし最近、Vivliostyle.jsで子要素や後に続く任意の要素を指定する`:has()`疑似クラスを実装したことで、より精密な指定ができるようになりました。これにより従来の振る舞いは廃止する方が、ユーザーにとってメリットが大きいと判断したものです。
 
@@ -79,7 +79,7 @@ v2では見出しの`id`属性に限っては、`section`要素の`aria-labelled
 
 ## Vivliostyle入門本が商業出版される
 
-C&R研究所から待望のVivliostyle入門本が出版されます！　これを詳しく説明したのが、大津雄一郎さんの[vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』](https://youtu.be/u2DDCgHfQpQ)です。この本ではHTMLやCSSの知識を多少持っている人をメインターゲットにして、必要最低限の組版の知識を取り混ぜて、Vivliostyleの解説をすすめる形にするとのことです。構成案は以下の通りです。
+[C&R研究所](https://www.c-r.com/)から待望のVivliostyle入門本が出版されます！　これを詳しく説明したのが、大津雄一郎さんの[vivliostyle-cli-helperの公開と商業出版『Viviliostyle CSS組版入門(仮)』](https://youtu.be/u2DDCgHfQpQ)です。この本ではHTMLやCSSの知識を多少持っている人をメインターゲットにして、必要最低限の組版の知識を取り混ぜて、Vivliostyleの解説をすすめる形にするとのことです。構成案は以下の通りです。
 
 1. VivliostyleとCSS組版
 2. CSS組版ハンズオン
