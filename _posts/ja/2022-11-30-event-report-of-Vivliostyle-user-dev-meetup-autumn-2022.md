@@ -20,7 +20,7 @@ tags:
 - **第1部**
     - 13:00-13:10（10分）**本日の趣旨説明**（[小形克宏](https://twitter.com/ogwata)）（[movie](https://youtu.be/g41n3xi86uQ)）
         - この日発表予定の演題とその概要を簡単にご説明します。
-    - 13:10-13:40（30分）**Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ**（[鈴木丈 FONT WORKS](https://twitter.com/terkel)）（[slide](https://speakerdeck.com/terkel/vivliostyle-dot-js-noxian-xing-shi-zhuang-karakao-erucss-text-spacing-puropatei), [movie](https://youtu.be/vfb-FBTyAUU)）
+    - 13:10-13:40（30分）**Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ**（[鈴木丈 Fontworks](https://twitter.com/terkel)）（[slide](https://speakerdeck.com/terkel/vivliostyle-dot-js-noxian-xing-shi-zhuang-karakao-erucss-text-spacing-puropatei), [movie](https://youtu.be/vfb-FBTyAUU)）
         - まだブラウザで実装されていない、Vivliostyle.jsの先行実装（和欧間のアキ、連続する約物のスペーシング、行頭・行末のスペーシング）を、ユーザーの立場からレビューします。後半10分からは、実装者である村上代表が疑問に回答します。
     - 13:40-14:10（30分）**Vivliostyle.jsにおけるWeb標準、CSSサポートの大改善**（[村上真雄](https://twitter.com/MurakamiShinyu)）（[slide](https://murakamishinyu.github.io/vivliostyle-dev2022autumn/), [movie](https://youtu.be/p7YKTuBC68Q)）
         - 最近、新しく利用可能になったCSSグリッドレイアウト、CSS変数（カスタムプロパティ）CSSセレクター レベル4（`:has()`疑似クラスなど）等について詳しく説明します。あわせて課題として残っている未実装のCSSの機能などについても説明します。
@@ -47,7 +47,7 @@ tags:
 
 今回のイベントでも、いくつもの「へえ！」というようなトピックがありました。以下では短くそれらをご紹介しましょう。
 
-## 鈴木丈さん（[FONT PLUS](https://fontplus.jp/)）による実装の評価
+## 鈴木丈さん（[FONTPLUS](https://fontplus.jp/)）による実装の評価
 
 鈴木さんの[Vivliostyle.jsの先行実装から考えるCSS text-spacingプロパティ](https://youtu.be/vfb-FBTyAUU)では、ブラウザがまだ実装していない仕様のうち、[CSSテキスト レベル4](https://www.w3.org/TR/css-text-4/)のプロパティ`text-spacing`に絞って、Vivliostyle.jsにおける実装を検証、評価して下さいました。その内容は現在の実装を概ね肯定するもので、私たちとしては今までやってきたことが間違っていなかったと心強く思いました。また、後半22分以降の村上代表によるコメントも、いわば鈴木さんの疑問に答えて実装の種明かしをする内容で、聞き応えのある対話が聞けたように思います。
 

@@ -48,7 +48,7 @@ The program for the day and links to the respective slides and archived videos a
 
 This year's event was many amazing topics discussed. Let us briefly introduce some of them below.
 
-## Evaluation of implementation by Takeru Suzuki-san ([FONT PLUS](https://fontplus.jp/))
+## Evaluation of implementation by Takeru Suzuki-san ([FONTPLUS](https://fontplus.jp/))
 
 In Suzuki-san's session [CSS text-spacing property from the perspective of the preliminary implementation in Vivliostyle.js](https://youtu.be/vfb-FBTyAUU), among the specifications that browsers have not implemented yet, [CSS Text level 4](https://www.w3.org/TR/css-text-4/) property `text-spacing` Focusing on, we verified and evaluated the implementation in Vivliostyle.js. The content was generally affirmative of the current implementation, and I was reassured that what we had done so far was not wrong. In addition, the comments by Representative Murakami from the 22nd minute of the second half onward, in which he answered Suzuki-san's questions and explained the algorithm of implementation, were also worth listening to, and I think we heard a worthwhile dialogue.
 
