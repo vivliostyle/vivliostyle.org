@@ -108,9 +108,11 @@ Vivliostyle CLI について詳しくは [Vivliostyle CLI ユーザーガイド]
 
 <!-- pub -->
 {% capture pub %}
-<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(2022年4月中にアルファ版を公開予定)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
-左ペインでテキスト / Markdown / HTML を入力・編集すると、右ペインで組版結果がプレビューできます。
+- インストール不要でVivliostyleが使えるWebアプリです。
+- 左ペインでテキスト / Markdown / HTML を入力・編集すると、右ペインで組版結果がプレビューできます。
+- ただ今アルファ版を公開予定中。詳細は[こちらから](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/)
 
 ![]({{ site.data.project.pub.screenshot }})
 
@@ -123,7 +125,7 @@ Vivliostyle CLI について詳しくは [Vivliostyle CLI ユーザーガイド]
 
 {% include page/getting_started.html
   title="使ってみる"
-  lead="Vivliostyle には現在2つのプロダクトがあります。ここではそれぞれの使い方をご紹介。加えて年内リリース予定の新サービスもいち早くご案内します。"
+  lead="Vivliostyle には現在2つのプロダクトがあります。ここではそれぞれの使い方をご紹介。加えてアルファ版を公開中の新サービスもご案内します。"
 
   viewer=viewer
   cli=cli

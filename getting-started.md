@@ -113,7 +113,9 @@ For more information about Vivliostyle CLI, see [Vivliostyle CLI User Guide](htt
 {% capture pub %}
 <h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Alpha version to be released in April 2022)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
-Edit text/Markdown/HTML in the left pane and preview the formatted results in the right pane.
+- This is a web application that allows you to use Vivliostyle without installation.
+- You can enter and edit text / Markdown / HTML in the left pane and preview the typesetting result in the right pane.
+- An alpha version is now available. [Click here](https://vivliostyle.github.io/docs-vivliostyle-pub/#/) for more information (Sorry, still only in Japanese).
 
 ![]({{ site.data.project.pub.screenshot }})
 
@@ -126,7 +128,7 @@ Edit text/Markdown/HTML in the left pane and preview the formatted results in th
 
 {% include page/getting_started.html
   title="Getting Started"
-  lead="Vivliostyle currently consists of two products. This page will show you how to use it. It also explains the new services we're releasing this year."
+  lead="Vivliostyle currently consists of two products. This page will show you how to use it. In addition, we will also present a new service that is currently in alpha."
 
   viewer=viewer
   cli=cli
