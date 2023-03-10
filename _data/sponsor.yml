@@ -32,16 +32,13 @@
     - badge: 🌹
       users:
         - name: hidaruma
-        - name: youchan
         - name: udon-a
         - name: ryoutakano
 - name: Fan Sponsors
   tier:
     - badge: 🌟
       users:
-        - name: vvakame
         - name: skoji
-        - name: y-mikou
         - name: 74th
         - name: NoBooking
     - badge: ⭐️
@@ -49,10 +46,5 @@
         - name: munepi
         - name: nishinos
         - name: zonuexe
-        - name: niszet
-        - name: yuji-1980
         - name: omasanori
-        - name: liarnose
-          icon: https://pbs.twimg.com/profile_images/649617031/rect5153_400x400.png
-          link: https://twitter.com/liarnose
         - name: monami-ya
