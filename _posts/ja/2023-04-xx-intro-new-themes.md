@@ -110,13 +110,13 @@ Vivliostyle Themeでは、`--vs` で始まる名前のCSS変数を定義して�
 ### それ以外のCSS変数
 
 meta-propertiesやbasic以外にも、ページレイアウトに関する設定や相互参照、目次など、Vivliostyleが提供する機能の多くをCSS変数でのカスタマイズでカバーしています。
-より詳しいドキュメントは、[@vivliostyle/theme-baseのREADME](https://github.com/vivliostyle/themes/tree/main/packages/%40vivliostyle/theme-base)を参照してください。
+より詳しいドキュメントは、[@vivliostyle/theme-baseのREADME](https://github.com/vivliostyle/themes/tree/main/packages/%40vivliostyle/theme-base) を参照してください。
 
 ## 実際の適用例
 
 これらのCSS変数が実際にはどのように活用されているかは、`theme-base` 以外のテーマファイルを見ることで確認できます。
 
-たとえば、`theme-techbook` のテーマファイルは[こちら](https://github.com/vivliostyle/themes/blob/6b516234280c1eb8e5fbce1a63ba9688cc02e72f/packages/%40vivliostyle/theme-techbook/theme.css)にあります。
+たとえば、`theme-techbook` のテーマファイルは [`@vivliostyle/theme-techbook/theme.css`](https://github.com/vivliostyle/themes/blob/main/packages/%40vivliostyle/theme-techbook/theme.css) にあります。
 中身を簡略化するとこのようになっています。
 
 ```css
@@ -151,4 +151,17 @@ meta-propertiesやbasic以外にも、ページレイアウトに関する設定
 
 ## 自分のテーマを作成する
 
-TBD
+自分のVivliostyle Themeを作成するための雛形生成ツール [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) も、新しいVivliostyle Themeに対応しました。雛形を生成するためには、以下のコマンドを実行します。
+
+```
+npm create vivliostyle-theme@beta <your-theme-name>
+```
+
+生成される雛形にはこれまでのようなSASSファイルは含まれておらず、`theme.css` だけがあるシンプルな構成になりました。Vivliostyle Themeが完成したら、ぜひnpm packageとして公開してみてください！
+
+## まとめ
+
+この記事では、CSS変数によって新しくなったVivliostyle Themeについて紹介しました。
+新しいVivliostyle Themeは、フィードバックを受けたのち正式版としてリリースされます。
+ご意見がありましたら、ぜひ [vivliostyle/themesのissueに登録](https://github.com/vivliostyle/themes/issues/new) してください。
+
