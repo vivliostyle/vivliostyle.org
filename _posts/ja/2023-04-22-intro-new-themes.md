@@ -82,7 +82,7 @@ Vivliostyle Themeでは、`--vs` で始まる名前のCSS変数を定義して�
 ```css
 :root {
   --vs-font-family: serif; /* フォントをセリフ体に設定 */
-  --vs-writing-mode: vertical-lr; /* 縦書きで表示 */
+  --vs-writing-mode: vertical-rl; /* 縦書きで表示 */
   --vs-spacing-rlh: 2rem; /* 各要素の基本的なマージンを設定 */
 }
 ```
