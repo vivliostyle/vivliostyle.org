@@ -7,13 +7,13 @@ tags:
   - Vivliostyle Themes
 ---
 
-[![Screenshot of CSS source written with Vivliostyle Theme](/assets/posts/2023-04-22-new-themes/og.webp)](/assets/posts/2023-04-22-new-themes/og.webp)
+[![Screenshot of CSS source written with Vivliostyle Themes](/assets/posts/2023-04-22-new-themes/og.webp)](/assets/posts/2023-04-22-new-themes/og.webp)
 
-We're delighted to announce that the new Vivliostyle Theme is now available in Beta version! It's more than just a CSS file for Vivliostyle. It's an ambitious library that is a new form of CSS framework, so let me introduce it to you.
+We're delighted to announce that the new Vivliostyle Themes are now available in Beta version! It's more than just a CSS file for Vivliostyle. It's an ambitious library that is a new form of CSS framework, so let me introduce it to you.
 
 ## How to use Vivliostyle Theme
 
-Vivliostyle Theme can be used by setting the following in `vivliostyle.config.js`. (Vivliostyle CLI newer than v6.0.0 automatically installs the theme files, so `npm install` is not required)
+Vivliostyle Themes can be used by setting the following in `vivliostyle.config.js`. (Vivliostyle CLI newer than v6.0.0 automatically installs the theme files, so `npm install` is not required)
 
 ```js
 module.exports = {
@@ -25,7 +25,7 @@ Please refer to [the README of Vivliostyle Themes](https://github.com/vivliostyl
 
 ## CSS framework based on CSS variables
 
-The new Vivliostyle Themes are built on our CSS framework [`@vivliostyle/theme-base`](https://github.com/vivliostyle/themes/tree/main/packages/%40vivliostyle/theme-base). Popular CSS frameworks, like Bootstrap and Tailwind CSS, have a different structure from Vivliostyle Theme. In short, `@vivliostyle/theme-base` is "a customizable CSS framework with CSS variables, designed for documents like Markdown."
+The new Vivliostyle Themes are built on our CSS framework [`@vivliostyle/theme-base`](https://github.com/vivliostyle/themes/tree/main/packages/%40vivliostyle/theme-base). Popular CSS frameworks, like Bootstrap and Tailwind CSS, have a different structure from Vivliostyle Themes. In short, `@vivliostyle/theme-base` is "a customizable CSS framework with CSS variables, designed for documents like Markdown."
 
 When viewing a document with `@vivliostyle/theme-base`, it looks almost the same as the browser's default User agent stylesheet. However, you can observe various CSS variables set for the properties of each element selector.
 
@@ -58,7 +58,7 @@ p {
 }
 ```
 
-The Vivliostyle Theme defines CSS variables, all beginning with `--vs`, which are set to the `:root` selector. This means you don't have to worry about the level of detail of the inherited style.
+The Vivliostyle Themes define CSS variables, all beginning with `--vs`, which are set to the `:root` selector. This means you don't have to worry about the level of detail of the inherited style.
 
 Let's examine the CSS variables that can be set.
 
@@ -137,14 +137,14 @@ This theme file changes its style by customizing the contents of the `theme-base
 
 ## Create your own theme
 
-The [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) template generator is now compatible with the new Vivliostyle Theme. To generate a template, run the following command.
+The [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) template generator is now compatible with the new Vivliostyle Themes. To generate a template, run the following command.
 
 ```
 npm create vivliostyle-theme@beta <your-theme-name>
 ```
 
-The template does not include a SASS file, but has a simple structure with only `theme.css`. When you've finished your Vivliostyle Theme, consider publishing it as an npm package!
+The template does not include a SASS file, but has a simple structure with only `theme.css`. When you've finished your theme, consider publishing it as an npm package!
 
 ## Conclusion
 
-The new Vivliostyle Theme, powered by CSS variables, has been introduced. We will release it as an official version after we receive feedback. If you have any suggestions, [please submit an issue at vivliostyle/themes.](https://github.com/vivliostyle/themes/issues/new)
+The new Vivliostyle Themes, powered by CSS variables, has been introduced. We will release it as an official version after we receive feedback. If you have any suggestions, [please submit an issue at vivliostyle/themes.](https://github.com/vivliostyle/themes/issues/new)

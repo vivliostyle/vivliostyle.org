@@ -9,11 +9,11 @@ tags:
 
 [![Vivliostyle Themeで書かれたCSSソースのスクリーンショット](/assets/posts/2023-04-22-new-themes/og.webp)](/assets/posts/2023-04-22-new-themes/og.webp)
 
-以前のイベントで予告したとおり、Vivliostyle Themesは近日中に大きな変更を加えようとしていました。そして、ついに新しいVivliostyle ThemeをBetaバージョンとしてリリースできたことを嬉しく思います！ 今回リリースしたVivliostyle Themesは、単なるVivliosytleのためのCSSファイルという枠組みを超えた、CSSフレームワークの新しい形とも言える野心的なライブラリなので、この記事で少しだけ紹介させてください。
+以前のイベントで予告したとおり、Vivliostyle Themesは近日中に大きな変更を加えようとしていました。そして、ついに新しいVivliostyle ThemesをBetaバージョンとしてリリースできたことを嬉しく思います！ 今回リリースしたVivliostyle Themesは、単なるVivliosytleのためのCSSファイルという枠組みを超えた、CSSフレームワークの新しい形とも言える野心的なライブラリなので、この記事で少しだけ紹介させてください。
 
-## Vivliostyle Themeの使用方法
+## Vivliostyle Themesの使用方法
 
-Vivliostyle Themeは、`vivliostyle.config.js` に以下のように設定することで使用できます。（v6.0.0より新しいVivliostyle CLIは自動でテーマファイルをインストールするため `npm install` は不要です）
+Vivliostyle Themesは、`vivliostyle.config.js` に以下のように設定することで使用できます。（v6.0.0より新しいVivliostyle CLIは自動でテーマファイルをインストールするため `npm install` は不要です）
 
 ```js
 module.exports = {
@@ -25,8 +25,8 @@ module.exports = {
 
 ## CSS変数をベースにしたCSSフレームワーク
 
-新しいVivliostyle Themesは、すべて新たに作成したCSSフレームワーク [`@vivliostyle/theme-base`](https://github.com/vivliostyle/themes/tree/main/packages/%40vivliostyle/theme-base) をベースして作られています。
-一般的なCSSフレームワークはBootstrapやTailwind CSSなどが知られていますが、Vivilostyle Themeはそのいずれとも異なる構成になっています。`@vivliostyle/theme-base` は、一言で表すと「Markdownなどの構造化されたドキュメントに適した、CSS変数でカスタマイズ可能なCSSフレームワーク」です。
+新しいVivliostyle Themesは、すべて新たに作成したCSSフレームワーク [`@vivliostyle/theme-base`](https://github.com/vivliostyle/themes/tree/main/packages/%40vivliostyle/theme-base) をベースとして作られています。
+一般的なCSSフレームワークはBootstrapやTailwind CSSなどが知られていますが、Vivilostyle Themesはそのいずれとも異なる構成になっています。`@vivliostyle/theme-base` は、一言で表すと「Markdownなどの構造化されたドキュメントに適した、CSS変数でカスタマイズ可能なCSSフレームワーク」です。
 
 `@vivliostyle/theme-base` を使用したドキュメントを見てみると、見た目はブラウザデフォルトのUser agent stylesheetとほとんど同じように見えます。
 その代わりに、各要素セレクターのプロパティにさまざまなCSS変数が設定されていることを確認できます。
@@ -65,7 +65,7 @@ p {
 }
 ```
 
-Vivliostyle Themeでは、`--vs` で始まる名前のCSS変数を定義しています。
+Vivliostyle Themesでは、`--vs` で始まる名前のCSS変数を定義しています。
 4つのCSS変数はもとのセレクターとは関係ない `:root` というセレクターに設定されているため、継承元のスタイルの詳細度を気にする必要がなくなっています。
 
 それでは、実際に設定できるCSS変数について紹介します。
@@ -154,17 +154,17 @@ meta-propertiesやbasic以外にも、ページレイアウトに関する設定
 
 ## 自分のテーマを作成する
 
-自分のVivliostyle Themeを作成するための雛形生成ツール [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) も、新しいVivliostyle Themeに対応しました。雛形を生成するためには、以下のコマンドを実行します。
+自分のテーマを作成するための雛形生成ツール [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) も、新しいVivliostyle Themesに対応しました。雛形を生成するためには、以下のコマンドを実行します。
 
 ```
 npm create vivliostyle-theme@beta <your-theme-name>
 ```
 
-生成される雛形にはこれまでのようなSASSファイルは含まれておらず、`theme.css` だけがあるシンプルな構成になりました。Vivliostyle Themeが完成したら、ぜひnpm packageとして公開してみてください！
+生成される雛形にはこれまでのようなSASSファイルは含まれておらず、`theme.css` だけがあるシンプルな構成になりました。テーマが完成したら、ぜひnpm packageとして公開してみてください！
 
 ## まとめ
 
-この記事では、CSS変数によって新しくなったVivliostyle Themeについて紹介しました。
-新しいVivliostyle Themeは、フィードバックを受けたのち正式版としてリリースされます。
+この記事では、CSS変数によって新しくなったVivliostyle Themesについて紹介しました。
+新しいVivliostyle Themesは、フィードバックを受けたのち正式版としてリリースされます。
 ご意見がありましたら、ぜひ [vivliostyle/themesのissueに登録](https://github.com/vivliostyle/themes/issues/new) してください。
 
