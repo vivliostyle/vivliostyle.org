@@ -1,13 +1,13 @@
 ---
 title: 新しい Vivliostyle Themes のご紹介
 lang: ja
-image: /assets/posts/2023-04-22-new-themes/og.webp
+image: /assets/posts/2023-04-23-new-themes/og.webp
 author: spring_raining
 tags:
   - Vivliostyle Themes
 ---
 
-[![Vivliostyle Themeで書かれたCSSソースのスクリーンショット](/assets/posts/2023-04-22-new-themes/og.webp)](/assets/posts/2023-04-22-new-themes/og.webp)
+[![Vivliostyle Themeで書かれたCSSソースのスクリーンショット](/assets/posts/2023-04-23-new-themes/og.webp)](/assets/posts/2023-04-23-new-themes/og.webp)
 
 以前のイベントで予告したとおり、Vivliostyle Themesは近日中に大きな変更を加えようとしていました。そして、ついに新しいVivliostyle ThemesをBetaバージョンとしてリリースできたことを嬉しく思います！ 今回リリースしたVivliostyle Themesは、単なるVivliosytleのためのCSSファイルという枠組みを超えた、CSSフレームワークの新しい形とも言える野心的なライブラリなので、この記事で少しだけ紹介させてください。
 
@@ -31,7 +31,7 @@ module.exports = {
 `@vivliostyle/theme-base` を使用したドキュメントを見てみると、見た目はブラウザデフォルトのUser agent stylesheetとほとんど同じように見えます。
 その代わりに、各要素セレクターのプロパティにさまざまなCSS変数が設定されていることを確認できます。
 
-[![theme-baseが適用されたWebページのスクリーンショット](/assets/posts/2023-04-22-new-themes/fig-1.webp)](/assets/posts/2023-04-22-new-themes/fig-1.webp)
+[![theme-baseが適用されたWebページのスクリーンショット](/assets/posts/2023-04-23-new-themes/fig-1.webp)](/assets/posts/2023-04-23-new-themes/fig-1.webp)
 
 これこそが `@vivliostyle/theme-base` によって実現していることです。
 

@@ -1,13 +1,13 @@
 ---
 title: Introduction of the new Vivliostyle Themes
 lang: en
-image: /assets/posts/2023-04-22-new-themes/og.webp
+image: /assets/posts/2023-04-23-new-themes/og.webp
 author: spring_raining
 tags:
   - Vivliostyle Themes
 ---
 
-[![Screenshot of CSS source written with Vivliostyle Themes](/assets/posts/2023-04-22-new-themes/og.webp)](/assets/posts/2023-04-22-new-themes/og.webp)
+[![Screenshot of CSS source written with Vivliostyle Themes](/assets/posts/2023-04-23-new-themes/og.webp)](/assets/posts/2023-04-23-new-themes/og.webp)
 
 We're delighted to announce that the new Vivliostyle Themes are now available in Beta version! It's more than just a CSS file for Vivliostyle. It's an ambitious library that is a new form of CSS framework, so let me introduce it to you.
 
@@ -29,7 +29,7 @@ The new Vivliostyle Themes are built on our CSS framework [`@vivliostyle/theme-b
 
 When viewing a document with `@vivliostyle/theme-base`, it looks almost the same as the browser's default User agent stylesheet. However, you can observe various CSS variables set for the properties of each element selector.
 
-[![Screenshot of web page with theme-base applied](/assets/posts/2023-04-22-new-themes/fig-1.webp)](/assets/posts/2023-04-22-new-themes/fig-1.webp)
+[![Screenshot of web page with theme-base applied](/assets/posts/2023-04-23-new-themes/fig-1.webp)](/assets/posts/2023-04-23-new-themes/fig-1.webp)
 
 This is exactly what is accomplished by `@vivliostyle/theme-base`.
 
