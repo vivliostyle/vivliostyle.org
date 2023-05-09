@@ -8,11 +8,11 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2023-05-08-vivliostyle-guide-coming-soon/fig-1.png" alt="Web技術で本が作れるCSS組版Vivliostyle入門カバー" style="width: 500px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
-## 筆者は「CSSの魔術師」
+## 「え、これをCSSで⁉︎」という技が見られる本
 
-いよいよ、Vivliostyleの書籍が商業出版されます。著者はITに強い編集プロダクション、リブロワークスの[大津雄一郎](https://twitter.com/arinoth)さん。大津さんには、これまで何回も私達のイベント「Vivliostyle ユーザーと開発者の集い」に登壇していただいたきました。
+いよいよ、Vivliostyleの書籍が商業出版されます。著者はITに強い編集プロダクション、リブロワークスの[大津雄一郎](https://twitter.com/arinoth)さん。大津さんには、これまで何回も私達のイベント「Vivliostyle ユーザーと開発者の集い」に登壇していただきました。
 
-なかでも[商業出版『そろそろ常識？マンガでわかる「正規表現」』の制作](https://www.youtube.com/watch?v=RQm5G7OM2S0)を見ていただくとよく分かるのですが、「え、これをCSSで⁉︎」ということをやってのけるのが大津さんで、私などは密かに「CSSの魔術師」と呼んでいるくらい。そんな人が書いた解説本ですから、おもしろくない訳がありません。まず目次を見てみましょう。
+なかでも[商業出版『そろそろ常識？マンガでわかる「正規表現」』の制作](https://www.youtube.com/watch?v=RQm5G7OM2S0)を見ていただくとよく分かるのですが、「え、これをCSSで⁉︎」ということをやってのけるのが大津さんで、私などは密かに「CSSの{業師|わざし}」と呼んでいるくらい。そんな人が書いた解説本ですから、おもしろくない訳がありません。まず目次を見てみましょう。
 
 - 1章 VivliostyleとCSS組版
     - 1節 CSS組版ってどんなもの？
@@ -70,6 +70,4 @@ tags:
 - [Amazon](https://www.amazon.co.jp/dp/4863544189)
 - [honto](https://honto.jp/netstore/pd-book_32396517.html)
 - [楽天ブックス](https://books.rakuten.co.jp/rb/17466640/)
-
-
 
