@@ -1,5 +1,5 @@
 ---
-title: Vivliostyleの解説本が近日発売！
+title: Vivliostyleの解説本が発売！
 lang: ja
 image: /assets/posts/2023-05-08-vivliostyle-guide-coming-soon/fig-1.png
 author: ogwata
