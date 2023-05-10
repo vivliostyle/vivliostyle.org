@@ -1,12 +1,12 @@
 ---
 title: Vivliostyleの解説本が発売！
 lang: ja
-image: /assets/posts/2023-05-10-vivliostyle-guide/fig-1.png
+image: /assets/posts/2023-05-10-vivliostyle-book/fig-1.png
 author: ogwata
 tags:
   - リリース
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2023-05-10-vivliostyle-guide/fig-1.png" alt="Web技術で本が作れるCSS組版Vivliostyle入門カバー" style="width: 500px; box-shadow: 10px 10px 20px 5px grey;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2023-05-10-vivliostyle-book/fig-1.png" alt="Web技術で本が作れるCSS組版Vivliostyle入門カバー" style="width: 500px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
 ## 「CSS組版でここまでできる！」実践的な入門書
 
