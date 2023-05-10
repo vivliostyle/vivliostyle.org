@@ -8,7 +8,7 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2023-05-08-vivliostyle-guide-coming-soon/fig-1.png" alt="Web技術で本が作れるCSS組版Vivliostyle入門カバー" style="width: 500px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
-## 「え、これをCSSで⁉︎」の技が見られる本
+## 「CSS組版でここまでできる！」実践的な入門書
 
 いよいよ、Vivliostyleの書籍が商業出版されます。著者はITに強い編集プロダクション、リブロワークスの[大津雄一郎](https://twitter.com/arinoth)さん。大津さんには、これまで何回も私達のイベント「Vivliostyle ユーザーと開発者の集い」に登壇していただきました。
 
