@@ -65,7 +65,7 @@ Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS�
 
 - [【出版DXを実現する本！】『Web技術で「本」が作れる　CSS組版Vivliostyle入門』](https://libroworks.co.jp/?p=6956)
 
-本書は下記をはじめとした電子書店でただ今予約受付中です。発売日は5月12日。ぜひお買い求めください！
+本書は下記をはじめとした電子書店などで発売中です。ぜひお買い求めください！
 
 - [Amazon](https://www.amazon.co.jp/dp/4863544189)
 - [honto](https://honto.jp/netstore/pd-book_32396517.html)
