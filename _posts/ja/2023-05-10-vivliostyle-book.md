@@ -77,4 +77,4 @@ Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS�
     - [honto](https://honto.jp/ebook/pd_32506155.html)
     - [楽天kobo](https://books.rakuten.co.jp/rk/5d9abfe2827537969da4897c3bd15ade/)
 
-(2023年5月16日：文末リンクを電子版と紙版に分載するよう修正)
+(2023年5月16日：文末リンクを紙版と電子版に分載するよう修正)
