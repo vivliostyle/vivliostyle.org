@@ -10,7 +10,7 @@ tags:
 
  (The original article is [Vivliostyleの解説本が発売！](https://vivliostyle.org/ja/blog/2023/05/10/vivliostyle-book/)in Japanese) 
 
-## A book that describes what you can do with CSS Typesetting
+## A book that describes what you can do with CSS typesetting
 
 The first book which explained Vivliostyle, “Making books with web technologies: Introduction to CSS typesetting and Vivliostyle” will be published commercially (a link to the e-bookstores is at the end of the text). The author is [Yuichiro Otsu](https://twitter.com/arinoth) of Libro Works, an editing production company with a strong IT background. Mr. Otsu has been a speaker at our "Vivliostyle User / Dev Meetup" events many times.
 
