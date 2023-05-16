@@ -12,7 +12,7 @@ tags:
 
 ## A book that describes what you can do with CSS typesetting
 
-The first book which explained Vivliostyle, “Making books with web technologies: Introduction to CSS typesetting and Vivliostyle” will be published commercially (a link to the e-bookstores is at the end of the text). The author is [Yuichiro Otsu](https://twitter.com/arinoth) of Libro Works, an editing production company with a strong IT background. Mr. Otsu has been a speaker at our "Vivliostyle User / Dev Meetup" events many times.
+The first book which explained Vivliostyle, “Making books with web technologies: Introduction to CSS typesetting and Vivliostyle” is published commercially (a link to the e-bookstores is at the end of this article). The author is [Yuichiro Otsu](https://twitter.com/arinoth) of LibroWorks, an editing production company with a strong IT background. Mr. Otsu has been a speaker at our "Vivliostyle User / Dev Meetup" events many times.
 
 As you can see from [the video of the event](https://www.youtube.com/watch?v=RQm5G7OM2S0), Mr. Otsu's strength is that he can present “You can do this far with CSS typesetting!” This is the book he wrote, so if you want to learn practical techniques, this is the perfect book for you. Let's first look at the table of contents of the book.
 
