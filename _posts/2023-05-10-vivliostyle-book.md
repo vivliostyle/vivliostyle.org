@@ -8,11 +8,13 @@ tags:
 ---
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2023-05-10-vivliostyle-book/fig-1.png" alt="Cover of Vivliostyle book" style="width: 500px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
-## 「CSS組版でここまでできる！」実践的な入門書
+ (The original article is [Vivliostyleの解説本が発売！](https://vivliostyle.org/ja/blog/2023/05/10/vivliostyle-book/)in Japanese) 
 
-Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS組版Vivliostyle入門』が商業出版されます（電子書店へのリンクは文末にあります）。著者はITに強い編集プロダクション、リブロワークスの[大津雄一郎](https://twitter.com/arinoth)さん。大津さんには、これまで何回も私達のイベント「Vivliostyle ユーザーと開発者の集い」に登壇していただきました。
+## A book that describes what you can do with CSS Typesetting
 
-なかでも[商業出版『そろそろ常識？マンガでわかる「正規表現」』の制作](https://www.youtube.com/watch?v=RQm5G7OM2S0)を見ていただくとよく分かるのですが、「CSS組版でここまでできる！」ということをやってのけるのが大津さんです。商業出版本のページデザインをCSS組版で実現してきた達人による解説本ですから、実践テクニックを学ぶのに最適です。まず目次を見てみましょう。
+The first book which explained Vivliostyle, “Making books with web technologies: Introduction to CSS typesetting and Vivliostyle” will be published commercially (a link to the e-bookstores is at the end of the text). The author is [Yuichiro Otsu](https://twitter.com/arinoth) of Libro Works, an editing production company with a strong IT background. Mr. Otsu has been a speaker at our "Vivliostyle User / Dev Meetup" events many times.
+
+As you can see from [the video of the event](https://www.youtube.com/watch?v=RQm5G7OM2S0), Mr. Otsu's strength is that he can present “You can do this far with CSS typesetting!” This is the book he wrote, so if you want to learn practical techniques, this is the perfect book for you. Let's first look at the table of contents of the book.
 
 - 1章 VivliostyleとCSS組版
     - 1節 CSS組版ってどんなもの？
@@ -43,37 +45,36 @@ Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS�
 - 7章 Vivliostyle Pub
     - 1節 Vivliostyle Pubの概要
 
-最初に1章でCSS組版やそれを実現するVivliostyleについて概説した後、2章でCSS組版用のCSS、そして第3章ではVivliostyleのMarkdown（Vivliostyle Flavored Markdown）を実際に書いていきます。つまりここまでを読み進めていけば、手取り足取りMarkdownとCSS組版による本作りを教えてもらえるのです。
+This book begins with an overview of CSS typesetting and Vivliostyle, which makes it possible, in Chapter 1, followed by an explanation of CSS for CSS typesetting in Chapter 2, and then the actual writing of Vivliostyle Markdown (Vivliostyle Flavored Markdown) in Chapter 3. In other words, if you have read this far, you will have a practical understanding of how to create a book using Markdown and CSS typesetting.
 
-## CSS組版ならではの実践テクニックを惜しげもなく公開
+## Generous disclosure of techniques unique to CSS typesetting
 
-しかし、本書の真骨頂と言えるのは、やはりCSS組版の達人の本領が発揮される第5章、第6章でしょう。CSS組版でここまでできるのかということに感動の連続です。
+However, the true heart of this book is chapters 5 and 6, where the mastery of CSS typesetting really comes into its own. I was very surprised to see how far CSS typesetting can take you.
 
-- 入れ子の見出し番号、ぶら下げインデント、行取りで配置
-- 辞書などで使われるツメ（サイドインデックス）を章ごとにずらして配置
-- 伸縮自在の画像コラム枠を生成
-- インラインSVG画像をページ内の任意の座標に配置
-- CSS Gridを使った奥付の組み方
-- 任意の場所・スペースに会話文の吹き出しを生成
-- 凝ったデザインの目次を生成する
-- 背景などを裁ち落とし領域にはみ出させる
-- 後注、脚注、側注の生成
+- Nested heading numbers and hanging indentation, set at a gyou-dori.
+- Shift the side indexes used in dictionaries, etc., by chapter.
+- Generate a stretchable image column frame.
+- Places an inline SVG image at any coordinates on the page.
+- Back matter layout using CSS Grid.
+- Generate conversational speech balloons in any location or space.
+- Generate an elaborately designed table of contents.
+- Overlap the background, etc., into the bleed area.
+- Generate afternotes, footnotes, and sidenotes.
 
-キリがないのでこの辺にしておきますが、こうしたCSS組版ならではのテクニックを惜しげもなく公開しているのが、本書の最大の魅力と言えます。
+The greatest appeal of this book is that it generously discloses the above techniques unique to CSS typesetting.
 
-なお、来たる5月28日に開催予定[「Vivliostyle ユーザーと開発者の集い 2023春」](https://vivliostyle.connpass.com/event/280760/)では、大津さんが本書の宣伝を兼ねてCSS組版テクニックを公開していただく予定ですので、どうかご参加ください。また、リブロワークスの下記ページで本書の紹介やサンプルページが公開されています。
+In addition, at the upcoming [「Vivliostyle ユーザーと開発者の集い 2023春」](https://vivliostyle.connpass.com/event/280760/) on May 28, Mr. Otsu will be sharing his CSS typesetting techniques as well as promoting this book. We look forward to seeing you there. Also, you can find an introduction and sample pages of this book on the following pages of LibroWorks.
 
 - [【出版DXを実現する本！】『Web技術で「本」が作れる　CSS組版Vivliostyle入門』](https://libroworks.co.jp/?p=6956)
 
-本書は下記をはじめとした電子書店などで発売中です。ぜひお買い求めください！
+This book is now available at the following and other e-bookstores. Please purchase a copy!
 
-- 紙版
+- Paper book
     - [Amazon](https://www.amazon.co.jp/dp/4863544189/)
     - [honto](https://honto.jp/netstore/pd-book_32396517.html)
     - [楽天ブックス](https://books.rakuten.co.jp/rb/17466640/)
-- 電子版
+- e-book
     - [本の森.jp](https://book.mynavi.jp/manatee/c-r/books/detail/id=138406)
     - [Amazon](https://www.amazon.co.jp/dp/B0C531D2QF/)
     - [honto](https://honto.jp/ebook/pd_32506155.html)
     - [楽天kobo](https://books.rakuten.co.jp/rk/5d9abfe2827537969da4897c3bd15ade/)
-
