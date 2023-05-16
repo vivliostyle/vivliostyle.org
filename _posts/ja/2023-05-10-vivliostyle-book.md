@@ -10,7 +10,7 @@ tags:
 
 ## 「CSS組版でここまでできる！」実践的な入門書
 
-Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS組版Vivliostyle入門』が商業出版されます（電子書店へのリンクは文末にあります）。著者はITに強い編集プロダクション、リブロワークスの[大津雄一郎](https://twitter.com/arinoth)さん。大津さんには、これまで何回も私達のイベント「Vivliostyle ユーザーと開発者の集い」に登壇していただきました。
+Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS組版Vivliostyle入門』が商業出版されました（電子書店へのリンクは文末にあります）。著者はITに強い編集プロダクション、リブロワークスの[大津雄一郎](https://twitter.com/arinoth)さん。大津さんには、これまで何回も私達のイベント「Vivliostyle ユーザーと開発者の集い」に登壇していただきました。
 
 なかでも[商業出版『そろそろ常識？マンガでわかる「正規表現」』の制作](https://www.youtube.com/watch?v=RQm5G7OM2S0)を見ていただくとよく分かるのですが、「CSS組版でここまでできる！」ということをやってのけるのが大津さんです。商業出版本のページデザインをCSS組版で実現してきた達人による解説本ですから、実践テクニックを学ぶのに最適です。まず目次を見てみましょう。
 
@@ -67,7 +67,14 @@ Vivliostyleを解説した初めての書籍『Web技術で本が作れる CSS�
 
 本書は下記をはじめとした電子書店などで発売中です。ぜひお買い求めください！
 
-- [Amazon](https://www.amazon.co.jp/dp/4863544189)
-- [honto](https://honto.jp/netstore/pd-book_32396517.html)
-- [楽天ブックス](https://books.rakuten.co.jp/rb/17466640/)
+- 紙版
+    - [Amazon](https://www.amazon.co.jp/dp/4863544189/)
+    - [honto](https://honto.jp/netstore/pd-book_32396517.html)
+    - [楽天ブックス](https://books.rakuten.co.jp/rb/17466640/)
+- 電子版
+    - [本の森.jp](https://book.mynavi.jp/manatee/c-r/books/detail/id=138406)
+    - [Amazon](https://www.amazon.co.jp/dp/B0C531D2QF/)
+    - [honto](https://honto.jp/ebook/pd_32506155.html)
+    - [楽天kobo](https://books.rakuten.co.jp/rk/5d9abfe2827537969da4897c3bd15ade/)
 
+(2023年5月16日：文末リンクを紙版と電子版に分載するよう修正)
