@@ -49,7 +49,7 @@ This book begins with an overview of CSS typesetting and Vivliostyle, which make
 
 ## Generous disclosure of techniques unique to CSS typesetting
 
-However, the true heart of this book is chapters 5 and 6, where the mastery of CSS typesetting really comes into its own. I was very surprised to see how far CSS typesetting can take you.
+However, the true heart of this book is chapters 5 and 6, where the mastery of CSS typesetting really comes into its own. I was very surprised to see how far CSS typesetting can take us.
 
 - Nested heading numbers and hanging indentation, set at a gyou-dori.
 - Shift the side indexes used in dictionaries, etc., by chapter.
