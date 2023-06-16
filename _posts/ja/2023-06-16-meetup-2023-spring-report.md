@@ -30,7 +30,7 @@ tags:
 
 - **VS Codeで使うVivliostyle（藤井大洋）**：藤井さんはSF作家であるだけでなく、VS Codeで小説を執筆する機能拡張[novel-writer](https://marketplace.visualstudio.com/items?itemName=TaiyoFujii.novel-writer)の作者でもあります。今回はその紹介に加え、Vivliostyleを使ってMarkdownからPandockを使ってEPUBとPDFを作る方法について、操作画面を交えて説明していただきました。
 - **『Vivliostyle CSS組版入門』刊行記念　もっと紙面であそぼう！（大津雄一郎）**：絶賛発売中の[Vivliostyle解説本](https://amzn.asia/d/4LZ73WU)の著者が、「CSS 組版でこんなことができる」をテーマに、実際のCSSのコードや画面を見せながら紹介してくれました。
-- **Vivliostyleで旅行エッセイを共同編集／オンデマンド印刷（小形克宏）**：プライベートな世界旅行を撮影したカラーアルバムをVivliostyleで書籍化し印刷しました。そこで浮かび上がったVivliostylejsの課題として、[OSにより出力結果が異なる問題](https://github.com/vivliostyle/vivliostyle.js/issues/1098)を説明しました（なお、後日の検証により[回避方法](https://github.com/vivliostyle/vivliostyle.js/issues/1098#issuecomment-1573302265)が報告されています）。　
+- **Vivliostyleで旅行エッセイを共同編集／オンデマンド印刷（小形克宏）**：プライベートな世界旅行を撮影したカラーアルバムをVivliostyleで書籍化し印刷しました。そこで浮かび上がったVivliostylejsの課題として、[OSにより出力結果が異なる問題](https://github.com/vivliostyle/vivliostyle.js/issues/1098)を説明しました（なお、後日の検証により[回避方法](https://github.com/vivliostyle/vivliostyle.js/issues/1098#issuecomment-1573302265)が報告され、現在は解決済みです）。　
 - **Vivliostyle CLIのアップデートと新しいVivliostyle Themes（緑豆はるさめ）**これまでVivliostyleの課題だったCSSのカスタマイズしにくさを解決するため、Vivliostyle CLIとThemesを大改造したコミッターが、自らその詳細な内容を解説しました。
 - **Vivliostyle.jsの最新の進化（村上真雄）**：イベントの最後として村上代表が、ここまで報告された成果や課題を整理、これからVivliostyleはどういう方向に進むのか、その開発予定を報告しました。
 - **5月開発者会議**：この日出された論点を材料に、今後のVivliostyleの課題について登壇者とコミッターが議論しました。
