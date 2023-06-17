@@ -14,7 +14,7 @@ toc: true
 {% capture content %}
 ## To use Create Book
 
-1. Install [Node.js (v.12 or higher)<i class="fas fa-external-link-alt"></i>](https://nodejs.org/en/) first.
+1. Install [Node.js (v.16 or higher)<i class="fas fa-external-link-alt"></i>](https://nodejs.org/en/) first.
 2. Create Book installation commands are as follows. The `<directory>` is the project folder name of the book to be made.
 
     ```

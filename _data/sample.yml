@@ -269,6 +269,27 @@ categories:
           - name: *link_name_source
             url: https://github.com/jagat-xpub/cosmology
   - name:
+      ja: 図版の多い横組書籍
+      en: Books with many figures
+    samples:
+      - name:
+          ja: 海外の旅〔上〕
+          en: “Travels Abroad (Volume 1)”
+        img: assets/samples/travel.png
+        tags:
+          - *tag_float
+          - *tag_toc
+          - *tag_page_header
+          - *tag_multi_html
+        urls:
+          - name: *link_name_default
+            url: https://vivliostyle.org/viewer/#src=https://github.com/MurakamiShinyu/kaigainotabi1/blob/main/publication.json
+          - name: *link_name_source
+            url: https://github.com/MurakamiShinyu/kaigainotabi1
+        comment:
+          ja: この本はChromeで最適な組版結果になるように作成しました。それ以外のブラウザでは一部レイアウトが変わることがあります。
+          en: This book was designed to achieve the best typesetting results in Chrome. Layout may be altered in some parts when viewed in other browsers.
+  - name:
       ja: 目次と複数のHTMLからなる雑誌
       en: A magazine consisting of a table of contents and multiple HTML
     samples:

@@ -6,7 +6,7 @@
       {% for item in include.sample.urls %}
         {% assign text = item.name[lang.code] %}
 
-        {% if item.url contains 'github.com' %}
+        {% if item.name.ja == "ソース" %}
           {% include button/github.html url=item.url text=text class="button--github--medium" %}
         {% else %}
           {% include button/secondary.html url=item.url text=text class="button--secondary--medium" %}

@@ -14,7 +14,7 @@ lang: ja
 {% capture content %}
 ## Create Book を使うには
 
-1. まず [Node.js (v.12以上)<i class="fas fa-external-link-alt"></i>](https://nodejs.org/ja/) をインストールしてください。
+1. まず [Node.js (v.16以上)<i class="fas fa-external-link-alt"></i>](https://nodejs.org/ja/) をインストールしてください。
 2. Create Book のインストールコマンドは下記の通りです。`<directory>` には作成しようとする本のプロジェクトフォルダ名を指定します。
 
     ```
