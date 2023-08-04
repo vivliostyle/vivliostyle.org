@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<main class="main">
+  {% if page.under_construction %}
+    {% include under-construction.html %}
+  {% else %}
+    {{ content }}
+  {% endif %}
+</main>
+
+{% include global-footer.html %}
