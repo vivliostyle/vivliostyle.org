@@ -12,10 +12,8 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 
 {% assign show_count = 3 %}
 {% assign pickups = site.data.whatsnew.pickups.ja | limit: show_count %}
-{% assign pickups_count = pickups | size %}
-{% assign post_count = show_count | minus: pickups_count %}
-{% assign posts = site.posts | where: "lang", page.lang | slice: 0, post_count %}
-{% assign posts = pickups | concat: posts %}
+{% assign posts = site.posts | where: "lang", page.lang | slice: 0, show_count %}
+{% include post-list-horizontal.html posts=pickups feature=site.data.whatsnew.feature.ja %}
 {% include post-list-horizontal.html posts=posts feature=site.data.whatsnew.feature.ja %}
 
 <ol class="list--medium">
