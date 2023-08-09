@@ -1,0 +1,24 @@
+<img style="width: 100%" src="{{ include.image }}" alt="{{ include.image_alt }}">
+
+{% for content in include.content %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if thecycle == 'odd' %}
+<section class="section">
+  <div class="container">
+    {{ content | markdownify }}
+  </div>
+</section>
+  {% else %}
+<section class="section--gray">
+  <div class="container">
+    {{ content | markdownify }}
+  </div>
+</section>
+  {% endif %}
+{% endfor%}
+
+<section class="section">
+  <div class="container">
+    {% include nav-share.html %}
+  </div>
+</section>
