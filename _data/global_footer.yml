@@ -58,6 +58,8 @@ ja:
         url: /ja/documents/#コントリビューションガイド
       - title: FAQ
         url: /ja/faq/
+      - title: Vivliostyle で本を作ろう
+        url: /ja/make-books-with-vivliostyle/
   - title: コミュニティ
     links:
       - title: コミュニティ
@@ -74,7 +76,5 @@ ja:
         url: /ja/blog/
       - title: ロゴデザイン
         url: /ja/logo/
-      - title: Vivliostyle で本を作ろう
-        url: /ja/make-books-with-vivliostyle/
       - title: プライバシーポリシー
         url: /ja/privacy-policy/
