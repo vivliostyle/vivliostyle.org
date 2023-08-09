@@ -1,3 +1,5 @@
+{% include h1.html title=include.title lead=include.lead %}
+
 {% for content in include.content %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
   {% if thecycle == 'odd' %}
@@ -14,9 +16,3 @@
 </section>
   {% endif %}
 {% endfor%}
-
-<section class="section">
-  <div class="container">
-    {% include nav-share.html %}
-  </div>
-</section>
