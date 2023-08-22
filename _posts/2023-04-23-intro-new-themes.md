@@ -17,11 +17,11 @@ Vivliostyle Themes can be used by setting the following in `vivliostyle.config.j
 
 ```js
 module.exports = {
-  theme: '@vivliostyle/theme-base@beta',
+  theme: '@vivliostyle/theme-base',
 };
 ```
 
-Please refer to [the README of Vivliostyle Themes](https://github.com/vivliostyle/themes) for available themes. Note that the theme name should end with `@beta`, as it is currently in Beta version.
+Please refer to [the README of Vivliostyle Themes](https://github.com/vivliostyle/themes) for available themes. ~~Note that the theme name should end with `@beta`, as it is currently in Beta version.~~ (Update: We've released the stable version of the new Vivliostyle Themes so now you don't have to specify `@beta`)
 
 ## CSS framework based on CSS variables
 
@@ -140,7 +140,7 @@ This theme file changes its style by customizing the contents of the `theme-base
 The [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) template generator is now compatible with the new Vivliostyle Themes. To generate a template, run the following command.
 
 ```
-npm create vivliostyle-theme@beta <your-theme-name>
+npm create vivliostyle-theme <your-theme-name>
 ```
 
 The template does not include a SASS file, but has a simple structure with only `theme.css`. When you've finished your theme, consider publishing it as an npm package!
