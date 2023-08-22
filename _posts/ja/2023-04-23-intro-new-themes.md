@@ -17,11 +17,11 @@ Vivliostyle Themesは、`vivliostyle.config.js` に以下のように設定す�
 
 ```js
 module.exports = {
-  theme: '@vivliostyle/theme-base@beta',
+  theme: '@vivliostyle/theme-base',
 };
 ```
 
-使用できるテーマについては[Vivliostyle ThemesのREADME](https://github.com/vivliostyle/themes)を参照してください。現時点ではBetaバージョンで提供しているため、テーマ名の末尾に `@beta` をつけることに注意してください。
+使用できるテーマについては[Vivliostyle ThemesのREADME](https://github.com/vivliostyle/themes)を参照してください。~~現時点ではBetaバージョンで提供しているため、テーマ名の末尾に `@beta` をつけることに注意してください。~~ （更新: 新しいVivliostyle Themeの安定版のリリースがされたため、`@beta` を指定する必要はなくなりました）
 
 ## CSS変数をベースにしたCSSフレームワーク
 
@@ -157,7 +157,7 @@ meta-propertiesやbasic以外にも、ページレイアウトに関する設定
 自分のテーマを作成するための雛形生成ツール [create-vivliostyle-theme](https://github.com/vivliostyle/themes/tree/main/packages/create-vivliostyle-theme) も、新しいVivliostyle Themesに対応しました。雛形を生成するためには、以下のコマンドを実行します。
 
 ```
-npm create vivliostyle-theme@beta <your-theme-name>
+npm create vivliostyle-theme <your-theme-name>
 ```
 
 生成される雛形にはこれまでのようなSASSファイルは含まれておらず、`theme.css` だけがあるシンプルな構成になりました。テーマが完成したら、ぜひnpm packageとして公開してみてください！
