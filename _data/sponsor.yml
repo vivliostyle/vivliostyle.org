@@ -20,10 +20,11 @@
   # tier:
     # - badge: 🥈
       # users:
-# - name: Bronze Sponsors
-  # tier:
-    # - badge: 🥉
-      # users:
+- name: Bronze Sponsors
+  tier:
+    - badge: 🥉
+      users:
+        - name: hatena
 - name: Basic Sponsors
   tier:
     - badge: 💐
@@ -43,7 +44,7 @@
         - name: NoBooking
         - name: vvakame
         - name: y-mikou
-        - name: u1F992
+        - name: U-1F992
     - badge: ⭐️
       users:
         - name: munepi
@@ -51,4 +52,3 @@
         - name: zonuexe
         - name: omasanori
         - name: monami-ya
-        - name: okuzawats
