@@ -222,27 +222,8 @@ See the [Machine-Processable Table of Contents](https://www.w3.org/TR/pub-manife
 A TOC with page numbers can be styled with style sheet such as:
 
 ```css
-nav li a {
-  display: inline-flex;
-  width: 100%;
-  text-decoration: none;
-  break-inside: avoid;
-  align-items: baseline;
-}
-nav li a::before {
-  margin-left: 3px;
-  margin-right: 3px;
-  border-bottom: 1px dotted;
-  content: "";
-  order: 1;
-  flex: auto;
-}
 nav li a::after {
-  text-align: right;
-  content: target-counter(attr(href url), page);
-  align-self: flex-end;
-  flex: none;
-  order: 2;
+  content: leader("…") target-counter(attr(href url), page);
 }
 ```
 
@@ -277,8 +258,29 @@ Typeset and view with Vivliostyle Viewer: <span class="url"><https://vivliostyle
 
 ### How to reset page counter in a book?
 
+To reset the page counter at the beginning of one document in a book consisting of multiple HTML documents, use the following:
+
+```css
+@page :nth(1) {
+  counter-reset: page;
+}
+```
+
 👉See [vivliostyle.js issue#522: "reset-counter: page;" doesn't work properly with web publications](https://github.com/vivliostyle/vivliostyle.js/issues/522).
 
+### How to change the first page number?
+
+The first page number is usually 1. To change this, use the following:
+
+Example: To set the first page number to 2
+
+```css
+@page :first {
+  counter-reset: page 1;
+}
+```
+
+The page counter is automatically incremented at the beginning of each page, so if you reset it to 1, the first page number will be 2.
 
 ## Vivliostyle License FAQ
 
