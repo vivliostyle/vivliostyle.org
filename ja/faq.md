@@ -222,27 +222,8 @@ HTMLのマークアップで目次を作るには、`<nav role="doc-toc">` … `
 ページ番号入りの目次のスタイルは、次のようなスタイルシートによって実現できます：
 
 ```css
-nav li a {
-  display: inline-flex;
-  width: 100%;
-  text-decoration: none;
-  break-inside: avoid;
-  align-items: baseline;
-}
-nav li a::before {
-  margin-left: 3px;
-  margin-right: 3px;
-  border-bottom: 1px dotted;
-  content: "";
-  order: 1;
-  flex: auto;
-}
 nav li a::after {
-  text-align: right;
-  content: target-counter(attr(href url), page);
-  align-self: flex-end;
-  flex: none;
-  order: 2;
+  content: leader("…") target-counter(attr(href url), page);
 }
 ```
 
@@ -277,8 +258,29 @@ Vivliostyle Viewer で組版表示: <span class="url"><https://vivliostyle.org/v
 
 ### 本の途中でページ・カウンターをリセットするには？
 
+複数のHTML文書からなる本の中のひとつの文書の先頭でページ・カウンターをリセットするには次のようにします：
+
+```css
+@page :nth(1) {
+  counter-reset: page;
+}
+```
+
 👉[vivliostyle.js issue#522: "reset-counter: page;" doesn't work properly with web publications](https://github.com/vivliostyle/vivliostyle.js/issues/522) をご覧ください。
 
+### 先頭ページ番号を変えるには？
+
+最初のページ番号は通常は1ですが、これを変えるには次のようにします。
+
+例：最初のページ番号を 2 にする場合
+
+```css
+@page :first {
+  counter-reset: page 1;
+}
+```
+
+各ページの最初にpageカウンターは自動的にインクリメントされるので、1にリセットした場合の最初のページ番号は2となります。
 
 ## Vivliostyle のライセンスについての FAQ
 
