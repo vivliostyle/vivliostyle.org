@@ -9,7 +9,7 @@ tags:
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2024-04-09-vivliostyle-js-has-been-adopted-by-shonen-jump/fig-1.png" alt="少年ジャンプ＋でVivliostyle.jsが採用されました" style="width: 360px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
 
-[株式会社はてな](https://hatena.co.jp/)は今年3月29日、自社のマンガビューワ[「GigaViewer」](https://hatena.co.jp/solutions/gigaviewer)が、[「少年ジャンプ＋」](https://shonenjumpplus.com/)に採用されたことを発表しました。
+[株式会社はてな](https://hatena.co.jp/)は今年3月29日、自社のマンガビューワ[「GigaViewer」](https://hatena.co.jp/solutions/gigaviewer)が、[「少年ジャンプ＋」（株式会社集英社）](https://shonenjumpplus.com/)に採用されたことを発表しました。
 
 - [はてなのアプリ専用マンガビューワを集英社が採用。2,700万ダウンロードを超える「少年ジャンプ＋」に提供開始（2024-03-29）](https://hatena.co.jp/press/release/entry/2024/03/29/120000)
 
