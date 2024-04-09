@@ -17,7 +17,7 @@ tags:
 
 もしかしたら、「なぜマンガアプリにVivliostyleが？」と不思議に思われる方もいるかもしれません。じつは「少年ジャンプ＋」はマンガ作品のノベライズにも力を入れており、たくさんの人気小説を掲載しています。アプリをお持ちの方は、ぜひトップページから「ノベル」で検索してみてください。
 
-そうした小説を読みやすく組版するために選ばれたのが、Vivliostyle.jsというわけです。開発にあたって、株式会社はてなはまず[Bronze Sponsor](http://127.0.0.1:4000/ja/sponsors/#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E4%B8%80%E8%A6%A7)として私達をサポートすることを決めました。
+そうした小説を読みやすく組版するために選ばれたのが、Vivliostyle.jsというわけです。開発にあたって株式会社はてなは、まず[Bronze Sponsor](http://127.0.0.1:4000/ja/sponsors/#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E4%B8%80%E8%A6%A7)として私達をサポートすることを決めました。
 
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2024-04-09-vivliostyle-js-has-been-adopted-by-shonen-jump/fig-2.jpeg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
