@@ -20,7 +20,7 @@ tags:
 
 <figure style="float: right; margin: 0 0 1em 1em;">
   <img src="/assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-2a.jpg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 1px 1px 2px 1px grey;" />
-  <figcaption>「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」</figcaption>
+  <figcaption  style="text-align: center font-size: 11pt;">「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」<br/>（少年ジャンプ＋掲載、岸本斉史、東山彰良、矢野隆、<br/>大崎知仁、ひなたしょう、小太刀右京、十和田シン）</figcaption>
 </figure>
 
 その上で小説用ビューワ、「Giga-EpubViewer」のために、Vivliostyle.jsのモジュールであるVivliostyle Coreを文字組版用のレイアウトエンジンとして組み込みました。その開発にあたっては、同社からの技術的な質問に答える形で、なんどか私達もサポートさせていただいています。
