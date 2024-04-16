@@ -1,12 +1,11 @@
 ---
 title: 「少年ジャンプ＋」でVivliostyle.jsが採用されました
 lang: ja
-image: /assets/posts/2024-04-09-vivliostyle-js-has-been-adopted-by-shonen-jump/fig-1.png
+image: /assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-2a.jpg
 author: ogwata
 tags:
   - リリース
 ---
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2024-04-09-vivliostyle-js-has-been-adopted-by-shonen-jump/fig-1.png" alt="少年ジャンプ＋でVivliostyle.jsが採用されました" style="width: 360px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
 
 [株式会社はてな](https://hatena.co.jp/)は今年3月29日、自社のマンガビューワ[「GigaViewer」](https://hatena.co.jp/solutions/gigaviewer)が、[「少年ジャンプ＋」（株式会社集英社）](https://shonenjumpplus.com/)に採用されたことを発表しました。
@@ -19,7 +18,7 @@ tags:
 
 そうした小説を読みやすく組版するために選ばれたのが、Vivliostyle.jsというわけです。開発にあたって株式会社はてなは、まず[Bronze Sponsor](http://127.0.0.1:4000/ja/sponsors/#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E4%B8%80%E8%A6%A7)として私達をサポートすることを決めました。
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2024-04-09-vivliostyle-js-has-been-adopted-by-shonen-jump/fig-2.jpeg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 10px 10px 20px 5px grey;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-2a.jpg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 10px 10px 20px 5px grey;" /></div>
 
 その上で、小説用ビューワ「Giga-EpubViewer」のために、Vivliostyle.jsのモジュールであるVivliostyle Coreを文字組版用のレイアウトエンジンとして組み込みました。その開発にあたっては、同社からの技術的な質問に答える形で、なんどか私達もサポートさせていただいています。
 
