@@ -18,9 +18,10 @@ tags:
 
 そうした小説を読みやすく組版するために選ばれたのが、Vivliostyle.jsというわけです。開発にあたって株式会社はてなは、まず[Bronze Sponsor](http://127.0.0.1:4000/ja/sponsors/#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E4%B8%80%E8%A6%A7)として私達をサポートすることを決めました。
 
-<div style="float: right; margin: 0 0 1em 1em;">
-  <img src="/assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-2a.jpg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 10px 10px 20px 5px grey;" />
-</div>
+<figure style="float: right; margin: 0 0 1em 1em;">
+  <img src="/assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-2a.jpg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 1px 1px 2px 1px grey;" />
+  <figcaption>「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」</figcaption>
+</figure>
 
 その上で小説用ビューワ、Giga-EpubViewerのために、Vivliostyle.jsのモジュールであるVivliostyle Coreを文字組版用のレイアウトエンジンとして組み込みました。その開発にあたっては、同社からの技術的な質問に答える形で、なんどか私達もサポートさせていただいています。
 
