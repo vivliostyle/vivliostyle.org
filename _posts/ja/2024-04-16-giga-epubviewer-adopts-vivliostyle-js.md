@@ -24,7 +24,7 @@ tags:
 
 その上で小説用ビューワ、Giga-EpubViewerのために、Vivliostyle.jsのモジュールであるVivliostyle Coreを文字組版用のレイアウトエンジンとして組み込みました。その開発にあたっては、同社からの技術的な質問に答える形で、なんどか私達もサポートさせていただいています。
 
-Giga-EpubViewerは[AGPLライセンス](https://www.gnu.org/licenses/agpl-3.0.html)に従ってVivliostyle.jsを利用しています。たとえばソースコードの入手方法は、下記の手順により確認できるクレジット表示をご覧ください。
+Giga-EpubViewerは[AGPLライセンス](https://www.gnu.org/licenses/agpl-3.0.html)に従ってVivliostyle.jsを利用しています。たとえばソースコードの入手方法は、下記の手順により確認できる「オープンソース」の項目をご覧ください。
 
 - アプリ起動＞マイページ＞ギアマークをタップ＞著作権について
 
