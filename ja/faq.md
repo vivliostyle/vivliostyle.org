@@ -303,10 +303,12 @@ Vivliostyle のソースコードには、次のようなコピーライト表�
 （[epub.ts](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/src/vivliostyle/epub.ts) の例）
 
 > * Copyright 2013 Google, Inc.
-> * Copyright 2015 Trim-marks Inc.
+> * Copyright 2015 Daishinsha Inc.
 > * Copyright 2018 Vivliostyle Foundation
 
 「Copyright 2013 Google, Inc.」とあるのは、Vivliostyle がもともと、Google に所属する Peter Sorotokin 氏によって開発された [EPUB Adaptive Layout JavaScript-based implementation ("Adapt")](https://github.com/sorotokin/adaptive-layout) をベースとして開発されたためです。この元プロジェクト由来のソースコードの権利は Google にあります。
+
+「Copyright 2015 Daishinsha Inc.」とあるのは、2024年に株式会社大伸社（Daishinsha Inc.）がTrim-marks社から権利を取得したためです。
 
 Trim-marks 社（旧社名は Vivliostyle Inc.）は、2015年から2018年3月までのあいだ、Vivliostyle の開発の主体でした。この期間に書かれた Vivliostyle ソースコードの権利は Trim-marks 社にあります。また、Vivliostyle のライセンスは当初、元プロジェクトの "Adapt" を継承して Apache License 2.0 でしたが、2017年2月から AGPLv3 に変更されました。
 

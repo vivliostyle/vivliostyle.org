@@ -300,10 +300,12 @@ References:
 The Vivliostyle source code has the following copyright notation: (e.g., in [epub.ts](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/src/vivliostyle/epub.ts))
 
 > * Copyright 2013 Google, Inc.
-> * Copyright 2015 Trim-marks Inc.
+> * Copyright 2015 Daishinsha Inc.
 > * Copyright 2018 Vivliostyle Foundation
 
 "Copyright 2013 Google, Inc." is because Vivliostyle was originally developed based on [EPUB Adaptive Layout JavaScript-based implementation ("Adapt")](https://github.com/sorotokin/adaptive-layout), which was developed by Peter Sorotokin of Google. Google owns the rights to the source code from this original project.
+
+"Copyright 2015 Daishinsha Inc." is because Daishinsha Inc. acquired the rights from Trim-marks Inc. in 2024.
 
 Trim-marks Inc. (formerly Vivliostyle Inc.) developed Vivliostyle from 2015 to March 2018. The rights to Vivliostyle source code written during this period belong to Trim-marks Inc. In addition, the license of Vivliostyle was originally Apache License 2.0, inheriting "Adapt" of the original project, but changed to AGPLv3 from February 2017.
 
