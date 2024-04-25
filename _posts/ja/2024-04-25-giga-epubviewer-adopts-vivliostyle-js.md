@@ -1,7 +1,7 @@
 ---
 title: GigaViewer for AppsにVivliostyle.jsが採用されました
 lang: ja
-image: /assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-1.jpeg
+image: /assets/posts/2024-04-25-giga-epubviewer-adopts-vivliostyle-js/fig-1.jpeg
 author: ogwata
 tags:
   - リリース
@@ -14,13 +14,13 @@ tags:
 
 これにともない「GigaViewer for Apps」に組み込まれた小説用ビューワのレイアウトエンジンとして、Vivliostyle.jsが採用されたことをお知らせします。
 
-もしかしたら、「なぜマンガアプリにVivliostyleが？」と不思議に思われる方もいるかもしれません。じつは「少年ジャンプ＋」はマンガ作品のノベライズにも力を入れており、たくさんの小説を掲載しています。アプリをお持ちの方は、ぜひトップページから「ノベル」で検索してみてください。
+もしかしたら、「なぜマンガアプリにVivliostyleが？」と不思議に思われる方もいるかもしれません。じつは集英社はマンガ作品のノベライズにも力を入れており、「少年ジャンプ＋」もたくさんの小説を掲載しています。
 
 そうした小説を読みやすく組版するために選ばれたのが、Vivliostyle.jsというわけです。開発にあたって株式会社はてなは、まず[Bronze Sponsor](http://127.0.0.1:4000/ja/sponsors/#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E4%B8%80%E8%A6%A7)として私達をサポートすることを決めました。
 
 <figure style="float: right; margin: 0 0 1em 1em;">
-  <img src="/assets/posts/2024-04-16-giga-epubviewer-adopts-vivliostyle-js/fig-1.jpeg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 1px 1px 2px 1px grey;" />
-  <figcaption  style="text-align: center font-size: 11pt;">「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」<br/>（少年ジャンプ＋掲載、岸本斉史、東山彰良、矢野隆、<br/>大崎知仁、ひなたしょう、小太刀右京、十和田シン）</figcaption>
+  <img src="/assets/posts/2024-04-25-giga-epubviewer-adopts-vivliostyle-js/fig-1.jpeg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 2px 2px 3px 2px grey;" />
+  <figcaption  style="text-align: center font-size: 11pt;">「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」<br/>（©岸本斉史・十和田シン／集英社）</figcaption>
 </figure>
 
 その上で、「GigaViewer for Apps」の小説用ビューワ用に、Vivliostyle.jsのモジュールであるVivliostyle Coreを文字組版用のレイアウトエンジンとして組み込みました。その開発にあたっては、同社からの技術的な質問に答える形で、なんどか私達もサポートさせていただいています。
