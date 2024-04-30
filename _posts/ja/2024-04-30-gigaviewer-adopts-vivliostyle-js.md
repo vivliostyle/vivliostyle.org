@@ -1,7 +1,7 @@
 ---
 title: GigaViewer for AppsにVivliostyle.jsが採用されました
 lang: ja
-image: /assets/posts/2024-04-25-gigaviewer-adopts-vivliostyle-js/fig-1.jpeg
+image: /assets/posts/2024-04-30-gigaviewer-adopts-vivliostyle-js/fig-1.jpeg
 author: ogwata
 tags:
   - リリース
@@ -19,7 +19,7 @@ tags:
 そうした小説を読みやすく組版するために選ばれたのが、Vivliostyle.jsというわけです。開発にあたって株式会社はてなは、まず[Bronze Sponsor](https://vivliostyle.org/ja/sponsors/#%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B5%E3%83%BC%E4%B8%80%E8%A6%A7)として私達をサポートすることを決めました。
 
 <figure style="float: right; margin: 0 0 1em 1em;">
-  <img src="/assets/posts/2024-04-25-gigaviewer-adopts-vivliostyle-js/fig-1.jpeg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 2px 2px 3px 2px grey;" />
+  <img src="/assets/posts/2024-04-30-gigaviewer-adopts-vivliostyle-js/fig-1.jpeg" alt="「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」" style="width: 360px; box-shadow: 2px 2px 3px 2px grey;" />
   <figcaption  style="text-align: center font-size: 11pt;">「NARUTO—ナルト—暁秘伝 咲き乱れる悪の華」<br/>（©岸本斉史・十和田シン／集英社）</figcaption>
 </figure>
 
