@@ -66,12 +66,16 @@
             - name: yuji-1980
 - name: One-time Sponsors
   tier:
-    - name: Bronze Sponsors
+    - name: Bronze Sponsor
       tier:
         - badge: 🥉
           users:
-            - name: MarianoCh
             - name: hatena
+    - name: Basic Sponsor
+      tier:
+        - badge: 🌹
+          users:
+            - name: MarianoCh
     - name: Fan Sponsor
       tier:
         - badge: ⭐️
