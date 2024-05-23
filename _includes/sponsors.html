@@ -1,5 +1,8 @@
-{% for sponsor_group in site.data.sponsor %}
-  <h3>{{ sponsor_group.name }}</h3>
+{% for frequency_group in site.data.sponsor %}
+  <h3>{{ frequency_group.name }}</h3>
+
+{% for sponsor_group in frequency_group.tier %}
+  <h4>{{ sponsor_group.name }}</h4>
 
   <ol class="list--small">
     {% for tier in sponsor_group.tier %}
@@ -21,4 +24,5 @@
       {% endfor %}
     {% endfor %}
   </ol>
+{% endfor %}
 {% endfor %}

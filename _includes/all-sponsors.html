@@ -1,5 +1,6 @@
 <ol class="list--small">
-  {% for sponsor_group in site.data.sponsor %}
+  {% for frequency_group in site.data.sponsor %}
+  {% for sponsor_group in frequency_group.tier %}
     {% for tier in sponsor_group.tier %}
       {% for user in tier.users %}
         <li class="avatar-list__item">
@@ -18,5 +19,6 @@
         </li>
       {% endfor %}
     {% endfor %}
+  {% endfor %}
   {% endfor %}
 </ol>

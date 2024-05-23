@@ -20,37 +20,60 @@
   # tier:
     # - badge: 🥈
       # users:
-- name: Bronze Sponsors
+
+- name: Monthly Sponsors
   tier:
-    - badge: 🥉
-      users:
-        - name: hatena
-- name: Basic Sponsors
+    - name: Basic Sponsors
+      tier:
+        - badge: 💐
+          users:
+            - name: libroworks
+        - badge: 🌹
+          users:
+            - name: hidaruma
+            - name: udon-a
+            - name: ryoutakano
+    - name: Fan Sponsors
+      tier:
+        - badge: 🌟
+          users:
+            - name: skoji
+            - name: 74th
+            - name: NoBooking
+            - name: vvakame
+            - name: y-mikou
+            - name: U-1F992
+            - name: sarashino
+        - badge: ⭐️
+          users:
+            - name: munepi
+            - name: nishinos
+            - name: zonuexe
+            - name: omasanori
+            - name: monami-ya
+            - name: yamahige
+    - name: Past Sponsors
+      tier:
+        - badge: 🌹
+          users:
+            - name: youchan
+            - name: azettl
+        - badge: ⭐️
+          users:
+            - name: monaka
+            - name: okuzawats
+            - name: niszet
+            - name: yuji-1980
+- name: One-time Sponsors
   tier:
-    - badge: 💐
-      users:
-        - name: libroworks
-    - badge: 🌹
-      users:
-        - name: hidaruma
-        - name: udon-a
-        - name: ryoutakano
-        - name: EnochGao
-- name: Fan Sponsors
-  tier:
-    - badge: 🌟
-      users:
-        - name: skoji
-        - name: 74th
-        - name: NoBooking
-        - name: vvakame
-        - name: y-mikou
-        - name: U-1F992
-        - name: sarashino
-    - badge: ⭐️
-      users:
-        - name: munepi
-        - name: nishinos
-        - name: zonuexe
-        - name: omasanori
-        - name: monami-ya
+    - name: Bronze Sponsors
+      tier:
+        - badge: 🥉
+          users:
+            - name: MarianoCh
+            - name: hatena
+    - name: Fan Sponsor
+      tier:
+        - badge: ⭐️
+          users:
+            - name: EnochGao
