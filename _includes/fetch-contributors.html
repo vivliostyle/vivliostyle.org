@@ -27,8 +27,8 @@
     contributors = new Set(contributors.flat());
 
     return [...contributors].filter(function(contributor) {
-      // dependabotでない
-      return contributor != "dependabot[bot]";
+      // dependabot, github-actionsでない
+      return contributor != "dependabot[bot]" && contributor != "github-actions[bot]";
     });
   }
 
