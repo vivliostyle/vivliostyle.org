@@ -7,10 +7,7 @@
     <meta name="google" content="notranslate"/>
     <title>Vivliostyle Viewer</title>
     
-    <!-- WICG Visual Viewport -->
-    <script src="https://wicg.github.io/visual-viewport/polyfill/visualViewport.js"></script>
-
-    <!-- MathJax -->
+    <!-- MathJax; remove if not needed -->
     <script src="resources/mathjax-config.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
@@ -30,7 +27,7 @@
   </head>
   <body data-vivliostyle-viewer-status="loading" data-bind="event: {keydown: handleKey}, attr: {'data-vivliostyle-viewer-status': viewer.state.status, 'aria-busy': viewer.state.status()=='loading'}">
     <section id="vivliostyle-welcome" hidden data-bind="visible: !viewer.state.status(), attr: {hidden: viewer.state.status()?'':false, 'aria-hidden': viewer.state.status()?'true':'false', lang: t('UI_LNG')}, click: navigation.onclickViewport, swipePages: true">
-      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.30.1)</small></h1>
+      <h1>Vivliostyle Viewer <small>(version:&nbsp;2.30.2)</small></h1>
       <input id="vivliostyle-input-url" type="text" data-bind="textInput: viewer.inputUrl, attr: {placeholder: t('Input_')}"/>
       <div id="vivliostyle-input-options">
         <label data-bind="hidden: settingsPanel.isBookModeChangeDisabled"><input id="vivliostyle-book-mode" type="checkbox" data-bind="checked: settingsPanel.state.bookMode" />&nbsp;<b data-bind="text: t('Book_Mode')"></b>&emsp;</label>
@@ -88,7 +85,7 @@
         <li><a data-bind="attr: {href: t('HREF_User_Guide')}, text: t('Vivliostyle_User_Guide')"></a></li>
       </ul>
       <p><a href="https://vivliostyle.org" data-bind="attr: {href: t('HREF_Vivlistyle_Home')}"><img src="resources/vivliostyle-logo.svg" alt="Vivliostyle"/></a></p>
-      <div data-bind="visible: location.hostname.includes('vercel')"><br/><a href="https://vercel.com/?utm_source=vivliostyle&amp;utm_campaign=oss"><img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Powered By Vercel"></a></div>
+      <div data-bind="visible: location.hostname.includes('vercel')"><br/><a href="https://vercel.com/?utm_source=vivliostyle&amp;utm_campaign=oss" style="color: black; text-decoration: none; font-size: 18px;">▲ Powered by <b>Vercel</b></a></div>
     </section>
     <div id="vivliostyle-viewer-viewport" data-vivliostyle-viewer-viewport="true" role="main" tabindex="0" data-bind="attr: {'data-vivliostyle-page-progression': viewer.state.pageProgression}, click: navigation.onclickViewport, swipePages: true, textSelection: true, event: {'wheel': navigation.onwheelViewport}"></div>
     <span role="button" id="vivliostyle-page-navigation-left" aria-keyshortcuts="ArrowLeft" data-bind="click: navigation.navigateToLeft, css: {'vivliostyle-menu-enabled': !navigation.isNavigateToLeftDisabled()}, attr: {'aria-disabled': navigation.isNavigateToLeftDisabled, title: t('navigate_to_left')}"></span>
@@ -299,7 +296,7 @@
             </div>
             <aside class="vivliostyle-menu-detail-aside">
               <div><small>Powered by</small> <a href="https://vivliostyle.org"><strong>Vivliostyle</strong></a> </div>
-              <div class="version"><small>(<span>core+viewer: 2.30.1</span>)</small></div>
+              <div class="version"><small>(<span>core+viewer: 2.30.2</span>)</small></div>
             </aside>
           </div>
         </li>
