@@ -17,7 +17,7 @@ viewer:
       fixed: /assets/projects/screenshot-viewer-fixed.png
 cli:
   name: Vivliostyle CLI
-  version: v8.13.0
+  version: v8.14.0
   github: https://github.com/vivliostyle/vivliostyle-cli
   thumbnail: /assets/projects/thumbnail-cli.png
   screenshot: /assets/projects/screenshot-cli.png
