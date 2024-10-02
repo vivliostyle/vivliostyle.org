@@ -88,7 +88,6 @@ Vivliostyle open source development relies on volunteer staff. To continue devel
 
 <ol class="list--medium">
   {% include button/primary.html url=site.data.account.github_sponsor.url text="Become a sponsor via Github" %}
-  {% include button/primary.html url="/sponsors" text="Donate by credit card payment" %}
 </ol>
 
 {% include sponsors.html %}

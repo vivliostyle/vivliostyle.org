@@ -91,7 +91,6 @@ Vivliostyle はボランティア・スタッフに支えられたオープン�
 
 <ol class="list--medium">
   {% include button/primary.html url=site.data.account.github_sponsor.url text="GitHub スポンサーに応募する" %}
-  {% include button/primary.html url="/ja/sponsors" text="クレジットカード決済で寄付する" %}
 </ol>
 
 {% include sponsors.html %}
