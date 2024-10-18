@@ -33,6 +33,7 @@
             - name: hidaruma
             - name: udon-a
             - name: ryoutakano
+            - name: lostandfound
     - name: Fan Sponsors
       tier:
         - badge: 🌟
@@ -43,7 +44,6 @@
             - name: vvakame
             - name: y-mikou
             - name: u1f992
-            - name: sarashino
             - name: yamahige
         - badge: ⭐️
           users:
@@ -59,6 +59,9 @@
           users:
             - name: youchan
             - name: azettl
+        - badge: 🌟
+          users:
+            - name: sarashino
         - badge: ⭐️
           users:
             - name: monaka
