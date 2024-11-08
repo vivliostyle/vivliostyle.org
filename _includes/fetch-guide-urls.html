@@ -16,7 +16,8 @@
   }
 
   function listTemplate(name, base_url) {
-    const anchor = name.toLowerCase().replace(/\s/g, "-").replace(/[()\/\.]/g, "");
+    const anchor = name.toLowerCase().replace(/\s/g, "-").replace(
+      base_url.startsWith("https://github.com/") ? /[()\/\.（）「」]/g : /[()\/\.]/g, "");
 
     return `
       <li>

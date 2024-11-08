@@ -9,7 +9,7 @@ lang: ja
 ## 📖 ユーザーガイド
 {% include fetch-guide-urls.html %}
 
-### Vivliostyle Viewer
+### [Vivliostyle Viewer](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer)
 <ul id="vivliostyle-viewer-list"></ul>
 {% include fetch-guide-url.html
   id="vivliostyle-viewer-list"
@@ -17,15 +17,65 @@ lang: ja
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/vivliostyle-viewer.md"
 %}
 
-### Vivliostyle CLI
-<ul id="vivliostyle-cli-list"></ul>
+### [Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/index.md)
+<ul>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/getting-started.md">はじめに</a>
+    <ul id="vivliostyle-cli-getting-started-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/themes-and-css.md">テーマと CSS</a>
+    <ul id="vivliostyle-cli-themes-and-css-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/using-config-file.md">構成ファイル</a>
+    <ul id="vivliostyle-cli-using-config-file-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/toc-page.md">目次の作成</a>
+    <ul id="vivliostyle-cli-toc-page-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/cover-page.md">表紙ページの作成</a>
+    <ul id="vivliostyle-cli-cover-page-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/special-output-settings.md">特別な出力設定</a>
+    <ul id="vivliostyle-cli-special-output-settings-list"></ul>
+  </li>
+</ul>
 {% include fetch-guide-url.html
-  id="vivliostyle-cli-list"
-  url="https://docs.vivliostyle.org/#/ja/vivliostyle-cli"
-  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/vivliostyle-cli.md"
+  id="vivliostyle-cli-getting-started-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/getting-started.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/ja/getting-started.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-themes-and-css-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/themes-and-css.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/ja/themes-and-css.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-using-config-file-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/using-config-file.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/ja/using-config-file.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-toc-page-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/toc-page.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/ja/toc-page.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-cover-page-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/cover-page.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/ja/cover-page.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-special-output-settings-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/special-output-settings.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/ja/special-output-settings.md"
 %}
 
-### Create Book
+### [Create Book](https://docs.vivliostyle.org/#/ja/create-book)
 <ul id="create-book-list"></ul>
 {% include fetch-guide-url.html
   id="create-book-list"
@@ -33,21 +83,24 @@ lang: ja
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/create-book.md"
 %}
 
-### Vivliostyle Themes
+### [Vivliostyle Themes](https://vivliostyle.github.io/themes/#/ja/)
 <ul>
   <li><a href="https://vivliostyle.github.io/themes/#/ja/spec.md">仕様</a></li>
   <li><a href="https://vivliostyle.github.io/themes/#/ja/tutorial/step0.md">開発チュートリアル</a></li>
   <li><a href="https://vivliostyle.github.io/themes/#/ja/official.md">運用ガイドライン</a></li>
 </ul>
 
-### Vivliostyle Flavored Markdown (VFM)
+### [Vivliostyle Flavored Markdown (VFM)](https://vivliostyle.github.io/vfm/#/ja/vfm)
 <ul id="vfm-list"></ul>
 {% include fetch-guide-url.html
   id="vfm-list"
-  url="https://vivliostyle.github.io/vfm/#/vfm"
-  get_url="https://api.github.com/repos/vivliostyle/vfm/contents/docs/vfm.md"
+  url="https://vivliostyle.github.io/vfm/#/ja/vfm"
+  get_url="https://api.github.com/repos/vivliostyle/vfm/contents/docs/ja/vfm.md"
 %}
+{% endcapture %}
 
+
+{% capture contribution %}
 ## 🛠 コントリビューションガイド
 
 ### Vivliostyle.js
@@ -74,6 +127,9 @@ lang: ja
 
 - [サポートする CSS 機能](https://docs.vivliostyle.org/#/ja/supported-css-features)
 - [Core API リファレンス](https://docs.vivliostyle.org/#/ja/api)
+- Vivliostyle CLI API リファレンス
+  - [Config Reference](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/config.md)
+  - [JavaScript API](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/api-javascript.md)
 {% endcapture %}
 
 
@@ -111,6 +167,7 @@ Vivliostyle プロジェクトでは、開発方針などをSlack上で話し合
 
   guide=guide
   reference=reference
+  contribution=contribution
   plan=plan
   community=community
 %}
