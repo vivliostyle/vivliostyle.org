@@ -14,6 +14,12 @@
 
 <section class="section">
   <div class="container">
+    {{ include.contribution | markdownify }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     {{ include.plan | markdownify }}
 
     {{ include.community | markdownify }}

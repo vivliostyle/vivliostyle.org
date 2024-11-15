@@ -8,7 +8,7 @@ title: Documents
 ## 📖 User Guides
 {% include fetch-guide-urls.html %}
 
-### Vivliostyle Viewer
+### [Vivliostyle Viewer](https://docs.vivliostyle.org/#/vivliostyle-viewer)
 <ul id="vivliostyle-viewer-list"></ul>
 {% include fetch-guide-url.html
   id="vivliostyle-viewer-list"
@@ -16,15 +16,65 @@ title: Documents
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/vivliostyle-viewer.md"
 %}
 
-### Vivliostyle CLI
-<ul id="vivliostyle-cli-list"></ul>
+### [Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/index.md)
+<ul>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md">Getting Started</a>
+    <ul id="vivliostyle-cli-getting-started-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/themes-and-css.md">Themes and CSS</a>
+    <ul id="vivliostyle-cli-themes-and-css-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/using-config-file.md">Using Config File</a>
+    <ul id="vivliostyle-cli-using-config-file-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/toc-page.md">Creating Table of Contents Page</a>
+    <ul id="vivliostyle-cli-toc-page-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/cover-page.md">Creating Cover Page</a>
+    <ul id="vivliostyle-cli-cover-page-list"></ul>
+  </li>
+  <li>
+    <a href="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/special-output-settings.md">Special Output Settings</a>
+    <ul id="vivliostyle-cli-special-output-settings-list"></ul>
+  </li>
+</ul>
 {% include fetch-guide-url.html
-  id="vivliostyle-cli-list"
-  url="https://docs.vivliostyle.org/#/vivliostyle-cli"
-  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/vivliostyle-cli.md"
+  id="vivliostyle-cli-getting-started-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/getting-started.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-themes-and-css-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/themes-and-css.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/themes-and-css.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-using-config-file-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/using-config-file.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/using-config-file.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-toc-page-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/toc-page.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/toc-page.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-cover-page-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/cover-page.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/cover-page.md"
+%}
+{% include fetch-guide-url.html
+  id="vivliostyle-cli-special-output-settings-list"
+  url="https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/special-output-settings.md"
+  get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/special-output-settings.md"
 %}
 
-### Create Book
+### [Create Book](https://docs.vivliostyle.org/#/create-book)
 <ul id="create-book-list"></ul>
 {% include fetch-guide-url.html
   id="create-book-list"
@@ -32,21 +82,24 @@ title: Documents
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/create-book.md"
 %}
 
-### Vivliostyle Themes
+### [Vivliostyle Themes](https://vivliostyle.github.io/themes/#/)
 <ul>
   <li><a href="https://vivliostyle.github.io/themes/#/spec.md">Spec</a></li>
   <li><a href="https://vivliostyle.github.io/themes/#/tutorial/step0.md">Development Tutorial</a></li>
   <li><a href="https://vivliostyle.github.io/themes/#/official.md">Operational Guidelines</a></li>
 </ul>
 
-### Vivliostyle Flavored Markdown (VFM)
+### [Vivliostyle Flavored Markdown (VFM)](https://vivliostyle.github.io/vfm/#/vfm)
 <ul id="vfm-list"></ul>
 {% include fetch-guide-url.html
   id="vfm-list"
   url="https://vivliostyle.github.io/vfm/#/vfm"
   get_url="https://api.github.com/repos/vivliostyle/vfm/contents/docs/vfm.md"
 %}
+{% endcapture %}
 
+
+{% capture contribution %}
 ## 🛠 Contribution Guides
 
 ### Vivliostyle.js
@@ -73,6 +126,9 @@ title: Documents
 
 - [Supported CSS Features](https://docs.vivliostyle.org/#/supported-css-features)
 - [Core API Reference](https://docs.vivliostyle.org/#/api)
+- Vivliostyle CLI API Reference
+  - [Config Reference](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/config.md)
+  - [JavaScript API](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/api-javascript.md)
 {% endcapture %}
 
 
@@ -110,6 +166,7 @@ Vivliostyle project discusses development matters on Slack.
 
   guide=guide
   reference=reference
+  contribution=contribution
   plan=plan
   community=community
 %}
