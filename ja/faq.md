@@ -187,6 +187,8 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 👉[Vivliostyle CLI ドキュメント: テーマと CSS](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/themes-and-css.md) および [Vivliostyle CLI ドキュメント: 構成ファイル](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/using-config-file.md) をご覧ください。
 
+👉次も参照: [新しい Vivliostyle Themes のご紹介](https://vivliostyle.org/ja/blog/2023/04/23/intro-new-themes/)
+
 ## CSS組版のテクニックについてのFAQ
 
 ### 複数のHTMLファイルから本を作るには？

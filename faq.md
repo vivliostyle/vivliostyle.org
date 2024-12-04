@@ -187,6 +187,8 @@ You can use `vivliostyle build` command with the `--press-ready` option to outpu
 
 👉See [Vivliostyle CLI Documentation: Themes and CSS](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/themes-and-css.md) and [Vivliostyle CLI Documentation: Using Config File](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/using-config-file.md).
 
+👉See also: [Introduction of the new Vivliostyle Themes](https://vivliostyle.org/blog/2023/04/23/intro-new-themes/)
+
 ## CSS Typesetting Techniques FAQ
 
 ### How to make a book from multiple HTML files?
