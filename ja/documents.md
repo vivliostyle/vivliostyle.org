@@ -83,11 +83,15 @@ lang: ja
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/ja/create-book.md"
 %}
 
-### [Vivliostyle Themes](https://vivliostyle.github.io/themes/#/ja/)
+### [Vivliostyle Themes](https://github.com/vivliostyle/themes/blob/main/docs/ja/index.md)
 <ul>
-  <li><a href="https://vivliostyle.github.io/themes/#/ja/spec.md">仕様</a></li>
-  <li><a href="https://vivliostyle.github.io/themes/#/ja/tutorial/step0.md">開発チュートリアル</a></li>
-  <li><a href="https://vivliostyle.github.io/themes/#/ja/official.md">運用ガイドライン</a></li>
+  <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/ja/spec.md">仕様</a></li>
+  <li><strong>運用ガイドライン</strong>
+    <ul>
+      <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/ja/official.md">公式 Theme の採用</a></li>
+      <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/ja/gallery.md">Vivliostyle Themes ギャラリー</a></li>
+    </ul>
+  </li>
 </ul>
 
 ### [Vivliostyle Flavored Markdown (VFM)](https://vivliostyle.github.io/vfm/#/ja/vfm)

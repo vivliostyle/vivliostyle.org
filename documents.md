@@ -82,11 +82,15 @@ title: Documents
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/create-book.md"
 %}
 
-### [Vivliostyle Themes](https://vivliostyle.github.io/themes/#/)
+### [Vivliostyle Themes](https://github.com/vivliostyle/themes/blob/main/docs/index.md)
 <ul>
-  <li><a href="https://vivliostyle.github.io/themes/#/spec.md">Spec</a></li>
-  <li><a href="https://vivliostyle.github.io/themes/#/tutorial/step0.md">Development Tutorial</a></li>
-  <li><a href="https://vivliostyle.github.io/themes/#/official.md">Operational Guidelines</a></li>
+  <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/spec.md">Spec</a></li>
+  <li><strong>Operational Guidelines</strong>
+    <ul>
+      <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/official.md">Adoption of the Official Theme</a></li>
+      <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/gallery.md">Vivliostyle Themes Gallery</a></li>
+    </ul>
+  </li>
 </ul>
 
 ### [Vivliostyle Flavored Markdown (VFM)](https://vivliostyle.github.io/vfm/#/vfm)
