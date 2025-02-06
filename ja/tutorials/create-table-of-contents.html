@@ -24,8 +24,9 @@ Vivliostyle の機能を使って目次を自動で作成することができ�
 ```
 module.exports = {
   ...
-  toc: true,
-  tocTitle: '目次',
+  toc: {
+    title: '目次'
+  }
 }
 ```
 
@@ -35,7 +36,7 @@ module.exports = {
 npm run preview
 ```
 
-すると、PDF の1ページ目に目次が自動で追加されます。tocTitle の値を変更することで、目次ページのタイトルを自由に変更できます。
+すると、PDF の1ページ目に目次が自動で追加されます。`toc.title` の値を変更することで、目次ページのタイトルを自由に変更できます。
 
 ![](/assets/tutorials/ja/create-table-of-contents/preview-table-of-contents1.png)
 
