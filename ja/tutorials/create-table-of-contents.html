@@ -40,14 +40,26 @@ npm run preview
 
 ![](/assets/tutorials/ja/create-table-of-contents/preview-table-of-contents1.png)
 
-参照：[Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/#/ja/vivliostyle-cli#%E7%9B%AE%E6%AC%A1%E3%81%AE%E4%BD%9C%E6%88%90)
+
+### 原稿ファイルの各見出しを目次に表示したい場合
+
+目次には原稿ファイルへの参照以外にも、原稿ファイル内の見出しも含めることができます。そのようにしたい場合、`sectionDepth` に `1` から `6` の値（それぞれ `h1` から `h6` までのどのレベルを含めるか）を指定します。次の例では、`h1` から `h3` の見出しを目次に含めるようにしています。
+
+```
+  toc: {
+    title: '目次',
+    sectionDepth: 3,
+  }
+```
+
+参照：[Vivliostyle CLI ドキュメント](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/toc-page.md)
 
 
 ## 目次の手動作成
 
-Vivliostyle の機能を使って作られる目次には、現状、各原稿ファイルのタイトルしか表示できません。したがって、例えば原稿ファイルの各見出しを目次に表示したい場合は、手動で目次ファイルを作成する必要があります。
+手動で目次ファイルを作成する場合、以下の手順で行います。
 
-では、テキストエディタを開いて manuscripts/toc.md という名前の目次ファイルを作ってみましょう。role 属性の値 "doc-toc" は、[Digital Publishing WAI-ARIA](https://www.w3.org/TR/dpub-aria-1.0/) という仕様で定義されてます。Vivliostyle は、この属性のある要素（通常は nav）を目次として認識して、リンクされている HTML をまとめて一冊の本のように扱い、プレビュー画面の目次パネルのナビゲーションも有効にします。
+テキストエディタを開いて manuscripts/toc.md という名前の目次ファイルを作ってみましょう。role 属性の値 "doc-toc" は、[Digital Publishing WAI-ARIA](https://www.w3.org/TR/dpub-aria-1.0/) という仕様で定義されてます。Vivliostyle は、この属性のある要素（通常は nav）を目次として認識して、リンクされている HTML をまとめて一冊の本のように扱い、プレビュー画面の目次パネルのナビゲーションも有効にします。
 
 ```
 <nav id="toc" role="doc-toc">
