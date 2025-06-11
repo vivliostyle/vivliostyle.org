@@ -31,7 +31,6 @@
         - badge: 🌹
           users:
             - name: hidaruma
-            - name: udon-a
             - name: ryoutakano
             - name: lostandfound
     - name: Fan Sponsors
@@ -52,13 +51,13 @@
             - name: zonuexe
             - name: omasanori
             - name: monami-ya
-            - name: Atelier-Mirai
     - name: Past Sponsors
       tier:
         - badge: 🌹
           users:
             - name: youchan
             - name: azettl
+            - name: udon-a
         - badge: 🌟
           users:
             - name: sarashino
@@ -68,6 +67,7 @@
             - name: okuzawats
             - name: niszet
             - name: yuji-1980
+            - name: Atelier-Mirai
 - name: One-time Sponsors
   tier:
     - name: Bronze Sponsor
