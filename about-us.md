@@ -30,47 +30,13 @@ Our goal is to develop, publish and disseminate "Vivliostyle", an open source ty
 
 
 {% capture reports %}
-### [FY2024 Activity Report](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/en/reports/vivliostyle-report-2024)
-- [HTML](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report.html)
-- [View with Vivliostyle Viewer (Flexible page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report.html&bookMode=true)
-- [View with Vivliostyle Viewer (A4 page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A@page%20%7B%20size:%20A4;%20%7D%0A/*%3C/viewer%3E*/)
-- [PDF](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report-en.pdf)
-- [Japanese version: 一般社団法人ビブリオスタイル 2024年度事業報告書](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/reports/vivliostyle-report-2024/)
-
-### [FY2023 Activity Report](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/en/reports/vivliostyle-report-2023)
-- [HTML](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report.html)
-- [View with Vivliostyle Viewer (Flexible page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report.html&bookMode=true)
-- [View with Vivliostyle Viewer (A4 page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A@page%20%7B%20size:%20A4;%20%7D%0A/*%3C/viewer%3E*/)
-- [PDF](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report-en.pdf)
-- [Japanese version: 一般社団法人ビブリオスタイル 2023年度事業報告書](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/reports/vivliostyle-report-2023/)
-
-### [FY2022 Activity Report](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/en/reports/vivliostyle-report-2022)
-- [HTML](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report.html)
-- [View with Vivliostyle Viewer (Flexible page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report.html&bookMode=true)
-- [View with Vivliostyle Viewer (A4 page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A@page%20%7B%20size:%20A4;%20%7D%0A/*%3C/viewer%3E*/)
-- [PDF](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report-en.pdf)
-- [Japanese version: 一般社団法人ビブリオスタイル 2022年度事業報告書](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/reports/vivliostyle-report-2022/)
-
-### [FY2021 Activity Report](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/en/reports/vivliostyle-report-2021)
-- [HTML](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2021/vf2021report.html)
-- [View with Vivliostyle Viewer (Flexible page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2021/vf2021report.html&bookMode=true)
-- [View with Vivliostyle Viewer (A4 page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2021/vf2021report.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A@page%20%7B%20size:%20A4;%20%7D%0A/*%3C/viewer%3E*/)
-- [PDF](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2021/vf2021report-en.pdf)
-- [Japanese version: 一般社団法人ビブリオスタイル 2021年度事業報告書](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/reports/vivliostyle-report-2021/)
-
-### [FY2020 Activity Report](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/en/reports/vivliostyle-report-2020)
-- [HTML](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2020/vf2020report.html)
-- [View with Vivliostyle Viewer (Flexible page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2020/vf2020report.html&bookMode=true)
-- [View with Vivliostyle Viewer (A4 page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2020/vf2020report.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A@page%20%7B%20size:%20A4;%20%7D%0A/*%3C/viewer%3E*/)
-- [PDF](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2020/vf2020report-en.pdf)
-- [Japanese version: 一般社団法人ビブリオスタイル 2020年度事業報告書](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/reports/vivliostyle-report-2020/)
-
-### [FY2019 Activity Report](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/en/reports/vivliostyle-report-2019)
-- [HTML](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2019/vf2019report.html)
-- [View with Vivliostyle Viewer (Flexible page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2019/vf2019report.html&bookMode=true)
-- [View with Vivliostyle Viewer (A4 page size)](https://vivliostyle.org/viewer/#src=https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2019/vf2019report.html&bookMode=true&userStyle=data:,/*%3Cviewer%3E*/%0A@page%20%7B%20size:%20A4;%20%7D%0A/*%3C/viewer%3E*/)
-- [PDF](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2019/vf2019report-en.pdf)
-- [Japanese version: 一般社団法人ビブリオスタイル 2019年度事業報告書](https://github.com/vivliostyle/vivliostyle_doc/tree/gh-pages/ja/reports/vivliostyle-report-2019/)
+### Activity Reports
+- [FY2024 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report.html)
+- [FY2023 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report.html)
+- [FY2022 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report.html)
+- [FY2021 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2021/vf2021report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2021/vf2021report.html)
+- [FY2020 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2020/vf2020report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2020/vf2020report.html)
+- [FY2019 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2019/vf2019report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2019/vf2019report.html)
 {% endcapture %}
 
 
