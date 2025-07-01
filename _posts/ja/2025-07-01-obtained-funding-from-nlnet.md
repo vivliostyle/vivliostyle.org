@@ -1,11 +1,14 @@
 ---
 title: NLnetからの助成金を獲得
 lang: ja
-image: /assets/posts/2025-07-01-obtained-funding-from-nlnet/fig-1.jpeg
+image: /assets/posts/2025-07-01-obtained-funding-from-nlnet/fig-1.svg
 author: ogwata
 tags:
   - リリース
 ---
+
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2025-07-01-obtained-funding-from-nlnet/fig-1.svg" alt="NLnet" style="width: 500px;" /></div>
+
 
 ## はじめに
 
@@ -36,11 +39,9 @@ NLnetは、1982年にヨーロッパ初の広域ネットワークであったEU
 
 その後、1987年に非営利の独立した財団となり、1997年に商業インターネットプロバイダー事業を売却。その売却資金を使って、オープンなインターネットの発展を支援する公益団体として活動をつづけてきました。
 
-- [NLnet Foundation | History](https://nlnet.nl/foundation/history/)
+- [NLnet Foundation - History](https://nlnet.nl/foundation/history/)
 
-また、NGI0コモンズ基金は、欧州委員会の次世代インターネットイニシアチブの一環として設立され、インターネットの公共性向上のため、フリー・オープンソース技術プロジェクトに助成金を提供する基金です。
-
-そして、NGI0コモンズ基金を管理し、さまざまなオープンソースプロジェクトに配分する中心的な役割を担っているのがNLnet財団です。
+また、NGI0コモンズ基金は、欧州委員会の次世代インターネットイニシアチブの一環として設立され、インターネットの公共性向上のため、フリー・オープンソース技術プロジェクトに助成金を提供する基金です。このNGI0コモンズ基金を管理し、さまざまなオープンソースプロジェクトに配分する中心的な役割を担っているのがNLnet財団です。
 
 - [NGI0 Commons Fund](https://nlnet.nl/thema/NGI0CommonsFund.html)
 
