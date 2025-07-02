@@ -14,7 +14,7 @@ tags:
 
 2024年11月、私たちはNLnet財団（以下、同財団）による助成金「NGI0 コモンズ基金」に応募することにしました。同財団はオープンなインターネットの発展を支援する、オランダを拠点とする公益財団です。約半年の審査をへて2025年6月、とても幸運なことに私たちは採択通知を受け取ることができました。
 
-- [NGI0 コモンズ基金](https://nlnet.nl/commonsfund/)
+- [NGI Zero Commons Fund - Reclaim the public nature of the internet](https://nlnet.nl/commonsfund/)
 - [Vivliostyleプロジェクトページ](https://nlnet.nl/project/Vivliostyle/)
 
 ## 今回の助成が意味すること
