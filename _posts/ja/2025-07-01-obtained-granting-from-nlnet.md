@@ -21,23 +21,23 @@ tags:
 
 同財団の助成により、私たちは以下のような作業に集中することができます。
 
-- [Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)
+- **[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)**
   - 最新のCSS仕様のサポート
   - ページと列の区切り処理の改善
   - 脚注処理の改善
-- [Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub)
+- **[Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub)**
   - エディターでの簡易WYSIWYG表示
   - テーマの編集
-- [Vivliostyle CLI 他](https://github.com/vivliostyle/vivliostyle-cli)
+- **[Vivliostyle CLI 他](https://github.com/vivliostyle/vivliostyle-cli)**
   - Chromium 以外のブラウザへの対応
   - 組版サンプルとテーマの充実
-- [ドキュメントの改善と充実](https://github.com/vivliostyle/docs.vivliostyle.org)
+- **[ドキュメントの改善と充実](https://github.com/vivliostyle/docs.vivliostyle.org)**
 
 ## NLnet財団とNGI0 コモンズ基金
 
-1982年、オランダ、デンマーク、スウェーデン、イギリスのネットワークを接続するヨーロッパ初のインターネット網、EUnet（European Unix Network）が構築されました。このうちオランダ部分のネットワークを「NLnet」（NLはオランダの国名コード）と呼びました。その後NLnetの管理は、オランダのUNIXユーザーグループNLUUG（Netherland UNIX User Group）が担うことになります。
+1982年、オランダ、デンマーク、スウェーデン、イギリスのネットワークを接続するヨーロッパ初のインターネット網、EUnet（European Unix Network）が構築されました。このうちオランダ部分のネットワークを「NLnet」（NLはオランダの国名コード）と呼びました。その後NLnetの管理は、オランダのUNIXユーザーグループNLUUG（Netherlands UNIX User Group）が担うことになります。
 
-1989年、NLUUGは非営利のNLnet財団を設立し、さらに1994年、爆発的とも言えるインターネット網の拡大を背景に、同財団はインターネットサービスとバックボーンの提供に特化する商業インターネットプロバイダーNLnet Holding BVを設立、同社は順調に業績を伸ばします。
+1989年、NLUUGは非営利のNLnet財団を設立し、さらに1994年、爆発的とも言えるインターネット網の拡大を背景に、同財団はインターネットサービスとバックボーンの提供に特化した商業インターネットプロバイダーNLnet Holding BVを設立、同社は順調に業績を伸ばします。
 
 この後、1997年にNLnet Holding BVはUUnet（米国ワールドコムの子会社）と合併して同財団の手を離れます。これ以降、同財団はネットワーク研究、開発、そしてオープンソースソフトウェアの普及を支援する公益団体として精力的な活動をつづけています。
 
