@@ -23,7 +23,7 @@ tags:
 
 - **[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)**
   - 最新のCSS仕様のサポート
-  - ページと列の区切り処理の改善
+  - ページと段の区切り処理の改善
   - 脚注処理の改善
 - **[Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub)**
   - エディターでの簡易WYSIWYG表示
