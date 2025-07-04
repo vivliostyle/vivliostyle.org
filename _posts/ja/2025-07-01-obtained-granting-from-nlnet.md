@@ -42,7 +42,6 @@ tags:
 この後、1997年にNLnet Holding BVはUUnet（米国ワールドコムの子会社）と合併して同財団の手を離れます。これ以降、同財団はオープンインターネットとインターネットユーザーのプライバシーやセキュリティを支援する公益団体として精力的な活動をつづけています。
 
 - [NLnet Foundation - History](https://nlnet.nl/foundation/history/)
-- [A Second Start for the NLnet Foundation: Short Term Plans](https://nlnet.nl/foundation/history/199806-usenix.html)
 
 一方、NGI0コモンズ基金は欧州委員会の[次世代インターネット・イニシアチブ](https://digital-strategy.ec.europa.eu/en/policies/next-generation-internet-initiative)の一環として設立された助成金プログラムです。この基金の目的は、インターネットの公共性、プライバシー、セキュリティを向上させるためのオープンソース技術プロジェクトの支援であり、その運営と資金配分を担当しているのが同財団です。
 
