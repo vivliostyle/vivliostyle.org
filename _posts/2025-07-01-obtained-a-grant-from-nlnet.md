@@ -35,7 +35,7 @@ This grant from the Foundation allows us to focus on the following tasks:
 
 ## About the NLnet Foundation and the NGI0 Commons Fund
 
-In 1982, EUnet (European Unix Network), Europe's first communications network interconnecting networks in the Netherlands, Denmark, Sweden, and the United Kingdom, was established. The Dutch part of this network was called “NLnet.” Subsequently, the management of NLnet was taken over by the NLUUG (Netherlands UNIX User Group).
+In 1982, EUnet (European Unix Network), Europe’s first communications network interconnecting networks in the Netherlands, Denmark, Sweden, and the United Kingdom, was established. The Dutch part of this network was called “NLnet.” Subsequently, the management of NLnet was taken over by the NLUUG (Netherlands UNIX User Group).
 
 In 1989, NLUUG established the non-profit NLnet Foundation. Then in 1994, against the backdrop of the explosive growth of the internet, the Foundation established NLnet Holding BV, a commercial internet provider specializing in internet services and backbone provision, and the company grew steadily.
 
@@ -43,10 +43,10 @@ Later, in 1997, NLnet Holding BV merged with UUNET (a subsidiary of the US compa
 
 - [NLnet Foundation - History](https://nlnet.nl/foundation/history/)
 
-Meanwhile, the NGI0 Commons Fund is a grant program established as part of the European Commission's [Next Generation Internet initiative](https://digital-strategy.ec.europa.eu/en/policies/next-generation-internet-initiative). The fund's objective is to support open-source technology projects that enhance the public nature, privacy, and security of the internet, and the Foundation is responsible for its administration and funding allocation.
+Meanwhile, the NGI0 Commons Fund is a grant program established as part of the European Commission’s [Next Generation Internet initiative](https://digital-strategy.ec.europa.eu/en/policies/next-generation-internet-initiative). The fund’s objective is to support open-source technology projects that enhance the public nature, privacy, and security of the internet, and the Foundation is responsible for its administration and funding allocation.
 
 - [NGI Zero Commons Fund](https://nlnet.nl/thema/NGI0CommonsFund.html)
 
 We are deeply honored to receive a grant from the NGI0 Commons Fund, which is funded by the European Commission—the executive branch of the European Union (EU)—and administered by a foundation that has supported the internet and open source since their inception.
 
-This has renewed our determination to contribute more than ever to internet standards and the open-source community. Please continue to follow and support Vivliostyle's activities.
+This has renewed our determination to contribute more than ever to internet standards and the open-source community. Please continue to follow and support Vivliostyle’s activities.
