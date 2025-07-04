@@ -1,13 +1,13 @@
 ---
 title: NLnetからの助成金を獲得
 lang: ja
-image: /assets/posts/2025-07-01-obtained-funding-from-nlnet/fig-1.svg
+image: /assets/posts/2025-07-01-obtained-a-grant-from-nlnet/fig-1.svg
 author: ogwata
 tags:
   - リリース
 ---
 
-<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2025-07-01-obtained-funding-from-nlnet/fig-1.svg" alt="NLnet" style="width: 500px;" /></div>
+<div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2025-07-01-obtained-a-grant-from-nlnet/fig-1.svg" alt="NLnet" style="width: 500px;" /></div>
 
 
 ## はじめに
