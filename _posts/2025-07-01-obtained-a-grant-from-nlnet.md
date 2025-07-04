@@ -1,5 +1,5 @@
 ---
-title: Obtained a grant from nlnet
+title: Obtained a grant from NLnet
 lang: en
 image: /assets/posts/2025-07-01-obtained-a-grant-from-nlnet/fig-1.svg
 author: ogwata
