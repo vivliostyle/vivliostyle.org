@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-In November 2024, we decided to apply for the "NGI0 Commons Fund," a grant from the NLnet Foundation. The Foundation is a public benefit organization based in the Netherlands that supports organizations and individuals who contribute to achieving an open information society. After a review process of about half a year, we were very fortunate to receive an acceptance notice in June 2025.
+In November 2024, we decided to apply for the “NGI0 Commons Fund,” a grant from the NLnet Foundation. The Foundation is a public benefit organization based in the Netherlands that supports organizations and individuals who contribute to achieving an open information society. After a review process of about half a year, we were very fortunate to receive an acceptance notice in June 2025.
 
 - [NGI Zero Commons Fund - Reclaim the public nature of the internet](https://nlnet.nl/commonsfund/)
 - [Vivliostyle Project Page](https://nlnet.nl/project/Vivliostyle/)
@@ -35,7 +35,7 @@ This grant from the Foundation allows us to focus on the following tasks:
 
 ## About the NLnet Foundation and the NGI0 Commons Fund
 
-In 1982, EUnet (European Unix Network), Europe's first communications network interconnecting networks in the Netherlands, Denmark, Sweden, and the United Kingdom, was established. The Dutch part of this network was called "NLnet." Subsequently, the management of NLnet was taken over by the NLUUG (Netherlands UNIX User Group).
+In 1982, EUnet (European Unix Network), Europe's first communications network interconnecting networks in the Netherlands, Denmark, Sweden, and the United Kingdom, was established. The Dutch part of this network was called “NLnet.” Subsequently, the management of NLnet was taken over by the NLUUG (Netherlands UNIX User Group).
 
 In 1989, NLUUG established the non-profit NLnet Foundation. Then in 1994, against the backdrop of the explosive growth of the internet, the Foundation established NLnet Holding BV, a commercial internet provider specializing in internet services and backbone provision, and the company grew steadily.
 
