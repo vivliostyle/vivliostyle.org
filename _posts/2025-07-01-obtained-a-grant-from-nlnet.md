@@ -1,6 +1,6 @@
 ---
-title: NLnetからの助成金を獲得
-lang: ja
+title:Obtained a grant from nlnet
+lang: en
 image: /assets/posts/2025-07-01-obtained-a-grant-from-nlnet/fig-1.svg
 author: ogwata
 tags:
@@ -10,43 +10,43 @@ tags:
 <div style="float: right; margin: 0 0 1em 1em;"><img src="/assets/posts/2025-07-01-obtained-a-grant-from-nlnet/fig-1.svg" alt="NLnet" style="width: 500px;" /></div>
 
 
-## はじめに
+## Introduction
 
-2024年11月、私たちはNLnet財団（以下、同財団）による助成金「NGI0コモンズ基金」に応募することにしました。同財団はオープンな情報社会の実現に貢献する組織や個人を支援する、オランダを拠点とする公益団体です。約半年の審査をへて2025年6月、とても幸運なことに私たちは採択通知を受け取ることができました。
+In November 2024, we decided to apply for the "NGI0 Commons Fund," a grant from the NLnet Foundation. The Foundation is a public benefit organization based in the Netherlands that supports organizations and individuals who contribute to achieving an open information society. After a review process of about half a year, we were very fortunate to receive an acceptance notice in June 2025.
 
 - [NGI Zero Commons Fund - Reclaim the public nature of the internet](https://nlnet.nl/commonsfund/)
-- [Vivliostyleプロジェクトページ](https://nlnet.nl/project/Vivliostyle/)
+- [Vivliostyle Project Page](https://nlnet.nl/project/Vivliostyle/)
 
-## 今回の助成が意味すること
+## What This Grant Means for Us
 
-同財団の助成により、私たちは以下のような作業に集中することができます。
+This grant from the Foundation allows us to focus on the following tasks:
 
 - **[Vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)**
-  - 最新のCSS仕様のサポート
-  - ページと段の区切り処理の改善
-  - 脚注処理の改善
+  - Support for the latest CSS specifications
+  - Improved page and column break handling
+  - Improved footnote handling
 - **[Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle-pub)**
-  - エディターでの簡易WYSIWYG表示
-  - テーマの編集
-- **[Vivliostyle CLI 他](https://github.com/vivliostyle/vivliostyle-cli)**
-  - Chromium 以外のブラウザへの対応
-  - 組版サンプルとテーマの充実
-- **[ドキュメントの改善と充実](https://github.com/vivliostyle/docs.vivliostyle.org)**
+  - Simple WYSIWYG display in the editor
+  - Theme editing
+- **[Vivliostyle CLI & others](https://github.com/vivliostyle/vivliostyle-cli)**
+  - Support for browsers other than Chromium
+  - Enhancing typesetting samples and themes
+- **[Improving and enhancing documentation](https://github.com/vivliostyle/docs.vivliostyle.org)**
 
-## NLnet財団とNGI0コモンズ基金
+## About the NLnet Foundation and the NGI0 Commons Fund
 
-1982年、オランダ、デンマーク、スウェーデン、イギリスのネットワークを相互接続するヨーロッパ初の通信網、EUnet（European Unix Network）が開設されました。このうちオランダ部分のネットワークを「NLnet」と呼びました。その後NLnetの管理は、オランダのUNIXユーザーグループNLUUG（Netherlands UNIX User Group）が担うことになります。
+In 1982, EUnet (European Unix Network), Europe's first communications network interconnecting networks in the Netherlands, Denmark, Sweden, and the United Kingdom, was established. The Dutch part of this network was called "NLnet." Subsequently, the management of NLnet was taken over by the NLUUG (Netherlands UNIX User Group).
 
-1989年、NLUUGは非営利のNLnet財団を設立し、さらに1994年、同財団は爆発的とも言えるインターネット網の拡大を背景に、インターネットサービスとバックボーンの提供に特化した商業インターネットプロバイダーNLnet Holding BVを設立し、同社は順調に業績を伸ばしていきます。
+In 1989, NLUUG established the non-profit NLnet Foundation. Then in 1994, against the backdrop of the explosive growth of the internet, the Foundation established NLnet Holding BV, a commercial internet provider specializing in internet services and backbone provision, and the company grew steadily.
 
-この後、1997年にNLnet Holding BVはUUnet（米国ワールドコムの子会社）と合併して同財団の手を離れます。これ以降、同財団はオープンソースソフトウェアの普及やインターネットユーザーのプライバシーやセキュリティを支援する公益団体として精力的な活動をつづけています。
+Later, in 1997, NLnet Holding BV merged with UUNET (a subsidiary of the US company WorldCom) and became independent of the Foundation. Since then, the Foundation has been actively working as a public benefit organization supporting the dissemination of open-source software and the privacy and security of internet users.
 
 - [NLnet Foundation - History](https://nlnet.nl/foundation/history/)
 
-一方、NGI0コモンズ基金は欧州委員会の[次世代インターネット・イニシアチブ](https://digital-strategy.ec.europa.eu/en/policies/next-generation-internet-initiative)の一環として設立された助成金プログラムです。この基金の目的は、インターネットの公共性、プライバシー、セキュリティを向上させるためのオープンソース技術プロジェクトの支援であり、その運営と資金配分を担当しているのが同財団です。
+Meanwhile, the NGI0 Commons Fund is a grant program established as part of the European Commission's [Next Generation Internet initiative](https://digital-strategy.ec.europa.eu/en/policies/next-generation-internet-initiative). The fund's objective is to support open-source technology projects that enhance the public nature, privacy, and security of the internet, and the Foundation is responsible for its administration and funding allocation.
 
 - [NGI Zero Commons Fund](https://nlnet.nl/thema/NGI0CommonsFund.html)
 
-このように、黎明期からインターネット及びオープンソースをサポートしてきた同財団、そして欧州連合（EU）の行政を担う欧州委員会が出資するNGI0コモンズ基金から助成を得たことを、私たちはとても名誉に感じています。
+We are deeply honored to receive a grant from the NGI0 Commons Fund, which is funded by the European Commission—the executive branch of the European Union (EU)—and administered by a foundation that has supported the internet and open source since their inception.
 
-私たちは、これまで以上にインターネット標準やオープンソースコミュニティに寄与していかなければならない、そのように決意を新たにしているところです。どうかこれからもVivliostyleの活動を見守ってください。
+This has renewed our determination to contribute more than ever to internet standards and the open-source community. Please continue to follow and support Vivliostyle's activities.
