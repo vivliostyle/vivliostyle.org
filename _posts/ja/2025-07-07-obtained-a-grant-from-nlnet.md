@@ -1,5 +1,6 @@
 ---
 title: NLnetからの助成金を獲得
+date: 2025-07-07
 lang: ja
 image: /assets/posts/2025-07-01-obtained-a-grant-from-nlnet/fig-1.svg
 author: ogwata
