@@ -39,7 +39,7 @@ In 1982, EUnet (European Unix Network), Europe’s first communications network 
 
 In 1989, NLUUG established the non-profit NLnet Foundation. Then in 1994, against the backdrop of the explosive growth of the internet, the Foundation established NLnet Holding BV, a commercial internet provider specializing in internet services and backbone provision, and the company grew steadily.
 
-Later, in 1997, NLnet Holding BV merged with UUNET (a subsidiary of the US company WorldCom) and became independent of the Foundation. Since then, the Foundation has been actively working as a public benefit organization supporting the dissemination of open-source software and the privacy and security of internet users.
+Later, in 1997, NLnet Holding BV was sold to UUNET (a subsidiary of the US company WorldCom) and left the Foundation's hands. Since then, the Foundation has been actively working as a public benefit organization supporting the dissemination of open-source software and the privacy and security of internet users.
 
 - [NLnet Foundation - History](https://nlnet.nl/foundation/history/)
 
