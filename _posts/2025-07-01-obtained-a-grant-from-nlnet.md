@@ -15,7 +15,7 @@ tags:
 In November 2024, we decided to apply for the “NGI0 Commons Fund,” a grant from the NLnet Foundation. The Foundation is a public benefit organization based in the Netherlands that supports organizations and individuals who contribute to achieving an open information society. After a review process of about half a year, we were very fortunate to receive an acceptance notice in June 2025.
 
 - [NGI Zero Commons Fund - Reclaim the public nature of the internet](https://nlnet.nl/commonsfund/)
-- [Vivliostyle Project Page](https://nlnet.nl/project/Vivliostyle/)
+- [NLnet > Projects > Vivliostyle](https://nlnet.nl/project/Vivliostyle/)
 
 ## What This Grant Means for Us
 
