@@ -112,7 +112,9 @@ Vivliostyle CLI について詳しくは [Vivliostyle CLI ユーザーガイド]
 
 - インストール不要でVivliostyleが使えるWebアプリです。
 - 左ペインでテキスト / Markdown / HTML を入力・編集すると、右ペインで組版結果がプレビューできます。
-- ただ今アルファ版を公開予定中。詳細は[こちらから](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/)
+- 2025年から[新しいVivliostyle Pub](https://github.com/vivliostyle/vivliostyle.pub)の開発が進められています。次のURLで新しいAlpha版を試すことができます。
+  - <https://alpha.vivliostyle.pub/>
+- 旧アルファ版については、[Vivliostyle Pub α版ユーザーガイド](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/)を参照してください。
 
 ![]({{ site.data.project.pub.screenshot }})
 

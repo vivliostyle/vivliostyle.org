@@ -111,11 +111,13 @@ For more information about Vivliostyle CLI, see [Vivliostyle CLI User Guide](htt
 
 <!-- pub -->
 {% capture pub %}
-<h2 id="vivliostyle-pub">Vivliostyle Pub <small>(Alpha version to be released in April 2022)</small> <span class="tip">{{ site.data.project.pub.version }}</span></h2>
+<h2 id="vivliostyle-pub">Vivliostyle Pub <span class="tip">{{ site.data.project.pub.version }}</span></h2>
 
 - This is a web application that allows you to use Vivliostyle without installation.
-- You can enter and edit text / Markdown / HTML in the left pane and preview the typesetting result in the right pane.
-- An alpha version is now available. [Click here](https://vivliostyle.github.io/docs-vivliostyle-pub/#/) for more information (Sorry, still only in Japanese).
+- You can edit text / Markdown / HTML in the left pane and preview the typesetting result in the right pane.
+- From 2025, the [new Vivliostyle Pub](https://github.com/vivliostyle/vivliostyle.pub) is being developed. You can try the new Alpha version at the following URL:
+  - <https://alpha.vivliostyle.pub/>
+- For the old Alpha version, you can find information at [Vivliostyle Pub α Version User Guide](https://vivliostyle.github.io/docs-vivliostyle-pub/).
 
 ![]({{ site.data.project.pub.screenshot }})
 
