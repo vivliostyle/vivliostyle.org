@@ -41,7 +41,7 @@ npm install -g @vivliostyle/cli
 vivliostyle create
 
 # 以下でも同様にcreateコマンドが実行可能
-`npm create book@latest`
+npm create book@latest
 ```
 
 コマンドを実行すると、英語による対話形式でいくつかの質問が表示されます。それらに答えていけば、必要なファイル一式が揃ったディレクトリが自動生成されます。
