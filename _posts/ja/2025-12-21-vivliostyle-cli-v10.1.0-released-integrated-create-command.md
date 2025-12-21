@@ -39,8 +39,10 @@ npm install -g @vivliostyle/cli
 
 # その後、createコマンドを実行
 vivliostyle create
+```
+また、以下ではVivliostyle CLIをインストールせず`create`コマンドが実行可能です。
 
-# 以下でも同様にcreateコマンドが実行可能
+```
 npm create book@latest
 ```
 
@@ -70,11 +72,6 @@ module.exports = {
   // ...
 };
 ```
-
-これにより、「いつの間にかブラウザがアップデートされて、出力されるPDFの見た目が変わってしまった」という事故を防ぎ、長期間にわたって安定した出版フローを維持することが可能になります。
-
-また、Chrome/ChromiumのほかにFirefoxが選択可能になりました。レンダリング結果の違いを比較したい場合や、特定のブラウザ固有のCSS機能を使いたい場合にも、より柔軟に対応できるようになりました。
-
 
 ## 3. v10におけるその他の改善
 
