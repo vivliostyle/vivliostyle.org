@@ -66,7 +66,7 @@ Vivliostyle CLIの核心機能である「PDF出力」。
 // vivliostyle.config.js の例
 module.exports = {
   // ...
-  browser: 'chrome@114.0.5735.90', // 特定のバージョンを固定
+  browser: 'chrome@143.0.7499.42', // 特定のバージョンを固定
   // ...
 };
 ```
