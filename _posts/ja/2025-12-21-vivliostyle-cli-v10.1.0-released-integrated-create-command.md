@@ -1,5 +1,5 @@
 ---
-title: Vivliostyle CLI v10.1.0 リリース！ createコマンド統合で本作りがよりスムーズに
+title: Vivliostyle CLI v10リリース！ createコマンド統合で本作りがよりスムーズに
 date: 2025-12-21
 lang: ja
 image: /assets/posts/2025-12-21-vivliostyle-cli-v10.1.0-released-integrated-create-command/vivliostyle-cli_v10.png
@@ -76,7 +76,7 @@ module.exports = {
 また、Chrome/ChromiumのほかにFirefoxが選択可能になりました。レンダリング結果の違いを比較したい場合や、特定のブラウザ固有のCSS機能を使いたい場合にも、より柔軟に対応できるようになりました。
 
 
-## 3. v10.0におけるその他の改善
+## 3. v10におけるその他の改善
 
 v10.0のリリース後、開発チームはユーザーからのフィードバックを元に細かなバグ修正と機能改善を行ってきました。そして今回リリースされた**v10.1.0**は、それらの修正を含んだ「安定版（Stable）」となります。
 
@@ -114,6 +114,6 @@ npm install -g @vivliostyle/cli
 * **変更履歴:** [vivliostyle-cli/CHANGELOG.md](https://github.com/vivliostyle/vivliostyle-cli/blob/main/CHANGELOG.md)
 
 Vivliostyleは、「書く」と「出版する」の距離を近づけるために、これからも進化を続けていきます。
-v10.1.0を使って、あなたがどんな素晴らしい本を作り出すのか、私たちは楽しみにしています。
+v10を使って、あなたがどんな素晴らしい本を作り出すのか、私たちは楽しみにしています。
 
 Happy Typesetting!
