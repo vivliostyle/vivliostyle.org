@@ -11,7 +11,9 @@ excerpt: "open source, web browser based CSS typesetting engine project"
 ## 新着情報・ブログ
 
 {% assign show_count = 3 %}
+{% assign pickups = site.data.whatsnew.pickups.ja | limit: show_count %}
 {% assign posts = site.posts | where: "lang", page.lang | slice: 0, show_count %}
+{% include post-list-horizontal.html posts=pickups feature=site.data.whatsnew.feature.ja %}
 {% include post-list-horizontal.html posts=posts feature=site.data.whatsnew.feature.ja %}
 
 <ol class="list--medium">
