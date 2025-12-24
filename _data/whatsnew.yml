@@ -3,16 +3,16 @@ feature:
   ja: 特集ページ
 pickups:
   en:
-    - title: Let's self-publish with Create Book!
-      url: /make-books-with-create-book/
-      image: /assets/misc/make_books_with_create_book/create_book.jpg
+#    - title: Let's self-publish with Create Book!
+#      url: /make-books-with-create-book/
+#      image: /assets/misc/make_books_with_create_book/create_book.jpg
   ja:
-    - title: 「講師に教わりながら、Vivliostyleで本を作る！」ハンズオンを開催予定！
-      url: /ja/hands-on/1
-      image: /assets/misc/hands_on/announce1st.jpg
-    - title: 「Create Book で同人誌を作ろう！」公開中！
-      url: /ja/make-books-with-create-book/
-      image: /assets/misc/make_books_with_create_book/create_book.jpg
-    - title: 「Vivliostyle で本を作ろう！」公開中！
-      url: /ja/make-books-with-vivliostyle/
-      image: /assets/samples/vug-vol6.png
+#    - title: 「講師に教わりながら、Vivliostyleで本を作る！」ハンズオンを開催予定！
+#      url: /ja/hands-on/1
+#      image: /assets/misc/hands_on/announce1st.jpg
+#    - title: 「Create Book で同人誌を作ろう！」公開中！
+#      url: /ja/make-books-with-create-book/
+#      image: /assets/misc/make_books_with_create_book/create_book.jpg
+#    - title: 「Vivliostyle で本を作ろう！」公開中！
+#      url: /ja/make-books-with-vivliostyle/
+#      image: /assets/samples/vug-vol6.png
