@@ -396,9 +396,74 @@ Vivliostyle Pub のライセンスは [Apache License 2.0](https://github.com/vi
 
 {% endcapture %}
 
+
+{% capture developer %}
+## 開発者向けFAQ
+
+### Vivliostyleプロジェクト全体のCopilotの設定を確認する方法は？
+
+Vivliostyleプロジェクトの貢献者として、GitHub Copilotの設定を確認したい場合、以下の方法があります：
+
+#### 1. 組織レベルのCopilot設定を確認する
+
+Vivliostyle組織のGitHubでの設定：
+
+1. GitHubの[Vivliostyle組織ページ](https://github.com/vivliostyle)にアクセス
+2. 適切な権限がある場合、**Settings**（設定） > **Copilot** に移動
+3. 以下の情報を確認できます：
+   - 組織でCopilotが有効になっているか
+   - どのリポジトリがアクセスできるか
+   - Copilot使用のポリシー設定
+
+注：組織レベルの設定を表示するには、オーナーまたは管理者の権限が必要です。
+
+#### 2. リポジトリ固有のCopilot設定を確認する
+
+個別のVivliostyleリポジトリの場合：
+
+1. 特定のリポジトリにアクセス（例：[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)）
+2. **Settings**（設定） > **Copilot** に移動（管理者アクセスが必要）
+3. リポジトリ固有のCopilot設定があるか確認
+
+#### 3. 個人のCopilotアクセスを確認する
+
+Vivliostyleリポジトリに対してCopilotが有効になっているか確認する：
+
+1. [GitHub Copilotの設定](https://github.com/settings/copilot)にアクセス
+2. アカウントでCopilotが有効になっているか確認
+3. Copilotが利用可能な組織/リポジトリのリストを確認
+
+#### 4. GitHub APIを使用する
+
+GitHub APIを使用してプログラム的にCopilot設定を確認することもできます：
+
+```bash
+# 組織のCopilot設定を確認（認証が必要）
+gh api /orgs/vivliostyle/copilot/billing
+
+# 自分のCopilotサブスクリプションを確認
+gh api /user/copilot_seat_details
+```
+
+注：APIアクセスには適切な認証と権限が必要です。
+
+#### 5. Copilot設定ファイルを確認する
+
+一部のプロジェクトにはCopilot関連の設定ファイルがある場合があります：
+
+- `.github/copilot-instructions.md` - Copilot用のカスタム指示
+- `.copilot/` ディレクトリ - Copilot固有の設定
+
+これらがリポジトリに存在するかどうかは、`.github`ディレクトリを確認することで分かります。
+
+Copilotの設定やアクセスに関する質問がある場合は、[コミュニティ](/ja/community)チャンネルを通じて、またはリポジトリのメンテナーに連絡してください。
+{% endcapture %}
+
+
 {% include page/faq.html
   title="FAQ"
   lead="よくある質問とその回答をまとめました。これからも拡充していきます。質問があれば[こちら](/ja/community)まで！"
 
   license=license
+  developer=developer
 %}

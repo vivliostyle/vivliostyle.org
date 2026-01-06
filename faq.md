@@ -388,9 +388,73 @@ This is just one of the possibilities for the future, and it doesn't necessarily
 {% endcapture %}
 
 
+{% capture developer %}
+## Developer FAQ
+
+### How to check GitHub Copilot settings for the Vivliostyle project?
+
+If you are a contributor to the Vivliostyle project and want to check the GitHub Copilot settings, you can follow these methods:
+
+#### 1. Check Organization-level Copilot Settings
+
+For the Vivliostyle organization on GitHub:
+
+1. Go to the [Vivliostyle organization page](https://github.com/vivliostyle) on GitHub
+2. If you have appropriate permissions, navigate to **Settings** > **Copilot**
+3. Here you can see:
+   - Whether Copilot is enabled for the organization
+   - Which repositories have access
+   - Policy settings for Copilot usage
+
+Note: Organization-level settings require owner or admin permissions to view.
+
+#### 2. Check Repository-specific Copilot Settings
+
+For individual Vivliostyle repositories:
+
+1. Go to the specific repository (e.g., [vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js))
+2. Navigate to **Settings** > **Copilot** (requires admin access)
+3. Check if there are any repository-specific Copilot configurations
+
+#### 3. Check Your Personal Copilot Access
+
+To verify if you have Copilot enabled for Vivliostyle repositories:
+
+1. Go to your [GitHub Copilot settings](https://github.com/settings/copilot)
+2. Check if Copilot is enabled for your account
+3. Review the list of organizations/repositories where Copilot is available to you
+
+#### 4. Using the GitHub API
+
+You can also check Copilot settings programmatically using the GitHub API:
+
+```bash
+# Check organization Copilot settings (requires authentication)
+gh api /orgs/vivliostyle/copilot/billing
+
+# Check your Copilot subscription
+gh api /user/copilot_seat_details
+```
+
+Note: API access requires appropriate authentication and permissions.
+
+#### 5. Check Copilot Configuration Files
+
+Some projects may have Copilot-related configuration files:
+
+- `.github/copilot-instructions.md` - Custom instructions for Copilot
+- `.copilot/` directory - Copilot-specific configurations
+
+You can check if these exist in the repository by browsing the `.github` directory.
+
+For questions about Copilot settings or access issues, please reach out through the [Community](/community) channels or contact the repository maintainers.
+{% endcapture %}
+
+
 {% include page/faq.html
   title="FAQ"
   lead="If you have any questions, please contact us [here](/community)."
 
   license=license
+  developer=developer
 %}
