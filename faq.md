@@ -12,13 +12,13 @@ title: FAQ
 {% capture license %}
 ## Vivliostyle Viewer FAQ
 
-User Guide: [Vivliostyle Viewer User Guide](https://docs.vivliostyle.org/#/vivliostyle-viewer)
+User Guide: [Vivliostyle Viewer User Guide](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/)
 
 ### How to use Vivliostyle Viewer in a local environment?
 
 To use Vivliostyle Viewer in a local environment, it is convenient to use the preview command of the Vivliostyle CLI. For information on how to install and use the Vivliostyle CLI, see [Vivliostyle CLI Documentation](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/index.md), and [Preview the typesetting results](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#previewing-the-typesetting-result).
 
-👉[Vivliostyle Viewer User Guide: To use Vivliostyle Viewer in a local environment](https://docs.vivliostyle.org/#/vivliostyle-viewer#to-use-vivliostyle-viewer-in-a-local-environment)
+👉[Vivliostyle Viewer User Guide: To use Vivliostyle Viewer in a local environment](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#to-use-vivliostyle-viewer-in-a-local-environment)
 
 ### How to view my local documents with the online Vivliostyle Viewer?
 
@@ -71,7 +71,7 @@ An example of displaying unzipped EPUB on GitHub:
 
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
-👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/#/vivliostyle-viewer#epub)
+👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#epub)
 
 To view (or convert to PDF) EPUB in a local environment, it is convenient to use Vivliostyle CLI. See [Vivliostyle CLI Documentation](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/index.md), [Generate PDFs from other formats](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#generate-pdfs-from-other-formats) and [Previewing the typesetting result](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#previewing-the-typesetting-result).
 
@@ -94,7 +94,7 @@ The TOC (Table of Contents) panel is enabled by setting [**Book Mode**](#what-is
 </nav>
 ```
 
-👉[Vivliostyle Viewer User Guide: TOC panel](https://docs.vivliostyle.org/#/vivliostyle-viewer#toc-panel)
+👉[Vivliostyle Viewer User Guide: TOC panel](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#toc-panel)
 
 👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
@@ -117,7 +117,7 @@ When you enable [**Book Mode**](#what-is-book-mode) with Vivliostyle Viewer, and
 </nav>
 ```
 
-👉[Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/vivliostyle-viewer#web-publications-multi-html-documents)
+👉[Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#web-publications-multi-html-documents)
 
 👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
@@ -181,7 +181,7 @@ You can use `vivliostyle build` command with the `--press-ready` option to outpu
 
 [Create Book](https://www.npmjs.com/package/create-book) makes an environment for creating a book.
 
-👉[Create Book User Guide](https://docs.vivliostyle.org/#/create-book)
+👉[Create Book User Guide](https://docs.vivliostyle.org/en/create-book/)
 
 ### How to customize a theme?
 
@@ -198,7 +198,7 @@ You can use `vivliostyle build` command with the `--press-ready` option to outpu
 
 ### How to make a book from multiple HTML files?
 
-👉See [Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/vivliostyle-viewer#web-publications-multi-html-documents).
+👉See [Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#web-publications-multi-html-documents).
 
 👉See [Vivliostyle CLI Documentation: Using Config File](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/using-config-file.md).
 

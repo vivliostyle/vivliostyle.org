@@ -14,9 +14,9 @@ en:
   - title: Documents
     links:
       - title: User Guide
-        url: /documents/#user-guide
+        url: https://docs.vivliostyle.org/en/#user-guides
       - title: Contribution Guide
-        url: /documents/#contribution-guide
+        url: https://docs.vivliostyle.org/en/#contribution-guides
   - title: Community
     links:
       - title: Community
@@ -53,9 +53,9 @@ ja:
   - title: ドキュメント
     links:
       - title: ユーザーガイド
-        url: /ja/documents/#ユーザーガイド
+        url: https://docs.vivliostyle.org/ja/#user-guides
       - title: コントリビューションガイド
-        url: /ja/documents/#コントリビューションガイド
+        url: https://docs.vivliostyle.org/ja/#contribution-guides
       - title: FAQ
         url: /ja/faq/
       - title: Vivliostyle で本を作ろう

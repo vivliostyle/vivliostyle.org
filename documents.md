@@ -8,11 +8,11 @@ title: Documents
 ## 📖 User Guides
 {% include fetch-guide-urls.html %}
 
-### [Vivliostyle Viewer](https://docs.vivliostyle.org/#/vivliostyle-viewer)
+### [Vivliostyle Viewer](https://docs.vivliostyle.org/en/viewer)
 <ul id="vivliostyle-viewer-list"></ul>
 {% include fetch-guide-url.html
   id="vivliostyle-viewer-list"
-  url="https://docs.vivliostyle.org/#/vivliostyle-viewer"
+  url="https://docs.vivliostyle.org/en/viewer"
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/vivliostyle-viewer.md"
 %}
 
