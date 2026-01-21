@@ -73,7 +73,7 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
 👉[Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/)
 
-ローカル環境で EPUB を閲覧または PDF に変換をするには Vivliostyle CLI が便利です。[Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/) の [他の形式から PDF を生成](https://docs.vivliostyle.org/ja/cli/getting-started/#%E4%BB%96%E3%81%AE%E5%BD%A2%E5%BC%8F%E3%81%8B%E3%82%89-pdf-%E3%82%92%E7%94%9F%E6%88%90) および [組版結果のプレビュー](https://docs.vivliostyle.org/ja/cli/getting-started/#%E7%B5%84%E7%89%88%E7%B5%90%E6%9E%9C%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC) をご覧ください。
+ローカル環境で EPUB を閲覧または PDF に変換をするには Vivliostyle CLI が便利です。[Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/)の[EPUB 形式の出力](https://docs.vivliostyle.org/ja/cli/special-output-settings/#epub-%E5%BD%A2%E5%BC%8F%E3%81%AE%E5%87%BA%E5%8A%9B) をご覧ください。
 
 ### Webサイトに Vivliostyle Viewer を組み込むには？
 
@@ -117,7 +117,7 @@ Vivliostyle Viewer で [**Book Mode**](#book-mode-とは) を指定した場合�
 </nav>
 ```
 
-👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89)
+👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#web%E5%87%BA%E7%89%88%E7%89%A9%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8)
 
 👉次も参照: [目次を作るには？](#目次を作るには)
 
@@ -175,14 +175,6 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 👉[Vivliostyle CLI ドキュメント: 印刷用 PDF（PDF/X-1a 形式）の生成](https://docs.vivliostyle.org/ja/cli/special-output-settings/#%E5%8D%B0%E5%88%B7%E7%94%A8-pdfpdfx-1a-%E5%BD%A2%E5%BC%8F%E3%81%AE%E7%94%9F%E6%88%90)
 
-## Create Book についての FAQ
-
-### Create Book とは？
-
-[Create Book](https://www.npmjs.com/package/create-book) は、簡単に本を作れる環境を構築します。
-
-👉[Create Book ユーザーガイド](https://docs.vivliostyle.org/ja/create-book/)
-
 ### テーマをカスタマイズするには？
 
 👉[Vivliostyle CLI ドキュメント: テーマと CSS](https://docs.vivliostyle.org/ja/cli/themes-and-css/) および [Vivliostyle CLI ドキュメント: 構成ファイル](https://docs.vivliostyle.org/ja/cli/using-config-file/) をご覧ください。
@@ -198,7 +190,7 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 ### 複数のHTMLファイルから本を作るには？
 
-👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89) をご覧ください。
+👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#web%E5%87%BA%E7%89%88%E7%89%A9%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8) をご覧ください。
 
 👉[Vivliostyle CLI ドキュメント: 構成ファイル](https://docs.vivliostyle.org/ja/cli/using-config-file/) をご覧ください。
 

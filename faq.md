@@ -73,7 +73,7 @@ An example of displaying unzipped EPUB on GitHub:
 
 👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#epub)
 
-To view (or convert to PDF) EPUB in a local environment, it is convenient to use Vivliostyle CLI. See [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/), [Generate PDFs from other formats](https://docs.vivliostyle.org/en/cli/getting-started/#generate-pdfs-from-other-formats) and [Previewing the typesetting result](https://docs.vivliostyle.org/en/cli/getting-started/#previewing-the-typesetting-result).
+To view (or convert to PDF) EPUB in a local environment, it is convenient to use Vivliostyle CLI. See [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/) and [EPUB Format Output](https://docs.vivliostyle.org/en/cli/special-output-settings/#epub-format-output).
 
 ### How to integrate Vivliostyle Viewer into my website?
 
@@ -174,14 +174,6 @@ User Guide: [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/
 You can use `vivliostyle build` command with the `--press-ready` option to output in PDF/X-1a format suitable for printing.
 
 👉[Vivliostyle CLI Documentation: Generating Print-Ready PDF (PDF/X-1a Format)](https://docs.vivliostyle.org/en/cli/special-output-settings/#generating-print-ready-pdf-pdfx-1a-format)
-
-## Create Book FAQ
-
-### What is Create Book?
-
-[Create Book](https://www.npmjs.com/package/create-book) makes an environment for creating a book.
-
-👉[Create Book User Guide](https://docs.vivliostyle.org/en/create-book/)
 
 ### How to customize a theme?
 
