@@ -7,7 +7,7 @@ toc: true
 
 
 {% capture lead %}
-[Create Book](https://github.com/vivliostyle/create-book) makes it possible for you to convert your manuscript written in markdown format to a PDF file with CSS typesetting. No HTML or CSS expertise is required. You can include ruby, images, tables, and footnotes, and you can even bundle multiple manuscripts together. See our [tutorial guide](https://docs.vivliostyle.org/#/create-book) for more information. This article is **a quick guide to what you can do with Create Book**. Now you can make your own book with Create Book!
+[Create Book](https://github.com/vivliostyle/create-book) makes it possible for you to convert your manuscript written in markdown format to a PDF file with CSS typesetting. No HTML or CSS expertise is required. You can include ruby, images, tables, and footnotes, and you can even bundle multiple manuscripts together. See our [tutorial guide](https://docs.vivliostyle.org/en/create-book/) for more information. This article is **a quick guide to what you can do with Create Book**. Now you can make your own book with Create Book!
 {% endcapture %}
 
 
@@ -456,21 +456,21 @@ A general purpose of the book has been determined by selecting the theme package
 ![](/assets/misc/make_books_with_create_book/config.png)
 
 
-- 🅐[Specify a title of book](https://docs.vivliostyle.org/#/create-book#specify-a-title-of-a-book)
-- 🅑[Specify a author name and e-mail address](https://docs.vivliostyle.org/#/create-book#specify-a-author-name-and-e-mail-address)
-- 🅒[Specify a language to use](https://docs.vivliostyle.org/#/create-book#specify-a-language-to-use)
-- 🅓[Specifying a format](https://docs.vivliostyle.org/#/create-book#specifying-a-format)
-- 🅔[Specify a theme package](https://docs.vivliostyle.org/#/create-book#specify-a-theme-package)
-- 🅕[Add a table of contents](https://docs.vivliostyle.org/#/create-book#add-a-table-of-contents)
-- 🅖[Publication of multiple manuscripts](https://docs.vivliostyle.org/#/create-book#publication-of-multiple-manuscripts)
-- 🅗[Add a colophon](https://docs.vivliostyle.org/#/create-book#add-a-colophon)
+- 🅐[Specify a title of book](https://docs.vivliostyle.org/en/create-book/#specify-a-title-of-a-book)
+- 🅑[Specify a author name and e-mail address](https://docs.vivliostyle.org/en/create-book/#specify-a-author-name-and-e-mail-address)
+- 🅒[Specify a language to use](https://docs.vivliostyle.org/en/create-book/#specify-a-language-to-use)
+- 🅓[Specifying a format](https://docs.vivliostyle.org/en/create-book/#specifying-a-format)
+- 🅔[Specify a theme package](https://docs.vivliostyle.org/en/create-book/#specify-a-theme-package)
+- 🅕[Add a table of contents](https://docs.vivliostyle.org/en/create-book/#add-a-table-of-contents)
+- 🅖[Publication of multiple manuscripts](https://docs.vivliostyle.org/en/create-book/#publication-of-multiple-manuscripts)
+- 🅗[Add a colophon](https://docs.vivliostyle.org/en/create-book/#add-a-colophon)
 
 #### Editing package.json(fig-1❸)
 
 
 ![](/assets/misc/make_books_with_create_book/package_json.png)
 
-- 🅘[Generation of PDF files for four-color printing](https://docs.vivliostyle.org/#/create-book#generation-of-pdf-files-for-four-color-printing)
+- 🅘[Generation of PDF files for four-color printing](https://docs.vivliostyle.org/en/create-book/#generation-of-pdf-files-for-four-color-printing)
 
 ### Output to PDF file
 
@@ -483,11 +483,11 @@ npm run build
 For more information, please see below.
 
 
-- [Generation of a book](https://docs.vivliostyle.org/#/create-book#generation-of-a-book)
+- [Generation of a book](https://docs.vivliostyle.org/en/create-book/#generation-of-a-book)
 
 -----------------------------------------------------------------
 
-That's a run-on introduction to Create Book. The information on this page is only part of the story, please read [the tutorial guide](https://docs.vivliostyle.org/#/create-book) for more information. Finally, Create Book is still in development. Is this a bug? I want these features! If you feel like that, please let us know below!
+That's a run-on introduction to Create Book. The information on this page is only part of the story, please read [the tutorial guide](https://docs.vivliostyle.org/en/create-book/) for more information. Finally, Create Book is still in development. Is this a bug? I want these features! If you feel like that, please let us know below!
 
 
 - [Community [Vivliostyle]](/community/)

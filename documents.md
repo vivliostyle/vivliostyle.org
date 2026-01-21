@@ -8,11 +8,11 @@ title: Documents
 ## 📖 User Guides
 {% include fetch-guide-urls.html %}
 
-### [Vivliostyle Viewer](https://docs.vivliostyle.org/#/vivliostyle-viewer)
+### [Vivliostyle Viewer](https://docs.vivliostyle.org/en/viewer)
 <ul id="vivliostyle-viewer-list"></ul>
 {% include fetch-guide-url.html
   id="vivliostyle-viewer-list"
-  url="https://docs.vivliostyle.org/#/vivliostyle-viewer"
+  url="https://docs.vivliostyle.org/en/viewer"
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/vivliostyle-viewer.md"
 %}
 
@@ -74,14 +74,6 @@ title: Documents
   get_url="https://api.github.com/repos/vivliostyle/vivliostyle-cli/contents/docs/special-output-settings.md"
 %}
 
-### [Create Book](https://docs.vivliostyle.org/#/create-book)
-<ul id="create-book-list"></ul>
-{% include fetch-guide-url.html
-  id="create-book-list"
-  url="https://docs.vivliostyle.org/#/create-book"
-  get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/create-book.md"
-%}
-
 ### [Vivliostyle Themes](https://github.com/vivliostyle/themes/blob/main/docs/index.md)
 <ul>
   <li><a href="https://github.com/vivliostyle/themes/blob/main/docs/spec.md">Spec</a></li>
@@ -93,11 +85,11 @@ title: Documents
   </li>
 </ul>
 
-### [Vivliostyle Flavored Markdown (VFM)](https://vivliostyle.github.io/vfm/#/vfm)
+### [Vivliostyle Flavored Markdown (VFM)](https://docs.vivliostyle.org/en/vfm/)
 <ul id="vfm-list"></ul>
 {% include fetch-guide-url.html
   id="vfm-list"
-  url="https://vivliostyle.github.io/vfm/#/vfm"
+  url="https://docs.vivliostyle.org/en/vfm/"
   get_url="https://api.github.com/repos/vivliostyle/vfm/contents/docs/vfm.md"
 %}
 {% endcapture %}
@@ -110,7 +102,7 @@ title: Documents
 <ul id="contribution-guide-list"></ul>
 {% include fetch-guide-url.html
   id="contribution-guide-list"
-  url="https://docs.vivliostyle.org/#/contribution-guide"
+  url="https://docs.vivliostyle.org/en/reference/contribution-guide/"
   get_url="https://api.github.com/repos/vivliostyle/docs.vivliostyle.org/contents/contribution-guide.md"
 %}
 
@@ -128,8 +120,8 @@ title: Documents
 {% capture reference %}
 ## References
 
-- [Supported CSS Features](https://docs.vivliostyle.org/#/supported-css-features)
-- [Core API Reference](https://docs.vivliostyle.org/#/api)
+- [Supported CSS Features](https://docs.vivliostyle.org/en/reference/supported-css-features/)
+- [Core API Reference](https://docs.vivliostyle.org/en/reference/api/)
 - Vivliostyle CLI API Reference
   - [Config Reference](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/config.md)
   - [JavaScript API](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/api-javascript.md)

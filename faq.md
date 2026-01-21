@@ -12,13 +12,13 @@ title: FAQ
 {% capture license %}
 ## Vivliostyle Viewer FAQ
 
-User Guide: [Vivliostyle Viewer User Guide](https://docs.vivliostyle.org/#/vivliostyle-viewer)
+User Guide: [Vivliostyle Viewer User Guide](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/)
 
 ### How to use Vivliostyle Viewer in a local environment?
 
-To use Vivliostyle Viewer in a local environment, it is convenient to use the preview command of the Vivliostyle CLI. For information on how to install and use the Vivliostyle CLI, see [Vivliostyle CLI Documentation](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/index.md), and [Preview the typesetting results](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#previewing-the-typesetting-result).
+To use Vivliostyle Viewer in a local environment, it is convenient to use the preview command of the Vivliostyle CLI. For information on how to install and use the Vivliostyle CLI, see [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/), and [Preview the typesetting results](https://docs.vivliostyle.org/en/cli/getting-started/#previewing-the-typesetting-result).
 
-👉[Vivliostyle Viewer User Guide: To use Vivliostyle Viewer in a local environment](https://docs.vivliostyle.org/#/vivliostyle-viewer#to-use-vivliostyle-viewer-in-a-local-environment)
+👉[Vivliostyle Viewer User Guide: To use Vivliostyle Viewer in a local environment](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#to-use-vivliostyle-viewer-in-a-local-environment)
 
 ### How to view my local documents with the online Vivliostyle Viewer?
 
@@ -71,9 +71,9 @@ An example of displaying unzipped EPUB on GitHub:
 
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
-👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/#/vivliostyle-viewer#epub)
+👉[Vivliostyle Viewer User Guide: EPUB](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#epub)
 
-To view (or convert to PDF) EPUB in a local environment, it is convenient to use Vivliostyle CLI. See [Vivliostyle CLI Documentation](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/index.md), [Generate PDFs from other formats](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#generate-pdfs-from-other-formats) and [Previewing the typesetting result](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#previewing-the-typesetting-result).
+To view (or convert to PDF) EPUB in a local environment, it is convenient to use Vivliostyle CLI. See [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/) and [EPUB Format Output](https://docs.vivliostyle.org/en/cli/special-output-settings/#epub-format-output).
 
 ### How to integrate Vivliostyle Viewer into my website?
 
@@ -94,7 +94,7 @@ The TOC (Table of Contents) panel is enabled by setting [**Book Mode**](#what-is
 </nav>
 ```
 
-👉[Vivliostyle Viewer User Guide: TOC panel](https://docs.vivliostyle.org/#/vivliostyle-viewer#toc-panel)
+👉[Vivliostyle Viewer User Guide: TOC panel](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#toc-panel)
 
 👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
@@ -117,7 +117,7 @@ When you enable [**Book Mode**](#what-is-book-mode) with Vivliostyle Viewer, and
 </nav>
 ```
 
-👉[Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/vivliostyle-viewer#web-publications-multi-html-documents)
+👉[Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#web-publications-multi-html-documents)
 
 👉See also: [How to make a TOC?](#how-to-make-a-toc)
 
@@ -155,37 +155,29 @@ You can also specify the page size by **User Style Preferences** → **Page Size
 
 ## Vivliostyle CLI FAQ
 
-User Guide: [Vivliostyle CLI Documentation](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/index.md)
+User Guide: [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/)
 
 ### How to enable PDF Bookmarks?
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) can automatically generate PDF Bookmarks with the table of contents data in your document. PDF Bookmarks are available for table-of-contents navigation in PDF viewing software such as Adobe Acrobat.
 
-👉[Vivliostyle CLI Documentation: Generating PDF Bookmarks](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/special-output-settings.md#generating-pdf-bookmarks)
+👉[Vivliostyle CLI Documentation: Generating PDF Bookmarks](https://docs.vivliostyle.org/en/cli/special-output-settings/#generating-pdf-bookmarks)
 
 ### How to convert EPUB to PDF?
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) can generate PDF files from EPUB or unzipped EPUB files.
 
-👉[Vivliostyle CLI Documentation: Generate PDFs from other formats](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/getting-started.md#generate-pdfs-from-other-formats)
+👉[Vivliostyle CLI Documentation: Generate PDFs from other formats](https://docs.vivliostyle.org/en/cli/getting-started/#generate-pdfs-from-other-formats)
 
 ### How to generate PDF for print (PDF/X-1a format)?
 
 You can use `vivliostyle build` command with the `--press-ready` option to output in PDF/X-1a format suitable for printing.
 
-👉[Vivliostyle CLI Documentation: Generating Print-Ready PDF (PDF/X-1a Format)](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/special-output-settings.md#generating-print-ready-pdf-pdfx-1a-format)
-
-## Create Book FAQ
-
-### What is Create Book?
-
-[Create Book](https://www.npmjs.com/package/create-book) makes an environment for creating a book.
-
-👉[Create Book User Guide](https://docs.vivliostyle.org/#/create-book)
+👉[Vivliostyle CLI Documentation: Generating Print-Ready PDF (PDF/X-1a Format)](https://docs.vivliostyle.org/en/cli/special-output-settings/#generating-print-ready-pdf-pdfx-1a-format)
 
 ### How to customize a theme?
 
-👉See [Vivliostyle CLI Documentation: Themes and CSS](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/themes-and-css.md) and [Vivliostyle CLI Documentation: Using Config File](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/using-config-file.md).
+👉See [Vivliostyle CLI Documentation: Themes and CSS](https://docs.vivliostyle.org/en/cli/themes-and-css) and [Vivliostyle CLI Documentation: Using Config File](https://docs.vivliostyle.org/en/cli/using-config-file).
 
 👉See also:
 
@@ -198,15 +190,15 @@ You can use `vivliostyle build` command with the `--press-ready` option to outpu
 
 ### How to make a book from multiple HTML files?
 
-👉See [Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/#/vivliostyle-viewer#web-publications-multi-html-documents).
+👉See [Vivliostyle Viewer User Guide: Web publications (multi-HTML documents)](https://docs.vivliostyle.org/en/viewer/vivliostyle-viewer/#web-publications-multi-html-documents).
 
-👉See [Vivliostyle CLI Documentation: Using Config File](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/using-config-file.md).
+👉See [Vivliostyle CLI Documentation: Using Config File](https://docs.vivliostyle.org/en/cli/using-config-file).
 
 ### How to make a TOC?
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) can automatically generate table of contents.
 
-👉See [Vivliostyle CLI Documentation: Creating Table of Contents Page](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/toc-page.md).
+👉See [Vivliostyle CLI Documentation: Creating Table of Contents Page](https://docs.vivliostyle.org/en/cli/toc-page).
 
 To make a table of contents (TOC) in HTML markup, put a list of TOC entries (links to each of the headings in the body) in the block surrounded by `<nav role="doc-toc">` ... `</nav>` tags.
 

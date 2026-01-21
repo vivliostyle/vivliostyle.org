@@ -7,7 +7,7 @@ lang: ja
 
 {% capture contents %}
 
-💡Vivliostyle をローカル環境で使うには Vivliostyle CLI がお勧めです。Vivliostyle CLI には Vivliostyle Viewer が統合されています。👉[Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-cli)
+💡Vivliostyle をローカル環境で使うには Vivliostyle CLI がお勧めです。Vivliostyle CLI には Vivliostyle Viewer が統合されています。👉[Vivliostyle CLI ユーザーガイド](https://docs.vivliostyle.org/ja/cli/)
 
 - Vivliostyle.js [GitHub](https://github.com/vivliostyle/vivliostyle.js) [npm](https://www.npmjs.com/org/vivliostyle)
   - Vivliostyle Viewer [GitHub](https://github.com/vivliostyle/vivliostyle.js/tree/master/packages/viewer/) [npm](https://www.npmjs.com/package/@vivliostyle/viewer/)

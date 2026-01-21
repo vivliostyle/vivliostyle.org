@@ -7,7 +7,7 @@ lang: ja
 
 
 {% capture lead %}
-[Create Book](https://github.com/vivliostyle/create-book) は markdown で書いた原稿を CSS 組版して、簡単に PDF ファイルへ変換する環境を構築します。HTML や CSS の詳しい知識はいりません。ルビや画像や表組、注も入れられますし、複数の原稿をまとめることだってOK。詳細は[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)を参照していただくとして、この記事では、手っ取り早く**「Create Book でできること」**を紹介します。さあ、あなたも Create Book で同人誌を作りませんか？
+[Create Book](https://github.com/vivliostyle/create-book) は markdown で書いた原稿を CSS 組版して、簡単に PDF ファイルへ変換する環境を構築します。HTML や CSS の詳しい知識はいりません。ルビや画像や表組、注も入れられますし、複数の原稿をまとめることだってOK。詳細は[チュートリアルガイド](https://docs.vivliostyle.org/ja/create-book/)を参照していただくとして、この記事では、手っ取り早く**「Create Book でできること」**を紹介します。さあ、あなたも Create Book で同人誌を作りませんか？
 {% endcapture %}
 
 
@@ -46,7 +46,7 @@ markdown には各種の方言がありますが、その中でもっとも有�
 
 ### GFMの記法
 
-基本となるGFM の主な記法をご紹介しましょう。これ以外にもたくさんの記法があります。詳細は[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)や、[GitHubの解説ページ<i class="fas fa-external-link-alt"></i>](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)を参照してください。
+基本となるGFM の主な記法をご紹介しましょう。これ以外にもたくさんの記法があります。詳細は[チュートリアルガイド](https://docs.vivliostyle.org/ja/create-book/)や、[GitHubの解説ページ<i class="fas fa-external-link-alt"></i>](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)を参照してください。
 
 #### 見出し
 
@@ -392,7 +392,7 @@ text[^n]text^[text]
 %}
 
 
-この他にも、引用やコード、表組みなど、さまざまな表現が可能です。ぜひ[チュートリアルガイド](https://docs.vivliostyle.org/#/ja/create-book)や[GitHubの解説ページ<i class="fas fa-external-link-alt"></i>](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)をご参照ください。
+この他にも、引用やコード、表組みなど、さまざまな表現が可能です。ぜひ[チュートリアルガイド](https://docs.vivliostyle.org/ja/create-book/)や[GitHubの解説ページ<i class="fas fa-external-link-alt"></i>](https://docs.github.com/ja/github/writing-on-github/basic-writing-and-formatting-syntax)をご参照ください。
 
 
 #### 縦中横
@@ -454,21 +454,21 @@ text<span class="tcy">nn</span>text
 ![](/assets/misc/make_books_with_create_book/config.png)
 
 
-- 🅐[書名の指定](https://docs.vivliostyle.org/#/ja/create-book#%E6%9B%B8%E5%90%8D%E3%81%AE%E6%8C%87%E5%AE%9A)
-- 🅑[著者名とメールアドレスの指定](https://docs.vivliostyle.org/#/ja/create-book#%E8%91%97%E8%80%85%E5%90%8D%E3%81%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AE%E6%8C%87%E5%AE%9A)
-- 🅒[使用言語の指定](https://docs.vivliostyle.org/#/ja/create-book#%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E8%A8%80%E8%AA%9E%E3%81%AE%E6%8C%87%E5%AE%9A)
-- 🅓[判型の指定](https://docs.vivliostyle.org/#/ja/create-book#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
-- 🅔[テーマパッケージの指定](https://docs.vivliostyle.org/#/ja/create-book#%E3%83%86%E3%83%BC%E3%83%9E%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E6%8C%87%E5%AE%9A)
-- 🅕[目次の追加](https://docs.vivliostyle.org/#/ja/create-book#%E7%9B%AE%E6%AC%A1%E3%81%AE%E8%BF%BD%E5%8A%A0)
-- 🅖[複数原稿の掲載](https://docs.vivliostyle.org/#/ja/create-book#%E8%A4%87%E6%95%B0%E5%8E%9F%E7%A8%BF%E3%81%AE%E6%8E%B2%E8%BC%89)
-- 🅗[奥付の追加](https://docs.vivliostyle.org/#/ja/create-book#%E5%A5%A5%E4%BB%98%E3%81%AE%E8%BF%BD%E5%8A%A0)
+- 🅐[書名の指定](https://docs.vivliostyle.org/ja/create-book/#%E6%9B%B8%E5%90%8D%E3%81%AE%E6%8C%87%E5%AE%9A)
+- 🅑[著者名とメールアドレスの指定](https://docs.vivliostyle.org/ja/create-book/#%E8%91%97%E8%80%85%E5%90%8D%E3%81%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AE%E6%8C%87%E5%AE%9A)
+- 🅒[使用言語の指定](https://docs.vivliostyle.org/ja/create-book/#%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E8%A8%80%E8%AA%9E%E3%81%AE%E6%8C%87%E5%AE%9A)
+- 🅓[判型の指定](https://docs.vivliostyle.org/ja/create-book/#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
+- 🅔[テーマパッケージの指定](https://docs.vivliostyle.org/ja/create-book/#%E3%83%86%E3%83%BC%E3%83%9E%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E6%8C%87%E5%AE%9A)
+- 🅕[目次の追加](https://docs.vivliostyle.org/ja/create-book/#%E7%9B%AE%E6%AC%A1%E3%81%AE%E8%BF%BD%E5%8A%A0)
+- 🅖[複数原稿の掲載](https://docs.vivliostyle.org/ja/create-book/#%E8%A4%87%E6%95%B0%E5%8E%9F%E7%A8%BF%E3%81%AE%E6%8E%B2%E8%BC%89)
+- 🅗[奥付の追加](https://docs.vivliostyle.org/ja/create-book/#%E5%A5%A5%E4%BB%98%E3%81%AE%E8%BF%BD%E5%8A%A0)
 
 #### package.json(図1❸)の編集
 
 
 ![](/assets/misc/make_books_with_create_book/package_json.png)
 
-- 🅘[4色印刷用PDFファイル の生成](https://docs.vivliostyle.org/#/ja/create-book#4%E8%89%B2%E5%8D%B0%E5%88%B7%E7%94%A8pdf%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E3%81%AE%E7%94%9F%E6%88%90)
+- 🅘[4色印刷用PDFファイル の生成](https://docs.vivliostyle.org/ja/create-book/#4%E8%89%B2%E5%8D%B0%E5%88%B7%E7%94%A8pdf%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E3%81%AE%E7%94%9F%E6%88%90)
 
 ### PDF ファイルの出力
 
@@ -481,7 +481,7 @@ npm run build
 より詳細は以下をご参照ください。
 
 
-- [本の生成](https://docs.vivliostyle.org/#/ja/create-book#%E6%9C%AC%E3%81%AE%E7%94%9F%E6%88%90)
+- [本の生成](https://docs.vivliostyle.org/ja/create-book/#%E6%9C%AC%E3%81%AE%E7%94%9F%E6%88%90)
 
 -----------------------------------------------------------------
 以上、駆け足で Create Book をご紹介しました。このページの情報はあくまで一部、より詳しいことはぜひチュートリアルガイドを読んでみてください。それから、Create Book はまだまだ開発途上。「これって不具合？」「こんなことができればいい！」などありましたら、ぜひ下記からお知らせください！

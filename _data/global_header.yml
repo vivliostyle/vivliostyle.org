@@ -6,7 +6,7 @@ en:
   - title: Download
     url: /download/
   - title: Documents
-    url: /documents/
+    url: https://docs.vivliostyle.org/en/
   - title: FAQ
     url: /faq/
   - title: Blog
@@ -21,7 +21,7 @@ ja:
   - title: ダウンロード
     url: /ja/download/
   - title: ドキュメント
-    url: /ja/documents/
+    url: https://docs.vivliostyle.org/ja/
   - title: FAQ
     url: /ja/faq/
   - title: ブログ

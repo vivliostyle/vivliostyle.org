@@ -13,13 +13,13 @@ lang: ja
 {% capture license %}
 ## Vivliostyle Viewer についての FAQ
 
-ユーザーガイド: [Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer)
+ユーザーガイド: [Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/)
 
 ### ローカル環境で Vivliostyle Viewer を使うには？
 
-Vivliostyle Viewer をローカル環境で利用するには、Vivliostyle CLI の preview コマンドを使うのが便利です。Vivliostyle CLI のインストール方法と使い方については、[Vivliostyle CLI ドキュメント](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/index.md)、preview コマンドについては [組版結果のプレビュー](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/getting-started.md#%E7%B5%84%E7%89%88%E7%B5%90%E6%9E%9C%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC) をご覧ください。
+Vivliostyle Viewer をローカル環境で利用するには、Vivliostyle CLI の preview コマンドを使うのが便利です。Vivliostyle CLI のインストール方法と使い方については、[Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/)、preview コマンドについては [組版結果のプレビュー](https://docs.vivliostyle.org/ja/cli/#preview-command) をご覧ください。
 
-👉[Vivliostyle Viewer ユーザーガイド: Vivliostyle Viewer をローカル環境で利用するには](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#vivliostyle-viewer-%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E7%92%B0%E5%A2%83%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF)
+👉[Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/)
 
 ### オンラインの Vivliostyle Viewer でローカルの文書を表示するには？
 
@@ -71,9 +71,9 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
-👉[Vivliostyle Viewer ユーザーガイド: EPUB](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#epub)
+👉[Vivliostyle Viewer ユーザーガイド](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/)
 
-ローカル環境で EPUB を閲覧または PDF に変換をするには Vivliostyle CLI が便利です。[Vivliostyle CLI ドキュメント](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/index.md) の [他の形式から PDF を生成](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/getting-started.md#%E4%BB%96%E3%81%AE%E5%BD%A2%E5%BC%8F%E3%81%8B%E3%82%89-pdf-%E3%82%92%E7%94%9F%E6%88%90) および [組版結果のプレビュー](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/getting-started.md#%E7%B5%84%E7%89%88%E7%B5%90%E6%9E%9C%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC) をご覧ください。
+ローカル環境で EPUB を閲覧または PDF に変換をするには Vivliostyle CLI が便利です。[Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/)の[EPUB 形式の出力](https://docs.vivliostyle.org/ja/cli/special-output-settings/#epub-%E5%BD%A2%E5%BC%8F%E3%81%AE%E5%87%BA%E5%8A%9B) をご覧ください。
 
 ### Webサイトに Vivliostyle Viewer を組み込むには？
 
@@ -94,7 +94,7 @@ HTMLファイル内に次のような目次要素がある場合、Vivliostyle V
 </nav>
 ```
 
-👉[Vivliostyle Viewer ユーザーガイド: 目次パネル](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#%E7%9B%AE%E6%AC%A1%E3%83%91%E3%83%8D%E3%83%AB)
+👉[Vivliostyle Viewer ユーザーガイド: 目次パネル](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#%E7%9B%AE%E6%AC%A1%E3%83%91%E3%83%8D%E3%83%AB)
 
 👉次も参照: [目次を作るには？](#目次を作るには)
 
@@ -117,7 +117,7 @@ Vivliostyle Viewer で [**Book Mode**](#book-mode-とは) を指定した場合�
 </nav>
 ```
 
-👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89)
+👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#web%E5%87%BA%E7%89%88%E7%89%A9%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8)
 
 👉次も参照: [目次を作るには？](#目次を作るには)
 
@@ -155,58 +155,50 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 ## Vivliostyle CLI についての FAQ
 
-ユーザーガイド: [Vivliostyle CLI ドキュメント](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/index.md)
+ユーザーガイド: [Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/)
 
 ### PDFの「しおり」(Bookmarks)を有効にするには？
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) では、組版する文書の目次データを使ってPDFの「しおり」(Bookmarks) を自動生成することができます。PDF の「しおり」は、Adobe Acrobat のような PDF 閲覧ソフトで目次ナビゲーションに利用できるものです。
 
-👉[Vivliostyle CLI ドキュメント: PDF の「しおり」(Bookmarks) の生成](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/special-output-settings.md#pdf-%E3%81%AE%E3%81%97%E3%81%8A%E3%82%8Abookmarks-%E3%81%AE%E7%94%9F%E6%88%90)
+👉[Vivliostyle CLI ドキュメント: PDF の「しおり」(Bookmarks) の生成](https://docs.vivliostyle.org/ja/cli/special-output-settings/#pdf-%E3%81%AE%E3%81%97%E3%81%8A%E3%82%8Abookmarks-%E3%81%AE%E7%94%9F%E6%88%90)
 
 ### EPUBをPDFに変換するには？
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) では EPUB ファイルあるいは解凍(unzip)された EPUB から PDF を生成することができます。
 
-👉[Vivliostyle CLI ドキュメント: 他の形式から PDF を生成](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/getting-started.md#%E4%BB%96%E3%81%AE%E5%BD%A2%E5%BC%8F%E3%81%8B%E3%82%89-pdf-%E3%82%92%E7%94%9F%E6%88%90)
+👉[Vivliostyle CLI ドキュメント: 他の形式から PDF を生成](https://docs.vivliostyle.org/ja/cli/getting-started/#%E4%BB%96%E3%81%AE%E5%BD%A2%E5%BC%8F%E3%81%8B%E3%82%89-pdf-%E3%82%92%E7%94%9F%E6%88%90)
 
 ### 印刷用のPDF（PDF/X-1a 形式）を生成するには？
 
 `vivliostyle build` コマンドの `--press-ready` オプションにより印刷入稿に適した PDF/X-1a 形式で出力することができます。
 
-👉[Vivliostyle CLI ドキュメント: 印刷用 PDF（PDF/X-1a 形式）の生成](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/special-output-settings.md#%E5%8D%B0%E5%88%B7%E7%94%A8-pdfpdfx-1a-%E5%BD%A2%E5%BC%8F%E3%81%AE%E7%94%9F%E6%88%90)
-
-## Create Book についての FAQ
-
-### Create Book とは？
-
-[Create Book](https://www.npmjs.com/package/create-book) は、簡単に本を作れる環境を構築します。
-
-👉[Create Book ユーザーガイド](https://docs.vivliostyle.org/#/ja/create-book)
+👉[Vivliostyle CLI ドキュメント: 印刷用 PDF（PDF/X-1a 形式）の生成](https://docs.vivliostyle.org/ja/cli/special-output-settings/#%E5%8D%B0%E5%88%B7%E7%94%A8-pdfpdfx-1a-%E5%BD%A2%E5%BC%8F%E3%81%AE%E7%94%9F%E6%88%90)
 
 ### テーマをカスタマイズするには？
 
-👉[Vivliostyle CLI ドキュメント: テーマと CSS](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/themes-and-css.md) および [Vivliostyle CLI ドキュメント: 構成ファイル](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/using-config-file.md) をご覧ください。
+👉[Vivliostyle CLI ドキュメント: テーマと CSS](https://docs.vivliostyle.org/ja/cli/themes-and-css/) および [Vivliostyle CLI ドキュメント: 構成ファイル](https://docs.vivliostyle.org/ja/cli/using-config-file/) をご覧ください。
 
 👉次も参照:
 
 - [新しい Vivliostyle Themes のご紹介](https://vivliostyle.org/ja/blog/2023/04/23/intro-new-themes/)
-- [Vivliostyle Themes ドキュメント](https://github.com/vivliostyle/themes/blob/main/docs/ja/index.md)
-- [Vivliostyle Themes ギャラリー](https://github.com/vivliostyle/themes/blob/main/docs/ja/gallery.md)
+- [Vivliostyle Themes ドキュメント](https://docs.vivliostyle.org/ja/themes/)
+- [Vivliostyle Themes ギャラリー](https://docs.vivliostyle.org/ja/themes/gallery/)
 
 
 ## CSS組版のテクニックについてのFAQ
 
 ### 複数のHTMLファイルから本を作るには？
 
-👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#web%E5%87%BA%E7%89%88%E7%89%A9%EF%BC%88%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8%EF%BC%89) をご覧ください。
+👉[Vivliostyle Viewer ユーザーガイド: Web出版物（複数HTML文書）](https://docs.vivliostyle.org/ja/viewer/vivliostyle-viewer/#web%E5%87%BA%E7%89%88%E7%89%A9%E8%A4%87%E6%95%B0html%E6%96%87%E6%9B%B8) をご覧ください。
 
-👉[Vivliostyle CLI ドキュメント: 構成ファイル](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/using-config-file.md) をご覧ください。
+👉[Vivliostyle CLI ドキュメント: 構成ファイル](https://docs.vivliostyle.org/ja/cli/using-config-file/) をご覧ください。
 
 ### 目次を作るには？
 
 [Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) で目次の自動生成が可能です。
 
-👉[Vivliostyle CLI ドキュメント: 目次の作成](https://github.com/vivliostyle/vivliostyle-cli/blob/main/docs/ja/toc-page.md) をご覧ください。
+👉[Vivliostyle CLI ドキュメント: 目次の作成](https://docs.vivliostyle.org/ja/cli/toc-page/) をご覧ください。
 
 HTMLのマークアップで目次を作るには、`<nav role="doc-toc">` … `</nav>` で囲むブロック内に目次項目（本文中の各見出しへのリンク）のリストを入れます。
 
