@@ -1,4 +1,3 @@
-```prompt
 ## Plan: チュートリアルのCLIコードブロック・説明文をv10実動作に修正
 
 Create Book前提の記述をVivliostyle CLI前提へ全面置換した改修（PR #171）ののち、Codexが書いたコードブロックが旧バージョン（Create Book v8以前）の動作を元にしており、現行 `create-book` v10.3.1（実体は `@vivliostyle/cli` の `create` コマンド）の実際のターミナル出力と大きく乖離していることが判明した。本計画はその差分を解消し、「2026年時点でそのまま追従できる」コードブロックと説明文に整合させることを目的とする。
@@ -39,5 +38,3 @@ Create Book前提の記述をVivliostyle CLI前提へ全面置換した改修（
 - `vivliostyle/vivliostyle-cli` `src/core/create.ts`: 対話プロンプトの実装
 - `vivliostyle/vivliostyle-cli` `src/const.ts`: `TEMPLATE_DEFAULT_FILES`（package.jsonとconfig.jsのテンプレート）
 - `vivliostyle/vivliostyle-cli` `docs/getting-started.md`: 公式 Getting Started
-
-```

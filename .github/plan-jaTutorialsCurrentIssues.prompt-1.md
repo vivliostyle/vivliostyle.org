@@ -1,4 +1,3 @@
-```prompt
 ## Plan: ja/tutorials 最新化改修（DRAFT）
 
 Create Book前提の記述をVivliostyle CLI前提へ全面置換し、CSS Custom Properties中心に再構成して、現行プロダクト仕様との差分を解消する計画です。対象は [ja/tutorials](ja/tutorials) 配下の全章と教材 [assets/tutorials/ja](assets/tutorials/ja) で、特に高優先は Node要件、Create Book記述、SCSS前提、リンク不整合です。今回の方針として、互換手順の併記は行わず、最低要件のみを明記し、外部リンクは docs2.vivliostyle.org を第一優先に統一します。結果として「新規読者が2026年時点でそのまま追従できる」ことを最優先に、章構成は維持しつつ本文と手順を差し替える実装計画にします。
@@ -25,5 +24,3 @@ Create Book前提の記述をVivliostyle CLI前提へ全面置換し、CSS Custo
 - SCSSは扱わず、CSS Custom Propertiesのみ記述。
 - バージョンは最低要件のみ記載。
 - 外部ドキュメントリンクは`https://docs.vivliostyle.org/ja/`を第一優先で統一。
-
-```
