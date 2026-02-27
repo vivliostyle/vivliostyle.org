@@ -18,10 +18,10 @@ lang: ja
 
 原稿中によく出現する基本的な要素のスタイルを CSS で設定します。このチュートリアルでは CSS とともにスタイルの一例を紹介しますので、自分好みのスタイルに変更してみてください。
 
-このチュートリアルで紹介するスタイルを記述した theme.css は以下のボタンからダウンロードできます。
+このチュートリアルで紹介するスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme.css" text="theme.css" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
 </ol>
 
 
@@ -41,34 +41,38 @@ body {
   counter-reset: section subsection figure;
 }
 
-section > h1, section > h2, section > h3, section > h4, section > h5, section > h6 {
-  padding: 0;
-  font-weight: bold;
-  break-after: avoid;
-}
+section > {
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    font-weight: bold;
+    break-after: avoid;
+  }
 
-section > h1 {
-  margin: 10pt auto 5pt;
-  font-size: 14pt;
-  line-height: 1.5;
-  counter-increment: section;
-  counter-reset: subsection;
-}
+  h1 {
+    margin: 10pt auto 5pt;
+    font-size: 14pt;
+    line-height: 1.5;
 
-section > h1::before {
-  margin-right: 1rem;
-  content: counter(chapter) '.' counter(section) '章';
-}
+    counter-increment: section;
+    counter-reset: subsection;
 
-section > h2 {
-  margin: 8pt auto 4pt;
-  font-size: 12pt;
-  counter-increment: subsection;
-}
+    &:before {
+      margin-right: 1rem;
+      content: counter(chapter) '.' counter(section) '章';
+    }
+  }
 
-section > h2::before {
-  margin-right: 1rem;
-  content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
+  h2 {
+    margin: 8pt auto 4pt;
+    font-size: 12pt;
+
+    counter-increment: subsection;
+
+    &:before {
+      margin-right: 1rem;
+      content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
+    }
+  }
 }
 ```
 
@@ -89,14 +93,14 @@ code {
 
 figure[class^='language-'] {
   margin: 0.5em 0;
-}
 
-figure[class^='language-'] figcaption {
-  background-color: #e6e6e6;
-}
+  figcaption {
+    background-color: #e6e6e6;
+  }
 
-figure[class^='language-'] pre {
-  margin: 0pt;
+  pre {
+    margin: 0pt;
+  }
 }
 ```
 
@@ -114,18 +118,21 @@ img {
   margin: 0 auto;
 }
 
-figure figcaption {
-  text-align: center;
-  counter-increment: figure;
-}
+figure {
+  figcaption {
+    text-align: center;
 
-figure figcaption::before {
-  margin-right: 1rem;
-  content: 'Figure' counter(figure) '.';
-}
+    counter-increment: figure;
 
-:root:lang(ja) figure figcaption::before {
-  content: '図' counter(figure) '.';
+    &:before {
+      margin-right: 1rem;
+      content: 'Figure' counter(figure) '.';
+
+      :root:lang(ja) & {
+        content: '図' counter(figure) '.';
+      }
+    }
+  }
 }
 ```
 
@@ -157,10 +164,10 @@ figure figcaption::before {
 
 ## まとめ
 
-このチュートリアルでは、基本的な要素のスタイルを定義しました。以上のスタイルを記述した theme.css は以下のボタンからダウンロードできます。
+このチュートリアルでは、基本的な要素のスタイルを定義しました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme.css" text="theme.css" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
 </ol>
 
 ---
@@ -175,7 +182,7 @@ figure figcaption::before {
 
 {% include page/tutorials.html
   title="チュートリアル⑥基本的な要素のスタイル"
-  lead="CSS を編集し、基本的な要素のスタイルを設定してみましょう。"
+  lead="SCSS を編集し、基本的な要素のスタイルを設定してみましょう。"
 
   content=content
 %}

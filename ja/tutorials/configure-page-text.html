@@ -34,7 +34,7 @@ mybook/
     └── mytheme/ (*既存のファイルを上書き)
 ```
 
-themes/mytheme/theme.css には、ブラウザに設定されているデフォルトのスタイルを打ち消すための CSS が書かれています。
+themes/mytheme/scss/theme_common.scss には、ブラウザに設定されているデフォルトのスタイルを打ち消すための CSS が書かれています。
 
 ```
 * {
@@ -54,7 +54,7 @@ npm run preview
 ![](/assets/tutorials/ja/configure-page-text/preview-reset2.png)
 ![](/assets/tutorials/ja/configure-page-text/preview-reset3.png)
 
-チュートリアルを通して、このまっさらな本の見た目を CSS で整えていきます。CSS は themes/mytheme/theme.css に記述します。
+チュートリアルを通して、このまっさらな本の見た目を CSS で整えていきます。CSS は themes/mytheme/scss/theme_common.scss に記述します。
 
 
 ## 用紙のスタイル
@@ -238,10 +238,10 @@ html {
 
 ## まとめ
 
-このチュートリアルでは、用紙と文字に関するスタイルをゼロから定義しました。以上のスタイルを記述した theme.css は以下のボタンからダウンロードできます。
+このチュートリアルでは、用紙と文字に関するスタイルをゼロから定義しました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-page-text/theme.css" text="theme.css" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-page-text/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
 </ol>
 
 ---
@@ -256,7 +256,7 @@ html {
 
 {% include page/tutorials.html
   title="チュートリアル④用紙と文字のスタイル"
-  lead="CSS を編集し、用紙と文字のスタイルを設定してみましょう。"
+  lead="SCSS を編集し、用紙と文字のスタイルを設定してみましょう。"
 
   content=content
 %}

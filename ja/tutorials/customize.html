@@ -19,7 +19,7 @@ lang: ja
 
 
 ### 設定ファイル
-Vivliostyle CLI で出版物を作成するには、package.json と vivliostyle.config.js という2つの設定ファイルが必要になります。
+[Create Book](https://github.com/vivliostyle/create-book) を使って出版物を作成するには、package.json と vivliostyle.config.js という2つの設定ファイルが必要になります。
 
 
 #### package.json
@@ -78,19 +78,19 @@ vivliostyle.config.js では、以下の項目を設定できます。
 | workspaceDir | 中間ファイル（Markdown から作られた HTML）の保存先ディレクトリ |
 | toc | 目次を作成するかどうか |
 | cover | 表紙画像 |
-| vfm | [VFM 記法](https://docs.vivliostyle.org/ja/vfm/)に関する設定 |
+| vfm | [VFM 記法](https://vivliostyle.github.io/vfm/#/ja/vfm)に関する設定 |
 
 詳細は [Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-vivliostyleconfigjs)を参照してください。
 
 
 ### 原稿ファイル
 
-Markdown 記法を拡張した [VFM 記法](https://docs.vivliostyle.org/ja/vfm/)で記述できます。HTML による記述も可能です。原稿を変更したい場合は、このファイルを編集したり、新しくファイルを追加したりします。
+Markdown 記法を拡張した [VFM 記法](https://vivliostyle.github.io/vfm/#/ja/vfm)で記述できます。HTML による記述も可能です。原稿を変更したい場合は、このファイルを編集したり、新しくファイルを追加したりします。
 
 
 ### スタイルファイル
 
-出版物のスタイルを定義するスタイルファイルは CSS で記述します。特に、色や余白などの調整は CSS Custom Properties を使うと管理しやすくなります。
+出版物のスタイルを定義するスタイルファイルは SCSS で記述され、CSS にトランスパイルされて使用されます。詳細は [Vivliostyle Themes ドキュメント](https://vivliostyle.github.io/themes/#/ja/spec#scss)を参照してください。
 
 多くの場合、スタイルファイルは複数のファイルからなり、1つのディレクトリに格納されています。例えば、雛形作成時に選択したテーマは themes/packages/@vivliostyle/theme-bunko という名前のディレクトリにダウンロードされています。出版物のスタイルを変更したい場合は、これらのファイルを編集したり、新しくファイルを追加したりします。
 
@@ -211,28 +211,49 @@ module.exports = {
 
 という設定で PDF が作成されます。
 
-以降はこの mytheme を編集していきます。スタイルを編集する際は、CSS ファイルを直接編集します。
-
-手始めに、見出しの色を CSS Custom Properties で変更してみましょう。`themes/mytheme/theme.css`（または利用中テーマの CSS ファイル）に以下を追記します。
+以降はこの mytheme を編集していきます。スタイルを編集する際は、mytheme ディレクトリに移動し、SCSS を CSS にトランスパイルするコマンドを実行しておきます。
 
 ```
-:root {
-  --vs-heading-color: #c00;
-}
+# mytheme ディレクトリに移動するコマンド
+cd themes/mytheme
 
+# SCSS を CSS にトランスパイルするコマンド
+npm run watch:scss
+```
+
+コマンドを実行すると以下のような表示が出ます（テーマによって、SCSS を CSS にトランスパイルするコマンドが異なる可能性があります。各テーマの package.json を確認してください）。
+
+```
+$ npm run watch:scss
+
+> @vivliostyle/theme-bunko@0.5.0 watch:scss
+> sass --watch scss:.
+
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+```
+
+手始めに、見出しの色を赤にしてみましょう。themes/mytheme/scss/theme_common.scss に以下を追記します。
+
+```
 h1 {
-  color: var(--vs-heading-color);
+  color: red;
 }
 ```
 
-`npm run preview` を起動した状態で CSS を保存すると、プレビュー画面が更新されます。意図した通りに見出しの色が変わっていることを確認してください。
+または以下のボタンから theme_common.scss をダウンロードし、mytheme/scss/theme_common.scss を置き換えます。
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/customize/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+</ol>
+
+すると、`npm run watch:scss` が SCSS ファイルの変更を自動で検知して CSS ファイルを更新します。`npm run preview` は CSS ファイルの更新を検知して、プレビュー画面を更新します。プレビューを確認すると、意図した通りに、見出しの色が赤くなっていることがわかります。
 
 ![](/assets/tutorials/ja/customize/preview6.png)
 
 このように、既存テーマをカスタマイズしたいときは、
 1. 既存テーマのディレクトリをコピー
 1. vivliostyle.config.js の theme を変更
-1. CSS（必要に応じて CSS Custom Properties）を編集
+1. `npm run watch:scss` で SCSS を CSS にトランスパイル
 
 という手順を踏みます。
 
@@ -243,7 +264,7 @@ h1 {
 
 ---
 
-次のチュートリアルでは、CSS を編集して用紙と文字の設定を行います。
+次のチュートリアルでは、SCSS を編集して用紙と文字の設定を行います。
 
 - 前：[チュートリアル②PDFの作成](/ja/tutorials/create-publications)
 - 次：[チュートリアル④用紙と文字のスタイル](/ja/tutorials/configure-page-text)

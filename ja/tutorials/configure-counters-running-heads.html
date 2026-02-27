@@ -41,10 +41,10 @@ body { /* 各原稿ファイル */
 
 h1 {
   counter-increment: section;
-}
 
-h1::before {
-  content: counter(chapter) "." counter(section) "章 ";
+  &::before {
+    content: counter(chapter) "." counter(section) "章 ";
+  }
 }
 ```
 
@@ -112,17 +112,17 @@ Vivliostyle は env(pub-title) と env(doc-title) という特別な変数を持
 
 ## まとめ
 
-このチュートリアルでは、カウンタと柱の設定を行いました。以上のスタイルを記述した theme.css は以下のボタンからダウンロードできます。
+このチュートリアルでは、カウンタと柱の設定を行いました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-counters-running-heads/theme.css" text="theme.css" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-counters-running-heads/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
 </ol>
 
 ---
 
-次のチュートリアルでは、CSS を編集して柱とノンブルの設定を行います。
+次のチュートリアルでは、SCSS を編集して柱とノンブルの設定を行います。
 
-- 前：[チュートリアル④用紙と文字のスタイル](/ja/tutorials/configure-page-text)
+- 前：[チュートリアル④用紙と文字の設定](/ja/tutorials/configure-page-text)
 - 次：[チュートリアル⑥基本的な要素のスタイル](/ja/tutorials/configure-basic-elements)
 - [チュートリアル一覧](/ja/tutorials)
 {% endcapture %}
@@ -130,7 +130,7 @@ Vivliostyle は env(pub-title) と env(doc-title) という特別な変数を持
 
 {% include page/tutorials.html
   title="チュートリアル⑤カウンタと柱のスタイル"
-  lead="CSS を編集し、カウンタと柱を設定してみましょう。"
+  lead="SCSS を編集し、カウンタと柱を設定してみましょう。"
 
   content=content
 %}

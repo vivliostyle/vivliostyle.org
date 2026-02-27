@@ -6,7 +6,7 @@ vfm:
   hardLineBreaks: false
 ---
 
-この原稿は [VFM (Vivliostyle Flavored Markdown)](https://docs.vivliostyle.org/ja/vfm/) で書かれています。詳細はドキュメントを確認してください。
+この原稿は [VFM (Vivliostyle Flavored Markdown)](https://vivliostyle.github.io/vfm/vfm) で書かれています。詳細はドキュメントを確認してください。
 
 # ソースコード {#code}
 
@@ -37,7 +37,7 @@ issue は GitHub[^issues]で管理されています。
 
 # Frontmatter {#frontmatter}
 
-Markdown ファイルの冒頭で、メタデータを設定することができます。詳細は [Frontmatter part in VFM document](https://docs.vivliostyle.org/ja/vfm/) を確認してください。
+Markdown ファイルの冒頭で、メタデータを設定することができます。詳細は [Frontmatter part in VFM document](https://vivliostyle.github.io/vfm/vfm#frontmatter) を確認してください。
 
 # 改行 {#newline}
 
