@@ -22,20 +22,20 @@ lang: ja
 出版物の雛形を作ります。ターミナルを開き、次のように入力し、Enter キーを押します。`mybook` の部分は自由に変えて構いません。
 
 ```
-npm create vivliostyle@latest mybook
+npm create book mybook
 ```
 
 雛形を作るにあたって必要な情報を入力していきます。description という表示になったら、出版物の詳細をテキスト入力します。空欄にする場合は、何も入力せずに Enter キーを押して次に進みます。
 
 ```
-$ npm create vivliostyle@latest mybook
+$ npm create book mybook
 ? description 私の書いた本
 ```
 
 Enter キーを押すと次の入力画面に進みます。author name と author email も同様に入力します。
 
 ```
-$ npm create vivliostyle@latest mybook
+$ npm create book mybook
 ? description 私の書いた本
 ? author name 山田太郎
 ? author email yamadataro@example.com
@@ -49,7 +49,7 @@ license と theme は上下キーで選択します。choose theme では、作�
 - @vivliostyle/theme-slide……スライド
 
 ```
-$ npm create vivliostyle@latest mybook
+$ npm create book mybook
 ? description 私の書いた本
 ? author name 山田太郎
 ? author email yamadataro@example.com
@@ -158,7 +158,7 @@ npm run preview
 このチュートリアルを通して、サンプル原稿を編集し、PDF を作成できるようになりました。実際の執筆においては、以下の手順を踏むことになるでしょう。
 
 1. 雛形の作成
-  - ターミナルで `npm create vivliostyle@latest mybook` を実行
+  - ターミナルで `npm create book mybook` を実行
   - `mybook` の部分は自由に変更可能
 1. プレビューの起動
   - ターミナルで `npm run preview` を実行
