@@ -1,3 +1,5 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -95,8 +97,6 @@ section > h2::before {
   margin-right: 1rem;
   content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
 }
-
-@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
 
 code {
   background-color: #f6f6f6;
