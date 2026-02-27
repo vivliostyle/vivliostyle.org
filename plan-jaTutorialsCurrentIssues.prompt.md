@@ -23,4 +23,4 @@ Create Book前提の記述をVivliostyle CLI前提へ全面置換し、CSS Custo
 - Create Book記述は全面置換（旧手順の併記なし）。
 - SCSSは扱わず、CSS Custom Propertiesのみ記述。
 - バージョンは最低要件のみ記載。
-- 外部ドキュメントリンクは docs2.vivliostyle.org を第一優先で統一。
+- 外部ドキュメントリンクは`https://docs.vivliostyle.org/ja/`を第一優先で統一。
