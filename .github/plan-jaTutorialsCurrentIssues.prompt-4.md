@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Vivliostyle CLI v10の目玉機能であるBasicテンプレートの**日本語版**（`templates/basic-ja/`）をvivliostyle-cliリポジトリに新設し、これをチュートリアル②（PDF作成）と③（カスタマイズ）の中心に据える。テーマは `@vivliostyle/theme-techbook` を使用。Basicテンプレートは9章構成のスターターコンテンツ（VFM解説・機能紹介・スタイリングガイド等）、表紙、自動目次、`custom.css`（CSS Custom Propertiesリファレンス）を含み、雛形を作った時点で「すぐ読める日本語の技術書」が手に入る。「作る→見る→改造する」という自然な学習フローを構成し、③では `custom.css` 直接編集方式によるカスタマイズを教える。
+Vivliostyle CLI v10の目玉機能であるBasicテンプレートの**日本語版**（`templates/basic-ja/`）をvivliostyle-cliリポジトリに新設し、これをチュートリアル②（PDF作成）と③（カスタマイズ）の中心に据える。テーマは `@vivliostyle/theme-techbook` を使用。Basicテンプレートは9章構成のスターターコンテンツ（VFM解説・機能紹介・スタイリングガイド等）、表紙、自動目次、`custom.css`（CSS Custom Propertiesリファレンス）を含み、雛形を作った時点で「すぐ読める日本語の技術書」が手に入る。「作る→見る→改造する」という自然な学習フローを構成し、③では `custom.css` 直接編集方式によるカスタマイズを教える。また、従来「今後追加予定」とされていた「段組みの設定」と「Webフォントの設定」を、それぞれ③のcustom.cssカスタマイズ例と④のフォントセクションに吸収し、全7回で完結するチュートリアル構成とする。
 
 ## Decisions（確定事項）
 
@@ -15,6 +15,9 @@ Vivliostyle CLI v10の目玉機能であるBasicテンプレートの**日本語
 | テーマカスタマイズ | `custom.css` 直接編集方式 | theme-bunkoコピー方式を廃止 |
 | ダウンロードボタン | ③から削除 | maegaki.md / honbun.md / atogaki.md のダウンロードは不要に |
 | 改修範囲 | ②と③をセットで改修 | Basicテンプレート前提に統一 |
+| 段組みの設定 | ③ Step 8 に吸収 | `custom.css` カスタマイズ例として `--vs-columns: 2;` を追加。Basicテンプレートの 06/08 章にも詳細解説あり |
+| Webフォントの設定 | ④ フォントセクションに吸収 | `@import url(...)` + `--vs-font-family` 変更の手順をサブセクションとして追加 |
+| 「今後追加予定」セクション | index.htmlから削除 | 上記2項目の吸収により全7回で完結 |
 
 ## 前提条件（vivliostyle-cliリポジトリ側の作業）
 
@@ -328,6 +331,26 @@ entry: [
 }
 ```
 
+**実際の例④: 段組みの設定**
+
+`@vivliostyle/theme-base` が提供する CSS Custom Properties を使い、ドキュメント全体を2段組みにできる：
+```css
+:root {
+  --vs-columns: 2;
+  --vs-column-gap: 2em;
+}
+```
+
+特定のセクションだけ段組みにしたい場合は、カスタムクラスを `custom.css` の末尾に追加する：
+```css
+.two-column {
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 1px solid #e0e0e0;
+}
+```
+→ Markdown内で `<div class="two-column">...</div>` として使用。スターターコンテンツの `06_styling-guide.md`（Two-Column Layouts）と `08_page-design.md`（Multi-Column Layouts）にも詳しいガイドあり。
+
 - `npm run preview` を起動した状態でCSSを保存するとプレビューが更新される旨
 - **スクリーンショット撮影箇所（2枚）:** custom.css変更前と変更後のプレビュー比較
 
@@ -349,10 +372,43 @@ entry: [
 
 | チュートリアル | 修正内容 | 優先度 |
 |---------------|---------|-------|
-| ④用紙と文字のスタイル | `custom.css` からの自然な拡張として @page ルール等を説明。参照例の文脈をBasicテンプレート前提に軽く修正 | 低 |
+| ④用紙と文字のスタイル | `custom.css` からの自然な拡張として @page ルール等を説明。参照例の文脈をBasicテンプレート前提に軽く修正。**Webフォントのサブセクションを新設**（下記参照） | 中 |
 | ⑤カウンタと柱 | `custom.css` に `--vs-page--mbox-content-*` プロパティがある旨を導入部で言及 | 低 |
 | ⑥基本要素 | 変更は最小限 | 低 |
 | ⑦目次 | Basicテンプレートが `{ rel: "contents" }` で自動目次を含んでいる旨を導入で言及追加 | 低 |
+| index.html | 「今後追加予定のチュートリアル」セクションを削除 | 中 |
+
+#### Step 10a: チュートリアル④ — Webフォントのサブセクション新設
+
+現在の④には「フォントファミリー」セクション（`font-family: '游明朝', 'YuMincho', serif;`）が既にある。ここに「Webフォントを使う」サブセクションを追加する。
+
+**追加内容:**
+
+Vivliostyle CLIはChromiumベースのレンダリングを使うため、`@import url()` や `@font-face` で読み込んだWebフォントをそのままPDF出力に反映できる。`custom.css` の先頭に以下を追記する：
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+:root {
+  --vs-font-family: 'Noto Serif JP', serif;
+}
+```
+
+- Google Fontsの例（Noto Serif JP）で紹介
+- `@import` は `custom.css` の**先頭**（他のルールより前）に記述する必要がある旨を注意書き
+- プレビューで反映を確認し、PDFビルドでもフォントが埋め込まれることを説明
+
+#### Step 10b: index.html — 「今後追加予定」セクションの削除
+
+`ja/tutorials/index.html` から以下のセクションを削除する：
+
+```markdown
+## 今後追加予定のチュートリアル
+- 段組みの設定
+- Web フォントの設定
+```
+
+段組みは③のcustom.cssカスタマイズ例に、WebフォントはDの④フォントセクションにそれぞれ吸収されたため、独立チュートリアルとしての追加は不要。全7回で完結するチュートリアル構成となる。
 
 ## スクリーンショット撮影一覧
 
