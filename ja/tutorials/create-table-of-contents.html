@@ -102,35 +102,35 @@ module.exports = {
 ```
 #toc li {
   list-style: none;
+}
 
-  ol {
-    padding-left: 1em;
-  }
+#toc li ol {
+  padding-left: 1em;
+}
 
-  a {
-    display: inline-flex;
-    width: 100%;
-    text-decoration: none;
-    color: currentColor;
-    align-items: baseline;
+#toc li a {
+  display: inline-flex;
+  width: 100%;
+  text-decoration: none;
+  color: currentColor;
+  align-items: baseline;
+}
 
-    &::before {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-      border-bottom: 1px dotted;
-      content: '';
-      order: 1;
-      flex: auto;
-    }
+#toc li a::before {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border-bottom: 1px dotted;
+  content: '';
+  order: 1;
+  flex: auto;
+}
 
-    &::after {
-      text-align: right;
-      content: target-counter(attr(href), page);
-      align-self: flex-end;
-      flex: none;
-      order: 2;
-    }
-  }
+#toc li a::after {
+  text-align: right;
+  content: target-counter(attr(href), page);
+  align-self: flex-end;
+  flex: none;
+  order: 2;
 }
 ```
 
@@ -144,14 +144,14 @@ module.exports = {
 このチュートリアルでは、目次を作成してそのスタイルを定義しました。今回のチュートリアルで使用した vivliostyle.config.js、原稿ファイル、スタイルファイルは以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-table-of-contents/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-table-of-contents/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-table-of-contents/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/create-table-of-contents/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/create-table-of-contents/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/create-table-of-contents/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
 </ol>
 
 ---
 
-- 前：[チュートリアル⑤カウンタと柱のスタイル](/ja/tutorials/configure-counters-running-heads)
+- 前：[チュートリアル⑥基本的な要素のスタイル](/ja/tutorials/configure-basic-elements)
 - [チュートリアル一覧](/ja/tutorials)
 {% endcapture %}
 

@@ -15,35 +15,27 @@ lang: ja
 
 ## PDF の作成
 
-Vivliostyle には様々なツールがありますが、このチュートリアルでは [Create Book](https://github.com/vivliostyle/create-book) を使います。Create Book を使って出版物の雛形を作り、雛形に含まれるサンプル原稿やサンプルスタイルを改造することで、自分だけの出版物を作っていきます。
+このチュートリアルでは Vivliostyle CLI を使います。CLI で出版物の雛形を作り、雛形に含まれるサンプル原稿やサンプルスタイルを改造することで、自分だけの出版物を作っていきます。
 
 ### 雛形の作成（新しく出版物を作る時のみ）
 
 出版物の雛形を作ります。ターミナルを開き、次のように入力し、Enter キーを押します。`mybook` の部分は自由に変えて構いません。
 
 ```
-npm create book mybook
-```
-
-以下の表示が出た場合、`y` を入力して Enter キーを押します。
-
-```
-Need to install the following packages:
-  create-book
-Ok to proceed? (y)
+npm create vivliostyle@latest mybook
 ```
 
 雛形を作るにあたって必要な情報を入力していきます。description という表示になったら、出版物の詳細をテキスト入力します。空欄にする場合は、何も入力せずに Enter キーを押して次に進みます。
 
 ```
-$ npm create book mybook
+$ npm create vivliostyle@latest mybook
 ? description 私の書いた本
 ```
 
 Enter キーを押すと次の入力画面に進みます。author name と author email も同様に入力します。
 
 ```
-$ npm create book mybook
+$ npm create vivliostyle@latest mybook
 ? description 私の書いた本
 ? author name 山田太郎
 ? author email yamadataro@example.com
@@ -57,7 +49,7 @@ license と theme は上下キーで選択します。choose theme では、作�
 - @vivliostyle/theme-slide……スライド
 
 ```
-$ npm create book mybook
+$ npm create vivliostyle@latest mybook
 ? description 私の書いた本
 ? author name 山田太郎
 ? author email yamadataro@example.com
@@ -68,16 +60,7 @@ $ npm create book mybook
 Enter キーを押すと、出版物の作成に必要なリソースのダウンロードが始まります（通常は数分以内に終わります）。以下の内容が表示されると完了です。
 
 ```
-Success! Created mybook.
-
-1. cd mybook
-2. create and edit Markdown files
-3. edit entry field in your vivliostyle.config.js
-4. yarn build or npm run build
-
-See https://docs.vivliostyle.org for futher information.
-
-🖊️Happy writing!
+✔ Project scaffolded successfully.
 ```
 
 指示のとおり、ターミナルで以下のコマンドを入力し、今自動で作られた作業用のディレクトリに移動しましょう。
@@ -175,7 +158,7 @@ npm run preview
 このチュートリアルを通して、サンプル原稿を編集し、PDF を作成できるようになりました。実際の執筆においては、以下の手順を踏むことになるでしょう。
 
 1. 雛形の作成
-  - ターミナルで `npm create book mybook` を実行
+  - ターミナルで `npm create vivliostyle@latest mybook` を実行
   - `mybook` の部分は自由に変更可能
 1. プレビューの起動
   - ターミナルで `npm run preview` を実行

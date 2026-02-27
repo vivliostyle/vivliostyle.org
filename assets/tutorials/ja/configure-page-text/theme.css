@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@page {
+  size: 148mm 210mm;
+  margin: 10mm 15mm;
+}
+
+@page :left {
+  margin-right: 25mm;
+}
+
+@page :right {
+  margin-left: 25mm;
+}
+
+body {
+  break-before: right;
+}
+
+html {
+  font-size: 10pt;
+  widows: 1;
+  orphans: 1;
+  text-align: justify;
+  text-spacing: allow-end;
+  hanging-punctuation: allow-end;
+}
+
+ruby > rt {
+  font-size: 0.5rem;
+}
+
+p {
+  line-height: 1.5;
+  text-indent: 1em;
+}

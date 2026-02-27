@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@page {
+  size: 148mm 210mm;
+  margin: 10mm 15mm;
+
+  @bottom-center {
+    content: counter(page);
+    writing-mode: horizontal-tb;
+  }
+}
+
+@page :left {
+  margin-right: 25mm;
+
+  @top-left {
+    content: env(doc-title);
+  }
+}
+
+@page :right {
+  margin-left: 25mm;
+}
+
+@page :first {
+  counter-reset: chapter;
+}
+
+@page :nth(1) {
+  counter-increment: chapter;
+}
+
+body {
+  break-before: right;
+  counter-reset: section subsection figure;
+}
+
+html {
+  font-size: 10pt;
+  widows: 1;
+  orphans: 1;
+  text-align: justify;
+  text-spacing: allow-end;
+  hanging-punctuation: allow-end;
+}
+
+ruby > rt {
+  font-size: 0.5rem;
+}
+
+p {
+  line-height: 1.5;
+  text-indent: 1em;
+}
+
+body > section {
+  margin: 10px auto;
+}
+
+section > h1,
+section > h2,
+section > h3,
+section > h4,
+section > h5,
+section > h6 {
+  padding: 0;
+  font-weight: bold;
+  break-after: avoid;
+}
+
+section > h1 {
+  margin: 10pt auto 5pt;
+  font-size: 14pt;
+  line-height: 1.5;
+  counter-increment: section;
+  counter-reset: subsection;
+}
+
+section > h1::before {
+  margin-right: 1rem;
+  content: counter(chapter) '.' counter(section) '章';
+}
+
+section > h2 {
+  margin: 8pt auto 4pt;
+  font-size: 12pt;
+  counter-increment: subsection;
+}
+
+section > h2::before {
+  margin-right: 1rem;
+  content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
+}
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
+
+code {
+  background-color: #f6f6f6;
+  padding: 0 3pt;
+}
+
+figure[class^='language-'] {
+  margin: 0.5em 0;
+}
+
+figure[class^='language-'] figcaption {
+  background-color: #e6e6e6;
+}
+
+figure[class^='language-'] pre {
+  margin: 0pt;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figure figcaption {
+  text-align: center;
+  counter-increment: figure;
+}
+
+figure figcaption::before {
+  margin-right: 1rem;
+  content: 'Figure' counter(figure) '.';
+}
+
+:root:lang(ja) figure figcaption::before {
+  content: '図' counter(figure) '.';
+}
+
+.footnote-ref sup {
+  background-color: #ff8989;
+}
+
+.footnote-back {
+  background-color: #ff8989;
+}
+
+.footnotes {
+  font-size: 8pt;
+}
