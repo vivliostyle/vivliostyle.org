@@ -15,7 +15,7 @@ lang: ja
 
 ## PDF の作成
 
-Vivliostyle には様々なツールがありますが、このチュートリアルでは [Create Book](https://github.com/vivliostyle/create-book) を使います。Create Book を使って出版物の雛形を作り、雛形に含まれるサンプル原稿やサンプルスタイルを改造することで、自分だけの出版物を作っていきます。
+このチュートリアルでは Vivliostyle CLI を使います。CLI で出版物の雛形を作り、雛形に含まれるサンプル原稿やサンプルスタイルを改造することで、自分だけの出版物を作っていきます。
 
 ### 雛形の作成（新しく出版物を作る時のみ）
 
@@ -25,59 +25,78 @@ Vivliostyle には様々なツールがありますが、このチュートリ�
 npm create book mybook
 ```
 
-以下の表示が出た場合、`y` を入力して Enter キーを押します。
-
-```
-Need to install the following packages:
-  create-book
-Ok to proceed? (y)
-```
-
-雛形を作るにあたって必要な情報を入力していきます。description という表示になったら、出版物の詳細をテキスト入力します。空欄にする場合は、何も入力せずに Enter キーを押して次に進みます。
+雛形を作るにあたって必要な情報を対話形式で入力していきます。まずタイトルを入力します。空欄にする場合は、Enter キーを押してデフォルト値のまま次に進みます。
 
 ```
 $ npm create book mybook
-? description 私の書いた本
+◇  What's the title of your publication?
+│  Mybook
 ```
 
-Enter キーを押すと次の入力画面に進みます。author name と author email も同様に入力します。
-
-```
-$ npm create book mybook
-? description 私の書いた本
-? author name 山田太郎
-? author email yamadataro@example.com
-```
-
-license と theme は上下キーで選択します。choose theme では、作りたい本の用途に合わせて以下のテーマパッケージのいずれかを選択します。このチュートリアルでは、 @vivliostyle/theme-bunko を選択してみましょう。
-- @vivliostyle/theme-techbook……技術同人誌をふくむ横書き冊子
-- @vivliostyle/theme-academic……論文、レポートをふくむ横書き文書
-- @vivliostyle/theme-bunko……小説同人誌をふくむ縦書き文書／冊子
-- @vivliostyle/theme-gutenberg……小説同人誌をふくむ横書き文書／冊子
-- @vivliostyle/theme-slide……スライド
+Enter キーを押すと次の入力画面に進みます。著者名と言語も同様に入力・選択します。
 
 ```
 $ npm create book mybook
-? description 私の書いた本
-? author name 山田太郎
-? author email yamadataro@example.com
-? license CC0-1.0
-? choose theme @vivliostyle/theme-bunko
+◇  What's the title of your publication?
+│  Mybook
+◇  What's the author name?
+│  山田太郎
+◇  What's the language?
+│  Japanese
+```
+
+Enter キーを押すと、プロジェクトのテンプレートを選択します。 Minimal は空のコンテンツのシンプルな雛形、 Basic はスターターコンテンツ付きの雛形です。このチュートリアルでは Minimal を選択しましょう。
+
+```
+$ npm create book mybook
+◇  What's the title of your publication?
+│  Mybook
+◇  What's the author name?
+│  山田太郎
+◇  What's the language?
+│  Japanese
+◆  What's the project template?
+│  ● Minimal  ○ Basic
+```
+
+テーマはキーで選択します。このチュートリアルでは、 @vivliostyle/theme-bunko を選択してみましょう。
+
+```
+$ npm create book mybook
+◇  What's the title of your publication?
+│  Mybook
+◇  What's the author name?
+│  山田太郎
+◇  What's the language?
+│  Japanese
+◆  What's the project template?
+│  ● Minimal  ○ Basic
+◆  Which theme do you want to use?
+│  @vivliostyle/theme-bunko
+```
+
+最後に、依存パッケージのインストールを行うかどうか確認します。" Yes "を選択すると自動でインストールされます。
+
+```
+$ npm create book mybook
+◇  What's the title of your publication?
+│  Mybook
+◇  What's the author name?
+│  山田太郎
+◇  What's the language?
+│  Japanese
+◆  What's the project template?
+│  ● Minimal  ○ Basic
+◆  Which theme do you want to use?
+│  @vivliostyle/theme-bunko
+◆  Should we install dependencies? (You can install them later.)
+│  ● Yes  ○ No
 ```
 
 Enter キーを押すと、出版物の作成に必要なリソースのダウンロードが始まります（通常は数分以内に終わります）。以下の内容が表示されると完了です。
 
 ```
-Success! Created mybook.
-
-1. cd mybook
-2. create and edit Markdown files
-3. edit entry field in your vivliostyle.config.js
-4. yarn build or npm run build
-
-See https://docs.vivliostyle.org for futher information.
-
-🖊️Happy writing!
+✔  Project scaffolded successfully.
 ```
 
 指示のとおり、ターミナルで以下のコマンドを入力し、今自動で作られた作業用のディレクトリに移動しましょう。
@@ -91,17 +110,16 @@ cd mybook
 
 ### PDF の作成
 
-続いて、サンプル原稿から PDF を作成します。テキストエディタでサンプル原稿を開き、その内容を確認してみましょう。前のステップで @vivliostyle/theme-bunko テーマを選択した場合、サンプル原稿は mybook/bunko.md にあります（サンプル原稿のパスはテーマによって異なります。mybook/vivliostyle.config.js の entry と書かれた部分を参照してください）。
+続いて、原稿を書いて PDF を作成します。Minimal テンプレートでは、`mybook/manuscript.md` という空の原稿ファイルが作成されています。テキストエディタでこのファイルを開き、以下のような内容を書き込んでみましょう。
 
 ```
-# 銀河鉄道の夜
+# はじめての本
 
-<div class="author">宮沢賢治</div>
+<div class="author">著者名</div>
 
-## 一、{午后|ごご}の授業
+## 第一章
 
-「ではみなさんは、そういうふうに川だと{云|い}われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に{吊|つる}した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを{指|さ}しながら、みんなに{問|とい}をかけました。
-...
+本文をここに書きます。
 ```
 
 では、このサンプルから PDF を作成してみましょう。ターミナルで以下のコマンドを入力します。
@@ -126,8 +144,7 @@ $ npm run build
 
 ℹ Rendering browser (Chromium) is not installed yet. Downloading now...
 ✔ Successfully downloaded browser
-✔ bunko.md 銀河鉄道の夜
-✔ bunko.md 銀河鉄道の夜
+✔ manuscript.md はじめての本
 ◡ Processing PDF
 mybook.pdf has been created.
 🎉 Built successfully.
@@ -152,17 +169,16 @@ npm run preview
 
 ![プレビュー画面](/assets/tutorials/ja/create-publications/preview1.png)
 
-プレビューを起動させたまま、サンプル原稿を編集し、保存します（夜を朝にしてみました）。
+プレビューを起動させたまま、原稿を編集し、保存します（タイトルと本文を変えてみました）。
 
 ```
-# 銀河鉄道の朝
+# はじめての本（改訂版）
 
-<div class="author">宮沢賢治</div>
+<div class="author">著者名</div>
 
-## 一、{午后|ごご}の授業
+## 第一章
 
-「ではみなさんは、そういうふうに川だと{云|い}われたり、乳の流れたあとだと云われたりしていたこのぼんやりと白いものがほんとうは何かご承知ですか。」先生は、黒板に{吊|つる}した大きな黒い星座の図の、上から下へ白くけぶった銀河帯のようなところを{指|さ}しながら、みんなに{問|とい}をかけました。
-...
+プレビューを見ながら原稿を編集できます。
 ```
 
 すると、サンプル原稿の編集に合わせて自動的にプレビュー画面が更新されます。

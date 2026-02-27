@@ -19,7 +19,7 @@ lang: ja
 
 
 ### 設定ファイル
-[Create Book](https://github.com/vivliostyle/create-book) を使って出版物を作成するには、package.json と vivliostyle.config.js という2つの設定ファイルが必要になります。
+Vivliostyle CLI で出版物を作成するには、package.json と vivliostyle.config.js という2つの設定ファイルが必要になります。
 
 
 #### package.json
@@ -31,7 +31,10 @@ lang: ja
 出版物に関する設定ファイルです。雛形作成時に設定した項目もこのファイルで管理されています（上書き可能です）。原稿ファイルを増やしたい時や、テーマを別のものに変えたい時は、このファイルを編集します。
 
 ```
-module.exports = {
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
   title: 'mybook',
   author: '山田太郎 <yamadataro@example.com>',
   language: 'ja',
@@ -60,7 +63,7 @@ module.exports = {
     hardLineBreaks: true,
     disableFormatHtml: true,
   },
-}
+});
 ```
 
 vivliostyle.config.js では、以下の項目を設定できます。
@@ -78,21 +81,21 @@ vivliostyle.config.js では、以下の項目を設定できます。
 | workspaceDir | 中間ファイル（Markdown から作られた HTML）の保存先ディレクトリ |
 | toc | 目次を作成するかどうか |
 | cover | 表紙画像 |
-| vfm | [VFM 記法](https://vivliostyle.github.io/vfm/#/ja/vfm)に関する設定 |
+| vfm | [VFM 記法](https://docs.vivliostyle.org/ja/vfm/)に関する設定 |
 
 詳細は [Vivliostyle CLI ドキュメント](https://docs.vivliostyle.org/ja/cli/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-vivliostyleconfigjs)を参照してください。
 
 
 ### 原稿ファイル
 
-Markdown 記法を拡張した [VFM 記法](https://vivliostyle.github.io/vfm/#/ja/vfm)で記述できます。HTML による記述も可能です。原稿を変更したい場合は、このファイルを編集したり、新しくファイルを追加したりします。
+Markdown 記法を拡張した [VFM 記法](https://docs.vivliostyle.org/ja/vfm/)で記述できます。HTML による記述も可能です。原稿を変更したい場合は、このファイルを編集したり、新しくファイルを追加したりします。
 
 
 ### スタイルファイル
 
-出版物のスタイルを定義するスタイルファイルは SCSS で記述され、CSS にトランスパイルされて使用されます。詳細は [Vivliostyle Themes ドキュメント](https://vivliostyle.github.io/themes/#/ja/spec#scss)を参照してください。
+出版物のスタイルを定義するスタイルファイルは CSS で記述します。特に、色や余白などの調整は CSS Custom Properties を使うと管理しやすくなります。
 
-多くの場合、スタイルファイルは複数のファイルからなり、1つのディレクトリに格納されています。例えば、雛形作成時に選択したテーマは themes/packages/@vivliostyle/theme-bunko という名前のディレクトリにダウンロードされています。出版物のスタイルを変更したい場合は、これらのファイルを編集したり、新しくファイルを追加したりします。
+多くの場合、スタイルファイルは複数のファイルからなり、1つのディレクトリに格納されています。例えば、雛形作成時に選択したテーマは node_modules/@vivliostyle/theme-bunko という名前のディレクトリにインストールされています。出版物のスタイルを変更したい場合は、これらのファイルを編集したり、新しくファイルを追加したりします。
 
 
 ## カスタマイズ
@@ -105,16 +108,19 @@ Markdown 記法を拡張した [VFM 記法](https://vivliostyle.github.io/vfm/#/
 原稿ファイルは、vivliostyle.config.js の entry で設定した値に対応しています。例えば vivliostyle.config.js で以下のような設定をした場合、
 
 ```
-module.exports = {
-  ...
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
+  // ...
   entry: [
     'maegaki.md',
     'honbun.md',
     'atogaki.md',
   ],
   entryContext: './manuscripts',
-  ...
-}
+  // ...
+});
 ```
 
 - 原稿ファイルは maegaki.md と honbun.md と atogaki.md の3つ
@@ -137,10 +143,9 @@ mybook/
 │   ├── maegaki.md
 │   ├── honbun.md
 │   └── atogaki.md
-└── themes/
-    └── packages/
-        └── @vivliostyle/
-            └── theme-bunko/
+└── node_modules/
+    └── @vivliostyle/
+        └── theme-bunko/
 ```
 
 プレビュー機能を起動すると、vivliostyle.config.js で指定した通りの順番で、原稿ファイルが出版物に反映されていることがわかります（反映されない場合は、 `npm run preview` が実行されているターミナルで `Ctrl+C` を入力してコマンドの実行を停止し、再度 `npm run preview` を実行してください）。
@@ -165,11 +170,14 @@ npm run preview
 vivliostyle.config.js の theme には、npm package として公開されているテーマの名前、スタイルファイルを格納したディレクトリの名前、または特定のスタイルファイルの名前を設定します。デフォルトでは vivliostyle.config.js で以下のように設定されています。
 
 ```
-module.exports = {
-  ...
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
+  // ...
   theme: '@vivliostyle/theme-bunko',
-  ...
-}
+  // ...
+});
 ```
 
 この場合、
@@ -178,7 +186,7 @@ module.exports = {
 
 という設定で PDF が作成されます。
 
-では、既存のテーマ @vivliostyle/theme-bunko をカスタマイズし、そのスタイルを PDF に適用してみましょう。既存のテーマを改造する場合は、既存のテーマのディレクトリ (themes/packages/@vivliostyle/theme-bunko) をコピーし、別の名前をつけて保存します。
+では、既存のテーマ @vivliostyle/theme-bunko をカスタマイズし、そのスタイルを PDF に適用してみましょう。既存のテーマを改造する場合は、既存のテーマのディレクトリ (node_modules/@vivliostyle/theme-bunko) をコピーし、別の名前をつけて保存します。
 
 ```
 mybook/
@@ -188,21 +196,24 @@ mybook/
 │   ├── maegaki.md
 │   ├── honbun.md
 │   └── atogaki.md
-└── themes/
-    ├── mytheme/ (*theme-bunkoをコピー)
-    └── packages/
-        └── @vivliostyle/
-            └── theme-bunko/
+├── themes/
+│   └── mytheme/ (*theme-bunkoをコピー)
+└── node_modules/
+    └── @vivliostyle/
+        └── theme-bunko/
 ```
 
 その後、vivliostyle.config.js の theme を、コピーしたディレクトリの名前に書き換えます。
 
 ```
-module.exports = {
-  ...
-  theme: 'themes/mytheme',
-  ...
-}
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
+  // ...
+  theme: './themes/mytheme',
+  // ...
+});
 ```
 
 すると、
@@ -211,49 +222,28 @@ module.exports = {
 
 という設定で PDF が作成されます。
 
-以降はこの mytheme を編集していきます。スタイルを編集する際は、mytheme ディレクトリに移動し、SCSS を CSS にトランスパイルするコマンドを実行しておきます。
+以降はこの mytheme を編集していきます。スタイルを編集する際は、CSS ファイルを直接編集します。
+
+手始めに、見出しの色を CSS Custom Properties で変更してみましょう。`themes/mytheme/theme.css`（または利用中テーマの CSS ファイル）に以下を追記します。
 
 ```
-# mytheme ディレクトリに移動するコマンド
-cd themes/mytheme
+:root {
+  --vs-heading-color: #c00;
+}
 
-# SCSS を CSS にトランスパイルするコマンド
-npm run watch:scss
-```
-
-コマンドを実行すると以下のような表示が出ます（テーマによって、SCSS を CSS にトランスパイルするコマンドが異なる可能性があります。各テーマの package.json を確認してください）。
-
-```
-$ npm run watch:scss
-
-> @vivliostyle/theme-bunko@0.5.0 watch:scss
-> sass --watch scss:.
-
->>> Sass is watching for changes. Press Ctrl-C to stop.
-```
-
-手始めに、見出しの色を赤にしてみましょう。themes/mytheme/scss/theme_common.scss に以下を追記します。
-
-```
 h1 {
-  color: red;
+  color: var(--vs-heading-color);
 }
 ```
 
-または以下のボタンから theme_common.scss をダウンロードし、mytheme/scss/theme_common.scss を置き換えます。
-
-<ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/customize/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
-</ol>
-
-すると、`npm run watch:scss` が SCSS ファイルの変更を自動で検知して CSS ファイルを更新します。`npm run preview` は CSS ファイルの更新を検知して、プレビュー画面を更新します。プレビューを確認すると、意図した通りに、見出しの色が赤くなっていることがわかります。
+`npm run preview` を起動した状態で CSS を保存すると、プレビュー画面が更新されます。意図した通りに見出しの色が変わっていることを確認してください。
 
 ![](/assets/tutorials/ja/customize/preview6.png)
 
 このように、既存テーマをカスタマイズしたいときは、
 1. 既存テーマのディレクトリをコピー
 1. vivliostyle.config.js の theme を変更
-1. `npm run watch:scss` で SCSS を CSS にトランスパイル
+1. CSS（必要に応じて CSS Custom Properties）を編集
 
 という手順を踏みます。
 
@@ -264,7 +254,7 @@ h1 {
 
 ---
 
-次のチュートリアルでは、SCSS を編集して用紙と文字の設定を行います。
+次のチュートリアルでは、CSS を編集して用紙と文字の設定を行います。
 
 - 前：[チュートリアル②PDFの作成](/ja/tutorials/create-publications)
 - 次：[チュートリアル④用紙と文字のスタイル](/ja/tutorials/configure-page-text)
