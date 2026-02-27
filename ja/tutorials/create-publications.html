@@ -25,42 +25,46 @@ lang: ja
 npm create book mybook
 ```
 
-雛形を作るにあたって必要な情報を入力していきます。description という表示になったら、出版物の詳細をテキスト入力します。空欄にする場合は、何も入力せずに Enter キーを押して次に進みます。
+雛形を作るにあたって必要な情報を対話形式で入力していきます。まずタイトルを入力します。空欄にする場合は、Enter キーを押してデフォルト値のまま次に進みます。
 
 ```
 $ npm create book mybook
-? description 私の書いた本
+◇  What's the title of your publication?
+│  Mybook
 ```
 
-Enter キーを押すと次の入力画面に進みます。author name と author email も同様に入力します。
-
-```
-$ npm create book mybook
-? description 私の書いた本
-? author name 山田太郎
-? author email yamadataro@example.com
-```
-
-license と theme は上下キーで選択します。choose theme では、作りたい本の用途に合わせて以下のテーマパッケージのいずれかを選択します。このチュートリアルでは、 @vivliostyle/theme-bunko を選択してみましょう。
-- @vivliostyle/theme-techbook……技術同人誌をふくむ横書き冊子
-- @vivliostyle/theme-academic……論文、レポートをふくむ横書き文書
-- @vivliostyle/theme-bunko……小説同人誌をふくむ縦書き文書／冊子
-- @vivliostyle/theme-gutenberg……小説同人誌をふくむ横書き文書／冊子
-- @vivliostyle/theme-slide……スライド
+Enter キーを押すと次の入力画面に進みます。著者名と言語も同様に入力・選択します。
 
 ```
 $ npm create book mybook
-? description 私の書いた本
-? author name 山田太郎
-? author email yamadataro@example.com
-? license CC0-1.0
-? choose theme @vivliostyle/theme-bunko
+◇  What's the title of your publication?
+│  Mybook
+◇  What's the author name?
+│  山田太郎
+◇  What's the language?
+│  Japanese
+```
+
+テーマはキーで選択します。このチュートリアルでは、 @vivliostyle/theme-bunko を選択してみましょう。
+
+```
+$ npm create book mybook
+◇  What's the title of your publication?
+│  Mybook
+◇  What's the author name?
+│  山田太郎
+◇  What's the language?
+│  Japanese
+◆  Which theme do you want to use?
+│  @vivliostyle/theme-bunko
+◆  Install dependencies?
+│  ● Yes  ○ No
 ```
 
 Enter キーを押すと、出版物の作成に必要なリソースのダウンロードが始まります（通常は数分以内に終わります）。以下の内容が表示されると完了です。
 
 ```
-✔ Project scaffolded successfully.
+✔  Project scaffolded successfully.
 ```
 
 指示のとおり、ターミナルで以下のコマンドを入力し、今自動で作られた作業用のディレクトリに移動しましょう。
@@ -109,7 +113,6 @@ $ npm run build
 
 ℹ Rendering browser (Chromium) is not installed yet. Downloading now...
 ✔ Successfully downloaded browser
-✔ bunko.md 銀河鉄道の夜
 ✔ bunko.md 銀河鉄道の夜
 ◡ Processing PDF
 mybook.pdf has been created.

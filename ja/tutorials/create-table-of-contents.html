@@ -22,12 +22,15 @@ Vivliostyle の機能を使って目次を自動で作成することができ�
 です。vivliostyle.config.js に以下の項目を追記します。
 
 ```
-module.exports = {
-  ...
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
+  // ...
   toc: {
-    title: '目次'
-  }
-}
+    title: '目次',
+  },
+});
 ```
 
 以下のコマンドを実行します。
@@ -85,16 +88,20 @@ npm run preview
 目次ファイルを独自に作る場合は、vivliostyle.config.js の entry に追記が必要です。目次ファイルには `rel: 'contents'` を指定してください。
 
 ```
-module.exports = {
-  ...
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
+  // ...
   entry: [
     {
       path: 'toc.md',
       rel: 'contents',
     },
     'maegaki.md',
-    ...
-}
+    // ...
+  ],
+});
 ```
 
 目次用の CSS も追記します。
