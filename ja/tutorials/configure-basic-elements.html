@@ -27,7 +27,7 @@ lang: ja
 
 ### セクションのスタイル
 
-```
+```css
 body > section {
   margin: 10px auto;
 }
@@ -36,7 +36,7 @@ body > section {
 
 ### 見出しのスタイル
 
-```
+```css
 body {
   counter-reset: section subsection figure;
 }
@@ -79,7 +79,7 @@ section > h2::before {
 
 ソースコードのシンタックスハイライトには [Prism.js](https://prismjs.com/) が使えます。Prism.js の CSS を読み込み、キャプションなどのスタイルを設定します。
 
-```
+```css
 @import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
 
 code {
@@ -107,7 +107,7 @@ figure[class^='language-'] pre {
 
 CSS カウンタで図にも番号を振っておくと便利です。
 
-```
+```css
 img {
   max-width: 100%;
   display: block;
@@ -137,7 +137,7 @@ figure figcaption::before {
 
 後注の参照元には footnote-ref、参照先（↩）には footnote-back というクラスが付与されています。後注のリストは footnotes クラスが付与された section 要素の中にあります。
 
-```
+```css
 .footnote-ref sup {
   background-color: #ff8989;
 }
