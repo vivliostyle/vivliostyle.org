@@ -1,0 +1,134 @@
+---
+layout: page
+title: "Tutorial ⑤ Counter and Running Head Styles"
+lang: en
+---
+
+
+{% capture content %}
+## Goals of This Tutorial
+
+- Understand how to configure counters
+- Understand how to configure page numbers (nombré)
+- Understand how to configure running heads
+
+
+## Configuring Counters
+
+CSS counters are counter variables you can use in CSS. With CSS counters you can automatically number headings and pages. For details, see [Using CSS counters](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters).
+
+Use the `counter-reset` property to initialize a counter value, and `counter-increment` to increment it. To output a counter value, use the [counter()](https://developer.mozilla.org/en-US/docs/Web/CSS/counter) or [counters()](https://developer.mozilla.org/en-US/docs/Web/CSS/counters) function in the `content` property.
+
+
+### Heading Numbers
+
+To assign chapter (chapter) and section (section) numbers to `h1`, use the following approach.
+
+According to the [CSS Paged Media](https://drafts.csswg.org/css-page-3/) specification, property values inside the page context (`@page`) are inherited from the root element. However, Vivliostyle does not currently support inheriting property values from the root element into the page context. Therefore, CSS counters defined inside `@page` can only be incremented inside `@page`, and counters defined outside `@page` can only be incremented outside `@page`.
+
+```css
+@page :first { /* the first page across all manuscript files */
+  counter-reset: chapter;
+}
+
+@page :nth(1) { /* the first page of each individual manuscript file */
+  counter-increment: chapter;
+}
+
+body { /* each manuscript file */
+  counter-reset: section;
+}
+
+h1 {
+  counter-increment: section;
+}
+
+h1::before {
+  content: counter(chapter) "." counter(section) " ";
+}
+```
+
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter1.png)
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter3.png)
+
+Reference: [Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%8F%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%E3%81%B8%E3%81%AE%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%AE%E6%8C%87%E5%AE%9A)
+
+
+### Page Numbers
+
+Vivliostyle maintains its own counter for page numbers, so you can obtain the page number without creating a new counter. The counter name is `page`.
+
+
+### Counter References
+
+Using the [target-counter()](https://drafts.csswg.org/css-content/#target-counter) function defined in the CSS Generated Content specification, you can retrieve the value of a counter at a specified element.
+
+
+## Page Margin Boxes
+
+Page margin boxes are regions available for use as page headers or footers, defined in [CSS Paged Media](https://drafts.csswg.org/css-page-3/). There are 16 types of page margin boxes in total. They are used together with `@page` rules.
+
+![](/assets/tutorials/ja/configure-counters-running-heads/page-margin-box.png)
+
+
+### Nombré (Page Number) Style
+
+A nombré is a page number placed at the bottom or side of a page.
+
+Nombré is written using page margin boxes. The following places the page number centered at the bottom of every page.
+
+```css
+@page {
+  @bottom-center {
+    content: counter(page);
+  }
+}
+```
+
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-page-number.png)
+
+
+### Running Head Style
+
+A running head is text placed at the top or side of a page, typically showing the book title or chapter name.
+
+Running heads are also written using page margin boxes. The following places the chapter title at the top-left of left-hand pages.
+
+```css
+@page :left {
+  @top-left {
+    content: env(doc-title);
+  }
+}
+```
+
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-running-heads.png)
+
+Vivliostyle has special variables `env(pub-title)` and `env(doc-title)`. These let you output the book title and chapter title respectively. When producing a PDF from multiple manuscript files, `env(pub-title)` is the book title and `env(doc-title)` is the title of each individual manuscript file.
+
+Reference: [Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%8F%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%EF%BC%88%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%BC%E3%82%B8%E3%83%B3%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%EF%BC%89)
+
+
+## Summary
+
+In this tutorial you configured counters and running heads. Download the `theme.css` with all the styles described above using the button below.
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-counters-running-heads/theme.css" text="theme.css" class="button--secondary--medium" %}
+</ol>
+
+---
+
+- Previous: [Tutorial ④ Page and Text Styles](/tutorials/configure-page-text)
+- Next: [Tutorial ⑥ Styles for Basic Elements](/tutorials/configure-basic-elements)
+- [Tutorial List](/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="Tutorial ⑤ Counter and Running Head Styles"
+  lead="Edit your CSS to configure counters and running heads."
+
+  content=content
+%}

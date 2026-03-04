@@ -1,0 +1,241 @@
+---
+layout: page
+title: "Tutorial ③ Customizing Manuscripts and Themes"
+lang: en
+---
+
+
+{% capture content %}
+## Goals of This Tutorial
+
+- Understand the files required to create a PDF
+- Understand the structure of the configuration file
+- Understand how to customize manuscript files and existing themes
+
+
+## Files Required to Create a PDF
+
+The scaffold you created in the previous tutorial contains all the files needed to produce a PDF: the configuration files, manuscript files, and style files.
+
+
+### Configuration Files
+
+To create a publication with Vivliostyle CLI, you need two configuration files: `package.json` and `vivliostyle.config.js`.
+
+#### package.json
+
+This configuration file manages the commands for building your publication and the versions of required resources. You will rarely need to edit it directly.
+
+#### vivliostyle.config.js
+
+This is the configuration file for your publication. It also stores the settings you specified when creating the scaffold (which you can override). You will edit this file when you want to add manuscript files or customize styles.
+
+```js
+// @ts-check
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
+  title: 'Mybook',
+  author: 'Taro Yamada',
+  language: 'ja',
+  size: 'A4',
+  theme: [
+    '@vivliostyle/theme-techbook',
+    './custom.css',
+  ],
+  image: 'ghcr.io/vivliostyle/cli:10.3.1',
+  entryContext: 'draft',
+  entry: [
+    {
+      rel: 'cover',
+      path: '01_cover.md',
+      output: 'cover.html',
+      theme: './cover.css',
+    },
+    { rel: 'contents' },
+    '02_introduction.md',
+    '03_vfm-guide.md',
+    '04_features.md',
+    '05_examples.md',
+    '06_styling-guide.md',
+    '07_advanced-features.md',
+    '08_page-design.md',
+    '09_distribution.md',
+  ],
+  toc: {
+    sectionDepth: 1,
+  },
+  cover: {
+    src: 'cover-image.webp',
+  },
+});
+```
+
+The following properties can be configured in `vivliostyle.config.js`:
+
+| Property | Description |
+| --- | --- |
+| [title](https://docs.vivliostyle.org/ja/cli/using-config-file/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9) | Publication title |
+| [author](https://docs.vivliostyle.org/ja/cli/using-config-file/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9) | Author information |
+| [language](https://docs.vivliostyle.org/ja/cli/using-config-file/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9) | Language used |
+| [size](https://docs.vivliostyle.org/ja/cli/using-config-file/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9) | Paper size |
+| [theme](https://docs.vivliostyle.org/ja/cli/using-config-file/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9) | Theme package |
+| image | Container image for Docker |
+| entry | List of manuscript files to include in the publication |
+| entryContext | Directory containing the manuscript files |
+| output | Publication output format (PDF or webpub) |
+| workspaceDir | Directory for intermediate files (HTML generated from Markdown) |
+| toc | Table of contents settings (control heading depth with `sectionDepth`) |
+| cover | Cover image settings |
+| vfm | Settings for [VFM notation](https://docs.vivliostyle.org/ja/vfm/) |
+
+For more details, see the [Vivliostyle CLI documentation](https://docs.vivliostyle.org/ja/cli/#%E6%A7%8B%E6%88%90%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-vivliostyleconfigjs).
+
+
+### Manuscript Files
+
+Manuscripts can be written in [VFM notation](https://docs.vivliostyle.org/ja/vfm/), which extends standard Markdown. HTML is also supported. With `entryContext: 'draft'`, the root for manuscript files is the `draft/` directory. The starter content file `03_vfm-guide.md` includes guides on VFM notation such as headings, ruby, math expressions, and frontmatter.
+
+
+### Style Files
+
+Style files that define the publication's appearance are written in CSS. The Basic (Japanese) template includes `custom.css`, which lists CSS Custom Properties in a commented-out state. You can customize styles simply by uncommenting a property and changing its value. The cover page has its own dedicated style file, `cover.css`.
+
+The base theme `@vivliostyle/theme-techbook` is applied, and `custom.css` overrides it.
+
+
+## Customization
+
+In the previous tutorial you created a PDF from the starter content. This time you will replace the starter content with your own manuscript and edit `custom.css` to customize the styles.
+
+
+### Customizing Manuscript Files
+
+The manuscript files correspond to the values set in the `entry` array in `vivliostyle.config.js`. The Basic template entry array has the following structure:
+
+```js
+entry: [
+  {
+    rel: 'cover',
+    path: '01_cover.md',
+    output: 'cover.html',
+    theme: './cover.css',
+  },
+  { rel: 'contents' },
+  '02_introduction.md',
+  '03_vfm-guide.md',
+  '04_features.md',
+  '05_examples.md',
+  '06_styling-guide.md',
+  '07_advanced-features.md',
+  '08_page-design.md',
+  '09_distribution.md',
+],
+```
+
+- `rel: 'cover'` is a special entry for the cover page
+- `{ rel: 'contents' }` is the entry for the automatic table of contents
+- Regular chapters can be specified with just the filename as a string
+
+#### Adding a Chapter
+
+```js
+entry: [
+  // ...existing entries...
+  '09_distribution.md',
+  '10_my-new-chapter.md',
+],
+```
+
+Create `draft/10_my-new-chapter.md` and add it to the entry array.
+
+#### Removing a Chapter
+
+```js
+entry: [
+  { rel: 'cover', path: '01_cover.md', output: 'cover.html', theme: './cover.css' },
+  { rel: 'contents' },
+  '02_introduction.md',
+  // '03_vfm-guide.md',
+  // '04_features.md',
+  // ...
+],
+```
+
+Remove or comment out unwanted chapters from the entry array to produce a publication containing only the chapters you need.
+
+
+### Customizing the Existing Theme
+
+Open `custom.css` from the Basic template. You will find a list of CSS Custom Properties in a commented-out state. Simply uncomment a property and change its value to customize the styles.
+
+#### Example ①: Changing the Heading Font
+
+```css
+:root {
+  --vs--heading-font-family: 'Helvetica Neue', sans-serif;
+}
+```
+
+#### Example ②: Enabling Section Numbers
+
+```css
+:root {
+  --vs-section--marker-display: inline;
+}
+```
+
+#### Example ③: Displaying Page Numbers
+
+```css
+:root {
+  --vs-page--mbox-content-bottom-center: counter(page);
+}
+```
+
+#### Example ④: Setting Up Columns
+
+```css
+:root {
+  --vs-columns: 2;
+  --vs-column-gap: 2em;
+}
+```
+
+To apply a multi-column layout to a specific section only, add a custom class at the end of `custom.css`:
+
+```css
+.two-column {
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 1px solid #e0e0e0;
+}
+```
+
+Use it in Markdown as `<div class="two-column">...</div>`. The starter content files `06_styling-guide.md` (Two-Column Layouts) and `08_page-design.md` (Multi-Column Layouts) also contain detailed guides.
+
+With `npm run preview` running, save the CSS file to see the preview update automatically. Compare before and after to verify your changes.
+
+#### Note: More Advanced Customization
+
+If you need style changes that CSS Custom Properties cannot handle, you can add your own CSS rules directly to `custom.css`. More detailed page and text settings are covered in the next tutorial.
+
+
+## Summary
+
+Through this tutorial, you understood the structure of the Basic template and learned how to manage manuscript files and customize styles. In the next tutorial, you will use CSS to configure detailed page and text settings.
+
+---
+
+- Previous: [Tutorial ② Creating a PDF](/tutorials/create-publications)
+- Next: [Tutorial ④ Page and Text Styles](/tutorials/configure-page-text)
+- [Tutorial List](/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="Tutorial ③ Customizing Manuscripts and Themes"
+  lead="Customize the scaffold to prepare your own publication."
+
+  content=content
+%}

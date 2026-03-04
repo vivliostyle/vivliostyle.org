@@ -1,0 +1,181 @@
+---
+layout: page
+title: "Tutorial ⑥ Styles for Basic Elements"
+lang: en
+---
+
+
+{% capture content %}
+## Goals of This Tutorial
+
+- Configure styles for sections
+- Configure styles for headings
+- Configure styles for source code
+- Configure styles for figures
+- Configure styles for endnotes
+
+## Styles for Basic Elements
+
+Set the styles for common elements that appear in manuscripts using CSS. This tutorial introduces example styles along with the CSS — feel free to adapt them to your own preferences.
+
+Download the `theme.css` with the styles introduced in this tutorial using the button below.
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme.css" text="theme.css" class="button--secondary--medium" %}
+</ol>
+
+
+### Section Styles
+
+```css
+body > section {
+  margin: 10px auto;
+}
+```
+
+
+### Heading Styles
+
+```css
+body {
+  counter-reset: section subsection figure;
+}
+
+section > h1, section > h2, section > h3, section > h4, section > h5, section > h6 {
+  padding: 0;
+  font-weight: bold;
+  break-after: avoid;
+}
+
+section > h1 {
+  margin: 10pt auto 5pt;
+  font-size: 14pt;
+  line-height: 1.5;
+  counter-increment: section;
+  counter-reset: subsection;
+}
+
+section > h1::before {
+  margin-right: 1rem;
+  content: counter(chapter) '.' counter(section) ' ';
+}
+
+section > h2 {
+  margin: 8pt auto 4pt;
+  font-size: 12pt;
+  counter-increment: subsection;
+}
+
+section > h2::before {
+  margin-right: 1rem;
+  content: counter(chapter) '.' counter(section) '.' counter(subsection) ' ';
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-headings.png)
+
+
+### Source Code Styles
+
+[Prism.js](https://prismjs.com/) can be used for syntax highlighting of source code. Import the Prism.js CSS and configure styles for captions, etc.
+
+```css
+@import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
+
+code {
+  background-color: #f6f6f6;
+  padding: 0 3pt;
+}
+
+figure[class^='language-'] {
+  margin: 0.5em 0;
+}
+
+figure[class^='language-'] figcaption {
+  background-color: #e6e6e6;
+}
+
+figure[class^='language-'] pre {
+  margin: 0pt;
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-code.png)
+
+
+### Figure Styles
+
+Numbering figures with CSS counters is useful.
+
+```css
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figure figcaption {
+  text-align: center;
+  counter-increment: figure;
+}
+
+figure figcaption::before {
+  margin-right: 1rem;
+  content: 'Figure ' counter(figure) '.';
+}
+
+:root:lang(ja) figure figcaption::before {
+  content: '図' counter(figure) '.';
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-figure1.png)
+![](/assets/tutorials/ja/configure-basic-elements/preview-figure2.png)
+
+
+### Endnote Styles
+
+The footnote reference is given the class `footnote-ref`, the back-reference (↩) is given `footnote-back`, and the endnote list is inside a `section` element with the class `footnotes`.
+
+```css
+.footnote-ref sup {
+  background-color: #ff8989;
+}
+
+.footnote-back {
+  background-color: #ff8989;
+}
+
+.footnotes {
+  font-size: 8pt;
+}
+```
+
+![](/assets/tutorials/ja/configure-basic-elements/preview-footnote1.png)
+![](/assets/tutorials/ja/configure-basic-elements/preview-footnote2.png)
+
+
+## Summary
+
+In this tutorial you defined styles for basic elements. Download the `theme.css` with all the styles described above using the button below.
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme.css" text="theme.css" class="button--secondary--medium" %}
+</ol>
+
+---
+
+In the next tutorial, you will create a table of contents.
+
+- Previous: [Tutorial ⑤ Counter and Running Head Styles](/tutorials/configure-counters-running-heads)
+- Next: [Tutorial ⑦ Creating a Table of Contents](/tutorials/create-table-of-contents)
+- [Tutorial List](/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="Tutorial ⑥ Styles for Basic Elements"
+  lead="Edit your CSS to style the basic elements in your publication."
+
+  content=content
+%}
