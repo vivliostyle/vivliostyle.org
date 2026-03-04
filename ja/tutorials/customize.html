@@ -30,7 +30,7 @@ Vivliostyle CLI で出版物を作成するには、package.json と vivliostyle
 
 出版物に関する設定ファイルです。雛形作成時に設定した項目もこのファイルで管理されています（上書き可能です）。原稿ファイルを増やしたい時や、スタイルをカスタマイズしたい時は、このファイルを編集します。
 
-```
+```js
 // @ts-check
 import { defineConfig } from '@vivliostyle/cli';
 
@@ -113,7 +113,7 @@ Markdown 記法を拡張した [VFM 記法](https://docs.vivliostyle.org/ja/vfm/
 
 原稿ファイルは、vivliostyle.config.js の entry で設定した値に対応しています。Basic テンプレートの entry は次のような構造です。
 
-```
+```js
 entry: [
   {
     rel: 'cover',
@@ -139,7 +139,7 @@ entry: [
 
 #### 原稿を増やす例
 
-```
+```js
 entry: [
   // ...既存エントリ...
   '09_distribution.md',
@@ -151,7 +151,7 @@ entry: [
 
 #### 原稿を減らす例
 
-```
+```js
 entry: [
   { rel: 'cover', path: '01_cover.md', output: 'cover.html', theme: './cover.css' },
   { rel: 'contents' },
@@ -171,7 +171,7 @@ Basic テンプレートの `custom.css` を開いてみましょう。CSS Custo
 
 #### 実際の例①: 見出しフォントの変更
 
-```
+```css
 :root {
   --vs--heading-font-family: 'Helvetica Neue', sans-serif;
 }
@@ -179,7 +179,7 @@ Basic テンプレートの `custom.css` を開いてみましょう。CSS Custo
 
 #### 実際の例②: セクション番号の有効化
 
-```
+```css
 :root {
   --vs-section--marker-display: inline;
 }
@@ -187,7 +187,7 @@ Basic テンプレートの `custom.css` を開いてみましょう。CSS Custo
 
 #### 実際の例③: ページ番号の表示
 
-```
+```css
 :root {
   --vs-page--mbox-content-bottom-center: counter(page);
 }
@@ -195,7 +195,7 @@ Basic テンプレートの `custom.css` を開いてみましょう。CSS Custo
 
 #### 実際の例④: 段組みの設定
 
-```
+```css
 :root {
   --vs-columns: 2;
   --vs-column-gap: 2em;
@@ -204,7 +204,7 @@ Basic テンプレートの `custom.css` を開いてみましょう。CSS Custo
 
 特定のセクションだけ段組みにしたい場合は、カスタムクラスを `custom.css` の末尾に追加します。
 
-```
+```css
 .two-column {
   column-count: 2;
   column-gap: 2em;
