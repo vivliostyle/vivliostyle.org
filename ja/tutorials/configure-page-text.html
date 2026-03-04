@@ -158,6 +158,20 @@ html {
 }
 ```
 
+#### Web フォントを使う
+
+Vivliostyle CLI は Chromium ベースのレンダリングを使うため、`@import url()` や `@font-face` で読み込んだ Web フォントをそのまま PDF 出力に反映できます。スタイルファイル（`custom.css` や `theme.css`）の先頭に以下を追記します。
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+:root {
+  --vs-font-family: 'Noto Serif JP', serif;
+}
+```
+
+`@import` は他のルールより前に記述してください。プレビューで反映を確認し、PDF ビルドでもフォントが埋め込まれることを確認します。
+
 ### フォントサイズ
 
 CSS プロパティの font-size を使います。
