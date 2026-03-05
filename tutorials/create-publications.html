@@ -40,23 +40,23 @@ $ npm create book mybook
 ◇  What's the title of your publication?
 │  Mybook
 ◇  What's the author name?
-│  Taro Yamada
+│  Jane Smith
 ◇  What's the language?
-│  Japanese
+│  English
 ```
 
-Press Enter to choose a project template. **Minimal** is a simple scaffold with no content, **Basic** is a scaffold with starter content. **Basic (Japanese)** is a scaffold with a cover page, table of contents, and nine chapters of Japanese starter content including guides on VFM syntax and styling. In this tutorial, select **Basic (Japanese)**.
+Press Enter to choose a project template. **Minimal** is a simple scaffold with no content, **Basic** is a scaffold with a cover page, table of contents, and nine chapters of starter content including guides on VFM syntax and styling. In this tutorial, select **Basic**.
 
 ```bash
 $ npm create book mybook
 ◇  What's the title of your publication?
 │  Mybook
 ◇  What's the author name?
-│  Taro Yamada
+│  Jane Smith
 ◇  What's the language?
-│  Japanese
+│  English
 ◆  What's the project template?
-│  ○ Minimal  ○ Basic  ● Basic (Japanese)
+│  ○ Minimal  ● Basic  ○ Basic (Japanese)
 ```
 
 Use the arrow keys to select a theme. In this tutorial, select `@vivliostyle/theme-techbook`, a theme designed for technical books. It supports code block display and table of contents.
@@ -66,11 +66,11 @@ $ npm create book mybook
 ◇  What's the title of your publication?
 │  Mybook
 ◇  What's the author name?
-│  Taro Yamada
+│  Jane Smith
 ◇  What's the language?
-│  Japanese
+│  English
 ◆  What's the project template?
-│  ○ Minimal  ○ Basic  ● Basic (Japanese)
+│  ○ Minimal  ● Basic  ○ Basic (Japanese)
 ◆  Which theme do you want to use?
 │  @vivliostyle/theme-techbook
 ```
@@ -82,11 +82,11 @@ $ npm create book mybook
 ◇  What's the title of your publication?
 │  Mybook
 ◇  What's the author name?
-│  Taro Yamada
+│  Jane Smith
 ◇  What's the language?
-│  Japanese
+│  English
 ◆  What's the project template?
-│  ○ Minimal  ○ Basic  ● Basic (Japanese)
+│  ○ Minimal  ● Basic  ○ Basic (Japanese)
 ◆  Which theme do you want to use?
 │  @vivliostyle/theme-techbook
 ◆  Should we install dependencies? (You can install them later.)
@@ -131,12 +131,12 @@ mybook/
     └── 09_distribution.md  …output formats and distribution
 ```
 
-The `draft/` directory contains nine Japanese manuscript files. These are starter content that explains how to use Vivliostyle. You can create a PDF from them immediately. The details of `vivliostyle.config.js` are covered in the next tutorial.
+The `draft/` directory contains nine manuscript files. These are starter content that explains how to use Vivliostyle. You can create a PDF from them immediately. The details of `vivliostyle.config.js` are covered in the next tutorial.
 
 
 ### Creating the PDF
 
-The Basic (Japanese) template already includes starter content. Let's create a PDF from it right away. Enter the following command in your terminal.
+The Basic template already includes starter content. Let's create a PDF from it right away. Enter the following command in your terminal.
 
 ```bash
 npm run build
@@ -156,15 +156,15 @@ $ npm run build
 > mybook@0.0.0 build
 > vivliostyle build
 
-✔ draft/01_cover.md 表紙
-✔ draft/02_introduction.md はじめに
+✔ draft/01_cover.md Cover
+✔ draft/02_introduction.md Introduction
 ✔ draft/03_vfm-guide.md VFM: Vivliostyle Flavored Markdown
-✔ draft/04_features.md Vivliostyleの機能
-✔ draft/05_examples.md 実践例
-✔ draft/06_styling-guide.md スタイリングとカスタマイズ
-✔ draft/07_advanced-features.md 高度な機能とテクニック
-✔ draft/08_page-design.md ページデザインとレイアウト
-✔ draft/09_distribution.md 出力形式と配布
+✔ draft/04_features.md Vivliostyle Features
+✔ draft/05_examples.md Practical Examples
+✔ draft/06_styling-guide.md Styling and Customization
+✔ draft/07_advanced-features.md Advanced Features and Techniques
+✔ draft/08_page-design.md Page Design and Layout
+✔ draft/09_distribution.md Output Formats and Distribution
 ✔ Finished building Mybook.pdf
 📗 Built successfully!
 ```
@@ -194,13 +194,13 @@ While keeping the preview open, open `draft/02_introduction.md` and change part 
 
 Before:
 ```md
-この本では、Vivliostyle CLI を使った出版の流れを紹介します。
+This book introduces the publishing workflow using Vivliostyle CLI.
 ```
 
 After:
 ```md
-この本では、Vivliostyle CLI を使った出版の流れを紹介します。
-まずは雛形から PDF を作るところを体験してみましょう。
+This book introduces the publishing workflow using Vivliostyle CLI.
+Let's start by creating a PDF from the scaffold.
 ```
 
 When you save, the preview will update automatically to reflect your changes.
@@ -214,7 +214,7 @@ Through this tutorial, you created a PDF from starter content and learned how to
 
 1. Create the scaffold
    - Run `npm create book mybook` in the terminal
-   - Select the **Basic (Japanese)** template and **@vivliostyle/theme-techbook** theme
+   - Select the **Basic** template and **@vivliostyle/theme-techbook** theme
 1. Review the generated file structure
 1. Create the PDF
    - Run `npm run build` in the terminal
@@ -225,7 +225,7 @@ Through this tutorial, you created a PDF from starter content and learned how to
 
 ---
 
-Because the Basic (Japanese) template includes starter content, you can create a PDF immediately. In the next tutorial, you will learn how to replace that starter content with your own manuscript and customize the styles.
+Because the Basic template includes starter content, you can create a PDF immediately. In the next tutorial, you will learn how to replace that starter content with your own manuscript and customize the styles.
 
 - Previous: [Tutorial ① Installation](/tutorials/install)
 - Next: [Tutorial ③ Customizing Manuscripts and Themes](/tutorials/customize)
