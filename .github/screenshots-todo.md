@@ -228,3 +228,44 @@
 - 流用可: 11件
 
 まずはチュートリアル②の5件を撮れば、現在もっとも大きい不整合は解消できる。
+
+## 9. 撮影前提の作業手順（コマンドライン）
+
+以下は、チュートリアル②のスクリーンショットを撮るための最小手順。
+
+```bash
+# 1) 作業用ディレクトリで雛形を作成
+mkdir -p /tmp/vivliostyle-ss && cd /tmp/vivliostyle-ss
+npm create book mybook
+# 対話入力:
+# - Title: Mybook
+# - Author: 山田太郎
+# - Language: Japanese
+# - Template: Basic (Japanese)
+# - Theme: @vivliostyle/theme-techbook
+# - Install dependencies: Yes
+
+# 2) プロジェクトへ移動してPDFを生成
+cd mybook
+npm run build
+
+# 3) プレビュー起動
+npm run preview
+```
+
+`preview2.png` 用の編集操作（create-publications.html の説明に一致）:
+
+```md
+変更前:
+Vivliostyle CLIは、HTMLやMarkdownドキュメントを高品質な出版物に組版するための強力なコマンドラインツールです。
+
+変更後:
+Vivliostyle CLIは、HTMLやMarkdownドキュメントを高品質な出版物に組版するための強力なコマンドラインツールです。このツールを使えば、誰でも簡単にプロフェッショナルな本を作ることができます。
+```
+
+撮影後の配置コマンド（チュートリアル②の5件）:
+
+```bash
+cp build-cover.png build-toc.png build-body.png preview1.png preview2.png \
+	/Users/ogwata/dev/vivliostyle/vivliostyle.org/assets/tutorials/ja/create-publications/
+```
