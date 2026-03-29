@@ -4,4 +4,5 @@ _site
 /vendor/bundle
 .bundle
 .vercel
+.claude
 Gemfile.lock
