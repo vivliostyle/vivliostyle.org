@@ -41,7 +41,7 @@ npm run preview
 
 A table of contents is automatically added to the first page of the PDF. You can change `toc.title` to use any title you like for the TOC page.
 
-![](/assets/tutorials/ja/create-table-of-contents/preview-table-of-contents1.png)
+![](/assets/tutorials/en/create-table-of-contents/preview-table-of-contents1.png)
 
 
 ### Including Headings from Manuscript Files in the TOC
@@ -55,7 +55,7 @@ In addition to references to manuscript files, the table of contents can also in
   }
 ```
 
-Reference: [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/ja/cli/toc-page/)
+Reference: [Vivliostyle CLI Documentation](https://docs.vivliostyle.org/en/cli/toc-page/)
 
 
 ## Manual Table of Contents
@@ -67,20 +67,20 @@ Open your text editor and create a file named `manuscripts/toc.md`. The value `"
 ```html
 <nav id="toc" role="doc-toc">
 
-1. [Preface](maegaki.html)
-1. [Body](honbun.html)
-    1. [Source Code](honbun.html#code)
-        1. [With Caption](honbun.html#code-with-caption)
-    1. [Endnotes](honbun.html#footnotes)
-    1. [Frontmatter](honbun.html#frontmatter)
-    1. [Line Breaks](honbun.html#newline)
-    1. [Images](honbun.html#figure)
-        1. [With Caption](honbun.html#figure-with-caption)
-    1. [Math](honbun.html#math)
-    1. [HTML](honbun.html#html)
-        1. [Mixing Markdown and HTML](honbun.html#html-with-markdown)
-    1. [Ruby](honbun.html#ruby)
-1. [Afterword](atogaki.html)
+1. [Preface](preface.html)
+1. [Body](body.html)
+    1. [Source Code](body.html#code)
+        1. [With Caption](body.html#code-with-caption)
+    1. [Endnotes](body.html#footnotes)
+    1. [Frontmatter](body.html#frontmatter)
+    1. [Line Breaks](body.html#newline)
+    1. [Images](body.html#figure)
+        1. [With Caption](body.html#figure-with-caption)
+    1. [Math](body.html#math)
+    1. [HTML](body.html#html)
+        1. [Mixing Markdown and HTML](body.html#html-with-markdown)
+    1. [Ruby](body.html#ruby)
+1. [Afterword](afterword.html)
 
 </nav>
 ```
@@ -98,7 +98,7 @@ export default defineConfig({
       path: 'toc.md',
       rel: 'contents',
     },
-    'maegaki.md',
+    'preface.md',
     // ...
   ],
 });
@@ -141,7 +141,7 @@ Also add the following CSS for the table of contents.
 }
 ```
 
-![](/assets/tutorials/ja/create-table-of-contents/preview-table-of-contents2.png)
+![](/assets/tutorials/en/create-table-of-contents/preview-table-of-contents2.png)
 
 Reference: [Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E7%9B%AE%E6%AC%A1%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9)
 
@@ -151,9 +151,9 @@ Reference: [Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivlios
 In this tutorial you created a table of contents and defined its styles. Download the `vivliostyle.config.js`, manuscript files, and style files used in this tutorial using the buttons below.
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/create-table-of-contents/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
-  {% include button/download.html url="../../../assets/tutorials/ja/create-table-of-contents/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
-  {% include button/download.html url="../../../assets/tutorials/ja/create-table-of-contents/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/en/create-table-of-contents/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/en/create-table-of-contents/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/en/create-table-of-contents/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
 </ol>
 
 ---
