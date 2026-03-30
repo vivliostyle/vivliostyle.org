@@ -128,7 +128,7 @@ figure figcaption {
 
 figure figcaption::before {
   margin-right: 1rem;
-  content: 'Figure' counter(figure) '.';
+  content: 'Figure ' counter(figure) '.';
 }
 
 :root:lang(ja) figure figcaption::before {
