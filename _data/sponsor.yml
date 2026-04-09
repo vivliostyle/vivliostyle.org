@@ -48,7 +48,6 @@
           users:
             - name: munepi
             - name: zonuexe
-            - name: omasanori
             - name: monami-ya
     - name: Past Sponsors
       tier:
@@ -67,6 +66,8 @@
             - name: niszet
             - name: yuji-1980
             - name: Atelier-Mirai
+            - name: nishinos
+            - name: omasanori
 - name: One-time Sponsors
   tier:
     - name: Bronze Sponsor
