@@ -26,7 +26,7 @@ html {
   widows: 1;
   orphans: 1;
   text-align: justify;
-  text-spacing: allow-end;
+  text-spacing-trim: trim-start;
   hanging-punctuation: allow-end;
 }
 

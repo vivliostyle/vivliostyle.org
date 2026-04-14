@@ -34,7 +34,7 @@ mybook/
     └── mytheme/ (*既存のファイルを上書き)
 ```
 
-themes/mytheme/theme.css には、ブラウザに設定されているデフォルトのスタイルを打ち消すための CSS が書かれています。
+themes/mytheme/theme_common.css には、ブラウザに設定されているデフォルトのスタイルを打ち消すための CSS が書かれています。
 
 ```css
 * {
@@ -54,7 +54,7 @@ npm run preview
 ![](/assets/tutorials/ja/configure-page-text/preview-reset2.png)
 ![](/assets/tutorials/ja/configure-page-text/preview-reset3.png)
 
-チュートリアルを通して、このまっさらな本の見た目を CSS で整えていきます。CSS は themes/mytheme/theme.css に記述します。
+チュートリアルを通して、このまっさらな本の見た目を CSS で整えていきます。CSS は themes/mytheme/theme_common.css に記述します。
 
 
 ## 用紙のスタイル
@@ -160,13 +160,13 @@ html {
 
 #### Web フォントを使う
 
-Vivliostyle CLI は Chromium ベースのレンダリングを使うため、`@import url()` や `@font-face` で読み込んだ Web フォントをそのまま PDF 出力に反映できます。スタイルファイル（`custom.css` や `theme.css`）の先頭に以下を追記します。
+Vivliostyle CLI は `@import url()` や `@font-face` で読み込んだ Web フォントをそのまま PDF 出力に反映できます。`themes/mytheme/theme_common.css` の先頭に以下を追記します。
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
-:root {
-  --vs-font-family: 'Noto Serif JP', serif;
+html {
+  font-family: 'Noto Serif JP', serif;
 }
 ```
 
@@ -226,11 +226,11 @@ html {
 
 ### ぶらさがり
 
-CSS プロパティの text-spacing と hanging-punctuation を使います。
+CSS プロパティの text-spacing-trim と hanging-punctuation を使います。
 
 ```css
 html {
-  text-spacing: allow-end;
+  text-spacing-trim: trim-start;
   hanging-punctuation: allow-end;
 }
 ```

@@ -24,8 +24,6 @@ Use the `counter-reset` property to initialize a counter value, and `counter-inc
 
 To assign chapter (chapter) and section (section) numbers to `h1`, use the following approach.
 
-According to the [CSS Paged Media](https://drafts.csswg.org/css-page-3/) specification, property values inside the page context (`@page`) are inherited from the root element. However, Vivliostyle does not currently support inheriting property values from the root element into the page context. Therefore, CSS counters defined inside `@page` can only be incremented inside `@page`, and counters defined outside `@page` can only be incremented outside `@page`.
-
 ```css
 @page :first { /* the first page across all manuscript files */
   counter-reset: chapter;
@@ -44,7 +42,7 @@ h1 {
 }
 
 h1::before {
-  content: counter(chapter) "." counter(section) " ";
+  content: '§' counter(chapter) '.' counter(section) ' ';
 }
 ```
 

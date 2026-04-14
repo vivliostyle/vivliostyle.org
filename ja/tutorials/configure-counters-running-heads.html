@@ -24,8 +24,6 @@ counter-reset プロパティでカウンタの値を初期化し、counter-incr
 
 h1 に対して章番号 (chapter) と節番号 (section) を振る場合は、以下のようにします。
 
-[CSS Paged Media](https://drafts.csswg.org/css-page-3/) 仕様では、ページコンテキスト（<span>@</span>page 内）のプロパティの値はルート要素から継承するとされています。 ただし、Vivliostyle は現在のところ、ルート要素からページコンテキストへのプロパティ値の継承は未サポートです。したがって、<span>@</span>page 内で定義した CSS カウンタは <span>@</span>page 内でのみ、<span>@</span>page 外で定義した CSS カウンタは <span>@</span>page 外でのみインクリメントできます。
-
 ```css
 @page :first { /* 全原稿ファイルの中で1枚目のページ */
   counter-reset: chapter;
@@ -44,7 +42,7 @@ h1 {
 }
 
 h1::before {
-  content: counter(chapter) "." counter(section) "章 ";
+  content: '§' counter(chapter) '.' counter(section) ' ';
 }
 ```
 

@@ -57,7 +57,7 @@ section > h1 {
 
 section > h1::before {
   margin-right: 1rem;
-  content: counter(chapter) '.' counter(section) ' ';
+  content: '§' counter(chapter) '.' counter(section) ' ';
 }
 
 section > h2 {
@@ -68,7 +68,7 @@ section > h2 {
 
 section > h2::before {
   margin-right: 1rem;
-  content: counter(chapter) '.' counter(section) '.' counter(subsection) ' ';
+  content: '§' counter(chapter) '.' counter(section) '.' counter(subsection) ' ';
 }
 ```
 

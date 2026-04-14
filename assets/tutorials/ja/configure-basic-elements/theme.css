@@ -46,7 +46,7 @@ html {
   widows: 1;
   orphans: 1;
   text-align: justify;
-  text-spacing: allow-end;
+  text-spacing-trim: trim-start;
   hanging-punctuation: allow-end;
 }
 
@@ -84,7 +84,7 @@ section > h1 {
 
 section > h1::before {
   margin-right: 1rem;
-  content: counter(chapter) '.' counter(section) '章';
+  content: '§' counter(chapter) '.' counter(section) ' ';
 }
 
 section > h2 {
@@ -95,7 +95,7 @@ section > h2 {
 
 section > h2::before {
   margin-right: 1rem;
-  content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
+  content: '§' counter(chapter) '.' counter(section) '.' counter(subsection) ' ';
 }
 
 code {

@@ -71,7 +71,7 @@ $ npm create book mybook
 │  English
 ◆  What's the project template?
 │  ○ Minimal  ● Basic  ○ Basic (Japanese)
-◆  Which theme do you want to use?
+◆  What's the project theme?
 │  @vivliostyle/theme-techbook
 ```
 
@@ -87,7 +87,7 @@ $ npm create book mybook
 │  English
 ◆  What's the project template?
 │  ○ Minimal  ● Basic  ○ Basic (Japanese)
-◆  Which theme do you want to use?
+◆  What's the project theme?
 │  @vivliostyle/theme-techbook
 ◆  Should we install dependencies? (You can install them later.)
 │  ● Yes  ○ No
@@ -96,7 +96,7 @@ $ npm create book mybook
 Press Enter to start downloading the resources needed to create the publication (this usually completes within a few minutes). When the following message appears, the process is complete.
 
 ```bash
-✔  Project scaffolded successfully.
+✔  SUCCESS Successfully created a project at mybook
 ```
 
 As instructed, enter the following command in your terminal to navigate into the working directory that was just created.
@@ -118,7 +118,6 @@ mybook/
 ├── vivliostyle.config.js  …publication configuration file
 ├── custom.css             …file for customizing styles
 ├── cover.css              …cover page style file
-├── cover-image.webp       …cover image
 └── draft/                 …manuscript directory
     ├── 01_cover.md         …cover page
     ├── 02_introduction.md  …introduction
@@ -128,7 +127,9 @@ mybook/
     ├── 06_styling-guide.md …styling guide
     ├── 07_advanced-features.md …advanced features
     ├── 08_page-design.md   …page design
-    └── 09_distribution.md  …output formats and distribution
+    ├── 09_distribution.md  …output formats and distribution
+    ├── cover-image.webp    …cover image
+    └── image-with-caption.webp  …image with caption
 ```
 
 The `draft/` directory contains nine manuscript files. These are starter content that explains how to use Vivliostyle. You can create a PDF from them immediately. The details of `vivliostyle.config.js` are covered in the next tutorial.

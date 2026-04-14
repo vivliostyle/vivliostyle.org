@@ -71,7 +71,7 @@ $ npm create book mybook
 │  Japanese
 ◆  What's the project template?
 │  ○ Minimal  ○ Basic  ● Basic (Japanese)
-◆  Which theme do you want to use?
+◆  What's the project theme?
 │  @vivliostyle/theme-techbook
 ```
 
@@ -87,7 +87,7 @@ $ npm create book mybook
 │  Japanese
 ◆  What's the project template?
 │  ○ Minimal  ○ Basic  ● Basic (Japanese)
-◆  Which theme do you want to use?
+◆  What's the project theme?
 │  @vivliostyle/theme-techbook
 ◆  Should we install dependencies? (You can install them later.)
 │  ● Yes  ○ No
@@ -96,7 +96,7 @@ $ npm create book mybook
 Enter キーを押すと、出版物の作成に必要なリソースのダウンロードが始まります（通常は数分以内に終わります）。以下の内容が表示されると完了です。
 
 ```bash
-✔  Project scaffolded successfully.
+✔  SUCCESS Successfully created a project at mybook
 ```
 
 指示のとおり、ターミナルで以下のコマンドを入力し、今自動で作られた作業用のディレクトリに移動しましょう。
@@ -118,17 +118,18 @@ mybook/
 ├── vivliostyle.config.js  …出版物に関する設定ファイル
 ├── custom.css             …スタイルをカスタマイズするためのファイル
 ├── cover.css              …表紙専用のスタイルファイル
-├── cover-image.webp       …表紙画像
 └── draft/                 …原稿ファイルのディレクトリ
-  ├── 01_cover.md         …表紙ページ
-  ├── 02_introduction.md  …はじめに
-  ├── 03_vfm-guide.md     …VFM構文ガイド
-  ├── 04_features.md      …Vivliostyleの機能紹介
-  ├── 05_examples.md      …実践例
-  ├── 06_styling-guide.md …スタイリングガイド
-  ├── 07_advanced-features.md …高度な機能
-  ├── 08_page-design.md   …ページデザイン
-  └── 09_distribution.md  …出力形式と配布
+    ├── 01_cover.md         …表紙ページ
+    ├── 02_introduction.md  …はじめに
+    ├── 03_vfm-guide.md     …VFM構文ガイド
+    ├── 04_features.md      …Vivliostyleの機能紹介
+    ├── 05_examples.md      …実践例
+    ├── 06_styling-guide.md …スタイリングガイド
+    ├── 07_advanced-features.md …高度な機能
+    ├── 08_page-design.md   …ページデザイン
+    ├── 09_distribution.md  …出力形式と配布
+    ├── cover-image.webp    …表紙画像
+    └── image-with-caption.webp  …キャプション付き画像
 ```
 
 `draft/` ディレクトリには、9つの日本語原稿ファイルが含まれています。これらは Vivliostyle の使い方を解説したスターターコンテンツです。このまますぐに PDF を作成できます。`vivliostyle.config.js` の詳しい内容は次のチュートリアルで解説します。
@@ -194,12 +195,12 @@ npm run preview
 
 変更前:
 ```md
-Vivliostyle CLIは、HTMLやMarkdownドキュメントを高品質な出版物に組版するための強力なコマンドラインツールです。
+Vivliostyle CLIは、HTMLやMarkdownドキュメントを高品質な出版物に組版するための強力なコマンドラインツールです。Markdownのシンプルさと、書籍・技術文書・学術論文などに求められるプロフェッショナルな出力品質を兼ね備えています。
 ```
 
 変更後:
 ```md
-Vivliostyle CLIは、HTMLやMarkdownドキュメントを高品質な出版物に組版するための強力なコマンドラインツールです。このツールを使えば、誰でも簡単にプロフェッショナルな本を作ることができます。
+Vivliostyle CLIは、HTMLやMarkdownドキュメントを高品質な出版物に組版するための強力なコマンドラインツールです。Markdownのシンプルさと、書籍・技術文書・学術論文などに求められるプロフェッショナルな出力品質を兼ね備えています。まずはこの章で基本的な使い方を学びましょう。
 ```
 
 保存すると、原稿の編集に合わせて自動的にプレビュー画面が更新されます。

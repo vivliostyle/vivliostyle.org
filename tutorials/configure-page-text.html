@@ -34,7 +34,7 @@ mybook/
     └── mytheme/ (*overwrites existing files)
 ```
 
-`themes/mytheme/theme.css` contains CSS that resets the default styles applied by the browser.
+`themes/mytheme/theme_common.css` contains CSS that resets the default styles applied by the browser.
 
 ```css
 * {
@@ -54,7 +54,7 @@ npm run preview
 ![](/assets/tutorials/en/configure-page-text/preview-reset2.png)
 ![](/assets/tutorials/en/configure-page-text/preview-reset3.png)
 
-Throughout this tutorial, you will use CSS to style this bare-bones book. CSS is written in `themes/mytheme/theme.css`.
+Throughout this tutorial, you will use CSS to style this bare-bones book. CSS is written in `themes/mytheme/theme_common.css`.
 
 
 ## Page Styles
@@ -147,13 +147,13 @@ html {
 
 #### Using Web Fonts
 
-Because Vivliostyle CLI uses Chromium-based rendering, web fonts loaded with `@import url()` or `@font-face` are reflected directly in the PDF output. Add the following to the top of your style file (`custom.css` or `theme.css`):
+Vivliostyle CLI can reflect web fonts loaded with `@import url()` or `@font-face` directly in the PDF output. Add the following to the top of `themes/mytheme/theme_common.css`:
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
-:root {
-  --vs-font-family: 'Noto Serif JP', serif;
+html {
+  font-family: 'Noto Serif JP', serif;
 }
 ```
 
@@ -213,11 +213,11 @@ html {
 
 ### Hanging Punctuation
 
-Use the CSS `text-spacing` and `hanging-punctuation` properties.
+Use the CSS `text-spacing-trim` and `hanging-punctuation` properties.
 
 ```css
 html {
-  text-spacing: allow-end;
+  text-spacing-trim: trim-start;
   hanging-punctuation: allow-end;
 }
 ```
