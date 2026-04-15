@@ -54,7 +54,19 @@ h1::before {
 
 Vivliostyle maintains its own counter for page numbers, so you can obtain the page number without creating a new counter. The counter name is `page`.
 
-![](/assets/tutorials/en/configure-counters-running-heads/preview-counter2.png)
+Using `target-counter()`, you can automatically retrieve the page number of a link target.
+
+```css
+a.page-ref::after {
+  content: 'p.' target-counter(attr(href), page);
+}
+```
+
+In Markdown, write it as follows:
+
+```html
+See <a href="#section-id" class="page-ref"></a> for details.
+```
 
 
 ### Counter References
@@ -72,8 +84,6 @@ In Markdown, write it as follows:
 ```html
 See <a href="#fig-caption" class="fig-ref"></a> for details.
 ```
-
-![](/assets/tutorials/en/configure-counters-running-heads/preview-counter3.png)
 
 You can use `target-counter()` for page number references in the same way. In Tutorial ⑦, we show how to use `target-counter()` to automatically insert the destination page number for each entry in a table of contents.
 

@@ -54,7 +54,19 @@ h1::before {
 
 Vivliostyle はページ番号を管理するカウンタを独自に持っているため、カウンタを新しく用意しなくてもページ番号を取得することができます。カウンタの名前は `page` です。
 
-![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
+`target-counter()` 関数を使うと、リンク先のページ番号を自動的に取得できます。
+
+```css
+a.page-ref::after {
+  content: target-counter(attr(href), page) 'ページ';
+}
+```
+
+Markdown 内では、次のように記述します。
+
+```html
+詳細は<a href="#section-id" class="page-ref"></a>を参照してください。
+```
 
 
 ### カウンタの参照
@@ -72,8 +84,6 @@ Markdown 内では、次のように記述します。
 ```html
 詳細は<a href="#fig-caption" class="fig-ref"></a>を参照してください。
 ```
-
-![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter3.png)
 
 ページ番号の参照についても同様に `target-counter()` を使えます。チュートリアル⑦では、`target-counter()` を使って目次の各項目にリンク先のページ番号を自動挿入する方法を紹介しています。
 
