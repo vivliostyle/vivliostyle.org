@@ -54,14 +54,6 @@ h1::before {
 
 Vivliostyle はページ番号を管理するカウンタを独自に持っているため、カウンタを新しく用意しなくてもページ番号を取得することができます。カウンタの名前は `page` です。
 
-たとえば次のように、見出しの後にページ番号を挿入することができます。
-
-```css
-h1::after {
-  content: ' … ' counter(page) 'ページ';
-}
-```
-
 ![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
 
 
