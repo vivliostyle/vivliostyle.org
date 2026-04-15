@@ -10,6 +10,7 @@ lang: ja
 
 - 目次を自動で作成できる
 - 目次を手動で作成できる
+- `target-counter()` を使ってページ番号付き目次を作成できる
 
 
 ## 目次の自動作成
@@ -104,7 +105,7 @@ export default defineConfig({
 });
 ```
 
-目次用の CSS も追記します。
+目次用の CSS も追記します。目次の各項目にリンク先のページ番号を自動挿入するには、`target-counter()` 関数を使います。`target-counter(attr(href), page)` は、各リンクの参照先要素が配置されているページのページ番号を返します。
 
 ```css
 #toc li {

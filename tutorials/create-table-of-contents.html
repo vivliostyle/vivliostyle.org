@@ -10,6 +10,7 @@ lang: en
 
 - Create a table of contents automatically
 - Create a table of contents manually
+- Create a page-numbered TOC using `target-counter()`
 
 
 ## Automatic Table of Contents
@@ -104,7 +105,7 @@ export default defineConfig({
 });
 ```
 
-Also add the following CSS for the table of contents.
+Also add the following CSS for the table of contents. To automatically insert the page number of the link target for each TOC entry, use the `target-counter()` function. `target-counter(attr(href), page)` returns the page number of the page on which the linked element is placed.
 
 ```css
 #toc li {
