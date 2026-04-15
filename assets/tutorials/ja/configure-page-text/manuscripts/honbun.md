@@ -26,11 +26,11 @@ or
 function main() {}
 ```
 
-# 後注 {#footnotes}
+# 脚注 {#footnote}
 
 VFM は GitHub リポジトリ[^1]で開発されています。
 issue は GitHub[^issues]で管理されています。
-後注はインラインで記述することもできます^[これは後注です。]。
+脚注はインラインで記述することもできます^[これは脚注です。]。
 
 [^1]: [VFM](https://github.com/vivliostyle/vfm)
 [^issues]: [Issues](https://github.com/vivliostyle/vfm/issues)
