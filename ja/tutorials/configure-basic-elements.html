@@ -12,7 +12,7 @@ lang: ja
 - 見出しのスタイルを設定できる
 - ソースコードのスタイルを設定できる
 - 図のスタイルを設定できる
-- 後注のスタイルを設定できる
+- 脚注のスタイルを設定できる
 
 ## 基本的な要素のスタイル
 
@@ -133,9 +133,18 @@ figure figcaption::before {
 ![](/assets/tutorials/ja/configure-basic-elements/preview-figure2.png)
 
 
-### 後注のスタイル
+### 脚注のスタイル
 
-後注の参照元には footnote-ref、参照先（↩）には footnote-back というクラスが付与されています。後注のリストは footnotes クラスが付与された section 要素の中にあります。
+Vivliostyle では VFM の dpub（DPUB-ARIA）形式の脚注出力を使うと、脚注が各ページの下部に配置される本格的な脚注として組版されます。dpub 形式では、脚注の参照元に `footnote-ref`、参照先（↘）に `footnote-back`、脚注本体（`<aside>` 要素）に `footnote` というクラスが付与されます。vivliostyle.config.js に以下の設定を追加することで dpub 形式が有効になります。
+
+```js
+export default defineConfig({
+  vfm: {
+    footnote: 'dpub',
+  },
+  // ...
+});
+```
 
 ```css
 .footnote-ref sup {
@@ -146,7 +155,7 @@ figure figcaption::before {
   background-color: #ff8989;
 }
 
-.footnotes {
+.footnote {
   font-size: 8pt;
 }
 ```

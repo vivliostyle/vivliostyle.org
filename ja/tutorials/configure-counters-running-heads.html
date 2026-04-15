@@ -50,8 +50,6 @@ h1::before {
 ![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
 ![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter3.png)
 
-参照：[Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%8F%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%E3%81%B8%E3%81%AE%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%AE%E6%8C%87%E5%AE%9A)
-
 
 ### ページ番号
 
@@ -105,7 +103,37 @@ CSS Generated Content 仕様で定義されている[target-counter()](https://d
 
 Vivliostyle は env(pub-title) と env(doc-title) という特別な変数を持っています。これらを使うことで、本のタイトルや章のタイトルを出力することができます。複数の原稿ファイルから PDF を作る場合、env(pub-title) は本のタイトル、env(doc-title) は各原稿ファイルのタイトルです。
 
-参照：[Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%8F%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%EF%BC%88%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%BC%E3%82%B8%E3%83%B3%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%EF%BC%89)
+このほかに、**Named strings** や **Running elements** を使って柱を設定する方法もあります。
+
+**Named strings** は `string-set` プロパティで要素の内容を文字列として取り込み、`string()` 関数でページマージンボックスに表示します。
+
+```css
+h1 {
+  string-set: chapter-title content(text);
+}
+
+@page :left {
+  @top-left {
+    content: string(chapter-title);
+  }
+}
+```
+
+**Running elements** は `position: running(name)` で要素をページフローから外し、`element(name)` でページマージンボックスに表示します。HTML 要素のスタイルや構造をそのまま柱として使えます。
+
+```css
+.running-title {
+  position: running(chapter-header);
+}
+
+@page :right {
+  @top-right {
+    content: element(chapter-header);
+  }
+}
+```
+
+詳しくは [CSS Generated Content for Paged Media](https://drafts.csswg.org/css-gcpm/) を参照してください。
 
 
 ## まとめ
