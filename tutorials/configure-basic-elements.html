@@ -12,7 +12,7 @@ lang: en
 - Configure styles for headings
 - Configure styles for source code
 - Configure styles for figures
-- Configure styles for endnotes
+- Configure styles for footnotes
 
 ## Styles for Basic Elements
 
@@ -133,9 +133,18 @@ figure figcaption::before {
 ![](/assets/tutorials/en/configure-basic-elements/preview-figure2.png)
 
 
-### Endnote Styles
+### Footnote Styles
 
-The footnote reference is given the class `footnote-ref`, the back-reference (↩) is given `footnote-back`, and the endnote list is inside a `section` element with the class `footnotes`.
+Using VFM’s dpub (DPUB-ARIA) footnote output in Vivliostyle typesets footnotes as proper footnotes placed at the bottom of each page. In the dpub format, the class `footnote-ref` is applied to the footnote reference, `footnote-back` to the back-reference (⇘), and `footnote` to the footnote body (`<aside>` element). Add the following setting to `vivliostyle.config.js` to enable the dpub format.
+
+```js
+export default defineConfig({
+  vfm: {
+    footnote: 'dpub',
+  },
+  // ...
+});
+```
 
 ```css
 .footnote-ref sup {
@@ -146,7 +155,7 @@ The footnote reference is given the class `footnote-ref`, the back-reference (�
   background-color: #ff8989;
 }
 
-.footnotes {
+.footnote {
   font-size: 8pt;
 }
 ```

@@ -108,6 +108,38 @@ Running heads are also written using page margin boxes. The following places the
 
 Vivliostyle has special variables `env(pub-title)` and `env(doc-title)`. These let you output the book title and chapter title respectively. When producing a PDF from multiple manuscript files, `env(pub-title)` is the book title and `env(doc-title)` is the title of each individual manuscript file.
 
+In addition, you can also configure running heads using **Named strings** or **Running elements**.
+
+**Named strings** capture the content of an element as a string using the `string-set` property, and display it in a page margin box using the `string()` function.
+
+```css
+h1 {
+  string-set: chapter-title content(text);
+}
+
+@page :left {
+  @top-left {
+    content: string(chapter-title);
+  }
+}
+```
+
+**Running elements** remove an element from the page flow using `position: running(name)` and display it in a page margin box using `element(name)`. This allows you to use the style and structure of an HTML element directly as a running head.
+
+```css
+.running-title {
+  position: running(chapter-header);
+}
+
+@page :right {
+  @top-right {
+    content: element(chapter-header);
+  }
+}
+```
+
+For more details, see [CSS Generated Content for Paged Media](https://drafts.csswg.org/css-gcpm/).
+
 
 ## Summary
 
