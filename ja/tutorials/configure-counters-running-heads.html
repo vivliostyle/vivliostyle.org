@@ -9,6 +9,7 @@ lang: ja
 ## このチュートリアルの目標
 
 - カウンタの設定方法がわかる
+- カウンタの参照方法がわかる
 - ノンブルの設定方法がわかる
 - 柱の設定方法がわかる
 
@@ -61,9 +62,28 @@ h1::after {
 }
 ```
 
-複数のカウンタ値を組み合わせることもできます。たとえばチュートリアル7では、`target-counter()` を使って目次の各項目にリンク先のページ番号を自動挿入する方法を紹介しています。
-
 ![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
+
+
+### カウンタの参照
+
+`target-counter()` 関数を使うと、ページ内の別の場所にあるカウンタの値を参照できます。たとえば本文中に図への参照リンクを置き、そのリンク先の図番号を自動的に表示することができます。
+
+```css
+a.fig-ref::after {
+  content: '図' target-counter(attr(href), figure) '.';
+}
+```
+
+Markdown 内では、次のように記述します。
+
+```html
+詳細は<a href="#fig-caption" class="fig-ref"></a>を参照してください。
+```
+
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter3.png)
+
+ページ番号の参照についても同様に `target-counter()` を使えます。チュートリアル7では、`target-counter()` を使って目次の各項目にリンク先のページ番号を自動挿入する方法を紹介しています。
 
 
 ## ページマージンボックス
