@@ -47,18 +47,23 @@ h1::before {
 ```
 
 ![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter1.png)
-![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
-![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter3.png)
 
 
 ### ページ番号
 
-Vivliostyle はページ番号を管理するカウンタを独自に持っているため、カウンタを新しく用意しなくてもページ番号を取得することができます。カウンタの名前は page です。
+Vivliostyle はページ番号を管理するカウンタを独自に持っているため、カウンタを新しく用意しなくてもページ番号を取得することができます。カウンタの名前は `page` です。
 
+たとえば次のように、見出しの後にページ番号を挿入することができます。
 
-### カウンタの参照
+```css
+h1::after {
+  content: ' … ' counter(page) 'ページ';
+}
+```
 
-CSS Generated Content 仕様で定義されている[target-counter()](https://drafts.csswg.org/css-content/#target-counter) 関数を使うことで、指定した要素におけるカウンタの値を取得できます。
+複数のカウンタ値を組み合わせることもできます。たとえばチュートリアル7では、`target-counter()` を使って目次の各項目にリンク先のページ番号を自動挿入する方法を紹介しています。
+
+![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
 
 
 ## ページマージンボックス
