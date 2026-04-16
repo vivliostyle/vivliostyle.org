@@ -12,22 +12,22 @@ lang: ja
 - 見出しのスタイルを設定できる
 - ソースコードのスタイルを設定できる
 - 図のスタイルを設定できる
-- 後注のスタイルを設定できる
+- 脚注のスタイルを設定できる
 
 ## 基本的な要素のスタイル
 
 原稿中によく出現する基本的な要素のスタイルを CSS で設定します。このチュートリアルでは CSS とともにスタイルの一例を紹介しますので、自分好みのスタイルに変更してみてください。
 
-このチュートリアルで紹介するスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
+このチュートリアルで紹介するスタイルを記述した theme.css は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme.css" text="theme.css" class="button--secondary--medium" %}
 </ol>
 
 
 ### セクションのスタイル
 
-```
+```css
 body > section {
   margin: 10px auto;
 }
@@ -36,43 +36,39 @@ body > section {
 
 ### 見出しのスタイル
 
-```
+```css
 body {
   counter-reset: section subsection figure;
 }
 
-section > {
-  h1, h2, h3, h4, h5, h6 {
-    padding: 0;
-    font-weight: bold;
-    break-after: avoid;
-  }
+section > h1, section > h2, section > h3, section > h4, section > h5, section > h6 {
+  padding: 0;
+  font-weight: bold;
+  break-after: avoid;
+}
 
-  h1 {
-    margin: 10pt auto 5pt;
-    font-size: 14pt;
-    line-height: 1.5;
+section > h1 {
+  margin: 10pt auto 5pt;
+  font-size: 14pt;
+  line-height: 1.5;
+  counter-increment: section;
+  counter-reset: subsection;
+}
 
-    counter-increment: section;
-    counter-reset: subsection;
+section > h1::before {
+  margin-right: 1rem;
+  content: '§' counter(chapter) '.' counter(section) ' ';
+}
 
-    &:before {
-      margin-right: 1rem;
-      content: counter(chapter) '.' counter(section) '章';
-    }
-  }
+section > h2 {
+  margin: 8pt auto 4pt;
+  font-size: 12pt;
+  counter-increment: subsection;
+}
 
-  h2 {
-    margin: 8pt auto 4pt;
-    font-size: 12pt;
-
-    counter-increment: subsection;
-
-    &:before {
-      margin-right: 1rem;
-      content: counter(chapter) '.' counter(section) '.' counter(subsection) '章';
-    }
-  }
+section > h2::before {
+  margin-right: 1rem;
+  content: '§' counter(chapter) '.' counter(section) '.' counter(subsection) ' ';
 }
 ```
 
@@ -83,7 +79,7 @@ section > {
 
 ソースコードのシンタックスハイライトには [Prism.js](https://prismjs.com/) が使えます。Prism.js の CSS を読み込み、キャプションなどのスタイルを設定します。
 
-```
+```css
 @import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css';
 
 code {
@@ -93,14 +89,14 @@ code {
 
 figure[class^='language-'] {
   margin: 0.5em 0;
+}
 
-  figcaption {
-    background-color: #e6e6e6;
-  }
+figure[class^='language-'] figcaption {
+  background-color: #e6e6e6;
+}
 
-  pre {
-    margin: 0pt;
-  }
+figure[class^='language-'] pre {
+  margin: 0pt;
 }
 ```
 
@@ -111,40 +107,45 @@ figure[class^='language-'] {
 
 CSS カウンタで図にも番号を振っておくと便利です。
 
-```
+```css
 img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-figure {
-  figcaption {
-    text-align: center;
+figure figcaption {
+  text-align: center;
+  counter-increment: figure;
+}
 
-    counter-increment: figure;
+figure figcaption::before {
+  margin-right: 1rem;
+  content: 'Figure' counter(figure) '.';
+}
 
-    &:before {
-      margin-right: 1rem;
-      content: 'Figure' counter(figure) '.';
-
-      :root:lang(ja) & {
-        content: '図' counter(figure) '.';
-      }
-    }
-  }
+:root:lang(ja) figure figcaption::before {
+  content: '図' counter(figure) '.';
 }
 ```
 
 ![](/assets/tutorials/ja/configure-basic-elements/preview-figure1.png)
-![](/assets/tutorials/ja/configure-basic-elements/preview-figure2.png)
 
 
-### 後注のスタイル
+### 脚注のスタイル
 
-後注の参照元には footnote-ref、参照先（↩）には footnote-back というクラスが付与されています。後注のリストは footnotes クラスが付与された section 要素の中にあります。
+Vivliostyle では VFM の dpub（DPUB-ARIA）形式の脚注出力を使うと、脚注が各ページの下部に配置される本格的な脚注として組版されます。dpub 形式では、脚注の参照元に `footnote-ref`、参照先（上付きの脚注番号、例: ¹）に `footnote-back`、脚注本体（`<aside>` 要素）に `footnote` というクラスが付与されます。vivliostyle.config.js に以下の設定を追加することで dpub 形式が有効になります。
 
+```js
+export default defineConfig({
+  vfm: {
+    footnote: 'dpub',
+  },
+  // ...
+});
 ```
+
+```css
 .footnote-ref sup {
   background-color: #ff8989;
 }
@@ -153,21 +154,20 @@ figure {
   background-color: #ff8989;
 }
 
-.footnotes {
+.footnote {
   font-size: 8pt;
 }
 ```
 
 ![](/assets/tutorials/ja/configure-basic-elements/preview-footnote1.png)
-![](/assets/tutorials/ja/configure-basic-elements/preview-footnote2.png)
 
 
 ## まとめ
 
-このチュートリアルでは、基本的な要素のスタイルを定義しました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
+このチュートリアルでは、基本的な要素のスタイルを定義しました。以上のスタイルを記述した theme.css は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-basic-elements/theme.css" text="theme.css" class="button--secondary--medium" %}
 </ol>
 
 ---
@@ -182,7 +182,7 @@ figure {
 
 {% include page/tutorials.html
   title="チュートリアル⑥基本的な要素のスタイル"
-  lead="SCSS を編集し、基本的な要素のスタイルを設定してみましょう。"
+  lead="CSS を編集し、基本的な要素のスタイルを設定してみましょう。"
 
   content=content
 %}

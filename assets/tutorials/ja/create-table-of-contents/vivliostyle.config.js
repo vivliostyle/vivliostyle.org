@@ -1,4 +1,6 @@
-module.exports = {
+import { defineConfig } from '@vivliostyle/cli';
+
+export default defineConfig({
   title: 'mybook',
   author: '山田太郎 <yamadataro@example.com>',
   language: 'ja',
@@ -13,6 +15,4 @@ module.exports = {
     'atogaki.md',
   ],
   entryContext: './manuscripts',
-  toc: true,
-  tocTitle: '目次',
-}
+});

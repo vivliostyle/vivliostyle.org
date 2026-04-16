@@ -1,0 +1,187 @@
+---
+layout: page
+title: "Tutorial ⑤ Counter and Running Head Styles"
+lang: en
+---
+
+
+{% capture content %}
+## Goals of This Tutorial
+
+- Understand how to configure counters
+- Understand how to reference counters
+- Understand how to configure page numbers (nombré)
+- Understand how to configure running heads
+
+
+## Configuring Counters
+
+CSS counters are counter variables you can use in CSS. With CSS counters you can automatically number headings and pages. Reference: [Using CSS counters (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters)
+
+Use the `counter-reset` property to initialize a counter value, and `counter-increment` to increment it. To output a counter value, use the [counter()](https://developer.mozilla.org/en-US/docs/Web/CSS/counter) or [counters()](https://developer.mozilla.org/en-US/docs/Web/CSS/counters) function in the `content` property.
+
+
+### Heading Numbers
+
+To assign chapter (chapter) and section (section) numbers to `h1`, use the following approach.
+
+```css
+@page :first { /* the first page across all manuscript files */
+  counter-reset: chapter;
+}
+
+@page :nth(1) { /* the first page of each individual manuscript file */
+  counter-increment: chapter;
+}
+
+body { /* each manuscript file */
+  counter-reset: section;
+}
+
+h1 {
+  counter-increment: section;
+}
+
+h1::before {
+  content: '§' counter(chapter) '.' counter(section) ' ';
+}
+```
+
+![](/assets/tutorials/en/configure-counters-running-heads/preview-counter1.png)
+
+
+### Page Numbers
+
+Vivliostyle maintains its own counter for page numbers, so you can obtain the page number without creating a new counter. The counter name is `page`.
+
+Using `target-counter()`, you can automatically retrieve the page number of a link target.
+
+```css
+a.page-ref::after {
+  content: 'p.' target-counter(attr(href), page);
+}
+```
+
+In Markdown, write it as follows:
+
+```html
+See <a href="#section-id" class="page-ref"></a> for details.
+```
+
+
+### Counter References
+
+The `target-counter()` function lets you reference the value of a counter at another location in the document. For example, you can place a reference link to a figure in the body text and have it automatically display that figure's number.
+
+```css
+a.fig-ref::after {
+  content: 'Figure ' target-counter(attr(href), figure) '.';
+}
+```
+
+In Markdown, write it as follows:
+
+```html
+See <a href="#fig-caption" class="fig-ref"></a> for details.
+```
+
+You can use `target-counter()` for page number references in the same way. In Tutorial ⑦, we show how to use `target-counter()` to automatically insert the destination page number for each entry in a table of contents.
+
+
+## Page Margin Boxes
+
+Page margin boxes are regions available for use as page headers or footers, defined in [CSS Paged Media](https://drafts.csswg.org/css-page-3/). There are 16 types of page margin boxes in total. They are used together with `@page` rules.
+
+![](/assets/tutorials/en/configure-counters-running-heads/page-margin-box.png)
+
+
+### Nombré (Page Number) Style
+
+A nombré is a page number placed at the bottom or side of a page.
+
+Nombré is written using page margin boxes. The following places the page number centered at the bottom of every page.
+
+```css
+@page {
+  @bottom-center {
+    content: counter(page);
+  }
+}
+```
+
+![](/assets/tutorials/en/configure-counters-running-heads/preview-page-number.png)
+
+
+### Running Head Style
+
+A running head is text placed at the top or side of a page, typically showing the book title or chapter name.
+
+Running heads are also written using page margin boxes. The following places the chapter title at the top-left of left-hand pages.
+
+```css
+@page :left {
+  @top-left {
+    content: env(doc-title);
+  }
+}
+```
+
+![](/assets/tutorials/en/configure-counters-running-heads/preview-running-heads.png)
+
+Vivliostyle has special variables `env(pub-title)` and `env(doc-title)`. These let you output the book title and chapter title respectively. When producing a PDF from multiple manuscript files, `env(pub-title)` is the book title and `env(doc-title)` is the title of each individual manuscript file.
+
+In addition, you can also configure running heads using **Named strings** or **Running elements**.
+
+**Named strings** capture the content of an element as a string using the `string-set` property, and display it in a page margin box using the `string()` function.
+
+```css
+h1 {
+  string-set: chapter-title content(text);
+}
+
+@page :left {
+  @top-left {
+    content: string(chapter-title);
+  }
+}
+```
+
+**Running elements** remove an element from the page flow using `position: running(name)` and display it in a page margin box using `element(name)`. This allows you to use the style and structure of an HTML element directly as a running head.
+
+```css
+.running-title {
+  position: running(chapter-header);
+}
+
+@page :right {
+  @top-right {
+    content: element(chapter-header);
+  }
+}
+```
+
+Reference: [CSS Generated Content for Paged Media (W3C)](https://drafts.csswg.org/css-gcpm/)
+
+
+## Summary
+
+In this tutorial you configured counters and running heads. Download the `theme.css` with all the styles described above using the button below.
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/en/configure-counters-running-heads/theme.css" text="theme.css" class="button--secondary--medium" %}
+</ol>
+
+---
+
+- Previous: [Tutorial ④ Page and Text Styles](/tutorials/configure-page-text)
+- Next: [Tutorial ⑥ Styles for Basic Elements](/tutorials/configure-basic-elements)
+- [Tutorial List](/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="Tutorial ⑤ Counter and Running Head Styles"
+  lead="Edit your CSS to configure counters and running heads."
+
+  content=content
+%}

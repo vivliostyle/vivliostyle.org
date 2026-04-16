@@ -9,13 +9,14 @@ lang: ja
 ## このチュートリアルの目標
 
 - カウンタの設定方法がわかる
+- カウンタの参照方法がわかる
 - ノンブルの設定方法がわかる
 - 柱の設定方法がわかる
 
 
 ## カウンタの設定
 
-CSS カウンタとは、CSS 内で使えるカウンタ変数のことです。CSS カウンタを使うことで、見出し番号やページ番号を自動的に振ることができます。詳細は [CSS カウンターの使用](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters)を参照してください。
+CSS カウンタとは、CSS 内で使えるカウンタ変数のことです。CSS カウンタを使うことで、見出し番号やページ番号を自動的に振ることができます。参照：[CSS カウンターの使用（MDN Web Docs）](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters)
 
 counter-reset プロパティでカウンタの値を初期化し、counter-increment プロパティでカウンタの値を増加させます。カウンタの値を参照するときは、content プロパティで [counter()](https://developer.mozilla.org/ja/docs/Web/CSS/counter) 関数や [counters()](https://developer.mozilla.org/ja/docs/Web/CSS/counters) 関数を使います。
 
@@ -24,9 +25,7 @@ counter-reset プロパティでカウンタの値を初期化し、counter-incr
 
 h1 に対して章番号 (chapter) と節番号 (section) を振る場合は、以下のようにします。
 
-[CSS Paged Media](https://drafts.csswg.org/css-page-3/) 仕様では、ページコンテキスト（<span>@</span>page 内）のプロパティの値はルート要素から継承するとされています。 ただし、Vivliostyle は現在のところ、ルート要素からページコンテキストへのプロパティ値の継承は未サポートです。したがって、<span>@</span>page 内で定義した CSS カウンタは <span>@</span>page 内でのみ、<span>@</span>page 外で定義した CSS カウンタは <span>@</span>page 外でのみインクリメントできます。
-
-```
+```css
 @page :first { /* 全原稿ファイルの中で1枚目のページ */
   counter-reset: chapter;
 }
@@ -41,28 +40,52 @@ body { /* 各原稿ファイル */
 
 h1 {
   counter-increment: section;
+}
 
-  &::before {
-    content: counter(chapter) "." counter(section) "章 ";
-  }
+h1::before {
+  content: '§' counter(chapter) '.' counter(section) ' ';
 }
 ```
 
 ![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter1.png)
-![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter2.png)
-![](/assets/tutorials/ja/configure-counters-running-heads/preview-counter3.png)
-
-参照：[Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%8F%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%E3%81%B8%E3%81%AE%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%81%AE%E6%8C%87%E5%AE%9A)
 
 
 ### ページ番号
 
-Vivliostyle はページ番号を管理するカウンタを独自に持っているため、カウンタを新しく用意しなくてもページ番号を取得することができます。カウンタの名前は page です。
+Vivliostyle はページ番号を管理するカウンタを独自に持っているため、カウンタを新しく用意しなくてもページ番号を取得することができます。カウンタの名前は `page` です。
+
+`target-counter()` 関数を使うと、リンク先のページ番号を自動的に取得できます。
+
+```css
+a.page-ref::after {
+  content: target-counter(attr(href), page) 'ページ';
+}
+```
+
+Markdown 内では、次のように記述します。
+
+```html
+詳細は<a href="#section-id" class="page-ref"></a>を参照してください。
+```
 
 
 ### カウンタの参照
 
-CSS Generated Content 仕様で定義されている[target-counter()](https://drafts.csswg.org/css-content/#target-counter) 関数を使うことで、指定した要素におけるカウンタの値を取得できます。
+`target-counter()` 関数を使うと、ページ内の別の場所にあるカウンタの値を参照できます。たとえば本文中に図への参照リンクを置き、そのリンク先の図番号を自動的に表示することができます。
+
+```css
+a.fig-ref::after {
+  content: '図' target-counter(attr(href), figure) '.';
+}
+```
+
+Markdown 内では、次のように記述します。
+
+```html
+詳細は<a href="#fig-caption" class="fig-ref"></a>を参照してください。
+```
+
+ページ番号の参照についても同様に `target-counter()` を使えます。チュートリアル⑦では、`target-counter()` を使って目次の各項目にリンク先のページ番号を自動挿入する方法を紹介しています。
 
 
 ## ページマージンボックス
@@ -78,7 +101,7 @@ CSS Generated Content 仕様で定義されている[target-counter()](https://d
 
 ノンブルはページマージンボックスを使って記述します。次のように記述すると、全ページの下中央にページ番号が表示されます。
 
-```
+```css
 @page {
   @bottom-center {
     content: counter(page);
@@ -95,7 +118,7 @@ CSS Generated Content 仕様で定義されている[target-counter()](https://d
 
 柱もノンブルと同様に、ページマージンボックスを使って記述します。次のように記述すると、左ページの左上に章タイトルが表示されます。
 
-```
+```css
 @page :left {
   @top-left {
     content: env(doc-title);
@@ -107,22 +130,52 @@ CSS Generated Content 仕様で定義されている[target-counter()](https://d
 
 Vivliostyle は env(pub-title) と env(doc-title) という特別な変数を持っています。これらを使うことで、本のタイトルや章のタイトルを出力することができます。複数の原稿ファイルから PDF を作る場合、env(pub-title) は本のタイトル、env(doc-title) は各原稿ファイルのタイトルです。
 
-参照：[Vivliostyle Viewer で CSS 組版ちょっと入門](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%8F%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC%EF%BC%88%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%BC%E3%82%B8%E3%83%B3%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%EF%BC%89)
+このほかに、**Named strings** や **Running elements** を使って柱を設定する方法もあります。
+
+**Named strings** は `string-set` プロパティで要素の内容を文字列として取り込み、`string()` 関数でページマージンボックスに表示します。
+
+```css
+h1 {
+  string-set: chapter-title content(text);
+}
+
+@page :left {
+  @top-left {
+    content: string(chapter-title);
+  }
+}
+```
+
+**Running elements** は `position: running(name)` で要素をページフローから外し、`element(name)` でページマージンボックスに表示します。HTML 要素のスタイルや構造をそのまま柱として使えます。
+
+```css
+.running-title {
+  position: running(chapter-header);
+}
+
+@page :right {
+  @top-right {
+    content: element(chapter-header);
+  }
+}
+```
+
+参照：[CSS Generated Content for Paged Media（W3C）](https://drafts.csswg.org/css-gcpm/)
 
 
 ## まとめ
 
-このチュートリアルでは、カウンタと柱の設定を行いました。以上のスタイルを記述した theme_common.scss は以下のボタンからダウンロードできます。
+このチュートリアルでは、カウンタと柱の設定を行いました。以上のスタイルを記述した theme.css は以下のボタンからダウンロードできます。
 
 <ol class="list--small">
-  {% include button/download.html url="../../../assets/tutorials/ja/configure-counters-running-heads/theme_common.scss" text="theme_common.scss" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/ja/configure-counters-running-heads/theme.css" text="theme.css" class="button--secondary--medium" %}
 </ol>
 
 ---
 
-次のチュートリアルでは、SCSS を編集して柱とノンブルの設定を行います。
+次のチュートリアルでは、CSS を編集して基本的な要素のスタイルを設定します。
 
-- 前：[チュートリアル④用紙と文字の設定](/ja/tutorials/configure-page-text)
+- 前：[チュートリアル④用紙と文字のスタイル](/ja/tutorials/configure-page-text)
 - 次：[チュートリアル⑥基本的な要素のスタイル](/ja/tutorials/configure-basic-elements)
 - [チュートリアル一覧](/ja/tutorials)
 {% endcapture %}
@@ -130,7 +183,7 @@ Vivliostyle は env(pub-title) と env(doc-title) という特別な変数を持
 
 {% include page/tutorials.html
   title="チュートリアル⑤カウンタと柱のスタイル"
-  lead="SCSS を編集し、カウンタと柱を設定してみましょう。"
+  lead="CSS を編集し、カウンタと柱を設定してみましょう。"
 
   content=content
 %}

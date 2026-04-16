@@ -6,7 +6,7 @@ vfm:
   hardLineBreaks: false
 ---
 
-この原稿は [VFM (Vivliostyle Flavored Markdown)](https://vivliostyle.github.io/vfm/vfm) で書かれています。詳細はドキュメントを確認してください。
+この原稿は [VFM (Vivliostyle Flavored Markdown)](https://docs.vivliostyle.org/ja/vfm/) で書かれています。詳細はドキュメントを確認してください。
 
 # ソースコード {#code}
 
@@ -26,18 +26,18 @@ or
 function main() {}
 ```
 
-# 後注 {#footnotes}
+# 脚注 {#footnote}
 
 VFM は GitHub リポジトリ[^1]で開発されています。
 issue は GitHub[^issues]で管理されています。
-後注はインラインで記述することもできます^[これは後注です。]。
+脚注はインラインで記述することもできます^[これは脚注です。]。
 
 [^1]: [VFM](https://github.com/vivliostyle/vfm)
 [^issues]: [Issues](https://github.com/vivliostyle/vfm/issues)
 
 # Frontmatter {#frontmatter}
 
-Markdown ファイルの冒頭で、メタデータを設定することができます。詳細は [Frontmatter part in VFM document](https://vivliostyle.github.io/vfm/vfm#frontmatter) を確認してください。
+Markdown ファイルの冒頭で、メタデータを設定することができます。詳細は [Frontmatter part in VFM document](https://docs.vivliostyle.org/ja/vfm/) を確認してください。
 
 # 改行 {#newline}
 

@@ -1,0 +1,34 @@
+---
+layout: page
+title: Tutorials
+lang: en
+---
+
+
+{% capture content %}
+Typesetting refers to the process of laying out text and images. Vivliostyle is a tool that enables CSS-based typesetting using web technologies. By writing your manuscript and defining styles in CSS, you can produce publications in formats such as PDF or EPUB.
+
+Have you ever wished for more control while using a typesetting application — "If only I could fine-tune this option just a little more"? With CSS typesetting using Vivliostyle, you can style your manuscripts in a comparatively flexible and programmable way. These tutorials walk you through everything from installing the required tools to the fundamentals of CSS typesetting.
+
+By the end of these tutorials, you will be able to:
+- Create PDF publications using Vivliostyle
+- Understand the basics of CSS typesetting, even without prior experience
+
+## Tutorial List
+- [① Installation](/tutorials/install)
+- [② Creating a PDF](/tutorials/create-publications)
+- [③ Customizing Manuscripts and Themes](/tutorials/customize)
+- [④ Page and Text Styles](/tutorials/configure-page-text)
+- [⑤ Counter and Running Head Styles](/tutorials/configure-counters-running-heads)
+- [⑥ Styles for Basic Elements](/tutorials/configure-basic-elements)
+- [⑦ Creating a Table of Contents](/tutorials/create-table-of-contents)
+
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="Tutorials"
+  lead="A tutorial series on CSS typesetting with Vivliostyle. Ready to get started with CSS typesetting?"
+
+  content=content
+%}

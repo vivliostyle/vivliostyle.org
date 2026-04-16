@@ -1,0 +1,261 @@
+---
+layout: page
+title: "Tutorial ④ Page and Text Styles"
+lang: en
+---
+
+
+{% capture content %}
+## Goals of This Tutorial
+
+- Understand how to configure page settings
+- Understand how to configure text settings
+
+
+## Files Used in This Tutorial
+
+We have prepared the files for the following tutorials. Download `vivliostyle.config.js`, the manuscript files, and the style file using the buttons below and place them inside your `mybook` directory.
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/en/configure-page-text/vivliostyle.config.js" text="vivliostyle.config.js" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/en/configure-page-text/manuscripts.zip" text="manuscripts.zip" class="button--secondary--medium" %}
+  {% include button/download.html url="../../../assets/tutorials/en/configure-page-text/mytheme.zip" text="mytheme.zip" class="button--secondary--medium" %}
+</ol>
+
+```text
+mybook/
+├── package.json
+├── vivliostyle.config.js (*overwrites existing file)
+├── manuscripts/ (*overwrites existing files)
+│   ├── preface.md
+│   ├── body.md
+│   └── afterword.md
+└── themes/
+    └── mytheme/ (*overwrites existing files)
+```
+
+`themes/mytheme/theme_common.css` contains CSS that resets the default styles applied by the browser.
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+Run the following command in your terminal to see a PDF with almost no styles applied.
+
+```bash
+npm run preview
+```
+
+![](/assets/tutorials/en/configure-page-text/preview-reset1.png)
+![](/assets/tutorials/en/configure-page-text/preview-reset2.png)
+![](/assets/tutorials/en/configure-page-text/preview-reset3.png)
+
+Throughout this tutorial, you will use CSS to style this bare-bones book. CSS is written in `themes/mytheme/theme_common.css`.
+
+
+## Page Styles
+
+Page settings are written using the [@page](https://developer.mozilla.org/en-US/docs/Web/CSS/@page) rule.
+
+### Paper Size
+
+Use the [size](https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size) descriptor.
+
+```css
+@page {
+  size: 148mm 210mm; /* A5 size */
+}
+```
+
+### Margins
+
+Use the CSS `margin` property.
+
+```css
+@page {
+  margin: 10mm 15mm;
+}
+```
+
+![](/assets/tutorials/en/configure-page-text/preview-margin.png)
+
+For books that are bound, you may want a wider margin on the spine (binding) side. You can use [@page :left](https://developer.mozilla.org/en-US/docs/Web/CSS/:left) and [@page :right](https://developer.mozilla.org/en-US/docs/Web/CSS/:right) to set styles separately for left-hand and right-hand pages.
+
+```css
+@page :left { /* widen the right margin of left-hand pages */
+  margin-right: 25mm;
+}
+
+@page :right { /* widen the left margin of right-hand pages */
+  margin-left: 25mm;
+}
+```
+
+![](/assets/tutorials/en/configure-page-text/preview-inside-margin.png)
+
+Reference: [CSS組版 with Vivliostyleでゼロから版面設計をやってみよう (libroworks.co.jp)](https://libroworks.co.jp/?p=5709)
+
+
+### Page Start Side
+
+In Vivliostyle, each manuscript file (in this tutorial: preface, body, and afterword) always starts a new page. To start the content of each manuscript file from the left, right, odd, or even page, set `break-before` on the `body` element.
+
+```css
+body {
+  break-before: left;  /* start from a left-hand page */
+  break-before: right; /* start from a right-hand page */
+  break-before: recto; /* start from an odd-numbered page */
+  break-before: verso; /* start from an even-numbered page */
+}
+```
+
+Previously the body content started on a left-hand page, but setting `break-before: right;` adds a blank page on the left so that the body starts on a right-hand page.
+
+![](/assets/tutorials/en/configure-page-text/preview-break-before.png)
+
+
+### Cover Page
+
+The style for the first page across all manuscript files can be set with [@page :first](https://developer.mozilla.org/en-US/docs/Web/CSS/:first), and the first page of each individual manuscript file with `@page :nth(1)`.
+
+
+### Blank Pages
+
+The style for blank pages can be set with [@page :blank](https://developer.mozilla.org/en-US/docs/Web/CSS/:blank).
+
+
+## Text Styles
+
+Various text-related settings can be achieved using CSS properties.
+
+
+### Font Family
+
+Use the CSS `font-family` property.
+
+```css
+html {
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+```
+
+#### Using Web Fonts
+
+Vivliostyle CLI can reflect web fonts loaded with `@import url()` or `@font-face` directly in the PDF output. Add the following to the top of `themes/mytheme/theme_common.css`:
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+html {
+  font-family: 'Noto Serif JP', serif;
+}
+```
+
+Make sure `@import` appears before any other rules. Verify that the font is reflected in the preview, and confirm that it is embedded in the built PDF.
+
+### Font Size
+
+Use the CSS `font-size` property.
+
+```css
+html {
+  font-size: 12pt;
+}
+
+ruby > rt { /* ruby annotation */
+  font-size: 0.5rem;
+}
+```
+
+
+### Line Spacing
+
+Use the CSS `line-height` property.
+
+```css
+p {
+  line-height: 1.5;
+}
+```
+
+
+### Text Indent
+
+Use the CSS `text-indent` property.
+
+```css
+p {
+  text-indent: 1em;
+}
+```
+
+![](/assets/tutorials/en/configure-page-text/preview-text-indent.png)
+
+
+### Text Alignment
+
+Use the CSS `text-align` property.
+
+```css
+html {
+  text-align: justify;
+}
+```
+
+![](/assets/tutorials/en/configure-page-text/preview-text-align.png)
+
+
+### Hanging Punctuation
+
+Use the CSS `text-spacing-trim` and `hanging-punctuation` properties.
+
+```css
+html {
+  text-spacing-trim: trim-start;
+  hanging-punctuation: allow-end;
+}
+```
+
+Reference: [Improved line-end handling and page direction support (Vivliostyle Blog)](https://vivliostyle.org/ja/blog/2022/02/08/Improved-of-line-end-handling-and-support-for-page-progression-direction-in-PDF/)
+
+
+### Widows and Orphans
+
+A **widow** is a paragraph's last line appearing alone at the top of a new page; an **orphan** is a paragraph's first line appearing alone at the bottom of a page. Use the CSS `widows` and `orphans` properties to set the minimum number of lines that must appear at the top or bottom of a page.
+
+```css
+html {
+  widows: 1;
+  orphans: 1;
+}
+```
+
+
+## Summary
+
+In this tutorial you defined page and text styles from scratch. Download the `theme.css` with all the styles described above using the button below.
+
+<ol class="list--small">
+  {% include button/download.html url="../../../assets/tutorials/en/configure-page-text/theme.css" text="theme.css" class="button--secondary--medium" %}
+</ol>
+
+---
+
+In the next tutorial, you will configure counters and running heads.
+
+- Previous: [Tutorial ③ Customizing Manuscripts and Themes](/tutorials/customize)
+- Next: [Tutorial ⑤ Counter and Running Head Styles](/tutorials/configure-counters-running-heads)
+- [Tutorial List](/tutorials)
+{% endcapture %}
+
+
+{% include page/tutorials.html
+  title="Tutorial ④ Page and Text Styles"
+  lead="Edit your CSS to configure page and text styles."
+
+  content=content
+%}
