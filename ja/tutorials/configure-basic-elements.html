@@ -135,7 +135,7 @@ figure figcaption::before {
 
 ### 脚注のスタイル
 
-Vivliostyle では VFM の dpub（DPUB-ARIA）形式の脚注出力を使うと、脚注が各ページの下部に配置される本格的な脚注として組版されます。dpub 形式では、脚注の参照元に `footnote-ref`、参照先（↘）に `footnote-back`、脚注本体（`<aside>` 要素）に `footnote` というクラスが付与されます。vivliostyle.config.js に以下の設定を追加することで dpub 形式が有効になります。
+Vivliostyle では VFM の dpub（DPUB-ARIA）形式の脚注出力を使うと、脚注が各ページの下部に配置される本格的な脚注として組版されます。dpub 形式では、脚注の参照元に `footnote-ref`、参照先（上付きの脚注番号、例: ¹）に `footnote-back`、脚注本体（`<aside>` 要素）に `footnote` というクラスが付与されます。vivliostyle.config.js に以下の設定を追加することで dpub 形式が有効になります。
 
 ```js
 export default defineConfig({

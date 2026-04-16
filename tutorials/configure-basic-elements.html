@@ -135,7 +135,7 @@ figure figcaption::before {
 
 ### Footnote Styles
 
-Using VFM’s dpub (DPUB-ARIA) footnote output in Vivliostyle typesets footnotes as proper footnotes placed at the bottom of each page. In the dpub format, the class `footnote-ref` is applied to the footnote reference, `footnote-back` to the back-reference (⇘), and `footnote` to the footnote body (`<aside>` element). Add the following setting to `vivliostyle.config.js` to enable the dpub format.
+Using VFM’s dpub (DPUB-ARIA) footnote output in Vivliostyle typesets footnotes as proper footnotes placed at the bottom of each page. In the dpub format, the class `footnote-ref` is applied to the footnote reference, `footnote-back` to the back-reference (superscript footnote number, e.g. ¹), and `footnote` to the footnote body (`<aside>` element). Add the following setting to `vivliostyle.config.js` to enable the dpub format.
 
 ```js
 export default defineConfig({
