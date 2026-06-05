@@ -31,6 +31,7 @@ Our goal is to develop, publish and disseminate "Vivliostyle", an open source ty
 
 {% capture reports %}
 ### Activity Reports
+- [FY2025 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2025/vf2025report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2025/vf2025report.html)
 - [FY2024 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2024/vf2024report.html)
 - [FY2023 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2023/vf2023report.html)
 - [FY2022 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report-en.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/en/reports/vivliostyle-report-2022/vf2022report.html)

@@ -35,6 +35,7 @@ lang: ja
 {% capture reports %}
 ### 活動報告書
 
+- [2025年度 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2025/vf2025report-ja.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2025/vf2025report.html)
 - [2024年度 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2024/vf2024report-ja.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2024/vf2024report.html)
 - [2023年度 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2023/vf2023report-ja.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2023/vf2023report.html)
 - [2022年度 (PDF)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2022/vf2022report-ja.pdf) / [(HTML)](https://vivliostyle.github.io/vivliostyle_doc/ja/reports/vivliostyle-report-2022/vf2022report.html)
