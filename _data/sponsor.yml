@@ -38,7 +38,6 @@
       tier:
         - badge: 🌟
           users:
-            - name: skoji
             - name: 74th
             - name: NoBooking
             - name: vvakame
@@ -59,6 +58,7 @@
             - name: udon-a
         - badge: 🌟
           users:
+            - name: skoji
             - name: sarashino
         - badge: ⭐️
           users:
