@@ -6,23 +6,40 @@ This repository is the source of the project website <https://vivliostyle.org>.
 
 This project discloses its generative AI usage in [`AI_POLICY.md`](AI_POLICY.md).
 The policy is shared across the Vivliostyle organization; when it changes in
-`vivliostyle/vivliostyle.js`, mirror the change here.
+`vivliostyle/vivliostyle.js` or `vivliostyle/docs2.vivliostyle.org`, mirror the change
+here. (A Japanese translation is [`AI_POLICY.ja.md`](AI_POLICY.ja.md), for human
+readers; agents should read the English version.)
 Agents must follow that policy:
 
 - Add an `Assisted-by:` trailer naming the agent and the exact model version to every
   commit that contains AI-generated changes, in the Linux-kernel format
   `Assisted-by: AGENT_NAME:MODEL_VERSION` (model version in lowercase, hyphen-separated
-  words), e.g. `Assisted-by: Claude Code:claude-opus-5`. Do not add a
-  `Co-authored-by:` trailer for the AI.
+  words), e.g. `Assisted-by: Claude Code:claude-opus-5`. It does not need to be the last
+  trailer. Do not add a `Co-authored-by:` trailer naming an AI yourself, but a
+  `Co-authored-by:` trailer that a tool added automatically (e.g. from GitHub Copilot on
+  PR review commits) is accepted as disclosure: replace it with `Assisted-by:` only in
+  your own commit, and leave it alone in someone else's.
 - When drafting a pull request description, include the same `Assisted-by:` line in the
   body, and describe the human/AI division of labor (what was delegated to the AI, and
   what the human contributor designed, decided, reviewed, and verified) inside a
   `<details>` block, following the example in `AI_POLICY.md`.
 - Never emit content that reproduces third-party copyrighted material.
 
-Agent guidance for this repository lives only in this file. `CLAUDE.md` is a symlink to
-`AGENTS.md` so every agent reads the same source; edit `AGENTS.md` to extend the guide.
-Likewise, `.claude/skills` is a symlink to `.agents/skills`.
+## Agent configuration files
+
+Agent guidance for this repository lives only in this file; edit `AGENTS.md` to extend
+the guide. The other files exist so that every agent reaches the same source:
+
+- `CLAUDE.md` is a symlink to `AGENTS.md`, because Claude Code reads only `CLAUDE.md`.
+- `.gemini/settings.json` sets `context.fileName` to `AGENTS.md`, because Gemini CLI
+  looks for `GEMINI.md` by default.
+- GitHub Copilot, Cursor, and Codex CLI read `AGENTS.md` natively; they need no
+  configuration here.
+
+Repository skills live in `.agents/skills/`, and each one is symlinked into
+`.claude/skills/` individually. `.claude/skills/` is a real directory rather than a
+symlink, so you can drop your own local skills next to the repository's without them
+being force-added by `.gitignore`.
 
 ## Site structure
 
@@ -41,9 +58,9 @@ A [Jekyll](https://jekyllrb.com/) site built with the `github-pages` gem.
 - `_site/`, `vendor/` — build output and bundled gems; both are ignored by git
 
 Repository documentation that is not part of the website (`README.md`, `LICENSE`,
-`AI_POLICY.md`, `AGENTS.md`, `CLAUDE.md`, ...) is listed under `exclude:` in
-`_config.yml`; add any new root-level document there, or Jekyll will copy it into the
-published site.
+`AI_POLICY.md`, `AI_POLICY.ja.md`, `AGENTS.md`, `CLAUDE.md`, ...) is listed under
+`exclude:` in `_config.yml`; add any new root-level document there, or Jekyll will copy
+it into the published site.
 
 ## Bilingual layout
 
