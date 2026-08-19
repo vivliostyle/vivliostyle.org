@@ -41,7 +41,6 @@
             - name: 74th
             - name: NoBooking
             - name: vvakame
-            - name: y-mikou
             - name: u1f992
             - name: yamahige
             - name: Motoki-N
@@ -61,6 +60,7 @@
           users:
             - name: skoji
             - name: sarashino
+            - name: y-mikou
         - badge: ⭐️
           users:
             - name: monaka
