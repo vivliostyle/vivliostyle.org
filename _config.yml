@@ -14,6 +14,7 @@ exclude:
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - AI_POLICY.md
+  - AI_POLICY.ja.md
   - AGENTS.md
   - CLAUDE.md
   - LICENSE
