@@ -41,15 +41,14 @@
             - name: 74th
             - name: NoBooking
             - name: vvakame
-            - name: y-mikou
             - name: u1f992
             - name: yamahige
-            - name: Motoki-N
         - badge: ⭐️
           users:
             - name: munepi
             - name: zonuexe
             - name: monami-ya
+            - name: Motoki-N
     - name: Past Sponsors
       tier:
         - badge: 🌹
@@ -61,6 +60,7 @@
           users:
             - name: skoji
             - name: sarashino
+            - name: y-mikou
         - badge: ⭐️
           users:
             - name: monaka
