@@ -4,5 +4,18 @@ _site
 /vendor/bundle
 .bundle
 .vercel
-.claude
 Gemfile.lock
+
+# macOS-specific files
+.DS_Store
+
+# Claude Code local settings. .claude/skills itself is tracked so the
+# repository's own skills (e.g. ai-policy-check; see AGENTS.md / AI_POLICY.md)
+# ship with the repo, but files placed under it are not force-included, so
+# personal/temporary skills still respect your own global/local gitignore.
+.claude/*
+!.claude/skills
+
+# Aider local state (contributors using other AI coding agents get the same
+# gitignore support as Claude Code; see AGENTS.md, which is agent-agnostic)
+.aider*
