@@ -13,6 +13,8 @@ body {
   font-family: $body_font;
   font-size: $body_font_size;
   font-weight: $body_font_weight;
+  text-autospace: normal;
+  text-spacing-trim: trim-start;
 }
 
 img {
